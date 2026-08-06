@@ -109,9 +109,10 @@ html[data-s="1"] #sheet, html[data-s="1"] #sheetbg { display:block; }
 #sheet h4 { margin:20px 0 7px; font-size:12px; letter-spacing:.06em; color:var(--mark); }
 #sheet .row { display:flex; gap:6px; align-items:center; flex-wrap:wrap; margin-top:14px; }
 #sheet .row label { font-size:12px; color:var(--dim); }
-#sheet select, #sheet button, #sheet textarea { font:inherit; color:var(--fg);
+#sheet select, #sheet button, #sheet textarea, #sheet input { font:inherit; color:var(--fg);
   background:var(--bg); border:1px solid var(--line); border-radius:7px; padding:6px 9px; }
 #sheet select { flex:1; min-width:110px; }
+#sheet input { flex:1; min-width:90px; }
 #sheet button { cursor:pointer; font-size:12.5px; }
 #sheet textarea { width:100%; font-size:11.5px; line-height:1.5; resize:vertical;
   font-family:ui-monospace,Menlo,monospace; }
@@ -216,6 +217,7 @@ html[data-t="dark"] .qz .qo button.no { background:#3b1618; border-color:#dc2626
   <button id="minus">A−</button><button id="plus">A+</button>
   <button id="ul">밑줄</button><button id="ko" hidden>해석</button><button id="dark">야간</button>
   <button id="mark">책갈피</button><button id="log">기록</button>
+  <button id="tmode" class="on" hidden>선생</button>
   <div id="prog"></div>
 </div>
 
@@ -237,6 +239,14 @@ html[data-t="dark"] .qz .qo button.no { background:#3b1618; border-color:#dc2626
     <label for="lock">장 끝 문제를 풀어야 다음 장 열기</label>
     <button id="lock">관문</button>
   </div>
+  <div class="row" id="trow" hidden>
+    <label for="tkey">선생님 열쇠</label>
+    <input id="tkey" type="password" autocomplete="off" autocapitalize="off"
+           autocorrect="off" spellcheck="false" placeholder="열쇠">
+    <button id="tgo">열기</button>
+    <button id="toff" hidden>잠그기</button>
+  </div>
+  <p class="note" id="tnote" hidden></p>
   <h4>장별 진도</h4>
   <table id="prog2"><tbody></tbody></table>
   <h4>기록 내보내기</h4>
@@ -2616,6 +2626,21 @@ var QUIZ = {"c01":[{"a":0,"k":"voc","o":["정기 회원","(극장의) 층 좌석
   var WHO = 'wonseo:who', ROSTER = 'wonseo:students';
   function ukey(w) { return KEY + ':u:' + w; }
 
+  // ── 선생님 열쇠 ──────────────────────────────────────────────
+  // 켜면 장 잠금을 무시하고 아무 장이나 오간다. 읽는 사람과 무관하게 기기 단위로
+  // 저장하되, 켠 시각을 함께 적어 두고 정해진 시간이 지나면 저절로 꺼진다.
+  // 공용 아이패드에 켜 둔 채 잊어버려도 관문이 되살아나게 하려는 것이다.
+  var TKEY = 'wonseo:teacher', TCODE = "rw2026", THRS = 6;
+  function tOn() {
+    var v = +(localStorage.getItem(TKEY) || 0);
+    if (v && v <= Date.now()) { localStorage.removeItem(TKEY); return 0; }
+    return v ? v : 0;
+  }
+  function tLeft() {
+    var v = tOn();
+    return v ? Math.max(1, Math.round((v - Date.now()) / 60000)) : 0;
+  }
+
   var roster = [];
   try { roster = JSON.parse(localStorage.getItem(ROSTER) || '[]'); } catch (e) {}
   if (!roster.length) roster = ['기본'];
@@ -2929,7 +2954,7 @@ var QUIZ = {"c01":[{"a":0,"k":"voc","o":["정기 회원","(극장의) 층 좌석
 
   // 앞 장의 문제를 다 푼 데까지만 연다.
   function openCount() {
-    if (!u.lock || !HASQ) return chs.length;
+    if (tOn() || !u.lock || !HASQ) return chs.length;
     for (var i = 0; i < chs.length; i++) if (!qDone(chs[i].id)) return i + 1;
     return chs.length;
   }
@@ -2941,6 +2966,33 @@ var QUIZ = {"c01":[{"a":0,"k":"voc","o":["정기 회원","(극장의) 층 좌석
     var tail = document.getElementById('locktail');
     if (tail) tail.hidden = n >= chs.length;
     for (var k = 0; k < qcards.length; k++) fill(qcards[k]);
+    tDraw();
+  }
+
+  // 선생님 열쇠가 켜져 있으면 위 막대에 표시를 띄운다. 켜 둔 것을 잊지 않게 하려는 것이다.
+  function tDraw() {
+    var b = document.getElementById('tmode');
+    var on = !!tOn();
+    b.hidden = !on;
+    if (on) b.textContent = '선생 ' + tLeft() + '분';
+    var row = document.getElementById('trow');
+    if (row && !row.hidden) {
+      document.getElementById('tgo').hidden = on;
+      document.getElementById('tkey').hidden = on;
+      document.getElementById('toff').hidden = !on;
+      var note = document.getElementById('tnote');
+      note.hidden = false;
+      note.textContent = on
+        ? '지금은 모든 장이 열려 있습니다. ' + tLeft() + '분 뒤 저절로 잠깁니다.'
+        : '열쇠를 넣으면 문제를 풀지 않아도 아무 장이나 오갈 수 있습니다. ' +
+          THRS + '시간 뒤 저절로 잠깁니다.';
+    }
+  }
+
+  function tSet(on) {
+    if (on) localStorage.setItem(TKEY, Date.now() + THRS * 3600000);
+    else localStorage.removeItem(TKEY);
+    applyLock();
   }
 
   function passage(it) {
@@ -3079,6 +3131,22 @@ var QUIZ = {"c01":[{"a":0,"k":"voc","o":["정기 회원","(극장의) 층 좌석
     }
   });
 
+  // 주소 뒤 #t=열쇠 로도 켤 수 있다. 적용한 뒤에는 주소에서 지운다 —
+  // 그대로 두면 방문 기록과 주소창에 열쇠가 남는다.
+  // 이미 열려 있는 화면의 주소에 #t= 만 덧붙이면 브라우저가 새로 고치지 않고
+  // hashchange 만 일으키므로, 처음 열 때와 hashchange 양쪽에서 본다.
+  function tFromURL() {
+    var m = /[#?&]t=([^&]+)/.exec(location.hash + location.search);
+    if (!m) return false;
+    var hit = decodeURIComponent(m[1]) === TCODE;
+    try { history.replaceState(null, '', location.pathname + location.search.replace(/[?&]t=[^&]*/, '')); }
+    catch (e) { location.hash = ''; }
+    if (hit) localStorage.setItem(TKEY, Date.now() + THRS * 3600000);
+    return hit;
+  }
+  addEventListener('hashchange', function () { if (tFromURL()) { applyLock(); draw(); } });
+  tFromURL();
+
   applyLock();
 
   function snippet() {
@@ -3190,6 +3258,8 @@ var QUIZ = {"c01":[{"a":0,"k":"voc","o":["정기 회원","(극장의) 층 좌석
       var lb = document.getElementById('lock');
       lb.textContent = u.lock ? '켜짐' : '꺼짐';
       lb.classList.toggle('on', !!u.lock);
+      document.getElementById('trow').hidden = false;
+      tDraw();
     }
     document.getElementById('dump').value = dumpText();
   }
@@ -3218,6 +3288,21 @@ var QUIZ = {"c01":[{"a":0,"k":"voc","o":["정기 회원","(극장의) 층 좌석
     saveUser();
     applyLock();
     draw();
+  };
+
+  document.getElementById('tgo').onclick = function () {
+    var f = document.getElementById('tkey');
+    if (f.value.trim() !== TCODE) { alert('열쇠가 다릅니다.'); f.select(); return; }
+    f.value = '';
+    tSet(1);
+    draw();
+  };
+  document.getElementById('tkey').onkeydown = function (e) {
+    if (e.key === 'Enter') document.getElementById('tgo').onclick();
+  };
+  document.getElementById('toff').onclick = function () { tSet(0); draw(); };
+  document.getElementById('tmode').onclick = function () {
+    if (confirm('선생님 열쇠를 끄고 다시 잠글까요?')) { tSet(0); draw(); }
   };
 
   function switchTo(name) {
@@ -3264,6 +3349,12 @@ var QUIZ = {"c01":[{"a":0,"k":"voc","o":["정기 회원","(극장의) 층 좌석
     if (seen > (e.max || 0)) e.max = seen;
     if (root.dataset.s === '1') draw();
   }, 5000);
+
+  // 남은 시간 표시를 갱신하고, 기한이 지나면 그 자리에서 다시 잠근다.
+  setInterval(function () {
+    var was = !document.getElementById('tmode').hidden;
+    if (was && !tOn()) applyLock(); else if (was) tDraw();
+  }, 30000);
 
   var bar = document.getElementById('prog'), tick;
   var lastY = 0;
