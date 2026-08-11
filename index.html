@@ -14,21 +14,22 @@
     --seed: #4a6b3f;     /* 시크릿 가든 — 잎 */
     --velvet: #7a2230;   /* 오페라의 유령 — 무대막 */
     --frost: #2f4858;    /* 프랑켄슈타인 — 북극 */
+    --coat: #3a5a8c;     /* 젊은 베르테르의 슬픔 — 푸른 웃옷 */
     --gold: #a9762a;
   }
   @media (prefers-color-scheme: dark) {
     :root {
       --paper: #16181a; --ink: #e8e4dc; --muted: #9b958a; --rule: #2b2e31;
-      --card: #1d2023; --seed: #8fb37f; --velvet: #d08292; --frost: #8fb2c9; --gold: #e0b062;
+      --card: #1d2023; --seed: #8fb37f; --velvet: #d08292; --frost: #8fb2c9; --coat: #93aad4; --gold: #e0b062;
     }
   }
   :root[data-theme="dark"] {
     --paper: #16181a; --ink: #e8e4dc; --muted: #9b958a; --rule: #2b2e31;
-    --card: #1d2023; --seed: #8fb37f; --velvet: #d08292; --frost: #8fb2c9; --gold: #e0b062;
+    --card: #1d2023; --seed: #8fb37f; --velvet: #d08292; --frost: #8fb2c9; --coat: #93aad4; --gold: #e0b062;
   }
   :root[data-theme="light"] {
     --paper: #fbfaf7; --ink: #21201c; --muted: #6f6a60; --rule: #e2ded4;
-    --card: #ffffff; --seed: #4a6b3f; --velvet: #7a2230; --frost: #2f4858; --gold: #a9762a;
+    --card: #ffffff; --seed: #4a6b3f; --velvet: #7a2230; --frost: #2f4858; --coat: #3a5a8c; --gold: #a9762a;
   }
 
   * { box-sizing: border-box; }
@@ -78,7 +79,8 @@
     font-variant-numeric: tabular-nums; white-space: nowrap;
   }
   .stat b { display: block; font-size: 15px; color: var(--ink); font-weight: 600; }
-  .b1 { --tint: var(--seed); } .b2 { --tint: var(--velvet); } .b3 { --tint: var(--frost); }
+  .b1 { --tint: var(--seed); } .b2 { --tint: var(--velvet); }
+  .b3 { --tint: var(--coat); } .b4 { --tint: var(--frost); }
 
   .how {
     font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Noto Sans KR", sans-serif;
@@ -107,7 +109,7 @@
 <div class="wrap">
   <p class="eyebrow">영어 원서 읽기</p>
   <h1>모르는 단어는<br>눌러서 확인하세요</h1>
-  <p class="lede">영어 소설 세 권의 전문입니다. 사전을 따로 찾지 않아도 됩니다. 읽던 자리는 저장되니 이어서 읽으면 됩니다.</p>
+  <p class="lede">영어 소설 네 권의 전문입니다. 사전을 따로 찾지 않아도 됩니다. 읽던 자리는 저장되니 이어서 읽으면 됩니다.</p>
 
   <hr class="rule">
 
@@ -125,14 +127,24 @@
     <a class="book b2" href="po.html">
       <div class="spine"></div>
       <div class="meat">
-        <span class="lvl">보통</span>
+        <span class="lvl">보통 · 해석 있음</span>
         <span class="ko">오페라의 유령</span>
         <span class="en">The Phantom of the Opera · 1911</span>
       </div>
       <div class="stat"><b>28장</b>8만 6천 단어</div>
     </a>
 
-    <a class="book b3" href="fr.html">
+    <a class="book b3" href="we.html">
+      <div class="spine"></div>
+      <div class="meat">
+        <span class="lvl">보통 · 해석 있음</span>
+        <span class="ko">젊은 베르테르의 슬픔</span>
+        <span class="en">The Sorrows of Young Werther · 1774</span>
+      </div>
+      <div class="stat"><b>20장</b>4만 3천 단어</div>
+    </a>
+
+    <a class="book b4" href="fr.html">
       <div class="spine"></div>
       <div class="meat">
         <span class="lvl">어려움 · 해석 있음</span>
@@ -150,7 +162,7 @@
       <li><span>·</span><span>노란 <b>수업</b> 표시가 붙은 단어는 선생님이 따로 적은 설명입니다. 그 단어들을 먼저 챙기세요.</span></li>
       <li><span>·</span><span><b>밑줄</b> 버튼으로 표시를 줄이거나 끌 수 있습니다. 그냥 책처럼 읽고 싶을 때 쓰세요.</span></li>
       <li><span>·</span><span><b>해석</b> 버튼을 누르면 영어 문장 바로 아래에 우리말 뜻이 붙습니다.
-        먼저 영어로 읽고, 막힐 때만 켜서 확인하세요. (프랑켄슈타인 앞부분에만 있습니다)</span></li>
+        먼저 영어로 읽고, 막힐 때만 켜서 확인하세요. (오페라의 유령은 25장까지 있습니다)</span></li>
       <li><span>·</span><span><b>책갈피</b>는 지금 보는 자리를 저장합니다. <b>기록</b>에서 다시 눌러 그 자리로 돌아갑니다.</span></li>
       <li><span>·</span><span><b>기록</b>에서 읽는 사람을 고르면 사람마다 읽던 자리와 책갈피가 따로 쌓입니다.
         한 대의 기기를 여럿이 쓸 때 쓰세요.</span></li>
@@ -160,7 +172,7 @@
   </div>
 
   <footer>
-    세 작품 모두 저작권이 만료된 퍼블릭 도메인 소설입니다. 원문은 Project Gutenberg에서 가져왔습니다.<br>
+    네 작품 모두 저작권이 만료된 퍼블릭 도메인 소설입니다. 원문은 Project Gutenberg에서 가져왔습니다.<br>
     단어 뜻은 수업용으로 작성한 설명과 영한사전 뜻을 함께 씁니다.<br>
     읽던 자리·책갈피·읽기 기록은 이 기기의 브라우저에만 저장됩니다. 기기를 바꾸면 따라오지 않습니다.
   </footer>
