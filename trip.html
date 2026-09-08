@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--ARTIFACT-START-->
+<title>청주발 항공권 살까 말까</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500;700;900&family=IBM+Plex+Sans+KR:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+:root{
+  --paper:#EFF2F3; --surface:#FFFFFF; --surface-2:#E4E9EB;
+  --ink:#0F1619; --ink-2:#4B5C62; --ink-3:#77878D;
+  --line:#D2DADD; --line-2:#BFC9CD;
+  --oka:#0B7A85; --oka-soft:#DFEFF0;
+  --twn:#B02A37; --twn-soft:#F8E3E4;
+  --g1:#5E6469; --g2:#7B8073; --g3:#8A8555; --g4:#54893E; --g5:#0E7A50;
+  --band:#C9D3D6; --band-2:#AEBBBF;
+  --shadow:0 1px 2px rgba(15,22,25,.06),0 8px 24px -14px rgba(15,22,25,.28);
+  --display:"Gothic A1","IBM Plex Sans KR",system-ui,sans-serif;
+  --body:"IBM Plex Sans KR","Gothic A1",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0D1315; --surface:#151E21; --surface-2:#1D282C;
+    --ink:#E9EFF0; --ink-2:#9FB0B5; --ink-3:#79898E;
+    --line:#26343880; --line-2:#33454A;
+    --oka:#43BAC4; --oka-soft:#0E2E31;
+    --twn:#EC7079; --twn-soft:#331519;
+    --g1:#8A9195; --g2:#9AA08F; --g3:#B5AE72; --g4:#7CB85C; --g5:#37B87D;
+    --band:#2A3639; --band-2:#3D4E53;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -14px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0D1315; --surface:#151E21; --surface-2:#1D282C;
+  --ink:#E9EFF0; --ink-2:#9FB0B5; --ink-3:#79898E;
+  --line:#26343880; --line-2:#33454A;
+  --oka:#43BAC4; --oka-soft:#0E2E31;
+  --twn:#EC7079; --twn-soft:#331519;
+  --g1:#8A9195; --g2:#9AA08F; --g3:#B5AE72; --g4:#7CB85C; --g5:#37B87D;
+  --band:#2A3639; --band-2:#3D4E53;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -14px rgba(0,0,0,.7);
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--body); font-size:16px; line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+.app{max-width:880px; margin:0 auto; padding:28px 20px 64px;
+  display:flex; flex-direction:column; gap:28px;
+  --accent:var(--oka); --accent-soft:var(--oka-soft);
+}
+.app[data-dest="twn"]{--accent:var(--twn); --accent-soft:var(--twn-soft)}
+
+.eyebrow{
+  font-family:var(--mono); font-size:11px; font-weight:600;
+  letter-spacing:.14em; text-transform:uppercase; color:var(--ink-3);
+  margin:0 0 10px;
+}
+h1{
+  font-family:var(--display); font-weight:900; font-size:clamp(30px,7vw,44px);
+  line-height:1.12; letter-spacing:-.02em; margin:0; text-wrap:balance;
+}
+.lede{margin:12px 0 0; color:var(--ink-2); font-size:15px; max-width:58ch}
+
+/* ---- controls ---- */
+.controls{display:flex; flex-direction:column; gap:14px}
+.ctl-row{display:flex; flex-wrap:wrap; gap:14px; align-items:flex-end}
+.field{display:flex; flex-direction:column; gap:7px; min-width:0}
+.ctl-row .field{flex:1 1 200px}
+.field-label{
+  font-family:var(--mono); font-size:11px; font-weight:600;
+  letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3);
+}
+.seg{display:flex; background:var(--surface-2); border-radius:9px; padding:3px; gap:3px}
+.seg button{
+  flex:1; appearance:none; border:0; background:transparent; cursor:pointer;
+  font-family:var(--body); font-size:14px; font-weight:600; color:var(--ink-2);
+  padding:9px 6px; border-radius:7px; transition:background .15s, color .15s;
+}
+.seg button:hover{color:var(--ink)}
+.seg button[aria-pressed="true"]{background:var(--surface); color:var(--accent); box-shadow:var(--shadow)}
+.seg button:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+
+.price-wrap{display:flex; align-items:center; gap:0; background:var(--surface);
+  border:1px solid var(--line-2); border-radius:9px; overflow:hidden}
+.price-wrap:focus-within{border-color:var(--accent); box-shadow:0 0 0 3px var(--accent-soft)}
+.won{padding:0 4px 0 13px; color:var(--ink-3); font-family:var(--mono); font-size:15px}
+#price{
+  flex:1; min-width:0; appearance:none; border:0; background:transparent; color:var(--ink);
+  font-family:var(--mono); font-weight:600; font-size:18px; font-variant-numeric:tabular-nums;
+  padding:11px 13px 11px 4px; outline:none;
+}
+#price::-webkit-outer-spin-button,#price::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+
+/* ---- verdict ---- */
+.verdict{
+  background:var(--surface); border:1px solid var(--line); border-radius:14px;
+  box-shadow:var(--shadow); overflow:hidden;
+}
+.verdict-rail{height:4px; background:var(--accent)}
+.verdict-body{padding:22px; display:flex; flex-direction:column; gap:20px}
+.verdict-top{display:flex; gap:20px; align-items:flex-start; flex-wrap:wrap}
+.score-block{display:flex; flex-direction:column; gap:9px; flex:0 0 auto}
+.score-num{
+  font-family:var(--display); font-weight:900; font-size:46px; line-height:1;
+  font-variant-numeric:tabular-nums; color:var(--grade);
+}
+.score-num small{font-family:var(--mono); font-size:15px; font-weight:500; color:var(--ink-3)}
+.meter{display:flex; gap:4px}
+.meter i{width:26px; height:8px; border-radius:2px; background:var(--band); display:block}
+.meter i.on{background:var(--grade)}
+.meter i.half{background:linear-gradient(90deg,var(--grade) 50%,var(--band) 50%)}
+.verdict-text{flex:1 1 260px; min-width:0; display:flex; flex-direction:column; gap:9px}
+.grade-pill{
+  align-self:flex-start; font-family:var(--display); font-weight:700; font-size:14px;
+  letter-spacing:.01em; color:#fff; background:var(--grade);
+  padding:5px 12px; border-radius:99px;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) .grade-pill{color:#0D1315}
+}
+:root[data-theme="dark"] .grade-pill{color:#0D1315}
+.msg{margin:0; font-size:15.5px; color:var(--ink); line-height:1.62}
+.msg-sub{margin:0; font-size:13.5px; color:var(--ink-2)}
+
+/* ---- band chart ---- */
+.band{display:flex; flex-direction:column; gap:9px}
+.band-head{display:flex; justify-content:space-between; align-items:baseline; gap:12px}
+.band-title{font-family:var(--mono); font-size:11px; font-weight:600; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--ink-3)}
+.band-delta{font-family:var(--mono); font-size:12.5px; font-weight:600;
+  font-variant-numeric:tabular-nums; color:var(--grade)}
+.track{position:relative; height:34px; margin-top:6px}
+.track-bar{position:absolute; left:0; right:0; top:13px; height:8px; border-radius:4px;
+  background:linear-gradient(90deg,var(--band-2),var(--band))}
+.avg-tick{position:absolute; top:6px; width:2px; height:22px; background:var(--ink-3); border-radius:1px}
+.avg-label{position:absolute; top:-4px; transform:translateX(-50%); font-family:var(--mono);
+  font-size:10.5px; color:var(--ink-3); white-space:nowrap}
+.you{position:absolute; top:2px; width:3px; height:30px; background:var(--grade);
+  border-radius:2px; transform:translateX(-1.5px); transition:left .28s cubic-bezier(.4,0,.2,1)}
+.you::after{content:""; position:absolute; left:50%; bottom:-5px; transform:translateX(-50%);
+  width:11px; height:11px; border-radius:50%; background:var(--grade);
+  border:2.5px solid var(--surface)}
+.band-scale{display:flex; justify-content:space-between; font-family:var(--mono);
+  font-size:12px; font-variant-numeric:tabular-nums; color:var(--ink-2)}
+.band-scale b{display:block; font-weight:600; color:var(--ink)}
+.band-scale span{font-size:10.5px; color:var(--ink-3); letter-spacing:.06em}
+.band-scale .r{text-align:right}
+.note{margin:0; font-size:13.5px; color:var(--ink-2); padding-left:12px;
+  border-left:2px solid var(--accent)}
+
+/* ---- matrix ---- */
+h2{font-family:var(--display); font-weight:700; font-size:19px; letter-spacing:-.01em;
+  margin:0 0 4px}
+.section{display:flex; flex-direction:column; gap:14px}
+.section-sub{margin:0; font-size:13.5px; color:var(--ink-2)}
+.matrix{display:grid; grid-template-columns:repeat(3,1fr); gap:10px}
+@media (max-width:560px){.matrix{grid-template-columns:1fr 1fr}}
+.cell{
+  appearance:none; text-align:left; cursor:pointer; font-family:var(--body);
+  background:var(--surface); border:1px solid var(--line); border-radius:11px;
+  padding:13px 13px 14px; display:flex; flex-direction:column; gap:7px;
+  transition:border-color .15s, transform .15s;
+}
+.cell:hover{border-color:var(--line-2); transform:translateY(-1px)}
+.cell:focus-visible{outline:2px solid var(--cellhue); outline-offset:2px}
+.cell[aria-current="true"]{border-color:var(--cellhue); box-shadow:0 0 0 1px var(--cellhue)}
+.cell-head{display:flex; align-items:center; gap:6px}
+.cell-dot{width:7px; height:7px; border-radius:50%; background:var(--cellhue); flex:0 0 auto}
+.cell-name{font-family:var(--mono); font-size:11px; font-weight:600; letter-spacing:.07em;
+  text-transform:uppercase; color:var(--ink-3)}
+.cell-low{font-family:var(--display); font-weight:900; font-size:21px; line-height:1;
+  font-variant-numeric:tabular-nums; color:var(--ink)}
+.cell-avg{font-family:var(--mono); font-size:11.5px; font-variant-numeric:tabular-nums;
+  color:var(--ink-3)}
+.cell-tag{font-size:12px; color:var(--ink-2); margin-top:1px}
+.cell-best{font-family:var(--mono); font-size:10px; font-weight:600; letter-spacing:.08em;
+  color:var(--cellhue)}
+
+/* ---- routes ---- */
+.routes{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+@media (max-width:560px){.routes{grid-template-columns:1fr}}
+.route{background:var(--surface); border:1px solid var(--line); border-radius:11px; padding:14px}
+.route h3{margin:0 0 8px; font-family:var(--display); font-weight:700; font-size:15px;
+  color:var(--rhue); display:flex; align-items:baseline; gap:7px}
+.route h3 code{font-family:var(--mono); font-size:11px; font-weight:600; color:var(--ink-3)}
+.route dl{margin:0; display:grid; grid-template-columns:auto 1fr; gap:5px 12px; font-size:13px}
+.route dt{font-family:var(--mono); font-size:10.5px; letter-spacing:.06em; color:var(--ink-3);
+  text-transform:uppercase; padding-top:3px}
+.route dd{margin:0; color:var(--ink-2)}
+
+footer{border-top:1px solid var(--line); padding-top:18px; display:flex;
+  flex-direction:column; gap:9px}
+footer p{margin:0; font-size:12.5px; color:var(--ink-3); line-height:1.6}
+footer a{color:var(--ink-2); text-decoration:underline; text-underline-offset:2px}
+footer a:hover{color:var(--ink)}
+.srcs{display:flex; flex-wrap:wrap; gap:4px 14px; font-family:var(--mono); font-size:11.5px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important; animation:none!important}}
+</style>
+</head>
+<body>
+<div class="app" id="app" data-dest="oka">
+
+  <header>
+    <p class="eyebrow">청주국제공항 CJJ · 왕복 1인 · 2026</p>
+    <h1>청주발 항공권 살까 말까</h1>
+    <p class="lede">지금 보고 있는 값을 넣으면, 그 달 시세 안에서 어디쯤인지와 사도 좋을지를 추천도로 알려줍니다. 오키나와와 대만, 10·11·12월을 따로 봅니다.</p>
+  </header>
+
+  <div class="controls">
+    <div class="ctl-row">
+      <div class="field">
+        <span class="field-label" id="lb-dest">목적지</span>
+        <div class="seg" role="group" aria-labelledby="lb-dest">
+          <button type="button" data-dest="oka" aria-pressed="true">오키나와</button>
+          <button type="button" data-dest="twn" aria-pressed="false">대만</button>
+        </div>
+      </div>
+      <div class="field">
+        <span class="field-label" id="lb-month">출발 달</span>
+        <div class="seg" role="group" aria-labelledby="lb-month">
+          <button type="button" data-month="10" aria-pressed="false">10월</button>
+          <button type="button" data-month="11" aria-pressed="true">11월</button>
+          <button type="button" data-month="12" aria-pressed="false">12월</button>
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <label class="field-label" for="price">지금 보고 있는 왕복 값</label>
+      <div class="price-wrap">
+        <span class="won" aria-hidden="true">₩</span>
+        <input id="price" type="number" inputmode="numeric" step="1000" min="0" value="245000">
+      </div>
+    </div>
+  </div>
+
+  <div class="verdict">
+    <div class="verdict-rail"></div>
+    <div class="verdict-body">
+      <div class="verdict-top">
+        <div class="score-block">
+          <div class="score-num" id="score">4.0<small> / 5</small></div>
+          <div class="meter" id="meter" aria-hidden="true"></div>
+        </div>
+        <div class="verdict-text">
+          <span class="grade-pill" id="grade">좋은 가격</span>
+          <p class="msg" id="msg"></p>
+          <p class="msg-sub" id="msgsub"></p>
+        </div>
+      </div>
+
+      <div class="band">
+        <div class="band-head">
+          <span class="band-title" id="bandtitle">11월 오키나와 시세 밴드</span>
+          <span class="band-delta" id="delta"></span>
+        </div>
+        <div class="track">
+          <div class="track-bar"></div>
+          <div class="avg-tick" id="avgtick"></div>
+          <div class="avg-label" id="avglabel">평균</div>
+          <div class="you" id="you"></div>
+        </div>
+        <div class="band-scale">
+          <div><span>최저</span><b id="low">–</b></div>
+          <div class="r"><span>고가</span><b id="high">–</b></div>
+        </div>
+      </div>
+
+      <p class="note" id="note"></p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div>
+      <h2>여섯 달치 한눈에</h2>
+      <p class="section-sub">칸을 누르면 위 계산기가 그 조합으로 바뀝니다. 큰 숫자가 그 달 최저가, 작은 숫자가 평균가입니다.</p>
+    </div>
+    <div class="matrix" id="matrix"></div>
+  </section>
+
+  <section class="section">
+    <h2>청주에서 뜨는 편</h2>
+    <div class="routes" id="routes"></div>
+  </section>
+
+  <footer>
+    <p><strong>시세 밴드는 참고용 기준선입니다.</strong> 항공권 비교 사이트에 공개된 청주 출발 노선 실제 가격대에 달별 성수기·비수기 폭을 얹어 잡은 값이라, 실시간 조회 결과와는 다를 수 있습니다. 결제 전 반드시 실제 값을 확인하세요. 모든 금액은 유류할증료·세금 포함 1인 왕복 기준입니다.</p>
+    <p class="srcs">
+      <a href="https://www.kayak.co.kr/%ED%95%AD%EA%B3%B5%EA%B6%8C/%EC%B2%AD%EC%A3%BC%EA%B5%AD%EC%A0%9C%EA%B3%B5%ED%95%AD-CJJ/%EC%98%A4%ED%82%A4%EB%82%98%EC%99%80-%EB%82%98%ED%95%98%EA%B3%B5%ED%95%AD-OKA" target="_blank" rel="noopener">KAYAK CJJ–OKA</a>
+      <a href="https://www.kayak.co.kr/%ED%95%AD%EA%B3%B5%EA%B6%8C/%EC%B2%AD%EC%A3%BC%EA%B5%AD%EC%A0%9C%EA%B3%B5%ED%95%AD-CJJ/%EB%8C%80%EB%A7%8C-TW0" target="_blank" rel="noopener">KAYAK CJJ–대만</a>
+      <a href="https://www.hotelscombined.co.kr/flight-routes/Cheongju-CJJ/Taipei-City-Taiwan-Taoyuan-Intl-TPE.ksp" target="_blank" rel="noopener">호텔스컴바인 CJJ–TPE</a>
+      <a href="https://www.airport.co.kr/cheongju/cms/frCon/index.do?MENU_ID=110&amp;CONTENTS_NO=1" target="_blank" rel="noopener">청주공항 운항스케줄</a>
+    </p>
+  </footer>
+</div>
+
+<script>
+"use strict";
+
+var DATA = {
+  oka: {
+    name: "오키나와", city: "나하", iata: "OKA", hue: "var(--oka)",
+    airlines: "에어로케이 · 제주항공 · 이스타항공",
+    duration: "2시간 20분 안팎",
+    tip: "화요일 출발편이 가장 싸게 잡힙니다.",
+    months: {
+      "10": { low: 235000, avg: 318000, high: 430000, tag: "연휴 낀 성수",
+        note: "태풍은 끝물이고 아직 물놀이가 되는 달. 개천절·한글날 연휴에 걸린 날짜만 값이 크게 튑니다." },
+      "11": { low: 199000, avg: 268000, high: 360000, tag: "세 달 중 최저",
+        note: "평균 24도, 비도 사람도 적은 오키나와 최적기인데 값은 세 달 중 가장 낮습니다." },
+      "12": { low: 218000, avg: 295000, high: 420000, tag: "24일 전후 급등",
+        note: "바다는 접고 관광 위주로 도는 달. 중순까지는 싸지만 크리스마스 전후로 갑자기 뜁니다." }
+    },
+    msgs: {
+      5: "지금 잡으세요. 이 값이면 왕복 항공권 값에 츄라우미 수족관 입장료까지 얹힌 셈입니다.",
+      4: "좋은 값입니다. 아낀 만큼이면 나하 국제거리 숙소를 하루 더 잡을 수 있습니다.",
+      3: "무난한 값입니다. 날짜가 정해졌다면 결제하고, 여유가 있다면 화요일 출발로 한 번 더 검색해 보세요.",
+      2: "조금 비쌉니다. 오키나와는 태풍이 끝나는 11월이 가장 싸게 내려가니 서두를 이유가 적습니다.",
+      1: "지금은 아닙니다. 이 값이면 렌터카 사흘 값이 통째로 항공권에 얹힌 셈입니다."
+    }
+  },
+  twn: {
+    name: "대만", city: "타이베이", iata: "TPE", hue: "var(--twn)",
+    airlines: "에어로케이 RF511 · 이스타항공 ZE781 · 중국동방항공",
+    duration: "약 2시간 40분",
+    tip: "새벽 출발하는 ZE781편이 눈에 띄게 쌉니다.",
+    months: {
+      "10": { low: 249000, avg: 335000, high: 455000, tag: "쌍십절 혼잡",
+        note: "쌍십절(10월 10일) 연휴에 현지 수요까지 몰려서 값과 인파가 함께 오르는 달입니다." },
+      "11": { low: 223000, avg: 292000, high: 390000, tag: "세 달 중 최저",
+        note: "습기가 빠져 야시장 돌기 가장 좋은 달이고, 세 달 가운데 값도 가장 낮습니다." },
+      "12": { low: 258000, avg: 352000, high: 480000, tag: "세 달 중 최고",
+        note: "따뜻한 연말 목적지로 수요가 몰려 세 달 중 값이 가장 높게 형성됩니다." }
+    },
+    msgs: {
+      5: "바로 결제하세요. 아낀 값이면 스린 야시장에서 사흘 내내 먹고도 남습니다.",
+      4: "괜찮은 값입니다. 지우펀 오가는 택시비 정도는 여기서 벌어 둔 셈입니다.",
+      3: "평범한 값입니다. 대만은 편별 값 차이가 커서, 새벽 출발 ZE781편을 한 번 비교해 볼 만합니다.",
+      2: "서두르지 마세요. 대만은 덥지도 춥지도 않은 11월에 값이 가장 낮게 내려갑니다.",
+      1: "이 값엔 사지 마세요. 펑리수를 몇 상자 사도 차액이 안 메워집니다."
+    }
+  }
+};
+
+var GRADES = {
+  5: { label: "지금 사세요", color: "var(--g5)" },
+  4: { label: "좋은 가격",   color: "var(--g4)" },
+  3: { label: "무난",        color: "var(--g3)" },
+  2: { label: "조금 더 대기", color: "var(--g2)" },
+  1: { label: "지금은 비쌈",  color: "var(--g1)" }
+};
+
+var MONTHS = ["10", "11", "12"];
+var state = { dest: "oka", month: "11" };
+
+var $ = function (id) { return document.getElementById(id); };
+var won = function (n) { return Math.round(n).toLocaleString("ko-KR") + "원"; };
+
+function scoreFor(price, m) {
+  var t = (price - m.low) / (m.high - m.low);
+  if (t < 0) t = 0;
+  if (t > 1) t = 1;
+  return Math.round((5 - 4 * t) * 10) / 10;
+}
+function gradeFor(s) {
+  if (s >= 4.5) return 5;
+  if (s >= 3.5) return 4;
+  if (s >= 2.5) return 3;
+  if (s >= 1.5) return 2;
+  return 1;
+}
+
+function buildMatrix() {
+  var wrap = $("matrix");
+  wrap.innerHTML = "";
+  ["oka", "twn"].forEach(function (d) {
+    MONTHS.forEach(function (mo) {
+      var m = DATA[d].months[mo];
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "cell";
+      b.style.setProperty("--cellhue", DATA[d].hue);
+      b.dataset.dest = d;
+      b.dataset.month = mo;
+      b.innerHTML =
+        '<span class="cell-head"><i class="cell-dot"></i>' +
+        '<span class="cell-name">' + DATA[d].name + " " + mo + "월</span></span>" +
+        '<span class="cell-low">' + m.low.toLocaleString("ko-KR") + "</span>" +
+        '<span class="cell-avg">평균 ' + m.avg.toLocaleString("ko-KR") + "</span>" +
+        '<span class="cell-tag">' + m.tag + "</span>";
+      b.addEventListener("click", function () {
+        state.dest = d;
+        state.month = mo;
+        syncSegments();
+        render();
+      });
+      wrap.appendChild(b);
+    });
+  });
+}
+
+function buildRoutes() {
+  var wrap = $("routes");
+  wrap.innerHTML = "";
+  ["oka", "twn"].forEach(function (d) {
+    var r = DATA[d];
+    var el = document.createElement("div");
+    el.className = "route";
+    el.style.setProperty("--rhue", r.hue);
+    el.innerHTML =
+      "<h3>" + r.city + " <code>CJJ → " + r.iata + "</code></h3>" +
+      "<dl>" +
+      "<dt>항공사</dt><dd>" + r.airlines + "</dd>" +
+      "<dt>비행</dt><dd>" + r.duration + "</dd>" +
+      "<dt>요령</dt><dd>" + r.tip + "</dd>" +
+      "</dl>";
+    wrap.appendChild(el);
+  });
+}
+
+function syncSegments() {
+  document.querySelectorAll("[data-dest]").forEach(function (b) {
+    if (b.tagName === "BUTTON" && b.parentElement.classList.contains("seg")) {
+      b.setAttribute("aria-pressed", String(b.dataset.dest === state.dest));
+    }
+  });
+  document.querySelectorAll(".seg [data-month]").forEach(function (b) {
+    b.setAttribute("aria-pressed", String(b.dataset.month === state.month));
+  });
+}
+
+function render() {
+  var d = DATA[state.dest];
+  var m = d.months[state.month];
+  var price = parseInt($("price").value, 10);
+  if (isNaN(price) || price <= 0) price = m.avg;
+
+  var s = scoreFor(price, m);
+  var g = gradeFor(s);
+  var app = $("app");
+  app.dataset.dest = state.dest;
+  app.style.setProperty("--grade", GRADES[g].color);
+
+  $("score").innerHTML = s.toFixed(1) + "<small> / 5</small>";
+  $("grade").textContent = GRADES[g].label;
+  $("msg").textContent = d.msgs[g];
+
+  var vsAvg = price - m.avg;
+  $("msgsub").textContent =
+    vsAvg === 0 ? "이 달 평균가와 정확히 같습니다."
+      : vsAvg < 0 ? "이 달 평균보다 " + won(-vsAvg) + " 쌉니다."
+        : "이 달 평균보다 " + won(vsAvg) + " 비쌉니다.";
+
+  var meter = $("meter");
+  meter.innerHTML = "";
+  for (var i = 1; i <= 5; i++) {
+    var bar = document.createElement("i");
+    if (s >= i) bar.className = "on";
+    else if (s > i - 1) bar.className = "half";
+    meter.appendChild(bar);
+  }
+
+  $("bandtitle").textContent = state.month + "월 " + d.name + " 시세 밴드";
+  $("delta").textContent = (vsAvg <= 0 ? "평균 대비 −" : "평균 대비 +") +
+    Math.abs(vsAvg).toLocaleString("ko-KR");
+  $("low").textContent = won(m.low);
+  $("high").textContent = won(m.high);
+
+  var span = m.high - m.low;
+  var avgPct = ((m.avg - m.low) / span) * 100;
+  $("avgtick").style.left = avgPct + "%";
+  $("avglabel").style.left = avgPct + "%";
+  $("avglabel").textContent = "평균 " + m.avg.toLocaleString("ko-KR");
+
+  var yPct = ((price - m.low) / span) * 100;
+  if (yPct < 0) yPct = 0;
+  if (yPct > 100) yPct = 100;
+  $("you").style.left = yPct + "%";
+  $("you").title = "입력한 값 " + won(price);
+
+  $("note").textContent = m.note;
+
+  document.querySelectorAll(".cell").forEach(function (c) {
+    c.setAttribute("aria-current",
+      String(c.dataset.dest === state.dest && c.dataset.month === state.month));
+  });
+}
+
+document.querySelectorAll(".seg button").forEach(function (b) {
+  b.addEventListener("click", function () {
+    if (b.dataset.dest) state.dest = b.dataset.dest;
+    if (b.dataset.month) state.month = b.dataset.month;
+    syncSegments();
+    render();
+  });
+});
+$("price").addEventListener("input", render);
+
+buildMatrix();
+buildRoutes();
+syncSegments();
+render();
+</script>
+<!--ARTIFACT-END-->
+</body>
+</html>
