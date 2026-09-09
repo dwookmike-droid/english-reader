@@ -26,7 +26,7 @@
   :root:not([data-theme="light"]){
     --paper:#0D1315; --surface:#151E21; --surface-2:#1D282C;
     --ink:#E9EFF0; --ink-2:#9FB0B5; --ink-3:#79898E;
-    --line:#26343880; --line-2:#33454A;
+    --line:#263438; --line-2:#33454A;
     --oka:#43BAC4; --oka-soft:#0E2E31;
     --twn:#EC7079; --twn-soft:#331519;
     --g1:#8A9195; --g2:#9AA08F; --g3:#B5AE72; --g4:#7CB85C; --g5:#37B87D;
@@ -37,7 +37,7 @@
 :root[data-theme="dark"]{
   --paper:#0D1315; --surface:#151E21; --surface-2:#1D282C;
   --ink:#E9EFF0; --ink-2:#9FB0B5; --ink-3:#79898E;
-  --line:#26343880; --line-2:#33454A;
+  --line:#263438; --line-2:#33454A;
   --oka:#43BAC4; --oka-soft:#0E2E31;
   --twn:#EC7079; --twn-soft:#331519;
   --g1:#8A9195; --g2:#9AA08F; --g3:#B5AE72; --g4:#7CB85C; --g5:#37B87D;
@@ -53,7 +53,7 @@ body{
   -webkit-font-smoothing:antialiased;
 }
 .app{max-width:880px; margin:0 auto; padding:28px 20px 64px;
-  display:flex; flex-direction:column; gap:28px;
+  display:flex; flex-direction:column; gap:26px;
   --accent:var(--oka); --accent-soft:var(--oka-soft);
 }
 .app[data-dest="twn"]{--accent:var(--twn); --accent-soft:var(--twn-soft)}
@@ -83,12 +83,15 @@ h1{
   flex:1; appearance:none; border:0; background:transparent; cursor:pointer;
   font-family:var(--body); font-size:14px; font-weight:600; color:var(--ink-2);
   padding:9px 6px; border-radius:7px; transition:background .15s, color .15s;
+  display:flex; flex-direction:column; align-items:center; gap:1px; line-height:1.25;
 }
+.seg button em{font-family:var(--mono); font-style:normal; font-size:10px;
+  font-weight:600; letter-spacing:.09em; opacity:.7}
 .seg button:hover{color:var(--ink)}
 .seg button[aria-pressed="true"]{background:var(--surface); color:var(--accent); box-shadow:var(--shadow)}
 .seg button:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
 
-.price-wrap{display:flex; align-items:center; gap:0; background:var(--surface);
+.price-wrap{display:flex; align-items:center; background:var(--surface);
   border:1px solid var(--line-2); border-radius:9px; overflow:hidden}
 .price-wrap:focus-within{border-color:var(--accent); box-shadow:0 0 0 3px var(--accent-soft)}
 .won{padding:0 4px 0 13px; color:var(--ink-3); font-family:var(--mono); font-size:15px}
@@ -99,66 +102,95 @@ h1{
 }
 #price::-webkit-outer-spin-button,#price::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
 
-/* ---- verdict ---- */
+/* ---- verdict card ---- */
 .verdict{
   background:var(--surface); border:1px solid var(--line); border-radius:14px;
   box-shadow:var(--shadow); overflow:hidden;
 }
 .verdict-rail{height:4px; background:var(--accent)}
-.verdict-body{padding:22px; display:flex; flex-direction:column; gap:20px}
-.verdict-top{display:flex; gap:20px; align-items:flex-start; flex-wrap:wrap}
-.score-block{display:flex; flex-direction:column; gap:9px; flex:0 0 auto}
-.score-num{
-  font-family:var(--display); font-weight:900; font-size:46px; line-height:1;
-  font-variant-numeric:tabular-nums; color:var(--grade);
+
+/* route bar: origin vs destination */
+.route-bar{
+  background:var(--accent-soft); border-bottom:1px solid var(--line);
+  padding:14px 22px; display:flex; align-items:center; justify-content:space-between;
+  gap:14px; flex-wrap:wrap;
 }
-.score-num small{font-family:var(--mono); font-size:15px; font-weight:500; color:var(--ink-3)}
-.meter{display:flex; gap:4px}
-.meter i{width:26px; height:8px; border-radius:2px; background:var(--band); display:block}
-.meter i.on{background:var(--grade)}
-.meter i.half{background:linear-gradient(90deg,var(--grade) 50%,var(--band) 50%)}
-.verdict-text{flex:1 1 260px; min-width:0; display:flex; flex-direction:column; gap:9px}
+.od{display:flex; align-items:center; gap:14px}
+.od-node{display:flex; flex-direction:column; gap:2px; min-width:0}
+.od-role{
+  font-family:var(--mono); font-size:9.5px; font-weight:600; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--ink-3);
+}
+.od-city{font-family:var(--display); font-weight:900; font-size:19px; line-height:1.05; color:var(--ink)}
+.od-code{font-family:var(--mono); font-size:11px; font-weight:600; letter-spacing:.12em; color:var(--ink-3)}
+.od-to .od-city,.od-to .od-code{color:var(--accent)}
+.od-to .od-role{color:var(--accent); opacity:.75}
+.od-arrow{color:var(--accent); flex:0 0 auto; align-self:center; margin-top:8px}
+.route-meta{
+  font-family:var(--mono); font-size:11.5px; font-weight:600; letter-spacing:.06em;
+  color:var(--ink-2); text-align:right; line-height:1.5;
+}
+
+.verdict-body{padding:20px 22px 22px; display:flex; flex-direction:column; gap:18px}
+
+/* headline verdict */
+.call{display:flex; align-items:center; gap:14px; flex-wrap:wrap}
+.score-num{
+  font-family:var(--display); font-weight:900; font-size:40px; line-height:1;
+  font-variant-numeric:tabular-nums; color:var(--grade); flex:0 0 auto;
+}
+.score-num small{font-family:var(--mono); font-size:14px; font-weight:500; color:var(--ink-3)}
+.call-text{display:flex; flex-direction:column; gap:5px; min-width:0; flex:1 1 200px}
 .grade-pill{
   align-self:flex-start; font-family:var(--display); font-weight:700; font-size:14px;
-  letter-spacing:.01em; color:#fff; background:var(--grade);
-  padding:5px 12px; border-radius:99px;
+  color:#fff; background:var(--grade); padding:5px 12px; border-radius:99px;
 }
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]) .grade-pill{color:#0D1315}
-}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .grade-pill{color:#0D1315}}
 :root[data-theme="dark"] .grade-pill{color:#0D1315}
-.msg{margin:0; font-size:15.5px; color:var(--ink); line-height:1.62}
-.msg-sub{margin:0; font-size:13.5px; color:var(--ink-2)}
+.call-sub{margin:0; font-size:14px; color:var(--ink-2); font-variant-numeric:tabular-nums}
+.meter{display:flex; gap:4px; margin-top:7px}
+.meter i{width:24px; height:7px; border-radius:2px; background:var(--band); display:block}
+.meter i.on{background:var(--grade)}
+.meter i.half{background:linear-gradient(90deg,var(--grade) 50%,var(--band) 50%)}
 
-/* ---- band chart ---- */
-.band{display:flex; flex-direction:column; gap:9px}
-.band-head{display:flex; justify-content:space-between; align-items:baseline; gap:12px}
-.band-title{font-family:var(--mono); font-size:11px; font-weight:600; letter-spacing:.1em;
+/* three-figure strip */
+.stats{display:grid; grid-template-columns:repeat(3,1fr); border:1px solid var(--line);
+  border-radius:10px; overflow:hidden}
+.stat{padding:11px 13px; display:flex; flex-direction:column; gap:3px;
+  border-left:1px solid var(--line)}
+.stat:first-child{border-left:0}
+.stat span{font-family:var(--mono); font-size:9.5px; font-weight:600; letter-spacing:.12em;
   text-transform:uppercase; color:var(--ink-3)}
-.band-delta{font-family:var(--mono); font-size:12.5px; font-weight:600;
-  font-variant-numeric:tabular-nums; color:var(--grade)}
-.track{position:relative; height:34px; margin-top:6px}
-.track-bar{position:absolute; left:0; right:0; top:13px; height:8px; border-radius:4px;
+.stat b{font-family:var(--mono); font-size:15px; font-weight:600;
+  font-variant-numeric:tabular-nums; color:var(--ink)}
+.stat.is-you b{color:var(--grade)}
+
+/* band chart */
+.band{display:flex; flex-direction:column; gap:8px}
+.band-title{font-family:var(--mono); font-size:10.5px; font-weight:600; letter-spacing:.11em;
+  text-transform:uppercase; color:var(--ink-3)}
+.track{position:relative; height:36px; margin-top:8px}
+.track-bar{position:absolute; left:0; right:0; top:14px; height:8px; border-radius:4px;
   background:linear-gradient(90deg,var(--band-2),var(--band))}
-.avg-tick{position:absolute; top:6px; width:2px; height:22px; background:var(--ink-3); border-radius:1px}
-.avg-label{position:absolute; top:-4px; transform:translateX(-50%); font-family:var(--mono);
+.avg-tick{position:absolute; top:7px; width:2px; height:22px; background:var(--ink-3); border-radius:1px}
+.avg-label{position:absolute; top:-5px; transform:translateX(-50%); font-family:var(--mono);
   font-size:10.5px; color:var(--ink-3); white-space:nowrap}
-.you{position:absolute; top:2px; width:3px; height:30px; background:var(--grade);
+.you{position:absolute; top:3px; width:3px; height:30px; background:var(--grade);
   border-radius:2px; transform:translateX(-1.5px); transition:left .28s cubic-bezier(.4,0,.2,1)}
 .you::after{content:""; position:absolute; left:50%; bottom:-5px; transform:translateX(-50%);
   width:11px; height:11px; border-radius:50%; background:var(--grade);
   border:2.5px solid var(--surface)}
 .band-scale{display:flex; justify-content:space-between; font-family:var(--mono);
-  font-size:12px; font-variant-numeric:tabular-nums; color:var(--ink-2)}
-.band-scale b{display:block; font-weight:600; color:var(--ink)}
-.band-scale span{font-size:10.5px; color:var(--ink-3); letter-spacing:.06em}
-.band-scale .r{text-align:right}
+  font-size:11px; font-variant-numeric:tabular-nums; color:var(--ink-2)}
+
+/* flavor message + month note */
+.msg{margin:0; font-size:15px; line-height:1.6; color:var(--ink);
+  padding:12px 14px; background:var(--accent-soft); border-radius:10px}
 .note{margin:0; font-size:13.5px; color:var(--ink-2); padding-left:12px;
   border-left:2px solid var(--accent)}
 
 /* ---- matrix ---- */
-h2{font-family:var(--display); font-weight:700; font-size:19px; letter-spacing:-.01em;
-  margin:0 0 4px}
+h2{font-family:var(--display); font-weight:700; font-size:19px; letter-spacing:-.01em; margin:0 0 4px}
 .section{display:flex; flex-direction:column; gap:14px}
 .section-sub{margin:0; font-size:13.5px; color:var(--ink-2)}
 .matrix{display:grid; grid-template-columns:repeat(3,1fr); gap:10px}
@@ -166,31 +198,28 @@ h2{font-family:var(--display); font-weight:700; font-size:19px; letter-spacing:-
 .cell{
   appearance:none; text-align:left; cursor:pointer; font-family:var(--body);
   background:var(--surface); border:1px solid var(--line); border-radius:11px;
-  padding:13px 13px 14px; display:flex; flex-direction:column; gap:7px;
+  padding:12px 13px 13px; display:flex; flex-direction:column; gap:6px;
   transition:border-color .15s, transform .15s;
 }
 .cell:hover{border-color:var(--line-2); transform:translateY(-1px)}
 .cell:focus-visible{outline:2px solid var(--cellhue); outline-offset:2px}
 .cell[aria-current="true"]{border-color:var(--cellhue); box-shadow:0 0 0 1px var(--cellhue)}
-.cell-head{display:flex; align-items:center; gap:6px}
-.cell-dot{width:7px; height:7px; border-radius:50%; background:var(--cellhue); flex:0 0 auto}
-.cell-name{font-family:var(--mono); font-size:11px; font-weight:600; letter-spacing:.07em;
-  text-transform:uppercase; color:var(--ink-3)}
+.cell-route{font-family:var(--mono); font-size:10px; font-weight:600; letter-spacing:.1em;
+  color:var(--cellhue)}
+.cell-when{font-family:var(--display); font-weight:700; font-size:13px; color:var(--ink-2)}
 .cell-low{font-family:var(--display); font-weight:900; font-size:21px; line-height:1;
   font-variant-numeric:tabular-nums; color:var(--ink)}
-.cell-avg{font-family:var(--mono); font-size:11.5px; font-variant-numeric:tabular-nums;
-  color:var(--ink-3)}
+.cell-avg{font-family:var(--mono); font-size:11px; font-variant-numeric:tabular-nums; color:var(--ink-3)}
 .cell-tag{font-size:12px; color:var(--ink-2); margin-top:1px}
-.cell-best{font-family:var(--mono); font-size:10px; font-weight:600; letter-spacing:.08em;
-  color:var(--cellhue)}
 
 /* ---- routes ---- */
 .routes{display:grid; grid-template-columns:1fr 1fr; gap:10px}
 @media (max-width:560px){.routes{grid-template-columns:1fr}}
 .route{background:var(--surface); border:1px solid var(--line); border-radius:11px; padding:14px}
-.route h3{margin:0 0 8px; font-family:var(--display); font-weight:700; font-size:15px;
-  color:var(--rhue); display:flex; align-items:baseline; gap:7px}
-.route h3 code{font-family:var(--mono); font-size:11px; font-weight:600; color:var(--ink-3)}
+.route h3{margin:0 0 9px; font-family:var(--mono); font-weight:600; font-size:12px;
+  letter-spacing:.1em; color:var(--rhue)}
+.route h3 b{font-family:var(--display); font-weight:700; font-size:15px; letter-spacing:0;
+  color:var(--ink)}
 .route dl{margin:0; display:grid; grid-template-columns:auto 1fr; gap:5px 12px; font-size:13px}
 .route dt{font-family:var(--mono); font-size:10.5px; letter-spacing:.06em; color:var(--ink-3);
   text-transform:uppercase; padding-top:3px}
@@ -209,22 +238,22 @@ footer a:hover{color:var(--ink)}
 <div class="app" id="app" data-dest="oka">
 
   <header>
-    <p class="eyebrow">청주국제공항 CJJ · 왕복 1인 · 2026</p>
+    <p class="eyebrow">출발지 고정 · 청주국제공항 CJJ</p>
     <h1>청주발 항공권 살까 말까</h1>
-    <p class="lede">지금 보고 있는 값을 넣으면, 그 달 시세 안에서 어디쯤인지와 사도 좋을지를 추천도로 알려줍니다. 오키나와와 대만, 10·11·12월을 따로 봅니다.</p>
+    <p class="lede">보고 있는 왕복 값을 넣으면 그 노선·그 달 시세에서 어디쯤인지와 사도 좋을지를 추천도로 알려줍니다.</p>
   </header>
 
   <div class="controls">
     <div class="ctl-row">
       <div class="field">
-        <span class="field-label" id="lb-dest">목적지</span>
+        <span class="field-label" id="lb-dest">어디로</span>
         <div class="seg" role="group" aria-labelledby="lb-dest">
-          <button type="button" data-dest="oka" aria-pressed="true">오키나와</button>
-          <button type="button" data-dest="twn" aria-pressed="false">대만</button>
+          <button type="button" data-dest="oka" aria-pressed="true">오키나와 <em>CJJ → OKA</em></button>
+          <button type="button" data-dest="twn" aria-pressed="false">대만 <em>CJJ → TPE</em></button>
         </div>
       </div>
       <div class="field">
-        <span class="field-label" id="lb-month">출발 달</span>
+        <span class="field-label" id="lb-month">언제</span>
         <div class="seg" role="group" aria-labelledby="lb-month">
           <button type="button" data-month="10" aria-pressed="false">10월</button>
           <button type="button" data-month="11" aria-pressed="true">11월</button>
@@ -243,24 +272,45 @@ footer a:hover{color:var(--ink)}
 
   <div class="verdict">
     <div class="verdict-rail"></div>
-    <div class="verdict-body">
-      <div class="verdict-top">
-        <div class="score-block">
-          <div class="score-num" id="score">4.0<small> / 5</small></div>
-          <div class="meter" id="meter" aria-hidden="true"></div>
+
+    <div class="route-bar">
+      <div class="od">
+        <div class="od-node">
+          <span class="od-role">출발</span>
+          <span class="od-city">청주</span>
+          <span class="od-code">CJJ</span>
         </div>
-        <div class="verdict-text">
+        <svg class="od-arrow" viewBox="0 0 60 14" width="60" height="14" aria-hidden="true">
+          <line x1="0" y1="7" x2="46" y2="7" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 3"></line>
+          <path d="M60 7 L47 1.5 L50 7 L47 12.5 Z" fill="currentColor"></path>
+        </svg>
+        <div class="od-node od-to">
+          <span class="od-role">도착</span>
+          <span class="od-city" id="odCity">나하</span>
+          <span class="od-code" id="odCode">OKA</span>
+        </div>
+      </div>
+      <div class="route-meta" id="routeMeta">11월 출발<br>왕복 1인</div>
+    </div>
+
+    <div class="verdict-body">
+      <div class="call">
+        <div class="score-num" id="score">4.0<small> / 5</small></div>
+        <div class="call-text">
           <span class="grade-pill" id="grade">좋은 가격</span>
-          <p class="msg" id="msg"></p>
-          <p class="msg-sub" id="msgsub"></p>
+          <p class="call-sub" id="callsub"></p>
+          <div class="meter" id="meter" aria-hidden="true"></div>
         </div>
       </div>
 
+      <div class="stats">
+        <div class="stat is-you"><span>넣은 값</span><b id="stYou">–</b></div>
+        <div class="stat"><span>이 달 최저</span><b id="stLow">–</b></div>
+        <div class="stat"><span>이 달 평균</span><b id="stAvg">–</b></div>
+      </div>
+
       <div class="band">
-        <div class="band-head">
-          <span class="band-title" id="bandtitle">11월 오키나와 시세 밴드</span>
-          <span class="band-delta" id="delta"></span>
-        </div>
+        <span class="band-title" id="bandtitle">시세 밴드</span>
         <div class="track">
           <div class="track-bar"></div>
           <div class="avg-tick" id="avgtick"></div>
@@ -268,19 +318,19 @@ footer a:hover{color:var(--ink)}
           <div class="you" id="you"></div>
         </div>
         <div class="band-scale">
-          <div><span>최저</span><b id="low">–</b></div>
-          <div class="r"><span>고가</span><b id="high">–</b></div>
+          <span id="low">–</span><span id="high">–</span>
         </div>
       </div>
 
+      <p class="msg" id="msg"></p>
       <p class="note" id="note"></p>
     </div>
   </div>
 
   <section class="section">
     <div>
-      <h2>여섯 달치 한눈에</h2>
-      <p class="section-sub">칸을 누르면 위 계산기가 그 조합으로 바뀝니다. 큰 숫자가 그 달 최저가, 작은 숫자가 평균가입니다.</p>
+      <h2>여섯 조합 한눈에</h2>
+      <p class="section-sub">모두 청주(CJJ) 출발입니다. 칸을 누르면 위 계산기가 그 노선·그 달로 바뀝니다.</p>
     </div>
     <div class="matrix" id="matrix"></div>
   </section>
@@ -303,6 +353,8 @@ footer a:hover{color:var(--ink)}
 
 <script>
 "use strict";
+
+var ORIGIN = { city: "청주", iata: "CJJ" };
 
 var DATA = {
   oka: {
@@ -361,7 +413,8 @@ var MONTHS = ["10", "11", "12"];
 var state = { dest: "oka", month: "11" };
 
 var $ = function (id) { return document.getElementById(id); };
-var won = function (n) { return Math.round(n).toLocaleString("ko-KR") + "원"; };
+var num = function (n) { return Math.round(n).toLocaleString("ko-KR"); };
+var won = function (n) { return num(n) + "원"; };
 
 function scoreFor(price, m) {
   var t = (price - m.low) / (m.high - m.low);
@@ -390,10 +443,10 @@ function buildMatrix() {
       b.dataset.dest = d;
       b.dataset.month = mo;
       b.innerHTML =
-        '<span class="cell-head"><i class="cell-dot"></i>' +
-        '<span class="cell-name">' + DATA[d].name + " " + mo + "월</span></span>" +
-        '<span class="cell-low">' + m.low.toLocaleString("ko-KR") + "</span>" +
-        '<span class="cell-avg">평균 ' + m.avg.toLocaleString("ko-KR") + "</span>" +
+        '<span class="cell-route">' + ORIGIN.iata + " → " + DATA[d].iata + "</span>" +
+        '<span class="cell-when">' + DATA[d].name + " · " + mo + "월</span>" +
+        '<span class="cell-low">' + num(m.low) + "</span>" +
+        '<span class="cell-avg">평균 ' + num(m.avg) + "</span>" +
         '<span class="cell-tag">' + m.tag + "</span>";
       b.addEventListener("click", function () {
         state.dest = d;
@@ -415,7 +468,7 @@ function buildRoutes() {
     el.className = "route";
     el.style.setProperty("--rhue", r.hue);
     el.innerHTML =
-      "<h3>" + r.city + " <code>CJJ → " + r.iata + "</code></h3>" +
+      "<h3>" + ORIGIN.iata + " → " + r.iata + " &nbsp;<b>" + ORIGIN.city + " → " + r.city + "</b></h3>" +
       "<dl>" +
       "<dt>항공사</dt><dd>" + r.airlines + "</dd>" +
       "<dt>비행</dt><dd>" + r.duration + "</dd>" +
@@ -426,10 +479,8 @@ function buildRoutes() {
 }
 
 function syncSegments() {
-  document.querySelectorAll("[data-dest]").forEach(function (b) {
-    if (b.tagName === "BUTTON" && b.parentElement.classList.contains("seg")) {
-      b.setAttribute("aria-pressed", String(b.dataset.dest === state.dest));
-    }
+  document.querySelectorAll(".seg [data-dest]").forEach(function (b) {
+    b.setAttribute("aria-pressed", String(b.dataset.dest === state.dest));
   });
   document.querySelectorAll(".seg [data-month]").forEach(function (b) {
     b.setAttribute("aria-pressed", String(b.dataset.month === state.month));
@@ -448,12 +499,15 @@ function render() {
   app.dataset.dest = state.dest;
   app.style.setProperty("--grade", GRADES[g].color);
 
+  $("odCity").textContent = d.city;
+  $("odCode").textContent = d.iata;
+  $("routeMeta").innerHTML = state.month + "월 출발<br>왕복 1인";
+
   $("score").innerHTML = s.toFixed(1) + "<small> / 5</small>";
   $("grade").textContent = GRADES[g].label;
-  $("msg").textContent = d.msgs[g];
 
   var vsAvg = price - m.avg;
-  $("msgsub").textContent =
+  $("callsub").textContent =
     vsAvg === 0 ? "이 달 평균가와 정확히 같습니다."
       : vsAvg < 0 ? "이 달 평균보다 " + won(-vsAvg) + " 쌉니다."
         : "이 달 평균보다 " + won(vsAvg) + " 비쌉니다.";
@@ -467,24 +521,28 @@ function render() {
     meter.appendChild(bar);
   }
 
-  $("bandtitle").textContent = state.month + "월 " + d.name + " 시세 밴드";
-  $("delta").textContent = (vsAvg <= 0 ? "평균 대비 −" : "평균 대비 +") +
-    Math.abs(vsAvg).toLocaleString("ko-KR");
-  $("low").textContent = won(m.low);
-  $("high").textContent = won(m.high);
+  $("stYou").textContent = won(price);
+  $("stLow").textContent = won(m.low);
+  $("stAvg").textContent = won(m.avg);
+
+  $("bandtitle").textContent =
+    ORIGIN.iata + " → " + d.iata + " · " + state.month + "월 시세 밴드";
+  $("low").textContent = "최저 " + num(m.low);
+  $("high").textContent = "고가 " + num(m.high);
 
   var span = m.high - m.low;
   var avgPct = ((m.avg - m.low) / span) * 100;
   $("avgtick").style.left = avgPct + "%";
   $("avglabel").style.left = avgPct + "%";
-  $("avglabel").textContent = "평균 " + m.avg.toLocaleString("ko-KR");
+  $("avglabel").textContent = "평균 " + num(m.avg);
 
   var yPct = ((price - m.low) / span) * 100;
   if (yPct < 0) yPct = 0;
   if (yPct > 100) yPct = 100;
   $("you").style.left = yPct + "%";
-  $("you").title = "입력한 값 " + won(price);
+  $("you").title = "넣은 값 " + won(price);
 
+  $("msg").textContent = d.msgs[g];
   $("note").textContent = m.note;
 
   document.querySelectorAll(".cell").forEach(function (c) {
