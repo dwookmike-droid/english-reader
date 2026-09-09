@@ -269,6 +269,24 @@ h2{font-family:var(--display); font-weight:700; font-size:19px; letter-spacing:-
   text-transform:uppercase; padding-top:3px}
 .route dd{margin:0; color:var(--ink-2)}
 
+.sched{margin-top:11px; border-top:1px solid var(--line); padding-top:10px}
+.sched-head{font-family:var(--mono); font-size:10px; font-weight:600; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--ink-3); margin-bottom:6px}
+.sched table{width:100%; border-collapse:collapse; font-family:var(--mono); font-size:12px;
+  font-variant-numeric:tabular-nums}
+.sched th{text-align:left; font-weight:600; font-size:9.5px; letter-spacing:.08em;
+  color:var(--ink-3); padding:0 8px 4px 0; text-transform:uppercase}
+.sched td{padding:3px 8px 3px 0; color:var(--ink); border-top:1px solid var(--line)}
+.sched td.code{color:var(--rhue); font-weight:600}
+.sched td.dash{color:var(--ink-3)}
+.sched-note{margin:7px 0 0; font-size:11.5px; color:var(--ink-3); line-height:1.5}
+.sched-none{margin:0; font-size:12.5px; color:var(--ink-2); line-height:1.5}
+.sched-none a{color:var(--rhue)}
+.season-bar{display:flex; gap:8px; flex-wrap:wrap; align-items:baseline;
+  padding:11px 14px; background:var(--surface-2); border-radius:10px;
+  font-size:12.5px; color:var(--ink-2); line-height:1.55}
+.season-bar b{font-family:var(--mono); font-size:11px; letter-spacing:.06em; color:var(--ink)}
+
 footer{border-top:1px solid var(--line); padding-top:18px; display:flex;
   flex-direction:column; gap:9px}
 footer p{margin:0; font-size:12.5px; color:var(--ink-3); line-height:1.6}
@@ -389,6 +407,7 @@ footer a:hover{color:var(--ink)}
 
   <section class="section">
     <h2>청주에서 뜨는 편</h2>
+    <p class="season-bar" id="seasonBar"></p>
     <div class="routes" id="routes"></div>
   </section>
 
@@ -399,6 +418,7 @@ footer a:hover{color:var(--ink)}
       <a href="https://www.kayak.co.kr/%ED%95%AD%EA%B3%B5%EA%B6%8C/%EC%B2%AD%EC%A3%BC%EA%B5%AD%EC%A0%9C%EA%B3%B5%ED%95%AD-CJJ/%EB%8C%80%EB%A7%8C-TW0" target="_blank" rel="noopener">KAYAK CJJ–대만</a>
       <a href="https://www.hotelscombined.co.kr/flight-routes/Cheongju-CJJ/Taipei-City-Taiwan-Taoyuan-Intl-TPE.ksp" target="_blank" rel="noopener">호텔스컴바인 CJJ–TPE</a>
       <a href="https://www.airport.co.kr/cheongju/cms/frCon/index.do?MENU_ID=110&amp;CONTENTS_NO=1" target="_blank" rel="noopener">청주공항 운항스케줄</a>
+      <a href="https://www.jbnews.com/news/articleView.html?idxno=1500690" target="_blank" rel="noopener">청주공항 2026 하계 19개 노선</a>
     </p>
   </footer>
 </div>
@@ -426,7 +446,7 @@ footer a:hover{color:var(--ink)}
    "iata": "OKA",
    "hue": "var(--oka)",
    "airlines": "에어로케이 · 제주항공 · 이스타항공",
-   "duration": "2시간 20분 안팎",
+   "duration": "2시간 안팎",
    "tip": "화요일 출발편이 가장 싸게 잡힙니다.",
    "months": {
     "10": {
@@ -457,16 +477,19 @@ footer a:hover{color:var(--ink)}
     "3": "무난한 값입니다. 날짜가 정해졌다면 결제하고, 여유가 있다면 화요일 출발로 한 번 더 검색해 보세요.",
     "2": "조금 비쌉니다. 오키나와는 태풍이 끝나는 11월이 가장 싸게 내려가니 서두를 이유가 적습니다.",
     "1": "지금은 아닙니다. 이 값이면 렌터카 사흘 값이 통째로 항공권에 얹힌 셈입니다."
-   }
+   },
+   "tz": "한국과 시차 없음",
+   "flights": [],
+   "flightsNote": "편명과 시각을 아직 확인하지 못했습니다. 공항 운항스케줄에서 확인하세요."
   },
   "twn": {
    "name": "대만",
    "city": "타이베이",
    "iata": "TPE",
    "hue": "var(--twn)",
-   "airlines": "에어로케이 RF511 · 이스타항공 ZE781 · 중국동방항공",
-   "duration": "약 2시간 40분",
-   "tip": "새벽 출발하는 ZE781편이 눈에 띄게 쌉니다.",
+   "airlines": "에어로케이",
+   "duration": "2시간 15분 안팎",
+   "tip": "겨울 성수기에는 하루 3회까지 증편돼, 같은 날에도 편별 값 차이가 큽니다.",
    "months": {
     "10": {
      "low": 249000,
@@ -496,7 +519,23 @@ footer a:hover{color:var(--ink)}
     "3": "평범한 값입니다. 대만은 편별 값 차이가 커서, 새벽 출발 ZE781편을 한 번 비교해 볼 만합니다.",
     "2": "서두르지 마세요. 대만은 덥지도 춥지도 않은 11월에 값이 가장 낮게 내려갑니다.",
     "1": "이 값엔 사지 마세요. 펑리수를 몇 상자 사도 차액이 안 메워집니다."
-   }
+   },
+   "tz": "한국보다 1시간 느림",
+   "flights": [
+    {
+     "code": "RF511",
+     "airline": "에어로케이",
+     "dep": "10:41",
+     "arr": "11:55"
+    },
+    {
+     "code": "RF5133",
+     "airline": "에어로케이",
+     "dep": "13:58",
+     "arr": null
+    }
+   ],
+   "flightsNote": "도착 시각은 현지 시각입니다. 증편편은 여기에 없습니다."
   }
  },
  "grades": {
@@ -633,6 +672,14 @@ footer a:hover{color:var(--ink)}
  },
  "sources": [
   {
+   "label": "청주공항 운항스케줄",
+   "url": "https://www.airport.co.kr/cheongju/cms/frCon/index.do?MENU_ID=110&CONTENTS_NO=1"
+  },
+  {
+   "label": "청주공항 2026 하계 19개 노선",
+   "url": "https://www.jbnews.com/news/articleView.html?idxno=1500690"
+  },
+  {
    "label": "KAYAK CJJ–OKA",
    "url": "https://www.kayak.co.kr/%ED%95%AD%EA%B3%B5%EA%B6%8C/%EC%B2%AD%EC%A3%BC%EA%B5%AD%EC%A0%9C%EA%B3%B5%ED%95%AD-CJJ/%EC%98%A4%ED%82%A4%EB%82%98%EC%99%80-%EB%82%98%ED%95%98%EA%B3%B5%ED%95%AD-OKA"
   },
@@ -640,7 +687,13 @@ footer a:hover{color:var(--ink)}
    "label": "KAYAK CJJ–대만",
    "url": "https://www.kayak.co.kr/%ED%95%AD%EA%B3%B5%EA%B6%8C/%EC%B2%AD%EC%A3%BC%EA%B5%AD%EC%A0%9C%EA%B3%B5%ED%95%AD-CJJ/%EB%8C%80%EB%A7%8C-TW0"
   }
- ]
+ ],
+ "schedule": {
+  "summer": "2026 하계 3/29~10/24",
+  "winter": "10/25부터 동계 스케줄",
+  "note": "청주공항 국제선은 하계·동계로 시간표가 갈립니다. 10/24까지가 하계, 그 뒤 11·12월은 동계 시간표라 편명과 시각이 바뀔 수 있습니다.",
+  "url": "https://www.airport.co.kr/cheongju/cms/frCon/index.do?MENU_ID=110&CONTENTS_NO=1"
+ }
 }
 </script>
 
@@ -790,15 +843,40 @@ function buildRoutes() {
     var el = document.createElement("div");
     el.className = "route";
     el.style.setProperty("--rhue", r.hue);
+    var sched;
+    if (r.flights && r.flights.length) {
+      sched =
+        '<div class="sched"><div class="sched-head">확인된 편</div>' +
+        "<table><tr><th>편명</th><th>출발 " + ORIGIN.iata +
+        "</th><th>도착 " + r.iata + "</th></tr>" +
+        r.flights.map(function (f) {
+          return '<tr><td class="code">' + f.code + "</td><td>" + f.dep + "</td>" +
+            (f.arr ? "<td>" + f.arr + "</td>" : '<td class="dash">—</td>') + "</tr>";
+        }).join("") +
+        '</table><p class="sched-note">' + r.flightsNote + "</p></div>";
+    } else {
+      sched = '<div class="sched"><div class="sched-head">시간표</div>' +
+        '<p class="sched-none">' + r.flightsNote +
+        ' <a href="' + FARE.schedule.url + '" target="_blank" rel="noopener">공항 시간표 열기</a></p></div>';
+    }
+
     el.innerHTML =
       "<h3>" + ORIGIN.iata + " → " + r.iata + " &nbsp;<b>" + ORIGIN.city + " → " + r.city + "</b></h3>" +
       "<dl>" +
       "<dt>항공사</dt><dd>" + r.airlines + "</dd>" +
       "<dt>비행</dt><dd>" + r.duration + "</dd>" +
+      "<dt>시차</dt><dd>" + r.tz + "</dd>" +
       "<dt>요령</dt><dd>" + r.tip + "</dd>" +
-      "</dl>";
+      "</dl>" + sched;
     wrap.appendChild(el);
   });
+}
+
+function buildSeasonBar() {
+  var sc = FARE.schedule;
+  $("seasonBar").innerHTML =
+    "<b>" + sc.summer + "</b> · <b>" + sc.winter + "</b> " + sc.note +
+    ' <a href="' + sc.url + '" target="_blank" rel="noopener">공항 시간표</a>';
 }
 
 function syncSegments() {
@@ -888,6 +966,7 @@ $("price").addEventListener("input", render);
 
 buildMatrix();
 buildRoutes();
+buildSeasonBar();
 syncSegments();
 render();
 </script>
