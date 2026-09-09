@@ -403,90 +403,260 @@ footer a:hover{color:var(--ink)}
   </footer>
 </div>
 
+<script type="application/json" id="fare-data">
+{
+ "updated": "2026-09-09",
+ "basis": "왕복 1인 · 유류할증료·세금 포함 · 참고용 기준선",
+ "page": "https://claude.ai/code/artifact/2d25e59b-a014-47b8-821c-c4f2b93be66f",
+ "origin": {
+  "city": "청주",
+  "iata": "CJJ"
+ },
+ "scoring": {
+  "price": 45,
+  "leave": 30,
+  "season": 25,
+  "holidayMultiplier": 1.15,
+  "weekendMultiplier": 1.1
+ },
+ "destinations": {
+  "oka": {
+   "name": "오키나와",
+   "city": "나하",
+   "iata": "OKA",
+   "hue": "var(--oka)",
+   "airlines": "에어로케이 · 제주항공 · 이스타항공",
+   "duration": "2시간 20분 안팎",
+   "tip": "화요일 출발편이 가장 싸게 잡힙니다.",
+   "months": {
+    "10": {
+     "low": 235000,
+     "avg": 318000,
+     "high": 430000,
+     "tag": "연휴 낀 성수",
+     "note": "태풍은 끝물이고 아직 물놀이가 되는 달. 개천절·한글날 연휴에 걸린 날짜만 값이 크게 튑니다."
+    },
+    "11": {
+     "low": 199000,
+     "avg": 268000,
+     "high": 360000,
+     "tag": "세 달 중 최저",
+     "note": "평균 24도, 비도 사람도 적은 오키나와 최적기인데 값은 세 달 중 가장 낮습니다."
+    },
+    "12": {
+     "low": 218000,
+     "avg": 295000,
+     "high": 420000,
+     "tag": "24일 전후 급등",
+     "note": "바다는 접고 관광 위주로 도는 달. 중순까지는 싸지만 크리스마스 전후로 갑자기 뜁니다."
+    }
+   },
+   "msgs": {
+    "5": "지금 잡으세요. 이 값이면 왕복 항공권 값에 츄라우미 수족관 입장료까지 얹힌 셈입니다.",
+    "4": "좋은 값입니다. 아낀 만큼이면 나하 국제거리 숙소를 하루 더 잡을 수 있습니다.",
+    "3": "무난한 값입니다. 날짜가 정해졌다면 결제하고, 여유가 있다면 화요일 출발로 한 번 더 검색해 보세요.",
+    "2": "조금 비쌉니다. 오키나와는 태풍이 끝나는 11월이 가장 싸게 내려가니 서두를 이유가 적습니다.",
+    "1": "지금은 아닙니다. 이 값이면 렌터카 사흘 값이 통째로 항공권에 얹힌 셈입니다."
+   }
+  },
+  "twn": {
+   "name": "대만",
+   "city": "타이베이",
+   "iata": "TPE",
+   "hue": "var(--twn)",
+   "airlines": "에어로케이 RF511 · 이스타항공 ZE781 · 중국동방항공",
+   "duration": "약 2시간 40분",
+   "tip": "새벽 출발하는 ZE781편이 눈에 띄게 쌉니다.",
+   "months": {
+    "10": {
+     "low": 249000,
+     "avg": 335000,
+     "high": 455000,
+     "tag": "쌍십절 혼잡",
+     "note": "쌍십절(10월 10일) 연휴에 현지 수요까지 몰려서 값과 인파가 함께 오르는 달입니다."
+    },
+    "11": {
+     "low": 223000,
+     "avg": 292000,
+     "high": 390000,
+     "tag": "세 달 중 최저",
+     "note": "습기가 빠져 야시장 돌기 가장 좋은 달이고, 세 달 가운데 값도 가장 낮습니다."
+    },
+    "12": {
+     "low": 258000,
+     "avg": 352000,
+     "high": 480000,
+     "tag": "세 달 중 최고",
+     "note": "따뜻한 연말 목적지로 수요가 몰려 세 달 중 값이 가장 높게 형성됩니다."
+    }
+   },
+   "msgs": {
+    "5": "바로 결제하세요. 아낀 값이면 스린 야시장에서 사흘 내내 먹고도 남습니다.",
+    "4": "괜찮은 값입니다. 지우펀 오가는 택시비 정도는 여기서 벌어 둔 셈입니다.",
+    "3": "평범한 값입니다. 대만은 편별 값 차이가 커서, 새벽 출발 ZE781편을 한 번 비교해 볼 만합니다.",
+    "2": "서두르지 마세요. 대만은 덥지도 춥지도 않은 11월에 값이 가장 낮게 내려갑니다.",
+    "1": "이 값엔 사지 마세요. 펑리수를 몇 상자 사도 차액이 안 메워집니다."
+   }
+  }
+ },
+ "grades": {
+  "5": {
+   "label": "지금 사세요",
+   "color": "var(--g5)"
+  },
+  "4": {
+   "label": "좋은 가격",
+   "color": "var(--g4)"
+  },
+  "3": {
+   "label": "무난",
+   "color": "var(--g3)"
+  },
+  "2": {
+   "label": "조금 더 대기",
+   "color": "var(--g2)"
+  },
+  "1": {
+   "label": "지금은 비쌈",
+   "color": "var(--g1)"
+  }
+ },
+ "windows": [
+  {
+   "month": "11",
+   "from": "11/14",
+   "fdow": "토",
+   "to": "11/16",
+   "tdow": "월",
+   "nights": 2,
+   "days": 3,
+   "leave": 1,
+   "holiday": null,
+   "why": "11월 최저 구간에 월요일 하루만 붙이면 되는 창. 값과 연차를 같이 아낍니다."
+  },
+  {
+   "month": "11",
+   "from": "11/13",
+   "fdow": "금",
+   "to": "11/16",
+   "tdow": "월",
+   "nights": 3,
+   "days": 4,
+   "leave": 2,
+   "holiday": null,
+   "why": "같은 최저 구간에서 하루를 더 버는 3박 4일. 렌터카나 근교까지 볼 여유가 생깁니다."
+  },
+  {
+   "month": "11",
+   "from": "11/20",
+   "fdow": "금",
+   "to": "11/23",
+   "tdow": "월",
+   "nights": 3,
+   "days": 4,
+   "leave": 2,
+   "holiday": null,
+   "why": "습기가 완전히 빠지는 11월 후반. 세 달 중 걷기에 가장 좋은 주말입니다."
+  },
+  {
+   "month": "12",
+   "from": "12/11",
+   "fdow": "금",
+   "to": "12/14",
+   "tdow": "월",
+   "nights": 3,
+   "days": 4,
+   "leave": 2,
+   "holiday": null,
+   "why": "연말 급등이 시작되기 직전, 12월에 남은 마지막 저점입니다."
+  },
+  {
+   "month": "10",
+   "from": "10/9",
+   "fdow": "금",
+   "to": "10/11",
+   "tdow": "일",
+   "nights": 2,
+   "days": 3,
+   "leave": 0,
+   "holiday": "한글날",
+   "why": "연차 한 장 없이 붙는 3일 연휴. 대신 성수기 값을 그대로 냅니다."
+  },
+  {
+   "month": "10",
+   "from": "10/3",
+   "fdow": "토",
+   "to": "10/5",
+   "tdow": "월",
+   "nights": 2,
+   "days": 3,
+   "leave": 0,
+   "holiday": "개천절 대체공휴일",
+   "why": "개천절이 토요일이라 월요일이 대체공휴일로 붙습니다."
+  },
+  {
+   "month": "12",
+   "from": "12/25",
+   "fdow": "금",
+   "to": "12/27",
+   "tdow": "일",
+   "nights": 2,
+   "days": 3,
+   "leave": 0,
+   "holiday": "성탄절",
+   "why": "연차는 안 들지만 세 달을 통틀어 값이 가장 비싼 구간입니다."
+  },
+  {
+   "month": "10",
+   "from": "10/3",
+   "fdow": "토",
+   "to": "10/11",
+   "tdow": "일",
+   "nights": 8,
+   "days": 9,
+   "leave": 3,
+   "holiday": "개천절+한글날",
+   "why": "6·7·8일 사흘만 쓰면 9일. 기간은 최고지만 값도 최고입니다."
+  }
+ ],
+ "season": {
+  "oka": {
+   "10": 18,
+   "11": 25,
+   "12": 15
+  },
+  "twn": {
+   "10": 16,
+   "11": 25,
+   "12": 21
+  }
+ },
+ "sources": [
+  {
+   "label": "KAYAK CJJ–OKA",
+   "url": "https://www.kayak.co.kr/%ED%95%AD%EA%B3%B5%EA%B6%8C/%EC%B2%AD%EC%A3%BC%EA%B5%AD%EC%A0%9C%EA%B3%B5%ED%95%AD-CJJ/%EC%98%A4%ED%82%A4%EB%82%98%EC%99%80-%EB%82%98%ED%95%98%EA%B3%B5%ED%95%AD-OKA"
+  },
+  {
+   "label": "KAYAK CJJ–대만",
+   "url": "https://www.kayak.co.kr/%ED%95%AD%EA%B3%B5%EA%B6%8C/%EC%B2%AD%EC%A3%BC%EA%B5%AD%EC%A0%9C%EA%B3%B5%ED%95%AD-CJJ/%EB%8C%80%EB%A7%8C-TW0"
+  }
+ ]
+}
+</script>
+
 <script>
 "use strict";
 
-var ORIGIN = { city: "청주", iata: "CJJ" };
+/* 시세·여행창 데이터는 위 <script type="application/json" id="fare-data"> 한 곳에만 둡니다.
+   텔레그램 봇(bot/fare_bot.py)도 같은 블록을 읽으므로 값이 어긋날 일이 없습니다. */
+var FARE = JSON.parse(document.getElementById("fare-data").textContent);
+var ORIGIN = FARE.origin;
+var DATA = FARE.destinations;
+var WINDOWS = FARE.windows;
+var SEASON = FARE.season;
+var SCORING = FARE.scoring;
 
-var DATA = {
-  oka: {
-    name: "오키나와", city: "나하", iata: "OKA", hue: "var(--oka)",
-    airlines: "에어로케이 · 제주항공 · 이스타항공",
-    duration: "2시간 20분 안팎",
-    tip: "화요일 출발편이 가장 싸게 잡힙니다.",
-    months: {
-      "10": { low: 235000, avg: 318000, high: 430000, tag: "연휴 낀 성수",
-        note: "태풍은 끝물이고 아직 물놀이가 되는 달. 개천절·한글날 연휴에 걸린 날짜만 값이 크게 튑니다." },
-      "11": { low: 199000, avg: 268000, high: 360000, tag: "세 달 중 최저",
-        note: "평균 24도, 비도 사람도 적은 오키나와 최적기인데 값은 세 달 중 가장 낮습니다." },
-      "12": { low: 218000, avg: 295000, high: 420000, tag: "24일 전후 급등",
-        note: "바다는 접고 관광 위주로 도는 달. 중순까지는 싸지만 크리스마스 전후로 갑자기 뜁니다." }
-    },
-    msgs: {
-      5: "지금 잡으세요. 이 값이면 왕복 항공권 값에 츄라우미 수족관 입장료까지 얹힌 셈입니다.",
-      4: "좋은 값입니다. 아낀 만큼이면 나하 국제거리 숙소를 하루 더 잡을 수 있습니다.",
-      3: "무난한 값입니다. 날짜가 정해졌다면 결제하고, 여유가 있다면 화요일 출발로 한 번 더 검색해 보세요.",
-      2: "조금 비쌉니다. 오키나와는 태풍이 끝나는 11월이 가장 싸게 내려가니 서두를 이유가 적습니다.",
-      1: "지금은 아닙니다. 이 값이면 렌터카 사흘 값이 통째로 항공권에 얹힌 셈입니다."
-    }
-  },
-  twn: {
-    name: "대만", city: "타이베이", iata: "TPE", hue: "var(--twn)",
-    airlines: "에어로케이 RF511 · 이스타항공 ZE781 · 중국동방항공",
-    duration: "약 2시간 40분",
-    tip: "새벽 출발하는 ZE781편이 눈에 띄게 쌉니다.",
-    months: {
-      "10": { low: 249000, avg: 335000, high: 455000, tag: "쌍십절 혼잡",
-        note: "쌍십절(10월 10일) 연휴에 현지 수요까지 몰려서 값과 인파가 함께 오르는 달입니다." },
-      "11": { low: 223000, avg: 292000, high: 390000, tag: "세 달 중 최저",
-        note: "습기가 빠져 야시장 돌기 가장 좋은 달이고, 세 달 가운데 값도 가장 낮습니다." },
-      "12": { low: 258000, avg: 352000, high: 480000, tag: "세 달 중 최고",
-        note: "따뜻한 연말 목적지로 수요가 몰려 세 달 중 값이 가장 높게 형성됩니다." }
-    },
-    msgs: {
-      5: "바로 결제하세요. 아낀 값이면 스린 야시장에서 사흘 내내 먹고도 남습니다.",
-      4: "괜찮은 값입니다. 지우펀 오가는 택시비 정도는 여기서 벌어 둔 셈입니다.",
-      3: "평범한 값입니다. 대만은 편별 값 차이가 커서, 새벽 출발 ZE781편을 한 번 비교해 볼 만합니다.",
-      2: "서두르지 마세요. 대만은 덥지도 춥지도 않은 11월에 값이 가장 낮게 내려갑니다.",
-      1: "이 값엔 사지 마세요. 펑리수를 몇 상자 사도 차액이 안 메워집니다."
-    }
-  }
-};
-
-/* 2026년 10~12월. 요일과 공휴일은 실제 달력 기준.
-   10/3 개천절이 토요일이라 10/5(월)가 대체공휴일, 10/9 한글날은 금요일,
-   12/25 성탄절은 금요일. 11월에는 공휴일이 없습니다. */
-var WINDOWS = [
-  { month:"11", from:"11/14", fdow:"토", to:"11/16", tdow:"월", nights:2, days:3, leave:1,
-    holiday:null, why:"11월 최저 구간에 월요일 하루만 붙이면 되는 창. 값과 연차를 같이 아낍니다." },
-  { month:"11", from:"11/13", fdow:"금", to:"11/16", tdow:"월", nights:3, days:4, leave:2,
-    holiday:null, why:"같은 최저 구간에서 하루를 더 버는 3박 4일. 렌터카나 근교까지 볼 여유가 생깁니다." },
-  { month:"11", from:"11/20", fdow:"금", to:"11/23", tdow:"월", nights:3, days:4, leave:2,
-    holiday:null, why:"습기가 완전히 빠지는 11월 후반. 세 달 중 걷기에 가장 좋은 주말입니다." },
-  { month:"12", from:"12/11", fdow:"금", to:"12/14", tdow:"월", nights:3, days:4, leave:2,
-    holiday:null, why:"연말 급등이 시작되기 직전, 12월에 남은 마지막 저점입니다." },
-  { month:"10", from:"10/9", fdow:"금", to:"10/11", tdow:"일", nights:2, days:3, leave:0,
-    holiday:"한글날", why:"연차 한 장 없이 붙는 3일 연휴. 대신 성수기 값을 그대로 냅니다." },
-  { month:"10", from:"10/3", fdow:"토", to:"10/5", tdow:"월", nights:2, days:3, leave:0,
-    holiday:"개천절 대체공휴일", why:"개천절이 토요일이라 월요일이 대체공휴일로 붙습니다." },
-  { month:"12", from:"12/25", fdow:"금", to:"12/27", tdow:"일", nights:2, days:3, leave:0,
-    holiday:"성탄절", why:"연차는 안 들지만 세 달을 통틀어 값이 가장 비싼 구간입니다." },
-  { month:"10", from:"10/3", fdow:"토", to:"10/11", tdow:"일", nights:8, days:9, leave:3,
-    holiday:"개천절+한글날", why:"6·7·8일 사흘만 쓰면 9일. 기간은 최고지만 값도 최고입니다." }
-];
-
-/* 계절 점수(25점 만점). 오키나와는 12월에 바다를 접어야 해 낮고,
-   대만은 12월에도 선선해 상대적으로 높습니다. */
-var SEASON = { oka: { "10": 18, "11": 25, "12": 15 },
-               twn: { "10": 16, "11": 25, "12": 21 } };
-
-var GRADES = {
-  5: { label: "지금 사세요", color: "var(--g5)" },
-  4: { label: "좋은 가격",   color: "var(--g4)" },
-  3: { label: "무난",        color: "var(--g3)" },
-  2: { label: "조금 더 대기", color: "var(--g2)" },
-  1: { label: "지금은 비쌈",  color: "var(--g1)" }
-};
+var GRADES = FARE.grades;
 
 var MONTHS = ["10", "11", "12"];
 var state = { dest: "oka", month: "11" };
@@ -511,7 +681,9 @@ function gradeFor(s) {
 
 function winPrice(w, destKey) {
   var m = DATA[destKey].months[w.month];
-  var raw = w.holiday ? m.avg * 1.15 : m.low * 1.10;
+  var raw = w.holiday
+    ? m.avg * SCORING.holidayMultiplier
+    : m.low * SCORING.weekendMultiplier;
   return Math.round(raw / 1000) * 1000;
 }
 
@@ -525,8 +697,10 @@ function rankWindows(destKey) {
   var eMin = Math.min.apply(null, effs), eMax = Math.max.apply(null, effs);
 
   rows.forEach(function (r) {
-    var pv = pMax === pMin ? 45 : 45 * (pMax - r.price) / (pMax - pMin);
-    var ev = eMax === eMin ? 30 : 30 * (r.eff - eMin) / (eMax - eMin);
+    var pv = pMax === pMin ? SCORING.price
+      : SCORING.price * (pMax - r.price) / (pMax - pMin);
+    var ev = eMax === eMin ? SCORING.leave
+      : SCORING.leave * (r.eff - eMin) / (eMax - eMin);
     r.score = Math.round(pv + ev + SEASON[destKey][r.w.month]);
   });
   rows.sort(function (a, b) { return b.score - a.score || a.price - b.price; });
@@ -576,7 +750,7 @@ function renderRanking() {
 
   $("rankSub").textContent =
     ORIGIN.city + "(" + ORIGIN.iata + ") → " + d.city + "(" + d.iata +
-    ") 기준입니다. 값 45점 · 연차 효율 30점 · 계절 25점으로 매겼고, 목적지를 바꾸면 순위도 다시 매겨집니다.";
+    ") 기준입니다. 값 " + SCORING.price + "점 · 연차 효율 " + SCORING.leave + "점 · 계절 " + SCORING.season + "점으로 매겼고, 목적지를 바꾸면 순위도 다시 매겨집니다.";
 }
 
 function buildMatrix() {
