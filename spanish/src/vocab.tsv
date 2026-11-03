@@ -461,7 +461,6 @@ altos	altos|alto|alta		높은, 키가 큰	n	7
 oscuros	oscuros|oscuro		어두운	x	7
 no sonríe	no sonríe		웃지 않는다	x	7
 y ahora	y ahora		그리고 지금은	x	7
-una tienda de móviles	una tienda de móviles		휴대폰 가게	x	7	tienda = 가게
 hace mucho calor	hace mucho calor		아주 덥다	x	7
 la plaza no tiene sombra	la plaza no tiene sombra		광장에는 그늘이 없다	x	7	sombra = 그늘
 el reloj hace tic tac	el reloj hace tic tac		시계가 똑딱거린다	x	7
@@ -2518,3 +2517,12 @@ viendo	viendo		보면서	x	27
 vine	vine		(나는) 왔다	x	27	
 volvería	volvería		돌아올 것이다	x	27	
 si no vuelvo	si no vuelvo|vuelvo		돌아오지 않으면	x	27	
+un cajón	un cajón|cajón		서랍	x	26	
+donde	donde		~하는 곳	x	26	
+un examen	un examen|examen		시험	x	26	
+una tienda de móviles	una tienda de móviles|tienda de móviles|móviles		휴대폰 가게	x	26	
+primeros	primeros|primeras		처음의	x	26	
+-ra	-ra|ra	라	(접속법 과거 어미)	f	26	
+subirse	subirse		올라타다	x	26	
+trabajos	trabajos		일, 작업들	x	26	
+se van	se van|van		간다, 사라진다	x	26	
