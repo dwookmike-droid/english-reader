@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>La llave de Gràcia — 그라시아의 열쇠</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Gowun+Batang:wght@400;700&display=swap">
+<!-- 이 파일은 spanish/build.py 가 만든다. 직접 고치지 말고 spanish/src 를 고칠 것. -->
+<style>
+:root { --bg:#faf8f3; --fg:#1d1d1b; --dim:#77726a; --line:#e4dfd4; --card:#fff;
+  --mark:#9a4f0b; --markbg:#f6e6c4; --size:18px; }
+html[data-t="dark"] { --bg:#14171a; --fg:#e6e3dd; --dim:#9aa0a6; --line:#2a2f34;
+  --card:#1b1f23; --mark:#f0b54a; --markbg:#3a2f12; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--fg);
+  font-family:"Gowun Batang","Noto Serif KR","Apple SD Gothic Neo",serif;
+  -webkit-text-size-adjust:100%; word-break:keep-all; overflow-wrap:break-word; }
+.ui { font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Noto Sans KR",sans-serif; }
+.bar { position:sticky; top:0; z-index:50; background:var(--card); border-bottom:1px solid var(--line);
+  padding:8px 12px; padding-top:calc(8px + env(safe-area-inset-top));
+  display:flex; gap:6px; align-items:center; flex-wrap:wrap; }
+.bar .bt { font-weight:800; font-size:13px; margin-right:auto; letter-spacing:-.02em; }
+.bar .bt a { color:inherit; text-decoration:none; }
+.bar button { font:inherit; font-size:12.5px; padding:5px 9px; border:1px solid var(--line);
+  border-radius:7px; background:var(--card); color:var(--fg); cursor:pointer; }
+.bar button.on { background:var(--markbg); border-color:var(--mark); color:var(--mark); font-weight:700; }
+#prog { position:absolute; left:0; bottom:-1px; height:2px; background:var(--mark); width:0; }
+main { font-size:var(--size); max-width:min(34em, 94vw); margin:0 auto; padding:26px clamp(16px,4vw,32px) 120px; }
+.cover { text-align:center; padding:18px 0 22px; border-bottom:1px solid var(--line); }
+.cover h1 { font-family:"EB Garamond",serif; font-style:italic; font-weight:400; font-size:2em; margin:0; line-height:1.1; }
+.cover .ko { margin-top:8px; letter-spacing:.18em; font-size:.8em; }
+.cover .hint { margin:16px auto 0; max-width:30em; font-size:12.5px; color:var(--dim); line-height:1.7; text-align:left;
+  background:var(--card); border:1px solid var(--line); border-radius:10px; padding:10px 14px; }
+.ch { padding-top:2em; }
+.ch h2 { text-align:center; font-weight:400; margin:0 0 1.6em; }
+.cn { display:block; font:600 11px/1 -apple-system,BlinkMacSystemFont,sans-serif; letter-spacing:.3em;
+  text-transform:uppercase; color:var(--dim); margin-bottom:.8em; }
+.ct { display:block; font-family:"EB Garamond",serif; font-style:italic; font-size:2.2em; line-height:1.1; }
+.cp { display:block; margin-top:.4em; font:12px -apple-system,BlinkMacSystemFont,"Noto Sans KR",sans-serif; color:var(--dim); }
+.cp b { color:var(--fg); }
+.ch p { margin:0; line-height:1.85; text-indent:1em; }
+.ch p.say { text-indent:0; margin:.5em 0; padding-left:1.7em; position:relative; }
+.ch p.say .sp { display:block; line-height:1.55; }
+.ch p.say .sp .w, .ch p.say .sp .es { font-size:1.18em; }
+.ch p.say .gl { display:block; font-size:.8em; color:var(--dim); line-height:1.5; }
+html[data-g="0"] .gl { display:none !important; }
+.play { position:absolute; left:0; top:.3em; width:1.25em; height:1.25em; border-radius:50%;
+  border:1px solid var(--line); background:var(--card); color:var(--dim); cursor:pointer; padding:0;
+  font-size:.7em; line-height:1; display:grid; place-items:center; }
+.play::before { content:"▶"; font-size:.75em; margin-left:.12em; }
+.ch p.say.speaking .play { background:var(--mark); border-color:var(--mark); color:var(--card); }
+.ch p.say.speaking .sp { color:var(--mark); }
+.ch p.br { text-indent:0; text-align:center; color:var(--dim); margin:1.2em 0; letter-spacing:.2em; }
+.ch p.br + p { text-indent:0; }
+.ch p.end { text-indent:0; text-align:center; color:var(--dim); margin:2em 0; }
+.ch p.end svg { width:56px; height:auto; }
+.w, .es { font-family:"EB Garamond",Georgia,serif; font-size:1.1em; font-weight:400; }
+.w { cursor:pointer; -webkit-tap-highlight-color:transparent; border-bottom:1px dotted transparent; }
+.w.new { font-weight:600; border-bottom-color:#c9a227; }
+.w.on { background:var(--markbg); border-radius:2px; }
+.pr { font:.6em -apple-system,BlinkMacSystemFont,"Noto Sans KR",sans-serif; color:var(--dim);
+  margin-left:.25em; vertical-align:.12em; white-space:nowrap; }
+.pr b { color:var(--fg); }
+html[data-pr="0"] .ch .pr { display:none; }
+.letter { margin:1.2em 0 1.2em 1.5em; }
+.letter p { text-indent:0 !important; font-family:"EB Garamond",serif; font-style:italic; font-size:1.35em; }
+.letter .w { font-size:1em; }
+.address { margin:1.2em auto; width:fit-content; min-width:60%; padding:.7em 1.1em; border:1px solid var(--line); background:var(--card); }
+.address p { text-indent:0 !important; font-family:"EB Garamond",serif; line-height:1.5 !important; }
+.address .w, .address .es { font-size:1em; }
+.words { margin-top:2em; padding:16px; background:var(--card); border:1px solid var(--line); border-radius:12px; }
+.words h3 { display:flex; justify-content:space-between; align-items:baseline; margin:0 0 10px;
+  font:700 14px -apple-system,BlinkMacSystemFont,"Noto Sans KR",sans-serif; }
+.words h3 small { font-weight:400; color:var(--dim); }
+.words ol { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(auto-fill,minmax(13em,1fr)); gap:4px 16px; }
+.words li { font-size:15px; line-height:1.35; padding:5px 0; border-bottom:1px solid var(--line); cursor:pointer; }
+.words li > b { font-family:"EB Garamond",serif; font-weight:600; font-size:1.15em; }
+.words li .pr { font-size:.68em; }
+.words li .m { display:block; font:12.5px -apple-system,BlinkMacSystemFont,"Noto Sans KR",sans-serif; color:var(--dim); }
+#pop { position:fixed; z-index:99; max-width:min(22em,90vw); display:none; background:#111827; color:#f9fafb;
+  border-radius:10px; padding:.75em 1em .7em; font-size:15px; line-height:1.5; box-shadow:0 10px 30px rgba(0,0,0,.35); }
+#pop .hw { font-family:"EB Garamond",serif; font-size:21px; color:#fde68a; margin-right:.3em; }
+#pop .pp { color:#9ca3af; font-size:13px; }
+#pop .pp b { color:#f9fafb; }
+#pop .df { display:block; margin-top:3px; }
+#pop .nt { display:block; margin-top:4px; color:#9ca3af; font-size:13px; }
+#pop .tag { display:inline-block; font-size:11px; color:#111827; background:#9ca3af; border-radius:3px; padding:0 5px; margin-left:4px; vertical-align:2px; }
+#pop button { margin-top:8px; font:inherit; font-size:12.5px; background:#374151; color:#f9fafb; border:0; border-radius:6px; padding:4px 10px; cursor:pointer; }
+.listen { position:fixed; right:14px; bottom:calc(14px + env(safe-area-inset-bottom)); z-index:40;
+  font:600 13px -apple-system,BlinkMacSystemFont,"Noto Sans KR",sans-serif; padding:10px 14px; border-radius:999px;
+  border:1px solid var(--line); background:var(--card); color:var(--fg); box-shadow:0 4px 16px rgba(0,0,0,.12); cursor:pointer; }
+.listen.on { background:var(--mark); color:var(--card); border-color:var(--mark); }
+</style></head>
+<body>
+<div class="bar ui">
+  <span class="bt"><a href="index.html" aria-label="목록으로">←</a> La llave de Gràcia</span>
+  <button id="pr" class="on" title="처음 나온 단어의 한글 발음">발음</button>
+  <button id="gl" class="on" title="대사 밑 우리말 뜻">해석</button>
+  <button id="minus" aria-label="글자 작게">A−</button>
+  <button id="plus" aria-label="글자 크게">A+</button>
+  <button id="th" aria-label="밤 화면">밤</button>
+  <div id="prog"></div>
+</div>
+<main>
+  <div class="cover">
+    <h1>La llave de Gràcia</h1>
+    <div class="ko">그라시아의 열쇠</div>
+    <div class="hint ui">
+      스페인어 단어를 <b>누르면</b> 뜻과 발음이 나옵니다.
+      대사 앞의 <b>▶</b>를 누르면 그 문장을, 오른쪽 아래 <b>듣기</b>를 누르면 이 장의 스페인어를 처음부터 차례로 읽어 줍니다.
+      목소리는 기기에 깔린 스페인 스페인어(es-ES) 음성을 씁니다.
+    </div>
+  </div>
+<section class="ch" id="c1">
+<h2><span class="cn">Capítulo 1</span><span class="ct">Hola</span>
+<span class="cp">[올라]</span></h2>
+<p>외할머니가 돌아가신 지 사십구 일째 되던 날, 나는 회사를 그만두었다.</p><p>열두 해를 다닌 회사였다. 팀장은 “윤하 씨, 한 달만 쉬었다 와요”라고 했다. 하지만 나는 쉬고 싶은 게 아니었다. 어디로든 가고 싶었다. 다만 그곳이 어디인지 몰랐다.</p><p>그곳을 알려 준 것은 할머니의 상자였다.</p><p>장롱 맨 아래 칸, 겨울 이불 밑에 납작한 과자 상자 하나가 있었다. 뚜껑을 열자 오래된 종이 냄새가 났다. 안에는 편지 열한 통과 열쇠 하나가 들어 있었다.</p><p>열쇠는 내 손가락만 했고, 생각보다 무거웠다. 손잡이에는 작은 꽃이 새겨져 있었다. 우리 집 어느 문에도 맞지 않는 열쇠였다.</p><p>편지 봉투에는 처음 보는 우표가 붙어 있었다. 받는 사람은 박순례. 할머니의 이름이었다. 보내는 사람 자리에는 주소 한 줄과 알파벳 하나뿐이었다.</p><div class="address"><p><b class="w" data-k="M.">M</b>.</p><p><b class="w" data-k="carrer">Carrer</b> <b class="w" data-k="del">del</b> <b class="w" data-k="Rellotger">Rellotger</b>, 7</p><p><b class="w" data-k="Gràcia">Gràcia</b> · <b class="w" data-k="Barcelona">Barcelona</b></p></div><p><b class="w" data-k="Barcelona">Barcelona</b>. 그 단어만은 읽을 수 있었다.</p><p>나는 첫 번째 편지를 펼쳤다. 파란 잉크로 쓴 글씨가 종이 가득 오른쪽으로 기울어져 있었다. 한 글자도 읽을 수 없었다. 첫 줄만 빼고.</p><div class="letter"><p><b class="w" data-k="querida">Querida</b> <b class="w" data-k="Sun-rye">Sun-rye</b>:</p></div><p>번역 앱에 첫 단어를 넣어 보았다. <b class="w new" data-k="querida">querida</b><span class="pr">[케<b>리</b>다]</span>. 화면에 뜬 뜻은 이것이었다.</p><p>‘사랑하는.’</p><p>나는 오랫동안 그 화면을 보았다. 할머니는 한 번도 스페인 이야기를 한 적이 없었다. 젊을 때 몇 해 ‘먼 데’ 가 있었다는 말을 들은 게 전부였다. 먼 데가 어디냐고 물으면 할머니는 웃기만 했다.</p><p>그날 밤 나는 비행기표를 샀다. 편도였다.</p><p class="br">·&ensp;·&ensp;·</p><p>비행기 안에서 나는 스페인어 공부를 시작했다. 정확히 말하면, 단어 두 개를 외웠다.</p><p>첫 번째는 <b class="w new" data-k="hola">hola</b><span class="pr">[<b>올</b>라]</span>. 안녕하세요.</p><p>이상하게도 <span class="es">h</span>로 시작하는데 ‘홀라’가 아니라 ‘올라’였다. 앱은 짧게 설명했다. 스페인어에서 <span class="es">h</span>는 소리가 나지 않습니다. 쓰기만 하고 읽지 않는 글자라니. 처음부터 마음에 들었다. 나도 그런 글자 같은 기분이었으니까.</p><p>두 번째는 <b class="w new" data-k="gracias">gracias</b><span class="pr">[<b>그라</b><u>씨</u>아스]</span>. 고맙습니다.</p><p>앱은 <b class="w" data-k="gracias">gracias</b>의 ‘씨’를 그냥 ‘시’로 읽지 말라고 했다. 스페인에서는 혀끝을 윗니 아래에 살짝 대고 바람을 내보낸다고 했다. 영어 <span class="es">th</span>처럼. 나는 비행기 화장실 거울 앞에서 혀를 내밀고 연습했다. 그라-<span class="es">th</span>-아스. 그라-<span class="es">th</span>-아스. 누군가 문을 두드렸다.</p><p>자리로 돌아오자 승무원이 카트를 밀고 왔다. 그녀가 나를 보고 웃었다.</p><p class="say" data-say="Hola."><span class="sp">—<b class="w" data-k="hola">Hola</b>.</span></p><p class="say" data-say="Hola."><span class="sp">—<b class="w" data-k="hola">Hola</b>.</span></p><p>됐다. 내 첫 번째 스페인어였다. 승무원이 물병을 들어 보였다.</p><p class="say" data-say="¿Agua?"><span class="sp">—¿<b class="w new" data-k="agua">Agua</b><span class="pr">[<b>아</b>구아]</span>?</span></p><p>물이라는 뜻이었다. 물병을 들고 있으니 모를 수가 없었다. 나는 고개를 끄덕였다. 그러자 그녀가 고개를 갸웃했다. 말로 하라는 얼굴이었다. 나는 앱을 재빨리 뒤졌다. 네, 는 <b class="w new" data-k="sí">sí</b><span class="pr">[<b>씨</b>]</span>. 이번엔 혀를 물지 않는 보통 ‘씨’였다.</p><p class="say" data-say="Sí. Gracias."><span class="sp">—<b class="w" data-k="sí">Sí</b>. <b class="w" data-k="gracias">Gracias</b>.</span></p><p>혀를 이 사이에 넣었다. 승무원이 다시 웃었다. 맞게 한 것 같았다. 그녀는 커피 주전자를 들었다.</p><p class="say" data-say="¿Café?"><span class="sp">—¿<b class="w new" data-k="café">Café</b><span class="pr">[카<b>페</b>]</span>?</span></p><p><b class="w" data-k="café">café</b>. 이건 앱이 없어도 알았다. 하지만 밤 비행기였고, 나는 자고 싶었다. 아니요, 는 <b class="w new" data-k="no">no</b><span class="pr">[<b>노</b>]</span>. 한국어보다 쉬웠다.</p><p class="say" data-say="No, gracias."><span class="sp">—<b class="w" data-k="no">No</b>, <b class="w" data-k="gracias">gracias</b>.</span></p><p>그날 밤 나는 <b class="w" data-k="agua">agua</b>를 마시고, <b class="w" data-k="café">café</b>를 거절하고, 스페인어 다섯 단어를 손바닥에 볼펜으로 적은 채 잠들었다. <b class="w" data-k="hola">hola</b>, <b class="w" data-k="gracias">gracias</b>, <b class="w" data-k="agua">agua</b>, <b class="w" data-k="sí">sí</b>, <b class="w" data-k="no">no</b>.</p><p class="br">·&ensp;·&ensp;·</p><p>엘프라트 <b class="w new" data-k="aeropuerto">aeropuerto</b><span class="pr">[아에로<b>푸에</b>르토]</span>. 바르셀로나 공항이었다. 내리자마자 천장에 매달린 표지판마다 이 단어가 보였다. <b class="w" data-k="aeropuerto">aeropuerto</b>. 공항.</p><p>입국 심사대의 남자는 수염이 짙었다. 그가 손을 내밀었다.</p><p class="say" data-say="Hola. Pasaporte, por favor."><span class="sp">—<b class="w" data-k="hola">Hola</b>. <b class="w new" data-k="pasaporte">Pasaporte</b><span class="pr">[파사<b>포</b>르테]</span>, <b class="w new" data-k="por favor">por favor</b><span class="pr">[포르 파<b>보</b>르]</span>.</span></p><p><b class="w" data-k="pasaporte">pasaporte</b>가 여권이라는 건 소리만 들어도 알 수 있었다. 그러면 <b class="w" data-k="por favor">por favor</b>는 ‘주세요’일 것이다. 나는 여권을 건넸다.</p><p class="say" data-say="¿Turismo?"><span class="sp">—¿<b class="w new" data-k="turismo">Turismo</b><span class="pr">[투<b>리</b>스모]</span>?</span><span class="gl">관광이에요?</span></p><p class="say" data-say="Sí."><span class="sp">—<b class="w" data-k="sí">Sí</b>.</span></p><p>남자는 도장을 꽝 찍고 여권을 돌려주었다.</p><p class="say" data-say="Gracias."><span class="sp">—<b class="w" data-k="gracias">Gracias</b>.</span></p><p class="say" data-say="De nada."><span class="sp">—<b class="w new" data-k="de nada">De nada</b><span class="pr">[데 <b>나</b>다]</span>.</span></p><p><b class="w" data-k="de nada">de nada</b>. 천만에요. 나는 그 말을 입속으로 따라 했다. 고맙다고 하면 사람들은 <b class="w" data-k="de nada">de nada</b>라고 대답한다. 하나를 말하면 하나가 돌아왔다. 대화라는 건 원래 그런 것인지도 몰랐다.</p><p>짐 찾는 곳에서 한 남자가 내 캐리어를 끌고 가려 했다. 내가 손잡이를 붙잡자 그가 화들짝 놀랐다.</p><p class="say" data-say="¡Ay! ¡Perdón, perdón!"><span class="sp">—¡<b class="w" data-k="ay">Ay</b>! ¡<b class="w new" data-k="perdón">Perdón</b><span class="pr">[페르<b>돈</b>]</span>, <b class="w" data-k="perdón">perdón</b>!</span></p><p><b class="w" data-k="perdón">perdón</b>. 미안합니다. 남자는 자기 캐리어와 내 캐리어를 번갈아 가리켰다. 똑같은 검은색이었다. 그는 내 캐리어를 손바닥으로 탕탕 두드리며 천천히 말했다.</p><p class="say" data-say="Maleta. Su maleta."><span class="sp">—<b class="w new" data-k="maleta">Maleta</b><span class="pr">[말<b>레</b>타]</span>. <b class="w" data-k="su">Su</b> <b class="w" data-k="maleta">maleta</b>.</span><span class="gl">캐리어. 당신 캐리어요.</span></p><p>그러니까 이건 <b class="w" data-k="maleta">maleta</b>였다. 내 <b class="w" data-k="maleta">maleta</b>.</p><p class="say" data-say="Sí. Gracias."><span class="sp">—<b class="w" data-k="sí">Sí</b>. <b class="w" data-k="gracias">Gracias</b>.</span></p><p class="say" data-say="De nada. ¡Perdón!"><span class="sp">—<b class="w" data-k="de nada">De nada</b>. ¡<b class="w" data-k="perdón">Perdón</b>!</span></p><p>그는 <b class="w" data-k="perdón">perdón</b>을 세 번쯤 더 하고 자기 <b class="w" data-k="maleta">maleta</b>를 찾아 사라졌다. 나는 내 <b class="w" data-k="maleta">maleta</b>를 끌고 밖으로 나왔다. 바르셀로나의 공기는 따뜻했고, 어디선가 바다 냄새가 났다.</p><p class="br">·&ensp;·&ensp;·</p><p><b class="w new" data-k="taxi">Taxi</b><span class="pr">[<b>탁</b>시]</span>는 줄을 서서 탔다. 운전석의 아저씨는 머리가 하얗고 팔이 굵었다.</p><p class="say" data-say="Hola. ¿Adónde?"><span class="sp">—<b class="w" data-k="hola">Hola</b>. ¿<b class="w new" data-k="adónde">Adónde</b><span class="pr">[아<b>돈</b>데]</span>?</span><span class="gl">어디로 갈까요?</span></p><p>나는 휴대폰을 내밀었다. 예약해 둔 하숙집 주소가 떠 있었다. 아저씨는 눈을 가늘게 뜨고 화면을 읽더니 고개를 끄덕였다.</p><p class="say" data-say="Gràcia. Vale."><span class="sp">—<b class="w" data-k="Gràcia">Gràcia</b>. <b class="w new" data-k="vale">Vale</b><span class="pr">[<b>발</b>레]</span>.</span></p><p><b class="w" data-k="vale">vale</b>. 처음 듣는 말이었다. 하지만 표정을 보니 알 것 같았다. 좋아요. 알았어요. 오케이.</p><p><b class="w" data-k="taxi">taxi</b>가 출발하자 아저씨는 전화를 받았다.</p><p class="say" data-say="Sí. Vale. Vale, vale. No, no… Sí. Vale. ¡Adiós!"><span class="sp">—<b class="w" data-k="sí">Sí</b>. <b class="w" data-k="vale">Vale</b>. <b class="w" data-k="vale">Vale</b>, <b class="w" data-k="vale">vale</b>. <b class="w" data-k="no">No</b>, <b class="w" data-k="no">no</b>… <b class="w" data-k="sí">Sí</b>. <b class="w" data-k="vale">Vale</b>. ¡<b class="w" data-k="adiós">Adiós</b>!</span></p><p>나는 손가락을 접어 세어 보았다. 일 분 동안 <b class="w" data-k="vale">vale</b>가 다섯 번이었다. 바르셀로나에 내린 지 한 시간. 내가 가장 많이 들은 단어는 <b class="w" data-k="hola">hola</b>도 <b class="w" data-k="gracias">gracias</b>도 아닌 <b class="w" data-k="vale">vale</b>였다.</p><p>전화를 끊은 아저씨가 백미러로 나를 보며 뭐라고 길게 말했다. 한 단어도 알아들을 수 없었다. 나는 앱에서 미리 찾아 둔 문장을 꺼냈다.</p><p class="say" data-say="Perdón… No entiendo."><span class="sp">—<b class="w" data-k="perdón">Perdón</b>… <b class="w new" data-k="no entiendo">No entiendo</b><span class="pr">[노 엔<b>티엔</b>도]</span>.</span><span class="gl">미안해요. 못 알아듣겠어요.</span></p><p>아저씨가 껄껄 웃었다.</p><p class="say" data-say="¡No pasa nada!"><span class="sp">—¡<b class="w new" data-k="no pasa nada">No pasa nada</b><span class="pr">[노 <b>파</b>사 <b>나</b>다]</span>!</span><span class="gl">괜찮아요!</span></p><p>그러고는 자기 가슴을 가리키며 말했다.</p><p class="say" data-say="Yo, Barcelona. ¿Y tú? ¿China? ¿Japonesa?"><span class="sp">—<b class="w" data-k="yo">Yo</b>, <b class="w" data-k="Barcelona">Barcelona</b>. ¿<b class="w" data-k="y tú">Y tú</b>? ¿<b class="w" data-k="china">China</b>? ¿<b class="w" data-k="japonesa">Japonesa</b>?</span><span class="gl">나는 바르셀로나 사람. 당신은요? 중국? 일본?</span></p><p class="say" data-say="No, no."><span class="sp">—<b class="w" data-k="no">No</b>, <b class="w" data-k="no">no</b>.</span></p><p>나는 다시 앱을 열었다. ‘저는 한국 사람이에요.’ 화면에 답이 떴다.</p><p class="say" data-say="Soy coreana."><span class="sp">—<b class="w new" data-k="soy">Soy</b><span class="pr">[<b>소</b>이]</span> <b class="w new" data-k="coreana">coreana</b><span class="pr">[코레<b>아</b>나]</span>.</span></p><p class="say" data-say="¡Ah, coreana! ¡Muy bien!"><span class="sp">—¡<b class="w" data-k="ah">Ah</b>, <b class="w" data-k="coreana">coreana</b>! ¡<b class="w new" data-k="muy bien">Muy bien</b><span class="pr">[<b>무</b>이 <b>비엔</b>]</span>!</span></p><p>아저씨는 운전대를 두드리며 무슨 노래를 흥얼거렸다. 아마 한국 노래였을 것이다. 확실하진 않다. 나는 손바닥에 두 단어를 더 적었다. <b class="w" data-k="soy">soy</b> <b class="w" data-k="coreana">coreana</b>. 앱에는 작은 글씨로 이렇게 적혀 있었다. ‘남자는 <b class="w" data-k="coreano">coreano</b>.’ 스페인어에서는 말끝이 남자와 여자를 알아본다.</p><p>창밖으로 간판들이 지나갔다. 그런데 이상했다. 앱에서 거리는 <b class="w new" data-k="calle">calle</b><span class="pr">[<b>카</b>예]</span>라고 배웠는데, 표지판에는 <b class="w" data-k="calle">calle</b>가 하나도 없었다. 전부 <b class="w" data-k="carrer">Carrer</b>였다. 내가 표지판을 가리키자 아저씨가 어깨를 으쓱했다.</p><p class="say" data-say="Carrer, catalán. Calle, español. Barcelona, las dos."><span class="sp">—<b class="w" data-k="carrer">Carrer</b>, <b class="w" data-k="catalán">catalán</b>. <b class="w" data-k="calle">Calle</b>, <b class="w" data-k="español">español</b>. <b class="w" data-k="Barcelona">Barcelona</b>, <b class="w" data-k="las dos">las dos</b>.</span><span class="gl">Carrer는 카탈루냐어. Calle는 스페인어. 바르셀로나는 둘 다.</span></p><p>한 도시에 말이 두 개였다. 나는 아직 하나도 모르는데.</p><p><b class="w" data-k="taxi">taxi</b>는 좁은 <b class="w" data-k="calle">calle</b>로 들어섰다. 4층짜리 낡은 건물들이 양쪽으로 다닥다닥 붙어 있었고, 발코니마다 빨래와 화분이 걸려 있었다. <b class="w" data-k="Gràcia">Gràcia</b>. 할머니의 편지가 출발한 동네였다.</p><p class="say" data-say="Aquí."><span class="sp">—<b class="w" data-k="aquí">Aquí</b>.</span><span class="gl">여기예요.</span></p><p>내리는 나에게 아저씨가 <b class="w" data-k="maleta">maleta</b>를 꺼내 주며 손을 흔들었다.</p><p class="say" data-say="¡Adiós, coreana!"><span class="sp">—¡<b class="w new" data-k="adiós">Adiós</b><span class="pr">[아<b>디오</b>스]</span>, <b class="w" data-k="coreana">coreana</b>!</span></p><p class="say" data-say="¡Adiós! Gracias."><span class="sp">—¡<b class="w" data-k="adiós">Adiós</b>! <b class="w" data-k="gracias">Gracias</b>.</span></p><p class="say" data-say="¡De nada! ¡Vale!"><span class="sp">—¡<b class="w" data-k="de nada">De nada</b>! ¡<b class="w" data-k="vale">Vale</b>!</span></p><p>마지막까지 <b class="w" data-k="vale">vale</b>였다.</p><p class="br">·&ensp;·&ensp;·</p><p>하숙집 문을 연 사람은 키가 내 어깨만 한 할머니였다. 짧게 자른 흰머리에, 커다란 안경을 이마 위에 올리고 있었다.</p><p>나는 <b class="w" data-k="taxi">taxi</b> 안에서 아침 인사를 하나 더 외워 두었다. <b class="w new" data-k="buenos días">Buenos días</b><span class="pr">[<b>부에</b>노스 <b>디</b>아스]</span>. 좋은 아침이에요. 준비는 완벽했다.</p><p class="say" data-say="¡Buenos días!"><span class="sp">—¡<b class="w" data-k="buenos días">Buenos días</b>!</span></p><p class="say" data-say="¡Bon dia!"><span class="sp">—¡<b class="w" data-k="bon dia">Bon dia</b>!</span></p><p>할머니가 동시에 말했다. 나는 그대로 굳었다. <b class="w" data-k="bon dia">bon dia</b>? 앱에는 그런 말이 없었다. 나는 <b class="w" data-k="taxi">taxi</b>에서 배운 말을 꺼냈다.</p><p class="say" data-say="Perdón… no entiendo."><span class="sp">—<b class="w" data-k="perdón">Perdón</b>… <b class="w" data-k="no entiendo">no entiendo</b>.</span></p><p>할머니는 내 얼굴을 보더니 손뼉을 치며 웃었다.</p><p class="say" data-say="¡Ah! Buenos días, buenos días. Bon dia, catalán."><span class="sp">—¡<b class="w" data-k="ah">Ah</b>! <b class="w" data-k="buenos días">Buenos días</b>, <b class="w" data-k="buenos días">buenos días</b>. <b class="w" data-k="bon dia">Bon dia</b>, <b class="w" data-k="catalán">catalán</b>.</span><span class="gl">아! 좋은 아침, 좋은 아침. Bon dia는 카탈루냐어예요.</span></p><p>그녀가 자기 가슴에 손을 얹었다.</p><p class="say" data-say="Soy Montse. ¿Y tú?"><span class="sp">—<b class="w" data-k="soy">Soy</b> <b class="w" data-k="Montse">Montse</b>. ¿<b class="w new" data-k="y tú">Y tú</b><span class="pr">[이 <b>투</b>]</span>?</span><span class="gl">나는 몬세예요. 당신은?</span></p><p><b class="w" data-k="soy">soy</b>. <b class="w" data-k="taxi">taxi</b>에서 배운 말이었다. 그러니까 이렇게 대답하면 된다.</p><p class="say" data-say="Soy Yunha."><span class="sp">—<b class="w" data-k="soy">Soy</b> <b class="w" data-k="Yunha">Yunha</b>.</span></p><p class="say" data-say="¿Yuna?"><span class="sp">—¿<b class="w" data-k="Yunha">Yuna</b>?</span></p><p class="say" data-say="Yun-ha."><span class="sp">—<b class="w" data-k="Yunha">Yun-ha</b>.</span></p><p class="say" data-say="Yu-na. ¡Muy bien, Yuna!"><span class="sp">—<b class="w" data-k="Yunha">Yu-na</b>. ¡<b class="w" data-k="muy bien">Muy bien</b>, <b class="w" data-k="Yunha">Yuna</b>!</span></p><p>그렇게 나는 바르셀로나에서 ‘유나’가 되었다. <b class="w" data-k="hola">hola</b>의 <span class="es">h</span>처럼, 내 이름의 <span class="es">h</span>도 여기서는 소리를 잃었다. 나는 고쳐 주지 않기로 했다. 유나라는 이름도 나쁘지 않았다.</p><p class="say" data-say="Bienvenida, Yuna."><span class="sp">—<b class="w new" data-k="bienvenida">Bienvenida</b><span class="pr">[비엔베<b>니</b>다]</span>, <b class="w" data-k="Yunha">Yuna</b>.</span><span class="gl">어서 와요, 유나.</span></p><p>몬세 할머니가 열쇠 하나를 내 손바닥에 올려놓았다.</p><p class="say" data-say="La llave. Tu habitación, la tres."><span class="sp">—<b class="w" data-k="la">La</b> <b class="w new" data-k="llave">llave</b><span class="pr">[<b>야</b>베]</span>. <b class="w" data-k="tu">Tu</b> <b class="w" data-k="habitación">habitación</b>, <b class="w" data-k="la">la</b> <b class="w new" data-k="tres">tres</b><span class="pr">[<b>트</b>레스]</span>.</span><span class="gl">열쇠. 당신 방은 3호.</span></p><p>그녀는 손가락 세 개를 펴 보였다. <b class="w" data-k="tres">tres</b>. 셋. 그리고 열쇠를 톡톡 두드렸다. <b class="w" data-k="llave">llave</b>. 열쇠.</p><p><b class="w" data-k="llave">llave</b>. 나는 그 단어를 오래 쥐고 있었다. 오늘 내 손에 들어온 두 번째 <b class="w" data-k="llave">llave</b>였다.</p><p class="br">·&ensp;·&ensp;·</p><p>나는 가방을 열고 과자 상자를 꺼냈다. 몬세 할머니에게 첫 번째 봉투를 내밀고, 주소를 손가락으로 짚었다. 앱에서 찾아 둔 질문은 하나뿐이었다.</p><p class="say" data-say="Señora… Por favor. ¿Dónde está?"><span class="sp">—<b class="w new" data-k="señora">Señora</b><span class="pr">[세<b>뇨</b>라]</span>… <b class="w" data-k="por favor">Por favor</b>. ¿<b class="w new" data-k="dónde está">Dónde está</b><span class="pr">[<b>돈</b>데 에스<b>타</b>]</span>?</span><span class="gl">할머니, 부탁이에요. 여기가 어디예요?</span></p><p>몬세 할머니는 이마에 올려 둔 안경을 내려 썼다. 그리고 봉투를 읽었다. 한 번. 두 번. 그녀의 웃음이 천천히 사라졌다.</p><p class="say" data-say="Rellotger… —그녀가 작게 말했다.— Esta calle… ya no existe."><span class="sp">—<b class="w" data-k="Rellotger">Rellotger</b>… —그녀가 작게 말했다.— <b class="w" data-k="esta">Esta</b> <b class="w" data-k="calle">calle</b>… <b class="w" data-k="ya no existe">ya no existe</b>.</span><span class="gl">이 거리는… 이제 없어요.</span></p><p>나는 <b class="w" data-k="calle">calle</b>와 <b class="w" data-k="no">no</b>를 알아들었다. 거리. 그리고, 아니다. 나머지는 알 수 없었다. 하지만 몬세 할머니의 얼굴을 보면 알 수 있었다. 좋은 말이 아니었다.</p><p>그때 그녀의 눈이 내 다른 손에 멈췄다. 할머니의 열쇠. 꽃이 새겨진 손잡이. 몬세 할머니는 그 <b class="w" data-k="llave">llave</b>를 아주 오랫동안 보았다.</p><p class="say" data-say="¿De quién es esta llave?"><span class="sp">—¿<b class="w" data-k="de quién es">De quién es</b> <b class="w" data-k="esta">esta</b> <b class="w" data-k="llave">llave</b>?</span><span class="gl">이 열쇠는 누구 거예요?</span></p><p><b class="w" data-k="llave">llave</b>. 그 단어만 들렸다. 나는 휴대폰에서 할머니 사진을 찾아 보여 주었다. 몬세 할머니가 화면과 나를 번갈아 보았다.</p><p class="say" data-say="¿Tu abuela?"><span class="sp">—¿<b class="w" data-k="tu">Tu</b> <b class="w new" data-k="abuela">abuela</b><span class="pr">[아<b>부엘</b>라]</span>?</span><span class="gl">당신 할머니?</span></p><p><b class="w" data-k="abuela">abuela</b>. 할머니. 나는 고개를 끄덕였다. 아니, 말로 해야 했다.</p><p class="say" data-say="Sí. Mi abuela."><span class="sp">—<b class="w" data-k="sí">Sí</b>. <b class="w" data-k="mi">Mi</b> <b class="w" data-k="abuela">abuela</b>.</span></p><p>몬세 할머니는 아무 말도 하지 않았다. 열쇠를 내 손에 다시 쥐여 주고, 내 손을 자기 두 손으로 감쌌다. 마른 손이었다. 따뜻했다. 그리고 단 한 마디만 했다.</p><p class="say" data-say="Mañana."><span class="sp">—<b class="w new" data-k="mañana">Mañana</b><span class="pr">[마<b>냐</b>나]</span>.</span></p><p>앱을 열었다. <b class="w" data-k="mañana">mañana</b>. 내일.</p><p>내일, 무엇을? 그렇게 묻고 싶었다. 하지만 나는 아직 그 말을 몰랐다.</p>
+<p class="end"><svg viewBox="0 0 120 40" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><circle cx="17" cy="20" r="11"/><circle cx="17" cy="20" r="4"/><path d="M28 20h80M90 20v9M98 20v6M106 20v10"/></g></svg></p>
+<section class="words"><h3><span>1장의 새 단어</span><small>33개</small></h3><ol><li><b>hola</b> <span class="pr">[<b>올</b>라]</span><span class="m">안녕하세요, 안녕</span></li><li><b>gracias</b> <span class="pr">[<b>그라</b><u>씨</u>아스]</span><span class="m">고맙습니다</span></li><li><b>agua</b> <span class="pr">[<b>아</b>구아]</span><span class="m">물</span></li><li><b>sí</b> <span class="pr">[<b>씨</b>]</span><span class="m">네, 응</span></li><li><b>no</b> <span class="pr">[<b>노</b>]</span><span class="m">아니요; ~이 아니다</span></li><li><b>café</b> <span class="pr">[카<b>페</b>]</span><span class="m">커피</span></li><li><b>querida</b> <span class="pr">[케<b>리</b>다]</span><span class="m">사랑하는 (편지 첫머리, 여자에게)</span></li><li><b>aeropuerto</b> <span class="pr">[아에로<b>푸에</b>르토]</span><span class="m">공항</span></li><li><b>pasaporte</b> <span class="pr">[파사<b>포</b>르테]</span><span class="m">여권</span></li><li><b>por favor</b> <span class="pr">[포르 파<b>보</b>르]</span><span class="m">부탁합니다, ~주세요</span></li><li><b>turismo</b> <span class="pr">[투<b>리</b>스모]</span><span class="m">관광</span></li><li><b>de nada</b> <span class="pr">[데 <b>나</b>다]</span><span class="m">천만에요</span></li><li><b>perdón</b> <span class="pr">[페르<b>돈</b>]</span><span class="m">미안합니다, 실례합니다</span></li><li><b>maleta</b> <span class="pr">[말<b>레</b>타]</span><span class="m">여행 가방, 캐리어</span></li><li><b>taxi</b> <span class="pr">[<b>탁</b>시]</span><span class="m">택시</span></li><li><b>adónde</b> <span class="pr">[아<b>돈</b>데]</span><span class="m">어디로?</span></li><li><b>vale</b> <span class="pr">[<b>발</b>레]</span><span class="m">오케이, 알았어, 좋아</span></li><li><b>no entiendo</b> <span class="pr">[노 엔<b>티엔</b>도]</span><span class="m">못 알아듣겠어요, 이해가 안 돼요</span></li><li><b>no pasa nada</b> <span class="pr">[노 <b>파</b>사 <b>나</b>다]</span><span class="m">괜찮아요, 별일 아니에요</span></li><li><b>soy</b> <span class="pr">[<b>소</b>이]</span><span class="m">나는 ~이다</span></li><li><b>coreana</b> <span class="pr">[코레<b>아</b>나]</span><span class="m">한국 여자, 한국의</span></li><li><b>muy bien</b> <span class="pr">[<b>무</b>이 <b>비엔</b>]</span><span class="m">아주 좋아요, 잘했어요</span></li><li><b>calle</b> <span class="pr">[<b>카</b>예]</span><span class="m">거리, 길</span></li><li><b>adiós</b> <span class="pr">[아<b>디오</b>스]</span><span class="m">잘 가요, 안녕히</span></li><li><b>buenos días</b> <span class="pr">[<b>부에</b>노스 <b>디</b>아스]</span><span class="m">좋은 아침이에요, 안녕하세요(오전 인사)</span></li><li><b>y tú</b> <span class="pr">[이 <b>투</b>]</span><span class="m">너는? 당신은?</span></li><li><b>bienvenida</b> <span class="pr">[비엔베<b>니</b>다]</span><span class="m">환영해요, 어서 와요 (여자에게)</span></li><li><b>llave</b> <span class="pr">[<b>야</b>베]</span><span class="m">열쇠</span></li><li><b>tres</b> <span class="pr">[<b>트</b>레스]</span><span class="m">셋, 3</span></li><li><b>señora</b> <span class="pr">[세<b>뇨</b>라]</span><span class="m">(나이 든 여자에게) 부인, 아주머니, 할머니</span></li><li><b>dónde está</b> <span class="pr">[<b>돈</b>데 에스<b>타</b>]</span><span class="m">어디에 있어요?</span></li><li><b>abuela</b> <span class="pr">[아<b>부엘</b>라]</span><span class="m">할머니</span></li><li><b>mañana</b> <span class="pr">[마<b>냐</b>나]</span><span class="m">내일; 아침</span></li></ol></section>
+</section>
+</main>
+<div id="pop" class="ui" role="dialog"></div>
+<button class="listen" id="listen">▶ 듣기</button>
+<script>
+(function () {
+  var V = {"hola": {"p": "<b>올</b>라", "d": "안녕하세요, 안녕", "n": "h는 소리가 나지 않는다", "t": "n", "c": 1}, "gracias": {"p": "<b>그라</b><u>씨</u>아스", "d": "고맙습니다", "n": "", "t": "n", "c": 1}, "agua": {"p": "<b>아</b>구아", "d": "물", "n": "", "t": "n", "c": 1}, "sí": {"p": "<b>씨</b>", "d": "네, 응", "n": "si(만약)와 다른 말. 강세 표시가 있다", "t": "n", "c": 1}, "no": {"p": "<b>노</b>", "d": "아니요; ~이 아니다", "n": "", "t": "n", "c": 1}, "café": {"p": "카<b>페</b>", "d": "커피", "n": "", "t": "n", "c": 1}, "querida": {"p": "케<b>리</b>다", "d": "사랑하는 (편지 첫머리, 여자에게)", "n": "남자에게는 querido", "t": "n", "c": 1}, "aeropuerto": {"p": "아에로<b>푸에</b>르토", "d": "공항", "n": "", "t": "n", "c": 1}, "pasaporte": {"p": "파사<b>포</b>르테", "d": "여권", "n": "", "t": "n", "c": 1}, "por favor": {"p": "포르 파<b>보</b>르", "d": "부탁합니다, ~주세요", "n": "", "t": "n", "c": 1}, "turismo": {"p": "투<b>리</b>스모", "d": "관광", "n": "", "t": "n", "c": 1}, "de nada": {"p": "데 <b>나</b>다", "d": "천만에요", "n": "gracias에 대한 대답", "t": "n", "c": 1}, "perdón": {"p": "페르<b>돈</b>", "d": "미안합니다, 실례합니다", "n": "", "t": "n", "c": 1}, "maleta": {"p": "말<b>레</b>타", "d": "여행 가방, 캐리어", "n": "", "t": "n", "c": 1}, "taxi": {"p": "<b>탁</b>시", "d": "택시", "n": "", "t": "n", "c": 1}, "adónde": {"p": "아<b>돈</b>데", "d": "어디로?", "n": "", "t": "n", "c": 1}, "vale": {"p": "<b>발</b>레", "d": "오케이, 알았어, 좋아", "n": "스페인 사람들이 하루에 수백 번 하는 말", "t": "n", "c": 1}, "no entiendo": {"p": "노 엔<b>티엔</b>도", "d": "못 알아듣겠어요, 이해가 안 돼요", "n": "", "t": "n", "c": 1}, "no pasa nada": {"p": "노 <b>파</b>사 <b>나</b>다", "d": "괜찮아요, 별일 아니에요", "n": "", "t": "n", "c": 1}, "soy": {"p": "<b>소</b>이", "d": "나는 ~이다", "n": "ser(이다) 동사의 ‘나’ 형태", "t": "n", "c": 1}, "coreana": {"p": "코레<b>아</b>나", "d": "한국 여자, 한국의", "n": "남자는 coreano", "t": "n", "c": 1}, "muy bien": {"p": "<b>무</b>이 <b>비엔</b>", "d": "아주 좋아요, 잘했어요", "n": "", "t": "n", "c": 1}, "calle": {"p": "<b>카</b>예", "d": "거리, 길", "n": "카탈루냐어로는 carrer", "t": "n", "c": 1}, "adiós": {"p": "아<b>디오</b>스", "d": "잘 가요, 안녕히", "n": "", "t": "n", "c": 1}, "buenos días": {"p": "<b>부에</b>노스 <b>디</b>아스", "d": "좋은 아침이에요, 안녕하세요(오전 인사)", "n": "", "t": "n", "c": 1}, "y tú": {"p": "이 <b>투</b>", "d": "너는? 당신은?", "n": "", "t": "n", "c": 1}, "bienvenida": {"p": "비엔베<b>니</b>다", "d": "환영해요, 어서 와요 (여자에게)", "n": "남자에게는 bienvenido", "t": "n", "c": 1}, "llave": {"p": "<b>야</b>베", "d": "열쇠", "n": "", "t": "n", "c": 1}, "tres": {"p": "<b>트</b>레스", "d": "셋, 3", "n": "", "t": "n", "c": 1}, "señora": {"p": "세<b>뇨</b>라", "d": "(나이 든 여자에게) 부인, 아주머니, 할머니", "n": "남자에게는 señor", "t": "n", "c": 1}, "dónde está": {"p": "<b>돈</b>데 에스<b>타</b>", "d": "어디에 있어요?", "n": "", "t": "n", "c": 1}, "abuela": {"p": "아<b>부엘</b>라", "d": "할머니", "n": "할아버지는 abuelo", "t": "n", "c": 1}, "mañana": {"p": "마<b>냐</b>나", "d": "내일; 아침", "n": "", "t": "n", "c": 1}, "ay": {"p": "<b>아</b>이", "d": "아이고, 앗", "n": "", "t": "x", "c": 1}, "su": {"p": "<b>수</b>", "d": "당신의, 그의, 그녀의", "n": "", "t": "x", "c": 1}, "yo": {"p": "<b>요</b>", "d": "나", "n": "", "t": "x", "c": 1}, "china": {"p": "<b>치</b>나", "d": "중국 여자", "n": "", "t": "x", "c": 1}, "japonesa": {"p": "하포<b>네</b>사", "d": "일본 여자", "n": "", "t": "x", "c": 1}, "catalán": {"p": "카탈<b>란</b>", "d": "카탈루냐어", "n": "", "t": "x", "c": 1}, "español": {"p": "에스파<b>뇰</b>", "d": "스페인어", "n": "", "t": "x", "c": 1}, "las dos": {"p": "라스 <b>도</b>스", "d": "둘 다", "n": "", "t": "x", "c": 1}, "aquí": {"p": "아<b>키</b>", "d": "여기", "n": "", "t": "x", "c": 1}, "la": {"p": "라", "d": "(여성 명사 앞) 그", "n": "el / la — 2장에서 배운다", "t": "x", "c": 1}, "tu": {"p": "<b>투</b>", "d": "너의, 당신의", "n": "강세 없는 tu는 ‘너의’, 강세 있는 tú는 ‘너’", "t": "x", "c": 1}, "habitación": {"p": "아비타<u>씨</u><b>온</b>", "d": "방", "n": "", "t": "x", "c": 1}, "esta": {"p": "<b>에</b>스타", "d": "이 (여성 명사 앞)", "n": "", "t": "x", "c": 1}, "ya no existe": {"p": "<b>야</b> 노 엑<b>시</b>스테", "d": "이제는 없다", "n": "", "t": "x", "c": 1}, "de quién es": {"p": "데 <b>키엔</b> <b>에</b>스", "d": "누구 거예요?", "n": "", "t": "x", "c": 1}, "mi": {"p": "<b>미</b>", "d": "나의", "n": "", "t": "x", "c": 1}, "bon dia": {"p": "본 <b>디</b>아", "d": "좋은 아침이에요 (카탈루냐어)", "n": "스페인어로는 buenos días", "t": "c", "c": 1}, "carrer": {"p": "카<b>레</b>", "d": "거리 (카탈루냐어)", "n": "스페인어로는 calle", "t": "c", "c": 1}, "Barcelona": {"p": "바르<u>셀</u><b>로</b>나", "d": "바르셀로나", "n": "", "t": "p", "c": 1}, "Gràcia": {"p": "<b>그라</b>시아", "d": "그라시아 — 바르셀로나 북쪽의 오래된 동네", "n": "", "t": "p", "c": 1}, "Montse": {"p": "<b>몬</b>세", "d": "몬세 — Montserrat의 애칭", "n": "", "t": "p", "c": 1}, "Rellotger": {"p": "레요<b>제</b>", "d": "렐로제 — ‘시계공’이라는 뜻의 카탈루냐어", "n": "", "t": "p", "c": 1}, "Sun-rye": {"p": "순례", "d": "순례", "n": "", "t": "p", "c": 1}, "Yunha": {"p": "유나", "d": "유나 — 스페인어에는 h 소리가 없어서 ‘윤하’가 ‘유나’가 된다", "n": "", "t": "p", "c": 1}, "M.": {"p": "<b>에</b>메", "d": "M — 편지를 보낸 사람", "n": "", "t": "p", "c": 1}, "coreano": {"p": "코레<b>아</b>노", "d": "한국 남자, 한국의", "n": "", "t": "x", "c": 1}, "del": {"p": "<b>델</b>", "d": "~의 (de + el)", "n": "", "t": "x", "c": 1}, "ah": {"p": "<b>아</b>", "d": "아!", "n": "", "t": "x", "c": 1}}, TOC = [{"n": 1, "es": "Hola"}];
+  var root = document.documentElement, KEY = 'llave:';
+  function get(k, d) { try { var v = localStorage.getItem(KEY + k); return v === null ? d : v; } catch (e) { return d; } }
+  function put(k, v) { try { localStorage.setItem(KEY + k, v); } catch (e) {} }
+
+  // ── 화면 설정 ──
+  var size = +get('size', 18);
+  function setSize(n) { size = Math.max(14, Math.min(30, n)); root.style.setProperty('--size', size + 'px'); put('size', size); }
+  setSize(size);
+  document.getElementById('plus').onclick = function () { setSize(size + 2); };
+  document.getElementById('minus').onclick = function () { setSize(size - 2); };
+  function toggle(id, attr) {
+    var b = document.getElementById(id);
+    function apply(v) { root.dataset[attr] = v; b.classList.toggle('on', v === '1'); put(attr, v); }
+    apply(get(attr, '1'));
+    b.onclick = function () { apply(root.dataset[attr] === '1' ? '0' : '1'); };
+  }
+  toggle('pr', 'pr'); toggle('gl', 'g');
+  var th = get('t', matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  function setT(t) { th = t; if (t === 'dark') root.dataset.t = 'dark'; else delete root.dataset.t; put('t', t); }
+  setT(th);
+  document.getElementById('th').onclick = function () { setT(th === 'dark' ? 'light' : 'dark'); };
+
+  // ── 읽기 위치 ──
+  var prog = document.getElementById('prog'), saveT;
+  addEventListener('scroll', function () {
+    var h = document.documentElement.scrollHeight - innerHeight;
+    prog.style.width = (h > 0 ? scrollY / h * 100 : 0) + '%';
+    clearTimeout(saveT); saveT = setTimeout(function () { put('y', scrollY); }, 300);
+  }, { passive: true });
+  if (location.hash) {
+    var t = document.querySelector(location.hash);
+    if (t) setTimeout(function () { t.scrollIntoView(); }, 50);
+  } else {
+    var y = +get('y', 0); if (y) setTimeout(function () { scrollTo(0, y); }, 50);
+  }
+
+  // ── 소리 (기기의 es-ES 음성) ──
+  var TTS = !!(window.speechSynthesis && window.SpeechSynthesisUtterance), queue = [], playing = null;
+  var listenBtn = document.getElementById('listen');
+  if (!TTS) listenBtn.style.display = 'none';
+  function voice() {
+    var vs = speechSynthesis.getVoices(), best = null;
+    vs.forEach(function (v) {
+      if (!/^es/i.test(v.lang)) return;
+      var s = (/es[-_]ES/i.test(v.lang) ? 4 : 1) + (/google|premium|enhanced|mónica|monica|jorge/i.test(v.name) ? 2 : 0);
+      if (!best || s > best.s) best = { v: v, s: s };
+    });
+    return best && best.v;
+  }
+  if (TTS) speechSynthesis.onvoiceschanged = function () {};
+  function stop() {
+    queue = []; if (TTS) speechSynthesis.cancel();
+    if (playing) playing.classList.remove('speaking'); playing = null;
+    listenBtn.classList.remove('on'); listenBtn.textContent = '▶ 듣기';
+  }
+  function say(text, el, done) {
+    if (!TTS) return;
+    var u = new SpeechSynthesisUtterance(text), v = voice();
+    u.lang = 'es-ES'; if (v) u.voice = v; u.rate = +get('rate', 0.9);
+    if (el) { el.classList.add('speaking'); playing = el; }
+    u.onend = u.onerror = function () { if (el) el.classList.remove('speaking'); if (done) done(); };
+    speechSynthesis.speak(u);
+  }
+  function next() {
+    var el = queue.shift();
+    if (!el) { stop(); return; }
+    el.scrollIntoView({ block: 'center', behavior: 'smooth' });
+    say(el.dataset.say, el, function () { setTimeout(next, 450); });
+  }
+  listenBtn.onclick = function () {
+    if (listenBtn.classList.contains('on')) { stop(); return; }
+    stop();
+    // 화면 가운데쯤의 대사부터 그 장 끝까지
+    var all = [].slice.call(document.querySelectorAll('p.say')), mid = innerHeight / 3;
+    var i = all.findIndex(function (p) { return p.getBoundingClientRect().top > mid - 40; });
+    queue = all.slice(i < 0 ? 0 : i);
+    listenBtn.classList.add('on'); listenBtn.textContent = '■ 멈춤';
+    next();
+  };
+  document.querySelectorAll('p.say').forEach(function (p) {
+    var b = document.createElement('button'); b.className = 'play'; b.setAttribute('aria-label', '이 문장 듣기');
+    b.onclick = function (e) { e.stopPropagation(); stop(); say(p.dataset.say, p); };
+    p.insertBefore(b, p.firstChild);
+  });
+
+  // ── 단어 뜻 ──
+  var pop = document.getElementById('pop'), cur = null;
+  var TAG = { c: '카탈루냐어', p: '이름', x: '' };
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function show(el, key, text) {
+    var e = V[key]; if (!e) return;
+    if (cur) cur.classList.remove('on'); cur = el; el.classList.add('on');
+    var tag = TAG[e.t] ? '<span class="tag">' + TAG[e.t] + '</span>' : (e.t === 'n' ? '<span class="tag">' + e.c + '장</span>' : '');
+    pop.innerHTML = '<span class="hw">' + esc(key) + '</span><span class="pp">[' + e.p + ']</span>' + tag +
+      '<span class="df">' + esc(e.d) + '</span>' + (e.n ? '<span class="nt">' + esc(e.n) + '</span>' : '') +
+      (TTS && e.t !== 'p' ? '<button type="button">▶ 듣기</button>' : '');
+    var b = pop.querySelector('button');
+    if (b) b.onclick = function (ev) { ev.stopPropagation(); stop(); say(text || key); };
+    pop.style.display = 'block';
+    var r = el.getBoundingClientRect(), pw = pop.offsetWidth, ph = pop.offsetHeight;
+    var x = Math.min(Math.max(8, r.left + r.width / 2 - pw / 2), innerWidth - pw - 8);
+    var y = r.bottom + 8; if (y + ph > innerHeight - 8) y = r.top - ph - 8;
+    pop.style.left = x + 'px'; pop.style.top = y + 'px';
+  }
+  function hide() { pop.style.display = 'none'; if (cur) cur.classList.remove('on'); cur = null; }
+  document.addEventListener('click', function (e) {
+    if (pop.contains(e.target)) return;
+    var w = e.target.closest('.w');
+    if (w) { show(w, w.dataset.k, w.textContent); return; }
+    var li = e.target.closest('.words li');
+    if (li) { var b = li.querySelector('b'); show(b, b.textContent, b.textContent); return; }
+    hide();
+  });
+  addEventListener('scroll', hide, { passive: true });
+  addEventListener('keydown', function (e) { if (e.key === 'Escape') { hide(); stop(); } });
+})();
+</script>
+</body></html>

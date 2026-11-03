@@ -16,16 +16,17 @@
     --frost: #2f4858;    /* 프랑켄슈타인 — 북극 */
     --coat: #3a5a8c;     /* 젊은 베르테르의 슬픔 — 푸른 웃옷 */
     --gold: #a9762a;
+    --tile: #b4532a;     /* 그라시아의 열쇠 — 바르셀로나 기와 */
   }
   @media (prefers-color-scheme: dark) {
     :root {
       --paper: #16181a; --ink: #e8e4dc; --muted: #9b958a; --rule: #2b2e31;
-      --card: #1d2023; --seed: #8fb37f; --velvet: #d08292; --frost: #8fb2c9; --coat: #93aad4; --gold: #e0b062;
+      --card: #1d2023; --seed: #8fb37f; --velvet: #d08292; --frost: #8fb2c9; --coat: #93aad4; --gold: #e0b062; --tile: #e0906a;
     }
   }
   :root[data-theme="dark"] {
     --paper: #16181a; --ink: #e8e4dc; --muted: #9b958a; --rule: #2b2e31;
-    --card: #1d2023; --seed: #8fb37f; --velvet: #d08292; --frost: #8fb2c9; --coat: #93aad4; --gold: #e0b062;
+    --card: #1d2023; --seed: #8fb37f; --velvet: #d08292; --frost: #8fb2c9; --coat: #93aad4; --gold: #e0b062; --tile: #e0906a;
   }
   :root[data-theme="light"] {
     --paper: #fbfaf7; --ink: #21201c; --muted: #6f6a60; --rule: #e2ded4;
@@ -81,6 +82,7 @@
   .stat b { display: block; font-size: 15px; color: var(--ink); font-weight: 600; }
   .b1 { --tint: var(--seed); } .b2 { --tint: var(--velvet); }
   .b3 { --tint: var(--coat); } .b4 { --tint: var(--frost); }
+  .b5 { --tint: var(--tile); }
 
   .how {
     font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Noto Sans KR", sans-serif;
@@ -152,6 +154,15 @@
         <span class="en">Frankenstein · 1831</span>
       </div>
       <div class="stat"><b>28장</b>7만 5천 단어</div>
+    </a>
+    <a class="book b5" href="es.html">
+      <div class="spine"></div>
+      <div class="meat">
+        <span class="lvl">스페인어 · 처음부터 · 견본</span>
+        <span class="ko">그라시아의 열쇠</span>
+        <span class="en">La llave de Gràcia · 1장</span>
+      </div>
+      <div class="stat"><b>1장</b>30장 중</div>
     </a>
   </div>
 

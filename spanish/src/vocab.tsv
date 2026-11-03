@@ -1,0 +1,65 @@
+# 열: 표제어 → 본문에 나오는 형태들(| 구분) → 한글 발음 → 뜻 → 종류 → 처음 나온 장 → 메모
+# 종류: n = 그 장에서 새로 배우는 단어(장 끝 목록에 실림) / x = 나오긴 하지만 아직 가르치지 않는 말(눌러야 뜻이 보임)
+#       c = 카탈루냐어 / p = 고유명사
+# 발음: *굵게* = 강세, _밑줄_ = 혀를 이 사이에 무는 th 소리(스페인 본토의 z, ce, ci)
+hola	hola	*올*라	안녕하세요, 안녕	n	1	h는 소리가 나지 않는다
+gracias	gracias	*그라*_씨_아스	고맙습니다	n	1
+agua	agua	*아*구아	물	n	1
+sí	sí	*씨*	네, 응	n	1	si(만약)와 다른 말. 강세 표시가 있다
+no	no	*노*	아니요; ~이 아니다	n	1
+café	café	카*페*	커피	n	1
+querida	querida	케*리*다	사랑하는 (편지 첫머리, 여자에게)	n	1	남자에게는 querido
+aeropuerto	aeropuerto	아에로*푸에*르토	공항	n	1
+pasaporte	pasaporte	파사*포*르테	여권	n	1
+por favor	por favor	포르 파*보*르	부탁합니다, ~주세요	n	1
+turismo	turismo	투*리*스모	관광	n	1
+de nada	de nada	데 *나*다	천만에요	n	1	gracias에 대한 대답
+perdón	perdón	페르*돈*	미안합니다, 실례합니다	n	1
+maleta	maleta	말*레*타	여행 가방, 캐리어	n	1
+taxi	taxi	*탁*시	택시	n	1
+adónde	adónde	아*돈*데	어디로?	n	1
+vale	vale	*발*레	오케이, 알았어, 좋아	n	1	스페인 사람들이 하루에 수백 번 하는 말
+no entiendo	no entiendo	노 엔*티엔*도	못 알아듣겠어요, 이해가 안 돼요	n	1
+no pasa nada	no pasa nada	노 *파*사 *나*다	괜찮아요, 별일 아니에요	n	1
+soy	soy	*소*이	나는 ~이다	n	1	ser(이다) 동사의 ‘나’ 형태
+coreana	coreana	코레*아*나	한국 여자, 한국의	n	1	남자는 coreano
+muy bien	muy bien	*무*이 *비엔*	아주 좋아요, 잘했어요	n	1
+calle	calle	*카*예	거리, 길	n	1	카탈루냐어로는 carrer
+adiós	adiós	아*디오*스	잘 가요, 안녕히	n	1
+buenos días	buenos días	*부에*노스 *디*아스	좋은 아침이에요, 안녕하세요(오전 인사)	n	1
+y tú	y tú	이 *투*	너는? 당신은?	n	1
+bienvenida	bienvenida	비엔베*니*다	환영해요, 어서 와요 (여자에게)	n	1	남자에게는 bienvenido
+llave	llave	*야*베	열쇠	n	1
+tres	tres	*트*레스	셋, 3	n	1
+señora	señora	세*뇨*라	(나이 든 여자에게) 부인, 아주머니, 할머니	n	1	남자에게는 señor
+dónde está	dónde está	*돈*데 에스*타*	어디에 있어요?	n	1
+abuela	abuela	아*부엘*라	할머니	n	1	할아버지는 abuelo
+mañana	mañana	마*냐*나	내일; 아침	n	1
+ay	ay	*아*이	아이고, 앗	x	1
+su	su	*수*	당신의, 그의, 그녀의	x	1
+yo	yo	*요*	나	x	1
+china	china	*치*나	중국 여자	x	1
+japonesa	japonesa	하포*네*사	일본 여자	x	1
+catalán	catalán	카탈*란*	카탈루냐어	x	1
+español	español	에스파*뇰*	스페인어	x	1
+las dos	las dos	라스 *도*스	둘 다	x	1
+aquí	aquí	아*키*	여기	x	1
+la	la	라	(여성 명사 앞) 그	x	1	el / la — 2장에서 배운다
+tu	tu	*투*	너의, 당신의	x	1	강세 없는 tu는 ‘너의’, 강세 있는 tú는 ‘너’
+habitación	habitación	아비타_씨_*온*	방	x	1
+esta	esta	*에*스타	이 (여성 명사 앞)	x	1
+ya no existe	ya no existe	*야* 노 엑*시*스테	이제는 없다	x	1
+de quién es	de quién es	데 *키엔* *에*스	누구 거예요?	x	1
+mi	mi	*미*	나의	x	1
+bon dia	bon dia	본 *디*아	좋은 아침이에요 (카탈루냐어)	c	1	스페인어로는 buenos días
+carrer	carrer	카*레*	거리 (카탈루냐어)	c	1	스페인어로는 calle
+Barcelona	barcelona	바르_셀_*로*나	바르셀로나	p	1
+Gràcia	gràcia	*그라*시아	그라시아 — 바르셀로나 북쪽의 오래된 동네	p	1
+Montse	montse	*몬*세	몬세 — Montserrat의 애칭	p	1
+Rellotger	rellotger	레요*제*	렐로제 — ‘시계공’이라는 뜻의 카탈루냐어	p	1
+Sun-rye	sun-rye	순례	순례	p	1
+Yunha	yunha|yun-ha|yuna|yu-na	유나	유나 — 스페인어에는 h 소리가 없어서 ‘윤하’가 ‘유나’가 된다	p	1
+M.	m	*에*메	M — 편지를 보낸 사람	p	1
+coreano	coreano	코레*아*노	한국 남자, 한국의	x	1
+del	del	*델*	~의 (de + el)	x	1
+ah	ah	*아*	아!	x	1
