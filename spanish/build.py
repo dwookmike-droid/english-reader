@@ -60,14 +60,21 @@ class Inline:
     def __init__(self, forms, entries):
         self.forms, self.entries = forms, entries
         self.unknown, self.seen, self.uses = set(), set(), {}
+        self.shown = set()      # 발음을 이미 보여 준 말
         self.ch = 1
 
     def word(self, text, key, first=False, pron=None):
+        """단어를 감싼다. 15장까지는 단어표의 어떤 말이든(스페인어·카탈루냐어·아직 안 가르친 말)
+        책에서 처음 나오는 자리에 한 번 발음을 붙인다. 사람 이름에는 붙이지 않는다."""
         self.uses[key] = self.uses.get(key, 0) + 1
         cls = 'w new' if first else 'w'
         s = f'<b class="{cls}" data-k="{html.escape(key)}">{html.escape(text)}</b>'
-        if first and pron and self.ch <= AIDS_UNTIL:
-            s += f'<span class="pr">[{pron_html(pron)}]</span>'
+        e = self.entries.get(key, {})
+        p = pron or e.get('p')
+        if (p and key not in self.shown and e.get('t') != 'p'
+                and self.ch <= AIDS_UNTIL):
+            s += f'<span class="pr">[{pron_html(p)}]</span>'
+        self.shown.add(key)
         return s
 
     def latin_run(self, run):
