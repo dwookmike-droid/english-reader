@@ -66,7 +66,7 @@
 | 8 Voy a comprar ✔ | La Rambla, Mercat de la Boqueria, 모소스 경찰서 | 발레의 asado 장보기, 소매치기, 스페인어로만 신고, 마르크가 공방 지하 상자를 열겠다고 함 | ir a + 동사원형, 신고하기(me han robado), 묘사(grande/pequeño, 색) |
 | 9 Me levanto temprano ✔ | 마르크 공방, El Born의 오래된 대문, Santa Maria del Mar | 장부 속 'S를 위한 괘종시계(팔지 않음)', 조수 노릇, 회사 시절과 지금의 하루, 편지 속 약속 장소 | 재귀동사(me levanto, me ducho, me visto, me acuesto), 연장 이름, 하루 일과 |
 | 10 Más grande que el mar ✔ | Santa Maria del Mar(일요일 11시), Barceloneta 해변 | 발레의 친구들(Luca, Sofía, Pau)과 비교 다툼, 햇볕에 탄 등, 장부 속 라스팔마스 주소 | 비교(más/menos… que, mejor), 몸과 아픔(me duele) |
-| 11 | Montjuïc: 케이블카, 마법의 분수 | 편지에 적힌 항구가 보이는 언덕 | 미래 계획, 감정 표현 |
+| 11 Tengo miedo ✔ | 항구 케이블카(Transbordador Aeri: 바르셀로네타 탑 → 몬주익 Miramar), 몬주익 성 | 편지 속 '몬주익에서 너의 배가 보인다', 높이에 대한 두려움, 마르크의 '나도 기뻐요', 편도표와 'Bien' | 감정(tengo miedo, nerviosa, contenta), vamos a ir, ¿cuándo?, volver |
 | 12 | Port Vell, 콜럼버스 기념탑, 해양박물관(Drassanes) | 1978년 라스팔마스에서 온 배의 기록 | 과거로 넘어가는 다리 (점과거 맛보기) |
 
 ### 3부 1978 — A2, 한국어 20→0%. 할머니의 편지가 본문으로 들어온다
