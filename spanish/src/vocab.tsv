@@ -67,7 +67,6 @@ qué es esto	qué es esto	*케* 에스 *에*스토	이게 뭐예요?	n	2	모르�
 pan	pan	*판*	빵	n	2	el pan
 con	con	*콘*	~와 함께, ~을 넣은	n	2	café con leche = 우유 넣은 커피
 tomate	tomate|tomates	토*마*테	토마토	n	2	pan con tomate = 토마토 바른 빵. 카탈루냐의 아침
-bueno	bueno	*부에*노	좋은, 맛있는	n	2	여자 이름에는 buena
 leche	leche	*레*체	우유	n	2	la leche
 el	el	*엘*	그 (남자 이름 앞에 붙는 말)	n	2	el pan, el café, el reloj
 me llamo	me llamo	메 *야*모	내 이름은 ~이다	n	2
@@ -426,7 +425,6 @@ estás	estás		너는 ~이다(상태), 있다	x	8	¿Estás bien? = 괜찮아?
 estás bien	estás bien		괜찮아?	n	8
 estoy bien	estoy bien		괜찮아요	x	8
 qué ha pasado	qué ha pasado		무슨 일이 있었어요?	n	8	pasar = 일어나다
-pasado	pasado		일어난 (ha pasado = 일어났다)	x	8
 me han robado	me han robado		(누가) 나에게서 훔쳐 갔다	n	8	도둑을 모를 때 ‘그들’(han)로 말한다
 han	han		(그들은) ~했다 (오늘 일)	x	8
 robado	robado		훔친	x	8
@@ -726,7 +724,6 @@ me acuerdo del nombre	me acuerdo del nombre|me acuerdo|nombre		이름이 기억�
 acuerdo	acuerdo		기억한다; 동의	x	12
 la niña	la niña|niña		여자아이	n	12	남자아이는 el niño
 mi madre	mi madre|madre		엄마, 어머니	n	12	tu madre = 너희 엄마
-tenía	tenía		(그때) ~였다, 가지고 있었다	n	12	tener의 과거(계속된 상태)
 jugaba	jugaba		놀곤 했다, 놀았다	n	12	jugar의 과거(계속된 일)
 el patio	el patio|patio		안마당	n	12
 mis gatos	mis gatos|gatos|gato		내 고양이들	x	12
@@ -740,3 +737,142 @@ antes de la despedida	antes de la despedida|despedida		작별 전에	x	12	desped
 sabía	sabía		알았다 (과거)	x	12	saber
 voy a llamar	voy a llamar|llamar		전화할 것이다	x	12	llamar = 전화하다; 부르다
 pasado mañana	pasado mañana		모레	x	12
+esperé	esperé|esperaste|esperó|espero		기다렸다 (esperar의 과거)	n	13	esperé 내가, esperaste 네가, esperó 그가
+esperaba	esperaba		기다리고 있었다 (계속된 과거)	n	13
+era	era		~였다 (계속된 과거)	n	13	ser의 과거. fue는 한 번 끝난 일
+fue	fue|fueron|fuimos		~였다; 갔다 (한 번 끝난 과거)	n	13	ser·ir의 과거가 같다
+había	había		있었다 (hay의 과거)	n	13
+estaba	estaba|estaban		있었다, ~한 상태였다	n	13	estar의 과거
+tenía	tenía|tenían		가지고 있었다, ~였다	n	12
+dijo	dijo|dije|dijiste|dijimos		말했다	n	13	decir의 과거
+llegaste	llegaste		네가 도착했다	x	13
+llegas	llegas		네가 도착한다	x	13
+vino	vino		왔다	n	13	venir의 과거. (같은 꼴로 ‘포도주’라는 뜻도 있다)
+hizo café	hizo café		커피를 끓였다	x	13
+se fue	se fue		가 버렸다, 떠났다	x	13
+no quería	no quería|quería		원하지 않았다	x	13	querer의 과거
+lo sabía	lo sabía		나는 그걸 알고 있었다	x	13
+el piso	el piso|piso		아파트, 집	x	13
+un diccionario grande	un diccionario grande|diccionario		큰 사전	x	13
+la mesa de la cocina	la mesa de la cocina|mesa|cocina		부엌 식탁	n	13	mesa = 탁자, cocina = 부엌
+leemos	leemos		(우리는) 읽는다	x	13
+una carta entera	una carta entera|entera		편지 한 통 전부	x	13	entero = 전부의
+una sola	una sola		딱 하나	x	13
+cuál	cuál		어느 것	n	13
+tú decides	tú decides|decides		네가 정해	x	13	decidir = 정하다
+miré	miré|miraste|miraba|mirando		보았다	n	13	mirar의 과거
+los sobres	los sobres|sobres|sobre		봉투	n	13	(sobre는 ‘~위에’라는 뜻도 있다)
+inclinada	inclinada		기울어진	x	13
+todos menos uno	todos menos uno		하나만 빼고 전부	x	13
+el último	el último|último		마지막	x	13
+no pensé en eso	no pensé en eso|pensé|pensar		그건 생각하지 않았다	x	13	pensar = 생각하다
+elegí	elegí		골랐다	x	13	elegir
+el tercero	el tercero|tercero|tercera		세 번째	x	13
+una mancha	una mancha|mancha		얼룩	x	13
+una esquina	una esquina|esquina		모서리, 모퉁이	x	13
+me gustó	me gustó|gustó		마음에 들었다	x	13	gustar의 과거
+alguien	alguien		누군가	n	13	반대는 nadie
+leyó	leyó|leí		읽었다	x	13	leer의 과거
+abrí	abrí		열었다	x	13
+puso	puso		놓았다	x	13	poner의 과거
+entre los dos	entre los dos|entre		둘 사이에	x	13
+tardamos	tardamos		(시간이) 걸렸다	x	13	tardar
+no me traducía	no me traducía|traducía		번역해 주지 않았다	x	13
+explicaba	explicaba|explicó		설명했다	x	13	explicar
+una por una	una por una		하나씩	x	13
+escribía	escribía|escribió		썼다	x	13	escribir의 과거
+cuando	cuando		~할 때	n	13
+no entendía	no entendía|entendía|entender		이해하지 못했다	x	13
+un verbo	un verbo|verbo		동사	x	13
+lo decía	lo decía|decía		그것을 말하곤 했다	x	13
+al final	al final|final		마지막에	x	13
+mi cuaderno	mi cuaderno|cuaderno		내 수첩	n	13
+esta es	esta es		이게 그거다	x	13
+diciembre	diciembre		12월	x	13
+te acuerdas	te acuerdas|acuerdas		기억나?	n	13	acordarse
+la iglesia	la iglesia|iglesia		성당, 교회	n	13
+mayo	mayo		5월	x	13
+el lago	el lago|lago|la plaza del lago		호수, 연못	n	13
+delante de	delante de|delante		~앞에	n	13
+muchas grúas	muchas grúas|grúas|grúa		크레인들	x	13
+yo solo miraba	yo solo miraba		나는 거리만 보고 있었다	x	13
+con la niña en brazos	con la niña en brazos|brazos		아이를 안고	x	13	brazo = 팔
+la niña no quería dormir	la niña no quería dormir		아이가 자려고 하지 않았다	x	13
+mis primeras palabras	mis primeras palabras|primeras|primera|palabras|palabra		내 첫 말들	x	13	palabra = 낱말, 말
+en coreano	en coreano		한국어로	x	13
+las aprendí	las aprendí|aprendí|aprendió|aprendía		배웠다	x	13
+te reíste	te reíste|reíste|se rieron|rieron		웃었다	x	13	reírse
+caminamos	caminamos		(우리는) 걸었다	x	13
+alrededor de	alrededor de|alrededor		~주위를	x	13
+las torres	las torres|torres		탑들	n	13
+no está terminada	no está terminada|terminada|terminado|terminar|terminarla|terminó		완성되지 않았다	x	13	terminar = 끝내다
+sin terminar	sin terminar		완성되지 않은	x	13
+hace frío	hace frío		춥다	n	13	반대는 hace calor
+no hay nadie	no hay nadie|nadie		아무도 없다	n	13
+escríbeme	escríbeme		나에게 편지해 줘	x	13
+tres veces	tres veces|vez		세 번	x	13	vez = 번
+la primera vez	la primera vez		처음	x	13
+la segunda vez	la segunda vez|segunda		두 번째	x	13
+en voz baja	en voz baja|voz|baja		낮은 목소리로	x	13
+no pude	no pude|pude		할 수 없었다	x	13	poder의 과거
+nunca hablaba mucho	nunca hablaba mucho|hablaba|habló		말을 많이 하지 않았다	x	13
+así	así		그렇게, 이렇게	x	13
+cosas	cosas		것들	x	13
+le pregunté	le pregunté|pregunté|le		그에게 물었다	x	13
+me explicó	me explicó		나에게 설명했다	x	13
+una cosa que pasó una vez	una cosa que pasó una vez|pasó		한 번 일어난 일	x	13
+cómo	cómo		어떻게	x	13
+una persona	una persona|persona		사람	x	13
+durante	durante		~동안	n	13
+los dos estaban	los dos estaban		둘 다 있었다	x	13
+pasados	pasados		과거들	x	13
+fuimos	fuimos		우리는 갔다	x	13
+tomamos	tomamos		탔다	x	13
+el bolsillo	el bolsillo|bolsillo		주머니	x	13
+al lado de	al lado de|lado		~옆에	n	13
+salimos	salimos		나왔다	x	13
+pocas	pocas		적은	x	13
+al otro lado	al otro lado|otro		건너편에	x	13
+enorme	enorme		거대한	n	13
+las fotos	las fotos|fotos|foto		사진	n	13
+subían al cielo	subían al cielo|subían|cielo		하늘로 솟아 있었다	x	13	cielo = 하늘
+como dedos de piedra	como dedos de piedra|dedos		돌 손가락처럼	x	13
+al revés	al revés|revés		거꾸로	x	13
+con cámaras	con cámaras|cámaras		카메라를 든	x	13
+igual que	igual que		~와 똑같이	x	13
+buscó	buscó		찾았다	x	13
+una foto vieja	una foto vieja		오래된 사진	x	13
+de los años setenta	de los años setenta|setenta		70년대의	x	13
+unas pocas torres	unas pocas torres|unas		탑 몇 개	x	13
+nada en el centro	nada en el centro|centro		가운데에는 아무것도	x	13
+un esqueleto	un esqueleto|esqueleto		뼈대	x	13
+cuerpo	cuerpo		몸	x	13
+color	color		색	x	13
+ventanas	ventanas|ventana		창문	x	13
+me senté	me senté|senté|se sentó|sentó		앉았다	x	13
+un banco	un banco|banco		벤치; 은행	x	13
+se rieron	se rieron		(그들은) 웃었다	x	13
+durante un rato	durante un rato|rato		한동안	x	13
+mirando	mirando		보면서	x	13
+sabes qué quiere decir	sabes qué quiere decir|sabes|quiere decir|quiere|decir		무슨 뜻인지 알아?	x	13
+que él no estaba terminado	que él no estaba terminado		그가 완성되지 않았다는 것	x	13
+otra vez	otra vez|otra		다시, 또	n	13
+el marido de mi abuela	el marido de mi abuela|marido		할머니의 남편	x	13	marido = 남편
+un marinero del barco	un marinero del barco|marinero		배의 선원	x	13
+murió	murió		세상을 떠났다	x	13	morir의 과거
+siete	siete		일곱, 7	x	13
+callado	callado		말이 없는	x	13
+olía a mar y a tabaco	olía a mar y a tabaco|olía|tabaco		바다와 담배 냄새가 났다	x	13
+lo quería mucho	lo quería mucho		그를 많이 사랑했다	x	13
+no sabía qué pensar	no sabía qué pensar		무슨 생각을 해야 할지 몰랐다	x	13
+estaba casada	estaba casada|casada		결혼한 상태였다	x	13
+en cada carta	en cada carta|cada		편지마다	x	13
+vio	vio		보았다	x	13	ver의 과거
+no tienes que entender todo	no tienes que entender todo		다 이해할 필요는 없다	x	13	tener que = ~해야 한다
+en la boca de Marc	en la boca de marc|boca		마르크의 입에서	x	13
+sonreí	sonreí		웃었다, 미소 지었다	x	13
+ella	ella		그녀	n	13
+esa	esa|ese		그 (멀리 있는 것)	x	13
+estar	estar		있다, ~한 상태다	n	13	estoy, estás, está…
+frases	frases|frase		문장	x	13
+misma	misma|mismo		같은	x	13

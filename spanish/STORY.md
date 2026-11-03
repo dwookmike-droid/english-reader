@@ -36,6 +36,7 @@
 | 10 | 8월 23일 일 (산타 마리아 델 마르 11시, 바르셀로네타) |
 | 11 | 8월 29일 토 (항구 케이블카, 몬주익 성) |
 | 12 | 9월 1일 화 (콜럼버스 기념탑, 해양박물관, 저녁의 몬세) |
+| 13 | 9월 3일 목 (세 번째 편지, 사그라다 파밀리아) |
 
 그라시아 축제(Festa Major de Gràcia)는 8월 15일 무렵 시작해 한 주 동안 열린다. 라 메르세(La Mercè)는 9월 24일 전후다.
 
@@ -64,6 +65,8 @@
 **11장 Tengo miedo** — 8월 29일 토요일. 윤하가 사전으로 두 번째 편지에서 읽어 낸 줄: **"Desde Montjuïc veo el puerto. Ya no veo tu barco."**(할머니가 떠난 뒤에 쓴 편지) 마르크와 바르셀로네타의 탑에서 항구 케이블카를 타고 몬주익으로 건너간다(tengo miedo / *"Tú vienes sola a Barcelona. Sin español." "Eso es diferente." "No. Es igual."*). 케이블카 안에서 *"Estoy nerviosa. Pero contenta." — "Yo también estoy contento."* 마르크가 처음으로 자기 기분을 말한다. 몬주익 성벽에서 항구를 내려다보며 편지 문장을 둘이 나눠 읽는다. 왜 할머니는 배로 왔을까 → 마르크: 항구의 바다 박물관에 옛 배 서류가 있다, **화요일에 가자**(vamos a ir). 내려오는 길에 마르크가 묻는다. *¿Cuándo vas a volver a Corea?* 윤하: *No tengo billete de vuelta. Solo de ida.* 마르크, 작은 목소리로: *"Bien."*
 
 **12장 El barco llegó** — 9월 1일 화요일. 콜럼버스 기념탑(*"Señala Mallorca. — Más o menos."*). 해양박물관(옛 왕립 조선소) 도서실의 은발 사서가 항구 서류는 없지만 신문 아카이브에 날마다 입출항이 실렸다며 검색해 준다. **"3 de marzo de 1978. Llegó al puerto de Barcelona el pesquero coreano «Dong-Hae 7», procedente de Las Palmas, para reparación en el dique. Tripulación y familias."** / **"12 de noviembre de 1978. Salió… con destino a Las Palmas."** 마르크가 처음으로 과거형(llegó, salió)을 설명한다. 윤하의 첫 과거형 문장: *Llegó en marzo. Salió en noviembre.* 장부의 10월(괘종시계)은 떠나기 한 달 전. 저녁에 몬세: *"El Dong-Hae… Me acuerdo del nombre."* 그리고 **"Y la niña… tu madre. Tenía tres años. Jugaba en el patio. Con mis gatos."** 세 살 엄마가 이 집 안마당에서 놀았다. 윤하는 엄마에게 문자를 쓰다 지운다.
+
+**13장 Te esperé** — 9월 3일 목요일. (3부: 서술이 스페인어 과거형으로 바뀐다.) 마르크가 큰 사전을 들고 하숙집에 온다. 몬세는 시장에 가 버린다. 윤하가 커피 얼룩이 있는 **세 번째 편지**를 고른다(봉투 중 마지막 하나만 조금 다르다는 것을 눈치채지만 깊이 생각하지 않는다). 두 시간 걸려 처음으로 편지 전문을 읽는다(1978년 12월 2일, 바르셀로나): 5월의 어느 일요일 Sagrada Família 연못 광장에서 마르티가 한 시간을 기다렸고, 순례는 아이(정미)를 안고 늦게 왔다. *"Perdón, Martí. La niña no quería dormir."* 마르티의 첫 한국어는 **"괜찮아요"**(책에서 배움). 순례가 "No está terminada"라고 하자 마르티: **"Barcelona tampoco. Yo tampoco."** 끝: *Escríbeme. M.* 마르크가 점과거와 선과거(fue/era)를 설명한다. 오후, 연못에 거꾸로 비친 성당. 1978년엔 탑이 몇 개뿐이었다. 윤하는 외할아버지(배의 선원, 윤하가 일곱 살 때 돌아가심, 말없고 바다와 담배 냄새)를 떠올리며 혼란스럽다. 할머니는 결혼한 몸이었다. 마르크: *"No tienes que entender todo hoy. Poco a poco."*
 
 ## 남은 실마리
 
