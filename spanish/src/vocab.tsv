@@ -1020,7 +1020,7 @@ nos hizo una foto	nos hizo una foto		우리 사진을 찍었다	x	15
 pagué	pagué		돈을 냈다	x	15	pagar
 vuelvan a las seis	vuelvan a las seis|vuelvan		여섯 시에 다시 오세요	x	15
 tenías que volver	tenías que volver|tenías		너는 돌아가야 했다	x	15
-nunca recogí la foto	nunca recogí la foto|recogí|recogió		사진을 끝내 찾지 않았다	x	15	recoger = 찾아가다, 줍다
+nunca recogí la foto	nunca recogí la foto|recogí|recogió		사진을 끝내 찾지 않았다	n	15	recoger = 찾아가다, 줍다
 fuimos felices	fuimos felices|felices|feliz		우리는 행복했다	n	15	feliz = 행복한
 solo un día	solo un día		딱 하루	x	15
 fue verdad	fue verdad		진짜였다	x	15
@@ -1041,13 +1041,13 @@ unas nuevas y rápidas	unas nuevas y rápidas|nuevas		새롭고 빠른 것들	x	
 otras viejas y lentas	otras viejas y lentas|otras|lentas		오래되고 느린 것들	x	15
 diferentes	diferentes		다른, 서로 다른	x	15
 directamente	directamente		곧장	x	15
-el borde	el borde|borde		가장자리	x	15
+el borde	el borde|borde		가장자리	n	15
 sin mirar	sin mirar|mirar		보지도 않고	x	15
 allí	allí		저기, 거기	n	15
 colgado de un brazo	colgado de un brazo|colgado|brazo		팔에 매달린	x	15
 el vacío	el vacío		허공	x	15
 L'Avió	l'avió|avió|l	*라*비오	아비오 — 티비다보의 1928년 비행기 놀이기구 (카탈루냐어 ‘비행기’)	c	15
-hicimos la cola	hicimos la cola|hicimos|cola		줄을 섰다	x	15	hacer cola = 줄 서다
+hicimos cola	hicimos cola|hicimos|cola		줄을 섰다	n	15	hacer cola = 줄 서다
 mirándolas	mirándolas		그들을 바라보며	x	15
 por dentro	por dentro|dentro		안쪽은	x	15
 asientos	asientos|asiento		좌석	x	15
@@ -1056,7 +1056,7 @@ por encima del vacío	por encima del vacío		허공 위로	x	15
 esta vez	esta vez		이번에는	n	15
 la mía	la mía|mía		내 것 (손)	x	15
 no la cogió fuerte	no la cogió fuerte		세게 잡지 않았다	x	15
-la dejó ahí	la dejó ahí|dejó|ahí		거기에 그냥 두었다	x	15	dejar = 두다
+la dejó ahí	la dejó ahí|dejó|ahí		거기에 그냥 두었다	n	15	dejar = 두다
 busqué	busqué		찾았다	x	15
 no la encontré	no la encontré|encontré		찾지 못했다	x	15
 hace cuarenta y ocho años	hace cuarenta y ocho años|cuarenta		48년 전에	x	15
@@ -1230,3 +1230,24 @@ no me ha gustado	no me ha gustado|gustado		마음에 안 들었다 (오늘)	x	16
 se lo ha comido	se lo ha comido|comido		그걸 먹었다 (오늘)	x	16
 nos ha contado	nos ha contado|contado		우리에게 이야기해 주었다 (오늘)	x	16
 cuenta	cuenta		센다; 이야기한다	x	16
+una semana más tarde	una semana más tarde|semana		일주일 뒤	x	15	semana = 주
+unos días antes leí	unos días antes leí		며칠 전에 읽었다	x	15
+estaba casi vacío	estaba casi vacío		거의 비어 있었다	x	15
+no tuve valor	no tuve valor|tuve|valor		용기가 없었다	x	15
+nunca volví a buscar	nunca volví a buscar|volví		다시는 찾으러 가지 않았다	x	15
+tu marido volvía	tu marido volvía|volvía		네 남편이 돌아오고 있었다	x	15
+casi todo de cristal	casi todo de cristal|cristal		거의 전부 유리로 된	x	15
+las mismas vías	las mismas vías|vías|mismas		같은 선로	x	15
+los barrios	los barrios|barrios		동네들	x	15
+entonces	entonces		그때; 그러면	n	15
+quería decir	quería decir		~라는 뜻이었다	x	15
+no importa	no importa		상관없다	n	15
+distintas entre sí	distintas entre sí|distintas		서로 달랐다	x	15
+en el aire	en el aire		공중에	x	15
+asientos pequeños	asientos pequeños		작은 좌석	x	15
+paró	paró		멈췄다	x	14
+su vermut de los domingos	su vermut de los domingos|vermut		일요일의 베르무트	x	15	vermut = 식전 술
+casi nunca	casi nunca		거의 ~않다	x	15
+hasta hoy	hasta hoy		오늘까지	x	15
+a los tres	a los tres		셋에게	x	15
+cada septiembre	cada septiembre		9월마다	x	15
