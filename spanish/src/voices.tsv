@@ -1,7 +1,7 @@
 # 등장인물 → Gemini TTS 목소리. 열: 원고의 @이름 → 대화 지시문에 쓰는 이름(영문) → 목소리 → 말투
 # 목소리 이름은 Gemini 기본 목소리(prebuilt voice) 중에서 고른다. 바꾸면 그 사람의 대사만 새로 만든다.
 yunha	Yuna	Achernar	a Korean woman in her late thirties, speaking carefully and a little hesitantly, but with correct Castilian pronunciation
-montse	Montse	Gacrux	a lively Catalan grandmother in her seventies, warm, quick, a bit theatrical
+montse	Montse	Gacrux	a lively Catalan grandmother in her seventies, warm, quick, a bit theatrical; her Catalan words and phrases are pronounced as native Catalan, her Spanish as Castilian from Barcelona
 taxista	Taxista	Algenib	a cheerful Barcelona taxi driver in his sixties, gravelly voice, relaxed
 azafata	Azafata	Aoede	a friendly flight attendant, polite and bright
 policia	Policia	Charon	a passport officer, neutral and businesslike

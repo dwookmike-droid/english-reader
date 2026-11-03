@@ -71,7 +71,7 @@ class Inline:
         out, pos, i = [], 0, 0
         while i < len(toks):
             hit = None
-            for n in (3, 2, 1):
+            for n in (5, 4, 3, 2, 1):
                 if i + n > len(toks):
                     continue
                 grp = toks[i:i + n]

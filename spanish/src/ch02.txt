@@ -12,9 +12,17 @@ mañana.
 
 부엌에서 커피 냄새가 났다. 몬세 할머니는 벌써 앞치마를 두르고 있었다.
 
-@montse —¡Buenos días, Yuna! ¿{Qué tal|*케* *탈*}? :: 좋은 아침, 유나! 잘 잤어요?
+@montse —Bon dia, Yuna! Com estàs? :: (카탈루냐어) 좋은 아침, 유나! 잘 잤어요?
 
-qué tal. 처음 듣는 말이었지만 웃는 얼굴을 보니 안부를 묻는 것 같았다. 오늘은 어제처럼 굳지 않았다. 나도 아침 인사를 할 줄 안다.
+또 카탈루냐어였다. 하지만 bon dia는 어제 배웠다. 나는 똑같이 돌려주었다.
+
+@yunha —¡Bon dia!
+
+몬세의 얼굴이 환해졌다. 그러다 무언가 생각났다는 듯 이마를 탁 쳤다.
+
+@montse —¡Ay, perdona! Buenos días. ¿{Qué tal|*케* *탈*}? :: 아이고, 미안! 좋은 아침. 잘 잤어요?
+
+qué tal. 처음 듣는 말이었지만 웃는 얼굴을 보니 안부를 묻는 것 같았다. 몬세는 아침에도 카탈루냐어가 먼저였다. 어젯밤 세 번이던 이마 치기가 오늘 아침 벌써 한 번이었다. 나도 스페인어로 아침 인사를 했다.
 
 @yunha —¡Buenos días, señora!
 
@@ -26,9 +34,13 @@ qué tal. 처음 듣는 말이었지만 웃는 얼굴을 보니 안부를 묻는
 
 @yunha —¿{Qué es esto|*케* 에스 *에*스토}? :: 이게 뭐예요?
 
-@montse —{Pan|*판*} {con|*콘*} {tomate|토*마*테}. :: 토마토 바른 빵.
+@montse —Pa amb tomàquet! :: (카탈루냐어) 토마토 바른 빵!
 
-몬세는 빵을 가리키며 pan, 토마토를 들어 보이며 tomate, 그리고 두 손을 합치며 con이라고 했다. pan con tomate. 토마토와 함께인 빵. con은 ‘~와 함께’였다.
+나는 눈만 껌뻑였다. 몬세가 이마를 칠 차례였다.
+
+@montse —¡Ay! {Pan|*판*} {con|*콘*} {tomate|토*마*테}. :: 아차! 토마토 바른 빵.
+
+카탈루냐 사람들은 이 빵을 pa amb tomàquet라고 부른다고 했다. 이 동네의 아침이었다. 몬세는 빵을 가리키며 pan, 토마토를 들어 보이며 tomate, 그리고 두 손을 합치며 con이라고 했다. pan con tomate. 토마토와 함께인 빵. con은 ‘~와 함께’였다.
 
 나는 한 입 베어 물었다. 바삭한 빵에 토마토의 새콤함과 올리브유의 고소함이 번졌다. 소금이 혀끝에서 톡 터졌다. 고작 빵과 토마토였는데.
 
@@ -42,9 +54,9 @@ qué tal. 처음 듣는 말이었지만 웃는 얼굴을 보니 안부를 묻는
 
 @yunha —Sí, por favor.
 
-@montse —¿Con {leche|*레*체}? :: 우유 넣어요?
+@montse —Amb llet? ¡Ay! ¿Con {leche|*레*체}? :: (카탈루냐어) 우유 넣어요? 아차! 우유 넣어요?
 
-con. 방금 배운 말이었다. 우유와 함께. leche는 우유일 것이다. 몬세가 작은 냄비에 데운 우유를 들어 보였으니 틀림없었다.
+이번에는 몬세가 스스로 알아차렸다. 내가 굳기도 전이었다. con. 방금 배운 말이었다. 우유와 함께. leche는 우유일 것이다. 몬세가 작은 냄비에 데운 우유를 들어 보였으니 틀림없었다.
 
 @yunha —Sí. Café con leche, por favor.
 
@@ -112,7 +124,7 @@ cansada. 피곤한. 새벽 다섯 시부터 깨어 있던 사람에게 꼭 필�
 
 몬세가 앞치마를 풀었다. 그리고 가방을 어깨에 메며 말했다.
 
-@montse —Yuna. {Vamos|*바*모스}. :: 유나. 가요.
+@montse —Yuna. Som-hi! … Ay. {Vamos|*바*모스}. :: (카탈루냐어) 유나. 가자! …아차. 가요.
 
 @yunha —¿Adónde?
 
@@ -152,11 +164,13 @@ mira. 봐. plaza. 광장. Carrer와 calle처럼, 여기서는 광장도 이름�
 
 몬세가 손가락을 들어 탑 꼭대기를 가리켰다. 커다란 시계가 달려 있었다.
 
-@montse —Y el {reloj|레*로*흐}. :: 그리고 시계.
+@montse —I el rellotge. :: (카탈루냐어) 그리고 시계.
 
-@montse —Reloj, en español. Rellotge, en catalán. :: 스페인어로 reloj. 카탈루냐어로 rellotge.
+rellotge. 나는 숨을 멈췄다. 봉투의 주소가 떠올랐다. Carrer del Rellotger. 몬세는 내가 또 못 알아들은 줄 알고 이마를 쳤다.
 
-rellotge. 나는 숨을 멈췄다. 봉투의 주소가 떠올랐다. Carrer del Rellotger. 몬세가 내 얼굴을 보고 천천히 고개를 끄덕였다.
+@montse —¡Ay, perdona! El {reloj|레*로*흐}. Rellotge, en catalán. Reloj, en español. :: 아이고, 미안! 시계. 카탈루냐어로 rellotge, 스페인어로 reloj.
+
+이번만은 몬세가 사과할 일이 아니었다. 카탈루냐어가 먼저 나왔기 때문에 나는 알아들었다. rellotge와 Rellotger. 시계와 시계공. 몬세가 내 얼굴을 보고 천천히 고개를 끄덕였다.
 
 @montse —Rellotger… el {señor|세*뇨*르} de los relojes. :: rellotger는… 시계 아저씨. 시계 만드는 사람.
 
