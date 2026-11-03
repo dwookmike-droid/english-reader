@@ -100,7 +100,6 @@ Buenos Aires	buenos aires	*부에*노스 *아*이레스	부에노스아이레스
 Seúl	seúl	세*울*	서울	p	2
 me encanta	me encanta	메 엔*칸*타	너무 좋아!	x	2
 Valentina	valentina	발렌*티*나	발렌티나 — 줄여서 Vale	p	2
-como	como	*코*모	~처럼, ~같이	x	2
 y	y	*이*	그리고	x	2
 normal	normal	노르*말*	당연하지, 보통이야	x	2
 jet lag	jet lag	*옛* *락*	시차 피로 (영어에서 온 말)	f	2
@@ -207,7 +206,6 @@ claro	claro	*클라*로	그럼요, 물론이죠	n	4
 cerca	cerca	*_세_르*카	가까이, 가깝다	n	4	반대는 lejos
 lejos	lejos	*레*호스	멀리, 멀다	n	4	반대는 cerca
 todo recto	todo recto	*토*도 *렉*토	쭉, 똑바로	n	4	길 안내에서 가장 많이 듣는 말
-luego	luego	*루에*고	그다음에, 나중에	n	4	
 derecha	derecha	데*레*차	오른쪽	n	4	a la derecha = 오른쪽으로
 izquierda	izquierda	이_스_*키에르*다	왼쪽	n	4	a la izquierda = 왼쪽으로
 perdida	perdida|perdido	페르*디*다	길을 잃은 (여자)	n	4	남자는 perdido
@@ -283,12 +281,10 @@ años	años|año		해, 나이	n	5	tengo 38 años = 서른여덟 살이에요
 setenta y tres	setenta y tres		일흔셋, 73	x	5
 veinticinco	veinticinco		스물다섯, 25	x	5
 veintisiete	veintisiete		스물일곱, 27	x	5
-vive	vive		산다, 살고 있다	x	5	vivir(살다)
 seis meses	seis meses		여섯 달	x	5	seis = 6, mes = 달
 amiga	amiga		친구 (여자)	n	5	남자 친구는 amigo
 hermano	hermano		형제, 오빠, 형	n	5	자매는 hermana
 poco a poco	poco a poco		조금씩	n	5
-por hoy	por hoy		오늘은	x	5	Por hoy, nada más = 오늘은 여기까지
 más tarde	más tarde		이따가, 나중에	x	5
 de puerta	de puerta		문의	x	5
 de reloj	de reloj		시계의	x	5
@@ -340,3 +336,57 @@ u	u	*우*	하나 (카탈루냐어)	c	6
 
 esto	esto		이것 (가까이 있는 것)	x	2	멀리 있는 것은 eso
 fondo	fondo		바닥, 밑	x	6
+has desayunado	has desayunado		(오늘) 아침 먹었어?	n	7	오늘 일어난 일은 he/has/ha + -ado/-ido로 말한다
+he desayunado	he desayunado		(오늘) 아침 먹었어	n	7	desayunar = 아침을 먹다
+desayunar	desayunar		아침을 먹다	x	7
+he	he		(나는) ~했다 (오늘 일)	n	7	he ido = 갔다, he visto = 봤다
+has	has		(너는) ~했다 (오늘 일)	x	7
+ha	ha		(그는, 그녀는) ~했다 (오늘 일)	x	7
+hemos	hemos		(우리는) ~했다 (오늘 일)	x	7
+hemos encontrado	hemos encontrado		우리가 찾았다	n	7	encontrar = 찾다
+encontrado	encontrado		찾은	x	7
+he encontrado	he encontrado		내가 찾았다	x	7
+ido	ido		간 (he ido = 갔다)	x	7	ir = 가다
+visto	visto		본 (he visto = 봤다)	x	7	ver = 보다
+la tía Montse	la tía montse		몬세 고모할머니	x	7
+archivo	archivo		기록보관소	n	7	카탈루냐어로는 arxiu
+Arxiu	arxiu	*아*르시우	기록보관소 (카탈루냐어)	c	7	스페인어로는 archivo
+Barri Gòtic	barri gòtic	*바*리 *고*틱	고딕 지구 — 바르셀로나에서 가장 오래된 동네	p	7
+Vespa	vespa	*베*스파	베스파 — 이탈리아 스쿠터	p	7
+catedral	catedral		대성당	n	7	la catedral
+las golondrinas	las golondrinas|golondrinas		제비들	x	7
+rápidas	rápidas|rápido|rápida		빠른	x	7
+como	como		~처럼	x	2
+la tortuga	la tortuga|tortuga		거북이	x	7
+lenta	lenta|lento		느린	x	7
+la administración	la administración|administración		관청, 행정	x	7
+en qué puedo ayudarles	en qué puedo ayudarles		무엇을 도와드릴까요?	x	7	가게·관청에서 듣는 말
+relojero	relojero		시계 만드는 사람, 시계공	n	7	카탈루냐어로는 rellotger
+c	c	*카*예	거리(calle/carrer)를 줄인 말	x	7
+no es	no es		~이 아니다	x	7
+en aquella época	en aquella época		그 시절에는	x	7
+los nombres de las calles	los nombres de las calles		거리 이름들	x	7	nombre = 이름
+luego	luego		그다음에, 나중에	n	4
+es aquí	es aquí		여기예요	x	7
+relojería	relojería		시계방	n	7
+Puig	puig	*푸*치	푸치 — 몬세와 마르크 집안의 성	p	7
+taller	taller		공방, 작업장	n	7	el taller
+padre	padre		아버지	n	7	어머니는 madre
+y de su padre	y de su padre		그리고 그분의 아버지의	x	7
+qué hay ahora	qué hay ahora		지금은 뭐가 있어요?	x	7
+nada	nada		아무것도 (없다)	n	7	de nada, nada más에도 들어 있다
+parte	parte		일부, 부분	x	7
+vive	vive		살아 있다, 산다	n	7	vivir = 살다. Ya no vive = 이제 살아 있지 않다
+ya no vive	ya no vive		이제 살아 있지 않다	x	7
+ya no está	ya no está		이제 없다, 이제 안 계시다	x	7
+su reloj	su reloj		그의 시계	x	7
+todavía	todavía		아직	n	7
+funciona	funciona		작동한다, (시계가) 간다	n	7
+por qué	por qué		왜? 뭐 때문에?	n	7	대답은 porque(왜냐하면)
+por hoy	por hoy		오늘 일로, 오늘은	x	5
+he ido	he ido		(오늘) 갔다	x	7
+he visto	he visto		(오늘) 봤다	x	7
+un buzón	un buzón|buzón		우체통	x	7
+mapa	mapa|un mapa		지도	x	7
+número	número		번호, 번지	x	7
+Plaça de Sant Jaume	plaça de sant jaume	*플라*사 더 *산* *자*우메	산 자우메 광장 — 시청과 카탈루냐 정부 청사가 마주 보는 광장	p	7
