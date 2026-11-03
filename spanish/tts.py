@@ -127,6 +127,10 @@ def synth(key, model, lines):
             return base64.b64decode(part['data']), rate
         except urllib.error.HTTPError as e:
             err = e.read().decode(errors='replace')
+            if e.code == 402:
+                sys.exit('결제 크레딧이 없다는 응답(402)입니다. 이 키의 프로젝트는 무료 등급이 아니라 선불 결제로 '
+                         '설정되어 있고 크레딧이 바닥났습니다. AI Studio에서 크레딧을 채우거나, 결제를 연결하지 '
+                         '않은 새 프로젝트의 키를 쓰세요.')
             if e.code == 429:
                 if re.search(r'PerDay|per day|daily', err, re.I):
                     raise DailyLimit(err)
