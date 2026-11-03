@@ -87,6 +87,8 @@ html[data-pr="0"] .ch .pr { display:none; }
 #pop .nt { display:block; margin-top:4px; color:#9ca3af; font-size:13px; }
 #pop .tag { display:inline-block; font-size:11px; color:#111827; background:#9ca3af; border-radius:3px; padding:0 5px; margin-left:4px; vertical-align:2px; }
 #pop button { margin-top:8px; font:inherit; font-size:12.5px; background:#374151; color:#f9fafb; border:0; border-radius:6px; padding:4px 10px; cursor:pointer; }
+.dl { display:block; width:fit-content; margin:0 auto 1.2em; font-size:12.5px; color:var(--mark);
+  text-decoration:none; border:1px solid var(--line); border-radius:999px; padding:5px 12px; background:var(--card); }
 .listen { position:fixed; right:14px; bottom:calc(14px + env(safe-area-inset-bottom)); z-index:40;
   font:600 13px -apple-system,BlinkMacSystemFont,"Noto Sans KR",sans-serif; padding:10px 14px; border-radius:999px;
   border:1px solid var(--line); background:var(--card); color:var(--fg); box-shadow:0 4px 16px rgba(0,0,0,.12); cursor:pointer; }
@@ -99,6 +101,7 @@ html[data-pr="0"] .ch .pr { display:none; }
   <button id="gl" class="on" title="대사 밑 우리말 뜻">해석</button>
   <button id="minus" aria-label="글자 작게">A−</button>
   <button id="plus" aria-label="글자 크게">A+</button>
+  <button id="sp" title="읽어 주는 속도">1×</button>
   <button id="th" aria-label="밤 화면">밤</button>
   <div id="prog"></div>
 </div>
@@ -109,7 +112,7 @@ html[data-pr="0"] .ch .pr { display:none; }
     <div class="hint ui">
       스페인어 단어를 <b>누르면</b> 뜻과 발음이 나옵니다.
       대사 앞의 <b>▶</b>를 누르면 그 문장을, 오른쪽 아래 <b>듣기</b>를 누르면 이 장의 스페인어를 처음부터 차례로 읽어 줍니다.
-      목소리는 기기에 깔린 스페인 스페인어(es-ES) 음성을 씁니다.
+      대사는 등장인물마다 다른 목소리로 녹음한 파일을 틀고, 아직 녹음이 없는 문장과 단어는 기기의 스페인어 음성으로 읽습니다.
     </div>
   </div>
 <!--BOOK-->
@@ -155,10 +158,14 @@ html[data-pr="0"] .ch .pr { display:none; }
     var y = +get('y', 0); if (y) setTimeout(function () { scrollTo(0, y); }, 50);
   }
 
-  // ── 소리 (기기의 es-ES 음성) ──
+  // ── 소리: 녹음 파일(audio/es/*.mp3)이 있으면 그것을, 없으면 기기의 es-ES 음성 ──
   var TTS = !!(window.speechSynthesis && window.SpeechSynthesisUtterance), queue = [], playing = null;
-  var listenBtn = document.getElementById('listen');
-  if (!TTS) listenBtn.style.display = 'none';
+  var listenBtn = document.getElementById('listen'), player = new Audio();
+  if (!TTS && !document.querySelector('p.say[data-a]')) listenBtn.style.display = 'none';
+  var SPEEDS = [1, 0.85, 0.7], spd = +get('spd', 1), spBtn = document.getElementById('sp');
+  function setSpd(v) { spd = v; spBtn.textContent = (v === 1 ? '1' : v) + '×'; put('spd', v); player.playbackRate = v; }
+  setSpd(SPEEDS.indexOf(spd) < 0 ? 1 : spd);
+  spBtn.onclick = function () { setSpd(SPEEDS[(SPEEDS.indexOf(spd) + 1) % SPEEDS.length]); };
   function voice() {
     var vs = speechSynthesis.getVoices(), best = null;
     vs.forEach(function (v) {
@@ -171,13 +178,22 @@ html[data-pr="0"] .ch .pr { display:none; }
   if (TTS) speechSynthesis.onvoiceschanged = function () {};
   function stop() {
     queue = []; if (TTS) speechSynthesis.cancel();
+    player.onended = player.onerror = null; player.pause();
     if (playing) playing.classList.remove('speaking'); playing = null;
     listenBtn.classList.remove('on'); listenBtn.textContent = '▶ 듣기';
   }
   function say(text, el, done) {
-    if (!TTS) return;
+    if (el && el.dataset.a) {
+      el.classList.add('speaking'); playing = el;
+      player.onended = player.onerror = function () { el.classList.remove('speaking'); if (done) done(); };
+      player.src = 'audio/es/' + el.dataset.a + '.mp3';
+      player.playbackRate = spd; player.defaultPlaybackRate = spd;
+      player.play().catch(function () { el.classList.remove('speaking'); });
+      return;
+    }
+    if (!TTS) { if (done) done(); return; }
     var u = new SpeechSynthesisUtterance(text), v = voice();
-    u.lang = 'es-ES'; if (v) u.voice = v; u.rate = +get('rate', 0.9);
+    u.lang = 'es-ES'; if (v) u.voice = v; u.rate = 0.9 * spd;
     if (el) { el.classList.add('speaking'); playing = el; }
     u.onend = u.onerror = function () { if (el) el.classList.remove('speaking'); if (done) done(); };
     speechSynthesis.speak(u);

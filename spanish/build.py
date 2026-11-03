@@ -133,9 +133,17 @@ def parse_chapter(path, inline):
             buf.clear()
 
     def para(text):
+        who = None
+        m = re.match(r'@(\w+)\s+(—.*)', text)
+        if m:
+            who, text = m.groups()
         if text.startswith('—'):
+            if not who:
+                print(f'  ! 말하는 사람 표시(@이름)가 없는 대사: {text[:30]}', file=sys.stderr)
             es, _, ko = text.partition(' :: ')
-            return dict(t='say', es=inline(es), ko=html.escape(ko.strip()), plain=strip_marks(es))
+            plain = strip_marks(es)
+            return dict(t='say', es=inline(es), ko=html.escape(ko.strip()), plain=plain,
+                        who=who, a=audio_id(who, plain))
         return dict(t='p', h=inline(text))
 
     for line in lines[1:]:
@@ -159,7 +167,33 @@ def parse_chapter(path, inline):
 
 
 def strip_marks(s):
-    return re.sub(r'\{([^|}]+)\|[^}]+\}', r'\1', s).lstrip('—').strip()
+    """소리로 읽을 스페인어만 남긴다: {단어|발음} 표기와 「—그녀가 말했다.—」 같은 우리말 지문을 뺀다."""
+    s = re.sub(r'\{([^|}]+)\|[^}]+\}', r'\1', s)
+    s = re.sub(r'\s*—[^—]*[가-힣][^—]*—\s*', ' ', s)
+    return s.lstrip('—').strip()
+
+
+# ── 음성 ──────────────────────────────────────────────────────────
+# 대사마다 (말하는 사람, 목소리, 문장)으로 이름을 정한다. 셋 중 하나라도 바뀌면 새로 만든다.
+AUDIO = SITE / 'audio' / 'es'
+
+
+def load_voices():
+    v = {}
+    for line in (SRC / 'voices.tsv').read_text(encoding='utf-8').splitlines():
+        if line.strip() and not line.startswith('#'):
+            c = line.split('\t')
+            v[c[0]] = dict(id=c[0], label=c[1], voice=c[2], style=c[3])
+    return v
+
+
+VOICES = load_voices()
+
+
+def audio_id(who, text):
+    import hashlib
+    voice = VOICES.get(who, {}).get('voice', '')
+    return hashlib.sha1(f'{who}|{voice}|{text}'.encode()).hexdigest()[:12]
 
 
 def block_html(b):
@@ -167,7 +201,9 @@ def block_html(b):
         return f'<p>{b["h"]}</p>'
     if b['t'] == 'say':
         gl = f'<span class="gl">{b["ko"]}</span>' if b['ko'] else ''
-        return (f'<p class="say" data-say="{html.escape(b["plain"])}">'
+        has = (AUDIO / f'{b["a"]}.mp3').exists()
+        aud = f' data-a="{b["a"]}"' if has else ''
+        return (f'<p class="say" data-say="{html.escape(b["plain"])}"{aud}>'
                 f'<span class="sp">{b["es"]}</span>{gl}</p>')
     if b['t'] == 'br':
         return '<p class="br">·&ensp;·&ensp;·</p>'
@@ -244,12 +280,20 @@ def print_html(chapters, entries, fontdir):
 
 
 # ── 웹 리더 ─────────────────────────────────────────────────────────
+def chapter_audio(ch):
+    f = AUDIO / f'ch{ch["n"]:02d}.mp3'
+    if not f.exists():
+        return ''
+    return (f'<a class="dl ui" href="audio/es/{f.name}" download>'
+            f'이 장 음성 파일 받기 (mp3 · {f.stat().st_size // 1024} KB)</a>')
+
+
 def web_html(chapters, entries):
     tpl = (ROOT / 'reader.html').read_text(encoding='utf-8')
     secs = []
     for ch in chapters:
         secs.append(f'''<section class="ch" id="c{ch["n"]}">
-<h2><span class="cn">Capítulo {ch["n"]}</span><span class="ct">{html.escape(ch["es"])}</span>
+{chapter_audio(ch)}<h2><span class="cn">Capítulo {ch["n"]}</span><span class="ct">{html.escape(ch["es"])}</span>
 <span class="cp">[{pron_html(ch["pr"])}]</span></h2>
 {''.join(block_html(b) for b in ch["blocks"])}
 <p class="end">{KEY_SVG}</p>
@@ -280,6 +324,8 @@ def main():
 
     (SITE / 'es.html').write_text(web_html(chapters, entries), encoding='utf-8')
     print('→ es.html')
+    if '--web-only' in sys.argv:
+        return
 
     fontdir = Path(os.environ.get('FONTS', ROOT / '.fonts'))
     if not fontdir.exists():
