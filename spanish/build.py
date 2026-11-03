@@ -27,7 +27,7 @@ TITLE_ES, TITLE_KO = 'La llave de Gràcia', '그라시아의 열쇠'
 
 LATIN = r"A-Za-zÀ-ÖØ-öø-ÿ"
 WORD = re.compile(rf"[{LATIN}](?:[{LATIN}\-]*[{LATIN}])?")
-SKIP = {'h', 'th', 'k', 'app'}          # 본문 설명에 쓰인 글자 이름 등
+SKIP = {'h', 'th', 'k', 'app', 'a', 'o', 's', 'll', 'sh'}   # 본문 설명에 쓰인 글자 이름          # 본문 설명에 쓰인 글자 이름 등
 
 
 # ── 단어표 ────────────────────────────────────────────────────────────
@@ -263,7 +263,7 @@ def print_html(chapters, entries, fontdir):
     for ch in chapters:
         url = f'{BASE_URL}#c{ch["n"]}'
         body.append(f'''
-<section class="opener">
+<section class="opener" data-n="{ch["n"]}">
   <div class="num">Capítulo {ch["n"]}</div>
   <h2>{html.escape(ch["es"])}</h2>
   <div class="opr">[{pron_html(ch["pr"])}]</div>
@@ -338,9 +338,24 @@ def main():
             subprocess.run(['tar', 'xzf', t.name, '-C', d.name, '--strip-components=1'],
                            cwd=fontdir, check=True)
     OUT.mkdir(exist_ok=True)
-    (OUT / 'book.html').write_text(print_html(chapters, entries, fontdir), encoding='utf-8')
-    subprocess.run(['node', str(ROOT / 'render.js'), str(OUT / 'book.html'),
-                    str(OUT / 'la-llave-de-gracia_sample.pdf')], check=True)
+    pdf = OUT / 'la-llave-de-gracia_sample.pdf'
+    page = print_html(chapters, entries, fontdir)
+    # 장 표제지는 언제나 오른쪽(홀수) 쪽에 온다. 크롬은 break-before: right 를 지키지 않으므로
+    # 한 번 찍어 보고, 왼쪽에 떨어진 표제지 앞에 빈 쪽을 넣어 다시 찍는다.
+    for _ in range(4):
+        (OUT / 'book.html').write_text(page, encoding='utf-8')
+        subprocess.run(['node', str(ROOT / 'render.js'), str(OUT / 'book.html'), str(pdf)],
+                       check=True, stdout=subprocess.DEVNULL)
+        txt = subprocess.run(['pdftotext', '-layout', str(pdf), '-'], capture_output=True,
+                             text=True, check=True).stdout.split('\f')
+        even = [int(m.group(1)) for i, t in enumerate(txt, 1) if i % 2 == 0
+                for m in [re.search(r'CAPÍTULO (\d+)', t)] if m]
+        if not even:
+            break
+        n = even[0]
+        page = page.replace(f'<section class="opener" data-n="{n}">',
+                            f'<section class="pg blank"></section><section class="opener" data-n="{n}">', 1)
+    print(f'→ {pdf}')
 
 
 if __name__ == '__main__':

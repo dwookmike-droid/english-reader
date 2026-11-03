@@ -24,12 +24,12 @@ no pasa nada	no pasa nada	노 *파*사 *나*다	괜찮아요, 별일 아니에�
 soy	soy	*소*이	나는 ~이다	n	1	ser(이다) 동사의 ‘나’ 형태
 coreana	coreana	코레*아*나	한국 여자, 한국의	n	1	남자는 coreano
 muy bien	muy bien	*무*이 *비엔*	아주 좋아요, 잘했어요	n	1
-calle	calle	*카*예	거리, 길	n	1	카탈루냐어로는 carrer
+calle	calle|ca-lle	*카*예	거리, 길	n	1	카탈루냐어로는 carrer
 adiós	adiós	아*디오*스	잘 가요, 안녕히	n	1
 buenos días	buenos días	*부에*노스 *디*아스	좋은 아침이에요, 안녕하세요(오전 인사)	n	1
 y tú	y tú	이 *투*	너는? 당신은?	n	1
 bienvenida	bienvenida	비엔베*니*다	환영해요, 어서 와요 (여자에게)	n	1	남자에게는 bienvenido
-llave	llave	*야*베	열쇠	n	1
+llave	llave|llaves	*야*베	열쇠	n	1
 tres	tres	*트*레스	셋, 3	n	1
 señora	señora	세*뇨*라	(나이 든 여자에게) 부인, 아주머니, 할머니	n	1	남자에게는 señor
 dónde está	dónde está	*돈*데 에스*타*	어디에 있어요?	n	1
@@ -44,7 +44,7 @@ catalán	catalán	카탈*란*	카탈루냐어	x	1
 español	español	에스파*뇰*	스페인어	x	1
 las dos	las dos	라스 *도*스	둘 다	x	1
 aquí	aquí	아*키*	여기	x	1
-la	la	라	(여성 명사 앞) 그	x	1	el / la — 2장에서 배운다
+la	la	*라*	그 (여자 이름 앞에 붙는 말)	n	2	남자 이름 앞에는 el. llave, calle, leche는 la
 tu	tu	*투*	너의, 당신의	x	1	강세 없는 tu는 ‘너의’, 강세 있는 tú는 ‘너’
 habitación	habitación	아비타_씨_*온*	방	x	1
 esta	esta	*에*스타	이 (여성 명사 앞)	x	1
@@ -63,3 +63,56 @@ M.	m	*에*메	M — 편지를 보낸 사람	p	1
 coreano	coreano	코레*아*노	한국 남자, 한국의	x	1
 del	del	*델*	~의 (de + el)	x	1
 ah	ah	*아*	아!	x	1
+qué tal	qué tal	*케* *탈*	잘 지내요? 어때요? (가벼운 안부)	n	2
+qué es esto	qué es esto	*케* 에스 *에*스토	이게 뭐예요?	n	2	모르는 물건을 가리키며 쓰는 마법의 문장
+pan	pan	*판*	빵	n	2	el pan
+con	con	*콘*	~와 함께, ~을 넣은	n	2	café con leche = 우유 넣은 커피
+tomate	tomate	토*마*테	토마토	n	2	pan con tomate = 토마토 바른 빵. 카탈루냐의 아침
+bueno	bueno	*부에*노	좋은, 맛있는	n	2	여자 이름에는 buena
+leche	leche	*레*체	우유	n	2	la leche
+el	el	*엘*	그 (남자 이름 앞에 붙는 말)	n	2	el pan, el café, el reloj
+me llamo	me llamo	메 *야*모	내 이름은 ~이다	n	2
+soy de	soy de	*소*이 데	나는 ~에서 왔다, ~ 출신이다	n	2
+Corea	corea	코*레*아	한국	n	2
+cómo estás	cómo estás	*코*모 에스*타*스	어떻게 지내? 기분이 어때?	n	2
+bien	bien	*비엔*	좋아, 잘	n	2	muy bien = 아주 좋아
+un poco	un poco	운 *포*코	조금	n	2
+cansada	cansada	칸*사*다	피곤한 (여자)	n	2	남자는 cansado
+vamos	vamos	*바*모스	가자, 갑시다	n	2
+mira	mira	*미*라	봐, 이것 봐	n	2
+plaza	plaza	*플라*_사_	광장	n	2	la plaza
+reloj	reloj|relojes	레*로*흐	시계	n	2	여러 개는 relojes. 카탈루냐어로는 rellotge
+señor	señor	세*뇨*르	아저씨, 선생님, (남자) 분	n	2	여자는 señora
+antes	antes	*안*테스	예전에, 전에	n	2
+ahora	ahora	아*오*라	지금	n	2	h는 소리가 없다
+cerrajería	cerrajería	_세_라헤*리*아	열쇠 가게, 열쇠공방	n	2	카탈루냐어로는 serralleria
+cerrado	cerrado	_세_*라*도	닫힌	n	2	가게가 열려 있으면 abierto
+hoy	hoy	*오*이	오늘	n	2
+buenísimo	buenísimo	부에*니*시모	끝내주게 좋은	x	2	bueno + ísimo = 아주아주
+vos	vos	*보*스	너 (아르헨티나 등에서)	x	2	스페인에서는 tú
+tú	tú	*투*	너	x	2
+en	en	*엔*	~에서, ~로	x	2
+España	españa	에스*파*냐	스페인	p	2
+Argentina	argentina	아르헨*티*나	아르헨티나	p	2
+qué lindo	qué lindo	*케* *린*도	예쁘다! (아르헨티나식)	x	2
+de	de	*데*	~의; ~에서	x	2
+Buenos Aires	buenos aires	*부에*노스 *아*이레스	부에노스아이레스	p	2
+Seúl	seúl	세*울*	서울	p	2
+me encanta	me encanta	메 엔*칸*타	너무 좋아!	x	2
+Valentina	valentina	발렌*티*나	발렌티나 — 줄여서 Vale	p	2
+como	como	*코*모	~처럼, ~같이	x	2
+y	y	*이*	그리고	x	2
+normal	normal	노르*말*	당연하지, 보통이야	x	2
+jet lag	jet lag	*옛* *락*	시차 피로	x	2
+a la	a la	아 라	~로, ~에	x	2
+qué	qué	*케*	무슨, 뭐	x	2
+cashe	cashe	*카*셰	calle의 아르헨티나식 발음	x	2
+es lo mismo	es lo mismo	*에*스 로 *미*스모	똑같아	x	2
+rellotge	rellotge	러*요*제	시계 (카탈루냐어)	c	2	스페인어로는 reloj
+los	los	로스	그 (남자 이름 여러 개 앞)	x	2
+serralleria	serralleria	세라예*리*아	열쇠 가게 (카탈루냐어)	c	2	스페인어로는 cerrajería
+tancat	tancat	탕*캇*	닫힌 (카탈루냐어)	c	2	스페인어로는 cerrado
+Marc	marc	*마*르크	마르크	p	2
+muy	muy	*무*이	아주, 매우	x	2	muy bien, muy bueno
+es	es	*에*스	~이다 (그것은, 그는, 그녀는)	x	2	soy(나는 ~이다)의 짝
+cansado	cansado	칸*사*도	피곤한 (남자)	x	2

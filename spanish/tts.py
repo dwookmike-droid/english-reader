@@ -100,7 +100,7 @@ def prompt(lines):
     v = [build.VOICES[w] for w in who]
     cast = ' '.join(f'{x["label"]} is {x["style"]}.' for x in v)
     head = ('Read the following lines aloud in Castilian Spanish from Spain '
-            '(pronounce z and soft c as "th"). Speak clearly and a little slower than normal, '
+            '(pronounce z and soft c as "th"), unless a speaker\'s description gives another accent. Speak clearly and a little slower than normal, '
             'for beginner learners. Leave a long pause of about two seconds after every line. '
             f'{cast}\n\n')
     if len(v) == 1:
