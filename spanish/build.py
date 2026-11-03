@@ -25,6 +25,10 @@ SITE = ROOT.parent
 BASE_URL = 'https://dwookmike-droid.github.io/english-reader/es.html'
 TITLE_ES, TITLE_KO = 'La llave de Gràcia', '그라시아의 열쇠'
 
+# 읽기 도움(처음 나온 단어의 한글 발음, 대사 밑 우리말 뜻)은 이 장까지만 본문에 싣는다.
+# 그 뒤로는 장 끝 단어 목록과 웹 리더에만 발음이 남는다.
+AIDS_UNTIL = 15
+
 LATIN = r"A-Za-zÀ-ÖØ-öø-ÿ"
 WORD = re.compile(rf"[{LATIN}](?:[{LATIN}\-]*[{LATIN}])?")
 SKIP = {'h', 'th', 'k', 'app', 'a', 'o', 's', 'll', 'sh', 'kg', 'g'}   # 본문 설명에 쓰인 글자 이름          # 본문 설명에 쓰인 글자 이름 등
@@ -56,12 +60,13 @@ class Inline:
     def __init__(self, forms, entries):
         self.forms, self.entries = forms, entries
         self.unknown, self.seen, self.uses = set(), set(), {}
+        self.ch = 1
 
     def word(self, text, key, first=False, pron=None):
         self.uses[key] = self.uses.get(key, 0) + 1
         cls = 'w new' if first else 'w'
         s = f'<b class="{cls}" data-k="{html.escape(key)}">{html.escape(text)}</b>'
-        if first and pron:
+        if first and pron and self.ch <= AIDS_UNTIL:
             s += f'<span class="pr">[{pron_html(pron)}]</span>'
         return s
 
@@ -125,6 +130,8 @@ def parse_chapter(path, inline):
     lines = path.read_text(encoding='utf-8').split('\n')
     head = lines[0].lstrip('# ').split('|')
     ch = dict(n=int(head[0]), es=head[1].strip(), pr=head[2].strip(), blocks=[])
+    inline.ch = ch['n']
+    aids = ch['n'] <= AIDS_UNTIL
     buf, mode, raw = [], None, []
 
     def flush():
@@ -142,7 +149,7 @@ def parse_chapter(path, inline):
                 print(f'  ! 말하는 사람 표시(@이름)가 없는 대사: {text[:30]}', file=sys.stderr)
             es, _, ko = text.partition(' :: ')
             plain = strip_marks(es)
-            return dict(t='say', es=inline(es), ko=html.escape(ko.strip()), plain=plain,
+            return dict(t='say', es=inline(es), ko=html.escape(ko.strip()) if aids else '', plain=plain,
                         who=who, a=audio_id(who, plain))
         return dict(t='p', h=inline(text))
 
