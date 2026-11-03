@@ -48,7 +48,6 @@ la	la	*라*	그 (여자 이름 앞에 붙는 말)	n	2	남자 이름 앞에는 el
 tu	tu	*투*	너의, 당신의	x	1	강세 없는 tu는 ‘너의’, 강세 있는 tú는 ‘너’
 habitación	habitación	아비타_씨_*온*	방	x	1
 esta	esta	*에*스타	이 (여성 명사 앞)	x	1
-ya no existe	ya no existe	*야* 노 엑*시*스테	이제는 없다	x	1
 de quién es	de quién es	데 *키엔* *에*스	누구 거예요?	x	1
 mi	mi	*미*	나의	x	1
 bon dia	bon dia	본 *디*아	좋은 아침이에요 (카탈루냐어)	c	1	스페인어로는 buenos días
@@ -404,7 +403,6 @@ dormir	dormir		자다	x	8
 comprar	comprar		사다	n	8
 asado	asado		아사도 — 아르헨티나식 고기구이	x	8
 argentino	argentino		아르헨티나의	x	8
-esta noche	esta noche		오늘 밤	n	8	noche = 밤
 noche	noche		밤	x	8
 la carne	la carne|carne		고기	n	8
 juntas	juntas|juntos		같이 (여자들끼리)	n	8	남자가 섞이면 juntos
@@ -450,7 +448,6 @@ usted	usted		당신 (높여 부르는 말)	n	8	tú보다 공손하다
 habla	habla		말한다	x	8	hablar = 말하다
 mañana voy a buscar	mañana voy a buscar		내일 찾아볼게	x	8
 buscar	buscar		찾다	n	8
-para ti	para ti		너를 위해	x	8
 uno viejo	uno viejo		오래된 것 하나	x	8	viejo = 오래된, 늙은
 viejo	viejo|viejas|vieja|viejos		오래된	n	8
 otra cosa	otra cosa		하나 더, 다른 것	x	8
@@ -498,3 +495,73 @@ estoy cansada	estoy cansada		피곤하다	x	8
 negra	negra|negro		검은	x	8
 come	come		먹는다	x	8	comer = 먹다
 grande	grande		큰	n	8	반대는 pequeño
+me levanto	me levanto		(나는) 일어난다	n	9	levantarse. 직역하면 ‘나를 들어 올린다’
+te levantas	te levantas		(너는) 일어난다	x	9	¿A qué hora te levantas? = 몇 시에 일어나?
+levantar	levantar		들어 올리다	x	9
+levanto	levanto|levantas	*레*반토	들어 올린다	x	9
+temprano	temprano		일찍	n	9	반대는 tarde
+tarde	tarde		늦게; 오후	n	9	Es tarde = 늦었다. por la tarde = 오후에
+seis	seis		여섯, 6	n	9
+no puedo dormir	no puedo dormir		잠을 못 자겠어요	x	9	puedo = 할 수 있다
+puedo	puedo		나는 할 수 있다	n	9	poder
+duermes	duermes		너는 잔다	x	9	dormir
+por	por		~때문에; ~로	x	9
+me	me		나를, 나에게	x	9	Marc me da = 마르크가 나에게 준다
+te	te		너를, 너에게	x	9
+para ti	para ti		너를 위해, 당신 거예요	x	8
+es viejo pero funciona	es viejo pero funciona		오래됐지만 된다	x	9
+como todo	como todo		모든 것처럼	x	9
+he abierto	he abierto		(오늘·방금) 열었다	n	9	abrir의 완료형은 abierto(불규칙)
+abierto	abierto		열린	x	9	반대는 cerrado
+una caja	una caja		상자 하나	x	9
+esta noche	esta noche		오늘 밤; (방금 지나간) 간밤	n	8
+octubre	octubre		10월	x	9
+reloj de pie	reloj de pie		괘종시계 (직역: 서 있는 시계)	n	9	pie = 발
+no se vende	no se vende		팔지 않음	n	9	vender = 팔다
+se	se		(재귀·비인칭) 자기를; ~되다	x	9
+vende	vende		판다	x	9
+solo piezas	solo piezas|piezas|pieza		부품뿐	x	9	pieza = 부품, 조각
+el reloj no está aquí	el reloj no está aquí		시계는 여기 없다	x	9
+tengo trabajo	tengo trabajo		일이 있어요	x	9
+trabajo	trabajo		일; (나는) 일한다	n	9	trabajar = 일하다
+trabaja	trabaja		일한다	x	9
+Born	born	*보*른	보른 — 고딕 지구 옆의 오래된 동네	p	9
+vienes	vienes		너는 온다; (물음) 같이 갈래?	n	9	venir = 오다
+necesito	necesito		나는 ~이 필요하다	n	9
+necesitas	necesitas		너는 ~이 필요하다	x	9
+ayuda	ayuda		도움	n	9
+aire	aire		공기, 바람	x	9
+más tiendas	más tiendas|tiendas|tienda		가게 (여럿)	x	9	tienda = 가게
+pequeñas	pequeñas		작은 (여성 여럿)	x	9
+bares	bares|bar		바, 술집 겸 카페	x	9
+destornillador	destornillador		드라이버	n	9
+martillo	martillo		망치	n	9
+aceite	aceite		기름, 올리브유	n	9
+tornillo	tornillo		나사	n	9
+sus manos	sus manos|manos|mano		그의 손	x	9	mano = 손(여성)
+grandes	grandes		큰 (여럿)	x	9
+tranquilas	tranquilas|tranquilo		조용한, 차분한	x	9
+qué haces	qué haces		뭐 해요?	n	9	hacer = 하다
+cuál es tu trabajo	cuál es tu trabajo		일이 뭐예요?	x	9
+una oficina	una oficina|oficina		사무실	n	9
+doce	doce		열둘, 12	x	9
+un día	un día|día		하루, 날	n	9
+me ducho	me ducho		샤워한다	n	9	ducharse
+me visto	me visto		옷을 입는다	n	9	vestirse
+tomo	tomo		탄다, 먹는다, 잡는다	n	9	Tomo el metro = 지하철을 탄다
+me acuesto	me acuesto		(잠자리에) 눕는다, 잔다	n	9	acostarse
+acuesto	acuesto		눕힌다	x	9
+a la una	a la una		한 시에	x	9	1시만 la una (단수)
+desayuno	desayuno		아침을 먹는다; 아침 식사	x	9
+busco	busco		찾는다	x	9	buscar
+mejor	mejor		더 나은, 더 좋은	n	9
+quiero ver una cosa	quiero ver una cosa		보고 싶은 게 있어요	x	9
+cosa	cosa		것, 물건	x	9
+Santa Maria del Mar	santa maria del mar|santa maría del mar	*산*타 마*리*아 델 *마*르	산타 마리아 델 마르 — 보른의 성당	p	9
+domingo	domingo		일요일	n	9
+el silencio es grande	el silencio es grande		아주 조용하다 (직역: 침묵이 크다)	x	9	silencio = 침묵
+jueves	jueves		목요일	x	9
+da	da		준다	x	9	dar = 주다
+un libro	un libro|libro		책, 장부	x	9
+aprendo	aprendo		나는 배운다	x	9	aprender
+o no	o no		아니면 말고	x	9
