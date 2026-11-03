@@ -35,7 +35,7 @@
 | 9 | 8월 20일 목 (공방의 장부, 보른, 산타 마리아 델 마르) |
 | 10 | 8월 23일 일 (산타 마리아 델 마르 11시, 바르셀로네타) |
 | 11 | 8월 29일 토 (항구 케이블카, 몬주익 성) |
-| 12 | 9월 1일 화 (해양박물관) |
+| 12 | 9월 1일 화 (콜럼버스 기념탑, 해양박물관, 저녁의 몬세) |
 
 그라시아 축제(Festa Major de Gràcia)는 8월 15일 무렵 시작해 한 주 동안 열린다. 라 메르세(La Mercè)는 9월 24일 전후다.
 
@@ -49,7 +49,7 @@
 
 **4장 Todo recto** — 일요일. 발레와 관광(dale, mirá). Fontana역에서 Español 버튼으로 표를 사고, 3호선으로 Passeig de Gràcia에 간다. Casa Batlló, La Pedrera. 배터리가 꺼지고 발레를 놓쳐 길을 잃는다. *¿Me ayuda?* derecha/izquierda를 헷갈려 오른손에 D를 적는다. 할머니에게 길을 물어 Passeig de Gràcia를 걸어 그라시아로 돌아온다. 마르크가 두고 간 쪽지: *"Lunes. 10:00. Trae la llave. — M."* 몬세는 창밖만 본다.
 
-**5장 ¿Qué hora es?** — 8월 10일 월요일. 아침 8시, 몬세에게 시간을 묻는다(tienes dos horas). 10시 공방. 마르크가 진열창의 열쇠와 할머니의 열쇠를 나란히 놓는다. 똑같다. *"No es una llave de puerta. Es una llave de reloj."* 태엽 열쇠다. 마르크의 손목시계도 같은 꽃, 할아버지의 것이다. 할아버지 이름은 **마르티**. 편지가 11통이라고 하자 *"Mi tía Montse sabe más."* 늦은 오후에 몬세와 구엘 공원 위쪽, 십자가 세 개가 선 언덕(무료 구역)에 오른다(hace calor, tengo sed). 몬세가 털어놓는다. 1978년 순례는 스물일곱, 몬세는 스물다섯. 순례는 몬세의 집(지금의 하숙집)에 여섯 달 살았고 몬세의 친구였다. **마르티는 몬세의 오빠다.** *"Poco a poco, nena. Hoy, no más."* 그날 밤 윤하는 처음으로 수첩을 스페인어로만 쓴다.
+**5장 ¿Qué hora es?** — 8월 10일 월요일. 아침 8시, 몬세에게 시간을 묻는다(tienes dos horas). 10시 공방. 마르크가 진열창의 열쇠와 할머니의 열쇠를 나란히 놓는다. 똑같다. *"No es una llave de puerta. Es una llave de reloj."* 태엽 열쇠다. 마르크의 손목시계도 같은 꽃, 할아버지의 것이다. 할아버지 이름은 **마르티**. 편지가 11통이라고 하자 *"Mi tía Montse sabe más."* 늦은 오후에 몬세와 구엘 공원 위쪽, 십자가 세 개가 선 언덕(무료 구역)에 오른다(hace calor, tengo sed). 몬세가 털어놓는다. 1978년 순례는 스물일곱, 몬세는 스물다섯. 순례는 몬세의 집(지금의 하숙집)에 여덟 달 살았고 몬세의 친구였다. **마르티는 몬세의 오빠다.** *"Poco a poco, nena. Hoy, no más."* 그날 밤 윤하는 처음으로 수첩을 스페인어로만 쓴다.
 
 **6장 Me gusta** — 8월 12일 수요일~15일 토요일. 우리 거리의 그라시아 축제 장식(주제: 바닷속, 페트병 물고기와 골판지 문어)을 이웃들과 만든다. gustar(파란색이 좋아요), 색깔. 마르크는 해마다 조명을 맡지만 *"No me gusta (la fiesta). Mucha gente. Mucho ruido."* 금요일 밤 윤하가 편지 한 통을 보여 주자 *"Es la letra de mi abuelo."* 더 읽고 싶어 하지만 윤하는 *"Poco a poco."* 금요일 밤, 이웃들은 밤을 새워 장식을 걸고 자정 무렵 시험 삼아 처음 불을 켠다(카탈루냐어 카운트다운). 축제는 토요일 아침에 공개된다. 윤하가 오린 꼬리 삐뚤어진 물고기를 보고 **마르크가 처음 웃는다.** *"Es feo. Pero me gusta."* 새벽, 몬세는 편지가 **열한 통**이라는 말에 얼굴이 하얘지고 *"Es tarde, nena. A dormir."*
 
@@ -61,7 +61,9 @@
 
 **10장 Más grande que el mar** — 8월 23일 일요일. 11시, 윤하는 혼자 Santa Maria del Mar 앞에서 종소리를 듣는다. 발레의 전화(¡Dale, vení!)로 바르셀로네타 해변에. 발레의 친구들: 이탈리아의 **Luca**, 멕시코의 **Sofía**, 바르셀로나 토박이 **Pau**. 다들 무엇이 더 센지/매운지 비교하며 다툰다(más/menos… que, mejor). 윤하: 한국은 커피가 더 비싸고 지하철이 더 깨끗하지만 토마토 빵은 여기가 더 좋다. 물은 부산보다 차갑고, 등과 어깨가 햇볕에 빨갛게 탄다(me duele la espalda). 저녁에 마르크가 장부를 들고 온다(몬세가 윤하가 해변에 있다고 알려 줌). 장부 맨 뒷장: **"S. — Las Palmas de Gran Canaria. Calle de… (puerto)"**. 윤하는 할머니가 열병 중에 딱 한 번 말한 '바다 한가운데 섬'을 떠올린다. 왜 섬에서 바르셀로나에 왔을까. 발레: "¿Un libro de amor?" 마르크: "Es un libro de relojes."
 
-**11장 Tengo miedo** — 8월 29일 토요일. 윤하가 사전으로 두 번째 편지에서 읽어 낸 줄: **"Desde Montjuïc veo el puerto y veo tu barco."** 마르크와 바르셀로네타의 탑에서 항구 케이블카를 타고 몬주익으로 건너간다(tengo miedo / *"Tú vienes sola a Barcelona. Sin español." "Eso es diferente." "No. Es igual."*). 케이블카 안에서 *"Estoy nerviosa. Pero contenta." — "Yo también estoy contento."* 마르크가 처음으로 자기 기분을 말한다. 몬주익 성벽에서 항구를 내려다보며 편지 문장을 둘이 나눠 읽는다. 왜 할머니는 배로 왔을까 → 마르크: 항구의 바다 박물관에 옛 배 서류가 있다, **화요일에 가자**(vamos a ir). 내려오는 길에 마르크가 묻는다. *¿Cuándo vas a volver a Corea?* 윤하: *No tengo billete de vuelta. Solo de ida.* 마르크, 작은 목소리로: *"Bien."*
+**11장 Tengo miedo** — 8월 29일 토요일. 윤하가 사전으로 두 번째 편지에서 읽어 낸 줄: **"Desde Montjuïc veo el puerto. Ya no veo tu barco."**(할머니가 떠난 뒤에 쓴 편지) 마르크와 바르셀로네타의 탑에서 항구 케이블카를 타고 몬주익으로 건너간다(tengo miedo / *"Tú vienes sola a Barcelona. Sin español." "Eso es diferente." "No. Es igual."*). 케이블카 안에서 *"Estoy nerviosa. Pero contenta." — "Yo también estoy contento."* 마르크가 처음으로 자기 기분을 말한다. 몬주익 성벽에서 항구를 내려다보며 편지 문장을 둘이 나눠 읽는다. 왜 할머니는 배로 왔을까 → 마르크: 항구의 바다 박물관에 옛 배 서류가 있다, **화요일에 가자**(vamos a ir). 내려오는 길에 마르크가 묻는다. *¿Cuándo vas a volver a Corea?* 윤하: *No tengo billete de vuelta. Solo de ida.* 마르크, 작은 목소리로: *"Bien."*
+
+**12장 El barco llegó** — 9월 1일 화요일. 콜럼버스 기념탑(*"Señala Mallorca. — Más o menos."*). 해양박물관(옛 왕립 조선소) 도서실의 은발 사서가 항구 서류는 없지만 신문 아카이브에 날마다 입출항이 실렸다며 검색해 준다. **"3 de marzo de 1978. Llegó al puerto de Barcelona el pesquero coreano «Dong-Hae 7», procedente de Las Palmas, para reparación en el dique. Tripulación y familias."** / **"12 de noviembre de 1978. Salió… con destino a Las Palmas."** 마르크가 처음으로 과거형(llegó, salió)을 설명한다. 윤하의 첫 과거형 문장: *Llegó en marzo. Salió en noviembre.* 장부의 10월(괘종시계)은 떠나기 한 달 전. 저녁에 몬세: *"El Dong-Hae… Me acuerdo del nombre."* 그리고 **"Y la niña… tu madre. Tenía tres años. Jugaba en el patio. Con mis gatos."** 세 살 엄마가 이 집 안마당에서 놀았다. 윤하는 엄마에게 문자를 쓰다 지운다.
 
 ## 남은 실마리
 
@@ -72,6 +74,7 @@
 - 시계방(Relojería Puig)은 사라졌다. 그 안의 시계들, 특히 열쇠에 맞는 시계는 어디로 갔나. → 마르크 공방 지하의 상자들(8장). 상자에는 부품과 장부뿐(9장). 장부: 1978년 10월 S를 위한 괘종시계, 팔지 않음.
 - 윤하는 마르크가 준 단추 달린 낡은 휴대폰을 쓴다.
 - 편지 속 약속: 일요일 11시, Santa María del Mar.
-- 장부 맨 뒷장: S.의 주소는 라스팔마스 항구 근처. 순례는 왜 섬에서 바르셀로나에 왔나(→ 12장: 남편의 배 수리).
+- 동해 7호: 1978년 3월 3일 도착, 11월 12일 출항(수리, 선원과 가족). 순례는 여덟 달 바르셀로나에 살았다. 세 살 정미도 함께.
+- 윤하는 아직 엄마에게 연락하지 못했다.
 - 편지 11통의 내용. 11번째 봉투만 소인 연도가 2009년(아직 아무도 눈치채지 못함).
 - 윤하에게는 돌아가는 표가 없다(편도). 마르크는 그걸 알고 "Bien"이라고 했다.
