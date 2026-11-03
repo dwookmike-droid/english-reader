@@ -396,7 +396,6 @@ va	va		그(그녀)는 간다	x	8
 vas a	vas a		너는 ~할 것이다	x	8
 va a	va a		그(그녀)는 ~할 것이다	x	8
 ir	ir		가다	n	8	voy, vas, va, vamos
-hacer	hacer		하다, 만들다	n	8
 comer	comer		먹다	x	8
 dormir	dormir		자다	x	8
 comprar	comprar		사다	n	8
@@ -484,7 +483,6 @@ fruta	fruta		과일	x	8
 jamón	jamón		하몽 (스페인식 생햄)	x	8
 no tengo	no tengo		나는 없다, 가지고 있지 않다	x	8
 la llave está aquí	la llave está aquí		열쇠는 여기 있다	x	8
-esperamos	esperamos		우리는 기다린다	x	8	esperar = 기다리다
 una hora	una hora		한 시간	x	8
 estoy cansada	estoy cansada		피곤하다	x	8
 negra	negra|negro		검은	x	8
@@ -896,3 +894,105 @@ el domingo doce	el domingo doce		12일 일요일에	x	12
 vivir	vivir		살다	x	12
 hacer	hacer		하다, 만들다	n	8
 están	están		(그들은) 있다	x	12
+llamé	llamé|llamó|llamado		전화했다; 불렀다	n	14	llamar의 과거
+eran las cuatro	eran las cuatro|eran		네 시였다	x	14	시각의 과거는 era/eran
+conté	conté		이야기했다	x	14	contar
+alrededor	alrededor		주위에	x	13
+se oía	se oía|oía|oí		들렸다	x	14	oír = 듣다
+colgué el teléfono	colgué el teléfono|colgué|teléfono		전화를 끊었다	x	14	teléfono = 전화
+me quedé	me quedé|quedé|nos quedamos|quedamos		머물렀다, 남아 있었다	n	14	quedarse
+la cama	la cama|cama		침대	x	14
+un rato largo	un rato largo		한참 동안	x	14
+estuvo	estuvo		있었다 (한 번 끝난)	n	14	estar의 과거
+toda la noche	toda la noche		밤새	n	14
+hospital	hospital		병원	n	14	el hospital
+aquella	aquella		그 (먼 과거의)	x	14	aquella tarde = 그날 오후
+la cuarta carta	la cuarta carta|cuarta		네 번째 편지	x	14
+ya no necesitaba	ya no necesitaba|necesitaba		더는 필요 없었다	x	14
+tardé una hora	tardé una hora|tardé		한 시간 걸렸다	x	14
+pasé por delante	pasé por delante|pasé		앞을 지나갔다	x	14
+me acordé	me acordé|acordé|se acuerda|acuerda		기억났다	x	14
+julio	julio		7월	x	14
+hacía	hacía		(날씨가) ~했다; 하고 있었다	n	14	Hacía calor = 더웠다
+llamó a mi puerta	llamó a mi puerta		우리 집 문을 두드렸다	x	14
+fiebre	fiebre		열 (몸의)	n	14	tener fiebre = 열이 나다
+no respiraba bien	no respiraba bien|respiraba		숨을 잘 못 쉬었다	x	14
+estabas muy pálida	estabas muy pálida|estabas|pálida		너는 아주 창백했다	x	14
+no había teléfono	no había teléfono		전화가 없었다	x	14
+la furgoneta	la furgoneta|furgoneta		승합차	x	14
+funcionaba	funcionaba		작동했다	x	14
+subiste	subiste		너는 올라탔다	x	14	subir
+conducía	conducía		운전하고 있었다	x	14	conducir
+cantabas	cantabas|cantaba|canta|cantar|cantado|cantarla		노래했다	n	14	cantar = 노래하다
+una canción	una canción|canción		노래	n	14
+unos edificios muy bonitos	unos edificios muy bonitos|unos|bonitos		아주 예쁜 건물들	x	14
+como palacios	como palacios|palacios|palacio		궁전처럼	x	14
+los médicos	los médicos|médicos|médico		의사들	n	14
+se llevaron	se llevaron|llevaron		데려갔다	x	14
+esperamos	esperamos		기다렸다; 기다린다	x	8
+no hablabas	no hablabas|hablabas		말하지 않았다	x	14
+una enfermera	una enfermera|enfermera		간호사	x	14
+ya está	ya está		이제 됐어요	x	14
+lloraste	lloraste|lloró|llorar|llora		울었다	n	14	llorar = 울다
+la única vez	la única vez|única		유일한 때	x	14
+te vi	te vi|vi		너를 보았다	x	14
+el sol estaba saliendo	el sol estaba saliendo|saliendo		해가 뜨고 있었다	x	14
+detrás de	detrás de|detrás		~뒤에	n	14
+nos reímos	nos reímos|reímos		우리는 웃었다	x	14
+muy cansados	muy cansados|cansados		아주 지쳐서	x	14
+la última frase	la última frase|última		마지막 문장	x	14
+cocinaba	cocinaba		요리하곤 했다	x	14
+le enseñé	le enseñé|enseñé		그녀에게 보여 줬다	x	14
+la fecha	la fecha|fecha		날짜	x	14
+se quitó el delantal	se quitó el delantal|quitó|delantal		앞치마를 벗었다	x	14
+un autobús	un autobús|autobús		버스	n	14
+bajamos	bajamos|bajó|bajo		내렸다	x	14
+una avenida larga	una avenida larga|avenida		긴 대로	x	14
+mosaicos	mosaicos		모자이크	x	14
+una cúpula	una cúpula|cúpula		둥근 지붕	x	14
+parecía	parecía		~처럼 보였다	x	14
+los enfermos	los enfermos|enfermos		환자들	x	14
+entramos	entramos		들어갔다	x	14
+caminos	caminos|camino		길	x	14
+los pabellones	los pabellones|pabellones|pabellón		별관 건물들	x	14
+su torre	su torre|torre		자기 탑	x	14
+sus colores	sus colores|sus|colores		자기 색깔들	x	14
+daban sombra	daban sombra|daban		그늘을 드리웠다	x	14
+triste	triste		슬픈	n	14
+al mismo tiempo	al mismo tiempo		동시에	x	14
+caminó	caminó		걸었다	x	14
+buscaba algo	buscaba algo|buscaba|algo		뭔가를 찾고 있었다	x	14	algo = 무언가
+se paró	se paró|paró		멈춰 섰다	x	14
+debajo de	debajo de|debajo		~아래에	x	14
+esperábamos	esperábamos		우리는 기다리고 있었다	n	14
+usó	usó		썼다	x	14
+que no terminaba	que no terminaba|terminaba		끝나지 않는	x	14
+nos sentamos	nos sentamos|sentamos|nos		우리는 앉았다	x	14
+cerró los ojos	cerró los ojos|cerró|ojos|abrió los ojos|abrió		눈을 감았다	x	14	ojos = 눈
+no se movía	no se movía|movía		꼼짝도 안 했다	x	14
+los miraba	los miraba		그들을 보고 있었다	x	14
+pensaba	pensaba|pensabas		생각하고 있었다	n	14
+durante un momento	durante un momento|momento		잠깐 동안	x	14
+no iba a contestar	no iba a contestar|iba|contestar		대답하지 않을 것이었다	x	14
+pobre	pobre		불쌍한	n	14
+desde el principio	desde el principio|principio		처음부터	x	14
+empecé a cantarla	empecé a cantarla|empecé		그 노래를 부르기 시작했다	x	14
+muy bajo	muy bajo		아주 낮게	x	14
+se giró hacia mí	se giró hacia mí|giró|hacia|mí		나를 향해 돌아보았다	x	14
+llenos de agua	llenos de agua|llenos		물기가 가득한	x	14
+nos quedamos	nos quedamos		우리는 머물렀다	x	14
+no lloró	no lloró		울지 않았다	x	14
+delante de la gente	delante de la gente		사람들 앞에서	x	14
+me dio la mano	me dio la mano|dio		내 손을 잡았다	x	14
+no la soltó	no la soltó|soltó		놓지 않았다	x	14
+en todo el camino	en todo el camino		오는 길 내내	x	14
+no se acuerda	no se acuerda		기억하지 못한다	x	14
+he cantado	he cantado		(오늘) 노래했다	x	14
+la conoce	la conoce|conoce		그걸 안다	x	14	conocer
+las noches largas	las noches largas|noches|largas		긴 밤들	x	14
+Sant Pau	sant pau	*산* *파*우	산트 파우 병원 — 모데르니스메 양식의 옛 병원	p	14
+silencio	silencio		침묵, 고요	x	14
+entendí	entendí		이해했다	x	14
+miró	miró		보았다	x	14
+muchas	muchas		많은 (여성 여럿)	x	14
+nuevo	nuevo|nueva		새로운	n	14
