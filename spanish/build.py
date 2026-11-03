@@ -241,8 +241,8 @@ def wordlist_html(ch, entries):
 
 
 # 장마다 이름 붙은 쪽: 왼쪽 머리에 책 제목, 오른쪽 머리에 장 제목, 바깥 아래에 쪽번호
-HEAD = 'font: italic 7pt "EB Garamond"; color: #8a857c; vertical-align: bottom; padding-bottom: 3.2mm;'
-FOOT = 'font: 7pt "EB Garamond"; color: #6d685f; vertical-align: top; padding-top: 4mm;'
+HEAD = 'font: italic 7.8pt "EB Garamond"; color: #8a857c; vertical-align: bottom; padding-bottom: 4.5mm;'
+FOOT = 'font: 7.8pt "EB Garamond"; color: #6d685f; vertical-align: top; padding-top: 5.5mm;'
 PAGE_CSS = (
     '@page c{n}:left {{ margin-left: 10mm; margin-right: 13mm;'
     ' @top-left {{ content: "La llave de Gràcia"; ' + HEAD.replace('{', '{{').replace('}', '}}') + ' }}'

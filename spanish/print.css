@@ -1,26 +1,26 @@
-/* A6 문고판 (105 × 148 mm). 안쪽(제본 쪽) 여백을 넓게 둔다. */
+/* 사륙판 (128 × 188 mm). 안쪽(제본 쪽) 여백을 넓게 둔다. */
 @page {
-  size: 105mm 148mm;
-  margin: 13mm 10mm 14mm 13mm;
+  size: 128mm 188mm;
+  margin: 17mm 14mm 18mm 18mm;
 }
-@page :left  { margin-left: 10mm; margin-right: 13mm; }
-@page :right { margin-left: 13mm; margin-right: 10mm; }
+@page :left  { margin-left: 14mm; margin-right: 18mm; }
+@page :right { margin-left: 18mm; margin-right: 14mm; }
 
 /* 앞붙이·장 표제지·단어 쪽: 머리말·쪽번호 없음 */
-@page bare:left  { margin-left: 10mm; margin-right: 13mm; }
-@page bare:right { margin-left: 13mm; margin-right: 10mm; }
+@page bare:left  { margin-left: 14mm; margin-right: 18mm; }
+@page bare:right { margin-left: 18mm; margin-right: 14mm; }
 
-@page words:left  { margin-left: 10mm; margin-right: 13mm;
-  @bottom-left { content: counter(page); font: 7pt "EB Garamond"; color: #6d685f; vertical-align: top; padding-top: 4mm; } }
-@page words:right { margin-left: 13mm; margin-right: 10mm;
-  @bottom-right { content: counter(page); font: 7pt "EB Garamond"; color: #6d685f; vertical-align: top; padding-top: 4mm; } }
+@page words:left  { margin-left: 14mm; margin-right: 18mm;
+  @bottom-left { content: counter(page); font: 7.8pt "EB Garamond"; color: #6d685f; vertical-align: top; padding-top: 5.5mm; } }
+@page words:right { margin-left: 18mm; margin-right: 14mm;
+  @bottom-right { content: counter(page); font: 7.8pt "EB Garamond"; color: #6d685f; vertical-align: top; padding-top: 5.5mm; } }
 
 * { box-sizing: border-box; }
 html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 body {
   margin: 0; color: #1d1d1b;
   font-family: "Gowun Batang", serif;
-  font-size: 8.9pt; line-height: 1.68;
+  font-size: 10pt; line-height: 1.72;
   word-break: normal; line-break: strict; overflow-wrap: break-word;
   text-align: justify; hyphens: none;
   font-kerning: normal;
@@ -69,63 +69,63 @@ section:first-child { break-before: auto; }
 .address .w, .address .es { font-size: 1em; }
 
 /* ── 장 표제지 ────────────────────────────────────────── */
-.opener { height: 121mm; position: relative; text-align: center; }
+.opener { height: 153mm; position: relative; text-align: center; }
 .opener .num {
-  padding-top: 22mm; font-size: 7.4pt; letter-spacing: .32em; text-transform: uppercase; color: #77726a;
+  padding-top: 30mm; font-size: 8pt; letter-spacing: .32em; text-transform: uppercase; color: #77726a;
 }
-.opener h2 { font-weight: 400; font-style: italic; font-size: 30pt; line-height: 1.1; margin: 4mm 0 2mm; }
+.opener h2 { font-weight: 400; font-style: italic; font-size: 36pt; line-height: 1.1; margin: 5mm 0 2.5mm; }
 .opener .opr { font-family: "Noto Sans KR", sans-serif; font-size: 7.4pt; color: #77726a; }
 .opener .opr b { color: #1d1d1b; }
 .opener .qr {
   position: absolute; left: 0; right: 0; bottom: 0;
   display: flex; justify-content: center; align-items: center; gap: 3mm;
 }
-.opener .qr svg { width: 15mm; height: 15mm; }
-.opener .qr span { font-family: "Noto Sans KR", sans-serif; font-size: 6pt; color: #77726a; text-align: left; line-height: 1.45; }
+.opener .qr svg { width: 17mm; height: 17mm; }
+.opener .qr span { font-family: "Noto Sans KR", sans-serif; font-size: 6.8pt; color: #77726a; text-align: left; line-height: 1.45; }
 
 /* ── 장 끝 단어 ───────────────────────────────────────── */
 .words h3 {
   display: flex; justify-content: space-between; align-items: baseline;
-  font: 700 8pt "Noto Sans KR", sans-serif; margin: 0 0 3mm; padding-bottom: 1.6mm;
+  font: 700 9pt "Noto Sans KR", sans-serif; margin: 0 0 3mm; padding-bottom: 1.6mm;
   border-bottom: .5pt solid #1d1d1b;
 }
 .words h3 small { font-weight: 400; color: #77726a; font-size: 6.6pt; }
 .words ol { list-style: none; margin: 0; padding: 0; column-count: 2; column-gap: 4mm; }
 .words li { break-inside: avoid; margin: 0 0 1.5mm; line-height: 1.32; text-align: left; }
-.words li > b { font-weight: 600; font-size: 9.2pt; }
-.words li .pr { font-size: 5.6pt; margin-left: .3em; }
-.words li .m { display: block; font-size: 6.6pt; color: #4f4b45; }
+.words li > b { font-weight: 600; font-size: 10.4pt; }
+.words li .pr { font-size: 6.4pt; margin-left: .3em; }
+.words li .m { display: block; font-size: 7.6pt; color: #4f4b45; }
 
 /* ── 앞붙이 ───────────────────────────────────────────── */
-.half { height: 121mm; display: flex; align-items: center; justify-content: center; }
-.half .ht { font-style: italic; font-size: 17pt; text-align: center; line-height: 1.15; }
-.title { height: 121mm; text-align: center; display: flex; flex-direction: column; align-items: center; }
-.title .t-es { margin-top: 18mm; font-size: 27pt; line-height: 1.05; font-style: italic; }
+.half { height: 153mm; display: flex; align-items: center; justify-content: center; }
+.half .ht { font-style: italic; font-size: 20pt; text-align: center; line-height: 1.15; }
+.title { height: 153mm; text-align: center; display: flex; flex-direction: column; align-items: center; }
+.title .t-es { margin-top: 26mm; font-size: 33pt; line-height: 1.05; font-style: italic; }
 .title .t-ko { margin-top: 5mm; font-size: 10pt; letter-spacing: .18em; }
 .title .t-sub { margin-top: 1.5mm; font-family: "Noto Sans KR", sans-serif; font-size: 6.6pt; color: #77726a; letter-spacing: .1em; }
 .title .t-key { margin-top: auto; color: #1d1d1b; }
 .title .t-ed { margin-top: 3mm; font-family: "Noto Sans KR", sans-serif; font-size: 6.4pt; color: #77726a; letter-spacing: .2em; }
-.colophon { height: 121mm; display: flex; flex-direction: column; justify-content: flex-end; }
-.colophon p { font-family: "Noto Sans KR", sans-serif; font-size: 6.2pt; color: #77726a; line-height: 1.6; margin: 0 0 2.4mm; text-align: left; }
+.colophon { height: 153mm; display: flex; flex-direction: column; justify-content: flex-end; }
+.colophon p { font-family: "Noto Sans KR", sans-serif; font-size: 7pt; color: #77726a; line-height: 1.6; margin: 0 0 2.4mm; text-align: left; }
 
 .pg { text-align: left; word-break: keep-all; }
-.pg h3 { font: 700 8.4pt "Noto Sans KR", sans-serif; margin: 0 0 3mm; letter-spacing: -.01em; }
+.pg h3 { font: 700 9.4pt "Noto Sans KR", sans-serif; margin: 0 0 3mm; letter-spacing: -.01em; }
 .pg h3 + * { margin-top: 0; }
 .guide ol { margin: 0; padding-left: 1.3em; }
-.guide li { margin-bottom: 1.8mm; font-size: 8.2pt; line-height: 1.6; }
+.guide li { margin-bottom: 2.4mm; font-size: 9.2pt; line-height: 1.6; }
 .guide li b { font-weight: 700; }
-.pron p { margin: 0 0 2.4mm; font-size: 8.2pt; line-height: 1.6; }
+.pron p { margin: 0 0 3mm; font-size: 9.2pt; line-height: 1.6; }
 .pron p.lead { color: #4f4b45; }
 .pron i { font-size: 1.12em; }
-.pron table { border-collapse: collapse; width: 100%; font-size: 7.9pt; }
+.pron table { border-collapse: collapse; width: 100%; font-size: 8.9pt; }
 .pron td { padding: 1.25mm 0; border-bottom: .3pt solid #d6d1c6; vertical-align: baseline; line-height: 1.4; text-align: left; }
 .pron td:first-child { width: 22mm; font-size: 1.15em; font-weight: 600; }
 .pron .ex { text-align: center; font-size: 10pt; margin: 3mm 0; }
 .pron .ex i { font-size: 1.25em; }
-.pron .note { font-size: 7.2pt; color: #77726a; }
+.pron .note { font-size: 8pt; color: #77726a; }
 .pron h3:not(:first-child) { margin-top: 5mm; }
-.pron .rules { margin: 0; padding-left: 1.3em; font-size: 7.9pt; line-height: 1.6; }
+.pron .rules { margin: 0; padding-left: 1.3em; font-size: 8.9pt; line-height: 1.6; }
 .pron .rules li { margin-bottom: 1mm; }
 .cast dl { margin: 0; }
-.cast dt { font-weight: 700; font-size: 8.8pt; margin-top: 3mm; }
-.cast dd { margin: .5mm 0 0; font-size: 8pt; line-height: 1.6; color: #3a3833; }
+.cast dt { font-weight: 700; font-size: 9.8pt; margin-top: 3mm; }
+.cast dd { margin: .5mm 0 0; font-size: 9pt; line-height: 1.6; color: #3a3833; }
