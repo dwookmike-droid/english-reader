@@ -24,7 +24,7 @@ no pasa nada	no pasa nada	노 *파*사 *나*다	괜찮아요, 별일 아니에�
 soy	soy	*소*이	나는 ~이다	n	1	ser(이다) 동사의 ‘나’ 형태
 coreana	coreana	코레*아*나	한국 여자, 한국의	n	1	남자는 coreano
 muy bien	muy bien	*무*이 *비엔*	아주 좋아요, 잘했어요	n	1
-calle	calle|ca-lle	*카*예	거리, 길	n	1	카탈루냐어로는 carrer
+calle	calle|ca-lle|calles	*카*예	거리, 길	n	1	카탈루냐어로는 carrer
 adiós	adiós	아*디오*스	잘 가요, 안녕히	n	1
 buenos días	buenos días	*부에*노스 *디*아스	좋은 아침이에요, 안녕하세요(오전 인사)	n	1
 y tú	y tú	이 *투*	너는? 당신은?	n	1
@@ -250,7 +250,6 @@ son las	son las		(시각이) ~시예요	n	5	Son las ocho = 여덟 시예요. 한
 hora	hora|horas		시간, 시	n	5	a qué hora = 몇 시에
 ocho	ocho		여덟, 8	n	5
 tienes	tienes		너는 가지고 있다	n	5	tener(가지다)의 ‘너’ 형태
-tengo	tengo		나는 가지고 있다	n	5	tengo sed = 목말라, tengo calor = 더워, tengo 38 años = 서른여덟 살이야
 tiene	tiene		그(그녀)는 가지고 있다	x	5
 tranquila	tranquila		진정해, 괜찮아 (여자에게)	x	5	남자에게는 tranquilo
 iguales	iguales|igual		똑같은	n	5
@@ -311,7 +310,7 @@ me gusta	me gusta		나는 ~이 좋다	n	6	Me gusta el azul = 파란색이 좋아
 no me gusta	no me gusta		나는 ~이 싫다, 안 좋아한다	n	6
 azul	azul		파랑, 파란	n	6
 a mí también	a mí también		나도	n	6
-luz	luz		빛, 조명, 불	n	6	la luz
+luz	luz|luces		빛, 조명, 불	n	6	여러 개는 luces
 siempre	siempre		언제나, 늘	n	6
 él	él		그 (남자)	x	6	ella = 그녀
 todos los años	todos los años		해마다	x	6
@@ -354,15 +353,14 @@ Arxiu	arxiu	*아*르시우	기록보관소 (카탈루냐어)	c	7	스페인어로
 Barri Gòtic	barri gòtic	*바*리 *고*틱	고딕 지구 — 바르셀로나에서 가장 오래된 동네	p	7
 Vespa	vespa	*베*스파	베스파 — 이탈리아 스쿠터	p	7
 catedral	catedral		대성당	n	7	la catedral
-las golondrinas	las golondrinas|golondrinas		제비들	x	7
-rápidas	rápidas|rápido|rápida		빠른	x	7
+las golondrinas	las golondrinas|golondrinas		제비들	n	7
+rápidas	rápidas|rápido|rápida		빠른	n	7
 como	como		~처럼	x	2
-la tortuga	la tortuga|tortuga		거북이	x	7
-lenta	lenta|lento		느린	x	7
+la tortuga	la tortuga|tortuga		거북이	n	7
+lenta	lenta|lento		느린	n	7
 la administración	la administración|administración		관청, 행정	x	7
 en qué puedo ayudarles	en qué puedo ayudarles		무엇을 도와드릴까요?	x	7	가게·관청에서 듣는 말
 relojero	relojero		시계 만드는 사람, 시계공	n	7	카탈루냐어로는 rellotger
-c	c	*카*예	거리(calle/carrer)를 줄인 말	x	7
 no es	no es		~이 아니다	x	7
 en aquella época	en aquella época		그 시절에는	x	7
 los nombres de las calles	los nombres de las calles		거리 이름들	x	7	nombre = 이름
@@ -386,7 +384,117 @@ por qué	por qué		왜? 뭐 때문에?	n	7	대답은 porque(왜냐하면)
 por hoy	por hoy		오늘 일로, 오늘은	x	5
 he ido	he ido		(오늘) 갔다	x	7
 he visto	he visto		(오늘) 봤다	x	7
-un buzón	un buzón|buzón		우체통	x	7
-mapa	mapa|un mapa		지도	x	7
+un buzón	un buzón|buzón		우체통	n	7
+mapa	mapa|un mapa		지도	n	7
 número	número		번호, 번지	x	7
 Plaça de Sant Jaume	plaça de sant jaume	*플라*사 더 *산* *자*우메	산 자우메 광장 — 시청과 카탈루냐 정부 청사가 마주 보는 광장	p	7
+viernes	viernes		금요일	x	6
+nos ayudas	nos ayudas		우리 좀 도와줄래?	x	6
+luces	luces		조명들, 불빛들	x	6	luz의 여러 개
+voy a	voy a		나는 ~할 것이다	n	8	ir a + 동사원형 = 앞으로 할 일. Voy a comer = 먹을 거야
+voy	voy		나는 간다	x	8	ir(가다)
+vas	vas		너는 간다	x	8
+va	va		그(그녀)는 간다	x	8
+vas a	vas a		너는 ~할 것이다	x	8
+va a	va a		그(그녀)는 ~할 것이다	x	8
+ir	ir		가다	n	8	voy, vas, va, vamos
+hacer	hacer		하다, 만들다	n	8
+comer	comer		먹다	x	8
+dormir	dormir		자다	x	8
+comprar	comprar		사다	n	8
+asado	asado		아사도 — 아르헨티나식 고기구이	x	8
+argentino	argentino		아르헨티나의	x	8
+esta noche	esta noche		오늘 밤	n	8	noche = 밤
+noche	noche		밤	x	8
+la carne	la carne|carne		고기	n	8
+juntas	juntas|juntos		같이 (여자들끼리)	n	8	남자가 섞이면 juntos
+as	as		(말끝) -as	x	8
+Rambla	rambla	*람*블라	람블라 — 바르셀로나 구시가의 큰 산책로	p	8
+Boqueria	boqueria	보케*리*아	보케리아 시장	p	8
+ojo	ojo		눈; (손짓과 함께) 조심해!	n	8
+muchos	muchos		많은 (남성 여럿)	x	8
+carteristas	carteristas|carterista		소매치기	n	8
+quiero un kilo y medio	quiero un kilo y medio		1.5킬로 주세요	x	8	medio = 반
+medio	medio		반, 절반	x	8
+entraña	entraña		안창살 (아르헨티나식 부위 이름)	x	8
+aquí no tenemos mucho	aquí no tenemos mucho		여기선 많이 안 다뤄요	x	8
+a ver	a ver		어디 보자	x	8
+hombre	hombre		남자	n	8
+mi bolso	mi bolso|bolso		내 가방	n	8	bolso = (어깨에 메는) 가방
+al ladrón	al ladrón		도둑이야!	x	8
+ladrón	ladrón		도둑	n	8
+paren a ese tipo	paren a ese tipo		저 사람 잡아요!	x	8
+qué bronca	qué bronca		진짜 열받아! (아르헨티나)	x	8
+Mossos d'Esquadra	mossos d'esquadra|mossos	*모*소스 데스*쿠아*드라	모소스 데스콰드라 — 카탈루냐 경찰	p	8
+estoy	estoy		나는 ~이다(상태), 있다	n	8	estoy bien = 괜찮아요
+estás	estás		너는 ~이다(상태), 있다	x	8	¿Estás bien? = 괜찮아?
+estás bien	estás bien		괜찮아?	n	8
+estoy bien	estoy bien		괜찮아요	x	8
+qué ha pasado	qué ha pasado		무슨 일이 있었어요?	n	8	pasar = 일어나다
+pasado	pasado		일어난 (ha pasado = 일어났다)	x	8
+me han robado	me han robado		(누가) 나에게서 훔쳐 갔다	n	8	도둑을 모를 때 ‘그들’(han)로 말한다
+han	han		(그들은) ~했다 (오늘 일)	x	8
+robado	robado		훔친	x	8
+cómo es	cómo es		어떻게 생겼어요?	n	8
+de tela	de tela|tela		천으로 된	x	8
+pequeño	pequeño|pequeña		작은	n	8	반대는 grande
+qué hay en	qué hay en		~에 뭐가 있어요?	x	8
+móvil	móvil		휴대폰	n	8	스페인에서는 móvil, 중남미에서는 celular
+cartera	cartera		지갑	n	8
+una copia del pasaporte	una copia del pasaporte		여권 사본	x	8
+la denuncia	la denuncia|denuncia		신고(서)	n	8
+para el seguro y el consulado	para el seguro y el consulado		보험과 영사관용으로	x	8
+lo siento	lo siento		미안해요, 유감이에요	n	8	무언가를 잃은 사람에게 하는 말
+lo siento mucho	lo siento mucho		정말 유감이에요	x	8
+usted	usted		당신 (높여 부르는 말)	n	8	tú보다 공손하다
+habla	habla		말한다	x	8	hablar = 말하다
+mañana voy a buscar	mañana voy a buscar		내일 찾아볼게	x	8
+buscar	buscar		찾다	n	8
+para ti	para ti		너를 위해	x	8
+uno viejo	uno viejo		오래된 것 하나	x	8	viejo = 오래된, 늙은
+viejo	viejo|viejas|vieja|viejos		오래된	n	8
+otra cosa	otra cosa		하나 더, 다른 것	x	8
+sótano	sótano		지하실	n	8
+cajas	cajas|caja		상자	n	8
+mi padre no las abre nunca	mi padre no las abre nunca		아버지는 한 번도 안 열어요	x	8	nunca = 한 번도, 절대
+nunca	nunca		한 번도 ~않다, 절대	x	8
+abrirlas	abrirlas		그것들을 열다	x	8	abrir = 열다
+abrir	abrir		열다	x	8
+Miércoles	miércoles		수요일	x	8
+tengo	tengo		나는 가지고 있다	n	5
+he hablado	he hablado		(오늘) 말했다	x	8
+solo	solo		오직, ~만	x	8
+ver	ver		보다	x	8
+ya no existe	ya no existe		이제 없다, 더는 존재하지 않는다	n	7
+época	época		시절, 시대	x	7
+tampoco	tampoco		~도 아니다 (부정의 ‘~도’)	x	7	también의 부정
+el viento es caliente	el viento es caliente		바람이 뜨겁다	x	7	caliente = 뜨거운
+estrechas	estrechas|estrecha|estrecho		좁은	n	7
+los edificios	los edificios|edificios		건물들	n	7	el edificio
+altos	altos|alto|alta		높은, 키가 큰	n	7
+oscuros	oscuros|oscuro		어두운	x	7
+no sonríe	no sonríe		웃지 않는다	x	7
+y ahora	y ahora		그리고 지금은	x	7
+una tienda de móviles	una tienda de móviles		휴대폰 가게	x	7	tienda = 가게
+hace mucho calor	hace mucho calor		아주 덥다	x	7
+la plaza no tiene sombra	la plaza no tiene sombra		광장에는 그늘이 없다	x	7	sombra = 그늘
+el reloj hace tic tac	el reloj hace tic tac		시계가 똑딱거린다	x	7
+tic	tic|tac	*틱*	똑딱	x	7
+Esquadra	esquadra	데스*쿠아*드라	(Mossos d'Esquadra의 일부)	p	8
+hace	hace		한다; (날씨가) ~하다	x	5	hace calor = 덥다
+abre	abre		연다	x	8	abrir = 열다
+consulado	consulado		영사관	x	8
+policía	policía		경찰	n	8	la policía
+larga	larga|largo		긴	x	8
+ancha	ancha|ancho		넓은	x	8
+huele a	huele a		~냄새가 난다	x	8
+fruta	fruta		과일	x	8
+jamón	jamón		하몽 (스페인식 생햄)	x	8
+no tengo	no tengo		나는 없다, 가지고 있지 않다	x	8
+la llave está aquí	la llave está aquí		열쇠는 여기 있다	x	8
+esperamos	esperamos		우리는 기다린다	x	8	esperar = 기다리다
+una hora	una hora		한 시간	x	8
+estoy cansada	estoy cansada		피곤하다	x	8
+negra	negra|negro		검은	x	8
+come	come		먹는다	x	8	comer = 먹다
+grande	grande		큰	n	8	반대는 pequeño

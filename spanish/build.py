@@ -33,7 +33,7 @@ LINE_PRON_UNTIL = 6
 
 LATIN = r"A-Za-zÀ-ÖØ-öø-ÿ"
 WORD = re.compile(rf"[{LATIN}](?:[{LATIN}\-]*[{LATIN}])?")
-SKIP = {'h', 'th', 'k', 'app', 'a', 'o', 's', 'll', 'sh', 'kg', 'g', 'd', 'r', 'ero'}   # 본문 설명에 쓰인 글자 이름          # 본문 설명에 쓰인 글자 이름 등
+SKIP = {'h', 'th', 'k', 'app', 'a', 'o', 's', 'll', 'sh', 'kg', 'g', 'd', 'r', 'ero', 'c'}   # 본문 설명에 쓰인 글자 이름          # 본문 설명에 쓰인 글자 이름 등
 
 
 # ── 단어표 ────────────────────────────────────────────────────────────
@@ -76,7 +76,7 @@ class Inline:
         cls = 'w new' if first else 'w'
         s = f'<b class="{cls}" data-k="{html.escape(key)}">{html.escape(text)}</b>'
         e = self.entries.get(key, {})
-        p = pron or e.get('p')
+        p = e.get('p') or pron      # 단어표 발음(비우면 철자에서 자동 생성)을 우선한다
         if (p and key not in self.shown and e.get('t') != 'p'
                 and self.ch <= AIDS_UNTIL and not self.quiet):
             s += f'<span class="pr">[{pron_html(p)}]</span>'

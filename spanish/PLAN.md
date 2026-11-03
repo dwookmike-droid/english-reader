@@ -63,7 +63,7 @@
 | 장 | 장소 | 이야기 | 익히는 것 |
 |---|---|---|---|
 | 7 He encontrado la calle ✔ | Barri Gòtic: 대성당, Casa de l'Ardiaca(기록보관소, 제비와 거북이 우체통), Plaça de Sant Jaume | 마르크와 Vespa로. 옛 지도의 C. del Relojero, 주소록의 Relojería Puig 7번지. 마르티가 세상을 떠났다는 것을 앎 | 현재완료(he/has/hemos + -ado/-ido), relojero/relojería |
-| 8 | La Rambla, Mercat de la Boqueria | 소매치기를 당하고 경찰서에 감. 발레의 활약 | ir a + 동사원형, 신고하기 |
+| 8 Voy a comprar ✔ | La Rambla, Mercat de la Boqueria, 모소스 경찰서 | 발레의 asado 장보기, 소매치기, 스페인어로만 신고, 마르크가 공방 지하 상자를 열겠다고 함 | ir a + 동사원형, 신고하기(me han robado), 묘사(grande/pequeño, 색) |
 | 9 | El Born, Santa Maria del Mar | 마르크의 공방 일을 돕고, 편지 속 성당을 찾음 | 재귀동사, 하루 일과 |
 | 10 | Barceloneta 해변 | 발레 친구들과 바다에서 놀다가 편지 속 "바다"의 단서 | 비교 (más/menos), 몸 |
 | 11 | Montjuïc: 케이블카, 마법의 분수 | 편지에 적힌 항구가 보이는 언덕 | 미래 계획, 감정 표현 |
