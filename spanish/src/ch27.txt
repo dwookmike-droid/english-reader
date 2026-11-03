@@ -1,6 +1,6 @@
 # 27 | El laberinto | 엘 라베린토
 
-El lunes por la noche me llamó mi madre. Una videollamada, la primera desde agosto. En Busan era martes por la mañana. Mi madre llevaba su chaqueta de trabajo y tenía prisa, como siempre.
+El lunes por la noche me llamó mi madre. Una videollamada, la primera desde que llegué a Barcelona. En Busan era martes por la mañana. Mi madre llevaba su chaqueta de trabajo y tenía prisa, como siempre.
 
 «사진 속 아저씨 얘기, 몬세 할머니한테 전했어?»
 
@@ -12,9 +12,9 @@ Mi madre se quedó callada. Después miró a la cámara, muy de cerca, como hac�
 
 Me reí. Pero cuando colgó, me quedé mucho tiempo mirando la pantalla negra.
 
-Mi madre. Busan. Mi piso de Seúl, que pagaba cada mes para nada. Mi billete de ida. Y Marc, en un lago, diciendo: si te quedas.
+Mi madre, en Busan. Y Marc, en una barca, en el lago, diciendo: si te quedas.
 
-No sabía qué hacer. Y cuando no sé qué hacer, no hago nada. Era mi especialidad.
+No sabía qué hacer. Y cuando no sé qué hacer, no hago nada. Es mi especialidad.
 
 ##
 
@@ -26,13 +26,19 @@ El martes, Vale entró en mi habitación a las nueve de la mañana, con dos bill
 
 —A perdernos.
 
-Fuimos en la línea verde hasta el final, casi hasta la montaña. Era un barrio tranquilo, de casas bajas y calles que subían. Al lado de una avenida con mucho tráfico había una puerta de hierro, y detrás, un jardín antiguo.
+Fuimos en la línea verde, casi hasta el final, hasta la parada de Mundet, al pie de la montaña. Pasamos al lado de un velódromo y llegamos a una puerta de hierro. Detrás, había un jardín antiguo.
 
-—El Laberinto de Horta —dijo Vale—. El jardín más viejo de Barcelona. Lo hizo una familia rica, hace más de doscientos años, para divertirse. Y en el centro hay un laberinto de verdad. Con paredes de árboles.
+@address
+Parc del Laberint d'Horta
+@end
 
-Subimos por un camino de tierra, entre pinos, hasta unas terrazas con escaleras de piedra, estatuas y estanques. Desde arriba se veía el laberinto: un dibujo perfecto de paredes verdes, altas, cortadas con mucha precisión. Cipreses, me dijo Vale. En la entrada, encima de la puerta, había una piedra con una escena antigua: una mujer que le daba un hilo a un hombre.
+Vale pagó las entradas. Los martes no es gratis.
 
-—Ariadna y Teseo —dijo Vale—. Ella le dio un hilo para salir del laberinto. Si no hubiera tenido el hilo, se habría quedado allí para siempre.
+—El Laberinto de Horta —dijo Vale—. El jardín más viejo de Barcelona. Lo hizo un marqués, hace más de doscientos años, para pasear y divertirse. Y en el centro hay un laberinto de verdad. Con paredes de árboles.
+
+Pasamos delante de un palacio viejo y subimos por unas terrazas con escaleras de piedra, estatuas y estanques. Desde arriba se veía el laberinto, abajo: un dibujo perfecto de paredes verdes, altas, cortadas con mucha precisión. Cipreses, me dijo Vale. En la entrada había una piedra con una escena antigua: una mujer que le daba un hilo a un hombre.
+
+—Ariadna y Teseo —dijo Vale—. Ella le dio un hilo para salir del laberinto. Si Teseo no hubiera tenido el hilo, se habría quedado allí para siempre.
 
 —¿Y nosotras? ¿Tenemos hilo?
 
@@ -48,7 +54,7 @@ Al principio nos reíamos. Vale elegía los caminos con mucha seguridad y siempr
 
 En un rincón con un banco de piedra, Vale se sentó de repente.
 
-—¿Te acordás de la azotea? ¿Que te dije que yo también le escondí algo a mi familia?
+—¿Te acordás de la azotea? ¿Cuando te dije que le escondí algo a mi familia dos años, en la misma ciudad?
 
 —Sí.
 
@@ -56,11 +62,11 @@ En un rincón con un banco de piedra, Vale se sentó de repente.
 
 —¿Y qué pasó?
 
-—Mi vieja lo descubrió. Por una amiga suya, en el súper. —Vale se rio, pero tenía los ojos brillantes—. Lloró una semana. Después me dijo: «Ojalá me lo hubieras dicho antes. Me habría enojado igual, pero solo un día». ¿Entendés? Lo peor no fue dejar medicina. Lo peor fueron los dos años de mentiras. Me arrepiento de eso. Del resto, no.
+—Mi vieja lo descubrió. Por una amiga suya, en el súper. —Vale se rio, pero tenía los ojos brillantes—. Lloró una semana. Después me dijo: «Ojalá me lo hubieras dicho antes. Me habría enojado igual, pero solo un día». ¿Entendés? Lo peor no fue dejar medicina. Lo peor fueron los dos años de mentiras. Me arrepiento de eso. Me arrepiento de no habérselo dicho el primer día. Del resto, no.
 
 Me arrepiento de eso. Me arrepiento de los dos años. Pensé en mis tres semanas de miedo y de mentiras a Marc.
 
-—Por eso estoy aquí —dijo Vale—. Por eso vine a Barcelona. Para hacer lo que yo quiero. Y para no esconderme más.
+—Por eso estoy acá —dijo Vale—. Por eso vine a Barcelona. Para hacer lo que yo quiero, sin esconderme de nadie.
 
 Se levantó y me dio un golpe suave en el hombro.
 
@@ -74,19 +80,19 @@ Me quedé sola.
 
 Probé un camino. Terminaba en una pared. Probé otro. Volví al mismo banco de piedra. Probé un tercero, y otra pared. Empecé a caminar más rápido. Las voces de los otros se oían cada vez más lejos. El cielo era un rectángulo gris, encima de mí.
 
-Pensé: estoy perdida. Perdida. La palabra de aquel domingo con Vale, en el paseo de Gràcia, cuando no sabía nada. Me acordé de Montse: «Perdida, pero en casa».
+Pensé: estoy perdida. Perdida. La palabra de aquel domingo con Vale, en el Passeig de Gràcia, cuando no sabía nada. Me acordé de Montse: «Perdida, pero en casa».
 
 Me paré. Respiré.
 
-Y pensé en todo, por fin. No en una cosa cada vez, como hacía siempre, sino en todo junto, como el laberinto.
+Y pensé en todo, por fin. No una cosa detrás de otra, como hacía siempre, sino todo junto, como el laberinto.
 
-Si me quedo aquí para siempre, sin ver a mi madre, me arrepentiré. Lo sé. Mi abuela se fue de esta ciudad y no volvió nunca. Martí la esperó toda la vida. Ojalá ella hubiera vuelto una vez. Una sola. Ojalá hubieran hablado. No quiero ser ella.
+Si me quedo aquí y no vuelvo a ver a mi madre, me arrepentiré. Lo sé. Ella me esperará, como Martí esperó a mi abuela. No quiero que nadie me espere toda la vida.
 
-Pero si me voy y no vuelvo, también me arrepentiré. Lo sé también. Martí esperó toda la vida. No quiero ser él.
+Pero si me voy y no vuelvo, también me arrepentiré. Seré como mi abuela: se fue de esta ciudad y no volvió nunca. Ojalá ella hubiera vuelto una vez. Una sola. Ojalá hubieran hablado. Y Marc… No quiero ser ella.
 
 No tenía que elegir entre las dos cosas. Eso era lo que no veía. Había otra salida. Me habría gustado verla antes. Pero la estaba viendo ahora.
 
-Iría a ver a mi madre. Haría el kimchi con ella, en noviembre, como cada año con mi abuela. Cerraría mi piso de Seúl. Y volvería. Con un billete de ida y vuelta. Esta vez, con vuelta.
+Iría a ver a mi madre. Haría kimchi con ella, como cada invierno con mi abuela. Dejaría mi piso de Seúl. Y volvería. Con un billete de ida y vuelta. Esta vez, con vuelta.
 
 No lo pensé más. Empecé a caminar. Derecha. Izquierda. Una pared. Atrás. Izquierda otra vez. No tenía hilo. Pero tenía algo mejor: ya sabía adónde quería ir.
 
@@ -114,13 +120,13 @@ Cuando apreté el botón, me temblaban las manos. Vale aplaudió desde la cama.
 
 —No se va a enojar. —Lo pensé un momento—. Y si se enoja, se le pasará.
 
-Antes de dormir abrí el cuaderno. Escribí todas las frases nuevas del día y las miré mucho tiempo. Ojalá me lo hubieras dicho. Me arrepiento de eso. Me habría gustado verla antes. Si no hubiera tenido el hilo, se habría quedado allí. Todas eran frases de cosas que ya habían pasado y no se podían cambiar. «Haber» en todas, como una puerta que ya se cerró. Hubiera, habría, hubieras. Pero la última frase del día no era así. La última frase era: volveré.
+Antes de dormir abrí el cuaderno. Escribí todas las frases nuevas del día y las miré mucho tiempo. Me arrepiento de eso: el presente, una pena de hoy. Me arrepentiré: el futuro, una pena que todavía puedo evitar. Me arrepiento de no habérselo dicho. Me habría gustado verla antes. Si Teseo no hubiera tenido el hilo, se habría quedado allí. Ojalá me lo hubieras dicho. Cosas que ya pasaron y no se pueden cambiar. «Haber» en casi todas, como una puerta que ya se cerró. Pero la última frase del día no era así. La última frase era: volveré.
 
 @letter
 Martes, 10 de noviembre.
 Laberinto de Horta. Paredes de cipreses. Ariadna le dio un hilo a Teseo.
 Vale dejó medicina y lo escondió dos años. «Me arrepiento de eso. Del resto, no».
-Me perdí sola. «Perdida, pero en casa».
+Me he perdido sola. «Perdida, pero en casa».
 Si me quedo sin ver a mi madre, me arrepentiré. Si me voy y no vuelvo, también.
 En el centro: Eros. El amor. Qué casualidad.
 He comprado un billete. Ida y vuelta. 20 de noviembre – 8 de enero.
