@@ -104,8 +104,8 @@ def syllables(ph):
             i = j
         else:
             i += 1
-    if not nuclei:
-        return [([], ''.join(ph), [])]
+    if not nuclei:                      # 모음이 없는 약어(Sr. 등)
+        return []
     sylls = []
     prev_end = 0
     for k, (a, b) in enumerate(nuclei):
@@ -192,6 +192,8 @@ def to_hangul(word):
     if not ph:
         return ''
     sy = syllables(ph)
+    if not sy:
+        return word
     st = stress_index(word, sy)
     parts = []
     for k, (o, n, c) in enumerate(sy):
