@@ -188,9 +188,10 @@ def parse_chapter(path, inline):
         m = re.match(r'@(\w+)\s+(—.*)', text)
         if m:
             who, text = m.groups()
+        if text.startswith('—') and not who:
+            # 3부부터는 소설식 대화(—…—dijo Marc.)를 서술 문단으로 둔다. 음성은 붙지 않는다.
+            return dict(t='p', h=inline(text), cls='dlg')
         if text.startswith('—'):
-            if not who:
-                print(f'  ! 말하는 사람 표시(@이름)가 없는 대사: {text[:30]}', file=sys.stderr)
             es, _, ko = text.partition(' :: ')
             plain = strip_marks(es)
             lp = ''
@@ -255,7 +256,8 @@ def audio_id(who, text):
 
 def block_html(b):
     if b['t'] == 'p':
-        return f'<p>{b["h"]}</p>'
+        cls = f' class="{b["cls"]}"' if b.get('cls') else ''
+        return f'<p{cls}>{b["h"]}</p>'
     if b['t'] == 'say':
         gl = f'<span class="gl">{b["ko"]}</span>' if b['ko'] else ''
         if b.get('lp'):

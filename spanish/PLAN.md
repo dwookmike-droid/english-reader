@@ -74,7 +74,7 @@
 |---|---|---|---|
 | 13 Te esperé ✔ | 하숙집 부엌, Sagrada Família와 Plaça de Gaudí의 연못 | 세 번째 편지 전문(1978.12.2): 연못 광장에서 한 시간 기다림, 마르티의 첫 한국어 '괜찮아요', 'Barcelona tampoco. Yo tampoco.' 외할아버지 생각 | 점과거와 선과거(esperé/esperaba, fue/era), 서술의 스페인어화 |
 | 14 Tenía fiebre ✔ | 하숙집, Hospital de Sant Pau(모데르니스메 구역) | 엄마와의 통화, 네 번째 편지(7월 밤 열병, 승합차, 마당 벤치), 몬세와 같은 벤치에, 할머니의 노래 | 선과거(hacía, tenía, cantaba, esperábamos)와 점과거의 대비 |
-| 15 | Tibidabo 놀이공원 | 1978년의 데이트. 지금도 도는 옛 놀이기구 | 점과거와 선과거 섞기 |
+| 15 Fuimos felices ✔ | 푸니쿨라, Tibidabo 놀이공원의 L'Avió(1928) | 다섯 번째 편지(찾아가지 않은 사진), 마르크가 손을 얹음, 마르티가 해마다 혼자 비행기를 탄 이유 | 점과거·선과거 섞기, 소설식 대화문(—dijo Marc) |
 | 16 | Paral·lel, Poble Sec | 몬세의 젊은 시절, 극장 거리 | 이야기하기, 시간 표현 |
 | 17 | Mercat de Sant Antoni 일요 헌책 시장, Raval | 옛 사진 한 장을 찾음 | 묘사, 과거진행 |
 | 18 | Bunkers del Carmel, 해 질 녘 | 마지막에서 두 번째 편지. 사랑이 확실해짐 | 과거 정리, 감정 |

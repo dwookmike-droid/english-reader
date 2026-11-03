@@ -59,6 +59,7 @@ section:first-child { break-before: auto; }
   padding-left: .9em;
 }
 .chapter p.say + p:not(.say) { text-indent: 1em; }
+.chapter p.dlg { text-indent: 0; margin: .3em 0; }
 .chapter p.br { text-indent: 0; text-align: center; color: #9a958b; margin: .9em 0; letter-spacing: .1em; }
 .chapter p.br + p { text-indent: 0; }
 .chapter p.end { text-indent: 0; text-align: center; color: #9a958b; margin-top: 1.6em; }
