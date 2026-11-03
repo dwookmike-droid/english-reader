@@ -66,7 +66,7 @@ Vale가 내 주머니를 보더니 내 어깨를 꽉 안았다.
 
 경찰관이 조금 놀란 얼굴을 하더니 웃었다. 그리고 정말로 천천히 말해 주었다.
 
-@policia —Vale. ¿Qué ha pasado? :: 좋아요. 무슨 일이 있었어요?
+@policia_mossos —Vale. ¿Qué ha pasado? :: 좋아요. 무슨 일이 있었어요?
 
 qué ha pasado. 무슨 일이 일어났나. 지난 월요일에 배운 모양이었다. ha + pasado. 나는 대답을 머릿속에서 조립했다.
 
@@ -74,17 +74,17 @@ qué ha pasado. 무슨 일이 일어났나. 지난 월요일에 배운 모양이
 
 me han robado. 나에게서 훔쳐 갔다. 앱이 가르쳐 준 그대로였다. 누가 했는지 말하지 않을 때 스페인어는 동사를 ‘그들’ 꼴(han)로 쓴다.
 
-@policia —¿Cómo es el bolso? :: 가방이 어떻게 생겼어요?
+@policia_mossos —¿Cómo es el bolso? :: 가방이 어떻게 생겼어요?
 
 @yunha —Es… de tela. Azul. Pequeño. :: 천으로 된 거예요. 파란색. 작아요.
 
-@policia —¿Y qué hay en el bolso? :: 가방 안에는 뭐가 있어요?
+@policia_mossos —¿Y qué hay en el bolso? :: 가방 안에는 뭐가 있어요?
 
 @yunha —Mi móvil, mi cartera… y una copia del pasaporte. :: 휴대폰, 지갑… 그리고 여권 사본.
 
 móvil. 휴대폰. cartera. 지갑. 단어들이 하나씩 제자리를 찾아 나왔다. 경찰관은 내가 말할 때마다 컴퓨터에 받아 적었다. 그리고 마지막으로 서류 한 장을 출력해 주었다.
 
-@policia —Es la denuncia. Para el seguro y el consulado. Lo siento mucho. :: 신고서예요. 보험이랑 영사관에 낼 때 필요해요. 정말 유감이에요.
+@policia_mossos —Es la denuncia. Para el seguro y el consulado. Lo siento mucho. :: 신고서예요. 보험이랑 영사관에 낼 때 필요해요. 정말 유감이에요.
 
 lo siento. 미안하다, 유감이다. perdón과는 다른 미안함이었다. 무언가를 잃은 사람에게 하는 말.
 
