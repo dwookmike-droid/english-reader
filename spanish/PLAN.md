@@ -65,7 +65,7 @@
 | 7 He encontrado la calle ✔ | Barri Gòtic: 대성당, Casa de l'Ardiaca(기록보관소, 제비와 거북이 우체통), Plaça de Sant Jaume | 마르크와 Vespa로. 옛 지도의 C. del Relojero, 주소록의 Relojería Puig 7번지. 마르티가 세상을 떠났다는 것을 앎 | 현재완료(he/has/hemos + -ado/-ido), relojero/relojería |
 | 8 Voy a comprar ✔ | La Rambla, Mercat de la Boqueria, 모소스 경찰서 | 발레의 asado 장보기, 소매치기, 스페인어로만 신고, 마르크가 공방 지하 상자를 열겠다고 함 | ir a + 동사원형, 신고하기(me han robado), 묘사(grande/pequeño, 색) |
 | 9 Me levanto temprano ✔ | 마르크 공방, El Born의 오래된 대문, Santa Maria del Mar | 장부 속 'S를 위한 괘종시계(팔지 않음)', 조수 노릇, 회사 시절과 지금의 하루, 편지 속 약속 장소 | 재귀동사(me levanto, me ducho, me visto, me acuesto), 연장 이름, 하루 일과 |
-| 10 | Barceloneta 해변 | 발레 친구들과 바다에서 놀다가 편지 속 "바다"의 단서 | 비교 (más/menos), 몸 |
+| 10 Más grande que el mar ✔ | Santa Maria del Mar(일요일 11시), Barceloneta 해변 | 발레의 친구들(Luca, Sofía, Pau)과 비교 다툼, 햇볕에 탄 등, 장부 속 라스팔마스 주소 | 비교(más/menos… que, mejor), 몸과 아픔(me duele) |
 | 11 | Montjuïc: 케이블카, 마법의 분수 | 편지에 적힌 항구가 보이는 언덕 | 미래 계획, 감정 표현 |
 | 12 | Port Vell, 콜럼버스 기념탑, 해양박물관(Drassanes) | 1978년 라스팔마스에서 온 배의 기록 | 과거로 넘어가는 다리 (점과거 맛보기) |
 

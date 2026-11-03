@@ -33,6 +33,7 @@
 | 7 | 8월 17일 월 (고딕 지구, 기록보관소) |
 | 8 | 8월 19일 수 (보케리아, 소매치기, 경찰서) |
 | 9 | 8월 20일 목 (공방의 장부, 보른, 산타 마리아 델 마르) |
+| 10 | 8월 23일 일 (산타 마리아 델 마르 11시, 바르셀로네타) |
 
 그라시아 축제(Festa Major de Gràcia)는 8월 15일 무렵 시작해 한 주 동안 열린다. 라 메르세(La Mercè)는 9월 24일 전후다.
 
@@ -56,6 +57,8 @@
 
 **9장 Me levanto temprano** — 8월 20일 목요일. 잠 못 든 윤하(me levanto a las seis — 재귀동사의 시작). 마르크가 단추 달린 낡은 휴대폰을 준다. 그는 간밤에 상자 하나를 열었다. 시계 부품과 마르티의 가죽 장부. **"Octubre 1978 — Reloj de pie. Para S. — NO SE VENDE."** 시계 자체는 상자에 없다. 보른의 오래된 대문 수리에 윤하가 조수로 따라간다(destornillador, martillo, tornillo, aceite). 마르크가 처음으로 윤하의 삶을 묻는다(¿Qué haces en Corea?). 회사 시절의 하루(me levanto, me ducho, me visto… me acuesto a la una)와 지금(desayuno pan con tomate y busco un reloj). *"Mejor."* 윤하가 사전으로 첫 편지에서 읽어 낸 한 줄: **"El domingo, a las once, en Santa María del Mar."** 둘은 Santa Maria del Mar 맨 뒷자리에 말없이 앉는다.
 
+**10장 Más grande que el mar** — 8월 23일 일요일. 11시, 윤하는 혼자 Santa Maria del Mar 앞에서 종소리를 듣는다. 발레의 전화(¡Dale, vení!)로 바르셀로네타 해변에. 발레의 친구들: 이탈리아의 **Luca**, 멕시코의 **Sofía**, 바르셀로나 토박이 **Pau**. 다들 무엇이 더 센지/매운지 비교하며 다툰다(más/menos… que, mejor). 윤하: 한국은 커피가 더 비싸고 지하철이 더 깨끗하지만 토마토 빵은 여기가 더 좋다. 물은 부산보다 차갑고, 등과 어깨가 햇볕에 빨갛게 탄다(me duele la espalda). 저녁에 마르크가 장부를 들고 온다(몬세가 윤하가 해변에 있다고 알려 줌). 장부 맨 뒷장: **"S. — Las Palmas de Gran Canaria. Calle de… (puerto)"**. 윤하는 할머니가 열병 중에 딱 한 번 말한 '바다 한가운데 섬'을 떠올린다. 왜 섬에서 바르셀로나에 왔을까. 발레: "¿Un libro de amor?" 마르크: "Es un libro de relojes."
+
 ## 남은 실마리
 
 - 열쇠 두 개는 똑같은 **시계 태엽 열쇠**다. 어느 시계인지는 아무도 모른다(마르크도).
@@ -65,4 +68,5 @@
 - 시계방(Relojería Puig)은 사라졌다. 그 안의 시계들, 특히 열쇠에 맞는 시계는 어디로 갔나. → 마르크 공방 지하의 상자들(8장). 상자에는 부품과 장부뿐(9장). 장부: 1978년 10월 S를 위한 괘종시계, 팔지 않음.
 - 윤하는 마르크가 준 단추 달린 낡은 휴대폰을 쓴다.
 - 편지 속 약속: 일요일 11시, Santa María del Mar.
+- 장부 맨 뒷장: S.의 주소는 라스팔마스 항구 근처. 순례는 왜 섬에서 바르셀로나에 왔나(→ 12장: 남편의 배 수리).
 - 편지 11통의 내용. 11번째 봉투만 소인 연도가 2009년(아직 아무도 눈치채지 못함).
