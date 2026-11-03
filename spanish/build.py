@@ -44,6 +44,9 @@ def load_vocab():
             continue
         c = line.split('\t') + [''] * 7
         key, fs, pron, ko, kind, ch, note = c[:7]
+        if not pron and kind not in ('c', 'p', 'f'):
+            from hangul import to_hangul           # 스페인어는 발음을 비워 두면 철자에서 만든다
+            pron = ' '.join(to_hangul(w) for w in key.split())
         entries[key] = dict(k=key, p=pron, d=ko, t=kind, c=int(ch or 0), n=note)
         for f in fs.split('|'):
             forms[tuple(f.lower().split())] = key

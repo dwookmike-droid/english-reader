@@ -203,6 +203,13 @@ def to_hangul(word):
             got = add_final(parts[k - 1][0][-1], 'ㄹ')
             if got:
                 parts[k - 1][0][-1] = got
+    # n 다음에 g·k 소리가 오면 ㅇ 받침 (tengo → 텡고, cinco → 싱코)
+    for k in range(len(parts) - 1):
+        if sy[k][2][-1:] == ['n'] and sy[k + 1][0][:1] and sy[k + 1][0][0] in ('g', 'k', 'x'):
+            last = parts[k][0][-1]
+            code = ord(last) - 0xAC00
+            if code >= 0 and code % 28 == JONG.index('ㄴ'):
+                parts[k][0][-1] = chr(ord(last) - JONG.index('ㄴ') + JONG.index('ㅇ'))
     out = []
     for chars, th, stressed in parts:
         s = ''.join(f'_{ch}_' if i in th else ch for i, ch in enumerate(chars))

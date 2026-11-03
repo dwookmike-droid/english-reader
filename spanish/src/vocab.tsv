@@ -168,7 +168,6 @@ sola	sola	*솔*라	혼자 (여자)	x	3	남자는 solo
 así aprendes	así aprendes	아*시* 아프*렌*데스	그래야 배우지	x	3
 son	son	*손*	(값이) ~이다	x	3	Son cuatro con cincuenta = 4.50이에요
 pregunta	pregunta	프레*군*타	물어봐요	x	3
-qué	qué	*케*	무슨, 뭐	x	3
 cuánto	cuánto	*쿠안*토	얼마나	x	3
 un	un	*운*	하나의 (남자 이름 앞)	x	3	여자 이름 앞에는 una
 eso	eso	*에*소	그거, 바로 그거	x	3
@@ -248,3 +247,53 @@ Gaudí	gaudí	가우*디*	가우디 — 바르셀로나의 건축가	p	4
 Català	català	카탈*라*	카탈루냐어 (카탈루냐어로 쓴 말)	c	4
 English	english	*잉*글리시	영어	f	4
 pedrera	pedrera	페*드레*라	돌이 많은 곳, 채석장	x	4	La Pedrera = ‘돌산’, 가우디의 카사 밀라
+qué hora es	qué hora es		몇 시예요?	n	5
+son las	son las		(시각이) ~시예요	n	5	Son las ocho = 여덟 시예요. 한 시만 Es la una
+hora	hora|horas		시간, 시	n	5	a qué hora = 몇 시에
+ocho	ocho		여덟, 8	n	5
+tienes	tienes		너는 가지고 있다	n	5	tener(가지다)의 ‘너’ 형태
+tengo	tengo		나는 가지고 있다	n	5	tengo sed = 목말라, tengo calor = 더워, tengo 38 años = 서른여덟 살이야
+tiene	tiene		그(그녀)는 가지고 있다	x	5
+tranquila	tranquila		진정해, 괜찮아 (여자에게)	x	5	남자에게는 tranquilo
+iguales	iguales|igual		똑같은	n	5
+puerta	puerta		문	n	5	la puerta
+dar cuerda	dar cuerda		태엽을 감다	x	5
+también	también		~도, 역시	n	5
+la misma flor	la misma flor		같은 꽃	x	5	flor = 꽃
+flor	flor		꽃	n	5	la flor
+abuelo	abuelo		할아버지	n	5	할머니는 abuela
+cómo se llama	cómo se llama		이름이 뭐예요?	n	5	대답은 Se llama… / Me llamo…
+carta	carta|cartas		편지	n	5	여러 통은 cartas
+once	once		열하나, 11	n	5
+sabe	sabe		(그녀는, 그는) 안다	n	5	no sé = 나는 몰라
+sé	sé		나는 안다	x	5	no sé = 몰라요
+pregúntale a ella	pregúntale a ella		그분께 물어봐요	x	5
+hace calor	hace calor		덥다	n	5	날씨는 hace로 말한다. hace frío = 춥다
+calor	calor		더위	n	5	tengo calor = (나는) 더워
+parque	parque		공원	n	5
+arriba	arriba		위에, 위로	n	5	반대는 abajo
+abajo	abajo		아래에, 아래로	n	5
+hay aire	hay aire		바람이 있다	x	5
+turistas	turistas|turista		관광객	x	5
+nosotras	nosotras		우리 (여자들만)	n	5	남자가 섞이면 nosotros
+toda	toda|todo		전부, 모든	x	5
+mar	mar		바다	n	5	el mar
+sed	sed		목마름	n	5	tengo sed = 목말라
+años	años|año		해, 나이	n	5	tengo 38 años = 서른여덟 살이에요
+setenta y tres	setenta y tres		일흔셋, 73	x	5
+veinticinco	veinticinco		스물다섯, 25	x	5
+veintisiete	veintisiete		스물일곱, 27	x	5
+vive	vive		산다, 살고 있다	x	5	vivir(살다)
+seis meses	seis meses		여섯 달	x	5	seis = 6, mes = 달
+amiga	amiga		친구 (여자)	n	5	남자 친구는 amigo
+hermano	hermano		형제, 오빠, 형	n	5	자매는 hermana
+poco a poco	poco a poco		조금씩	n	5
+no más	no más		더는 안 돼, 여기까지	x	5
+de puerta	de puerta		문의	x	5
+de reloj	de reloj		시계의	x	5
+Martí	martí	마르*티*	마르티 — 마르크의 할아버지, 몬세의 오빠	p	5
+Park Güell	park güell	*파*르크 *구*엘	구엘 공원 — 가우디의 공원	p	5
+Sagrada Família	sagrada família	사*그라*다 파*밀*리아	사그라다 파밀리아 성당	p	5
+este	este		이 (남자 이름 앞)	x	5	esta는 여자 이름 앞
+las	las		그 (여자 이름 여러 개 앞)	x	5	las diez = 10시
+más	más		더	x	5
