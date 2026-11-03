@@ -12,19 +12,17 @@ mañana.
 
 부엌에서 커피 냄새가 났다. 몬세 할머니는 벌써 앞치마를 두르고 있었다.
 
-@montse —Bon dia, Yuna! Com estàs? :: (카탈루냐어) 좋은 아침, 유나! 잘 잤어요?
+@montse —¡Buenos días, {nena|*네*나}! ¿{Qué tal|*케* *탈*}? :: 좋은 아침, 아가씨! 잘 잤어요?
 
-또 카탈루냐어였다. 하지만 bon dia는 어제 배웠다. 나는 똑같이 돌려주었다.
+qué tal. 처음 듣는 말이었지만 웃는 얼굴을 보니 안부를 묻는 것 같았다. 그리고 nena. 몬세는 나를 그렇게 불렀다. 앱은 ‘여자아이, 아가씨’라고 했다. 서른여덟 살에 아가씨라니. 싫지 않았다. 나는 어제 배운 말로 대답해 보았다.
 
 @yunha —¡Bon dia!
 
-몬세의 얼굴이 환해졌다. 그리고 그제야 생각났다는 듯 스페인어로 바꿨다.
+몬세가 소리 내어 웃었다. 카탈루냐어로 받아칠 줄은 몰랐다는 얼굴이었다.
 
-@montse —Molt bé, {nena|*네*나}. Buenos días. ¿{Qué tal|*케* *탈*}? :: 잘했어, 아가씨. 좋은 아침. 잘 잤어요?
+@montse —¡Molt bé! :: (카탈루냐어) 잘했어!
 
-qué tal. 처음 듣는 말이었지만 웃는 얼굴을 보니 안부를 묻는 것 같았다. 그리고 nena. 몬세는 나를 그렇게 불렀다. 앱은 ‘여자아이, 아가씨’라고 했다. 서른여덟 살에 아가씨라니. 싫지 않았다. 나도 스페인어로 아침 인사를 했다.
-
-@yunha —¡Buenos días, señora!
+@yunha —Gracias, señora.
 
 @montse —Montse. Soy Montse. :: 몬세. 그냥 몬세라고 해요.
 
@@ -34,13 +32,9 @@ qué tal. 처음 듣는 말이었지만 웃는 얼굴을 보니 안부를 묻는
 
 @yunha —¿{Qué es esto|*케* 에스 *에*스토}? :: 이게 뭐예요?
 
-@montse —Pa amb tomàquet! :: (카탈루냐어) 토마토 바른 빵!
+@montse —{Pan|*판*} {con|*콘*} {tomate|토*마*테}. :: 토마토 바른 빵.
 
-나는 눈만 껌뻑였다.
-
-@montse —{Pan|*판*} {con|*콘*} {tomate|토*마*테}, en {castellano|카스테*야*노}. :: 카스티야어로는 토마토 바른 빵.
-
-카탈루냐 사람들은 이 빵을 pa amb tomàquet라고 부른다고 했다. 이 동네의 아침이었다. 그리고 몬세는 스페인어를 español이라고 하지 않고 castellano라고 했다. 카탈루냐에서는 스페인어를 흔히 그렇게 부른다. 이 나라에는 스페인의 말이 하나만 있는 게 아니니까. 몬세는 빵을 가리키며 pan, 토마토를 들어 보이며 tomate, 그리고 두 손을 합치며 con이라고 했다. pan con tomate. 토마토와 함께인 빵. con은 ‘~와 함께’였다.
+몬세는 빵을 가리키며 pan, 토마토를 들어 보이며 tomate, 그리고 두 손을 합치며 con이라고 했다. pan con tomate. 토마토와 함께인 빵. con은 ‘~와 함께’였다. 카탈루냐 사람들은 이 빵을 pa amb tomàquet라고 부른다고 몬세가 덧붙였다. 이 동네의 아침이었다.
 
 나는 한 입 베어 물었다. 바삭한 빵에 토마토의 새콤함과 올리브유의 고소함이 번졌다. 소금이 혀끝에서 톡 터졌다. 고작 빵과 토마토였는데.
 
@@ -54,9 +48,9 @@ qué tal. 처음 듣는 말이었지만 웃는 얼굴을 보니 안부를 묻는
 
 @yunha —Sí, por favor.
 
-@montse —Amb llet? … ¿Con {leche|*레*체}? :: (카탈루냐어로 한 번, 카스티야어로 한 번) 우유 넣어요?
+@montse —¿Con {leche|*레*체}? :: 우유 넣어요?
 
-이번에는 몬세가 스스로 알아차렸다. 내가 굳기도 전이었다. con. 방금 배운 말이었다. 우유와 함께. leche는 우유일 것이다. 몬세가 작은 냄비에 데운 우유를 들어 보였으니 틀림없었다.
+con. 방금 배운 말이었다. 우유와 함께. leche는 우유일 것이다. 몬세가 작은 냄비에 데운 우유를 들어 보였으니 틀림없었다.
 
 @yunha —Sí. Café con leche, por favor.
 
@@ -124,7 +118,7 @@ cansada. 피곤한. 새벽 다섯 시부터 깨어 있던 사람에게 꼭 필�
 
 몬세가 앞치마를 풀었다. 그리고 가방을 어깨에 메며 말했다.
 
-@montse —Som-hi, nena. {Vamos|*바*모스}. :: (카탈루냐어로 한 번, 카스티야어로 한 번) 가자, 아가씨.
+@montse —{Vamos|*바*모스}, nena. :: 가요, 아가씨.
 
 @yunha —¿Adónde?
 
@@ -156,21 +150,17 @@ Vale가 머그컵을 들고 끼어들었다.
 Plaça de la Vila de Gràcia
 @end
 
-@montse —{Mira|*미*라}. Plaça, en catalán. La {plaza|*플라*_사_}, en castellano. :: 봐요. 카탈루냐어로 plaça. 카스티야어로 plaza. 광장이에요.
+@montse —{Mira|*미*라}. Plaça, en catalán. La {plaza|*플라*_사_}, en {castellano|카스테*야*노}. :: 봐요. 카탈루냐어로 plaça. 카스티야어로 plaza. 광장이에요.
 
-mira. 봐. plaza. 광장. Carrer와 calle처럼, 여기서는 광장도 이름이 두 개였다. 표지판에는 언제나 카탈루냐어가 적혀 있고, 몬세는 나를 위해 스페인어를 하나 더 붙여 주었다. plaza 한가운데에는 가느다란 탑이 서 있었다. 나는 탑을 가리켰다. 오늘 아침에 배운 마법의 문장이 있었다.
+mira. 봐. plaza. 광장. Carrer와 calle처럼, 여기서는 광장도 이름이 두 개였다. 표지판에는 언제나 카탈루냐어가 적혀 있었다. 그리고 몬세는 스페인어를 español이라고 하지 않고 castellano라고 했다. 카탈루냐에서는 스페인어를 흔히 그렇게 부른다. 이 나라에는 스페인의 말이 하나만 있는 게 아니니까. plaza 한가운데에는 가느다란 탑이 서 있었다. 나는 탑을 가리켰다. 오늘 아침에 배운 마법의 문장이 있었다.
 
 @yunha —¿Qué es esto?
 
 몬세가 손가락을 들어 탑 꼭대기를 가리켰다. 커다란 시계가 달려 있었다.
 
-@montse —I el rellotge. :: (카탈루냐어) 그리고 시계.
+@montse —Y el {reloj|레*로*흐}. En catalán, rellotge. :: 그리고 시계. 카탈루냐어로는 rellotge.
 
-rellotge. 나는 숨을 멈췄다. 봉투의 주소가 떠올랐다. Carrer del Rellotger. 몬세는 내가 또 못 알아들은 줄 알았다.
-
-@montse —El {reloj|레*로*흐}, nena. Rellotge, en catalán. Reloj, en castellano. :: 시계 말이야. 카탈루냐어로 rellotge, 카스티야어로 reloj.
-
-이번만은 카탈루냐어가 먼저 나온 게 고마웠다. 그 덕분에 나는 알아들었다. rellotge와 Rellotger. 시계와 시계공. 몬세가 내 얼굴을 보고 천천히 고개를 끄덕였다.
+rellotge. 나는 숨을 멈췄다. 봉투의 주소가 떠올랐다. Carrer del Rellotger. rellotge와 Rellotger. 시계와 시계공. 몬세가 내 얼굴을 보고 천천히 고개를 끄덕였다.
 
 @montse —Rellotger… el {señor|세*뇨*르} de los relojes. :: rellotger는… 시계 아저씨. 시계 만드는 사람.
 
@@ -216,7 +206,7 @@ llaves. llave가 여러 개. 열쇠들의 가게. 열쇠공방이었다.
 TANCAT PER VACANCES
 @end
 
-@montse —Tancat per vacances… {Cerrado|_세_*라*도} por vacaciones. Agosto. {Hoy|*오*이}, no. :: 휴가라서 닫았네… 8월이잖아. 오늘은 안 해요.
+@montse —{Cerrado|_세_*라*도} por vacaciones. Agosto. {Hoy|*오*이}, no. :: 휴가라서 닫았네. 8월이잖아. 오늘은 안 해요.
 
 cerrado. 닫힌. vacaciones는 앱을 열지 않아도 알 것 같았다. 휴가. 8월의 바르셀로나에서는 동네 가게들이 몇 주씩 문을 닫는다고 했다. hoy. 오늘. 오늘은 안 된다는 뜻이었다. 시계공의 거리는 antes에 사라졌고, 열쇠공방은 hoy 닫혀 있었다. 나는 실망한 채 돌아서려다가, 진열창에 눈이 멈췄다.
 

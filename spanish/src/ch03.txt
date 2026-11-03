@@ -2,21 +2,21 @@
 
 셋째 날 아침, 몬세가 식탁 위에 종이 한 장과 지폐 한 장을 올려놓았다.
 
-@montse —El mercat. El {mercado|메르*카*도}. Tú sola. :: 시장. 카스티야어로는 mercado. 너 혼자.
+@montse —El {mercado|메르*카*도}. Tú sola. :: 시장. 너 혼자.
 
 @yunha —¿Yo? ¿Sola?
 
-@montse —Així aprens. Así aprendes. :: (카탈루냐어로 한 번, 카스티야어로 한 번) 그래야 배우지.
+@montse —Así aprendes. :: 그래야 배우지.
 
-몬세는 그 말만 하고 커피를 마셨다. 다정한 사람이지만 봐주는 사람은 아니었다. 나는 종이를 집어 들었다. 몬세의 글씨는 편지 봉투의 글씨처럼 오른쪽으로 기울어 있었다. 그리고 당연히, 카탈루냐어였다.
+몬세는 그 말만 하고 커피를 마셨다. 다정한 사람이지만 봐주는 사람은 아니었다. 나는 종이를 집어 들었다. 몬세의 글씨는 편지 봉투의 글씨처럼 오른쪽으로 기울어 있었다.
 
 @letter
-1 kg tomàquets
-4 préssecs
-200 g formatge
+1 kg tomates
+4 melocotones
+200 g queso
 @end
 
-tomàquets는 알 것 같았다. 어제 아침의 pa amb tomàquet. 나머지는 앱에 물어보았다. préssecs는 복숭아, formatge는 치즈였다. 숫자는 다행히 어느 나라 말로 써도 숫자였다. 문제는 그 숫자를 소리 내어 말하는 일이었다.
+tomates는 알았다. 어제 아침의 pan con tomate. 나머지는 앱에 물어보았다. melocotones는 복숭아, queso는 치즈였다. 숫자는 다행히 어느 나라 말로 써도 숫자였다. 문제는 그 숫자를 소리 내어 말하는 일이었다.
 
 지폐에는 20이라고 적혀 있었다. {veinte|*베인*테} euros. 나는 손바닥에 적었다. veinte, 20.
 
@@ -44,11 +44,11 @@ quiero. 나는 원한다. 이 말 하나면 시장에서 굶지는 않을 것이
 
 @frutera —¿{Algo más|*알*고 *마*스}? :: 또 필요한 거?
 
-algo más. 뭔가 더. 나는 종이를 내밀며 두 번째 줄을 짚었다. préssecs. 아주머니가 소리 내어 웃었다.
+algo más. 뭔가 더. 나는 종이를 내밀며 두 번째 줄을 짚었다. 너무 긴 단어라 소리 내어 읽을 자신이 없었다.
 
-@frutera —¡Ah, préssecs! {Melocotones|멜로코*토*네스}, en castellano. ¿Cuántos? :: 아, 복숭아! 카스티야어로는 melocotones. 몇 개?
+@frutera —¡Ah, {melocotones|멜로코*토*네스}! ¿Cuántos? :: 아, 복숭아! 몇 개?
 
-여기서도 카탈루냐어 다음에 castellano였다. 이 도시 사람들은 다 몬세 같았다. 나는 손가락 네 개를 펴 보였다. 아니, 말로 해야 했다. 숫자는 비행기에서 외워 두었다. {uno|*우*노}, {dos|*도*스}, tres…
+아주머니가 내 대신 소리 내어 읽어 주었다. melocotones. 멜로코토네스. 나는 손가락 네 개를 펴 보였다. 아니, 말로 해야 했다. 숫자는 비행기에서 외워 두었다. {uno|*우*노}, {dos|*도*스}, tres…
 
 @yunha —{Cuatro|*쿠아*트로}.
 
@@ -92,13 +92,13 @@ adéu. 그건 처음 듣는 말이었지만, 손 흔드는 모양새가 adiós�
 
 키 큰 남자의 차례가 되었다. 그는 치즈 가게 주인과 카탈루냐어로 짧게 몇 마디를 주고받았다. 주인을 Jaume이라고 불렀다. 단골인 모양이었다. 그가 계산을 하는 동안 내 차례가 왔다.
 
-@jaume —Digues, maca. ¿Qué te pongo? :: (카탈루냐어로 한 번, 카스티야어로 한 번) 말해요, 아가씨. 뭘 드릴까?
+@jaume —Hola, guapa. ¿Qué te pongo? :: 안녕, 아가씨. 뭘 드릴까?
 
 @yunha —{Queso|*케*소}… por favor.
 
 @jaume —¿Qué queso? ¿Cuánto? :: 무슨 치즈? 얼마나?
 
-나는 종이를 보았다. 200 g formatge. 200을 뭐라고 하는지 몰랐다. 비행기에서는 10까지만 외웠다. 나는 손가락 두 개를 펴 보였다. 주인이 고개를 갸웃했다.
+나는 종이를 보았다. 200 g queso. 200을 뭐라고 하는지 몰랐다. 비행기에서는 10까지만 외웠다. 나는 손가락 두 개를 펴 보였다. 주인이 고개를 갸웃했다.
 
 @jaume —¿Dos kilos? :: 2킬로?
 
@@ -176,13 +176,13 @@ diez. 열. 20에서 10을 썼으니 10이 남았다. 오늘 하루에 나는 숫
 
 몬세의 손이 멈췄다.
 
-@montse —¿El Marc? ¿Al mercat? :: 마르크? 시장에서?
+@montse —¿Marc? ¿En el mercado? :: 마르크? 시장에서?
 
 @yunha —Sí. «Una llave». «No sé».
 
 내가 그의 무표정을 흉내 내자, 몬세는 웃음인지 한숨인지 모를 소리를 냈다.
 
-@montse —Ai, aquest nen… Este chico… :: 아이고, 이 녀석… 이 녀석이…
+@montse —Ay, este chico… :: 아이고, 이 녀석…
 
 몬세는 그 뒤로 아무 말도 하지 않았다. 대신 복숭아를 씻어 내 앞에 놓아 주었다. 할 말이 없을 때 몬세는 음식을 내놓는다는 것을 나는 알아 가고 있었다.
 
