@@ -45,6 +45,7 @@
 | 19 | 9월 27일 일 (지하실의 괘종시계) |
 | 20 | 10월 3일 토 (시체스, Joan) |
 | 21 | 10월 11일 일 (포블레노우 묘지, 보가텔 해변) |
+| 22 | 10월 17일 토 밤 (옥상의 말다툼) |
 
 그라시아 축제(Festa Major de Gràcia)는 8월 15일 무렵 시작해 한 주 동안 열린다. 라 메르세(La Mercè)는 9월 24일 전후다.
 
@@ -92,6 +93,8 @@
 
 **21장 Ojalá no sea verdad** — 10월 11일 일요일. 일주일 내내 윤하는 지하에 내려가지 않는다(핑계). 마르크가 흰 꽃을 들고 와 *"Quiero que conozcas a mi abuelo"*(접속법의 시작: quiero que, espero que, ojalá, tengo miedo de que). 바다 근처 포블레노우 묘지, 대리석 벽감이 층층이 쌓인 거리. 마르크의 할머니는 아버지가 세 살 때 세상을 떠나 다른 곳에 묻혔고, 마르티는 바다 가까이 있고 싶어 했다. 세 번째 줄의 묘비: **MARTÍ PUIG I FERRER 1948 — 2009**, 아래에 꽃잎 다섯 장의 꽃. 몬세는 17년 동안 일요일마다 장미를 가져온다. 마르크가 카탈루냐어로: *"Avi, aquesta és la Yuna. La néta de la Sun-rye. Ha vingut."* 윤하는 다 알아듣는다. 마음속으로 계산하며 *"Ojalá no sea verdad."* *"¿Tu abuelo tuvo otros hijos?" — "No. Solo mi padre. ¿Por qué?" — "Por nada."* 마르크가 손을 내밀자 **윤하가 한 걸음 물러선다.** 보가텔 해변 벤치에 떨어져 앉는다. 마르크: 진자는 걸었고 일주일쯤 조정하면 된다, 작동할 때 네가 있어야 한다, *"tengo miedo de que no me lo digas nunca."* 윤하: *"Te lo diré. Pronto."* 그날 밤 윤하는 엄마에게 "여기 서류 때문"이라며 **출생 증명서 사진**을 부탁한다(두 번째 작은 거짓말).
 
+**22장 ¡Mírame!** — 10월 17일 토요일 밤. 몬세 집 옥상(azotea, 카탈루냐어 terrat: 빨랫줄, 제라늄 화분, 티비다보 대관람차의 빨간 불빛)은 윤하의 비밀 장소. 엄마는 "찾아볼게, 오래된 서류라"고만 답했다. 마르크가 올라온다. 시계는 오늘 오후 맞춰 놓았고 완벽하게 가는데, 윤하는 세 시간 기다려도 오지 않았다. *"Basta de «estoy cansada». Mírame. Dime qué pasa."* 윤하가 쏟아 낸다. 1974년, 1975년 2월, 아홉 달, 'Sr. Puig, señora e hija', "la quería como a una hija". *"¿Y si tú y yo somos…?"* 마르크(처음으로 목소리를 높임): *"¡Yo también tengo miedo! Pero no te escondo nada."* 할아버지는 거짓말을 할 줄 몰랐다고. 윤하: *"No conocí a tu abuelo."* 마르크: *"No lo juzgues. Pregúntale a Montse. Pide la partida… No me trates como a un sospechoso."* *"El reloj está listo. Es tuyo. Ve cuando quieras. Yo no voy a estar."* 그가 떠난다. 잠옷 차림의 발레가 마테차 두 잔을 들고 온다(창문이 열려 있어 동네 절반이 들었다). *"Ese chico está loco por vos… No te escondas."* 발레 자신도 부에노스아이레스에서 가족에게서 2년 숨었다(아직 이야기하지 않음). 윤하: 내일 몬세와 이야기하고 엄마에게 거짓 없이 다시 부탁하겠다.
+
 ## 남은 실마리
 
 - 열쇠 두 개는 똑같은 **시계 태엽 열쇠**다. 어느 시계인지는 아무도 모른다(마르크도).
@@ -108,3 +111,5 @@
 - 티비다보 사진은 17장에서 찾았다. 봉투의 'Sr. Puig, señora e hija'가 4부 의심의 씨앗. 엄마는 '이 아저씨는 누구야?'라고 물었고 윤하는 답하지 않았다.
 - **의심(20장~):** 마르티는 1974년 라스팔마스에 있었다(몇 월인지 윤하는 모른다). 엄마는 1975년 2월생. 윤하는 마르크와 사촌일지도 모른다는 두려움을 혼자 품는다. 마르크에게 처음 거짓말을 했다.
 - 윤하는 엄마에게 출생 증명서를 부탁했다(21장). 아직 받지 않았다.
+- 시계는 22장에서 다 고쳐져 간다. 윤하는 아직 보지 않았다. 마르크는 '나는 거기 없을 것'이라고 했다.
+- 발레는 부에노스아이레스에서 가족에게서 2년 숨은 적이 있다(이야기는 나중에).
