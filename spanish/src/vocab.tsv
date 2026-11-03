@@ -1436,7 +1436,7 @@ una sábana blanca	una sábana blanca|sábana		흰 천, 침대 시트	n	18
 está parado	está parado|parado		멈춰 있다	n	18
 es tuyo	es tuyo|tuyo		네 것이다	n	18
 si un día vuelves	si un día vuelves|vuelves		언젠가 돌아오면	x	18
-dale cuerda	dale cuerda|cuerda		태엽을 감아 줘	n	18
+dale cuerda	dale cuerda|cuerda		태엽을 감아 줘	n	18	여기의 dale는 dar(주다)의 명령. 발레의 dale(오케이)와 모양만 같다
 va a esperar	va a esperar|esperar		기다릴 것이다	x	18
 los relojes saben esperar	los relojes saben esperar|saben		시계는 기다릴 줄 안다	x	18
 he aprendido de ellos	he aprendido de ellos|ellos		그들에게서 배웠다	x	18
@@ -1575,3 +1575,107 @@ viniste	viniste		네가 왔다	x	19
 volveremos	volveremos		돌아올 것이다	x	19
 entra	entra		들어간다	x	19
 quieta	quieta		가만히 있는	x	19
+es un armario viejo	es un armario viejo|armario		낡은 옷장이다	x	18
+no lo toques	no lo toques		만지지 마	x	18
+se pasó la mano por la cara	se pasó la mano por la cara		손으로 얼굴을 쓸었다	x	18
+y yo buscando en las cajas	y yo buscando en las cajas		나는 상자만 뒤지고 있었다니	x	18
+el ordenador	el ordenador|ordenador		컴퓨터	x	18	스페인에서는 ordenador
+a la mañana siguiente	a la mañana siguiente		다음 날 아침	x	18
+yo no soy como Montse	yo no soy como montse		나는 몬세 같지 않다	x	18
+queda otro sobre	queda otro sobre		봉투가 하나 더 남아 있다	x	18
+Sants	sants	*산*스	산츠 — 바르셀로나의 큰 기차역	p	20
+moderna	moderna		현대적인	x	20
+maletas	maletas		여행 가방들	x	20
+pantallas	pantallas		화면들	x	20
+compré	compré|comprado		샀다	x	20
+los billetes	los billetes|billetes		표	x	20
+en la taquilla	en la taquilla|taquilla		매표소에서	n	20
+sin máquina	sin máquina|máquina		기계 없이	x	20
+de ida y vuelta	de ida y vuelta		왕복	n	20	ida = 가는 것, vuelta = 돌아오는 것
+el próximo	el próximo|próximo		다음 것	n	20
+sale	sale		출발한다	x	20	salir
+y cuarto	y cuarto|cuarto		15분 (시각)	n	20	las diez y cuarto = 10시 15분
+menos cuarto	menos cuarto		15분 전	n	20	las once menos cuarto = 10시 45분
+andén	andén		승강장	n	20
+levantó las cejas	levantó las cejas|cejas		눈썹을 치켜올렸다	x	20
+no hacía falta	no hacía falta		그럴 필요가 없었다	x	20
+el tren	el tren|tren		기차	n	20
+la costa	la costa|costa		해안	n	20
+entraba en un túnel	entraba en un túnel|entraba|túnel		터널로 들어가곤 했다	x	20
+unas rocas blancas	unas rocas blancas|rocas|blancas		하얀 바위들	x	20
+pegaba la cara	pegaba la cara|pegaba		얼굴을 붙이고 있었다	x	20
+qué harás	qué harás|harás		뭘 할 거야?	n	20	hacer의 미래 (불규칙)
+lo llevaré	lo llevaré|llevaré|lo llevarás|llevarás		내가 들고 갈 거야	x	20
+un bebé	un bebé|bebé		아기	x	20
+pesa mucho	pesa mucho|pesa|pesaba		아주 무겁다	n	20	pesar = 무게가 나가다
+sus risas	sus risas|risas		그의 웃음들	x	20
+contaba	contaba		세곤 했다	x	20
+llegamos	llegamos		우리는 도착했다	x	20
+un pueblo blanco	un pueblo blanco|pueblo		하얀 마을	n	20	pueblo = 마을
+los balcones	los balcones|balcones		발코니	x	20
+el paseo	el paseo|paseo		산책로	x	20
+de piedra dorada	de piedra dorada|dorada		금빛 돌로 된	x	20
+el algodón	el algodón|algodón		솜	x	20
+unas gafas enormes	unas gafas enormes|gafas|enormes		커다란 안경	n	20	gafas = 안경
+un chaleco de lana	un chaleco de lana|chaleco|lana		털조끼	x	20
+a pesar del calor	a pesar del calor|a pesar de|pesar		더운데도	x	20
+abrazó	abrazó		껴안았다	x	20
+tú eres la nieta	tú eres la nieta|eres|nieta		네가 손녀구나	n	20	eres = ser의 ‘너’ 형태
+pasa pasa	pasa, pasa|pasa		들어와, 들어와	x	20
+de cuco	de cuco|cuco		뻐꾸기시계	x	20
+esferas	esferas		시계판들	x	20
+hacían tic-tac	hacían tic-tac|hacían|tic-tac|tic-tacs		똑딱거렸다	x	20
+exactamente igual	exactamente igual|exactamente		정확히 똑같이	x	20
+un bosque de grillos	un bosque de grillos|bosque|grillos		귀뚜라미 숲	x	20
+un armario	un armario		장, 찬장	x	20
+un paquete largo	un paquete largo|paquete		긴 꾸러미	x	20
+envuelto en un trapo	envuelto en un trapo|envuelto|trapo		천에 싸인	x	20
+lo desenvolvió	lo desenvolvió|desenvolvió		풀었다	x	20
+un disco redondo	un disco redondo|disco|redondo		둥근 원판	x	20
+de latón	de latón|latón		놋쇠로 된	x	20
+del tamaño de un plato	del tamaño de un plato|tamaño|plato		접시만 한	x	20
+lo había limpiado	lo había limpiado|limpiado		닦아 두었다	x	20
+como una luna pequeña	como una luna pequeña|luna		작은 달처럼	x	20
+grabada	grabada		새겨진	x	20
+lo he guardado	lo he guardado|guardado		간직해 왔다	x	20
+dieciocho años	dieciocho años|dieciocho		18년	x	20
+se lo darás	se lo darás|darás		그것을 그에게 줄 것이다	x	20
+tenía razón	tenía razón|razón		그의 말이 맞았다	n	20	tener razón = 옳다
+en ningún idioma	en ningún idioma|ningún|idioma		어느 언어로도	x	20
+una cafetera vieja	una cafetera vieja|cafetera		낡은 커피포트	x	20
+rodeados de	rodeados de|rodeados		~에 둘러싸여	x	20
+las dos lenguas	las dos lenguas|lenguas		두 언어	x	20
+su juventud	su juventud|juventud		그의 젊은 시절	x	20
+arreglaban juntos	arreglaban juntos|arreglaban		함께 고치곤 했다	x	20
+las fiestas	las fiestas|fiestas		축제들	x	20
+sin darle importancia	sin darle importancia|darle|importancia		대수롭지 않게	x	20
+trabajamos	trabajamos		우리는 일했다	x	20
+la taza	la taza|taza		찻잔, 컵	x	20
+le gustaba	le gustaba|gustaba		그는 ~을 좋아했다	x	20
+aprender	aprender		배우다	x	20
+los barcos coreanos	los barcos coreanos|coreanos		한국 배들	x	20
+nació	nació		태어났다	n	20	nacer = 태어나다
+febrero	febrero		2월	n	20
+seguía hablando	seguía hablando|seguía|hablando		계속 말하고 있었다	x	20
+estaba loco por	estaba loco por|loco		~에게 푹 빠져 있었다	x	20
+la llamaba	la llamaba|llamaba		그녀를 ~라고 불렀다	x	20
+como a una hija	como a una hija		딸처럼	x	20
+empezaron a dar vueltas	empezaron a dar vueltas|empezaron|dar		빙빙 돌기 시작했다	x	20
+te has puesto blanca	te has puesto blanca		얼굴이 하얘졌다	x	20
+en mis rodillas	en mis rodillas|rodillas		무릎 위에	x	20
+cómo va a colgar	cómo va a colgar|colgar		어떻게 걸 것인지	x	20
+cuánto tiempo va a necesitar	cuánto tiempo va a necesitar|necesitar		얼마나 걸릴지	x	20
+dos semanas	dos semanas|semanas		2주	x	20
+no se lo pregunté	no se lo pregunté		그에게 묻지 않았다	x	20
+el mes	el mes|mes		달 (1월, 2월…)	n	20
+qué te pasa	qué te pasa		무슨 일이야?	n	20
+le mentía	le mentía|mentía		그에게 거짓말을 했다	n	20	mentir = 거짓말하다
+lo supo	lo supo|supo		그는 알았다	x	20
+de quién más	de quién más		또 누구에게서	x	20
+he comprado	he comprado		(오늘) 샀다	x	20
+nos ha dado	nos ha dado|dado		우리에게 주었다	x	20
+colgará	colgará|ajustará		걸 것이다, 맞출 것이다	x	20
+no he preguntado	no he preguntado|preguntado		묻지 않았다	x	20
+le he mentido	le he mentido|mentido		그에게 거짓말을 했다 (오늘)	x	20
+ajustarlo	ajustarlo		그것을 맞추다	x	20
+iban	iban		가고 있었다	x	20

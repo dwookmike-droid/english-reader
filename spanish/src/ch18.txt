@@ -1,6 +1,6 @@
 # 18 | Te he querido | 테 에 케리도
 
-마르티가 쓴 마지막 편지는 해 질 녘에 읽고 싶었다.
+열 번째 편지는 해 질 녘에 읽고 싶었다.
 
 Aquella semana Barcelona celebraba La Mercè, su gran fiesta. Había conciertos, fuegos artificiales y gente en todas las calles. Yo casi no salí. Durante la semana leí las cartas seis, siete, ocho y nueve. Eran cartas cortas. Martí hablaba del tiempo, del taller, de su hijo Jordi, de los relojes que arreglaba. Preguntaba por la niña. Nunca hablaba de amor. Pero en cada carta había una frase pequeña al final, siempre distinta: «Hoy he pensado en ti». «El patio está muy vacío». «Montse te manda un beso. Yo también».
 
@@ -18,7 +18,7 @@ Había bastante gente: jóvenes con cervezas, parejas, turistas con cámaras, un
 
 Nos sentamos un poco lejos de los demás, en el borde de una plataforma. El sol empezaba a bajar detrás de las montañas. La ciudad se ponía naranja.
 
-Saqué el décimo sobre. Esta vez no necesité el diccionario para casi nada.
+Saqué el décimo sobre. Esta vez casi no necesité el diccionario.
 
 @letter
 Barcelona, 3 de junio de 1979
@@ -31,7 +31,7 @@ Esta va a ser mi última carta. Es mejor así, para ti y para la niña. No me es
 
 Pero antes quiero decirte una cosa, solo una vez, y con palabras claras, porque nunca te la dije en voz alta.
 
-Te he querido desde el primer día. Desde el día en que llegaste al patio de Montse con la niña dormida en los brazos y una maleta azul. Te he querido en Santa María del Mar, en la Sagrada Familia, en el hospital, en el avión del Tibidabo. Te quiero ahora. No sé cómo se deja de querer a alguien. Nadie me lo ha enseñado.
+Te he querido desde el primer día. Desde el día en que llegaste al patio de Montse con la niña dormida en los brazos y una maleta azul. Te he querido en Santa María del Mar, en la Sagrada Familia, en el hospital, delante del avión del Tibidabo. Te quiero ahora. No sé cómo se deja de querer a alguien. Nadie me lo ha enseñado.
 
 El reloj está terminado. Lo he tapado con una sábana blanca y está parado. Es tuyo. Tú tienes la llave. Si un día vuelves a Barcelona, dale cuerda. Si no vuelves nunca, no pasa nada. Va a esperar. Los relojes saben esperar. Yo he aprendido de ellos.
 
@@ -40,13 +40,13 @@ Kwaenchanayo.
 M.
 @end
 
-No pude leer la última línea en voz alta. Kwaenchanayo. «No pasa nada», en coreano. La primera palabra que Martí aprendió para ella era también la última que le escribió.
+No pude leer la última línea en voz alta. Kwaenchanayo. «No pasa nada», en coreano. La primera palabra que Martí aprendió para ella fue también la última que le escribió.
 
-마르티가 할머니에게 건넨 첫 한국어와 마지막 한국어는 같은 말이었다. 괜찮아요.
+처음도 괜찮아요, 끝도 괜찮아요. 하나도 괜찮지 않았을 사람이.
 
-Lloré. No como Montse, que nunca llora delante de la gente. Lloré delante de Marc, delante de los turistas, delante de toda Barcelona. Lloré por mi abuela, que se fue. Por Martí, que esperó. Por mi madre, que tenía tres años y no se acuerda de nada. Y un poco por mí, que tengo treinta y ocho años y nadie me ha escrito nunca una carta así.
+Lloré. Yo no soy como Montse, que nunca llora delante de la gente. Lloré delante de Marc, delante de los turistas, delante de toda Barcelona. Lloré por mi abuela, que se fue. Por Martí, que esperó. Por mi madre, que tenía tres años y no se acuerda de nada. Y un poco por mí, que tengo treinta y ocho años y nadie me ha escrito nunca una carta así.
 
-Marc no dijo nada. Esta vez me cogió la mano. No la dejó encima, como en el avión. La cogió de verdad, fuerte, y no la soltó.
+Marc no dijo nada. Esta vez no puso su mano encima de la mía, como en el avión. Me la cogió de verdad, fuerte, y no la soltó.
 
 ##
 
@@ -60,7 +60,7 @@ Cuando pude hablar, le pasé la carta a Marc. La leyó despacio. Cuando llegó a
 
 Marc miraba la ciudad, pero no la veía. Tenía la frente arrugada, como cuando trabajaba en una cerradura difícil.
 
-—En el sótano del taller —dijo despacio—, detrás de las cajas, hay una cosa alta. Tapada con una sábana. Siempre ha estado allí. Desde que era niño. Mi padre decía: «Son muebles viejos. No toques». Yo nunca la toqué.
+—En el sótano del taller —dijo despacio—, detrás de las cajas, hay una cosa alta. Tapada con una sábana. Siempre ha estado allí. Desde que era niño. Mi padre siempre decía: «Es un armario viejo. No lo toques». Yo nunca la toqué. —Se pasó la mano por la cara—. Un reloj de pie. Y yo buscando en las cajas.
 
 Lo miré. Él me miró.
 
@@ -74,11 +74,11 @@ Nos quedamos sin palabras. Abajo, la ciudad brillaba. En algún sitio, en un só
 
 —Mañana —dijo Marc—. Mañana bajamos al sótano. Con la llave.
 
-Esa noche, al volver, le escribí a mi madre. En coreano, despacio, sin borrar nada.
+Esa noche, al volver, le escribí a mi madre desde el ordenador de Vale. En coreano, despacio, sin borrar nada.
 
-«엄마. 사진 속 아저씨는 마르티라는 분이야. 할머니를 많이 좋아했던 사람. 할머니는 엄마 때문에 한국으로 돌아갔대. 엄마가 아빠를 잃지 않게. 다 끝나면 자세히 얘기해 줄게.»
+«엄마. 사진 속 아저씨는 마르티라는 분이야. 할머니를 많이 좋아했던 사람. 할머니는 엄마를 위해서 한국으로 돌아갔대. 엄마가 아빠를 잃지 않게. 다 알게 되면 자세히 얘기해 줄게.»
 
-Mi madre contestó con una sola palabra.
+A la mañana siguiente, mi madre contestó con una sola palabra.
 
 «그랬구나.»
 
@@ -91,5 +91,5 @@ La última palabra de Martí fue la primera: kwaenchanayo.
 He llorado delante de toda Barcelona. Marc me ha cogido la mano. De verdad.
 En el sótano del taller hay una cosa alta, tapada con una sábana. Como una persona.
 Mañana bajamos con la llave.
-Queda una carta. La del papel más blanco.
+Martí escribió: «Esta va a ser mi última carta». Pero queda otro sobre. El del papel más blanco. También con una M.
 @end
