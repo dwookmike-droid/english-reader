@@ -220,7 +220,7 @@ mucha	mucha	*무*차	많은	x	4	mucha gente = 많은 사람
 mirá	mirá	미*라*	봐 (아르헨티나식)	x	4	스페인에서는 mira
 querés	querés	케*레스*	너는 원하니 (아르헨티나식)	x	4	스페인에서는 quieres
 verde	verde	*베르*데	초록색	x	4	
-te gusta	te gusta	테 *구스*타	마음에 들어?	x	4	6장에서 배운다
+te gusta	te gusta		(너는) ~이 좋아? 마음에 들어?	n	6	gustar는 좋아하는 대상이 주어다
 otro día	otro día	*오*트로 *디*아	다른 날	x	4	
 vamos a	vamos a	*바*모스 아	~에 가자	x	4	
 un lugar de piedras	un lugar de piedras	운 루*가르* 데 *피에*드라스	돌이 많은 곳	x	4	
@@ -240,7 +240,7 @@ propera estació	propera estació	프러*페*라 어스타시*오*	다음 역 (�
 Fontana	fontana	폰*타*나	폰타나 — 그라시아의 지하철역	p	4
 Diagonal	diagonal	디아고*날*	디아고날 — 바르셀로나를 비스듬히 가로지르는 큰길과 그 역	p	4
 Catalunya	catalunya	카탈*루*냐	카탈루냐	p	4
-Passeig de Gràcia	passeig de gràcia	파*세*이치 더 *그라*시아	파세이그 데 그라시아 — 그라시아로 올라가는 큰길	p	4
+Passeig de Gràcia	passeig de gràcia	파*세*치 데 *그라*시아	파세이그 데 그라시아 — 그라시아로 올라가는 큰길	p	4
 Casa Batlló	casa batlló	*카*사 바*요*	카사 바트요 — 가우디가 고친 집	p	4
 La Pedrera	la pedrera	라 페*드레*라	라 페드레라 — 가우디의 카사 밀라. ‘돌산’이라는 별명	p	4
 Gaudí	gaudí	가우*디*	가우디 — 바르셀로나의 건축가	p	4
@@ -273,7 +273,7 @@ calor	calor		더위	n	5	tengo calor = (나는) 더워
 parque	parque		공원	n	5
 arriba	arriba		위에, 위로	n	5	반대는 abajo
 abajo	abajo		아래에, 아래로	n	5
-hay aire	hay aire		바람이 있다	x	5
+viento	viento		바람	n	5	hay viento = 바람이 분다
 turistas	turistas|turista		관광객	x	5
 nosotras	nosotras		우리 (여자들만)	n	5	남자가 섞이면 nosotros
 toda	toda|todo		전부, 모든	x	5
@@ -288,7 +288,8 @@ seis meses	seis meses		여섯 달	x	5	seis = 6, mes = 달
 amiga	amiga		친구 (여자)	n	5	남자 친구는 amigo
 hermano	hermano		형제, 오빠, 형	n	5	자매는 hermana
 poco a poco	poco a poco		조금씩	n	5
-no más	no más		더는 안 돼, 여기까지	x	5
+por hoy	por hoy		오늘은	x	5	Por hoy, nada más = 오늘은 여기까지
+más tarde	más tarde		이따가, 나중에	x	5
 de puerta	de puerta		문의	x	5
 de reloj	de reloj		시계의	x	5
 Martí	martí	마르*티*	마르티 — 마르크의 할아버지, 몬세의 오빠	p	5
@@ -297,3 +298,45 @@ Sagrada Família	sagrada família	사*그라*다 파*밀*리아	사그라다 파
 este	este		이 (남자 이름 앞)	x	5	esta는 여자 이름 앞
 las	las		그 (여자 이름 여러 개 앞)	x	5	las diez = 10시
 más	más		더	x	5
+la torre	la torre	라 *토*레	탑	x	2
+por fin	por fin	포르 *핀*	드디어	x	4
+qué susto	qué susto	*케* *수*스토	깜짝 놀랐잖아!	x	4
+hoy aquí	hoy aquí	오이 아*키*	오늘 여기	x	4
+por la tarde	por la tarde	포르 라 *타*르데	오후에	x	4	tarde = 오후
+perdone	perdone	페르*도*네	실례합니다 (모르는 어른에게, 공손하게)	x	4	perdón보다 공손하다
+fiesta	fiesta		축제, 파티	n	6	la fiesta
+Festa Major	festa major	*페*스타 마*조*	그라시아 축제 (카탈루냐어 ‘큰 축제’)	c	6	8월 중순 한 주 동안 골목마다 장식을 겨룬다
+sábado	sábado		토요일	n	6
+nuestra	nuestra|nuestro		우리의	x	6	남성 낱말 앞에서는 nuestro
+el fondo del mar	el fondo del mar		바닷속, 바다 밑바닥	x	6	fondo = 바닥
+ayudas	ayudas		너는 돕는다; (물음) 도와줄래?	x	6	ayudar(돕다)
+gustar	gustar		좋아하다 (직역: ~이 마음에 들다)	x	6
+me gusta	me gusta		나는 ~이 좋다	n	6	Me gusta el azul = 파란색이 좋아요
+no me gusta	no me gusta		나는 ~이 싫다, 안 좋아한다	n	6
+azul	azul		파랑, 파란	n	6
+a mí también	a mí también		나도	n	6
+luz	luz		빛, 조명, 불	n	6	la luz
+siempre	siempre		언제나, 늘	n	6
+él	él		그 (남자)	x	6	ella = 그녀
+todos los años	todos los años		해마다	x	6
+mucho	mucho|mucha		많은; 아주	n	6	Me gusta mucho = 아주 좋아
+ruido	ruido		소음, 시끄러움	n	6
+rojo	rojo		빨강, 빨간	n	6
+amarillo	amarillo		노랑, 노란	n	6
+blanco	blanco		하양, 하얀	n	6
+perfecto	perfecto		완벽해!	x	6
+letra	letra		글씨; 글자	n	6	esta letra = 이 글씨
+seguro	seguro		확실한; 확실해?	n	6
+pez	pez		물고기 (살아 있는)	n	6	먹는 생선은 pescado
+feo	feo		못생긴	n	6	여성은 fea
+lindo	lindo|re lindo		예쁜 (아르헨티나에서 많이 씀); re = 엄청	x	6
+es tarde	es tarde		늦었다	x	6
+a dormir	a dormir		자자, 잘 시간이야	x	6
+le gusta	le gusta		그(그녀)는 ~이 좋다	x	6
+sonríe	sonríe		웃는다, 미소 짓는다	x	6
+cinc	cinc	*싱*크	다섯 (카탈루냐어)	c	6
+quatre	quatre	*쿠아*트러	넷 (카탈루냐어)	c	6
+u	u	*우*	하나 (카탈루냐어)	c	6
+
+esto	esto		이것 (가까이 있는 것)	x	2	멀리 있는 것은 eso
+fondo	fondo		바닥, 밑	x	6

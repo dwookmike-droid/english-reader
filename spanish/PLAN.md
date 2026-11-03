@@ -54,10 +54,10 @@
 |---|---|---|---|
 | 1 Hola ✔ | 엘프라트 공항 → 택시 → 그라시아 | 도착, 몬세, 열쇠에 대한 몬세의 반응 | 인사, sí/no, soy, 성별 a/o |
 | 2 Pan con tomate ✔ | 하숙집 부엌, Plaça de la Vila de Gràcia, 골목의 열쇠공방 *(가상)* | 발레, 사라진 거리, 진열창의 열쇠 | el/la, me llamo, soy de, 복수 |
-| 3 ¿Cuánto es? ✔ | Mercat de la Llibertat (그라시아 시장) | 몬세의 카탈루냐어 장보기 목록, 보이지 않는 줄(¿Quién es el último?), 치즈 가게에서 마르크와 처음 만남. "Una llave." "No sé." 손목시계의 꽃 | 숫자 1~200, ¿cuánto es?, quiero, ¿qué te pongo? |
+| 3 ¿Cuánto es? ✔ | Mercat de la Llibertat (그라시아 시장) | 몬세의 장보기 목록, 보이지 않는 줄(¿Quién es el último?), 치즈 가게에서 마르크와 처음 만남. "Una llave." "No sé." 손목시계의 꽃 | 숫자 1~200, ¿cuánto es?, quiero, ¿qué te pongo? |
 | 4 Todo recto ✔ | 지하철 L3(Fontana → Passeig de Gràcia), Casa Batlló, La Pedrera | 발레의 dale·mirá, 표 사기(스페인어 버튼), 배터리가 꺼져 길을 잃고 물어물어 그라시아로 걸어서 돌아옴. 마르크의 쪽지: "Lunes. 10:00. Trae la llave. — M." | 길 묻기(todo recto, derecha, izquierda, cerca, lejos), hay, está |
 | 5 ¿Qué hora es? ✔ | 열쇠공방(가상), Park Güell 위쪽 무료 구역의 십자가 언덕 | 열쇠는 시계 태엽 열쇠. 마르크의 할아버지 이름은 마르티. 몬세가 순례와 친구였고 마르티가 오빠라고 털어놓음 | 시간(¿qué hora es?, son las), tener(tengo sed/calor/años), 날씨(hace calor) |
-| 6 | Festa Major de Gràcia (골목 장식 대회) | 동네 축제를 준비하며 마르크와 처음으로 웃음 | gustar, 좋고 싫음, 색깔 |
+| 6 Me gusta ✔ | Festa Major de Gràcia (골목 장식 대회, 주제 바닷속) | 이웃들과 장식 만들기, 마르크의 첫 웃음("Es feo. Pero me gusta."), '열한 통'에 놀라는 몬세 | gustar, 색깔, siempre/también |
 
 ### 2부 편지의 주소 — A1, 한국어 50→20%
 | 장 | 장소 | 이야기 | 익히는 것 |
