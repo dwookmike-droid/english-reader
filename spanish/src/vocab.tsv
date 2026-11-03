@@ -216,10 +216,8 @@ mirá	mirá	미*라*	봐 (아르헨티나식)	x	4	스페인에서는 mira
 querés	querés	케*레스*	너는 원하니 (아르헨티나식)	x	4	스페인에서는 quieres
 verde	verde	*베르*데	초록색	x	4	
 te gusta	te gusta		(너는) ~이 좋아? 마음에 들어?	n	6	gustar는 좋아하는 대상이 주어다
-otro día	otro día	*오*트로 *디*아	다른 날	x	4	
 vamos a	vamos a	*바*모스 아	~에 가자	x	4	
 un lugar de piedras	un lugar de piedras	운 루*가르* 데 *피에*드라스	돌이 많은 곳	x	4	
-qué pasa	qué pasa	케 *파*사	무슨 일이에요?	x	4	
 esta mano	esta mano	*에스*타 *마*노	이 손	x	4	
 por aquí	por aquí	포르 아*키*	이쪽으로	x	4	
 minutos	minutos	미*누*토스	분 (시간)	x	4	
@@ -686,7 +684,6 @@ señala	señala		가리킨다	n	12	señalar = 가리키다
 dicen que	dicen que|dicen		~라고들 한다	x	12
 América	américa	아*메*리카	아메리카	p	12
 Mallorca	mallorca	마*요*르카	마요르카 — 바르셀로나 앞바다의 섬	p	12
-de verdad	de verdad		정말요?	n	12
 más o menos	más o menos		대충, 그럭저럭	n	12
 es un edificio muy viejo de piedra	es un edificio muy viejo de piedra|edificio|piedra		아주 오래된 돌 건물이다	x	12	piedra = 돌
 bibliotecario	bibliotecario		도서실 사서	x	12
@@ -1043,7 +1040,6 @@ diferentes	diferentes		다른, 서로 다른	x	15
 directamente	directamente		곧장	x	15
 el borde	el borde|borde		가장자리	n	15
 sin mirar	sin mirar|mirar		보지도 않고	x	15
-allí	allí		저기, 거기	n	15
 colgado de un brazo	colgado de un brazo|colgado|brazo		팔에 매달린	x	15
 el vacío	el vacío		허공	x	15
 L'Avió	l'avió|avió|l	*라*비오	아비오 — 티비다보의 1928년 비행기 놀이기구 (카탈루냐어 ‘비행기’)	c	15
@@ -1378,3 +1374,100 @@ lo conozco de vista	conozco al hijo de vista|de vista|conozco		얼굴만 안다	
 entró detrás de ella	entró detrás de ella		그녀 뒤를 따라 들어갔다	x	16
 señaló	señaló		가리켰다	x	17
 silla	silla		의자	x	17
+La Mercè	la mercè|mercè	라 메르*세*	라 메르세 — 9월 24일 전후의 바르셀로나 최대 축제	p	18
+celebraba	celebraba		축하하고 있었다	x	18
+conciertos	conciertos		콘서트	x	18
+fuegos artificiales	fuegos artificiales|fuegos|artificiales		불꽃놀이	x	18
+salí	salí		나갔다	x	18
+arreglaba	arreglaba		고치곤 했다	x	18	arreglar = 고치다
+preguntaba por	preguntaba por|preguntaba		~의 안부를 묻곤 했다	x	18
+nunca hablaba de amor	nunca hablaba de amor		사랑 이야기는 한 번도 하지 않았다	x	18
+distinta	distinta		다른	x	18
+he pensado en ti	he pensado en ti|pensado|ti		(오늘) 네 생각을 했다	x	18
+te manda un beso	te manda un beso|manda|beso		너에게 뽀뽀를 보낸다 (편지 끝 인사)	x	18
+quedaban dos sobres	quedaban dos sobres|quedaban|queda		봉투 두 개가 남아 있었다	x	18	quedar = 남다
+el décimo	el décimo|décimo|décima		열 번째	x	18
+los búnkeres	los búnkeres|búnkeres	로스 *붕*케레스	벙커 — 카르멜 언덕의 옛 대공포 진지	x	18
+al atardecer	al atardecer|atardecer		해 질 녘에	n	18
+subimos andando	subimos andando|andando		걸어서 올라갔다	x	18
+cada vez más empinada	cada vez más empinada|empinada		점점 더 가팔라지는	x	18
+se convirtió en	se convirtió en|convirtió		~이 되었다	x	18
+un camino de tierra	un camino de tierra|tierra		흙길	x	18
+unos restos de cemento	unos restos de cemento|restos|cemento		시멘트 잔해	x	18
+plataformas redondas	plataformas redondas|plataformas|plataforma|redondas		둥근 단	x	18
+muros viejos	muros viejos|muros		오래된 담	x	18
+escaleras	escaleras		계단	x	18
+la guerra	la guerra|guerra		전쟁	n	18	1936~1939년 스페인 내전
+cañones	cañones		대포	x	18
+para defender	para defender|defender		지키려고	x	18
+los aviones	los aviones|aviones		비행기들	x	18
+la puesta de sol	la puesta de sol|puesta		해넘이	n	18
+bastante	bastante		꽤	x	18
+jóvenes con cervezas	jóvenes con cervezas|jóvenes|cervezas		맥주를 든 젊은이들	x	18
+parejas	parejas		연인들	x	18
+una guitarra	una guitarra|guitarra		기타	x	18
+sentados	sentados		앉아 있는	x	18
+hacia el oeste	hacia el oeste|oeste		서쪽을 향해	x	18
+en todas las direcciones	en todas las direcciones|todas|direcciones		사방으로	x	18
+en algún sitio	en algún sitio|algún		어딘가에	x	18
+los demás	los demás|demás		다른 사람들	x	18
+empezaba a bajar	empezaba a bajar|empezaba		내려가기 시작하고 있었다	x	18
+las montañas	las montañas|montañas		산들	x	18
+se ponía naranja	se ponía naranja|naranja|pone		주황색이 되고 있었다	x	18
+necesité	necesité		필요했다	x	18
+Carmel	carmel	카르*멜*	카르멜 — 그라시아 위쪽 언덕 동네	p	18
+he recibido	he recibido|recibido		받았다	x	18
+vais a volver	vais a volver|vais		너희는 돌아갈 것이다	x	18	vosotros
+es lo correcto	es lo correcto|correcto		그게 옳다	x	18
+esta va a ser mi última carta	esta va a ser mi última carta		이게 내 마지막 편지가 될 것이다	x	18
+es mejor así	es mejor así		이렇게 하는 게 낫다	x	18
+no me escribas más	no me escribas más|escribas		더는 편지하지 마	x	18
+no voy a escribir	no voy a escribir|escribir		편지하지 않을 것이다	x	18
+quiero decirte	quiero decirte|decirte		너에게 말하고 싶다	x	18
+con palabras claras	con palabras claras|claras		분명한 말로	x	18
+te he querido	te he querido|querido|querer		너를 사랑해 왔다	n	18	querer = 사랑하다, 원하다
+desde el primer día	desde el primer día		첫날부터	n	18
+dormida	dormida		잠든	x	18
+te quiero	te quiero		사랑해	n	18
+no sé cómo se deja de querer	no sé cómo se deja de querer|deja		사랑을 그만두는 법을 모른다	x	18	dejar de = 그만두다
+nadie me lo ha enseñado	nadie me lo ha enseñado|enseñado		아무도 가르쳐 주지 않았다	x	18
+lo he tapado	lo he tapado|tapado|tapada		그것을 덮어 두었다	x	18
+una sábana blanca	una sábana blanca|sábana		흰 천, 침대 시트	n	18
+está parado	está parado|parado		멈춰 있다	n	18
+es tuyo	es tuyo|tuyo		네 것이다	n	18
+si un día vuelves	si un día vuelves|vuelves		언젠가 돌아오면	x	18
+dale cuerda	dale cuerda|cuerda		태엽을 감아 줘	n	18
+va a esperar	va a esperar|esperar		기다릴 것이다	x	18
+los relojes saben esperar	los relojes saben esperar|saben		시계는 기다릴 줄 안다	x	18
+he aprendido de ellos	he aprendido de ellos|ellos		그들에게서 배웠다	x	18
+lloré	lloré|llorado		울었다	n	18
+treinta y ocho	treinta y ocho|treinta		서른여덟	x	18
+nadie me ha escrito	nadie me ha escrito|escrito		아무도 써 준 적 없다	x	18
+me cogió la mano	me cogió la mano|cogido		내 손을 잡았다	x	18
+de verdad	de verdad		정말로	n	12
+empezó a encender	empezó a encender|encender		켜기 시작했다	x	18
+se pone en marcha	se pone en marcha|marcha		움직이기 시작한다	x	18
+aplaudieron	aplaudieron		박수를 쳤다	x	18
+tocó una canción	tocó una canción|tocó		노래를 연주했다	x	18
+repitió	repitió		되풀이했다	x	18
+qué pasa	qué pasa		무슨 일이에요?	x	4
+la frente arrugada	la frente arrugada|frente|arrugada		찌푸린 이마	x	18
+trabajaba	trabajaba		일하고 있었다	x	18
+una cerradura difícil	una cerradura difícil|cerradura|difícil		어려운 자물쇠	x	18
+siempre ha estado allí	siempre ha estado allí|estado		늘 거기 있었다	x	18
+desde que era niño	desde que era niño|niño		어릴 때부터	x	18
+son muebles viejos	son muebles viejos|muebles		낡은 가구다	x	18
+no toques	no toques|toques		만지지 마	x	18
+nunca la toqué	nunca la toqué|toqué		한 번도 만지지 않았다	x	18
+cómo de alta	cómo de alta		얼마나 높아요?	x	18
+como una persona	como una persona		사람만 하다	x	18
+sin palabras	sin palabras		말없이, 할 말을 잃고	x	18
+brillaba	brillaba		반짝이고 있었다	x	18
+bajamos al sótano	bajamos al sótano		지하실에 내려간다	x	18
+contestó	contestó		대답했다	x	18
+borrar	borrar		지우다	x	18
+he llorado	he llorado		(오늘) 울었다	x	18
+leer	leer		읽다	x	18
+quieto	quieto		가만히 있는	x	18
+cortas	cortas		짧은	x	18
+gran	gran		큰, 위대한	x	18
