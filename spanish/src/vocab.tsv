@@ -37,7 +37,7 @@ abuela	abuela	아*부엘*라	할머니	n	1	할아버지는 abuelo
 mañana	mañana	마*냐*나	내일; 아침	n	1
 ay	ay	*아*이	아이고, 앗	x	1
 su	su	*수*	당신의, 그의, 그녀의	x	1
-yo	yo	*요*	나	x	1
+yo	yo	*요*	나	n	3	줄의 마지막이 누구냐고 물으면 손을 들고 yo
 china	china	*치*나	중국 여자	x	1
 japonesa	japonesa	하포*네*사	일본 여자	x	1
 catalán	catalán	카탈*란*	카탈루냐어	x	1
@@ -67,7 +67,7 @@ qué tal	qué tal	*케* *탈*	잘 지내요? 어때요? (가벼운 안부)	n	2
 qué es esto	qué es esto	*케* 에스 *에*스토	이게 뭐예요?	n	2	모르는 물건을 가리키며 쓰는 마법의 문장
 pan	pan	*판*	빵	n	2	el pan
 con	con	*콘*	~와 함께, ~을 넣은	n	2	café con leche = 우유 넣은 커피
-tomate	tomate	토*마*테	토마토	n	2	pan con tomate = 토마토 바른 빵. 카탈루냐의 아침
+tomate	tomate|tomates	토*마*테	토마토	n	2	pan con tomate = 토마토 바른 빵. 카탈루냐의 아침
 bueno	bueno	*부에*노	좋은, 맛있는	n	2	여자 이름에는 buena
 leche	leche	*레*체	우유	n	2	la leche
 el	el	*엘*	그 (남자 이름 앞에 붙는 말)	n	2	el pan, el café, el reloj
@@ -138,3 +138,57 @@ tancat per vacances	tancat per vacances	탕*캇* 페르 바*칸*세스	휴가로
 por vacaciones	por vacaciones	포르 바카_시_*오*네스	휴가라서	x	2	vacaciones = 휴가
 agosto	agosto	아*고*스토	8월	x	2
 vacaciones	vacaciones	바카_시_*오*네스	휴가	x	2
+mercado	mercado	메르*카*도	시장	n	3	카탈루냐어로는 mercat
+veinte	veinte	*베인*테	스물, 20	n	3
+guapa	guapa	*구아*파	예쁜 (여자), 시장에서 여자 손님을 부르는 말	n	3	남자에게는 guapo
+qué te pongo	qué te pongo	*케* 테 *퐁*고	뭘 드릴까요? (가게에서)	n	3	직역하면 ‘너에게 뭘 놓아 줄까’
+quiero	quiero	*키에*로	나는 ~을 원한다, ~ 주세요	n	3
+cuántos	cuántos	*쿠안*토스	몇 개? 얼마나?	n	3	여자 이름에는 cuántas
+kilo	kilo|kilos	*킬*로	킬로그램	n	3
+algo más	algo más	*알*고 *마*스	또 필요한 거 있어요?	n	3
+melocotón	melocotón|melocotones	멜로코*톤*	복숭아	n	3	카탈루냐어로는 préssec
+uno	uno	*우*노	하나, 1	n	3
+dos	dos	*도*스	둘, 2	n	3
+cuatro	cuatro	*쿠아*트로	넷, 4	n	3
+nada más	nada más	*나*다 *마*스	더는 없어요, 그게 다예요	n	3
+cuánto es	cuánto es	*쿠안*토 *에*스	얼마예요?	n	3	시장과 가게에서 가장 중요한 문장
+cincuenta	cincuenta	_신_*쿠엔*타	쉰, 50	n	3	4,50 € = cuatro con cincuenta
+quién es el último	quién es el último	*키엔* 에스 엘 *울*티모	누가 마지막이에요? (줄 설 때)	n	3	스페인 시장에서는 줄 대신 이렇게 묻는다
+queso	queso	*케*소	치즈	n	3	카탈루냐어로는 formatge
+doscientos	doscientos	도스_*시엔*_토스	이백, 200	n	3	dos + cientos
+cien	cien	_*시엔*_	백, 100	n	3
+gramos	gramos	*그라*모스	그램	n	3
+cinco	cinco	*_싱_*코	다섯, 5	n	3
+tía	tía	*티*아	고모, 이모, 숙모	n	3	tía abuela = 고모할머니. 남자는 tío
+ya	ya	*야*	이미, 벌써; (대답으로) 알아	n	3
+no sé	no sé	노 *세*	몰라요	n	3
+diez	diez	*디에*_스_	열, 10	n	3
+euros	euros|euro	*에우*로스	유로	x	3
+sola	sola	*솔*라	혼자 (여자)	x	3	남자는 solo
+así aprendes	así aprendes	아*시* 아프*렌*데스	그래야 배우지	x	3
+son	son	*손*	(값이) ~이다	x	3	Son cuatro con cincuenta = 4.50이에요
+pregunta	pregunta	프레*군*타	물어봐요	x	3
+qué	qué	*케*	무슨, 뭐	x	3
+cuánto	cuánto	*쿠안*토	얼마나	x	3
+un	un	*운*	하나의 (남자 이름 앞)	x	3	여자 이름 앞에는 una
+eso	eso	*에*소	그거, 바로 그거	x	3
+esta letra	esta letra	*에*스타 *레*트라	이 글씨	x	3
+de quién	de quién	데 *키엔*	누구의?	x	3
+menos	menos	*메*노스	빼기, 더 적게	x	3
+al	al	*알*	~에, ~로 (a + el)	x	3
+este chico	este chico	*에*스테 *치*코	이 녀석, 이 아이	x	3
+tía abuela	tía abuela	*티*아 아*부엘*라	고모할머니	x	3
+mercat	mercat	머르*캇*	시장 (카탈루냐어)	c	3	스페인어로는 mercado
+així aprens	així aprens	아*시* 아프*렌*스	그래야 배우지 (카탈루냐어)	c	3
+adéu	adéu	아*데*우	잘 가요 (카탈루냐어)	c	3	스페인어로는 adiós
+digues	digues	*디*게스	말해요 (카탈루냐어)	c	3
+maca	maca	*마*카	예쁜 아가씨 (카탈루냐어)	c	3	스페인어 guapa와 비슷
+dos-cents grams	dos-cents grams	*도*스 *센*스 *그람*스	200그램 (카탈루냐어)	c	3	스페인어로는 doscientos gramos
+del de sempre	del de sempre	델 더 *셈*프러	늘 사던 거 (카탈루냐어)	c	3
+aquest nen	aquest nen	아*켓* *넨*	이 녀석 (카탈루냐어)	c	3
+Jaume	jaume	*자*우메	자우메 — 치즈 가게 주인	p	3
+Llibertat	llibertat	이베르*탓*	리베르타트 — ‘자유’. 그라시아의 시장과 광장 이름	p	3
+una	una	*우*나	하나의 (여자 이름 앞)	x	3	Una llave = 열쇠 하나
+formatge	formatge	푸르*마*제	치즈 (카탈루냐어)	c	3	스페인어로는 queso
+préssec	préssec|préssecs	*프레*섹	복숭아 (카탈루냐어)	c	3	스페인어로는 melocotón
+tomàquet	tomàquet|tomàquets	투*마*켓	토마토 (카탈루냐어)	c	3	스페인어로는 tomate
