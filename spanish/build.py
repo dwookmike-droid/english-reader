@@ -28,6 +28,8 @@ TITLE_ES, TITLE_KO = 'La llave de Gràcia', '그라시아의 열쇠'
 # 읽기 도움(처음 나온 단어의 한글 발음, 대사 밑 우리말 뜻)은 이 장까지만 본문에 싣는다.
 # 그 뒤로는 장 끝 단어 목록과 웹 리더에만 발음이 남는다.
 AIDS_UNTIL = 15
+# 이 장까지는 스페인어 대사 한 줄 전체의 한글 발음을 대사 밑에 붙인다.
+LINE_PRON_UNTIL = 6
 
 LATIN = r"A-Za-zÀ-ÖØ-öø-ÿ"
 WORD = re.compile(rf"[{LATIN}](?:[{LATIN}\-]*[{LATIN}])?")
@@ -62,6 +64,7 @@ class Inline:
         self.unknown, self.seen, self.uses = set(), set(), {}
         self.shown = set()      # 발음을 이미 보여 준 말
         self.ch = 1
+        self.quiet = False      # True면 발음을 붙이지 않고 본 것으로만 친다(대사 전체 발음을 따로 달 때)
 
     def word(self, text, key, first=False, pron=None):
         """단어를 감싼다. 15장까지는 단어표의 어떤 말이든(스페인어·카탈루냐어·아직 안 가르친 말)
@@ -72,7 +75,7 @@ class Inline:
         e = self.entries.get(key, {})
         p = pron or e.get('p')
         if (p and key not in self.shown and e.get('t') != 'p'
-                and self.ch <= AIDS_UNTIL):
+                and self.ch <= AIDS_UNTIL and not self.quiet):
             s += f'<span class="pr">[{pron_html(p)}]</span>'
         self.shown.add(key)
         return s
@@ -107,6 +110,37 @@ class Inline:
                 pos, i = t0.end(), i + 1
         out.append(html.escape(run[pos:]))
         return ''.join(out)
+
+    def line_pron(self, text):
+        """스페인어 대사 한 줄 → 한글 발음. 카탈루냐어와 이름은 단어표의 발음을, 스페인어는 철자로 만든다."""
+        from hangul import to_hangul
+        toks = list(WORD.finditer(text))
+        out, pos, i = [], 0, 0
+        while i < len(toks):
+            hit = None
+            for n in (5, 4, 3, 2, 1):
+                grp = toks[i:i + n]
+                if len(grp) < n:
+                    continue
+                if not all(text[grp[j].end():grp[j + 1].start()] == ' ' for j in range(n - 1)):
+                    continue
+                key = self.forms.get(tuple(t.group().lower() for t in grp))
+                if key and self.entries[key]['t'] in ('c', 'p', 'f'):   # f = 외래 발음(영어, 아르헨티나식 등)
+                    hit = (n, self.entries[key]['p'])
+                    break
+            t0 = toks[i]
+            out.append(text[pos:t0.start()])
+            if hit:
+                n, pr = hit
+                out.append(pr)
+                pos, i = toks[i + n - 1].end(), i + n
+            else:
+                out.append(to_hangul(t0.group()))
+                pos, i = t0.end(), i + 1
+        out.append(text[pos:])
+        s = ''.join(out)
+        s = re.sub(r'[¿¡«»]', '', s)
+        return re.sub(r'\s+', ' ', s).strip()
 
     def __call__(self, text):
         out, pos = [], 0
@@ -156,7 +190,13 @@ def parse_chapter(path, inline):
                 print(f'  ! 말하는 사람 표시(@이름)가 없는 대사: {text[:30]}', file=sys.stderr)
             es, _, ko = text.partition(' :: ')
             plain = strip_marks(es)
-            return dict(t='say', es=inline(es), ko=html.escape(ko.strip()) if aids else '', plain=plain,
+            lp = ''
+            if ch['n'] <= LINE_PRON_UNTIL:
+                lp = pron_html(inline.line_pron(plain))
+                inline.quiet = True
+            h = inline(es)
+            inline.quiet = False
+            return dict(t='say', es=h, lp=lp, ko=html.escape(ko.strip()) if aids else '', plain=plain,
                         who=who, a=audio_id(who, plain))
         return dict(t='p', h=inline(text))
 
@@ -215,6 +255,8 @@ def block_html(b):
         return f'<p>{b["h"]}</p>'
     if b['t'] == 'say':
         gl = f'<span class="gl">{b["ko"]}</span>' if b['ko'] else ''
+        if b.get('lp'):
+            gl = f'<span class="lp">[{b["lp"]}]</span>' + gl
         has = (AUDIO / f'{b["a"]}.mp3').exists()
         aud = f' data-a="{b["a"]}"' if has else ''
         return (f'<p class="say" data-say="{html.escape(b["plain"])}"{aud}>'

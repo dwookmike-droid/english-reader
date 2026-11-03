@@ -1,5 +1,5 @@
 # 열: 표제어 → 본문에 나오는 형태들(| 구분) → 한글 발음 → 뜻 → 종류 → 처음 나온 장 → 메모
-# 종류: n = 그 장에서 새로 배우는 단어(장 끝 목록에 실림) / x = 나오긴 하지만 아직 가르치지 않는 말(눌러야 뜻이 보임)
+# 종류: n = 그 장에서 새로 배우는 단어(장 끝 목록에 실림) / x = 나오긴 하지만 아직 가르치지 않는 말(눌러야 뜻이 보임) / f = 철자대로 읽지 않는 말(영어·아르헨티나식)
 #       c = 카탈루냐어 / p = 고유명사
 # 발음: *굵게* = 강세, _밑줄_ = 혀를 이 사이에 무는 th 소리(스페인 본토의 z, ce, ci)
 hola	hola	*올*라	안녕하세요, 안녕	n	1	h는 소리가 나지 않는다
@@ -58,7 +58,7 @@ Gràcia	gràcia	*그라*시아	그라시아 — 바르셀로나 북쪽의 오래
 Montse	montse	*몬*세	몬세 — Montserrat의 애칭	p	1
 Rellotger	rellotger	레요*제*	렐로제 — ‘시계공’이라는 뜻의 카탈루냐어	p	1
 Sun-rye	sun-rye	순례	순례	p	1
-Yunha	yunha|yun-ha|yuna|yu-na	유나	유나 — 스페인어에는 h 소리가 없어서 ‘윤하’가 ‘유나’가 된다	p	1
+Yunha	yunha|yuna|yu-na	유나	유나 — 스페인어에는 h 소리가 없어서 ‘윤하’가 ‘유나’가 된다	p	1
 M.	m	*에*메	M — 편지를 보낸 사람	p	1
 coreano	coreano	코레*아*노	한국 남자, 한국의	x	1
 del	del	*델*	~의 (de + el)	x	1
@@ -103,10 +103,10 @@ Valentina	valentina	발렌*티*나	발렌티나 — 줄여서 Vale	p	2
 como	como	*코*모	~처럼, ~같이	x	2
 y	y	*이*	그리고	x	2
 normal	normal	노르*말*	당연하지, 보통이야	x	2
-jet lag	jet lag	*옛* *락*	시차 피로	x	2
+jet lag	jet lag	*옛* *락*	시차 피로 (영어에서 온 말)	f	2
 a la	a la	아 라	~로, ~에	x	2
 qué	qué	*케*	무슨, 뭐	x	2
-cashe	cashe	*카*셰	calle의 아르헨티나식 발음	x	2
+cashe	cashe	*카*셰	calle의 아르헨티나식 발음	f	2
 es lo mismo	es lo mismo	*에*스 로 *미*스모	똑같아	x	2
 rellotge	rellotge	러*요*제	시계 (카탈루냐어)	c	2	스페인어로는 reloj
 los	los	로스	그 (남자 이름 여러 개 앞)	x	2
@@ -192,3 +192,4 @@ una	una	*우*나	하나의 (여자 이름 앞)	x	3	Una llave = 열쇠 하나
 formatge	formatge	푸르*마*제	치즈 (카탈루냐어)	c	3	스페인어로는 queso
 préssec	préssec|préssecs	*프레*섹	복숭아 (카탈루냐어)	c	3	스페인어로는 melocotón
 tomàquet	tomàquet|tomàquets	투*마*켓	토마토 (카탈루냐어)	c	3	스페인어로는 tomate
+Yun-ha	yun-ha	*윤*-하	윤-하 — 윤하가 자기 이름의 h를 또박또박 말하는 소리	p	1

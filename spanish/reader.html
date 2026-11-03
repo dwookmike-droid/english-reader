@@ -43,6 +43,9 @@ main { font-size:var(--size); max-width:min(34em, 94vw); margin:0 auto; padding:
 .ch p.say { text-indent:0; margin:.5em 0; padding-left:1.7em; position:relative; }
 .ch p.say .sp { display:block; line-height:1.55; }
 .ch p.say .sp .w, .ch p.say .sp .es { font-size:1.18em; }
+.ch p.say .lp { display:block; font:.78em/1.5 -apple-system,BlinkMacSystemFont,"Noto Sans KR",sans-serif; color:var(--dim); }
+.ch p.say .lp b { color:var(--fg); }
+html[data-pr="0"] .ch .lp { display:none; }
 .ch p.say .gl { display:block; font-size:.8em; color:var(--dim); line-height:1.5; }
 html[data-g="0"] .gl { display:none !important; }
 .play { position:absolute; left:0; top:.3em; width:1.25em; height:1.25em; border-radius:50%;

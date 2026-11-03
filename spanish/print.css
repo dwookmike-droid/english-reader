@@ -37,7 +37,7 @@ section:first-child { break-before: auto; }
 .w, .es { font-weight: 400; font-size: 1.13em; letter-spacing: .005em; }
 .w.new { font-weight: 600; }
 .pr {
-  font-family: "Noto Sans KR", sans-serif; font-size: .64em; color: #77726a;
+  font-family: "Noto Sans KR", sans-serif; font-size: .72em; color: #6a655c;
   margin-left: .25em; letter-spacing: -.01em; white-space: nowrap; vertical-align: .12em;
 }
 .pr b { font-weight: 700; color: #1d1d1b; }
@@ -48,6 +48,12 @@ section:first-child { break-before: auto; }
 .chapter p.say { text-indent: 0; margin: .38em 0 .38em 0; break-inside: avoid; }
 .chapter p.say .sp .w, .chapter p.say .sp .es { font-size: 1.2em; }
 .chapter p.say .sp { display: block; line-height: 1.5; text-align: left; }
+.chapter p.say .lp {
+  display: block; font-family: "Noto Sans KR", sans-serif; font-size: .76em; color: #4f4b45;
+  line-height: 1.45; padding-left: .9em; text-align: left; letter-spacing: -.01em;
+}
+.chapter p.say .lp b { font-weight: 700; color: #1d1d1b; }
+.chapter p.say .lp u { text-decoration: underline; text-decoration-thickness: .08em; text-underline-offset: .18em; }
 .chapter p.say .gl {
   display: block; font-size: .78em; color: #77726a; line-height: 1.45; margin-top: .05em;
   padding-left: .9em;
