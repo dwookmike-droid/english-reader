@@ -104,6 +104,7 @@
 - 마르크의 열쇠공방과 지하 작업실
 - 몬세의 하숙집
 - 편지 열한 통과 괘종시계
+- 사진관 Foto Avenida와 그 아들 Quique
 
 ## 쓰기 전에 확인할 사실
 - Mercat de l'Abaceria: 새 건물이 2026년 여름에 연다는 보도만 있고 확인되지 않아, 3장은 Mercat de la Llibertat로 썼다
