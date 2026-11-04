@@ -16,6 +16,13 @@ entries, forms = build.load_vocab()
 inl = build.Inline(forms, entries)
 per = collections.defaultdict(collections.Counter)   # key -> ch -> n
 tok = collections.defaultdict(collections.Counter)   # ch -> category -> n
+class Uses(dict):
+    """build.Inline.uses 대신 — 장별 노출 횟수(구 안에 든 n 단어 포함)를 함께 적는다."""
+    def __setitem__(self, k, v):
+        expo[k][inl.ch] += v - self.get(k, 0)
+        super().__setitem__(k, v)
+expo = collections.defaultdict(collections.Counter)  # key -> ch -> n (반복 점검용)
+inl.uses = Uses()
 orig = inl.word
 def word(text, key, first=False, pron=None):
     ch = inl.ch
@@ -39,10 +46,10 @@ elif mode == 'low':
     rows = []
     for e in entries.values():
         if e['t'] != 'n': continue
-        k = e['k']; tot = sum(per[k].values())
+        k = e['k']; tot = sum(expo[k].values())
         if tot < 3:
-            later = sum(v for c, v in per[k].items() if c > e['c'])
-            rows.append((e['c'], k, tot, later, dict(per[k])))
+            later = sum(v for c, v in expo[k].items() if c > e['c'])
+            rows.append((e['c'], k, tot, later, dict(expo[k])))
     for r in sorted(rows): print(r)
     print(len(rows))
 elif mode == 'x':

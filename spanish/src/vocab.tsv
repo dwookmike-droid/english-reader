@@ -522,7 +522,7 @@ bares	bares|bar		바, 술집 겸 카페	x	9
 destornillador	destornillador		드라이버	n	9
 martillo	martillo		망치	x	9
 aceite	aceite		기름, 올리브유	n	9
-tornillo	tornillo		나사	x	9
+tornillo	tornillo|tornillos		나사	x	9
 sus manos	sus manos|manos|mano		그의 손	x	9	mano = 손(여성)
 grandes	grandes		큰 (여럿)	x	9
 tranquilas	tranquilas|tranquilo		조용한, 차분한	x	9
@@ -692,7 +692,7 @@ pesquero	pesquero		어선	x	12
 los tres miramos la pantalla	los tres miramos la pantalla|miramos|pantalla		우리 셋은 화면을 본다	x	12	pantalla = 화면
 marzo	marzo		3월	x	12
 llegó	llegó		도착했다 (과거)	n	12	llegar의 과거. 이 책에서 처음 나오는 과거형
-llegar	llegar		도착하다	n	12
+llegar	llegar|llegará		도착하다	n	12
 llega	llega		도착한다	x	12
 Dong-Hae 7	dong-hae	*동*해	동해호 — 할머니 가족이 탄 한국 어선	p	12
 procedente de	procedente de|procedente		~에서 온	x	12
@@ -1233,6 +1233,7 @@ distintas entre sí	distintas entre sí|distintas		서로 달랐다	x	15
 en el aire	en el aire		공중에	x	15
 asientos pequeños	asientos pequeños		작은 좌석	x	15
 paró	paró		멈췄다	x	14
+ayudaron	ayudaron		도와주었다	x	14	
 su vermut de los domingos	su vermut de los domingos|vermut		일요일의 베르무트	x	15	vermut = 식전 술
 casi nunca	casi nunca		거의 ~않다	x	15
 hasta hoy	hasta hoy		오늘까지	x	15
@@ -2004,7 +2005,7 @@ siempre tienen razón	siempre tienen razón|tienen		늘 옳다	x	23
 en el peor momento	en el peor momento		가장 안 좋은 때에	x	23
 exacta	exacta		정확한	x	23
 tus	tus		너의 (여럿)	x	23
-saber	saber		알다	x	23
+saber	saber|saberlo		알다	x	23
 posible	posible		가능한	x	23
 mi refugio	mi refugio|refugio		나의 피난처	x	22
 la iglesia iluminada	la iglesia iluminada|iluminada		불 밝힌 성당	x	22
@@ -2050,7 +2051,6 @@ monte serrado	monte serrado|serrado		톱으로 자른 산	x	24
 una sierra	una sierra|sierra		톱; 산맥	x	24
 la montaña sagrada	la montaña sagrada|sagrada		성스러운 산	x	24
 cambiamos	cambiamos		갈아탔다	x	24
-una rueda dentada	una rueda dentada|rueda|dentada		톱니바퀴	x	24
 el monasterio	el monasterio|monasterio		수도원	x	24
 tiendas de recuerdos	tiendas de recuerdos|recuerdos		기념품 가게	x	24	recuerdo = 추억, 기념품
 autobuses	autobuses		버스들	x	24
@@ -2517,6 +2517,7 @@ primeros	primeros|primeras		처음의	x	26
 subirse	subirse		올라타다	x	26	
 trabajos	trabajos		일, 작업들	x	26	
 se van	se van|van		간다, 사라진다	x	26	
+quedarme	quedarme|Quedarme		남다, 머무르다(내가)	x	26	
 los alfajores	los alfajores|Alfajores|alfajores|alfajor|un alfajor		알파호르 (아르헨티나 과자)	x	28	
 corté	corté|Corté		잘랐다	x	28	
 el fricandó	el fricandó|Fricandó|fricandó	프리칸도	프리칸도 (버섯 소고기 찜)	c	28	

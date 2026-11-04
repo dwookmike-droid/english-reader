@@ -124,11 +124,12 @@ Hay mucho silencio. 너무 조용해서 내 숨소리가 들렸다. 나는 맨 �
 
 @letter
 Jueves. Me levanto a las seis. Me ducho, me visto y voy al taller.
+Tomo un café con Marc. Necesito ayuda con los tornillos. Marc me ayuda.
 Marc me da un móvil viejo. Funciona.
 En la caja: un libro. «Reloj de pie. Para S. No se vende.»
 Trabajo con Marc en el Born. Aprendo: destornillador, martillo, tornillo.
 Marc me pregunta: «¿Cómo es un día en la oficina?»
 Hoy he visto Santa Maria del Mar con él.
 Santa Maria del Mar. El domingo, a las once.
-Mañana me levanto tarde. O no.
+Esta noche me acuesto temprano. Mañana me levanto tarde. O no.
 @end

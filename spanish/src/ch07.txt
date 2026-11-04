@@ -114,8 +114,9 @@ todavía. 아직. funciona. 작동한다, 간다. 나는 그 시계를 오래 �
 
 @letter
 Lunes. Hoy he ido al Barri Gòtic con Marc.
+Hace calor. No me gusta el calor de agosto.
 He visto la catedral y un buzón con una tortuga.
-Hemos encontrado la calle en un mapa: C. del Relojero. En catalán, Rellotger.
+Hemos encontrado la calle en un mapa: C. del Relojero. En catalán, Rellotger. No entiendo el catalán.
 Hemos encontrado el taller: Relojería Puig, número 7.
 Martí ya no vive.
 Pero su reloj todavía funciona.

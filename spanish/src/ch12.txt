@@ -100,7 +100,7 @@ tenía. jugaba. 또 처음 보는 모양이었다. 하지만 이번에는 사전
 
 @letter
 Martes, 1 de septiembre.
-Hoy he aprendido el pasado.
+Hoy he aprendido el pasado. Más o menos.
 El barco llegó a Barcelona el 3 de marzo de 1978.
 El barco salió el 12 de noviembre de 1978.
 El museo es un edificio de piedra. Hay un barco rojo y dorado.
@@ -109,5 +109,6 @@ Martí hizo el reloj en octubre. Antes de la despedida.
 Hacer: hizo. Vivir: vivió. Llegar: llegó. Salir: salió.
 Montse dice: «Tu madre tenía tres años. Jugaba en el patio.»
 Mi madre no sabe nada. Yo tampoco sé nada.
+Necesito buscar más papeles del barco.
 Mañana voy a llamar a mi madre. O pasado mañana.
 @end

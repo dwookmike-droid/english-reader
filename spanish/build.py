@@ -121,6 +121,7 @@ class Inline:
         """단어를 감싼다. PRON_UNTIL 장까지는 단어표의 어떤 말이든(스페인어·카탈루냐어·아직 안 가르친 말)
         책에서 처음 나오는 자리에 한 번 발음을 붙인다. 사람 이름에는 붙이지 않는다."""
         self.uses[key] = self.uses.get(key, 0) + 1
+        self.count_inner(text, key)
         cls = 'w new' if first else 'w'
         s = f'<b class="{cls}" data-k="{html.escape(key)}">{html.escape(text)}</b>'
         e = self.entries.get(key, {})
@@ -130,6 +131,23 @@ class Inline:
             s += f'<span class="pr">[{pron_html(p)}]</span>'
         self.shown.add(key)
         return s
+
+    def count_inner(self, text, key):
+        """구(句) 항목 안에 든 가르친 단어(n)도 한 번 본 것으로 센다(un kilo y medio → kilo).
+        표시는 바꾸지 않고 반복 횟수(uses)에만 더한다."""
+        toks = [t.group().lower() for t in WORD.finditer(text)]
+        if len(toks) < 2:
+            return
+        i = 0
+        while i < len(toks):
+            for n in range(len(toks) - i, 0, -1):
+                k = self.forms.get(tuple(toks[i:i + n]))
+                if k and k != key and self.entries[k]['t'] == 'n':
+                    self.uses[k] = self.uses.get(k, 0) + 1
+                    i += n
+                    break
+            else:
+                i += 1
 
     def latin_run(self, run):
         """라틴 문자 덩어리 → 단어표 구(句)를 긴 것부터 맞춰 감싼다."""
