@@ -794,6 +794,8 @@ def interior_for_press(src, marks_pdf, out, pad=0):
         pg.cropbox = RectangleObject([0, 0, W, H])
         pg.merge_page(marks, over=True)
         set_boxes(pg, o, o, TRIM_W, TRIM_H)
+        pg.compress_content_streams()
+    w.compress_identical_objects()
     w.write(out)
     return len(w.pages)
 
@@ -850,6 +852,8 @@ def to_cmyk(src, out):
             ops.append((operands, op))
         cs.operations = ops
         pg.replace_contents(cs)
+        pg.compress_content_streams()
+    w.compress_identical_objects()
     w.write(out)
     return True
 
