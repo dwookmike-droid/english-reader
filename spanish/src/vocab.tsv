@@ -315,7 +315,7 @@ blanco	blanco		하양, 하얀	n	6
 perfecto	perfecto		완벽해!	x	6
 letra	letra		글씨; 글자	n	6	esta letra = 이 글씨
 seguro	seguro		확실한; 확실해?	n	6
-pez	pez		물고기 (살아 있는)	n	6	먹는 생선은 pescado
+pez	pez		물고기 (살아 있는)	x	6	먹는 생선은 pescado
 feo	feo		못생긴	n	6	여성은 fea
 lindo	lindo|re lindo		예쁜 (아르헨티나에서 많이 씀); re = 엄청	x	6
 es tarde	es tarde		늦었다	x	6
@@ -340,15 +340,15 @@ he encontrado	he encontrado		내가 찾았다	x	7
 ido	ido		간 (he ido = 갔다)	x	7	ir = 가다
 visto	visto		본 (he visto = 봤다)	x	7	ver = 보다
 la tía Montse	la tía montse		몬세 고모할머니	x	7
-archivo	archivo		기록보관소	n	7	카탈루냐어로는 arxiu
+archivo	archivo		기록보관소	x	7	카탈루냐어로는 arxiu
 Arxiu	arxiu	*아*르시우	기록보관소 (카탈루냐어)	c	7	스페인어로는 archivo
 Barri Gòtic	barri gòtic	*바*리 *고*틱	고딕 지구 — 바르셀로나에서 가장 오래된 동네	p	7
 Vespa	vespa	*베*스파	베스파 — 이탈리아 스쿠터	p	7
 catedral	catedral		대성당	n	7	la catedral
-las golondrinas	las golondrinas|golondrinas		제비들	n	7
+las golondrinas	las golondrinas|golondrinas		제비들	x	7
 rápidas	rápidas|rápido|rápida		빠른	n	7
 como	como		~처럼	x	2
-la tortuga	la tortuga|tortuga		거북이	n	7
+la tortuga	la tortuga|tortuga		거북이	x	7
 lenta	lenta|lento		느린	n	7
 la administración	la administración|administración		관청, 행정	x	7
 en qué puedo ayudarles	en qué puedo ayudarles		무엇을 도와드릴까요?	x	7	가게·관청에서 듣는 말
@@ -402,7 +402,7 @@ Rambla	rambla	*람*블라	람블라 — 바르셀로나 구시가의 큰 산책�
 Boqueria	boqueria	보케*리*아	보케리아 시장	p	8
 ojo	ojo		눈; (손짓과 함께) 조심해!	n	8
 muchos	muchos		많은 (남성 여럿)	x	8
-carteristas	carteristas|carterista		소매치기	n	8
+carteristas	carteristas|carterista		소매치기	x	8
 medio	medio		반, 절반	x	8
 a ver	a ver		어디 보자	x	8
 hombre	hombre		남자	n	8
@@ -427,7 +427,7 @@ qué hay en	qué hay en		~에 뭐가 있어요?	x	8
 móvil	móvil		휴대폰	n	8	스페인에서는 móvil, 중남미에서는 celular
 cartera	cartera		지갑	n	8
 una copia del pasaporte	una copia del pasaporte		여권 사본	x	8
-la denuncia	la denuncia|denuncia		신고(서)	n	8
+la denuncia	la denuncia|denuncia		신고(서)	x	8
 para el seguro y el consulado	para el seguro y el consulado		보험과 영사관용으로	x	8
 lo siento	lo siento		미안해요, 유감이에요	n	8	무언가를 잃은 사람에게 하는 말
 lo siento mucho	lo siento mucho		정말 유감이에요	x	8
@@ -520,9 +520,9 @@ más tiendas	más tiendas|tiendas|tienda		가게 (여럿)	x	9	tienda = 가게
 pequeñas	pequeñas		작은 (여성 여럿)	x	9
 bares	bares|bar		바, 술집 겸 카페	x	9
 destornillador	destornillador		드라이버	n	9
-martillo	martillo		망치	n	9
+martillo	martillo		망치	x	9
 aceite	aceite		기름, 올리브유	n	9
-tornillo	tornillo		나사	n	9
+tornillo	tornillo		나사	x	9
 sus manos	sus manos|manos|mano		그의 손	x	9	mano = 손(여성)
 grandes	grandes		큰 (여럿)	x	9
 tranquilas	tranquilas|tranquilo		조용한, 차분한	x	9
@@ -987,7 +987,7 @@ desde cualquier calle	desde cualquier calle|cualquier		어느 거리에서든	x	
 se veía	se veía|veía		보였다	x	15
 una estatua	una estatua|estatua		동상	x	15
 una noria	una noria|noria		대관람차	x	15
-un parque de atracciones	un parque de atracciones|atracciones		놀이공원	n	15	atracción = 놀이기구
+un parque de atracciones	un parque de atracciones|atracciones		놀이공원	x	15	atracción = 놀이기구
 íbamos	íbamos		우리는 가고 있었다	x	15	ir의 선과거
 la noche anterior	la noche anterior|anterior		전날 밤	x	15
 había leído	había leído		읽었었다	x	15	(과거보다 더 앞의 일)
@@ -1115,7 +1115,7 @@ un poco de perfume	un poco de perfume|perfume		향수를 조금	x	16
 nunca la había visto así	nunca la había visto así		그녀가 그런 모습은 처음이었다	x	16
 Paral·lel	paral·lel|paral|lel	파랄*렐*	파랄렐 — 옛 극장 거리	p	16
 hace muchos años	hace muchos años		오래전에	n	16	hace + 기간 = ~전에
-los teatros	los teatros|teatros|teatro		극장	n	16
+los teatros	los teatros|teatros|teatro		극장	x	16
 fui joven	fui joven|joven		나는 젊었다	n	16	joven = 젊은
 el pelo mojado	el pelo mojado|pelo|mojado		젖은 머리	x	16
 salimos	salimos		나간다; 나갔다	x	13
@@ -1392,7 +1392,7 @@ la guerra	la guerra|guerra		전쟁	n	18	1936~1939년 스페인 내전
 cañones	cañones		대포	x	18
 para defender	para defender|defender		지키려고	x	18
 los aviones	los aviones|aviones		비행기들	x	18
-la puesta de sol	la puesta de sol|puesta		해넘이	n	18
+la puesta de sol	la puesta de sol|puesta		해넘이	x	18
 bastante	bastante		꽤	x	18
 jóvenes con cervezas	jóvenes con cervezas|jóvenes|cervezas		맥주를 든 젊은이들	x	18
 parejas	parejas		연인들	x	18
@@ -1717,7 +1717,7 @@ lo que deseas	lo que deseas|deseas|deseo|deseaba		네가 바라는 것	x	21	dese
 lo que temes	lo que temes|temes		네가 두려워하는 것	x	21	temer = 두려워하다
 antiguas fábricas	antiguas fábricas|fábricas		옛 공장들	x	21
 calles rectas	calles rectas|rectas		곧은 길	x	21
-nichos	nichos		납골 벽감 (벽에 칸칸이 만든 무덤)	n	21
+nichos	nichos		납골 벽감 (벽에 칸칸이 만든 무덤)	x	21
 de mármol	de mármol|mármol		대리석으로 된	x	21
 cinco o seis pisos	cinco o seis pisos|pisos		5~6층	x	21
 las fechas	las fechas|fechas		날짜들	x	21
@@ -1729,7 +1729,7 @@ ya lo sabes	ya lo sabes		너도 알잖아	x	21
 nos paramos	nos paramos|paramos		멈춰 섰다	x	21
 cipreses	cipreses		사이프러스 나무	x	21
 las filas	las filas|filas|fila		줄, 열	x	21
-una lápida	una lápida|lápida		묘비 판	n	21
+una lápida	una lápida|lápida		묘비 판	x	21
 casi borrada	casi borrada|borrada		거의 지워진	x	21
 el florero	el florero|florero		꽃병	x	21
 rosas frescas	rosas frescas|rosas|frescas		싱싱한 장미	x	21
@@ -2051,7 +2051,7 @@ una sierra	una sierra|sierra		톱; 산맥	x	24
 la montaña sagrada	la montaña sagrada|sagrada		성스러운 산	x	24
 cambiamos	cambiamos		갈아탔다	x	24
 una rueda dentada	una rueda dentada|rueda|dentada		톱니바퀴	x	24
-el monasterio	el monasterio|monasterio		수도원	n	24
+el monasterio	el monasterio|monasterio		수도원	x	24
 tiendas de recuerdos	tiendas de recuerdos|recuerdos		기념품 가게	x	24	recuerdo = 추억, 기념품
 autobuses	autobuses		버스들	x	24
 la basílica	la basílica|basílica		대성당	x	24
@@ -2142,10 +2142,10 @@ tener	tener		가지다	x	23
 vosotros	vosotros		너희들	x	23	
 Ferrocarrils	Ferrocarrils	페로카릴스	카탈루냐 철도(FGC)	c	24	
 Monistrol	Monistrol		모니스트롤 (몬세라트 아래 마을)	p	24	
-el cremallera	el cremallera|cremallera		톱니바퀴 산악열차	n	24	
+el cremallera	el cremallera|cremallera		톱니바퀴 산악열차	x	24	
 zapatillas	zapatillas|zapatilla		운동화	x	24	
 lateral	lateral		옆쪽의	x	24	
-el matasellos	el matasellos|matasellos		소인 (우체국 날짜 도장)	n	24	
+el matasellos	el matasellos|matasellos		소인 (우체국 날짜 도장)	x	24	
 el sello	el sello|sello		우표; 도장	x	24	
 un mensajero	un mensajero|mensajero		택배 기사, 배달원	x	24	
 trajo	trajo		가져왔다 (traer)	x	24	
@@ -2224,14 +2224,14 @@ terminamos	terminamos		(우리가) 끝냈다	x	25
 apartó	apartó		치웠다	x	25	
 doblada	doblada		접힌	x	25	
 el Registro Civil	el Registro Civil|Registro Civil|Registro|Civil		호적 사무소 (출생 등록)	x	25	
-certificación de nacimiento	certificación de nacimiento|certificación|el certificado de nacimiento|el certificado|certificado		출생 증명서	n	25	
+certificación de nacimiento	certificación de nacimiento|certificación|el certificado de nacimiento|el certificado|certificado		출생 증명서	x	25	
 mil novecientos	mil novecientos|mil|novecientos		천구백	x	25	
 los padres	los padres|padres		부모	x	25	
 letras latinas	letras latinas|latinas		로마자	x	25	
 escriben	escriben		쓴다 (그들이)	x	25	
 fino	fino		얇은	x	25	
 transparente	transparente		투명한	x	25	
-un recibo	un recibo|recibo|el recibo		영수증	n	25	
+un recibo	un recibo|recibo|el recibo		영수증	x	25	
 XI	XI	온세	11 (로마 숫자, 11월)	f	25	
 Seiko	Seiko	세이코	세이코 (일본 시계 상표)	f	25	
 cliente	cliente|el cliente		손님, 고객	n	25	
@@ -2586,6 +2586,7 @@ torcido	torcido		비뚤어진	x	28
 las varillas	las varillas|varillas		쇠막대	x	28	
 los verbos	los verbos|verbos		동사들	x	28	
 sin vergüenza	sin vergüenza|vergüenza		부끄러움 없이	x	28	
+llovía	llovía		비가 오고 있었다	x	28	
 hasta que vuelva	hasta que vuelva|vuelva		돌아올 때까지	n	28	volver → vuelva
 dejaría	dejaría|Dejaría|dejar mi piso		그만둘 것이다, 정리할 것이다	x	27	
 Mundet	Mundet	문데트	문데트 (지하철역)	p	27	

@@ -10,6 +10,14 @@
 - **2단계(2026-11-05)**: `AIDS_UNTIL`을 `GLOSS_UNTIL = 15`(대사 뜻)와 `PRON_UNTIL = 18`(처음 나온 말의 발음)로 나눴다. 앞붙이 '읽는 법'과 PLAN.md 표도 고쳤다.
   - 인쇄본이 318쪽에서 324쪽, 책등이 15.9mm에서 16.2mm로 늘었다. `check_print.py` 모두 통과.
   - 낯선 낱말 비율(16장 21.1 → 20.8%)은 거의 그대로다. 발음은 읽기를 돕지만 낱말 자체를 바꾸지는 않는다. 16장 원고 다듬기(4단계)는 그대로 필요하다.
+- **3단계(2026-11-05)**: 본문에 없던 새 단어 4개를 원고에 넣었다.
+  - 20장: 매표소 장면 뒤에 승강장 문단 한 줄(andén, menos cuarto). 장 끝 수첩에도 «Andén seis, a las diez y cuarto».
+  - 24장: 편지를 읽은 뒤 «Miré la firma otra vez: una M redonda, distinta de la M de Martí.»
+  - 28장: Joan이 우산을 들고 온다(un paraguas, llovía는 x로 단어표에 더함).
+  - 한 장면에만 쓰는 n 단어 18개를 x로 내렸다: las golondrinas, la tortuga, archivo, carteristas, la denuncia, martillo, tornillo, pez, un parque de atracciones, los teatros, la puesta de sol, nichos, una lápida, el cremallera, el matasellos, el monasterio, certificación de nacimiento, un recibo. 장 끝 목록에서 빠지고 본문에서는 눌러서 뜻을 본다. n 단어는 518 → 500개.
+  - 다시 센 결과: 3번 미만 120 → 102개, 처음 장 밖에서 다시 안 나오는 것 99 → 81개, 0회 0개. 빌드 경고 없음.
+  - 인쇄본 322쪽, 책등 16.1mm. `check_print.py` 모두 통과.
+  - 24장과 30장은 장 끝 새 단어가 3개뿐이다(STORY.md 기준 20–40개). 후반 장은 원래 적었고, 4단계에서 앞 장 단어를 다시 쓰는 쪽으로 보완한다.
 
 원고 수정은 디자인 브랜치(`claude/book-design`, 지시서상 원고 무변경)와 따로, main에서 새 브랜치를 만들어 한다. 원고를 고치면 인쇄 PDF를 다시 빌드해야 한다(쪽수와 책등이 바뀔 수 있다).
 
