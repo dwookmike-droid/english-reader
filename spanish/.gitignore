@@ -1,3 +1,4 @@
 .fonts/
-print/book.html
+print/*.html
 __pycache__/
+node_modules/

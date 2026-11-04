@@ -1,25 +1,22 @@
-/* 사륙판 (128 × 188 mm). 안쪽(제본 쪽) 여백을 넓게 둔다. */
-@page {
-  size: 128mm 188mm;
-  margin: 17mm 14mm 18mm 18mm;
+/* 사륙판 (128 × 188 mm).
+   여백 숫자는 여기 두지 않는다. build.py 의 MARGIN_* 가 모든 @page 에 넣는다.
+   안쪽(제본 쪽)이 바깥보다 넓다. */
+@page { size: 128mm 188mm; }
+
+:root {
+  --ink: #1d1d1b;
+  --accent: #b5532f;
+  /* 테라코타를 흰 종이에 약 10% 올린 망. 편지지. 8–12% 안. */
+  --soft: #f8eeea;
+  --mute: #6d685f;
+  --body: 156mm;
 }
-@page :left  { margin-left: 14mm; margin-right: 18mm; }
-@page :right { margin-left: 18mm; margin-right: 14mm; }
-
-/* 앞붙이·장 표제지·단어 쪽: 머리말·쪽번호 없음 */
-@page bare:left  { margin-left: 14mm; margin-right: 18mm; }
-@page bare:right { margin-left: 18mm; margin-right: 14mm; }
-
-@page words:left  { margin-left: 14mm; margin-right: 18mm;
-  @bottom-left { content: counter(page); font: 7.8pt "EB Garamond"; color: #6d685f; vertical-align: top; padding-top: 5.5mm; } }
-@page words:right { margin-left: 18mm; margin-right: 14mm;
-  @bottom-right { content: counter(page); font: 7.8pt "EB Garamond"; color: #6d685f; vertical-align: top; padding-top: 5.5mm; } }
 
 * { box-sizing: border-box; }
 html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 body {
-  margin: 0; color: #1d1d1b;
-  font-family: "Gowun Batang", serif;
+  margin: 0; color: var(--ink); background: #fff;
+  font-family: "Gowun Batang", "EB Garamond", "Noto Sans KR", serif;
   font-size: 10pt; line-height: 1.72;
   word-break: normal; line-break: strict; overflow-wrap: break-word;
   text-align: justify; hyphens: none;
@@ -28,11 +25,20 @@ body {
 section { break-before: page; }
 section:first-child { break-before: auto; }
 .pg, .opener { page: bare; }
+.pg.blank { height: var(--body); }
 .words { page: words; }
+
+/* ── 문양 ────────────────────────────────────────────── */
+.orn .acc { fill: var(--accent); }
+.orn .ink { fill: var(--ink); }
+.orn .paper { fill: #fff; }
+.orn .acc-s { stroke: var(--accent); fill: none; }
+.orn .ink-s { stroke: var(--ink); fill: none; }
+.orn .paper-s { stroke: #fff; fill: none; }
 
 /* ── 스페인어 ─────────────────────────────────────────── */
 .w, .es, .t-es, .ht, .opener h2, .num, .pron i, .pron table td:first-child, .words li > b {
-  font-family: "EB Garamond", serif;
+  font-family: "EB Garamond", "Gowun Batang", "Noto Sans KR", serif;
 }
 .w, .es { font-weight: 400; font-size: 1.13em; letter-spacing: .005em; }
 .w.new { font-weight: 600; }
@@ -40,7 +46,7 @@ section:first-child { break-before: auto; }
   font-family: "Noto Sans KR", sans-serif; font-size: .72em; color: #6a655c;
   margin-left: .25em; letter-spacing: -.01em; white-space: nowrap; vertical-align: .12em;
 }
-.pr b { font-weight: 700; color: #1d1d1b; }
+.pr b { font-weight: 700; color: var(--ink); }
 .pr u, .pron u { text-decoration: underline; text-decoration-thickness: .08em; text-underline-offset: .18em; }
 
 /* ── 본문 ────────────────────────────────────────────── */
@@ -52,7 +58,7 @@ section:first-child { break-before: auto; }
   display: block; font-family: "Noto Sans KR", sans-serif; font-size: .76em; color: #4f4b45;
   line-height: 1.45; padding-left: .9em; text-align: left; letter-spacing: -.01em;
 }
-.chapter p.say .lp b { font-weight: 700; color: #1d1d1b; }
+.chapter p.say .lp b { font-weight: 700; color: var(--ink); }
 .chapter p.say .lp u { text-decoration: underline; text-decoration-thickness: .08em; text-underline-offset: .18em; }
 .chapter p.say .gl {
   display: block; font-size: .78em; color: #77726a; line-height: 1.45; margin-top: .05em;
@@ -60,60 +66,139 @@ section:first-child { break-before: auto; }
 }
 .chapter p.say + p:not(.say) { text-indent: 1em; }
 .chapter p.dlg { text-indent: 0; margin: .3em 0; }
-.chapter p.br { text-indent: 0; text-align: center; color: #9a958b; margin: .9em 0; letter-spacing: .1em; }
-.chapter p.br + p { text-indent: 0; }
+/* 장면 바뀜은 작은 꽃 하나. 쪽의 맨 위·맨 아래에 혼자 남지 않게 앞뒤 문단과 붙인다. */
+.chapter p.br {
+  text-indent: 0 !important; text-align: center; color: var(--accent);
+  margin: .85em 0; line-height: 0;
+  break-inside: avoid; break-before: avoid; break-after: avoid;
+}
+.chapter p.br svg { width: 5.2mm; height: 5.2mm; display: block; margin: 0 auto; }
+.chapter p:has(+ p.br) { break-after: avoid; }
+.chapter p.br + p { text-indent: 0; break-before: avoid; }
 .chapter p.end { text-indent: 0; text-align: center; color: #9a958b; margin-top: 1.6em; }
 .chapter p.end svg { width: 13mm; height: auto; }
 
-.letter { margin: .9em 0 .9em 1.4em; break-inside: avoid; }
-.letter p { text-indent: 0 !important; font-family: "EB Garamond", serif; font-style: italic; font-size: 1.3em; }
-.letter .w, .letter .es { font-style: italic; font-size: 1em; }
-.address {
-  margin: .9em auto; width: 62%; padding: .55em .8em .5em; break-inside: avoid;
-  border: .4pt solid #9a958b; text-align: left; line-height: 1.45;
+/* 편지: 테라코타 10% 망 + 왼쪽 실선. 긴 편지는 쪽에서 나뉘어도 테두리와 망이 쪽마다 반복된다. */
+.letter {
+  margin: .95em 0;
+  padding: 2.4mm 3.4mm 2.2mm 3.6mm;
+  background: var(--soft);
+  border-left: 1.6pt solid var(--accent);
+  break-inside: auto;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
-.address p { text-indent: 0 !important; font-family: "EB Garamond", serif; font-size: 1.05em; }
+.letter p {
+  text-indent: 0 !important; text-align: left;
+  font-family: "EB Garamond", "Gowun Batang", "Noto Sans KR", serif; font-style: italic; font-size: 1.22em;
+  line-height: 1.55; margin: 0 0 .12em;
+  orphans: 3; widows: 3;
+}
+.letter .w, .letter .es { font-style: italic; font-size: 1em; }
+/* 간판·주소: 그라시아 거리 명판처럼 가는 이중 테두리. 초록은 쓰지 않는다. */
+.address {
+  margin: 1em auto; width: fit-content; min-width: 62%; max-width: 100%;
+  padding: 1.05mm; break-inside: avoid;
+  border: .75pt solid var(--accent);
+}
+.address-in {
+  border: .4pt solid var(--accent);
+  padding: 1.8mm 3.2mm 1.6mm;
+  text-align: center;
+}
+.address p {
+  text-indent: 0 !important; text-align: center;
+  font-family: "EB Garamond", "Gowun Batang", "Noto Sans KR", serif; font-size: 1.02em; line-height: 1.38; margin: 0;
+}
 .address .w, .address .es { font-size: 1em; }
 
 /* ── 장 표제지 ────────────────────────────────────────── */
-.opener { height: 153mm; position: relative; text-align: center; }
-.opener .num {
-  padding-top: 30mm; font-size: 8pt; letter-spacing: .32em; text-transform: uppercase; color: #77726a;
+.opener {
+  height: var(--body); position: relative; text-align: center;
+  display: flex; flex-direction: column; align-items: center;
+  break-inside: avoid;
 }
-.opener h2 { font-weight: 400; font-style: italic; font-size: 36pt; line-height: 1.1; margin: 5mm 0 2.5mm; }
+.opener .mark { width: 38mm; height: 38mm; margin-top: 12mm; }
+.opener .mark.clock { width: 48mm; height: 48mm; margin-top: 8mm; }
+.opener .mark svg { width: 100%; height: 100%; display: block; }
+.opener .num {
+  margin-top: 6.5mm; padding-left: .32em;
+  font-size: 8pt; letter-spacing: .32em; color: var(--accent);
+}
+.opener h2 {
+  font-weight: 400; font-style: italic; font-size: 30pt; line-height: 1.06;
+  margin: 3mm 0 2mm; max-width: 98mm; text-wrap: balance;
+}
+.opener h2.mid { font-size: 23pt; line-height: 1.12; }
+.opener h2.long { font-size: 20pt; line-height: 1.14; }
 .opener .opr { font-family: "Noto Sans KR", sans-serif; font-size: 7.4pt; color: #77726a; }
-.opener .opr b { color: #1d1d1b; }
+.opener .opr b { color: var(--ink); }
 .opener .qr {
-  position: absolute; left: 0; right: 0; bottom: 0;
-  display: flex; justify-content: center; align-items: center; gap: 3mm;
+  margin-top: auto; padding-bottom: 1mm;
+  display: flex; justify-content: center; align-items: center; gap: 3.2mm;
 }
 .opener .qr svg { width: 17mm; height: 17mm; }
-.opener .qr span { font-family: "Noto Sans KR", sans-serif; font-size: 6.8pt; color: #77726a; text-align: left; line-height: 1.45; }
+.opener .qr span {
+  font-family: "Noto Sans KR", sans-serif; font-size: 6.8pt; color: #77726a;
+  text-align: left; line-height: 1.45;
+}
 
 /* ── 장 끝 단어 ───────────────────────────────────────── */
+.words .wmark { text-align: center; margin: 0 0 1.2mm; color: var(--accent); }
+.words .wmark svg { width: 26mm; height: auto; }
 .words h3 {
   display: flex; justify-content: space-between; align-items: baseline;
-  font: 700 9pt "Noto Sans KR", sans-serif; margin: 0 0 3mm; padding-bottom: 1.6mm;
-  border-bottom: .5pt solid #1d1d1b;
+  font: 700 8.2pt "Noto Sans KR", sans-serif; margin: 0 0 1.5mm; padding-bottom: .9mm;
+  border-bottom: .6pt solid var(--accent);
 }
-.words h3 small { font-weight: 400; color: #77726a; font-size: 6.6pt; }
-.words ol { list-style: none; margin: 0; padding: 0; column-count: 2; column-gap: 4mm; }
-.words li { break-inside: avoid; margin: 0 0 1.5mm; line-height: 1.32; text-align: left; }
-.words li > b { font-weight: 600; font-size: 10.4pt; }
-.words li .pr { font-size: 6.4pt; margin-left: .3em; }
-.words li .m { display: block; font-size: 7.6pt; color: #4f4b45; }
+.words h3 small { font-weight: 400; color: #77726a; font-size: 6.2pt; }
+.words ol {
+  list-style: none; margin: 0; padding: 0;
+  column-count: 2; column-gap: 3.6mm; column-fill: balance;
+}
+.words li { break-inside: avoid; margin: 0 0 .55mm; line-height: 1.18; text-align: left; }
+.words li > b { font-weight: 600; font-size: 9pt; }
+.words li .pr { font-size: 5.6pt; margin-left: .22em; }
+.words li .m { display: block; font-size: 6.5pt; color: #4f4b45; line-height: 1.18; }
 
 /* ── 앞붙이 ───────────────────────────────────────────── */
-.half { height: 153mm; display: flex; align-items: center; justify-content: center; }
+.half { height: var(--body); display: flex; align-items: center; justify-content: center; }
 .half .ht { font-style: italic; font-size: 20pt; text-align: center; line-height: 1.15; }
-.title { height: 153mm; text-align: center; display: flex; flex-direction: column; align-items: center; }
-.title .t-es { margin-top: 26mm; font-size: 33pt; line-height: 1.05; font-style: italic; }
-.title .t-ko { margin-top: 5mm; font-size: 10pt; letter-spacing: .18em; }
-.title .t-sub { margin-top: 1.5mm; font-family: "Noto Sans KR", sans-serif; font-size: 6.6pt; color: #77726a; letter-spacing: .1em; }
-.title .t-key { margin-top: auto; color: #1d1d1b; }
-.title .t-ed { margin-top: 3mm; font-family: "Noto Sans KR", sans-serif; font-size: 6.4pt; color: #77726a; letter-spacing: .2em; }
-.colophon { height: 153mm; display: flex; flex-direction: column; justify-content: flex-end; }
-.colophon p { font-family: "Noto Sans KR", sans-serif; font-size: 7pt; color: #77726a; line-height: 1.6; margin: 0 0 2.4mm; text-align: left; }
+.title { height: var(--body); text-align: center; display: flex; flex-direction: column; align-items: center; }
+.title .t-mark { margin-top: 20mm; width: 22mm; height: 22mm; }
+.title .t-mark svg { width: 100%; height: 100%; display: block; }
+.title .t-es { margin-top: 9mm; font-size: 31pt; line-height: 1.05; font-style: italic; }
+.title .t-ko { margin-top: 5mm; font-size: 10pt; letter-spacing: .18em; padding-left: .18em; }
+.title .t-sub { margin-top: 1.5mm; font-family: "Noto Sans KR", sans-serif; font-size: 6.6pt; color: var(--accent); letter-spacing: .14em; padding-left: .14em; }
+.title .t-pub { margin-top: auto; padding-bottom: 2mm; font-family: "Noto Sans KR", sans-serif; font-size: 7pt; color: var(--mute); letter-spacing: .2em; }
+
+/* 판권면: 쪽 아래에 모은다. 시계(3시 10분)는 여기 한 번 작게. */
+.colophon { height: var(--body); display: flex; flex-direction: column; justify-content: flex-end; }
+.colophon .c-mark { width: 13mm; height: 13mm; margin-bottom: 4mm; }
+.colophon .c-mark svg { width: 100%; height: 100%; display: block; }
+.colophon .c-title { font-family: "Gowun Batang", serif; font-size: 8.4pt; color: var(--ink); line-height: 1.5; margin: 0 0 3mm; }
+.colophon .c-title i { font-family: "EB Garamond", serif; font-size: 1.15em; }
+.colophon table { border-collapse: collapse; margin: 0 0 3.5mm; border-top: .4pt solid var(--accent); width: 100%; }
+.colophon th, .colophon td { font-family: "Noto Sans KR", sans-serif; font-size: 6.8pt; line-height: 1.5; padding: .55mm 0; text-align: left; vertical-align: baseline; border-bottom: .3pt solid #d6d1c6; }
+.colophon th { width: 15mm; font-weight: 400; color: var(--mute); }
+.colophon td { color: #3a3833; }
+.colophon p { font-family: "Noto Sans KR", sans-serif; font-size: 6.8pt; color: var(--mute); line-height: 1.6; margin: 0; text-align: left; }
+
+/* 차례: 한 쪽. 부마다 작은 머리. 쪽수는 build.py가 찍어 보고 채운다. */
+.toc h3 { margin-bottom: 2.4mm; }
+.toc .part {
+  display: grid; grid-template-columns: 7mm 1fr; align-items: start;
+  margin-top: 1.8mm; padding-top: 1.1mm; border-top: .4pt solid var(--accent);
+}
+.toc h4 { margin: .7mm 0 0; font: 400 6.4pt "Noto Sans KR", sans-serif; color: var(--accent); letter-spacing: .08em; }
+.toc ol { list-style: none; margin: 0; padding: 0; }
+.toc li { line-height: 1.3; }
+.toc a { display: flex; align-items: baseline; gap: 1.6mm; color: inherit; text-decoration: none; }
+.toc .n { flex: none; width: 4.5mm; text-align: right; font: 8pt "EB Garamond", serif; color: var(--accent); }
+.toc .t { flex: none; font: italic 9.6pt "EB Garamond", serif; }
+.toc .p { flex: 1; min-width: 0; font-family: "Noto Sans KR", sans-serif; font-size: 5.8pt; color: var(--mute); white-space: nowrap; overflow: hidden; }
+.toc .p b { color: var(--ink); }
+.toc .f { flex: none; font: 8.6pt "EB Garamond", serif; font-variant-numeric: tabular-nums; }
 
 .pg { text-align: left; word-break: keep-all; }
 .pg h3 { font: 700 9.4pt "Noto Sans KR", sans-serif; margin: 0 0 3mm; letter-spacing: -.01em; }
