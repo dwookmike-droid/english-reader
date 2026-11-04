@@ -3,10 +3,12 @@
 원고 30장은 클라우드 세션에서 끝냈다(PR #4, main에 병합). 책 디자인은 B안 「그라시아의 타일」로 정했고, 브랜치 `claude/book-design`(PR #5, draft)에서 1·2단계를 마쳤다. 기준 문서는 [`design/BRIEF-B.md`](design/BRIEF-B.md)이고, 시안은 [`design/direction-B.png`](design/direction-B.png)에 있다.
 
 ## 지금 상태 (2026-11-04)
-- 원고 `src/ch01–30.txt`, 단어표 `src/vocab.tsv`(약 2,800개), `src/voices.tsv`는 main과 같다. 디자인 작업 중 한 글자도 고치지 않았다.
-  - `src/front.html`(앞붙이 틀)은 지시서 4.2에 따라 고쳤다. 그래서 `git diff main -- spanish/src`에는 이 파일 하나만 나온다.
-- 인쇄본: 사륙판 128×188mm, **318쪽**(기준 305, +4.3%). 장 표제지 30개는 모두 홀수 쪽에 있다.
-- 책등: 318쪽 ÷ 2 × 0.1mm = **15.9mm**. `--pad 16`으로 빌드하면 320쪽, 16.0mm가 된다.
+- 원고 `src/ch01–30.txt`, `src/voices.tsv`는 main과 같다. 디자인 작업 중 한 글자도 고치지 않았다.
+  - `src/front.html`(앞붙이 틀)은 지시서 4.2에 따라 고쳤다.
+  - 단어표 `src/vocab.tsv`는 원고 개선 1단계에서 형태 겹침 38개를 정리했다(브랜치 `claude/content-fixes`, [`IMPROVE.md`](IMPROVE.md)).
+- 원고 개선안: [`IMPROVE.md`](IMPROVE.md). 1·2단계(단어표 정리, 빌드 경고, 도움 장치 나누기)를 마쳤다. 3단계부터는 원고가 바뀐다.
+- 인쇄본: 사륙판 128×188mm, **324쪽**(기준 305, +6.2%). 16–18장에도 처음 나온 말의 발음이 붙으면서 318쪽에서 늘었다. 장 표제지 30개는 모두 홀수 쪽에 있다.
+- 책등: 324쪽 ÷ 2 × 0.1mm = **16.2mm**. `--pad 16`으로 빌드하면 336쪽, 16.8mm가 된다.
 - 설정 문서:
   - `CHARACTERS.md`: 인물·세계관
   - `PLAN.md`: 30장 지도
@@ -19,7 +21,7 @@ cd spanish
 pip install segno pypdf          # 없으면 설치. Homebrew 파이썬이면 --user --break-system-packages
 npm i playwright                 # 처음 한 번. Chromium이 이미 있으면 install 은 하지 않는다
 python3 build.py                 # 아래 결과물 전부 (약 40초)
-python3 build.py --web-only 2>&1 | grep -E '!|Error'   # 출력이 비어 있어야 정상
+python3 build.py --web-only 2>&1 | grep -E '!|Error'   # 단어표 겹침·본문에 없는 새 단어 경고. 지금은 '본문에 없는 새 단어' 4개가 나온다(IMPROVE.md 3단계에서 없앤다)
 python3 build.py --mono          # 1도(먹) 견본: print/la-llave-de-gracia_mono.pdf
 python3 build.py --pad 16        # 속지 끝에 빈 쪽을 더해 16의 배수로. 책등도 따라 바뀐다
 python3 check_print.py           # 완성 기준 점검. "모두 통과"가 나와야 한다

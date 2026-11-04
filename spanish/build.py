@@ -68,9 +68,11 @@ DATES = {
     30: '2027년 8월 14일 토요일 – 15일 일요일',
 }
 
-# 읽기 도움(처음 나온 단어의 한글 발음, 대사 밑 우리말 뜻)은 이 장까지만 본문에 싣는다.
-# 그 뒤로는 장 끝 단어 목록과 웹 리더에만 발음이 남는다.
-AIDS_UNTIL = 15
+# 읽기 도움은 한꺼번에 빼지 않고 둘로 나눠 뺀다(IMPROVE.md 2절).
+# 대사 밑 우리말 뜻은 이 장까지만 싣는다.
+GLOSS_UNTIL = 15
+# 처음 나온 말의 한글 발음은 이 장까지 본문에 싣는다. 그 뒤로는 장 끝 단어 목록과 웹 리더에만 남는다.
+PRON_UNTIL = 18
 # 이 장까지는 스페인어 대사 한 줄 전체의 한글 발음을 대사 밑에 붙인다.
 LINE_PRON_UNTIL = 6
 
@@ -92,7 +94,10 @@ def load_vocab():
             pron = ' '.join(to_hangul(w) for w in key.split())
         entries[key] = dict(k=key, p=pron, d=ko, t=kind, c=int(ch or 0), n=note)
         for f in fs.split('|'):
-            forms[tuple(f.lower().split())] = key
+            t = tuple(f.lower().split())
+            if t in forms and forms[t] != key:      # 겹치면 뒤 항목이 가져가 앞 항목 횟수가 줄어든다
+                print(f'  ! 단어표 형태 겹침: {f} ({forms[t]} / {key})', file=sys.stderr)
+            forms[t] = key
     return entries, forms
 
 
@@ -113,7 +118,7 @@ class Inline:
         self.quiet = False      # True면 발음을 붙이지 않고 본 것으로만 친다(대사 전체 발음을 따로 달 때)
 
     def word(self, text, key, first=False, pron=None):
-        """단어를 감싼다. 15장까지는 단어표의 어떤 말이든(스페인어·카탈루냐어·아직 안 가르친 말)
+        """단어를 감싼다. PRON_UNTIL 장까지는 단어표의 어떤 말이든(스페인어·카탈루냐어·아직 안 가르친 말)
         책에서 처음 나오는 자리에 한 번 발음을 붙인다. 사람 이름에는 붙이지 않는다."""
         self.uses[key] = self.uses.get(key, 0) + 1
         cls = 'w new' if first else 'w'
@@ -121,7 +126,7 @@ class Inline:
         e = self.entries.get(key, {})
         p = e.get('p') or pron      # 단어표 발음(비우면 철자에서 자동 생성)을 우선한다
         if (p and key not in self.shown and e.get('t') != 'p'
-                and self.ch <= AIDS_UNTIL and not self.quiet):
+                and self.ch <= PRON_UNTIL and not self.quiet):
             s += f'<span class="pr">[{pron_html(p)}]</span>'
         self.shown.add(key)
         return s
@@ -218,7 +223,7 @@ def parse_chapter(path, inline):
     head = lines[0].lstrip('# ').split('|')
     ch = dict(n=int(head[0]), es=head[1].strip(), pr=head[2].strip(), blocks=[])
     inline.ch = ch['n']
-    aids = ch['n'] <= AIDS_UNTIL
+    aids = ch['n'] <= GLOSS_UNTIL
     buf, mode, raw = [], None, []
 
     def flush():
@@ -900,6 +905,8 @@ def main():
             k = e['k']; c = inline.uses.get(k, 0)
             flag = '' if c >= 3 else '  ← 적음'
             print(f'  {k:16s}{c:3d}{flag}')
+            if not c:
+                print(f'  ! 본문에 없는 새 단어: {k} ({e["c"]}장 목록)', file=sys.stderr)
 
     (SITE / 'es.html').write_text(web_html(chapters, entries), encoding='utf-8')
     print('→ es.html')
