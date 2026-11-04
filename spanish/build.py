@@ -11,6 +11,7 @@
   —¿Turismo? :: 관광이에요?  스페인어 대사 :: 작은 글씨로 붙는 우리말 뜻
   ##                        장면 바뀜
   @letter … @end            편지 / @address … @end 봉투의 주소
+  @note … @end              문법 쪽지(장 끝, 수첩 뒤). 장면 안의 문법 설명을 여기로 옮긴다
 
 본문의 다른 라틴 문자 단어는 단어표와 맞춰 자동으로 감싼다. 단어표에 없는
 스페인어 단어가 나오면 경고를 낸다 — 쓰고 나서 반드시 단어표를 채울 것.
@@ -116,10 +117,13 @@ class Inline:
         self.shown = set()      # 발음을 이미 보여 준 말
         self.ch = 1
         self.quiet = False      # True면 발음을 붙이지 않고 본 것으로만 친다(대사 전체 발음을 따로 달 때)
+        self.note = False       # True면 문법 쪽지 안: 단어를 감싸기만 하고 발음·처음 표시·횟수에 넣지 않는다
 
     def word(self, text, key, first=False, pron=None):
         """단어를 감싼다. PRON_UNTIL 장까지는 단어표의 어떤 말이든(스페인어·카탈루냐어·아직 안 가르친 말)
         책에서 처음 나오는 자리에 한 번 발음을 붙인다. 사람 이름에는 붙이지 않는다."""
+        if self.note:
+            return f'<b class="w" data-k="{html.escape(key)}">{html.escape(text)}</b>'
         self.uses[key] = self.uses.get(key, 0) + 1
         self.count_inner(text, key)
         cls = 'w new' if first else 'w'
@@ -274,12 +278,14 @@ def parse_chapter(path, inline):
         s = line.strip()
         if mode:
             if s == '@end':
+                inline.note = mode == 'note'
                 ch['blocks'].append(dict(t=mode, lines=[inline(x) for x in raw]))
+                inline.note = False
                 mode, raw = None, []
             else:
                 raw.append(s)
             continue
-        if s in ('@letter', '@address'):
+        if s in ('@letter', '@address', '@note'):
             flush(); mode = s[1:]; continue
         if s == '##':
             flush(); ch['blocks'].append(dict(t='br')); continue
@@ -339,6 +345,9 @@ def block_html(b):
     if b['t'] == 'address':
         inner = ''.join(f'<p>{x}</p>' for x in b['lines'])
         return f'<div class="address"><div class="address-in">{inner}</div></div>'
+    if b['t'] == 'note':
+        inner = ''.join(f'<p>{x}</p>' for x in b['lines'])
+        return f'<aside class="note"><h4>문법 쪽지</h4>{inner}</aside>'
     raise ValueError(b)
 
 

@@ -42,7 +42,11 @@ Leí la carta tres veces. La primera vez, con el diccionario. La segunda vez, en
 
 @marc —Mi abuelo era así. Nunca hablaba mucho. Pero aprendía cosas. :: 우리 할아버지는 그랬어요. 말은 많이 안 했어요. 그래도 늘 뭔가를 배웠어요.
 
-Marc dijo «era» y «hablaba». No «fue», no «habló». Le pregunté por qué. Me explicó: «fue» cuenta una cosa que pasó y terminó. «Era» dice cómo era una persona, o cómo era un lugar, o qué pasaba alrededor: el fondo de la historia. El pasado de una vez y el pasado de fondo. El español tiene dos pasados, y los dos estaban en la carta. Y una sorpresa más: «fue» es el pasado de ser y también de ir. Se fue, fueron: la misma forma. fue는 ‘~였다’도 되고 ‘갔다’도 된다. 문맥이 알려 준다.
+Marc dijo «era» y «hablaba». No «fue», no «habló». Le pregunté por qué.
+
+@marc —«Fue» es una vez. «Era» es el fondo. :: fue는 한 번이에요. era는 배경이고요.
+
+No dijo nada más. Yo lo escribí en el cuaderno.
 
 괜찮아요. 마르티가 할머니에게 처음 한 한국어는 그 말이었다. 내가 첫날 택시 기사에게 배운 no pasa nada와 같은 말. 사십팔 년 전, 같은 말이 반대 방향으로 건너갔다.
 
@@ -91,4 +95,12 @@ Martí dijo «Kwaenchanayo», «no pasa nada» en coreano. Lo aprendió para ell
 Esperé, esperaste, esperó. Era, hablaba, esperaba.
 El español tiene dos pasados: el de una vez y el de fondo.
 La iglesia no está terminada. Yo tampoco.
+@end
+
+@note
+스페인어의 두 가지 과거
+fue, habló, terminó — 한 번 일어나고 끝난 일. 날짜를 말할 수 있는 과거다(el pasado de una vez).
+era, hablaba, pasaba — 사람이나 장소가 어땠는지, 그때 계속되던 일. 이야기의 배경이다(el pasado de fondo).
+Mi abuelo era así. Nunca hablaba mucho. — 할아버지가 어떤 사람이었는지 말하니까 era, hablaba를 쓴다.
+fue는 ser(~이다)의 과거이면서 ir(가다)의 과거다. ‘~였다’도 되고 ‘갔다’도 된다. 어느 쪽인지는 문맥이 알려 준다. Se fue는 ‘떠났다’.
 @end
