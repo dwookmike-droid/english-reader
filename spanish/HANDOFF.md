@@ -36,6 +36,10 @@ python3 build.py --web-only 2>&1 | grep -E '!|Error'   # 아무것도 안 나와
 - `reader.html`: 웹 리더(es.html) 틀
 
 ## 다음 할 일: 책 디자인
+> **방향이 정해졌다: B안 「그라시아의 타일」.** 작업 브랜치는 `claude/book-design`(PR #5). 자세한 작업지시서는 [`design/BRIEF-B.md`](design/BRIEF-B.md), 시안은 [`design/direction-B.png`](design/direction-B.png). 아래 목록보다 지시서가 우선한다.
+>
+> 로컬에서 처음 빌드할 때는 `pip install segno`가 필요하다(QR 생성). `pdftoppm`·`pdffonts`(poppler)도 쓴다.
+
 원고와 내용은 손대지 않고 **조판과 디자인만** 다룬다.
 - 표지(앞·뒤·책등. 305쪽 기준 책등 두께는 종이에 따라 계산)
 - 속표지, 판권면, 차례(장 번호, 제목, 쪽수)
