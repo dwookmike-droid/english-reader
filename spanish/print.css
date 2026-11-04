@@ -169,13 +169,40 @@ section:first-child { break-before: auto; }
 .half { height: var(--body); display: flex; align-items: center; justify-content: center; }
 .half .ht { font-style: italic; font-size: 20pt; text-align: center; line-height: 1.15; }
 .title { height: var(--body); text-align: center; display: flex; flex-direction: column; align-items: center; }
-.title .t-es { margin-top: 26mm; font-size: 33pt; line-height: 1.05; font-style: italic; }
-.title .t-ko { margin-top: 5mm; font-size: 10pt; letter-spacing: .18em; }
-.title .t-sub { margin-top: 1.5mm; font-family: "Noto Sans KR", sans-serif; font-size: 6.6pt; color: #77726a; letter-spacing: .1em; }
-.title .t-key { margin-top: auto; color: var(--ink); }
-.title .t-ed { margin-top: 3mm; font-family: "Noto Sans KR", sans-serif; font-size: 6.4pt; color: #77726a; letter-spacing: .2em; }
+.title .t-mark { margin-top: 20mm; width: 22mm; height: 22mm; }
+.title .t-mark svg { width: 100%; height: 100%; display: block; }
+.title .t-es { margin-top: 9mm; font-size: 31pt; line-height: 1.05; font-style: italic; }
+.title .t-ko { margin-top: 5mm; font-size: 10pt; letter-spacing: .18em; padding-left: .18em; }
+.title .t-sub { margin-top: 1.5mm; font-family: "Noto Sans KR", sans-serif; font-size: 6.6pt; color: var(--accent); letter-spacing: .14em; padding-left: .14em; }
+.title .t-pub { margin-top: auto; padding-bottom: 2mm; font-family: "Noto Sans KR", sans-serif; font-size: 7pt; color: var(--mute); letter-spacing: .2em; }
+
+/* 판권면: 쪽 아래에 모은다. 시계(3시 10분)는 여기 한 번 작게. */
 .colophon { height: var(--body); display: flex; flex-direction: column; justify-content: flex-end; }
-.colophon p { font-family: "Noto Sans KR", sans-serif; font-size: 7pt; color: #77726a; line-height: 1.6; margin: 0 0 2.4mm; text-align: left; }
+.colophon .c-mark { width: 13mm; height: 13mm; margin-bottom: 4mm; }
+.colophon .c-mark svg { width: 100%; height: 100%; display: block; }
+.colophon .c-title { font-family: "Gowun Batang", serif; font-size: 8.4pt; color: var(--ink); line-height: 1.5; margin: 0 0 3mm; }
+.colophon .c-title i { font-family: "EB Garamond", serif; font-size: 1.15em; }
+.colophon table { border-collapse: collapse; margin: 0 0 3.5mm; border-top: .4pt solid var(--accent); width: 100%; }
+.colophon th, .colophon td { font-family: "Noto Sans KR", sans-serif; font-size: 6.8pt; line-height: 1.5; padding: .55mm 0; text-align: left; vertical-align: baseline; border-bottom: .3pt solid #d6d1c6; }
+.colophon th { width: 15mm; font-weight: 400; color: var(--mute); }
+.colophon td { color: #3a3833; }
+.colophon p { font-family: "Noto Sans KR", sans-serif; font-size: 6.8pt; color: var(--mute); line-height: 1.6; margin: 0; text-align: left; }
+
+/* 차례: 한 쪽. 부마다 작은 머리. 쪽수는 build.py가 찍어 보고 채운다. */
+.toc h3 { margin-bottom: 2.4mm; }
+.toc .part {
+  display: grid; grid-template-columns: 7mm 1fr; align-items: start;
+  margin-top: 1.8mm; padding-top: 1.1mm; border-top: .4pt solid var(--accent);
+}
+.toc h4 { margin: .7mm 0 0; font: 400 6.4pt "Noto Sans KR", sans-serif; color: var(--accent); letter-spacing: .08em; }
+.toc ol { list-style: none; margin: 0; padding: 0; }
+.toc li { line-height: 1.3; }
+.toc a { display: flex; align-items: baseline; gap: 1.6mm; color: inherit; text-decoration: none; }
+.toc .n { flex: none; width: 4.5mm; text-align: right; font: 8pt "EB Garamond", serif; color: var(--accent); }
+.toc .t { flex: none; font: italic 9.6pt "EB Garamond", serif; }
+.toc .p { flex: 1; min-width: 0; font-family: "Noto Sans KR", sans-serif; font-size: 5.8pt; color: var(--mute); white-space: nowrap; overflow: hidden; }
+.toc .p b { color: var(--ink); }
+.toc .f { flex: none; font: 8.6pt "EB Garamond", serif; font-variant-numeric: tabular-nums; }
 
 .pg { text-align: left; word-break: keep-all; }
 .pg h3 { font: 700 9.4pt "Noto Sans KR", sans-serif; margin: 0 0 3mm; letter-spacing: -.01em; }

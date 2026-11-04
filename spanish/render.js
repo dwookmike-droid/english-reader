@@ -11,7 +11,7 @@ const path = require('path');
   const page = await browser.newPage();
   await page.goto('file://' + path.resolve(src), { waitUntil: 'networkidle' });
   await page.evaluate(() => document.fonts.ready);
-  await page.pdf({ path: out, preferCSSPageSize: true, printBackground: true });
+  await page.pdf({ path: out, preferCSSPageSize: true, printBackground: true, outline: true });
   await browser.close();
   console.log('→ ' + out);
 })();
