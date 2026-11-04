@@ -412,9 +412,31 @@ def tile_svg(part):
     return (f'<svg class="orn" viewBox="-20 -20 40 40" aria-hidden="true">{tile_inner(spec)}</svg>')
 
 
+def _clock_tip(deg, length):
+    """12시 방향을 0°로, 시계 방향으로 deg. SVG는 y가 아래라 y = -cos."""
+    a = math.radians(deg)
+    return length * math.sin(a), -length * math.cos(a)
+
+
 def dial_svg():
-    """28장 표제지. 3시 10분(배가 떠난 시각)에 멈춘 시계판. 먹 눈금, 테라코타 바늘."""
-    R, h, m = 40, 3, 10
+    """28장 표제지. 3시 10분에 멈춘 시계. 초침은 없다.
+
+    분침: 10분 = 12시에서 60° (눈금 2).
+    시침: 3시 + 10/60시간 = 12시에서 95° (3을 조금 지난 자리).
+    두 바늘의 시작점은 원점 (0, 0). 시침이 더 짧고 더 굵다.
+    """
+    R = 40
+    hour_deg = (3 + 10 / 60.0) * 30.0   # 95
+    minute_deg = 10 * 6.0               # 60
+    hour_len, minute_len = 18.0, 27.0
+    minute_sw = 0.7
+    # 시침은 중심선이 95°인 삼각형. 굵은 선으로 그리면 선 두께가 5°를 삼켜 3시 정각처럼 보인다.
+    hour_half_w = 1.45
+    hx, hy = _clock_tip(hour_deg, hour_len)
+    mx, my = _clock_tip(minute_deg, minute_len)
+    ah = math.radians(hour_deg)
+    # 시침 방향에 수직인 단위 벡터
+    px, py = math.cos(ah), math.sin(ah)
     parts = [
         f'<circle r="{R}" class="ink-s" stroke-width="0.9"/>',
         f'<circle r="{R - 2.4}" class="ink-s" stroke-width="0.35"/>',
@@ -436,15 +458,21 @@ def dial_svg():
         parts.append(
             f'<text x="{x:.2f}" y="{y:.2f}" text-anchor="middle" class="ink" '
             f'font-family="EB Garamond" font-size="5.4">{label}</text>')
-    ah = math.radians((h % 12 + m / 60) * 30)
-    am = math.radians(m * 6)
-    hx, hy = 16 * math.sin(ah), -16 * math.cos(ah)
-    mx, my = 26 * math.sin(am), -26 * math.cos(am)
-    parts.append(f'<line x1="0" y1="2" x2="{hx:.2f}" y2="{hy:.2f}" class="acc-s" stroke-width="1.55" stroke-linecap="round"/>')
-    parts.append(f'<line x1="0" y1="2" x2="{mx:.2f}" y2="{my:.2f}" class="acc-s" stroke-width="0.85" stroke-linecap="round"/>')
-    parts.append('<circle r="1.8" class="acc"/>')
-    parts.append('<circle r="0.7" class="paper"/>')
-    return f'<svg class="orn" viewBox="-46 -46 92 92" aria-hidden="true">{"".join(parts)}</svg>'
+    # 분침은 원점 (0, 0)에서 60°로. 둥근 선 끝은 중심을 반대쪽으로 밀므로 butt.
+    parts.append(
+        f'<line x1="0" y1="0" x2="{mx:.4f}" y2="{my:.4f}" class="acc-s" '
+        f'stroke-width="{minute_sw}" stroke-linecap="butt"/>')
+    # 시침 밑변의 중점은 원점. 꼭짓점은 95°.
+    parts.append(
+        f'<polygon class="acc" points="'
+        f'{px * hour_half_w:.4f},{py * hour_half_w:.4f} '
+        f'{-px * hour_half_w:.4f},{-py * hour_half_w:.4f} '
+        f'{hx:.4f},{hy:.4f}"/>')
+    parts.append('<circle cx="0" cy="0" r="2.15" class="acc"/>')
+    parts.append('<circle cx="0" cy="0" r="0.62" class="paper"/>')
+    return (f'<svg class="orn dial" viewBox="-46 -46 92 92" aria-hidden="true" '
+            f'data-hour-deg="{hour_deg:.4f}" data-minute-deg="{minute_deg:.4f}">'
+            f'{"".join(parts)}</svg>')
 
 
 def word_mark_svg():
