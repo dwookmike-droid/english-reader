@@ -363,9 +363,9 @@ TILES = {
             fr=0.66, cr=0.24, bow=0.50),
     3: dict(ground='frame', flower='acc', dot='paper', corner='ink', curve='acc',
             fr=0.60, cr=0.32, bow=0.34),
-    4: dict(ground='acc', flower='ink', dot='paper', corner='paper', curve='ink',
+    4: dict(ground='acc', flower='ink', dot='paper', corner='ink', curve='ink',
             fr=0.56, cr=0.28, bow=0.46),
-    5: dict(ground='acc', flower='paper', dot='acc', corner='paper', curve='paper',
+    5: dict(ground='acc', flower='paper', dot='acc', corner='ink', curve='paper',
             fr=0.60, cr=0.38, bow=0.36),
 }
 
@@ -477,7 +477,9 @@ def qr_svg(url):
     import io
     buf = io.BytesIO()
     q.save(buf, kind='svg', scale=1, border=0, xmldecl=False, svgns=True, dark='#1d1d1b', nl=False)
-    return buf.getvalue().decode()
+    # segno는 width/height만 쓴다. viewBox가 있어야 CSS 크기(17mm)대로 그림이 커진다.
+    n = q.symbol_size(scale=1, border=0)[0]
+    return buf.getvalue().decode().replace(f'width="{n}" height="{n}"', f'viewBox="0 0 {n} {n}"', 1)
 
 
 # ── 인쇄용 HTML ──────────────────────────────────────────────────────
@@ -588,6 +590,11 @@ def print_html(chapters, entries, fontdir, mono=False):
     mute = '#555555' if mono else '#6d685f'
     css = (ROOT / 'print.css').read_text(encoding='utf-8')
     css += page_rules(chapters, accent, mute)
+    # 본문에 섞인 숫자(연도, 날짜)도 EB Garamond로. 한글 글꼴보다 앞에 숫자만 맡는 글꼴을 둔다.
+    num = (fontdir / 'fontsource-eb-garamond-5.1.0/files/eb-garamond-latin-400-normal.woff2').as_uri()
+    css += (f'\n@font-face {{ font-family: "Num"; src: url("{num}") format("woff2"); '
+            'unicode-range: U+0030-0039; }\n'
+            'body { font-family: "Num", "Gowun Batang", "EB Garamond", "Noto Sans KR", serif; }\n')
     if mono:
         # 강조색 하나(--accent)를 먹 60% 근처로. 망점도 같이 옅어진다.
         css += '\n:root { --accent: #666666; --soft: #f0f0f0; --mute: #555555; }\n'
@@ -615,13 +622,14 @@ html, body { margin: 0; padding: 0; }
 .floor { position: absolute; inset: 0; width: 128mm; height: 188mm; }
 .plate {
   position: absolute; left: 15mm; right: 15mm; top: 52mm; height: 82mm;
+  display: flex; flex-direction: column; justify-content: center; padding-bottom: 2mm;
   background: #fbf3e6; color: #1d1d1b;
   border: .7pt solid #2f5b4a;
   outline: .7pt solid #fbf3e6; outline-offset: 1.5mm;
   text-align: center;
 }
 .plate .es {
-  margin-top: 9mm; font-family: "EB Garamond", serif; font-style: italic; font-weight: 400;
+  font-family: "EB Garamond", serif; font-style: italic; font-weight: 400;
   font-size: 28pt; line-height: 1.02;
 }
 .plate .ko {
