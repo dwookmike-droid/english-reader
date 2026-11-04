@@ -1,0 +1,2800 @@
+# 열: 표제어 → 본문에 나오는 형태들(| 구분) → 한글 발음 → 뜻 → 종류 → 처음 나온 장 → 메모
+# 종류: n = 그 장에서 새로 배우는 단어(장 끝 목록에 실림) / x = 나오긴 하지만 아직 가르치지 않는 말(눌러야 뜻이 보임) / f = 철자대로 읽지 않는 말(영어·아르헨티나식)
+#       c = 카탈루냐어 / p = 고유명사
+# 발음: *굵게* = 강세, _밑줄_ = 혀를 이 사이에 무는 th 소리(스페인 본토의 z, ce, ci)
+hola	hola	*올*라	안녕하세요, 안녕	n	1	h는 소리가 나지 않는다
+gracias	gracias	*그라*_씨_아스	고맙습니다	n	1
+agua	agua	*아*구아	물	n	1
+sí	sí	*씨*	네, 응	n	1	si(만약)와 다른 말. 강세 표시가 있다
+no	no	*노*	아니요; ~이 아니다	n	1
+café	café	카*페*	커피	n	1
+querida	querida	케*리*다	사랑하는 (편지 첫머리, 여자에게)	n	1	남자에게는 querido
+aeropuerto	aeropuerto	아에로*푸에*르토	공항	n	1
+pasaporte	pasaporte	파사*포*르테	여권	n	1
+por favor	por favor	포르 파*보*르	부탁합니다, ~주세요	n	1
+turismo	turismo	투*리*스모	관광	n	1
+de nada	de nada	데 *나*다	천만에요	n	1	gracias에 대한 대답
+perdón	perdón	페르*돈*	미안합니다, 실례합니다	n	1
+maleta	maleta	말*레*타	여행 가방, 캐리어	n	1
+taxi	taxi	*탁*시	택시	n	1
+adónde	adónde	아*돈*데	어디로?	n	1
+vale	vale	*발*레	오케이, 알았어, 좋아	n	1	스페인 사람들이 하루에 수백 번 하는 말
+no entiendo	no entiendo	노 엔*티엔*도	못 알아듣겠어요, 이해가 안 돼요	n	1
+no pasa nada	no pasa nada	노 *파*사 *나*다	괜찮아요, 별일 아니에요	n	1
+soy	soy	*소*이	나는 ~이다	n	1	ser(이다) 동사의 ‘나’ 형태
+coreana	coreana	코레*아*나	한국 여자, 한국의	n	1	남자는 coreano
+muy bien	muy bien	*무*이 *비엔*	아주 좋아요, 잘했어요	n	1
+calle	calle|ca-lle|calles	*카*예	거리, 길	n	1	카탈루냐어로는 carrer
+adiós	adiós	아*디오*스	잘 가요, 안녕히	n	1
+buenos días	buenos días	*부에*노스 *디*아스	좋은 아침이에요, 안녕하세요(오전 인사)	n	1
+y tú	y tú	이 *투*	너는? 당신은?	n	1
+bienvenida	bienvenida	비엔베*니*다	환영해요, 어서 와요 (여자에게)	n	1	남자에게는 bienvenido
+llave	llave|llaves	*야*베	열쇠	n	1
+tres	tres	*트*레스	셋, 3	n	1
+señora	señora	세*뇨*라	(나이 든 여자에게) 부인, 아주머니, 할머니	n	1	남자에게는 señor
+dónde está	dónde está	*돈*데 에스*타*	어디에 있어요?	n	1
+abuela	abuela	아*부엘*라	할머니	n	1	할아버지는 abuelo
+mañana	mañana	마*냐*나	내일; 아침	n	1
+ay	ay	*아*이	아이고, 앗	x	1
+su	su	*수*	당신의, 그의, 그녀의	x	1
+yo	yo	*요*	나	n	3	줄의 마지막이 누구냐고 물으면 손을 들고 yo
+china	china	*치*나	중국 여자	x	1
+japonesa	japonesa	하포*네*사	일본 여자	x	1
+catalán	catalán	카탈*란*	카탈루냐어	x	1
+español	español	에스파*뇰*	스페인어	x	1
+las dos	las dos	라스 *도*스	둘 다	x	1
+aquí	aquí	아*키*	여기	x	1
+la	la	*라*	그 (여자 이름 앞에 붙는 말)	n	2	남자 이름 앞에는 el. llave, calle, leche는 la
+tu	tu	*투*	너의, 당신의	x	1	강세 없는 tu는 ‘너의’, 강세 있는 tú는 ‘너’
+habitación	habitación	아비타_씨_*온*	방	x	1
+esta	esta	*에*스타	이 (여성 명사 앞)	x	1
+de quién es	de quién es	데 *키엔* *에*스	누구 거예요?	x	1
+mi	mi	*미*	나의	x	1
+bon dia	bon dia	본 *디*아	좋은 아침이에요 (카탈루냐어)	c	1	스페인어로는 buenos días
+carrer	carrer	카*레*	거리 (카탈루냐어)	c	1	스페인어로는 calle
+Barcelona	barcelona	바르_셀_*로*나	바르셀로나	p	1
+Gràcia	gràcia	*그라*시아	그라시아 — 바르셀로나 북쪽의 오래된 동네	p	1
+Montse	montse	*몬*세	몬세 — Montserrat의 애칭	p	1
+Rellotger	rellotger	레요*제*	렐로제 — ‘시계공’이라는 뜻의 카탈루냐어	p	1
+Sun-rye	sun-rye	순례	순례	p	1
+Yunha	yunha|yuna|yu-na	유나	유나 — 스페인어에는 h 소리가 없어서 ‘윤하’가 ‘유나’가 된다	p	1
+M.	m	*에*메	M — 편지를 보낸 사람	p	1
+coreano	coreano	코레*아*노	한국 남자, 한국의	x	1
+del	del	*델*	~의 (de + el)	x	1
+ah	ah	*아*	아!	x	1
+qué tal	qué tal	*케* *탈*	잘 지내요? 어때요? (가벼운 안부)	n	2
+qué es esto	qué es esto	*케* 에스 *에*스토	이게 뭐예요?	n	2	모르는 물건을 가리키며 쓰는 마법의 문장
+pan	pan	*판*	빵	n	2	el pan
+con	con	*콘*	~와 함께, ~을 넣은	n	2	café con leche = 우유 넣은 커피
+tomate	tomate|tomates	토*마*테	토마토	n	2	pan con tomate = 토마토 바른 빵. 카탈루냐의 아침
+leche	leche	*레*체	우유	n	2	la leche
+el	el	*엘*	그 (남자 이름 앞에 붙는 말)	n	2	el pan, el café, el reloj
+me llamo	me llamo	메 *야*모	내 이름은 ~이다	n	2
+soy de	soy de	*소*이 데	나는 ~에서 왔다, ~ 출신이다	n	2
+Corea	corea	코*레*아	한국	n	2
+cómo estás	cómo estás	*코*모 에스*타*스	어떻게 지내? 기분이 어때?	n	2
+bien	bien	*비엔*	좋아, 잘	n	2	muy bien = 아주 좋아
+un poco	un poco	운 *포*코	조금	n	2
+cansada	cansada	칸*사*다	피곤한 (여자)	n	2	남자는 cansado
+vamos	vamos	*바*모스	가자, 갑시다	n	2
+mira	mira	*미*라	봐, 이것 봐	n	2
+plaza	plaza	*플라*_사_	광장	n	2	la plaza
+reloj	reloj|relojes	레*로*흐	시계	n	2	여러 개는 relojes. 카탈루냐어로는 rellotge
+señor	señor	세*뇨*르	아저씨, 선생님, (남자) 분	n	2	여자는 señora
+antes	antes	*안*테스	예전에, 전에	n	2
+ahora	ahora	아*오*라	지금	n	2	h는 소리가 없다
+cerrajería	cerrajería	_세_라헤*리*아	열쇠 가게, 열쇠공방	n	2	카탈루냐어로는 serralleria
+cerrado	cerrado	_세_*라*도	닫힌	n	2	가게가 열려 있으면 abierto
+hoy	hoy	*오*이	오늘	n	2
+buenísimo	buenísimo	부에*니*시모	끝내주게 좋은	x	2	bueno + ísimo = 아주아주
+vos	vos	*보*스	너 (아르헨티나 등에서)	x	2	스페인에서는 tú
+tú	tú	*투*	너	x	2
+en	en	*엔*	~에서, ~로	x	2
+España	españa	에스*파*냐	스페인	p	2
+Argentina	argentina	아르헨*티*나	아르헨티나	p	2
+qué lindo	qué lindo	*케* *린*도	예쁘다! (아르헨티나식)	x	2
+de	de	*데*	~의; ~에서	x	2
+Buenos Aires	buenos aires	*부에*노스 *아*이레스	부에노스아이레스	p	2
+Seúl	seúl	세*울*	서울	p	2
+me encanta	me encanta	메 엔*칸*타	너무 좋아!	x	2
+Valentina	valentina	발렌*티*나	발렌티나 — 줄여서 Vale	p	2
+y	y	*이*	그리고	x	2
+normal	normal	노르*말*	당연하지, 보통이야	x	2
+jet lag	jet lag	*옛* *락*	시차 피로 (영어에서 온 말)	f	2
+a la	a la	아 라	~로, ~에	x	2
+qué	qué	*케*	무슨, 뭐	x	2
+cashe	cashe	*카*셰	calle의 아르헨티나식 발음	f	2
+es lo mismo	es lo mismo	*에*스 로 *미*스모	똑같아	x	2
+rellotge	rellotge	러*요*제	시계 (카탈루냐어)	c	2	스페인어로는 reloj
+los	los	로스	그 (남자 이름 여러 개 앞)	x	2
+serralleria	serralleria	세라예*리*아	열쇠 가게 (카탈루냐어)	c	2	스페인어로는 cerrajería
+tancat	tancat	탕*캇*	닫힌 (카탈루냐어)	c	2	스페인어로는 cerrado
+Marc	marc	*마*르크	마르크	p	2
+muy	muy	*무*이	아주, 매우	x	2	muy bien, muy bueno
+es	es	*에*스	~이다 (그것은, 그는, 그녀는)	x	2	soy(나는 ~이다)의 짝
+cansado	cansado	칸*사*도	피곤한 (남자)	x	2
+plaça	plaça	*플라*사	광장 (카탈루냐어)	c	2	스페인어로는 plaza. 바르셀로나 표지판에는 plaça로 적혀 있다
+vila	vila	*빌*라	마을, 읍 (카탈루냐어)	c	2	Plaça de la Vila de Gràcia = 그라시아 마을 광장
+perdona	perdona	페르*도*나	미안해, 미안해요 (가볍게)	x	1	perdón과 같은 뜻. 몬세가 카탈루냐어로 먼저 말했다가 늘 하는 말
+sóc	sóc	*속*	나는 ~이다 (카탈루냐어)	c	1	스페인어로는 soy
+i tu	i tu	이 *투*	너는? (카탈루냐어)	c	1	스페인어로는 ¿y tú?
+benvinguda	benvinguda	벰빙*구*다	어서 와요 (카탈루냐어, 여자에게)	c	1	스페인어로는 bienvenida
+clau	clau	*클라*우	열쇠 (카탈루냐어)	c	1	스페인어로는 llave
+aquest carrer ja no existeix	aquest carrer ja no existeix	아*켓* 카*레* *자* 노 엑시*스*테시	이 거리는 이제 없어요 (카탈루냐어)	c	1	스페인어로는 esta calle ya no existe
+demà	demà	더*마*	내일 (카탈루냐어)	c	1	스페인어로는 mañana
+com estàs	com estàs	*콤* 어스*타*스	잘 지내? (카탈루냐어)	c	2	스페인어로는 ¿cómo estás? / ¿qué tal?
+pa amb tomàquet	pa amb tomàquet	*파* 암 투*마*켓	토마토 바른 빵 (카탈루냐어)	c	2	스페인어로는 pan con tomate
+amb llet	amb llet	암 *옛*	우유 넣어서 (카탈루냐어)	c	2	스페인어로는 con leche
+som-hi	som-hi	*솜*니	가자! (카탈루냐어)	c	2	스페인어로는 vamos
+i	i	*이*	그리고 (카탈루냐어)	c	2	스페인어로는 y
+castellano	castellano	카스테*야*노	스페인어 (카스티야어)	n	2	카탈루냐 사람들은 스페인어를 흔히 이렇게 부른다. español도 같은 말
+nena	nena	*네*나	아가씨, 얘 (다정하게 부르는 말)	n	2	남자아이는 nen. 카탈루냐어와 스페인어 모두 쓴다
+ai	ai	*아*이	아, 아이고 (카탈루냐어)	c	1	스페인어로는 ay
+molt bé	molt bé	*몰* *베*	잘했어, 아주 좋아 (카탈루냐어)	c	2	스페인어로는 muy bien
+tancat per vacances	tancat per vacances	탕*캇* 페르 바*칸*세스	휴가로 문 닫음 (카탈루냐어)	c	2	8월 바르셀로나 가게 문에 흔히 붙는 말
+por vacaciones	por vacaciones	포르 바카_시_*오*네스	휴가라서	x	2	vacaciones = 휴가
+agosto	agosto	아*고*스토	8월	x	2
+vacaciones	vacaciones	바카_시_*오*네스	휴가	x	2
+mercado	mercado	메르*카*도	시장	n	3	카탈루냐어로는 mercat
+veinte	veinte	*베인*테	스물, 20	n	3
+guapa	guapa	*구아*파	예쁜 (여자), 시장에서 여자 손님을 부르는 말	n	3	남자에게는 guapo
+qué te pongo	qué te pongo	*케* 테 *퐁*고	뭘 드릴까요? (가게에서)	n	3	직역하면 ‘너에게 뭘 놓아 줄까’
+quiero	quiero	*키에*로	나는 ~을 원한다, ~ 주세요	n	3
+cuántos	cuántos	*쿠안*토스	몇 개? 얼마나?	n	3	여자 이름에는 cuántas
+kilo	kilo|kilos	*킬*로	킬로그램	n	3
+algo más	algo más	*알*고 *마*스	또 필요한 거 있어요?	n	3
+melocotón	melocotón|melocotones	멜로코*톤*	복숭아	n	3	카탈루냐어로는 préssec
+uno	uno	*우*노	하나, 1	n	3
+dos	dos	*도*스	둘, 2	n	3
+cuatro	cuatro	*쿠아*트로	넷, 4	n	3
+nada más	nada más	*나*다 *마*스	더는 없어요, 그게 다예요	n	3
+cuánto es	cuánto es	*쿠안*토 *에*스	얼마예요?	n	3	시장과 가게에서 가장 중요한 문장
+cincuenta	cincuenta	_신_*쿠엔*타	쉰, 50	n	3	4,50 € = cuatro con cincuenta
+quién es el último	quién es el último	*키엔* 에스 엘 *울*티모	누가 마지막이에요? (줄 설 때)	n	3	스페인 시장에서는 줄 대신 이렇게 묻는다
+queso	queso	*케*소	치즈	n	3	카탈루냐어로는 formatge
+doscientos	doscientos	도스_*시엔*_토스	이백, 200	n	3	dos + cientos
+cien	cien	_*시엔*_	백, 100	n	3
+gramos	gramos	*그라*모스	그램	n	3
+cinco	cinco	*_싱_*코	다섯, 5	n	3
+tía	tía	*티*아	고모, 이모, 숙모	n	3	tía abuela = 고모할머니. 남자는 tío
+ya	ya	*야*	이미, 벌써; (대답으로) 알아	n	3
+no sé	no sé	노 *세*	몰라요	n	3
+diez	diez	*디에*_스_	열, 10	n	3
+euros	euros|euro	*에우*로스	유로	x	3
+sola	sola	*솔*라	혼자 (여자)	x	3	남자는 solo
+así aprendes	así aprendes	아*시* 아프*렌*데스	그래야 배우지	x	3
+son	son	*손*	(값이) ~이다	x	3	Son cuatro con cincuenta = 4.50이에요
+pregunta	pregunta	프레*군*타	물어봐요	x	3
+cuánto	cuánto	*쿠안*토	얼마나	x	3
+un	un	*운*	하나의 (남자 이름 앞)	x	3	여자 이름 앞에는 una
+eso	eso	*에*소	그거, 바로 그거	x	3
+esta letra	esta letra	*에*스타 *레*트라	이 글씨	x	3
+de quién	de quién	데 *키엔*	누구의?	x	3
+menos	menos	*메*노스	빼기, 더 적게	x	3
+al	al	*알*	~에, ~로 (a + el)	x	3
+este chico	este chico	*에*스테 *치*코	이 녀석, 이 아이	x	3
+tía abuela	tía abuela	*티*아 아*부엘*라	고모할머니	x	3
+mercat	mercat	머르*캇*	시장 (카탈루냐어)	c	3	스페인어로는 mercado
+així aprens	així aprens	아*시* 아프*렌*스	그래야 배우지 (카탈루냐어)	c	3
+adéu	adéu	아*데*우	잘 가요 (카탈루냐어)	c	3	스페인어로는 adiós
+digues	digues	*디*게스	말해요 (카탈루냐어)	c	3
+maca	maca	*마*카	예쁜 아가씨 (카탈루냐어)	c	3	스페인어 guapa와 비슷
+dos-cents grams	dos-cents grams	*도*스 *센*스 *그람*스	200그램 (카탈루냐어)	c	3	스페인어로는 doscientos gramos
+del de sempre	del de sempre	델 더 *셈*프러	늘 사던 거 (카탈루냐어)	c	3
+aquest nen	aquest nen	아*켓* *넨*	이 녀석 (카탈루냐어)	c	3
+Jaume	jaume	*자*우메	자우메 — 치즈 가게 주인	p	3
+Llibertat	llibertat	이베르*탓*	리베르타트 — ‘자유’. 그라시아의 시장과 광장 이름	p	3
+una	una	*우*나	하나의 (여자 이름 앞)	x	3	Una llave = 열쇠 하나
+formatge	formatge	푸르*마*제	치즈 (카탈루냐어)	c	3	스페인어로는 queso
+préssec	préssec|préssecs	*프레*섹	복숭아 (카탈루냐어)	c	3	스페인어로는 melocotón
+tomàquet	tomàquet|tomàquets	투*마*켓	토마토 (카탈루냐어)	c	3	스페인어로는 tomate
+Yun-ha	yun-ha	*윤*-하	윤-하 — 윤하가 자기 이름의 h를 또박또박 말하는 소리	p	1
+dale	dale	*달*레	오케이, 좋아, 가자 (아르헨티나)	n	4	스페인의 vale와 같은 말. 발레가 쓴다
+despacio	despacio	데스*파*_시_오	천천히	n	4	
+metro	metro	*메*트로	지하철	n	4	el metro
+billete	billete	비*예*테	표, 승차권	n	4	un billete = 표 한 장
+línea	línea	*리*네아	선, 노선	n	4	la línea tres = 3호선
+estación	estación|estaciones	에스타*_시_온*	역	n	4	여러 개는 estaciones
+bonita	bonita|bonito	보*니*타	예쁜, 아름다운	n	4	남자 이름에는 bonito
+casa	casa	*카*사	집	n	4	en casa = 집에
+hay	hay	아이	~이 있다	n	4	Hay mucha gente = 사람이 많다. h는 소리가 없다
+gente	gente	*헨*테	사람들	n	4	la gente. 하나지만 여러 사람을 뜻한다
+me ayuda	me ayuda	메 아*유*다	저 좀 도와주실래요?	n	4	길을 잃었을 때 가장 먼저 쓰는 말
+cerca	cerca	*_세_르*카	가까이, 가깝다	n	4	반대는 lejos
+lejos	lejos	*레*호스	멀리, 멀다	n	4	반대는 cerca
+todo recto	todo recto	*토*도 *렉*토	쭉, 똑바로	n	4	길 안내에서 가장 많이 듣는 말
+derecha	derecha	데*레*차	오른쪽	n	4	a la derecha = 오른쪽으로
+izquierda	izquierda	이_스_*키에르*다	왼쪽	n	4	a la izquierda = 왼쪽으로
+perdida	perdida|perdido	페르*디*다	길을 잃은 (여자)	n	4	남자는 perdido
+para	para	*파*라	~에게, ~을 위해	n	4	
+lunes	lunes	*루*네스	월요일	n	4	
+está	está	에스*타*	(어디에) 있다; (어떤 상태)이다	n	4	¿Dónde está? = 어디에 있어요? Está cerca = 가까워요
+dónde	dónde	*돈*데	어디	x	4	
+muchas gracias	muchas gracias	*무*차스 *그라*_시_아스	정말 고맙습니다	x	4	
+mucha	mucha	*무*차	많은	x	4	mucha gente = 많은 사람
+mirá	mirá	미*라*	봐 (아르헨티나식)	x	4	스페인에서는 mira
+querés	querés	케*레스*	너는 원하니 (아르헨티나식)	x	4	스페인에서는 quieres
+verde	verde	*베르*데	초록색	x	4	
+te gusta	te gusta		(너는) ~이 좋아? 마음에 들어?	n	6	gustar는 좋아하는 대상이 주어다
+vamos a	vamos a	*바*모스 아	~에 가자	x	4	
+un lugar de piedras	un lugar de piedras	운 루*가르* 데 *피에*드라스	돌이 많은 곳	x	4	
+esta mano	esta mano	*에스*타 *마*노	이 손	x	4	
+por aquí	por aquí	포르 아*키*	이쪽으로	x	4	
+minutos	minutos	미*누*토스	분 (시간)	x	4	
+dónde estabas	dónde estabas	*돈*데 에스*타*바스	어디 있었어?	x	4	
+te busqué por todos lados	te busqué por todos lados	테 부스*케* 포르 *토*도스 *라*도스	온 데를 다 찾았어	x	4	
+pero	pero	*페*로	그런데, 하지만	x	4	
+en casa	en casa	엔 *카*사	집에	x	4	
+es del	es del	에스 델	~의 것이다	x	4	
+vino esta tarde	vino esta tarde	*비*노 *에스*타 *타르*데	오늘 오후에 왔다	x	4	
+trae	trae	*트라*에	가져와	x	4	Trae la llave = 열쇠를 가져와
+próxima estación	próxima estación	*프록*시마 에스타*_시_온*	다음 역	x	4	
+propera estació	propera estació	프러*페*라 어스타시*오*	다음 역 (카탈루냐어)	c	4	스페인어로는 próxima estación
+Fontana	fontana	폰*타*나	폰타나 — 그라시아의 지하철역	p	4
+Diagonal	diagonal	디아고*날*	디아고날 — 바르셀로나를 비스듬히 가로지르는 큰길과 그 역	p	4
+Catalunya	catalunya	카탈*루*냐	카탈루냐	p	4
+Passeig de Gràcia	passeig de gràcia	파*세*치 데 *그라*시아	파세이그 데 그라시아 — 그라시아로 올라가는 큰길	p	4
+Casa Batlló	casa batlló	*카*사 바*요*	카사 바트요 — 가우디가 고친 집	p	4
+La Pedrera	la pedrera	라 페*드레*라	라 페드레라 — 가우디의 카사 밀라. ‘돌산’이라는 별명	p	4
+Gaudí	gaudí	가우*디*	가우디 — 바르셀로나의 건축가	p	4
+Català	català	카탈*라*	카탈루냐어 (카탈루냐어로 쓴 말)	c	4
+English	english	*잉*글리시	영어	f	4
+pedrera	pedrera	페*드레*라	돌이 많은 곳, 채석장	x	4	La Pedrera = ‘돌산’, 가우디의 카사 밀라
+qué hora es	qué hora es		몇 시예요?	n	5
+son las	son las		(시각이) ~시예요	n	5	Son las ocho = 여덟 시예요. 한 시만 Es la una
+hora	hora|horas		시간, 시	n	5	a qué hora = 몇 시에
+ocho	ocho		여덟, 8	n	5
+tienes	tienes		너는 가지고 있다	n	5	tener(가지다)의 ‘너’ 형태
+tiene	tiene		그(그녀)는 가지고 있다	x	5
+tranquila	tranquila		진정해, 괜찮아 (여자에게)	x	5	남자에게는 tranquilo
+iguales	iguales|igual		똑같은	n	5
+puerta	puerta		문	n	5	la puerta
+dar cuerda	dar cuerda		태엽을 감다	x	5
+también	también		~도, 역시	n	5
+la misma flor	la misma flor		같은 꽃	x	5	flor = 꽃
+flor	flor		꽃	n	5	la flor
+abuelo	abuelo		할아버지	n	5	할머니는 abuela
+cómo se llama	cómo se llama		이름이 뭐예요?	n	5	대답은 Se llama… / Me llamo…
+carta	carta|cartas		편지	n	5	여러 통은 cartas
+once	once		열하나, 11	n	5
+sabe	sabe		(그녀는, 그는) 안다	n	5	no sé = 나는 몰라
+sé	sé		나는 안다	x	5	no sé = 몰라요
+pregúntale a ella	pregúntale a ella		그분께 물어봐요	x	5
+hace calor	hace calor		덥다	n	5	날씨는 hace로 말한다. hace frío = 춥다
+calor	calor		더위	n	5	tengo calor = (나는) 더워
+parque	parque		공원	n	5
+arriba	arriba		위에, 위로	n	5	반대는 abajo
+abajo	abajo		아래에, 아래로	n	5
+viento	viento		바람	n	5	hay viento = 바람이 분다
+turistas	turistas|turista		관광객	x	5
+toda	toda|todo		전부, 모든	x	5
+mar	mar		바다	n	5	el mar
+sed	sed		목마름	n	5	tengo sed = 목말라
+años	años|año		해, 나이	n	5	tengo 38 años = 서른여덟 살이에요
+setenta y tres	setenta y tres		일흔셋, 73	x	5
+veinticinco	veinticinco		스물다섯, 25	x	5
+veintisiete	veintisiete		스물일곱, 27	x	5
+seis meses	seis meses		여섯 달	x	5	seis = 6, mes = 달
+amiga	amiga		친구 (여자)	n	5	남자 친구는 amigo
+hermano	hermano		형제, 오빠, 형	n	5	자매는 hermana
+poco a poco	poco a poco		조금씩	n	5
+más tarde	más tarde		이따가, 나중에	x	5
+de puerta	de puerta		문의	x	5
+de reloj	de reloj		시계의	x	5
+Martí	martí	마르*티*	마르티 — 마르크의 할아버지, 몬세의 오빠	p	5
+Park Güell	park güell	*파*르크 *구*엘	구엘 공원 — 가우디의 공원	p	5
+Sagrada Família	sagrada família|sagrada familia	사*그라*다 파*밀*리아	사그라다 파밀리아 성당	p	5
+este	este		이 (남자 이름 앞)	x	5	esta는 여자 이름 앞
+las	las		그 (여자 이름 여러 개 앞)	x	5	las diez = 10시
+más	más		더	x	5
+la torre	la torre	라 *토*레	탑	x	2
+por fin	por fin	포르 *핀*	드디어	x	4
+qué susto	qué susto	*케* *수*스토	깜짝 놀랐잖아!	x	4
+hoy aquí	hoy aquí	오이 아*키*	오늘 여기	x	4
+por la tarde	por la tarde	포르 라 *타*르데	오후에	x	4	tarde = 오후
+perdone	perdone	페르*도*네	실례합니다 (모르는 어른에게, 공손하게)	x	4	perdón보다 공손하다
+fiesta	fiesta		축제, 파티	n	6	la fiesta
+Festa Major	festa major	*페*스타 마*조*	그라시아 축제 (카탈루냐어 ‘큰 축제’)	c	6	8월 중순 한 주 동안 골목마다 장식을 겨룬다
+sábado	sábado		토요일	n	6
+nuestra	nuestra|nuestro		우리의	x	6	남성 낱말 앞에서는 nuestro
+el fondo del mar	el fondo del mar		바닷속, 바다 밑바닥	x	6	fondo = 바닥
+ayudas	ayudas		너는 돕는다; (물음) 도와줄래?	x	6	ayudar(돕다)
+gustar	gustar		좋아하다 (직역: ~이 마음에 들다)	x	6
+me gusta	me gusta		나는 ~이 좋다	n	6	Me gusta el azul = 파란색이 좋아요
+no me gusta	no me gusta		나는 ~이 싫다, 안 좋아한다	n	6
+azul	azul		파랑, 파란	n	6
+a mí también	a mí también		나도	n	6
+luz	luz|luces		빛, 조명, 불	n	6	여러 개는 luces
+siempre	siempre		언제나, 늘	n	6
+él	él		그 (남자)	x	6	ella = 그녀
+todos los años	todos los años		해마다	x	6
+mucho	mucho|mucha		많은; 아주	n	6	Me gusta mucho = 아주 좋아
+ruido	ruido		소음, 시끄러움	n	6
+rojo	rojo		빨강, 빨간	n	6
+amarillo	amarillo		노랑, 노란	n	6
+blanco	blanco		하양, 하얀	n	6
+perfecto	perfecto		완벽해!	x	6
+letra	letra		글씨; 글자	n	6	esta letra = 이 글씨
+seguro	seguro		확실한; 확실해?	n	6
+pez	pez		물고기 (살아 있는)	n	6	먹는 생선은 pescado
+feo	feo		못생긴	n	6	여성은 fea
+lindo	lindo|re lindo		예쁜 (아르헨티나에서 많이 씀); re = 엄청	x	6
+es tarde	es tarde		늦었다	x	6
+a dormir	a dormir		자자, 잘 시간이야	x	6
+le gusta	le gusta		그(그녀)는 ~이 좋다	x	6
+sonríe	sonríe		웃는다, 미소 짓는다	x	6
+cinc	cinc	*싱*크	다섯 (카탈루냐어)	c	6
+quatre	quatre	*쿠아*트러	넷 (카탈루냐어)	c	6
+u	u	*우*	하나 (카탈루냐어)	c	6
+esto	esto		이것 (가까이 있는 것)	x	2	멀리 있는 것은 eso
+fondo	fondo		바닥, 밑	x	6
+has desayunado	has desayunado		(오늘) 아침 먹었어?	n	7	오늘 일어난 일은 he/has/ha + -ado/-ido로 말한다
+he desayunado	he desayunado		(오늘) 아침 먹었어	n	7	desayunar = 아침을 먹다
+desayunar	desayunar		아침을 먹다	x	7
+he	he		(나는) ~했다 (오늘 일)	n	7	he ido = 갔다, he visto = 봤다
+has	has		(너는) ~했다 (오늘 일)	x	7
+ha	ha		(그는, 그녀는) ~했다 (오늘 일)	x	7
+hemos	hemos		(우리는) ~했다 (오늘 일)	x	7
+hemos encontrado	hemos encontrado		우리가 찾았다	n	7	encontrar = 찾다
+encontrado	encontrado		찾은	x	7
+he encontrado	he encontrado		내가 찾았다	x	7
+ido	ido		간 (he ido = 갔다)	x	7	ir = 가다
+visto	visto		본 (he visto = 봤다)	x	7	ver = 보다
+la tía Montse	la tía montse		몬세 고모할머니	x	7
+archivo	archivo		기록보관소	n	7	카탈루냐어로는 arxiu
+Arxiu	arxiu	*아*르시우	기록보관소 (카탈루냐어)	c	7	스페인어로는 archivo
+Barri Gòtic	barri gòtic	*바*리 *고*틱	고딕 지구 — 바르셀로나에서 가장 오래된 동네	p	7
+Vespa	vespa	*베*스파	베스파 — 이탈리아 스쿠터	p	7
+catedral	catedral		대성당	n	7	la catedral
+las golondrinas	las golondrinas|golondrinas		제비들	n	7
+rápidas	rápidas|rápido|rápida		빠른	n	7
+como	como		~처럼	x	2
+la tortuga	la tortuga|tortuga		거북이	n	7
+lenta	lenta|lento		느린	n	7
+la administración	la administración|administración		관청, 행정	x	7
+en qué puedo ayudarles	en qué puedo ayudarles		무엇을 도와드릴까요?	x	7	가게·관청에서 듣는 말
+relojero	relojero		시계 만드는 사람, 시계공	n	7	카탈루냐어로는 rellotger
+no es	no es		~이 아니다	x	7
+en aquella época	en aquella época		그 시절에는	x	7
+los nombres de las calles	los nombres de las calles		거리 이름들	x	7	nombre = 이름
+luego	luego		그다음에, 나중에	n	4
+es aquí	es aquí		여기예요	x	7
+relojería	relojería		시계방	n	7
+Puig	puig	*푸*치	푸치 — 몬세와 마르크 집안의 성	p	7
+taller	taller		공방, 작업장	n	7	el taller
+padre	padre		아버지	n	7	어머니는 madre
+y de su padre	y de su padre		그리고 그분의 아버지의	x	7
+qué hay ahora	qué hay ahora		지금은 뭐가 있어요?	x	7
+nada	nada		아무것도 (없다)	n	7	de nada, nada más에도 들어 있다
+parte	parte		일부, 부분	x	7
+vive	vive		살아 있다, 산다	n	7	vivir = 살다. Ya no vive = 이제 살아 있지 않다
+ya no vive	ya no vive		이제 살아 있지 않다	x	7
+ya no está	ya no está		이제 없다, 이제 안 계시다	x	7
+su reloj	su reloj		그의 시계	x	7
+todavía	todavía		아직	n	7
+funciona	funciona		작동한다, (시계가) 간다	n	7
+por qué	por qué		왜? 뭐 때문에?	n	7	대답은 porque(왜냐하면)
+por hoy	por hoy		오늘 일로, 오늘은	x	5
+he ido	he ido		(오늘) 갔다	x	7
+he visto	he visto		(오늘) 봤다	x	7
+un buzón	un buzón|buzón		우체통	n	7
+mapa	mapa|un mapa		지도	n	7
+número	número		번호, 번지	x	7
+Plaça de Sant Jaume	plaça de sant jaume	*플라*사 더 *산* *자*우메	산 자우메 광장 — 시청과 카탈루냐 정부 청사가 마주 보는 광장	p	7
+viernes	viernes		금요일	x	6
+nos ayudas	nos ayudas		우리 좀 도와줄래?	x	6
+luces	luces		조명들, 불빛들	x	6	luz의 여러 개
+voy a	voy a		나는 ~할 것이다	n	8	ir a + 동사원형 = 앞으로 할 일. Voy a comer = 먹을 거야
+voy	voy		나는 간다	x	8	ir(가다)
+vas	vas		너는 간다	x	8
+va	va		그(그녀)는 간다	x	8
+vas a	vas a		너는 ~할 것이다	x	8
+va a	va a		그(그녀)는 ~할 것이다	x	8
+ir	ir		가다	n	8	voy, vas, va, vamos
+comer	comer		먹다	x	8
+dormir	dormir		자다	x	8
+comprar	comprar		사다	n	8
+asado	asado		아사도 — 아르헨티나식 고기구이	x	8
+argentino	argentino		아르헨티나의	x	8
+noche	noche		밤	x	8
+la carne	la carne|carne		고기	n	8
+juntas	juntas|juntos		같이 (여자들끼리)	n	8	남자가 섞이면 juntos
+as	as		(말끝) -as	x	8
+Rambla	rambla	*람*블라	람블라 — 바르셀로나 구시가의 큰 산책로	p	8
+Boqueria	boqueria	보케*리*아	보케리아 시장	p	8
+ojo	ojo		눈; (손짓과 함께) 조심해!	n	8
+muchos	muchos		많은 (남성 여럿)	x	8
+carteristas	carteristas|carterista		소매치기	n	8
+medio	medio		반, 절반	x	8
+a ver	a ver		어디 보자	x	8
+hombre	hombre		남자	n	8
+mi bolso	mi bolso|bolso		내 가방	n	8	bolso = (어깨에 메는) 가방
+al ladrón	al ladrón		도둑이야!	x	8
+ladrón	ladrón		도둑	n	8
+paren a ese tipo	paren a ese tipo		저 사람 잡아요!	x	8
+qué bronca	qué bronca		진짜 열받아! (아르헨티나)	x	8
+Mossos d'Esquadra	mossos d'esquadra|mossos	*모*소스 데스*쿠아*드라	모소스 데스콰드라 — 카탈루냐 경찰	p	8
+estoy	estoy		나는 ~이다(상태), 있다	n	8	estoy bien = 괜찮아요
+estás	estás		너는 ~이다(상태), 있다	x	8	¿Estás bien? = 괜찮아?
+estás bien	estás bien		괜찮아?	n	8
+estoy bien	estoy bien		괜찮아요	x	8
+qué ha pasado	qué ha pasado		무슨 일이 있었어요?	n	8	pasar = 일어나다
+me han robado	me han robado		(누가) 나에게서 훔쳐 갔다	n	8	도둑을 모를 때 ‘그들’(han)로 말한다
+han	han		(그들은) ~했다 (오늘 일)	x	8
+robado	robado		훔친	x	8
+cómo es	cómo es		어떻게 생겼어요?	n	8
+de tela	de tela|tela		천으로 된	x	8
+pequeño	pequeño|pequeña		작은	n	8	반대는 grande
+qué hay en	qué hay en		~에 뭐가 있어요?	x	8
+móvil	móvil		휴대폰	n	8	스페인에서는 móvil, 중남미에서는 celular
+cartera	cartera		지갑	n	8
+una copia del pasaporte	una copia del pasaporte		여권 사본	x	8
+la denuncia	la denuncia|denuncia		신고(서)	n	8
+para el seguro y el consulado	para el seguro y el consulado		보험과 영사관용으로	x	8
+lo siento	lo siento		미안해요, 유감이에요	n	8	무언가를 잃은 사람에게 하는 말
+lo siento mucho	lo siento mucho		정말 유감이에요	x	8
+usted	usted		당신 (높여 부르는 말)	n	8	tú보다 공손하다
+habla	habla		말한다	x	8	hablar = 말하다
+mañana voy a buscar	mañana voy a buscar		내일 찾아볼게	x	8
+buscar	buscar		찾다	n	8
+uno viejo	uno viejo		오래된 것 하나	x	8	viejo = 오래된, 늙은
+viejo	viejo|viejas|vieja|viejos		오래된	n	8
+otra cosa	otra cosa		하나 더, 다른 것	x	8
+sótano	sótano		지하실	n	8
+cajas	cajas|caja		상자	n	8
+mi padre no las abre nunca	mi padre no las abre nunca		아버지는 한 번도 안 열어요	x	8	nunca = 한 번도, 절대
+nunca	nunca		한 번도 ~않다, 절대	x	8
+abrirlas	abrirlas		그것들을 열다	x	8	abrir = 열다
+abrir	abrir		열다	x	8
+Miércoles	miércoles		수요일	x	8
+tengo	tengo		나는 가지고 있다	n	5
+he hablado	he hablado		(오늘) 말했다	x	8
+solo	solo		오직, ~만	x	8
+ver	ver		보다	x	8
+ya no existe	ya no existe		이제 없다, 더는 존재하지 않는다	n	7
+época	época		시절, 시대	x	7
+tampoco	tampoco		~도 아니다 (부정의 ‘~도’)	x	7	también의 부정
+el viento es caliente	el viento es caliente		바람이 뜨겁다	x	7	caliente = 뜨거운
+estrechas	estrechas|estrecha|estrecho		좁은	n	7
+los edificios	los edificios|edificios		건물들	n	7	el edificio
+altos	altos|alto|alta		높은, 키가 큰	n	7
+oscuros	oscuros|oscuro		어두운	x	7
+no sonríe	no sonríe		웃지 않는다	x	7
+y ahora	y ahora		그리고 지금은	x	7
+hace mucho calor	hace mucho calor		아주 덥다	x	7
+la plaza no tiene sombra	la plaza no tiene sombra		광장에는 그늘이 없다	x	7	sombra = 그늘
+el reloj hace tic tac	el reloj hace tic tac		시계가 똑딱거린다	x	7
+tic	tic|tac	*틱*	똑딱	x	7
+Esquadra	esquadra	데스*쿠아*드라	(Mossos d'Esquadra의 일부)	p	8
+hace	hace		한다; (날씨가) ~하다	x	5	hace calor = 덥다
+abre	abre		연다	x	8	abrir = 열다
+consulado	consulado		영사관	x	8
+policía	policía		경찰	n	8	la policía
+larga	larga|largo		긴	x	8
+ancha	ancha|ancho		넓은	x	8
+huele a	huele a		~냄새가 난다	x	8
+fruta	fruta		과일	x	8
+jamón	jamón		하몽 (스페인식 생햄)	x	8
+no tengo	no tengo		나는 없다, 가지고 있지 않다	x	8
+la llave está aquí	la llave está aquí		열쇠는 여기 있다	x	8
+una hora	una hora		한 시간	x	8
+estoy cansada	estoy cansada		피곤하다	x	8
+negra	negra|negro		검은	x	8
+come	come		먹는다	x	8	comer = 먹다
+grande	grande		큰	n	8	반대는 pequeño
+me levanto	me levanto		(나는) 일어난다	n	9	levantarse. 직역하면 ‘나를 들어 올린다’
+te levantas	te levantas		(너는) 일어난다	x	9	¿A qué hora te levantas? = 몇 시에 일어나?
+levantar	levantar		들어 올리다	x	9
+levanto	levanto|levantas	*레*반토	들어 올린다	x	9
+temprano	temprano		일찍	n	9	반대는 tarde
+tarde	tarde		늦게; 오후	n	9	Es tarde = 늦었다. por la tarde = 오후에
+seis	seis		여섯, 6	n	9
+no puedo dormir	no puedo dormir		잠을 못 자겠어요	x	9	puedo = 할 수 있다
+puedo	puedo		나는 할 수 있다	n	9	poder
+duermes	duermes		너는 잔다	x	9	dormir
+por	por		~때문에; ~로	x	9
+me	me		나를, 나에게	x	9	Marc me da = 마르크가 나에게 준다
+te	te		너를, 너에게	x	9
+para ti	para ti		너를 위해, 당신 거예요	x	8
+es viejo pero funciona	es viejo pero funciona		오래됐지만 된다	x	9
+como todo	como todo		모든 것처럼	x	9
+he abierto	he abierto		(오늘·방금) 열었다	n	9	abrir의 완료형은 abierto(불규칙)
+abierto	abierto		열린	x	9	반대는 cerrado
+una caja	una caja		상자 하나	x	9
+esta noche	esta noche		오늘 밤; (방금 지나간) 간밤	n	8
+octubre	octubre		10월	x	9
+reloj de pie	reloj de pie		괘종시계 (직역: 서 있는 시계)	n	9	pie = 발
+no se vende	no se vende		팔지 않음	n	9	vender = 팔다
+se	se		(재귀·비인칭) 자기를; ~되다	x	9
+vende	vende		판다	x	9
+solo piezas	solo piezas|piezas|pieza		부품뿐	x	9	pieza = 부품, 조각
+el reloj no está aquí	el reloj no está aquí		시계는 여기 없다	x	9
+tengo trabajo	tengo trabajo		일이 있어요	x	9
+trabajo	trabajo		일; (나는) 일한다	n	9	trabajar = 일하다
+trabaja	trabaja		일한다	x	9
+Born	born	*보*른	보른 — 고딕 지구 옆의 오래된 동네	p	9
+vienes	vienes		너는 온다; (물음) 같이 갈래?	n	9	venir = 오다
+necesito	necesito		나는 ~이 필요하다	n	9
+necesitas	necesitas		너는 ~이 필요하다	x	9
+ayuda	ayuda		도움	n	9
+aire	aire		공기, 바람	x	9
+más tiendas	más tiendas|tiendas|tienda		가게 (여럿)	x	9	tienda = 가게
+pequeñas	pequeñas		작은 (여성 여럿)	x	9
+bares	bares|bar		바, 술집 겸 카페	x	9
+destornillador	destornillador		드라이버	n	9
+martillo	martillo		망치	n	9
+aceite	aceite		기름, 올리브유	n	9
+tornillo	tornillo		나사	n	9
+sus manos	sus manos|manos|mano		그의 손	x	9	mano = 손(여성)
+grandes	grandes		큰 (여럿)	x	9
+tranquilas	tranquilas|tranquilo		조용한, 차분한	x	9
+qué haces	qué haces		뭐 해요?	n	9	hacer = 하다
+cuál es tu trabajo	cuál es tu trabajo		일이 뭐예요?	x	9
+una oficina	una oficina|oficina		사무실	n	9
+doce	doce		열둘, 12	x	9
+un día	un día|día		하루, 날	n	9
+me ducho	me ducho		샤워한다	n	9	ducharse
+me visto	me visto		옷을 입는다	n	9	vestirse
+tomo	tomo		탄다, 먹는다, 잡는다	n	9	Tomo el metro = 지하철을 탄다
+me acuesto	me acuesto		(잠자리에) 눕는다, 잔다	n	9	acostarse
+acuesto	acuesto		눕힌다	x	9
+a la una	a la una		한 시에	x	9	1시만 la una (단수)
+desayuno	desayuno		아침을 먹는다; 아침 식사	x	9
+busco	busco		찾는다	x	9	buscar
+mejor	mejor		더 나은, 더 좋은	n	9
+quiero ver una cosa	quiero ver una cosa		보고 싶은 게 있어요	x	9
+cosa	cosa		것, 물건	x	9
+Santa Maria del Mar	santa maria del mar|santa maría del mar	*산*타 마*리*아 델 *마*르	산타 마리아 델 마르 — 보른의 성당	p	9
+domingo	domingo		일요일	n	9
+el silencio es grande	el silencio es grande		아주 조용하다 (직역: 침묵이 크다)	x	9	silencio = 침묵
+jueves	jueves		목요일	x	9
+da	da		준다	x	9	dar = 주다
+un libro	un libro|libro		책, 장부	x	9
+aprendo	aprendo		나는 배운다	x	9	aprender
+o no	o no		아니면 말고	x	9
+vacío	vacío		바시오 — 아르헨티나의 소고기 부위 이름 (스페인에서는 falda)	x	8	vacío = 비어 있는
+falda	falda		(스페인) 소고기 양지 부위; 치마	x	8
+aquí se llama	aquí se llama		여기서는 ~라고 해요	x	8
+contenta	contenta|contento		기쁜, 신난	n	8
+yo también	yo también		나도	x	8
+vos tenés	vos tenés		너는 가지고 있다 (아르헨티나식)	x	8	스페인에서는 tú tienes
+adelante	adelante		앞에, 앞으로	x	8
+un kilo y medio	un kilo y medio		1.5킬로	x	8
+un hombre	un hombre		한 남자	x	8
+esperamos y esperamos	esperamos y esperamos		기다리고 또 기다린다	x	8
+te voy a traer	te voy a traer		너에게 가져다줄게	x	8	traer = 가져오다
+quemada	quemada|quemado		탄, 그을린	x	8
+voy a tener	voy a tener		가지게 될 것이다	x	8
+las campanas suenan once veces	las campanas suenan once veces		종이 열한 번 울린다	x	10	campana = 종, vez = 번
+playa	playa		해변, 바닷가	n	10	la playa
+mis amigos	mis amigos|amigos|amigo		내 친구들	n	10	mi의 여럿은 mis
+vení	vení		와 (아르헨티나식)	x	10	스페인에서는 ven
+ven	ven		와!	x	10	venir의 명령
+Barceloneta	barceloneta	바르셀로*네*타	바르셀로네타 — 옛 어부 동네이자 해변	p	10
+el mar es azul	el mar es azul		바다가 파랗다	x	10
+la arena está caliente	la arena está caliente|arena|caliente		모래가 뜨겁다	x	10	arena = 모래, caliente = 뜨거운
+Luca	luca	*루*카	루카 — 이탈리아에서 온 발레의 친구	p	10
+Sofía	sofía	소*피*아	소피아 — 멕시코에서 온 발레의 친구	p	10
+Pau	pau	*파*우	파우 — 바르셀로나 토박이 친구	p	10
+hace mucho sol	hace mucho sol		햇볕이 아주 세다	x	10
+sol	sol		해, 햇볕	n	10	el sol
+il sole	il sole	일 *솔*레	해 (이탈리아어)	f	10
+más fuerte que	más fuerte que		~보다 더 센	n	10	más + 형용사 + que = ~보다 더 ~한
+menos fuerte que	menos fuerte que		~보다 덜 센	n	10	menos + 형용사 + que = ~보다 덜 ~한
+fuerte	fuerte		센, 강한	n	10
+que	que		~보다; ~라는	x	10
+Milano	milano	밀*라*노	밀라노 (이탈리아의 도시)	p	10
+México	méxico	*메*히코	멕시코	p	10
+verdad	verdad		정말; (물음) 그렇지?	n	10
+la comida es más picante	la comida es más picante|comida|picante		음식이 더 맵다	x	10	comida = 음식, picante = 매운
+caro	caro|cara		비싼	n	10	반대는 barato
+limpio	limpio		깨끗한	x	10
+el agua está más fría	el agua está más fría|fría|frío		물이 더 차갑다	x	10	agua는 여성이지만 앞에 el을 쓴다
+Busan	busan	*부*산	부산	p	10
+espalda	espalda		등	n	10	la espalda
+roja	roja		빨간 (여성)	x	10
+no tenés crema	no tenés crema|crema		선크림 없어? (아르헨티나식)	x	10
+me duele	me duele		(나는) ~이 아프다	n	10	아픈 곳이 주어. Me duele la cabeza = 머리가 아파
+me duelen	me duelen		(나는) ~들이 아프다	x	10	아픈 곳이 여럿일 때
+duele	duele|duelen		아프다	x	10
+los hombros	los hombros|hombros|hombro		어깨	n	10
+dice	dice		말한다	x	10	decir = 말하다
+he leído	he leído		(방금) 읽었다	x	10	leer = 읽다
+leído	leído		읽은	x	10
+Las Palmas de Gran Canaria	las palmas de gran canaria|las palmas	라스 *팔*마스 데 *그란* 카*나*리아	라스팔마스 — 카나리아 제도의 큰 항구 도시	p	10
+puerto	puerto		항구	n	10
+Islas Canarias	islas canarias	*이*슬라스 카*나*리아스	카나리아 제도 — 아프리카 서쪽 대서양의 스페인 섬들	p	10
+isla	isla		섬	n	10
+más cerca de	más cerca de		~에 더 가까이	x	10
+África	áfrica	*아*프리카	아프리카	p	10
+viene	viene		온다	x	10	venir = 오다. ¿Por qué viene? = 왜 와요?
+un libro de amor	un libro de amor|amor		사랑 책	x	10	amor = 사랑
+interesante	interesante|menos interesante		재미있는	x	10
+campanas	campanas|campana		종	x	10
+qué temprano	qué temprano		엄청 일찍이네!	x	9
+no duermes	no duermes		잠을 못 자? (직역: 안 자?)	x	9
+no puedo dormir más	no puedo dormir más		더는 못 자요	x	9
+montse sabe todo	montse sabe todo		몬세는 다 안다	x	9
+hay tres cajas	hay tres cajas		상자가 세 개 있다	x	9
+una está abierta	una está abierta		하나는 열려 있다	x	9
+no cabe	no cabe		들어가지 않는다	x	9	caber = 들어가다
+tomar el aire	tomar el aire		바람을 쐬다	x	9
+está cerca	está cerca		가까워요	x	9
+muy cerca	muy cerca		아주 가까워요	x	9
+hay mucho silencio	hay mucho silencio		아주 조용하다	x	9
+voy al taller	voy al taller		공방에 간다	x	9
+me pregunta	me pregunta		나에게 묻는다	x	9	preguntar = 묻다
+con él	con él		그와 함께	x	9
+yo tampoco	yo tampoco		나도 (안 한다)	x	9
+Montjuïc	montjuïc	몬주*익*	몬주익 — 항구 옆의 언덕, 꼭대기에 성이 있다	p	11
+por el aire	por el aire		하늘로, 공중으로	x	11
+desde	desde		~에서, ~부터	n	11
+veo	veo		나는 본다	n	11	ver = 보다
+ve	ve		본다	x	11
+el puerto	el puerto		항구	x	11
+tu barco	tu barco|barco|barcos|el barco		배	n	11	el barco
+lee la frase dos veces	lee la frase dos veces|lee|frase|veces		그 문장을 두 번 읽는다	x	11	leer = 읽다, frase = 문장
+después	después		그다음에, 나중에	n	11
+el teleférico	el teleférico|teleférico		케이블카	n	11
+cruza	cruza		건넌다	x	11	cruzar = 건너다
+hasta	hasta		~까지	n	11
+tengo miedo	tengo miedo		무서워요	n	11	miedo = 두려움
+miedo	miedo		두려움	x	11
+sin	sin		~없이	n	11	반대는 con
+eso es diferente	eso es diferente|diferente		그건 달라요	x	11	diferente = 다른
+nerviosa	nerviosa|nervioso		떨리는, 긴장한	n	11	남자는 nervioso
+contento	contento		기쁜 (남자)	x	11
+yo también estoy contento	yo también estoy contento		나도 기뻐요	x	11
+montaña	montaña		산	n	11
+árboles	árboles|árbol		나무	n	11
+jardines	jardines|jardín		정원	x	11
+museos	museos|museo		박물관	n	11
+un museo del mar	un museo del mar		바다 박물관	x	11
+documentos	documentos|documento		서류, 문서	x	11
+vamos a ir	vamos a ir		(우리는) 갈 것이다	n	11
+martes	martes		화요일	n	11
+cuándo	cuándo		언제	n	11
+volver	volver		돌아가다, 돌아오다	n	11
+billete de vuelta	billete de vuelta|vuelta		돌아가는 표	n	11
+solo de ida	solo de ida|ida		가는 표만, 편도만	x	11	ida = 가는 것
+lo dice él	lo dice él		그가 그렇게 말한다	x	11
+lo	lo		그것을	x	11
+qué padre conocerte	qué padre conocerte|qué padre		만나서 너무 좋다! (멕시코식)	x	10	qué padre = 멋지다(멕시코)
+el de	el de		~의 것	x	10	el de México = 멕시코의 것(햇볕)
+bueno	bueno		좋은; (말머리) 그래, 음	n	2
+más fría que en mi cabeza	más fría que en mi cabeza|cabeza		생각보다 더 차갑다 (직역: 내 머릿속보다)	x	10	cabeza = 머리
+no tenés protector	no tenés protector|protector		선크림 없어? (아르헨티나식)	x	10
+la campanas suenan	las campanas suenan|suenan		종이 울린다	x	10
+vale tiene tres amigos	vale tiene tres amigos		발레는 친구가 셋이다	x	10
+mi pregunta es más grande que el mar	mi pregunta es más grande que el mar|pregunta		내 물음은 바다보다 크다	x	10	pregunta = 물음
+la isla de mi abuela	la isla de mi abuela		할머니의 섬	x	10
+ya no veo	ya no veo		이제 보이지 않는다	x	11
+has venido	has venido		(너는) 왔다	x	11	venir의 완료형 venido
+Transbordador Aeri	transbordador aeri	트란스보르다*도*르 아*에*리	항구 케이블카의 카탈루냐어 이름	c	11
+el Museu Marítim	el museu marítim|museu marítim	엘 무*세*우 마*리*팀	해양박물관 (카탈루냐어 이름)	p	11
+tiene una biblioteca	tiene una biblioteca|biblioteca		도서실이 있다	x	11
+con libros y papeles de barcos	con libros y papeles de barcos|papeles|libros		배에 관한 책과 서류가 있는	x	11
+he tenido miedo	he tenido miedo		무서웠다 (오늘)	x	11
+me ha preguntado	me ha preguntado		나에게 물었다 (오늘)	x	11
+ya no ve	ya no ve		이제 보지 않는다	x	11
+Colón	colón	콜*론*	콜럼버스 (스페인어 이름)	p	12
+señala	señala		가리킨다	n	12	señalar = 가리키다
+dicen que	dicen que|dicen		~라고들 한다	x	12
+América	américa	아*메*리카	아메리카	p	12
+Mallorca	mallorca	마*요*르카	마요르카 — 바르셀로나 앞바다의 섬	p	12
+más o menos	más o menos		대충, 그럭저럭	n	12
+es un edificio muy viejo de piedra	es un edificio muy viejo de piedra|edificio|piedra		아주 오래된 돌 건물이다	x	12	piedra = 돌
+bibliotecario	bibliotecario		도서실 사서	x	12
+un barco de pesca coreano	un barco de pesca coreano|pesca		한국 어선	x	12	pesca = 고기잡이
+los documentos del puerto	los documentos del puerto		항구 서류	x	12
+los periódicos	los periódicos|periódicos|periódico|el periódico		신문	n	12
+publica	publica		싣는다, 펴낸다	x	12
+todos los barcos	todos los barcos|todos		모든 배	x	12
+todos los días	todos los días|días		날마다	n	12
+pesquero	pesquero		어선	x	12
+los tres miramos la pantalla	los tres miramos la pantalla|miramos|pantalla		우리 셋은 화면을 본다	x	12	pantalla = 화면
+marzo	marzo		3월	x	12
+llegó	llegó		도착했다 (과거)	n	12	llegar의 과거. 이 책에서 처음 나오는 과거형
+llegar	llegar		도착하다	n	12
+llega	llega		도착한다	x	12
+Dong-Hae 7	dong-hae	*동*해	동해호 — 할머니 가족이 탄 한국 어선	p	12
+procedente de	procedente de|procedente		~에서 온	x	12
+para reparación en el dique	para reparación en el dique|reparación|dique		도크에서 수리하려고	x	12	dique = 배를 고치는 도크
+tripulación y familias	tripulación y familias|tripulación|familias		선원과 가족들	n	12
+pasado	pasado		과거; 지나간	n	12	pasado mañana = 모레
+presente	presente		현재	x	12
+hace mucho tiempo	hace mucho tiempo|tiempo		오래전에	n	12
+noviembre	noviembre		11월	x	12
+salió	salió		떠났다 (과거)	n	12	salir의 과거
+salir	salir		나가다, 떠나다	n	12
+con destino a	con destino a|destino		~행	x	12
+para eso estamos	para eso estamos		그러라고 있는 거죠	x	12
+suerte	suerte		행운; 행운을 빌어요	n	12
+me acuerdo del nombre	me acuerdo del nombre|me acuerdo|nombre		이름이 기억난다	n	12	acordarse = 기억하다
+acuerdo	acuerdo		기억한다; 동의	x	12
+la niña	la niña|niña		여자아이	n	12	남자아이는 el niño
+mi madre	mi madre|madre		엄마, 어머니	n	12	tu madre = 너희 엄마
+jugaba	jugaba		놀곤 했다, 놀았다	n	12	jugar의 과거(계속된 일)
+el patio	el patio|patio		안마당	n	12
+mis gatos	mis gatos|gatos|gato		내 고양이들	x	12
+mis	mis		나의 (여럿 앞)	x	12
+septiembre	septiembre		9월	x	12
+he aprendido	he aprendido|aprendido		(오늘) 배웠다	x	12
+vivió	vivió		살았다 (과거)	n	12
+ocho meses	ocho meses|meses		여덟 달	x	12
+hizo	hizo		만들었다, 했다 (과거)	n	12	hacer의 과거
+antes de la despedida	antes de la despedida|despedida		작별 전에	x	12	despedida = 작별
+sabía	sabía		알았다 (과거)	x	12	saber
+voy a llamar	voy a llamar|llamar		전화할 것이다	x	12	llamar = 전화하다; 부르다
+pasado mañana	pasado mañana		모레	x	12
+esperé	esperé|esperaste|esperó|espero		기다렸다 (esperar의 과거)	n	13	esperé 내가, esperaste 네가, esperó 그가
+esperaba	esperaba		기다리고 있었다 (계속된 과거)	n	13
+era	era		~였다 (계속된 과거)	n	13	ser의 과거. fue는 한 번 끝난 일
+fue	fue|fueron|fuimos		~였다; 갔다 (한 번 끝난 과거)	n	13	ser·ir의 과거가 같다
+había	había		있었다 (hay의 과거)	n	13
+estaba	estaba|estaban		있었다, ~한 상태였다	n	13	estar의 과거
+tenía	tenía|tenían		가지고 있었다, ~였다	n	12
+dijo	dijo|dije|dijiste|dijimos		말했다	n	13	decir의 과거
+llegaste	llegaste		네가 도착했다	x	13
+llegas	llegas		네가 도착한다	x	13
+vino	vino		왔다	n	13	venir의 과거. (같은 꼴로 ‘포도주’라는 뜻도 있다)
+hizo café	hizo café		커피를 끓였다	x	13
+se fue	se fue		가 버렸다, 떠났다	x	13
+no quería	no quería|quería		원하지 않았다	x	13	querer의 과거
+lo sabía	lo sabía		나는 그걸 알고 있었다	x	13
+el piso	el piso|piso		아파트, 집	x	13
+un diccionario grande	un diccionario grande|diccionario		큰 사전	x	13
+la mesa de la cocina	la mesa de la cocina|mesa|cocina		부엌 식탁	n	13	mesa = 탁자, cocina = 부엌
+leemos	leemos		(우리는) 읽는다	x	13
+una carta entera	una carta entera|entera		편지 한 통 전부	x	13	entero = 전부의
+una sola	una sola		딱 하나	x	13
+cuál	cuál		어느 것	n	13
+tú decides	tú decides|decides		네가 정해	x	13	decidir = 정하다
+miré	miré|miraste|miraba|mirando		보았다	n	13	mirar의 과거
+los sobres	los sobres|sobres|sobre		봉투	n	13	(sobre는 ‘~위에’라는 뜻도 있다)
+inclinada	inclinada		기울어진	x	13
+todos menos uno	todos menos uno		하나만 빼고 전부	x	13
+el último	el último|último		마지막	x	13
+no pensé en eso	no pensé en eso|pensé|pensar		그건 생각하지 않았다	x	13	pensar = 생각하다
+elegí	elegí		골랐다	x	13	elegir
+el tercero	el tercero|tercero|tercera		세 번째	x	13
+una mancha	una mancha|mancha		얼룩	x	13
+una esquina	una esquina|esquina		모서리, 모퉁이	x	13
+me gustó	me gustó|gustó		마음에 들었다	x	13	gustar의 과거
+alguien	alguien		누군가	n	13	반대는 nadie
+leyó	leyó|leí		읽었다	n	13	leer의 과거
+abrí	abrí		열었다	x	13
+puso	puso		놓았다	n	13	poner의 과거
+entre los dos	entre los dos|entre		둘 사이에	x	13
+tardamos	tardamos		(시간이) 걸렸다	x	13	tardar
+no me traducía	no me traducía|traducía		번역해 주지 않았다	x	13
+explicaba	explicaba|explicó		설명했다	x	13	explicar
+una por una	una por una		하나씩	x	13
+escribía	escribía|escribió		썼다	x	13	escribir의 과거
+cuando	cuando		~할 때	n	13
+no entendía	no entendía|entendía|entender		이해하지 못했다	x	13
+un verbo	un verbo|verbo		동사	x	13
+lo decía	lo decía|decía		그것을 말하곤 했다	x	13
+al final	al final|final		마지막에	x	13
+mi cuaderno	mi cuaderno|cuaderno		내 수첩	n	13
+esta es	esta es		이게 그거다	x	13
+diciembre	diciembre		12월	x	13
+te acuerdas	te acuerdas|acuerdas		기억나?	n	13	acordarse
+la iglesia	la iglesia|iglesia		성당, 교회	n	13
+mayo	mayo		5월	x	13
+el estanque	el estanque|estanque		연못 (광장·공원의 인공 연못)	n	13	lago는 ‘호수’
+delante de	delante de|delante		~앞에	n	13
+muchas grúas	muchas grúas|grúas|grúa		크레인들	x	13
+yo solo miraba	yo solo miraba		나는 거리만 보고 있었다	x	13
+con la niña en brazos	con la niña en brazos|brazos		아이를 안고	x	13	brazo = 팔
+la niña no quería dormir	la niña no quería dormir		아이가 자려고 하지 않았다	x	13
+mis primeras palabras	mis primeras palabras|primeras|primera|palabras|palabra		내 첫 말들	x	13	palabra = 낱말, 말
+en coreano	en coreano		한국어로	x	13
+las aprendí	las aprendí|aprendí|aprendió|aprendía		배웠다	x	13
+te reíste	te reíste|reíste|se rieron|rieron		웃었다	x	13	reírse
+caminamos	caminamos		(우리는) 걸었다	x	13
+alrededor de	alrededor de|alrededor		~주위를	x	13
+las torres	las torres|torres		탑들	n	13
+no está terminada	no está terminada|terminada|terminado|terminar|terminarla|terminó		완성되지 않았다	x	13	terminar = 끝내다
+sin terminar	sin terminar		완성되지 않은	x	13
+hace frío	hace frío		춥다	n	13	반대는 hace calor
+no hay nadie	no hay nadie|nadie		아무도 없다	n	13
+escríbeme	escríbeme		나에게 편지해 줘	x	13
+tres veces	tres veces|vez		세 번	x	13	vez = 번
+la primera vez	la primera vez		처음	x	13
+la segunda vez	la segunda vez|segunda		두 번째	x	13
+en voz baja	en voz baja|voz|baja		낮은 목소리로	x	13
+no pude	no pude|pude		할 수 없었다	x	13	poder의 과거
+nunca hablaba mucho	nunca hablaba mucho|hablaba|habló		말을 많이 하지 않았다	x	13
+así	así		그렇게, 이렇게	x	13
+cosas	cosas		것들	x	13
+le pregunté	le pregunté|pregunté|le		그에게 물었다	x	13
+me explicó	me explicó		나에게 설명했다	x	13
+una cosa que pasó una vez	una cosa que pasó una vez|pasó		한 번 일어난 일	x	13
+cómo	cómo		어떻게	x	13
+una persona	una persona|persona		사람	x	13
+durante	durante		~동안	n	13
+los dos estaban	los dos estaban		둘 다 있었다	x	13
+pasados	pasados		과거들	x	13
+fuimos	fuimos		우리는 갔다	x	13
+tomamos	tomamos		탔다	x	13
+el bolsillo	el bolsillo|bolsillo		주머니	x	13
+al lado de	al lado de|lado		~옆에	n	13
+pocas	pocas		적은	x	13
+al otro lado	al otro lado|otro		건너편에	x	13
+enorme	enorme		거대한	n	13
+las fotos	las fotos|fotos|foto		사진	n	13
+subían al cielo	subían al cielo|subían|cielo		하늘로 솟아 있었다	x	13	cielo = 하늘
+como dedos de piedra	como dedos de piedra|dedos		돌 손가락처럼	x	13
+al revés	al revés|revés		거꾸로	x	13
+con cámaras	con cámaras|cámaras		카메라를 든	x	13
+igual que	igual que		~와 똑같이	x	13
+buscó	buscó		찾았다	x	13
+una foto vieja	una foto vieja		오래된 사진	x	13
+de los años setenta	de los años setenta|setenta		70년대의	x	13
+unas pocas torres	unas pocas torres|unas		탑 몇 개	x	13
+nada en el centro	nada en el centro|centro		가운데에는 아무것도	x	13
+un esqueleto	un esqueleto|esqueleto		뼈대	x	13
+cuerpo	cuerpo		몸	x	13
+color	color		색	x	13
+ventanas	ventanas|ventana		창문	x	13
+me senté	me senté|senté|se sentó|sentó		앉았다	n	13
+un banco	un banco|banco		벤치; 은행	x	13
+se rieron	se rieron		(그들은) 웃었다	x	13
+durante un rato	durante un rato|rato		한동안	x	13
+mirando	mirando		보면서	x	13
+sabes qué quiere decir	sabes qué quiere decir|sabes|quiere decir|quiere|decir		무슨 뜻인지 알아?	x	13
+que él no estaba terminado	que él no estaba terminado		그가 완성되지 않았다는 것	x	13
+otra vez	otra vez|otra		다시, 또	n	13
+el marido de mi abuela	el marido de mi abuela|marido		할머니의 남편	x	13	marido = 남편
+un marinero del barco	un marinero del barco|marinero		배의 선원	x	13
+murió	murió		세상을 떠났다	n	13	morir의 과거
+siete	siete		일곱, 7	x	13
+callado	callado		말이 없는	x	13
+olía a mar y a tabaco	olía a mar y a tabaco|olía|tabaco		바다와 담배 냄새가 났다	x	13
+lo quería mucho	lo quería mucho		그를 많이 사랑했다	x	13
+no sabía qué pensar	no sabía qué pensar		무슨 생각을 해야 할지 몰랐다	x	13
+estaba casada	estaba casada|casada		결혼한 상태였다	x	13
+en cada carta	en cada carta|cada		편지마다	x	13
+vio	vio		보았다	n	13	ver의 과거
+no tienes que entender todo	no tienes que entender todo		다 이해할 필요는 없다	x	13	tener que = ~해야 한다
+en la boca de Marc	en la boca de marc|boca		마르크의 입에서	x	13
+sonreí	sonreí		웃었다, 미소 지었다	n	13
+ella	ella		그녀	n	13
+esa	esa|ese		그 (멀리 있는 것)	x	13
+estar	estar		있다, ~한 상태다	n	13	estoy, estás, está…
+frases	frases|frase		문장	x	13
+misma	misma|mismo		같은	x	13
+las paredes son gruesas	las paredes son gruesas|paredes|gruesas		벽이 두껍다	x	12
+el techo es muy alto	el techo es muy alto|techo		천장이 아주 높다	x	12
+rojo y dorado	rojo y dorado|dorado		빨갛고 금빛인	x	12
+mi abuelo es pescador	mi abuelo es pescador|pescador		할아버지는 어부다	x	12
+en los periódicos de 1978	en los periódicos de		1978년 신문에는	x	12
+hay muchos artículos	hay muchos artículos|artículos		기사가 많다	x	12
+muchos nombres	muchos nombres|nombres		이름이 많다	x	12
+ayer	ayer		어제	n	12
+a nuestro puerto	a nuestro puerto		우리 항구에	x	12
+para reparaciones en dique seco	para reparaciones en dique seco|reparaciones|seco		마른 도크에서 수리하려고	x	12
+a bordo viajan	a bordo viajan|a bordo|viajan		배에 타고 있다	x	12
+además de	además de|además		~말고도	x	12
+varias familias	varias familias|varias		여러 가족	x	12
+hoy ha llegado	hoy ha llegado|ha llegado		오늘 도착했다	x	12
+terminado	terminado		끝난	x	12
+llego	llego		나는 도착한다	x	12
+el domingo doce	el domingo doce		12일 일요일에	x	12
+vivir	vivir		살다	x	12
+hacer	hacer		하다, 만들다	n	8
+están	están		(그들은) 있다	x	12
+llamé	llamé|llamó|llamado		전화했다; 불렀다	n	14	llamar의 과거
+eran las cuatro	eran las cuatro|eran		네 시였다	x	14	시각의 과거는 era/eran
+conté	conté		이야기했다	x	14	contar
+alrededor	alrededor		주위에	x	13
+se oía	se oía|oía|oí		들렸다	x	14	oír = 듣다
+colgué el teléfono	colgué el teléfono|colgué|teléfono		전화를 끊었다	x	14	teléfono = 전화
+me quedé	me quedé|quedé|nos quedamos|quedamos		머물렀다, 남아 있었다	n	14	quedarse
+la cama	la cama|cama		침대	x	14
+un rato largo	un rato largo		한참 동안	x	14
+estuvo	estuvo		있었다 (한 번 끝난)	n	14	estar의 과거
+toda la noche	toda la noche		밤새	n	14
+hospital	hospital		병원	n	14	el hospital
+aquella	aquella		그 (먼 과거의)	x	14	aquella tarde = 그날 오후
+la cuarta carta	la cuarta carta|cuarta		네 번째 편지	x	14
+ya no necesitaba	ya no necesitaba|necesitaba		더는 필요 없었다	x	14
+tardé una hora	tardé una hora|tardé		한 시간 걸렸다	x	14
+pasé por delante	pasé por delante|pasé		앞을 지나갔다	x	14
+me acordé	me acordé|acordé|se acuerda|acuerda		기억났다	x	14
+julio	julio		7월	x	14
+hacía	hacía		(날씨가) ~했다; 하고 있었다	n	14	Hacía calor = 더웠다
+llamó a mi puerta	llamó a mi puerta		우리 집 문을 두드렸다	x	14
+fiebre	fiebre		열 (몸의)	n	14	tener fiebre = 열이 나다
+no respiraba bien	no respiraba bien|respiraba		숨을 잘 못 쉬었다	x	14
+estabas muy pálida	estabas muy pálida|estabas|pálida		너는 아주 창백했다	x	14
+no había teléfono	no había teléfono		전화가 없었다	x	14
+la furgoneta	la furgoneta|furgoneta		승합차	x	14
+funcionaba	funcionaba		작동했다	x	14
+subiste	subiste		너는 올라탔다	x	14	subir
+conducía	conducía		운전하고 있었다	x	14	conducir
+cantabas	cantabas|cantaba|canta|cantar|cantado|cantarla		노래했다	n	14	cantar = 노래하다
+una canción	una canción|canción		노래	n	14
+unos edificios muy bonitos	unos edificios muy bonitos|unos|bonitos		아주 예쁜 건물들	x	14
+como palacios	como palacios|palacios|palacio		궁전처럼	x	14
+los médicos	los médicos|médicos|médico		의사들	n	14
+se llevaron	se llevaron|llevaron		데려갔다	x	14
+esperamos	esperamos		기다렸다; 기다린다	x	8
+no hablabas	no hablabas|hablabas		말하지 않았다	x	14
+una enfermera	una enfermera|enfermera		간호사	x	14
+ya está	ya está		이제 됐어요	x	14
+lloraste	lloraste|lloró|llorar|llora		울었다	n	14	llorar = 울다
+la única vez	la única vez|única		유일한 때	x	14
+te vi	te vi|vi		너를 보았다	x	14
+el sol estaba saliendo	el sol estaba saliendo|saliendo		해가 뜨고 있었다	x	14
+detrás de	detrás de|detrás		~뒤에	n	14
+nos reímos	nos reímos|reímos		우리는 웃었다	x	14
+muy cansados	muy cansados|cansados		아주 지쳐서	x	14
+la última frase	la última frase|última		마지막 문장	x	14
+cocinaba	cocinaba		요리하곤 했다	x	14
+le enseñé	le enseñé|enseñé		그녀에게 보여 줬다	x	14
+la fecha	la fecha|fecha		날짜	x	14
+se quitó el delantal	se quitó el delantal|quitó|delantal		앞치마를 벗었다	x	14
+un autobús	un autobús|autobús		버스	n	14
+bajamos	bajamos|bajó|bajo		내렸다	x	14
+una avenida larga	una avenida larga|avenida		긴 대로	x	14
+mosaicos	mosaicos		모자이크	x	14
+una cúpula	una cúpula|cúpula		둥근 지붕	x	14
+parecía	parecía		~처럼 보였다	x	14
+los enfermos	los enfermos|enfermos		환자들	x	14
+entramos	entramos		들어갔다	x	14
+caminos	caminos|camino		길	x	14
+los pabellones	los pabellones|pabellones|pabellón		별관 건물들	x	14
+su torre	su torre|torre		자기 탑	x	14
+sus colores	sus colores|sus|colores		자기 색깔들	x	14
+daban sombra	daban sombra|daban		그늘을 드리웠다	x	14
+triste	triste		슬픈	n	14
+al mismo tiempo	al mismo tiempo		동시에	x	14
+caminó	caminó		걸었다	x	14
+buscaba algo	buscaba algo|buscaba|algo		뭔가를 찾고 있었다	x	14	algo = 무언가
+se paró	se paró|paró		멈춰 섰다	x	14
+debajo de	debajo de|debajo		~아래에	x	14
+esperábamos	esperábamos		우리는 기다리고 있었다	n	14
+usó	usó		썼다	x	14
+que no terminaba	que no terminaba|terminaba		끝나지 않는	x	14
+nos sentamos	nos sentamos|sentamos|nos		우리는 앉았다	x	14
+cerró los ojos	cerró los ojos|cerró|ojos|abrió los ojos|abrió		눈을 감았다	x	14	ojos = 눈
+no se movía	no se movía|movía		꼼짝도 안 했다	x	14
+los miraba	los miraba		그들을 보고 있었다	x	14
+pensaba	pensaba|pensabas		생각하고 있었다	n	14
+durante un momento	durante un momento|momento		잠깐 동안	x	14
+no iba a contestar	no iba a contestar|iba|contestar		대답하지 않을 것이었다	x	14
+pobre	pobre		불쌍한	n	14
+desde el principio	desde el principio|principio		처음부터	x	14
+empecé a cantarla	empecé a cantarla|empecé		그 노래를 부르기 시작했다	x	14
+muy bajo	muy bajo		아주 낮게	x	14
+se giró hacia mí	se giró hacia mí|giró|hacia|mí		나를 향해 돌아보았다	x	14
+llenos de agua	llenos de agua|llenos		물기가 가득한	x	14
+nos quedamos	nos quedamos		우리는 머물렀다	x	14
+no lloró	no lloró		울지 않았다	x	14
+delante de la gente	delante de la gente		사람들 앞에서	x	14
+me dio la mano	me dio la mano|dio		내 손을 잡았다	x	14
+no la soltó	no la soltó|soltó		놓지 않았다	x	14
+en todo el camino	en todo el camino		오는 길 내내	x	14
+no se acuerda	no se acuerda		기억하지 못한다	x	14
+he cantado	he cantado		(오늘) 노래했다	x	14
+la conoce	la conoce|conoce		그걸 안다	x	14	conocer
+las noches largas	las noches largas|noches|largas		긴 밤들	x	14
+Sant Pau	sant pau	*산* *파*우	산트 파우 병원 — 모데르니스메 양식의 옛 병원	p	14
+silencio	silencio		침묵, 고요	x	14
+entendí	entendí		이해했다	x	14
+miró	miró		보았다	x	14
+muchas	muchas		많은 (여성 여럿)	x	14
+nuevo	nuevo|nueva		새로운	n	14
+Tibidabo	tibidabo	티비*다*보	티비다보 — 바르셀로나 뒤의 가장 높은 산, 꼭대기에 놀이공원	p	15
+me llevó	me llevó|llevó		나를 데려갔다	x	15	llevar
+la ciudad	la ciudad|ciudad		도시	n	15
+desde cualquier calle	desde cualquier calle|cualquier		어느 거리에서든	x	15
+se veía	se veía|veía		보였다	x	15
+una estatua	una estatua|estatua		동상	x	15
+una noria	una noria|noria		대관람차	x	15
+un parque de atracciones	un parque de atracciones|atracciones		놀이공원	n	15	atracción = 놀이기구
+íbamos	íbamos		우리는 가고 있었다	x	15	ir의 선과거
+la noche anterior	la noche anterior|anterior		전날 밤	x	15
+había leído	había leído		읽었었다	x	15	(과거보다 더 앞의 일)
+la quinta carta	la quinta carta|quinta		다섯 번째 편지	x	15
+enero	enero		1월	x	15
+subí	subí|subió|subimos|subieron|subiste|subir|subes|subía|subido		올라갔다, 탔다	n	15	subir = 오르다, (탈것에) 타다
+estaba cerrado	estaba cerrado		닫혀 있었다	x	15
+el avión	el avión|avión		비행기	n	15
+aquel	aquel		그 (먼 과거의)	x	15	aquel domingo = 그 일요일
+el funicular	el funicular|funicular		푸니쿨라 (산악 궤도차)	n	15
+te cogía de la mano	te cogía de la mano|cogía|cogió		너의 손을 잡고 있었다	x	15	coger = 잡다 (스페인)
+da vueltas y vuelve	da vueltas y vuelve|vueltas|vuelve|daba		빙빙 돌다가 돌아온다	x	15	dar vueltas = 돌다
+entendió	entendió		이해했다	x	15
+os reíais	os reíais|reíais|os		너희 둘은 웃고 있었다	x	15	os = 너희를 (스페인)
+encima de	encima de|encima		~위에	n	15
+un fotógrafo	un fotógrafo|fotógrafo		사진사	n	15
+nos hizo una foto	nos hizo una foto		우리 사진을 찍었다	x	15
+pagué	pagué		돈을 냈다	x	15	pagar
+vuelvan a las seis	vuelvan a las seis|vuelvan		여섯 시에 다시 오세요	x	15
+tenías que volver	tenías que volver|tenías		너는 돌아가야 했다	x	15
+nunca recogí la foto	nunca recogí la foto|recogí|recogió		사진을 끝내 찾지 않았다	n	15	recoger = 찾아가다, 줍다
+fuimos felices	fuimos felices|felices|feliz		우리는 행복했다	n	15	feliz = 행복한
+solo un día	solo un día		딱 하루	x	15
+fue verdad	fue verdad		진짜였다	x	15
+entre pinos	entre pinos|pinos		소나무들 사이로	x	15
+de madera y metal	de madera y metal|madera|metal		나무와 쇠로 된	x	15
+se hacía pequeña	se hacía pequeña		작아지고 있었다	x	15
+detrás de nosotros	detrás de nosotros|nosotros		우리 뒤로	x	15	nosotros = 우리
+primero	primero		먼저	x	15
+las casas	las casas|casas		집들	x	15
+preguntó	preguntó		물었다	x	15
+contesté	contesté		대답했다	x	15
+sonrió	sonrió|sonreía		웃었다, 미소 지었다	x	15
+lleno de	lleno de|lleno		~로 가득한	x	15
+música de feria	música de feria|música|feria		놀이공원 음악	x	15
+olor a palomitas	olor a palomitas|olor|palomitas		팝콘 냄새	x	15
+gritos de niños	gritos de niños|gritos|niños		아이들 소리	x	15
+unas nuevas y rápidas	unas nuevas y rápidas|nuevas		새롭고 빠른 것들	x	15
+otras viejas y lentas	otras viejas y lentas|otras|lentas		오래되고 느린 것들	x	15
+diferentes	diferentes		다른, 서로 다른	x	15
+directamente	directamente		곧장	x	15
+el borde	el borde|borde		가장자리	n	15
+sin mirar	sin mirar|mirar		보지도 않고	x	15
+colgado de un brazo	colgado de un brazo|colgado|brazo		팔에 매달린	x	15
+el vacío	el vacío		허공	x	15
+L'Avió	l'avió|avió|l	*라*비오	아비오 — 티비다보의 1928년 비행기 놀이기구 (카탈루냐어 ‘비행기’)	c	15
+hicimos cola	hicimos cola|hicimos|cola		줄을 섰다	n	15	hacer cola = 줄 서다
+mirándolas	mirándolas		그들을 바라보며	x	15
+por dentro	por dentro|dentro		안쪽은	x	15
+asientos	asientos|asiento		좌석	x	15
+empezó a moverse	empezó a moverse|empezó|moverse		움직이기 시작했다	x	15
+por encima del vacío	por encima del vacío		허공 위로	x	15
+esta vez	esta vez		이번에는	n	15
+la mía	la mía|mía		내 것 (손)	x	15
+no la cogió fuerte	no la cogió fuerte		세게 잡지 않았다	x	15
+la dejó ahí	la dejó ahí|dejó|ahí		거기에 그냥 두었다	n	15	dejar = 두다
+busqué	busqué		찾았다	x	15
+no la encontré	no la encontré|encontré		찾지 못했다	x	15
+hace cuarenta y ocho años	hace cuarenta y ocho años|cuarenta		48년 전에	x	15
+su nieto	su nieto|nieto		그의 손자	n	15	손녀는 nieta
+dio dos vueltas	dio dos vueltas		두 바퀴 돌았다	x	15
+volvió	volvió		돌아왔다	x	15
+no quitó la mano	no quitó la mano		손을 치우지 않았다	x	15
+enseguida	enseguida		바로, 곧	x	15
+después sí	después sí		그다음엔 치웠다	x	15
+miramos a otro lado	miramos a otro lado		다른 쪽을 보았다	x	15
+dos bocadillos	dos bocadillos|bocadillos|bocadillo		바게트 샌드위치 두 개	n	15	스페인식 샌드위치
+dos aguas	dos aguas|aguas		물 두 병	x	15
+comimos sin hablar	comimos sin hablar|comimos|hablar		말없이 먹었다	x	15
+yo venía aquí	yo venía aquí|venía		나는 여기 오곤 했다	x	15
+cuando era pequeño	cuando era pequeño		어릴 때	x	15
+nunca conmigo	nunca conmigo|conmigo		한 번도 나랑은 아니고	x	15	conmigo = 나와 함께
+nos comprábamos un helado	nos comprábamos un helado|comprábamos|helado		아이스크림을 사 먹곤 했다	x	15	helado = 아이스크림
+volvíamos a casa	volvíamos a casa|volvíamos		집에 돌아오곤 했다	x	15
+se quedó callado	se quedó callado|quedó		조용해졌다	x	15
+yo no esperaba	yo no esperaba		나는 예상하지 못했다	x	15
+Avi	avi	*아*비	할아버지 (카탈루냐어)	c	15	스페인어로는 abuelo
+por qué subes	por qué subes		왜 타요?	x	15
+porque	porque		왜냐하면	n	15	por qué = 왜?
+aquí fui feliz un día	aquí fui feliz un día|fui		나는 여기서 하루 행복했다	x	15
+quiero recordarlo bien	quiero recordarlo bien|recordarlo		그걸 잘 기억하고 싶다	x	15	recordar = 기억하다
+saqué	saqué		꺼냈다	x	15	sacar
+se la di	se la di|di		그에게 그걸 주었다	x	15
+con el dedo	con el dedo|dedo		손가락으로	x	15
+la dobló con mucho cuidado	la dobló con mucho cuidado|dobló|cuidado		아주 조심스럽게 접었다	x	15
+me la devolvió	me la devolvió|devolvió		나에게 돌려주었다	x	15
+y si todavía existe	y si todavía existe|si|existe		아직 남아 있다면?	x	15	si = 만약
+siguiente	siguiente		다음의	x	15	el domingo siguiente = 다음 일요일
+les	les		그들에게	x	15
+todos los septiembres	todos los septiembres|septiembres		해마다 9월이면	x	15
+ha puesto	ha puesto|puesto		놓았다 (오늘)	x	15
+he subido	he subido		(오늘) 탔다	x	15
+compró	compró		샀다	x	15
+Kwaenchanayo	kwaenchanayo	괜찮아요	괜찮아요 (한국어를 로마자로 적은 것)	f	13	마르티가 회화책에서 배운 첫 한국어
+quizás	quizás		아마	x	13
+aquí está	aquí está		여기 있다	x	13
+pude	pude		할 수 있었다	n	13	poder의 과거. No pude = 할 수 없었다
+se rio	se rio|rio		웃었다	x	13
+entenderlo todo	entenderlo todo		그걸 전부 이해하다	x	13
+antigua	antigua|antiguo		오래된, 옛날의	x	13
+el fondo de la historia	el fondo de la historia|historia		이야기의 배경	x	13
+la vecina	la vecina|vecina		이웃 여자	x	14
+dormía	dormía		자고 있었다	x	14
+salía el sol	salía el sol|salía		해가 뜨고 있었다	x	14
+compró dos entradas	compró dos entradas|entradas		입장권 두 장을 샀다	x	14
+ya no es un hospital	ya no es un hospital		이제 병원이 아니다	x	14
+al principio de	al principio de		~의 시작 지점에	x	14
+nosotras	nosotras		우리 (여자들)	n	5
+de principio a fin	de principio a fin|fin		처음부터 끝까지	x	14
+dentro de esa noche	dentro de esa noche		그 밤 속에	x	14
+los ojos brillantes	los ojos brillantes|brillantes		반짝이는 눈	x	14
+hasta la hora de cerrar	hasta la hora de cerrar|cerrar		문 닫을 시간까지	x	14
+ha dicho	ha dicho		말했다 (오늘)	x	11
+el pasado de fondo	el pasado de fondo		배경의 과거	x	14
+el pasado que dura	el pasado que dura|dura		계속되는 과거	x	14
+ser	ser		~이다	x	13	soy, eres, es… 과거는 fue/era
+la misma forma	la misma forma|forma		같은 모양	x	13
+una sorpresa más	una sorpresa más|sorpresa		놀라운 것 하나 더	x	13
+un lugar	un lugar|lugar		장소	x	13
+qué pasaba alrededor	qué pasaba alrededor|pasaba		주위에서 무슨 일이 있었는지	x	13
+el papel	el papel|papel		종이	x	13
+Jordi	jordi	*조*르디	조르디 — 마르티의 아들, 마르크의 아버지	p	14
+llevaba un vestido azul	llevaba un vestido azul|llevaba|vestido		파란 원피스를 입고 있었다	x	16	llevar = 입다; 데려가다
+un poco de perfume	un poco de perfume|perfume		향수를 조금	x	16
+nunca la había visto así	nunca la había visto así		그녀가 그런 모습은 처음이었다	x	16
+Paral·lel	paral·lel|paral|lel	파랄*렐*	파랄렐 — 옛 극장 거리	p	16
+hace muchos años	hace muchos años		오래전에	n	16	hace + 기간 = ~전에
+los teatros	los teatros|teatros|teatro		극장	n	16
+fui joven	fui joven|joven		나는 젊었다	n	16	joven = 젊은
+el pelo mojado	el pelo mojado|pelo|mojado		젖은 머리	x	16
+salimos	salimos		나간다; 나갔다	x	13
+mucho tráfico	mucho tráfico|tráfico		차가 많음	x	16
+tres chimeneas altas	tres chimeneas altas|chimeneas|altas		높은 굴뚝 세 개	x	16
+una fábrica de electricidad	una fábrica de electricidad|fábrica|electricidad		발전소	x	16
+caminaba	caminaba		걷고 있었다	x	16
+un molino rojo	un molino rojo|molino		빨간 풍차	x	16
+El Molino	el molino	엘 몰*리*노	엘 몰리노 — 파랄렐의 오래된 카바레 극장	p	16
+la fachada	la fachada|fachada		건물 정면	x	13
+las aspas	las aspas|aspas		풍차 날개	x	16
+veníamos	veníamos		우리는 오곤 했다	x	16
+los sábados	los sábados|sábados		토요일마다	x	16
+mis amigas	mis amigas|amigas		내 친구들 (여자)	x	16
+un teatro de cabaret	un teatro de cabaret|cabaret		카바레 극장	x	16
+plumas	plumas		깃털	x	16
+chistes	chistes|chiste		농담, 우스갯소리	n	16
+no se podían decir	no se podían decir|podían		말할 수 없었다	x	16
+en otros sitios	en otros sitios|otros|sitios|sitio		다른 곳에서는	x	16
+otros tiempos	otros tiempos|tiempos		다른 시절	x	16
+Franco	franco	*프랑*코	프랑코 — 1939~1975년 스페인의 독재자	p	16
+todavía vivía	todavía vivía|vivía		아직 살아 있었다	x	16
+se reía de todo	se reía de todo|reía		모든 걸 웃어넘겼다	x	16
+por eso	por eso		그래서	n	16
+traje	traje		데려왔다; (명사) 정장	x	16	traer의 과거
+de repente	de repente|repente		갑자기	n	16
+me giré	me giré|giré		돌아보았다	x	16
+claro	claro		물론	n	9
+todo el mundo	todo el mundo|mundo		모든 사람	n	16	직역: 온 세상
+aplaudía	aplaudía		박수를 쳤다	x	16
+al salir	al salir		나오면서	x	16
+casi	casi		거의	x	16
+intenté imaginar	intenté imaginar|intenté|imaginar		상상해 보려 했다	x	16
+no salía de noche	no salía de noche		밤에 나가지 않았다	x	16
+cenar	cenar		저녁을 먹다	n	16
+una calle cercana	una calle cercana|cercana		근처 거리	x	16
+el barrio	el barrio|barrio		동네	n	16
+Poble Sec	poble sec	*포*블러 *섹*	포블레 섹 — 몬주익 아래 동네	p	16
+llena de	llena de|llena		~로 가득한	x	16
+la puerta abierta	la puerta abierta|abierta		열린 문	x	16
+la barra	la barra|barra		바 카운터	x	16
+pintxos	pintxos|pintxo	*핀*초스	핀초 — 빵 위에 음식을 올린 바스크식 안주	f	16
+tortilla	tortilla		스페인식 감자 오믈렛	x	16
+con pimientos	con pimientos|pimientos|pimiento		피망을 올린	x	16
+con pescado	con pescado|pescado		생선을 올린	x	16
+un palillo	un palillo|palillo|palillos		이쑤시개	x	16
+comés lo que querés	comés lo que querés|comés		먹고 싶은 걸 먹어 (아르헨티나식)	x	16
+cuentan los palillos	cuentan los palillos|cuentan		이쑤시개를 센다	x	16	contar = 세다; 이야기하다
+pagás	pagás		돈을 내 (아르헨티나식)	x	16
+el tercer bar	el tercer bar|tercer		세 번째 바	x	16
+nos saludó con la mano	nos saludó con la mano|saludó		손을 흔들어 인사했다	x	16
+lo había llamado	lo había llamado		그를 불러 두었다	x	16
+por supuesto	por supuesto|supuesto		당연히	n	16
+comimos de pie	comimos de pie|de pie		서서 먹었다	x	16
+escuchaba	escuchaba		듣고 있었다	x	16
+comía poco	comía poco|comía		조금 먹었다	x	16
+probé	probé		먹어 보았다	x	16	probar
+con anchoa	con anchoa|anchoa		안초비를 올린	x	16
+se lo comió	se lo comió|comió		그걸 먹어 치웠다	x	16
+fue al baño	fue al baño|baño		화장실에 갔다	x	16
+puso su vaso	puso su vaso|vaso		잔을 내려놓았다	x	16
+os voy a contar	os voy a contar|contar		너희한테 이야기해 줄게	x	16
+no la cuento	no la cuento|cuento		그 이야기를 안 한다	x	16
+dejó de comer	dejó de comer		먹기를 멈췄다	x	16
+sobre todo	sobre todo		무엇보다	x	16
+si me quedo	si me quedo|quedo		내가 남으면	x	16
+pierde a su padre	pierde a su padre|pierde		아빠를 잃는다	x	16
+un buen hombre	un buen hombre|buen		좋은 사람	x	16
+no supe qué contestar	no supe qué contestar|supe		무슨 대답을 해야 할지 몰랐다	x	16
+estábamos en silencio	estábamos en silencio|estábamos		우리는 조용했다	x	16
+siguió	siguió		말을 이었다	x	16
+nunca le pidió que se quedara	nunca le pidió que se quedara|pidió|quedara		남아 달라고 한 번도 부탁하지 않았다	x	16
+lo único	lo único|único		유일한 것	x	16
+volvió del baño cantando	volvió del baño cantando|cantando		노래하며 화장실에서 돌아왔다	x	16
+como si no hubiera dicho nada	como si no hubiera dicho nada|hubiera|dicho		아무 말도 안 한 것처럼	x	16
+volvimos	volvimos		돌아왔다	x	16
+se durmió	se durmió|durmió		잠들었다	x	16
+había vuelto	había vuelto|vuelto		돌아가 있었다	x	16
+antes de bajar	antes de bajar|bajar		내리기 전에	x	16
+se despertó	se despertó|despertó		깨어났다	x	16
+una tienda	una tienda		가게	x	16
+Foto Avenida	foto avenida	*포*토 아베*니*다	포토 아베니다 — 사진사의 가게 이름 (가상)	p	16
+su hijo	su hijo|hijo		그의 아들	n	16	딸은 hija
+vende cosas viejas	vende cosas viejas		오래된 물건을 판다	x	16
+Sant Antoni	sant antoni	*산* 안*토*니	산트 안토니 — 일요일 헌책 시장이 서는 시장	p	16
+los domingos	los domingos|domingos		일요일마다	x	16
+postales	postales|postal		엽서	x	16
+cómo lo sabes	cómo lo sabes		어떻게 알아요?	x	16
+lo buscó	lo buscó		그를 찾았다	x	16
+no encontró nada	no encontró nada|encontró		아무것도 못 찾았다	x	16
+entró en casa	entró en casa|entró		집에 들어갔다	x	16
+sin mirar atrás	sin mirar atrás|atrás		뒤도 돌아보지 않고	x	16
+en la acera	en la acera|acera		인도에	x	16
+la calle vacía	la calle vacía|vacía		텅 빈 거리	x	16
+iba	iba		가곤 했다	x	14
+un secreto	un secreto|secreto		비밀	n	16
+hemos cenado	hemos cenado|cenado		저녁을 먹었다 (오늘)	x	16
+no me ha gustado	no me ha gustado|gustado		마음에 안 들었다 (오늘)	x	16
+se lo ha comido	se lo ha comido|comido		그걸 먹었다 (오늘)	x	16
+nos ha contado	nos ha contado|contado		우리에게 이야기해 주었다 (오늘)	x	16
+cuenta	cuenta		센다; 이야기한다	x	16
+una semana más tarde	una semana más tarde|semana		일주일 뒤	x	15	semana = 주
+unos días antes leí	unos días antes leí		며칠 전에 읽었다	x	15
+estaba casi vacío	estaba casi vacío		거의 비어 있었다	x	15
+no tuve valor	no tuve valor|tuve|valor		용기가 없었다	x	15
+nunca volví a buscar	nunca volví a buscar|volví		다시는 찾으러 가지 않았다	x	15
+tu marido volvía	tu marido volvía|volvía		네 남편이 돌아오고 있었다	x	15
+casi todo de cristal	casi todo de cristal|cristal		거의 전부 유리로 된	x	15
+las mismas vías	las mismas vías|vías|mismas		같은 선로	x	15
+los barrios	los barrios|barrios		동네들	x	15
+entonces	entonces		그때; 그러면	n	15
+quería decir	quería decir		~라는 뜻이었다	x	15
+no importa	no importa		상관없다	n	15
+distintas entre sí	distintas entre sí|distintas		서로 달랐다	x	15
+en el aire	en el aire		공중에	x	15
+asientos pequeños	asientos pequeños		작은 좌석	x	15
+paró	paró		멈췄다	x	14
+su vermut de los domingos	su vermut de los domingos|vermut		일요일의 베르무트	x	15	vermut = 식전 술
+casi nunca	casi nunca		거의 ~않다	x	15
+hasta hoy	hasta hoy		오늘까지	x	15
+a los tres	a los tres		셋에게	x	15
+cada septiembre	cada septiembre		9월마다	x	15
+nos levantamos	nos levantamos|levantamos		우리는 일어났다	x	17
+nueve	nueve		아홉, 9	x	17
+de hierro	de hierro|hierro		철로 된	x	17
+en forma de cruz	en forma de cruz|cruz		십자 모양으로	x	17
+en medio de	en medio de		~한가운데에	x	17
+por fuera	por fuera|fuera		바깥쪽에	x	17
+puestos	puestos|puesto		노점, 가게 자리	n	17
+toldos blancos	toldos blancos|toldos|toldo|blancos|blanca		하얀 차양	x	17
+monedas	monedas		동전	x	17
+sellos	sellos		우표	x	17
+cómics	cómics		만화책	x	17
+discos	discos		레코드판	x	17
+buscando	buscando		찾으면서	n	17	-ando/-iendo = ~하면서, ~하는 중
+encontrarlo	encontrarlo		그를 찾다	x	17
+ciento y pico	ciento y pico|ciento|pico		백 개 남짓	x	17
+preguntando	preguntando		물어보면서	x	17
+preguntamos	preguntamos		물어보았다	x	17
+el primer puesto	el primer puesto|primer		첫 번째 노점	x	17
+con barba	con barba|barba		수염 난	x	17
+el segundo	el segundo|segundo		두 번째	x	17
+una mujer joven	una mujer joven|mujer		젊은 여자	n	17	mujer = 여자
+se encogió de hombros	se encogió de hombros|encogió		어깨를 으쓱했다	x	17
+el quinto	el quinto|quinto		다섯 번째	x	17
+vendía sellos	vendía sellos|vendía		우표를 팔았다	x	17
+levantó la cabeza	levantó la cabeza|levantó		고개를 들었다	x	17
+Quique	quique	*키*케	키케 — 사진사의 아들, 산트 안토니 노점상	p	17
+que no conoce nadie	que no conoce nadie		아무도 모르는	x	17
+un poco roto	un poco roto|roto		조금 찢어진	x	17
+cajas de zapatos	cajas de zapatos|zapatos|zapato		신발 상자	x	17
+un papel pegado	un papel pegado|pegado		붙여 놓은 종이	x	17
+bodas	bodas|boda		결혼식	x	17
+carnaval	carnaval		카니발	x	17
+Montserrat	montserrat	몬세*랏*	몬세라트 — 바르셀로나 근처의 산과 수도원 (몬세의 이름도 여기서 왔다)	p	17
+unos setenta años	unos setenta años		일흔 살쯤	x	17
+estaba sentado	estaba sentado|sentado		앉아 있었다	x	17
+leyendo el periódico	leyendo el periódico|leyendo		신문을 읽고 있는	x	17
+guardaba todo	guardaba todo|guardaba		뭐든 간직했다	n	17	guardar = 간직하다, 보관하다
+no recogía	no recogía|recogía		찾아가지 않았다	x	17
+decía	decía		말하곤 했다	x	13
+un día alguien volverá	un día alguien volverá|volverá		언젠가 누군가 돌아올 것이다	x	17	미래형은 4부에서 배운다
+nunca volvía nadie	nunca volvía nadie		아무도 돌아오지 않았다	x	17
+se agachó	se agachó|agachó		몸을 숙였다	x	17
+sacó	sacó		꺼냈다	x	17
+en el papel ponía	en el papel ponía|ponía		종이에 ~라고 적혀 있었다	x	17	poner = (글로) 적혀 있다
+no recogidas	no recogidas|recogidas		찾아가지 않은 것들	x	17
+busquen el 78	busquen el 78|busquen		78년 걸 찾아보세요	x	17
+mis manos temblaban	mis manos temblaban|temblaban		손이 떨리고 있었다	x	17
+cientos de sobres	cientos de sobres|cientos		수백 개의 봉투	x	17
+de color marrón	de color marrón|marrón		갈색의	x	17
+escritas a lápiz	escritas a lápiz|escritas|lápiz		연필로 쓴	x	17
+buscamos	buscamos		찾았다	x	17
+un verano entero	un verano entero|verano|entero		여름 한 철 내내	x	17	verano = 여름
+que nadie quiso	que nadie quiso|quiso		아무도 원하지 않은	x	17
+empezamos a leerlos	empezamos a leerlos|empezamos|leerlos		그것들을 읽기 시작했다	x	17
+la familia	la familia|familia		가족	n	17	familia García = 가르시아 가족
+García	garcía	가르*시*아	가르시아 (흔한 성)	p	17
+junio	junio		6월	x	17
+dos novios	dos novios|novios		연인 한 쌍	x	17	novio = 남자 친구, 신랑
+señora con perro	señora con perro|perro		개를 데리고 있는 부인	x	17	perro = 개
+leía	leía		읽고 있었다	x	17
+Sr.	sr	세*뇨*르	씨, 님 (señor의 줄임)	x	17
+su hija	su hija|hija		그의 딸	n	17
+sept	sept		9월 (septiembre의 줄임)	x	17
+pagada	pagada|pagar		돈을 낸	x	17
+en blanco y negro	en blanco y negro		흑백으로	x	17
+los bordes	los bordes|bordes		가장자리	x	17
+gris	gris		회색	x	17
+tres personas	tres personas|personas		세 사람	x	17
+delgado	delgado		마른	x	17
+una camisa blanca	una camisa blanca|camisa		흰 셔츠	x	17
+estaba mirando	estaba mirando		보고 있었다 (그 순간)	n	17	estar의 과거 + -ando = 그때 ~하고 있었다
+la cámara	la cámara|cámara		카메라	x	17
+un vestido claro	un vestido claro		밝은 색 원피스	x	17
+dos coletas	dos coletas|coletas		양 갈래 머리	x	17
+estaba riéndose	estaba riéndose|riéndose		웃고 있었다	x	17
+una falda larga	una falda larga		긴 치마	x	17
+una blusa con flores	una blusa con flores|blusa|flores		꽃무늬 블라우스	x	17
+el pelo recogido	el pelo recogido|recogido		묶은 머리	x	17
+estaba sonriendo	estaba sonriendo|sonriendo		미소 짓고 있었다	n	17
+la sonrisa	la sonrisa|sonrisa		미소	n	17
+que no piensa en mañana	que no piensa en mañana|piensa		내일을 생각하지 않는	x	17
+me tapé la boca	me tapé la boca|tapé		입을 가렸다	x	17
+por encima de mi hombro	por encima de mi hombro		내 어깨 너머로	x	17
+lo oí respirar	lo oí respirar|respirar		그의 숨소리를 들었다	x	17
+nunca lo vi tan joven	nunca lo vi tan joven|tan		그렇게 젊은 모습은 처음 본다	x	17
+quise pagar	quise pagar|quise		돈을 내려고 했다	x	17
+está pagada	está pagada		이미 값을 치렀다	x	17
+mi padre estaría contento	mi padre estaría contento|estaría		아버지가 기뻐하실 거다	x	17	조건형은 4부에서 배운다
+sonaban cerca	sonaban cerca|sonaban		가까이서 울리고 있었다	x	17
+no podía dejar de mirar	no podía dejar de mirar|podía|dejar		눈을 뗄 수가 없었다	x	17
+tomó el sobre	tomó el sobre|tomó		봉투를 집었다	x	17
+en voz alta	en voz alta		큰 소리로	x	17
+pensó	pensó		생각했다	x	17
+repetí	repetí		따라 말했다	x	17
+un error	un error|error		실수	n	17
+una piedra pequeña en un zapato	una piedra pequeña en un zapato		신발 속 작은 돌멩이	x	17
+hizo una foto	hizo una foto		사진을 찍었다	x	17
+e	e		그리고 (i/hi 앞의 y)	x	17
+un mensaje corto	un mensaje corto|mensaje|corto		짧은 메시지	x	17
+escribí	escribí		썼다	x	17
+la respuesta	la respuesta|respuesta		대답	n	17
+ni en coreano ni en español	ni en coreano ni en español|ni		한국어로도 스페인어로도	x	17
+se llama	se llama|llama		이름이 ~이다	x	17
+sonreír	sonreír		미소 짓다	x	17
+no he contestado	no he contestado|contestado		대답하지 않았다 (오늘)	x	17
+quién	quién		누구	x	17
+pequeños	pequeños		작은 (여럿)	x	17
+nunca la vi así antes	nunca la vi así antes		그런 모습은 처음 봤다	x	16
+un poco más allá	un poco más allá|allá		조금 더 가서	x	16
+se encendían y se apagaban	se encendían y se apagaban|encendían|apagaban		켜졌다 꺼졌다 했다	x	16
+y todavía lo es	y todavía lo es		지금도 그렇다	x	16
+también tuvo	también tuvo|tuvo		~도 가졌다, 겪었다	x	16
+me dolió por primera vez	me dolió por primera vez|dolió		처음으로 아팠다	x	16
+lo llamó	lo llamó		그를 불렀다	x	16
+quédate	quédate		남아 줘, 있어	n	16	quedarse의 명령
+otro día	otro día		다음에, 다른 날	x	16
+no dijo nada más	no dijo nada más		더는 아무 말도 하지 않았다	x	16
+volvió en su vespa	volvió en su vespa		Vespa를 타고 돌아갔다	x	16
+me contó lo de la foto	me contó lo de la foto|contó		사진 이야기를 해 주었다	x	16
+allí	allí		저기, 거기	n	15
+años después	años después		몇 년 뒤	x	16
+ya estaba cerrada	ya estaba cerrada|cerrada		이미 닫혀 있었다	x	16
+no quiso preguntar más	no quiso preguntar más|preguntar		더 묻고 싶어 하지 않았다	x	16
+lo conozco de vista	conozco al hijo de vista|de vista|conozco		얼굴만 안다	x	16
+entró detrás de ella	entró detrás de ella		그녀 뒤를 따라 들어갔다	x	16
+señaló	señaló		가리켰다	x	17
+silla	silla		의자	x	17
+La Mercè	la mercè|mercè	라 메르*세*	라 메르세 — 9월 24일 전후의 바르셀로나 최대 축제	p	18
+celebraba	celebraba		축하하고 있었다	x	18
+conciertos	conciertos		콘서트	x	18
+fuegos artificiales	fuegos artificiales|fuegos|artificiales		불꽃놀이	x	18
+salí	salí		나갔다	x	18
+arreglaba	arreglaba		고치곤 했다	x	18	arreglar = 고치다
+preguntaba por	preguntaba por|preguntaba		~의 안부를 묻곤 했다	x	18
+nunca hablaba de amor	nunca hablaba de amor		사랑 이야기는 한 번도 하지 않았다	x	18
+distinta	distinta		다른	x	18
+he pensado en ti	he pensado en ti|pensado|ti		(오늘) 네 생각을 했다	x	18
+te manda un beso	te manda un beso|manda|beso		너에게 뽀뽀를 보낸다 (편지 끝 인사)	x	18
+quedaban dos sobres	quedaban dos sobres|quedaban|queda		봉투 두 개가 남아 있었다	x	18	quedar = 남다
+el décimo	el décimo|décimo|décima		열 번째	x	18
+los búnkeres	los búnkeres|búnkeres	로스 *붕*케레스	벙커 — 카르멜 언덕의 옛 대공포 진지	x	18
+al atardecer	al atardecer|atardecer		해 질 녘에	n	18
+subimos andando	subimos andando|andando		걸어서 올라갔다	x	18
+cada vez más empinada	cada vez más empinada|empinada		점점 더 가팔라지는	x	18
+se convirtió en	se convirtió en|convirtió		~이 되었다	x	18
+un camino de tierra	un camino de tierra|tierra		흙길	x	18
+unos restos de cemento	unos restos de cemento|restos|cemento		시멘트 잔해	x	18
+plataformas redondas	plataformas redondas|plataformas|plataforma|redondas		둥근 단	x	18
+muros viejos	muros viejos|muros		오래된 담	x	18
+escaleras	escaleras		계단	x	18
+la guerra	la guerra|guerra		전쟁	n	18	1936~1939년 스페인 내전
+cañones	cañones		대포	x	18
+para defender	para defender|defender		지키려고	x	18
+los aviones	los aviones|aviones		비행기들	x	18
+la puesta de sol	la puesta de sol|puesta		해넘이	n	18
+bastante	bastante		꽤	x	18
+jóvenes con cervezas	jóvenes con cervezas|jóvenes|cervezas		맥주를 든 젊은이들	x	18
+parejas	parejas		연인들	x	18
+una guitarra	una guitarra|guitarra		기타	x	18
+sentados	sentados		앉아 있는	x	18
+hacia el oeste	hacia el oeste|oeste		서쪽을 향해	x	18
+en todas las direcciones	en todas las direcciones|todas|direcciones		사방으로	x	18
+en algún sitio	en algún sitio|algún		어딘가에	x	18
+los demás	los demás|demás		다른 사람들	x	18
+empezaba a bajar	empezaba a bajar|empezaba		내려가기 시작하고 있었다	x	18
+las montañas	las montañas|montañas		산들	x	18
+se ponía naranja	se ponía naranja|naranja|pone		주황색이 되고 있었다	x	18
+necesité	necesité		필요했다	x	18
+Carmel	carmel	카르*멜*	카르멜 — 그라시아 위쪽 언덕 동네	p	18
+he recibido	he recibido|recibido		받았다	x	18
+vais a volver	vais a volver|vais		너희는 돌아갈 것이다	x	18	vosotros
+es lo correcto	es lo correcto|correcto		그게 옳다	x	18
+esta va a ser mi última carta	esta va a ser mi última carta		이게 내 마지막 편지가 될 것이다	x	18
+es mejor así	es mejor así		이렇게 하는 게 낫다	x	18
+no me escribas más	no me escribas más|escribas		더는 편지하지 마	x	18
+no voy a escribir	no voy a escribir|escribir		편지하지 않을 것이다	x	18
+quiero decirte	quiero decirte|decirte		너에게 말하고 싶다	x	18
+con palabras claras	con palabras claras|claras		분명한 말로	x	18
+te he querido	te he querido|querido|querer		너를 사랑해 왔다	n	18	querer = 사랑하다, 원하다
+desde el primer día	desde el primer día		첫날부터	n	18
+dormida	dormida		잠든	x	18
+te quiero	te quiero		사랑해	n	18
+no sé cómo se deja de querer	no sé cómo se deja de querer|deja		사랑을 그만두는 법을 모른다	x	18	dejar de = 그만두다
+nadie me lo ha enseñado	nadie me lo ha enseñado|enseñado		아무도 가르쳐 주지 않았다	x	18
+lo he tapado	lo he tapado|tapado|tapada		그것을 덮어 두었다	x	18
+una sábana blanca	una sábana blanca|sábana		흰 천, 침대 시트	n	18
+está parado	está parado|parado		멈춰 있다	n	18
+es tuyo	es tuyo|tuyo		네 것이다	n	18
+si un día vuelves	si un día vuelves|vuelves		언젠가 돌아오면	x	18
+dale cuerda	dale cuerda|cuerda		태엽을 감아 줘	n	18	여기의 dale는 dar(주다)의 명령. 발레의 dale(오케이)와 모양만 같다
+va a esperar	va a esperar|esperar		기다릴 것이다	x	18
+los relojes saben esperar	los relojes saben esperar|saben		시계는 기다릴 줄 안다	x	18
+he aprendido de ellos	he aprendido de ellos|ellos		그들에게서 배웠다	x	18
+lloré	lloré|llorado		울었다	n	18
+treinta y ocho	treinta y ocho|treinta		서른여덟	x	18
+nadie me ha escrito	nadie me ha escrito|escrito		아무도 써 준 적 없다	x	18
+me cogió la mano	me cogió la mano|cogido		내 손을 잡았다	x	18
+de verdad	de verdad		정말로	n	12
+empezó a encender	empezó a encender|encender		켜기 시작했다	x	18
+se pone en marcha	se pone en marcha|marcha		움직이기 시작한다	x	18
+aplaudieron	aplaudieron		박수를 쳤다	x	18
+tocó una canción	tocó una canción|tocó		노래를 연주했다	x	18
+repitió	repitió		되풀이했다	x	18
+qué pasa	qué pasa		무슨 일이에요?	x	4
+la frente arrugada	la frente arrugada|frente|arrugada		찌푸린 이마	x	18
+trabajaba	trabajaba		일하고 있었다	x	18
+una cerradura difícil	una cerradura difícil|cerradura|difícil		어려운 자물쇠	x	18
+siempre ha estado allí	siempre ha estado allí|estado		늘 거기 있었다	x	18
+desde que era niño	desde que era niño|niño		어릴 때부터	x	18
+son muebles viejos	son muebles viejos|muebles		낡은 가구다	x	18
+no toques	no toques|toques		만지지 마	x	18
+nunca la toqué	nunca la toqué|toqué		한 번도 만지지 않았다	x	18
+cómo de alta	cómo de alta		얼마나 높아요?	x	18
+como una persona	como una persona		사람만 하다	x	18
+sin palabras	sin palabras		말없이, 할 말을 잃고	x	18
+brillaba	brillaba		반짝이고 있었다	x	18
+bajamos al sótano	bajamos al sótano		지하실에 내려간다	x	18
+contestó	contestó		대답했다	x	18
+borrar	borrar		지우다	x	18
+he llorado	he llorado		(오늘) 울었다	x	18
+leer	leer		읽다	x	18
+quieto	quieto		가만히 있는	x	18
+cortas	cortas		짧은	x	18
+gran	gran		큰, 위대한	x	18
+al fondo creo	al fondo, creo|al fondo|creo		안쪽에, 아마	x	17	creer = 생각하다, 믿다
+nunca volvió nadie	nunca volvió nadie		아무도 돌아오지 않았다	x	17
+están ordenadas por años	están ordenadas por años|ordenadas		해마다 정리되어 있다	x	17
+me temblaban las manos	me temblaban las manos		손이 떨렸다	x	17
+me pasaba los sobres	me pasaba los sobres		나에게 봉투를 건넸다	x	17
+escrito a lápiz	escrito a lápiz		연필로 쓴	x	17
+señora e hija	señora e hija		부인과 딸	x	17
+el mañana	el mañana		내일, 앞날	x	17
+nunca lo he visto	nunca lo he visto		한 번도 본 적 없다	x	17
+un día alguien vuelve	un día alguien vuelve		언젠가 누군가는 돌아온다	x	17
+volverá	volverá		돌아올 것이다	x	17	미래형. 19장부터 배운다
+con el suyo	con el suyo|suyo		자기 것으로	x	17
+se la envió	se la envió|envió		그녀에게 보냈다	x	17
+enviar	enviar		보내다	x	17
+no podía enviar fotos	no podía enviar fotos		사진을 보낼 수 없었다	x	17
+casi de noche	casi de noche		거의 밤	x	17
+nunca la he visto sonreír así	nunca la he visto sonreír así		그렇게 웃는 걸 본 적이 없다	x	17
+nunca había bajado allí	nunca había bajado allí|bajado		그곳에 내려가 본 적이 없었다	x	19
+la escalera	la escalera|escalera		계단	x	19
+olía a polvo	olía a polvo|polvo		먼지 냄새가 났다	x	19	polvo = 먼지
+encendió una bombilla	encendió una bombilla|encendió|bombilla		전구를 켰다	x	19
+que colgaba del techo	que colgaba del techo|colgaba		천장에 매달린	x	19
+amarilla y débil	amarilla y débil|amarilla|débil		노랗고 약한	x	19
+más grande de lo que yo pensaba	más grande de lo que yo pensaba		생각보다 더 큰	x	19
+estanterías llenas	estanterías llenas|estanterías|llenas		가득 찬 선반	x	19
+herramientas oxidadas	herramientas oxidadas|herramientas|oxidadas		녹슨 연장	n	19	herramienta = 연장
+una bicicleta sin ruedas	una bicicleta sin ruedas|bicicleta|ruedas		바퀴 없는 자전거	x	19
+sillas rotas	sillas rotas|sillas|rotas		부서진 의자	x	19
+contra la pared	contra la pared|contra|pared		벽에 기대어	x	19	pared = 벽
+ninguno de los dos	ninguno de los dos|ninguno		둘 중 아무도	x	19
+se movió	se movió|movió|se movieron|movieron		움직였다	x	19
+hazlo tú	hazlo tú|hazlo		네가 해	x	19	hacer의 명령 haz + lo
+me acerqué	me acerqué|acerqué|se acercó|acercó		다가갔다	x	19
+cogí	cogí		잡았다	x	19
+tapando	tapando		덮으면서	x	19
+tiré	tiré		잡아당겼다	x	19
+cayó al suelo	cayó al suelo|cayó|suelo		바닥에 떨어졌다	x	19	suelo = 바닥
+bailó	bailó		춤추었다	x	19
+oscura	oscura		어두운	x	19
+flores talladas	flores talladas|talladas		새겨진 꽃	x	19
+en los lados	en los lados|lados		옆면에	x	19
+cinco pétalos	cinco pétalos|pétalos		꽃잎 다섯 장	x	19
+una esfera blanca	una esfera blanca|esfera		흰 시계판	n	19	esfera = 시계판; 구
+números romanos	números romanos|números|romanos		로마 숫자	x	19
+las agujas	las agujas|agujas		시곗바늘	n	19
+paradas	paradas		멈춘	x	19
+un espacio vacío	un espacio vacío|espacio		빈 공간	x	19
+letras pequeñas y doradas	letras pequeñas y doradas|letras|doradas		작은 금빛 글자	x	19
+había pintado	había pintado|pintado		그려 놓았었다	x	19
+un minuto	un minuto|minuto		1분	x	19
+se oyó	se oyó|oyó		들렸다	x	19
+no lo sabremos nunca	no lo sabremos nunca|sabremos		영영 모를 것이다	x	19	미래형
+un agujero	un agujero|agujero		구멍	n	19
+puse	puse		넣었다, 놓았다	x	19
+perfectamente	perfectamente		완벽하게	x	19
+la esperaba	la esperaba		그것을 기다리고 있었다	x	19
+crac	crac	*크락*	끼릭 (태엽 소리)	f	19
+el muelle	el muelle|muelle		태엽 스프링	n	19	(항구의 부두라는 뜻도 있다)
+se llenaba de fuerza	se llenaba de fuerza|llenaba|fuerza		힘이 차올랐다	x	19
+no funciona	no funciona		작동하지 않는다	x	19
+falta	falta		~이 없다, 빠져 있다	n	19	faltar = 모자라다
+el péndulo	el péndulo|péndulo		시계추, 진자	n	19
+no anda	no anda|anda		가지 않는다	x	19	andar = (시계가) 가다; 걷다
+corazón	corazón		심장, 마음	n	19
+las he abierto todas	las he abierto todas		전부 열어 보았다	x	19
+esta semana	esta semana		이번 주	x	19
+oímos pasos	oímos pasos|oímos|pasos		발소리를 들었다	x	19
+agarrada a la pared	agarrada a la pared|agarrada		벽을 짚고	x	19
+el pecho	el pecho|pecho		가슴	x	19
+muy bajito	muy bajito|bajito		아주 작게	x	19
+parecía contarlas	parecía contarlas		그것을 세는 것 같았다	x	19
+Joan	joan	주*안*	주안 — 마르티의 친구, 시체스의 시계공	p	19
+Sitges	sitges	*싯*체스	시체스 — 바르셀로나 남쪽의 바닷가 마을	p	19
+ya estaba enfermo	ya estaba enfermo|enfermo		이미 아팠다	x	19
+guárdalo tú	guárdalo tú|guárdalo		네가 간직해	x	19
+si algún día viene alguien	si algún día viene alguien		언젠가 누가 오면	x	19
+dáselo	dáselo		그 사람에게 줘	x	19
+no la reconoció	no la reconoció|reconoció		그녀를 알아보지 못했다	x	19
+siempre lo has sabido	siempre lo has sabido|sabido		늘 알고 있었다	x	19
+tú lo sabías todo	tú lo sabías todo|sabías		다 알고 있었구나	x	19
+le prometí	le prometí|prometí|prometió		약속했다	x	19
+no voy a decir nada	no voy a decir nada		아무 말도 안 하겠다	x	19
+si alguien tiene que venir vendrá	si alguien tiene que venir, vendrá|vendrá		올 사람이면 온다	n	19	vendrá = venir의 미래 (불규칙)
+venir	venir		오다	x	19
+había venido	había venido|venido		와 있었다	x	19
+llamaré	llamaré		전화할 것이다	n	19	미래형: 동사원형 + é
+ochenta y tres	ochenta y tres|ochenta		여든셋	x	19
+iréis	iréis|iré|irás|irá|iremos		갈 것이다	n	19	ir의 미래
+me quedaré	me quedaré|quedaré		남을 것이다	x	19
+en mi garganta	en mi garganta|garganta		목에 걸려	x	19
+de espaldas a mí	de espaldas a mí|espaldas		나에게 등을 돌린 채	x	19
+tardó mucho en contestar	tardó mucho en contestar|tardó		대답하는 데 오래 걸렸다	x	19
+de un lado al otro	de un lado al otro		이쪽에서 저쪽으로	x	19
+segundo a segundo	segundo a segundo		1초 1초	x	19
+limpiaré	limpiaré|colgaré|ajustaré		닦을 것이다, 걸 것이다, 맞출 것이다	x	19	미래형
+funcionará	funcionará|funcionar		작동할 것이다	n	19
+el futuro	el futuro|futuro		미래	n	19
+fácil	fácil		쉬운	n	19
+unos pocos son raros	unos pocos son raros|raros		몇 개는 특이하다	x	19
+diré	diré|haré|volveré		말할 것이다, 할 것이다, 돌아올 것이다	x	19	불규칙 미래
+viniste	viniste		네가 왔다	x	19
+volveremos	volveremos		돌아올 것이다	x	19
+entra	entra		들어간다	x	19
+quieta	quieta		가만히 있는	x	19
+es un armario viejo	es un armario viejo|armario		낡은 옷장이다	x	18
+no lo toques	no lo toques		만지지 마	x	18
+se pasó la mano por la cara	se pasó la mano por la cara		손으로 얼굴을 쓸었다	x	18
+y yo buscando en las cajas	y yo buscando en las cajas		나는 상자만 뒤지고 있었다니	x	18
+el ordenador	el ordenador|ordenador		컴퓨터	x	18	스페인에서는 ordenador
+a la mañana siguiente	a la mañana siguiente		다음 날 아침	x	18
+yo no soy como Montse	yo no soy como montse		나는 몬세 같지 않다	x	18
+queda otro sobre	queda otro sobre		봉투가 하나 더 남아 있다	x	18
+Sants	sants	*산*스	산츠 — 바르셀로나의 큰 기차역	p	20
+moderna	moderna		현대적인	x	20
+maletas	maletas		여행 가방들	x	20
+pantallas	pantallas		화면들	x	20
+compré	compré|comprado		샀다	x	20
+los billetes	los billetes|billetes		표	x	20
+en la taquilla	en la taquilla|taquilla		매표소에서	n	20
+sin máquina	sin máquina|máquina		기계 없이	x	20
+de ida y vuelta	de ida y vuelta		왕복	n	20	ida = 가는 것, vuelta = 돌아오는 것
+el próximo	el próximo|próximo		다음 것	n	20
+sale	sale		출발한다	x	20	salir
+y cuarto	y cuarto|cuarto		15분 (시각)	n	20	las diez y cuarto = 10시 15분
+menos cuarto	menos cuarto		15분 전	n	20	las once menos cuarto = 10시 45분
+andén	andén		승강장	n	20
+levantó las cejas	levantó las cejas|cejas		눈썹을 치켜올렸다	x	20
+no hacía falta	no hacía falta		그럴 필요가 없었다	x	20
+el tren	el tren|tren		기차	n	20
+la costa	la costa|costa		해안	n	20
+entraba en un túnel	entraba en un túnel|entraba|túnel		터널로 들어가곤 했다	x	20
+unas rocas blancas	unas rocas blancas|rocas|blancas		하얀 바위들	x	20
+pegaba la cara	pegaba la cara|pegaba		얼굴을 붙이고 있었다	x	20
+qué harás	qué harás|harás		뭘 할 거야?	n	20	hacer의 미래 (불규칙)
+lo llevaré	lo llevaré|llevaré|lo llevarás|llevarás		내가 들고 갈 거야	x	20
+un bebé	un bebé|bebé		아기	x	20
+pesa mucho	pesa mucho|pesa|pesaba		아주 무겁다	n	20	pesar = 무게가 나가다
+sus risas	sus risas|risas		그의 웃음들	x	20
+contaba	contaba		세곤 했다	x	20
+llegamos	llegamos		우리는 도착했다	x	20
+un pueblo blanco	un pueblo blanco|pueblo		하얀 마을	n	20	pueblo = 마을
+los balcones	los balcones|balcones		발코니	x	20
+el paseo	el paseo|paseo		산책로	x	20
+de piedra dorada	de piedra dorada|dorada		금빛 돌로 된	x	20
+el algodón	el algodón|algodón		솜	x	20
+unas gafas enormes	unas gafas enormes|gafas|enormes		커다란 안경	n	20	gafas = 안경
+un chaleco de lana	un chaleco de lana|chaleco|lana		털조끼	x	20
+a pesar del calor	a pesar del calor|a pesar de|pesar		더운데도	x	20
+abrazó	abrazó		껴안았다	x	20
+tú eres la nieta	tú eres la nieta|eres|nieta		네가 손녀구나	n	20	eres = ser의 ‘너’ 형태
+pasa pasa	pasa, pasa|pasa		들어와, 들어와	x	20
+de cuco	de cuco|cuco		뻐꾸기시계	x	20
+esferas	esferas		시계판들	x	20
+hacían tic-tac	hacían tic-tac|hacían|tic-tac|tic-tacs		똑딱거렸다	x	20
+exactamente igual	exactamente igual|exactamente		정확히 똑같이	x	20
+un bosque de grillos	un bosque de grillos|bosque|grillos		귀뚜라미 숲	x	20
+un armario	un armario		장, 찬장	x	20
+un paquete largo	un paquete largo|paquete		긴 꾸러미	x	20
+envuelto en un trapo	envuelto en un trapo|envuelto|trapo		천에 싸인	x	20
+lo desenvolvió	lo desenvolvió|desenvolvió		풀었다	x	20
+un disco redondo	un disco redondo|disco|redondo		둥근 원판	x	20
+de latón	de latón|latón		놋쇠로 된	x	20
+del tamaño de un plato	del tamaño de un plato|tamaño|plato		접시만 한	x	20
+lo había limpiado	lo había limpiado|limpiado		닦아 두었다	x	20
+como una luna pequeña	como una luna pequeña|luna		작은 달처럼	x	20
+grabada	grabada		새겨진	x	20
+lo he guardado	lo he guardado|guardado		간직해 왔다	x	20
+dieciocho años	dieciocho años|dieciocho		18년	x	20
+se lo darás	se lo darás|darás		그것을 그에게 줄 것이다	x	20
+tenía razón	tenía razón|razón		그의 말이 맞았다	n	20	tener razón = 옳다
+en ningún idioma	en ningún idioma|ningún|idioma		어느 언어로도	x	20
+una cafetera vieja	una cafetera vieja|cafetera		낡은 커피포트	x	20
+rodeados de	rodeados de|rodeados		~에 둘러싸여	x	20
+las dos lenguas	las dos lenguas|lenguas		두 언어	x	20
+su juventud	su juventud|juventud		그의 젊은 시절	x	20
+arreglaban juntos	arreglaban juntos|arreglaban		함께 고치곤 했다	x	20
+las fiestas	las fiestas|fiestas		축제들	x	20
+sin darle importancia	sin darle importancia|darle|importancia		대수롭지 않게	x	20
+trabajamos	trabajamos		우리는 일했다	x	20
+la taza	la taza|taza		찻잔, 컵	x	20
+le gustaba	le gustaba|gustaba		그는 ~을 좋아했다	x	20
+aprender	aprender		배우다	x	20
+los barcos coreanos	los barcos coreanos|coreanos		한국 배들	x	20
+nació	nació		태어났다	n	20	nacer = 태어나다
+febrero	febrero		2월	n	20
+seguía hablando	seguía hablando|seguía|hablando		계속 말하고 있었다	x	20
+estaba loco por	estaba loco por|loco		~에게 푹 빠져 있었다	x	20
+la llamaba	la llamaba|llamaba		그녀를 ~라고 불렀다	x	20
+como a una hija	como a una hija		딸처럼	x	20
+empezaron a dar vueltas	empezaron a dar vueltas|empezaron|dar		빙빙 돌기 시작했다	x	20
+te has puesto blanca	te has puesto blanca		얼굴이 하얘졌다	x	20
+en mis rodillas	en mis rodillas|rodillas		무릎 위에	x	20
+cómo va a colgar	cómo va a colgar|colgar		어떻게 걸 것인지	x	20
+cuánto tiempo va a necesitar	cuánto tiempo va a necesitar|necesitar		얼마나 걸릴지	x	20
+dos semanas	dos semanas|semanas		2주	x	20
+no se lo pregunté	no se lo pregunté		그에게 묻지 않았다	x	20
+el mes	el mes|mes		달 (1월, 2월…)	n	20
+qué te pasa	qué te pasa		무슨 일이야?	n	20
+le mentía	le mentía|mentía		그에게 거짓말을 했다	n	20	mentir = 거짓말하다
+lo supo	lo supo|supo		그는 알았다	x	20
+de quién más	de quién más		또 누구에게서	x	20
+he comprado	he comprado		(오늘) 샀다	x	20
+nos ha dado	nos ha dado|dado		우리에게 주었다	x	20
+colgará	colgará|ajustará		걸 것이다, 맞출 것이다	x	20
+no he preguntado	no he preguntado|preguntado		묻지 않았다	x	20
+le he mentido	le he mentido|mentido		그에게 거짓말을 했다 (오늘)	x	20
+ajustarlo	ajustarlo		그것을 맞추다	x	20
+iban	iban		가고 있었다	x	20
+yo no conocía el sótano	yo no conocía el sótano|conocía		지하실은 처음이었다	x	19
+trece escalones	trece escalones|escalones|trece		계단 열세 개	x	19
+los conté uno por uno	los conté uno por uno|conté		하나하나 세었다	x	19
+el zumbido débil	el zumbido débil|zumbido		약한 웅웅 소리	x	19
+había unas palabras pintadas	había unas palabras pintadas|pintadas		그려진 글씨가 있었다	x	19
+lo aparté de mi cabeza	lo aparté de mi cabeza|aparté		그 생각을 떨쳐 냈다	x	19
+marcaban	marcaban		가리키고 있었다	x	19
+la tapa de cristal	la tapa de cristal|tapa		유리 뚜껑	x	19
+cric	cric	*크릭*	끼릭 (태엽 감는 소리)	f	19
+trrrrr	trrrrr	*르르르*	드르륵 (헛도는 소리)	f	19
+empezó a correr	empezó a correr|correr		달리기 시작했다	x	19
+loca	loca		미친 듯이	x	19
+se dispara	se dispara|dispara		제멋대로 돌아간다	x	19
+me acordaría	me acordaría		기억할 거다	x	19
+apoyada en la pared	apoyada en la pared|apoyada		벽에 기대어	x	19
+hace siete semanas	hace siete semanas|siete semanas		7주 전에	x	19
+que lea las cartas primero	que lea las cartas primero|lea		먼저 편지를 읽게 하라	x	19
+que entienda	que entienda|entienda		이해하게 하라	x	19
+yo solo he cumplido	yo solo he cumplido|cumplido		나는 약속을 지켰을 뿐이다	x	19
+nunca quiso saber nada	nunca quiso saber nada		아무것도 알려고 하지 않았다	x	19
+por eso decía armario	por eso decía armario		그래서 옷장이라고 했다	x	19
+yo estaba aquí	yo estaba aquí		나는 여기 있었다	x	19
+llevaba días sin hacer	llevaba días sin hacer		며칠째 못 하던	x	19
+volviera a andar	volviera a andar|volviera		다시 가게 되다	x	19
+puedo leerla ya	puedo leerla ya|leerla		이제 읽어도 돼요?	x	19
+no la ayudó a subir	no la ayudó a subir|ayudó		올라가는 걸 돕지 않았다	x	19
+la máquina	la máquina		기계 (시계 속)	x	19
+porque sí	porque sí		그냥 그래	x	19
+siete semanas	siete semanas		7주	x	19
+pasó una semana	pasó una semana		일주일이 지났다	x	21
+yo no bajaba	yo no bajaba|bajaba		나는 내려가지 않았다	x	21
+estudiar	estudiar		공부하다	x	21
+quiero que conozcas	quiero que conozcas|conozcas		네가 ~를 만나 봤으면 해	n	21	quiero que + 접속법: 남에게 바라는 것
+conocer	conocer		알다, 처음 만나다	n	21
+el cementerio	el cementerio|cementerio		묘지	n	21
+Poblenou	poblenou	포블러*노*우	포블레노우 — 바다 옆 옛 공장 동네	p	21
+nunca te lo he pedido	nunca te lo he pedido|pedido		한 번도 부탁한 적 없다	x	21
+te lo pido ahora	te lo pido ahora|pido		지금 부탁해	x	21
+cuando quieres algo	cuando quieres algo|quieres		무언가를 바랄 때	x	21
+el verbo cambia	el verbo cambia|cambia		동사가 바뀐다	x	21
+se pone otra ropa	se pone otra ropa|ropa		다른 옷을 입는다	x	21
+espero que	espero que		~하기를 바란다	n	21	뒤에 접속법
+ojalá	ojalá		제발 ~하기를	n	21	아랍어에서 온 말. 뒤에 접속법
+lo que deseas	lo que deseas|deseas|deseo|deseaba		네가 바라는 것	x	21	desear = 바라다
+lo que temes	lo que temes|temes		네가 두려워하는 것	x	21	temer = 두려워하다
+antiguas fábricas	antiguas fábricas|fábricas		옛 공장들	x	21
+calles rectas	calles rectas|rectas		곧은 길	x	21
+nichos	nichos		납골 벽감 (벽에 칸칸이 만든 무덤)	n	21
+de mármol	de mármol|mármol		대리석으로 된	x	21
+cinco o seis pisos	cinco o seis pisos|pisos		5~6층	x	21
+las fechas	las fechas|fechas		날짜들	x	21
+caminábamos	caminábamos		걷고 있었다	x	21
+los pájaros	los pájaros|pájaros		새들	x	21
+nuestros pasos	nuestros pasos|nuestros		우리의 발소리	x	21
+para él la pregunta era muy fácil	para él, la pregunta era muy fácil		그에게는 쉬운 질문이었다	x	21
+ya lo sabes	ya lo sabes		너도 알잖아	x	21
+nos paramos	nos paramos|paramos		멈춰 섰다	x	21
+cipreses	cipreses		사이프러스 나무	x	21
+las filas	las filas|filas|fila		줄, 열	x	21
+una lápida	una lápida|lápida		묘비 판	n	21
+casi borrada	casi borrada|borrada		거의 지워진	x	21
+el florero	el florero|florero		꽃병	x	21
+rosas frescas	rosas frescas|rosas|frescas		싱싱한 장미	x	21
+desde hace diecisiete años	desde hace diecisiete años|diecisiete		17년 전부터	x	21
+nunca falla	nunca falla|falla		한 번도 거르지 않는다	x	21
+había traído	había traído|traído		가져온	x	21
+en los bolsillos	en los bolsillos|bolsillos		주머니에	x	21
+aquesta és la Yuna	aquesta és la yuna|aquesta|és	아*케*스타 *에*스 라 *유*나	이 사람이 유나예요 (카탈루냐어)	c	21
+la néta	la néta|néta	라 *네*타	손녀 (카탈루냐어)	c	21	스페인어로는 nieta
+ha vingut	ha vingut|vingut	아 빙*굿*	왔어요 (카탈루냐어)	c	21	스페인어로는 ha venido
+ya no era una pared	ya no era una pared		더는 벽이 아니었다	x	21
+veintiséis	veintiséis		스물여섯	x	21
+volvieron	volvieron		돌아왔다	x	21
+ojalá no sea verdad	ojalá no sea verdad|sea		제발 사실이 아니기를	n	21	sea = ser의 접속법
+ojalá las fechas no coincidan	ojalá las fechas no coincidan|coincidan		제발 날짜가 맞지 않기를	x	21
+guarda	guarda		간직한다	x	21
+desde hace siglos	desde hace siglos|siglos		수백 년 전부터	x	21
+dios lo quiera	dios lo quiera|dios|quiera		신이 그렇게 해 주시기를	x	21	ojalá의 원래 뜻
+árabe	árabe		아랍어의	x	21
+otros hijos	otros hijos|hijos		다른 자식들	x	21
+sonó rara	sonó rara|sonó|rara		이상하게 들렸다	x	21
+demasiado alta	demasiado alta|demasiado		너무 큰	x	21
+sorprendido	sorprendido		놀란	x	21
+por nada	por nada		아무것도 아니야	x	21
+largo rato	largo rato		한참	x	21
+espero que esté contento	espero que esté contento|esté		기뻐하시기를 바란다	x	21	esté = estar의 접속법
+que estés aquí	que estés aquí|estés		네가 여기 있다는 것	x	21
+que tengas su reloj	que tengas su reloj|tengas		네가 그의 시계를 가진 것	x	21
+que lo sepa	que lo sepa|sepa		그가 그걸 알기를	x	21	sepa = saber의 접속법
+de alguna manera	de alguna manera|alguna|manera		어떤 식으로든	x	21
+bonitas	bonitas		예쁜 (여성 여럿)	x	21
+el mío	el mío|mío		내 것	x	21
+extendió la mano	extendió la mano|extendió		손을 내밀었다	x	21
+di un paso atrás	di un paso atrás|paso		한 걸음 물러섰다	x	21
+qué ha hecho mal	qué ha hecho mal|hecho|mal		무엇을 잘못했는지	x	21
+Bogatell	bogatell	보가*텔*	보가텔 해변	p	21
+olas pequeñas	olas pequeñas|olas		잔물결	x	21
+lejos uno del otro	lejos uno del otro		서로 떨어져	x	21
+no teníamos nada que decirnos	no teníamos nada que decirnos|teníamos|decirnos		서로 할 말이 없었다	x	21
+quiero que estés cuando funcione	quiero que estés cuando funcione|funcione		작동할 때 네가 있었으면 해	x	21
+tengo miedo de que	tengo miedo de que		~할까 봐 두렵다	n	21	뒤에 접속법
+no me lo digas nunca	no me lo digas nunca|digas|diga		나에게 영영 말하지 않을까 봐	x	21
+te lo diré	te lo diré		말해 줄게	x	21
+pronto	pronto		곧	n	21
+te lo prometo	te lo prometo|prometo		약속해	x	21
+no era mentira	no era mentira|mentira		거짓말은 아니었다	n	21	mentira = 거짓말
+le pedí	le pedí|pedí		부탁했다	x	21
+muy simple	muy simple|simple		아주 간단한	x	21
+su partida de nacimiento	su partida de nacimiento|partida de nacimiento|nacimiento		출생 증명서	n	21
+lleva flores	lleva flores|lleva		꽃을 가져간다	x	21
+ha querido darme la mano	ha querido darme la mano|darme		내 손을 잡으려 했다	x	21
+tengo miedo de decírselo	tengo miedo de decírselo|decírselo		그에게 말하기가 두렵다	x	21
+he pedido	he pedido		부탁했다 (오늘)	x	21
+una palabra muy vieja para un deseo muy nuevo	una palabra muy vieja para un deseo muy nuevo		아주 새로운 바람을 위한 아주 오래된 말	x	21
+cambió	cambió		바꿨다	x	21
+entiende	entiende		이해한다	x	21
+FERRER	ferrer	페*레*	페레 (마르티의 둘째 성)	p	21
+aguja	aguja		바늘	x	19
+puede	puede		할 수 있다	x	19
+venirá	venirá	베니*라*	(틀린 꼴) 바른 말은 vendrá	x	19
+sin usar la máquina	sin usar la máquina|usar		기계를 쓰지 않고	x	20
+por la vía seis	por la vía seis|vía		6번 선로에서	x	20	역에서는 선로를 vía라고 한다
+y la vuelta	y la vuelta		돌아오는 건요?	x	20
+cuando quieran	cuando quieran|quieran		원하실 때요	x	20
+el billete vale para todo el día	el billete vale para todo el día|vale para		표는 하루 종일 유효하다	x	20
+volveremos por la tarde	volveremos por la tarde		오후에 돌아올 거예요	x	20
+poco antes de	poco antes de		~조금 전에	x	20
+el paseo marítimo	el paseo marítimo|marítimo		해변 산책로	x	20
+una varilla	una varilla|varilla		가는 막대	x	20
+grande como una mano abierta	grande como una mano abierta		편 손바닥만 한	x	20
+durante dieciocho años	durante dieciocho años		18년 동안	x	20
+quina calor noia	quina calor, noia|quina|noia	*키*나 칼*로* *노*이아	얼마나 더웠는지, 아가씨 (카탈루냐어)	c	20
+mi taza se quedó en el aire	mi taza se quedó en el aire		찻잔이 공중에서 멈췄다	x	20
+los marineros	los marineros|marineros		선원들	x	20
+japoneses	japoneses		일본 사람들	x	20
+compraban relojes	compraban relojes|compraban		시계를 사곤 했다	x	20
+de todas las casas	de todas las casas		그 많은 집 중에	x	20
+justo	justo		하필, 바로	x	20
+la hermana de Martí	la hermana de martí|hermana		마르티의 여동생	x	20	hermana = 자매, 누나, 여동생
+el lunes limpiaré	el lunes limpiaré		월요일에 닦을 것이다	x	20
+necesitaré	necesitaré		필요할 것이다	x	20
+para enseñárselo	para enseñárselo|enseñárselo		그에게 보여 주려고	x	20
+conté hacia atrás	conté hacia atrás		거꾸로 세었다	x	20
+nueve meses	nueve meses		아홉 달	x	20
+había llegado	había llegado		도착했었다	x	20
+la azotea	la azotea|azotea		옥상	n	22	카탈루냐어로는 terrat
+terrat	terrat	터*랏*	옥상 (카탈루냐어)	c	22
+el pasillo	el pasillo|pasillo		복도	x	22
+cuerdas con ropa tendida	cuerdas con ropa tendida|cuerdas|tendida		빨래가 널린 줄	x	22
+macetas de geranios	macetas de geranios|macetas|geranios		제라늄 화분	x	22
+una vista de tejados	una vista de tejados|vista|tejados		지붕들이 보이는 풍경	x	22
+la llaman	la llaman|llaman		그것을 ~라고 부른다	x	22
+tender la ropa	tender la ropa|tender		빨래를 널다	x	22
+hacía fresco	hacía fresco|fresco		선선했다	x	22
+el otoño	el otoño|otoño		가을	n	22
+sentada en el suelo	sentada en el suelo|sentada		바닥에 앉아	x	22
+lo buscaré	lo buscaré|buscaré		찾아볼게	x	22
+lo he ajustado	lo he ajustado|ajustado		맞춰 놓았다	x	22
+anda perfecto	anda perfecto		완벽하게 간다	x	22
+te he esperado	te he esperado|esperado		너를 기다렸다	x	22
+basta	basta		그만, 됐어	n	22
+mírame	mírame		나를 봐	n	22	명령형: mira + me
+la cara seria	la cara seria|seria		진지한 얼굴	x	22
+enfadado	enfadado		화가 난	n	22
+eso era peor	eso era peor|peor		그게 더 나빴다	x	22	peor = 더 나쁜
+dime	dime		말해 줘	n	22	decir의 명령: di + me
+no me miras	no me miras|miras		나를 보지 않는다	x	22
+no me tocas	no me tocas|tocas		나를 만지지 않는다	x	22
+dímelo	dímelo		그걸 말해 줘	x	22
+ya no podía más	ya no podía más		더는 견딜 수 없었다	x	22
+salieron solas	salieron solas|salieron|solas		저절로 나왔다	x	22
+desordenadas	desordenadas		뒤죽박죽인	x	22
+como cosas que caen de una caja	como cosas que caen de una caja|caen		상자에서 쏟아지는 물건처럼	x	22
+y si tú y yo somos	y si tú y yo somos|somos		너와 내가 ~라면	x	22	somos = ser의 ‘우리’ 형태
+un perro ladraba	un perro ladraba|ladraba		개가 짖고 있었다	x	22
+seguía dando vueltas	seguía dando vueltas|dando		계속 돌고 있었다	x	22
+primos	primos|primo		사촌	n	22
+eso es lo que piensas	eso es lo que piensas|piensas		그게 네 생각이야?	x	22
+y no me lo dices	y no me lo dices|dices		그런데 나한테 말을 안 해?	x	22
+me lo escondes	me lo escondes|escondes|escondo|escondido|escondí		나에게 숨긴다	n	22	esconder = 숨기다
+me quitas la mano	me quitas la mano|quitas		내 손을 뺀다	x	22
+levantó la voz	levantó la voz		목소리를 높였다	x	22
+escúchame	escúchame		내 말 들어	n	22
+crees	crees		믿는다; 생각한다	n	22	creer
+mentía	mentía		거짓말을 했다	x	22
+no conocí a tu abuelo	no conocí a tu abuelo|conocí|conociste		네 할아버지를 몰랐다	x	22
+no lo juzgues	no lo juzgues|juzgues		그를 판단하지 마	x	22	부정 명령은 접속법 꼴
+pregúntale	pregúntale		그분께 물어봐	n	22
+pide	pide		부탁해, 요청해	n	22	pedir의 명령
+mira las fechas	mira las fechas		날짜를 봐	x	22
+busca la verdad	busca la verdad|busca		진실을 찾아	n	22
+no me trates como a un sospechoso	no me trates como a un sospechoso|trates|sospechoso		나를 용의자처럼 대하지 마	x	22
+no te trato	no te trato|trato		너를 그렇게 대하지 않아	x	22
+me mientes	me mientes|mientes		나에게 거짓말해	x	22
+no vienes	no vienes		안 온다	x	22
+espera	espera		기다려	n	22	esperar의 명령
+está listo	está listo|listo		준비됐다	n	22
+ve cuando quieras	ve cuando quieras|ve|quieras		원할 때 가	x	22	ve = ir의 명령
+como fantasmas blancos	como fantasmas blancos|fantasmas		하얀 유령들처럼	x	22
+gritar	gritar		소리 지르다	x	22
+en pijama	en pijama|pijama		잠옷 차림으로	x	22
+dos tazas de mate	dos tazas de mate|tazas|mate		마테차 두 잔	x	22	마테 = 아르헨티나의 차
+che	che		야, 이봐 (아르헨티나)	x	22
+lo escuché todo	lo escuché todo|escuché|escuchó		다 들었어	x	22
+perdoname	perdoname		미안해 (아르헨티나식)	x	22	스페인에서는 perdóname
+medio barrio	medio barrio		동네 절반이	x	22
+era amargo y caliente	era amargo y caliente|amargo		쓰고 뜨거웠다	x	22
+tomá	tomá		마셔, 받아 (아르헨티나식)	x	22	스페인에서는 toma
+ese chico	ese chico|chico		그 남자애	x	22
+está loco por vos	está loco por vos		너한테 푹 빠졌어	x	22
+dejame terminar	dejame terminar|dejame		끝까지 말하게 해 줘 (아르헨티나식)	x	22
+si tenés miedo preguntá	si tenés miedo, preguntá|tenés|preguntá		무서우면 물어봐 (아르헨티나식)	x	22
+si no sabés averiguá	si no sabés, averiguá|sabés|averiguá		모르면 알아봐 (아르헨티나식)	x	22	averiguar = 알아내다
+no te escondas	no te escondas|escondas		숨지 마	n	22
+esconderse	esconderse		숨는 것	x	22
+te lo digo yo	te lo digo yo|digo		내가 하는 말이야	x	22
+hablá	hablá		말해 (아르헨티나식)	x	22
+hablaré	hablaré|pediré		말할 것이다, 부탁할 것이다	x	22
+se ha ido	se ha ido		가 버렸다	x	22
+mi libro de gramática	mi libro de gramática|gramática		내 문법책	x	21
+que otra persona haga algo	que otra persona haga algo|haga		다른 사람이 무언가를 하기를	x	21
+el segundo verbo	el segundo verbo		두 번째 동사	x	21
+hables	hables		(접속법) 네가 말하기를	x	21	hablar → hables
+comas	comas		(접속법) 네가 먹기를	x	21	comer → comas
+por fuera solo se veían	por fuera solo se veían|veían		밖에서는 ~만 보였다	x	21
+antes del vermut	antes del vermut		베르무트 마시기 전에	x	21
+si dios quiere	si dios quiere		신이 원하신다면	x	21
+significaba	significaba		뜻했다	x	21
+contento de que	contento de que		~해서 기쁜	x	21
+ojalá nos mire	ojalá nos mire|mire		제발 우리를 지켜보시기를	x	21	mirar → mire (규칙 접속법)
+el bogatell	el bogatell|del bogatell	엘 보가*텔*	보가텔 해변	p	21
+es para un trámite	es para un trámite|trámite		서류 절차 때문이야	x	21
+la primera mentira	la primera mentira		첫 거짓말	x	21
+cuántas le había dicho	cuántas le había dicho		몇 번이나 했는지	x	21
+hablé	hablé		이야기했다	x	23
+la radio apagada	la radio apagada|radio|apagada		꺼진 라디오	x	23
+sin interrumpirme	sin interrumpirme|interrumpirme		내 말을 끊지 않고	x	23
+cuando terminé	cuando terminé|terminé		내가 말을 마치자	x	23
+las limpió	las limpió|limpió		그것을 닦았다	x	23
+yo en tu lugar	yo en tu lugar		내가 너라면	n	23
+no pensaría tanto	no pensaría tanto|pensaría|tanto		그렇게 많이 생각하지 않을 거야	x	23	조건형
+pediría	pediría		부탁할 거야	x	23
+hablaríamos	hablaríamos		이야기할 거야	x	23
+prefiero que	prefiero que|prefiero		~하는 게 좋다	x	23	뒤에 접속법
+llegue	llegue		도착하기를, 도착하면	x	23	llegar의 접속법
+su historia también	su historia también		그녀의 이야기이기도 하다	x	23
+el condicional	el condicional|condicional		조건형	x	23
+me gustaría	me gustaría|gustaría		~하고 싶다 (공손하게)	n	23	조건형: 동사원형 + ía
+me encantaría	me encantaría|encantaría		정말 그러고 싶다	n	23
+podría	podría		할 수 있을 텐데	n	23
+sería	sería		~일 텐데	n	23
+deseos educados	deseos educados|deseos|educados		공손한 바람	x	23
+sin mentiras	sin mentiras		거짓 없이	x	22
+le pedí perdón	le pedí perdón		용서를 빌었다	x	23
+a medianoche	a medianoche|medianoche		자정에	x	23
+encontraré	encontraré		찾을 것이다	x	23
+tendría que esperar	tendría que esperar|tendría		기다려야 할 것이다	x	23
+que sí sabían	que sí sabían|sabían		할 줄 알았던	x	23
+dos entradas	dos entradas		입장권 두 장	x	23
+Palau de la Música	palau de la música|palau	파*라*우 데 라 *무*시카	카탈루냐 음악당	p	23
+un concierto de coro	un concierto de coro|concierto|coro		합창 공연	n	23	coro = 합창단
+ya se lo he dicho	ya se lo he dicho		이미 그에게 말했다	x	23
+la música hace cosas	la música hace cosas		음악은 일을 한다	x	23
+que las palabras no pueden hacer	que las palabras no pueden hacer|pueden		말이 할 수 없는	x	23
+id escuchad	id. escuchad.|id|escuchad		가 봐, 들어 봐 (너희에게)	x	23	vosotros 명령
+ya veréis	ya veréis|veréis		그다음엔 알게 될 거야	x	23
+Sant Pere	sant pere|pere	*산* *페*레	산트 페레 — 고딕 지구 옆 동네	p	23
+un pastel enorme	un pastel enorme|pastel		거대한 케이크	x	23
+columnas de mosaicos	columnas de mosaicos|columnas		모자이크 기둥	x	23
+flores de cerámica	flores de cerámica|cerámica		도자기 꽃	x	23
+esculturas de piedra	esculturas de piedra|esculturas		돌 조각상	x	23
+ladrillos rojos	ladrillos rojos|ladrillos|rojos		붉은 벽돌	x	23
+el mismo arquitecto	el mismo arquitecto|arquitecto		같은 건축가	x	23
+lo reconocí	lo reconocí|reconocí		알아보았다	x	23
+los mismos colores	los mismos colores|mismos		같은 색깔들	x	23
+la alegría	la alegría|alegría		기쁨	n	23
+una chaqueta oscura	una chaqueta oscura|chaqueta		어두운 재킷	x	23
+me recordó	me recordó|recordó		생각나게 했다	x	23
+increíble	increíble		믿을 수 없는	n	23
+por todas partes	por todas partes|partes		사방에서	x	23
+una enorme lámpara	una enorme lámpara|lámpara		거대한 조명	x	23
+el fuego	el fuego|fuego		불	x	23
+el escenario	el escenario|escenario		무대	x	23
+caballos	caballos		말 (동물)	x	23
+parecían salir	parecían salir|parecían		나오는 것 같았다	x	23
+se tocaban	se tocaban|tocaban		닿았다	x	23
+vestidas de negro	vestidas de negro|vestidas		검은 옷을 입은	x	23
+cantaron	cantaron		노래했다	x	23
+latín	latín		라틴어	x	23
+las voces	las voces|voces		목소리들	x	23
+volvían a bajar	volvían a bajar|volvían		다시 내려왔다	x	23
+no importaba	no importaba|importaba		상관없었다	x	23
+los ojos cerrados	los ojos cerrados|cerrados		감은 눈	x	23
+El cant dels ocells	el cant dels ocells|cant|dels|ocells	엘 *칸* 델스 우*셀*스	새들의 노래 — 카탈루냐 민요 (파우 카잘스의 연주로 유명)	c	23
+el canto de los pájaros	el canto de los pájaros|canto		새들의 노래	x	23
+la ponía	la ponía		그 노래를 틀곤 했다	x	23
+había oído nunca	había oído nunca|oído		들어 본 적이 있었다	x	23
+el descanso	el descanso|descanso		휴식 시간	x	23
+un balcón pequeño	un balcón pequeño|balcón		작은 발코니	x	23
+bolsas de la compra	bolsas de la compra|bolsas|compra		장바구니	x	23
+había preparado	había preparado|preparado		준비해 두었다	x	23
+no me salía ninguna	no me salía ninguna|ninguna		하나도 나오지 않았다	x	23
+explicarte	explicarte		너에게 설명하다	x	23
+pedirte perdón	pedirte perdón|pedirte		너에게 용서를 빌다	x	23
+debería habértelo dicho	debería habértelo dicho|debería|habértelo		너에게 말했어야 했다	n	23	debería = ~해야 할 텐데
+deberías	deberías		너는 ~했어야 했다	x	23
+un coche pitó	un coche pitó|coche|pitó		차가 경적을 울렸다	x	23
+podríamos	podríamos		우리 ~할 수 있을까?	n	23
+empezar	empezar		시작하다	x	23
+suave	suave		부드러운	x	23
+lejana	lejana		먼	x	23
+confías en mí	confías en mí|confías		나를 믿는다	x	23	confiar = 신뢰하다
+necesitaría	necesitaría|necesitarías		필요할 것이다	x	23
+cada vez que me mires	cada vez que me mires|mires		네가 나를 볼 때마다	x	23
+pensarás	pensarás		생각할 것이다	x	23
+lo vería	lo vería|vería		그걸 볼 것이다	x	23
+dolía	dolía		아팠다	x	23
+cuando llegue la partida	cuando llegue la partida|partida		출생 증명서가 오면	x	23	cuando + 접속법 = 앞으로 ~하면
+hablaremos	hablaremos		이야기할 것이다	x	23
+sea lo que sea	sea lo que sea		무엇이든 간에	n	23
+el timbre	el timbre|timbre		벨	x	23
+la sala	la sala|sala		공연장, 홀	x	23
+un gesto pequeño	un gesto pequeño|gesto		작은 몸짓	x	23
+educado	educado		예의 바른	x	23
+de desconocido	de desconocido|desconocido		모르는 사람 같은	x	23
+buenas noches	buenas noches|buenas		잘 자, 안녕히 가세요 (밤 인사)	n	23
+Via Laietana	via laietana|via|laietana	*비*아 라이에*타*나	비아 라이에타나 — 구시가지를 가로지르는 큰길	p	23
+despierta	despierta		깨어 있는	x	23
+sería mejor esperar	sería mejor esperar		기다리는 게 나을 거래	x	23
+suspiró	suspiró		한숨을 쉬었다	x	23
+los hombres de esta familia	los hombres de esta familia|hombres		이 집안 남자들	x	23
+siempre tienen razón	siempre tienen razón|tienen		늘 옳다	x	23
+en el peor momento	en el peor momento		가장 안 좋은 때에	x	23
+exacta	exacta		정확한	x	23
+tus	tus		너의 (여럿)	x	23
+saber	saber		알다	x	23
+posible	posible		가능한	x	23
+mi refugio	mi refugio|refugio		나의 피난처	x	22
+la iglesia iluminada	la iglesia iluminada|iluminada		불 밝힌 성당	x	22
+la torre de comunicaciones	la torre de comunicaciones|comunicaciones		통신탑	x	22	티비다보 옆의 콜세롤라 탑
+junto al	junto al|junto a		~옆에	x	22
+no había mandado	no había mandado|mandado		아직 보내지 않았다	x	22
+va perfecto	va perfecto		완벽하게 간다	x	22
+no me das la mano	no me das la mano|das		내 손을 잡지 않는다	x	22
+me quitaste	me quitaste|quitaste		나에게서 뺐다	x	22
+tratar a alguien	tratar a alguien|tratar		누군가를 대하다	x	22
+apretó	apretó		꽉 쥐었다	x	22
+el mate y el termo	el mate y el termo|termo		마테 잔과 보온병	x	22
+te juro	te juro|juro		맹세해	x	22
+llenó	llenó		채웠다	x	22
+me lo pasó	me lo pasó|pasó		나에게 건넸다	x	22
+una bombilla de metal	una bombilla de metal		쇠로 된 빨대 (마테용 봄비야); 전구	x	22
+nunca lo había probado	nunca lo había probado|probado		마셔 본 적이 없었다	x	22
+le escondí algo	le escondí algo		무언가를 숨겼다	x	22
+en la misma ciudad	en la misma ciudad		같은 도시에서	x	22
+la palabra pequeña iba detrás	la palabra pequeña iba detrás		작은 말이 뒤에 붙었다	x	22
+pegada	pegada		붙은	x	22
+todo cambiaba	todo cambiaba|cambiaba		모든 게 바뀌었다	x	22
+sus propias órdenes	sus propias órdenes|propias|órdenes		자기만의 명령형	x	22
+acento	acento		강세 부호, 억양	x	22
+escuchar	escuchar		듣다	x	22
+pedía	pedía		부탁하곤 했다	x	22
+rojas	rojas		빨간 (여성 여럿)	x	22
+la plaza de España	la plaza de españa		에스파냐 광장	x	24
+un tren de cercanías	un tren de cercanías|cercanías		근교 열차	x	24
+zapatos de caminar	zapatos de caminar|caminar		걷기 신발	x	24
+una mochila pequeña	una mochila pequeña|mochila		작은 배낭	x	24
+el paisaje cambió	el paisaje cambió|paisaje		풍경이 바뀌었다	x	24
+desaparecieron	desaparecieron		사라졌다	x	24
+aparecieron campos	aparecieron campos|aparecieron|campos		들판이 나타났다	x	24
+pueblos pequeños	pueblos pequeños|pueblos		작은 마을들	x	24
+un río	un río|río		강	n	24
+de roca gris y rosada	de roca gris y rosada|roca|rosada		회색과 분홍빛 바위의	x	24
+formas extrañas	formas extrañas|formas|extrañas		이상한 모양들	x	24
+cabezas	cabezas		머리들	x	24
+parecía cortada	parecía cortada|cortada		잘린 것 같았다	x	24
+un gigante	un gigante|gigante		거인	x	24
+monte serrado	monte serrado|monte|serrado		톱으로 자른 산	x	24
+una sierra	una sierra|sierra		톱; 산맥	x	24
+la montaña sagrada	la montaña sagrada|sagrada		성스러운 산	x	24
+cambiamos	cambiamos		갈아탔다	x	24
+una rueda dentada	una rueda dentada|rueda|dentada		톱니바퀴	x	24
+el monasterio	el monasterio|monasterio		수도원	n	24
+tiendas de recuerdos	tiendas de recuerdos|recuerdos		기념품 가게	x	24	recuerdo = 추억, 기념품
+autobuses	autobuses		버스들	x	24
+la basílica	la basílica|basílica		대성당	x	24
+silenciosa	silenciosa		조용한	x	24
+la Virgen	la virgen|virgen		성모	x	24
+una bola	una bola|bola		공, 구슬	x	24
+la tocaba al pasar	la tocaba al pasar|tocaba|pasar		지나가며 만졌다	x	24
+La Moreneta	la moreneta|moreneta	라 무러*네*타	모레네타 — 몬세라트의 검은 성모상 (카탈루냐어 ‘까무잡잡한 아가씨’)	c	24
+la visitaba cada año	la visitaba cada año|visitaba		해마다 찾아갔다	x	24
+he tocado	he tocado|tocado		만졌다	x	24
+no sabía rezar	no sabía rezar|rezar		기도할 줄 몰랐다	x	24
+fría y lisa	fría y lisa|frías|lisa		차갑고 매끄러운	x	24
+gastada	gastada		닳은	x	24
+millones	millones		수백만	x	24
+vistas	vistas		전망	x	24
+no me sorprendió	no me sorprendió|sorprendió		놀랍지 않았다	x	24
+oírlo fue distinto	oírlo fue distinto|oírlo|distinto		듣는 건 달랐다	x	24
+la firma	la firma|firma		서명	n	24
+escríbele tú	escríbele tú|escríbele		네가 그녀에게 편지해	x	24
+firma con una M	firma con una m		M으로 서명해	x	24
+sabrá	sabrá		알 것이다	x	24	saber의 미래
+le obedecí	le obedecí|obedecí		그의 말을 따랐다	x	24
+una sola hoja	una sola hoja|hoja		종이 한 장	x	24
+una letra redonda	una letra redonda|redonda		둥근 글씨	x	24
+léela	léela		그것을 읽어	x	24
+ya puedes	ya puedes|puedes		이제 할 수 있어	x	24
+te escribo	te escribo|escribo		너에게 편지한다	x	24
+mi patio	mi patio		내 안마당	x	24
+tu risa	tu risa|risa		너의 웃음	x	24
+para darte una noticia triste	para darte una noticia triste|darte|noticia		슬픈 소식을 전하려고	x	24	noticia = 소식
+murió hace dos días	murió hace dos días		이틀 전에 세상을 떠났다	x	24
+conmigo a su lado	conmigo a su lado		내가 곁에 있는 채로	x	24
+treinta y un años exactos	treinta y un años exactos|exactos		꼭 31년	x	24
+antes de morir	antes de morir|morir		죽기 전에	x	24
+escribirte	escribirte		너에게 편지하는 것	x	24
+todo estará esperando	todo estará esperando|estará|esperando		모든 게 기다리고 있을 것이다	x	24
+tu tarjeta de Navidad	tu tarjeta de navidad|tarjeta|navidad		너의 크리스마스카드	x	24	Navidad = 크리스마스
+la única que mandaste	la única que mandaste|mandaste		네가 보낸 유일한 것	x	24
+tu dirección	tu dirección|dirección		너의 주소	n	24
+veinticuatro años	veinticuatro años|veinticuatro		24년	x	24
+solo esperaba que estuvieras bien	solo esperaba que estuvieras bien|estuvieras		네가 잘 지내기만 바랐다	x	24	estuvieras = 접속법 과거 (25장에서 배운다)
+un abrazo muy fuerte	un abrazo muy fuerte|abrazo		꼭 안아 줄게 (편지 끝 인사)	x	24
+a la vez	a la vez		한꺼번에	x	24
+veintiún años	veintiún años|veintiún		스물한 살	x	24
+no me di cuenta	no me di cuenta		알아차리지 못했다	x	24	darse cuenta = 알아차리다
+una postal	una postal		엽서 한 장	x	24
+con letras nuestras	con letras nuestras|nuestras		우리 글자로	x	24
+mi mesita de noche	mi mesita de noche|mesita		내 침대 옆 탁자	x	24
+me reí	me reí|reí		웃었다	x	24
+un pañuelo de tela	un pañuelo de tela|pañuelo		천 손수건	x	24
+flores bordadas	flores bordadas|bordadas		수놓은 꽃	x	24
+decírmelo	decírmelo		나에게 그걸 말하다	x	24
+te juro por la Moreneta	te juro por la moreneta		모레네타에 맹세해	x	24
+no conoció	no conoció|conoció		알지 못했다, 만나지 않았다	x	24	conocer의 과거 = 처음 만났다
+juramentos	juramentos		맹세	x	24
+de una vieja	de una vieja		늙은이의	x	24
+lo entiendo	lo entiendo|entiendo		이해해	x	24
+los papeles llegarán	los papeles llegarán|llegarán		서류는 올 것이다	x	24
+dirán lo mismo	dirán lo mismo|dirán		같은 말을 할 것이다	x	24
+cómodo	cómodo		편안한	x	24
+cansadas	cansadas		지친 (여성 여럿)	x	24
+vibró	vibró		진동했다	x	24
+lo dejé en tu cama	lo dejé en tu cama|dejé		네 침대에 두었어	x	24
+lo abro	lo abro|abro		열까?	x	24
+apurate	apurate		서둘러 (아르헨티나식)	x	24
+ha jurado	ha jurado|jurado		맹세했다	x	24
+Monte	monte		산	x	24
+escrita	escrita		쓰인	x	24
+antes de su vermut	antes de su vermut		베르무트 마시기 전에	x	23
+no sé seguro	no sé seguro|seguro		확실히 모른다	x	23
+no quiero equivocarme	no quiero equivocarme|equivocarme		틀리고 싶지 않다	x	23
+algunos verbos cortan un poco	algunos verbos cortan un poco|cortan		어떤 동사는 조금 줄어든다	x	23
+la orden	la orden|orden		명령	x	23
+termina en	termina en|termina		~로 끝난다	x	23
+a un paso de	a un paso de		~에서 한 걸음 거리에	x	23
+las hacían brillar	las hacían brillar|brillar		그것들을 반짝이게 했다	x	23
+una enorme claraboya	una enorme claraboya|claraboya		거대한 천창	x	23
+oro en el centro	oro en el centro|oro		가운데는 금빛	x	23
+la cara de un músico	la cara de un músico|músico		음악가의 얼굴	x	23
+el sol de cristal	el sol de cristal		유리 태양	x	23
+lo veré	lo veré|veré		그걸 볼 것이다	x	23
+añadió	añadió		덧붙였다	x	23
+el reloj te espera	el reloj te espera		시계가 너를 기다린다	x	23
+te la mandaré	te la mandaré|mandaré		너에게 보낼게	x	23
+irse	irse		가 버리다	x	23	
+poder	poder		~할 수 있다	x	23	
+tener	tener		가지다	x	23	
+vosotros	vosotros		너희들	x	23	
+Ferrocarrils	Ferrocarrils	페로카릴스	카탈루냐 철도(FGC)	c	24	
+Monistrol	Monistrol		모니스트롤 (몬세라트 아래 마을)	p	24	
+el cremallera	el cremallera|cremallera		톱니바퀴 산악열차	n	24	
+zapatillas	zapatillas|zapatilla		운동화	x	24	
+lateral	lateral		옆쪽의	x	24	
+el matasellos	el matasellos|matasellos		소인 (우체국 날짜 도장)	n	24	
+el sello	el sello|sello		우표; 도장	x	24	
+un mensajero	un mensajero|mensajero		택배 기사, 배달원	x	24	
+trajo	trajo		가져왔다 (traer)	x	24	
+temblando	temblando		떨면서	x	24	
+espero que me perdones	espero que me perdones|perdones		나를 용서해 주기를 바란다	x	24	perdonar → perdones
+quiero que la leas	quiero que la leas|leas		네가 그것을 읽기를 바란다	x	24	leer → leas
+hice	hice		(내가) 했다 (hacer)	x	24	y eso hice = 그래서 그렇게 했다
+mirado	mirado		본 (mirar)	x	24	
+tenido	tenido		가진 (tener)	x	24	
+quería que conocieras	quería que conocieras|conocieras		네가 알기를 바랐다	x	24	접속법 과거 (25장)
+esas	esas|esos|esa		그것들	x	24	
+Sant Joan	Sant Joan	산 조안	산트 조안 (푸니쿨라 이름)	p	24	
+empollar	empollar		알을 품다	x	25	
+una gallina	una gallina|gallina		암탉	x	25	
+abría	abría		열고 있었다/열곤 했다	x	25	
+ábrelo	ábrelo		그걸 열어라	x	25	
+la Castanyada	la Castanyada|Castanyada	라 카스타냐다	밤 축제 (10월 31일 밤)	c	25	
+las castañas	las castañas|castañas|castaña|la castaña		밤 (먹는 밤)	n	25	
+que traiga	que traiga|traiga		가져오기를	x	25	traer → traiga
+una libreta	una libreta|libreta|la libreta		수첩, 공책	n	25	
+lo malo	lo malo|malo		나쁜 것	x	25	
+se digiere	se digiere|digiere		소화된다	x	25	
+Cataluña	Cataluña		카탈루냐	p	25	
+se celebra	se celebra|celebra		기념한다, 축하한다	x	25	
+Todos los Santos	Todos los Santos|Santos	토도스 로스 산토스	모든 성인의 날 (11월 1일)	p	25	
+mientras	mientras		~하는 동안	n	25	
+la harina	la harina|harina		밀가루	x	25	
+el azúcar	el azúcar|azúcar		설탕	x	25	
+la almendra molida	la almendra molida|almendra molida|almendra|molida		아몬드 가루	x	25	
+una bolsa	una bolsa|bolsa		봉지, 가방	x	25	
+los piñones	los piñones|piñones		잣	x	25	
+los muertos	los muertos|muertos		죽은 사람들	x	25	
+para no dormirse	para no dormirse|dormirse		잠들지 않으려고	x	25	
+comían	comían		먹곤 했다	x	25	
+bebían	bebían		마시곤 했다	x	25	
+vino dulce	vino dulce|dulce|dulces		달콤한 (포도주)	x	25	
+se disfrazan	se disfrazan|disfrazan		변장한다	x	25	
+brujas	brujas|bruja		마녀	x	25	
+se hacen	se hacen|hacen		만든다	x	25	
+los panellets	los panellets|panellets|panellet|el panellet	라 파넬레츠	잣 아몬드 과자	c	25	
+bolitas	bolitas|bolita		작은 공 모양	x	25	
+el boniato	el boniato|boniato|boniatos|los boniatos		고구마	n	25	
+cocido	cocido		삶은	x	25	
+aplastado	aplastado		으깬	x	25	
+moniatos	moniatos	모니아토스	고구마 (카탈루냐어)	c	25	
+la masa	la masa|masa		반죽	x	25	
+pasamos	pasamos		(우리가) 묻혔다, 지나갔다	x	25	
+el huevo	el huevo|huevo		달걀	x	25	
+cubrimos	cubrimos		(우리가) 덮었다	x	25	
+probar	probar		맛보다, 시험하다	x	25	
+control de calidad	control de calidad|control|calidad		품질 관리	x	25	
+dinero	dinero		돈	x	25	
+mandó	mandó		보냈다	x	25	
+una castañera	una castañera|castañera		군밤 장수	x	25	
+mayor	mayor		나이 든	x	25	
+el horno	el horno|horno		화덕, 오븐	x	25	
+echaba humo	echaba humo|echaba|humo		연기를 내뿜고 있었다	x	25	
+la leña	la leña|leña		장작	x	25	
+una docena	una docena|docena		한 다스(12개)	x	25	
+calentitos	calentitos		따끈따끈한	x	25	
+guiñó un ojo	guiñó un ojo|guiñó		윙크했다	x	25	
+cucuruchos	cucuruchos|cucurucho		원뿔 모양 종이봉투	x	25	
+quemaban	quemaban		뜨거웠다 (데일 만큼)	x	25	
+como si llevara	como si llevara|llevara		마치 ~를 들고 있는 것처럼	n	25	llevar → llevara (접속법 과거)
+algo vivo	algo vivo|vivo		살아 있는 것	x	25	
+nos salvó	nos salvó|salvó		우리를 구했다	x	25	
+valen	valen		값어치가 있다	x	25	
+sirvió	sirvió		(음식을) 냈다, 따랐다	x	25	
+la miel	la miel|miel		꿀	x	25	
+las copas	las copas|copas|copa		술잔	x	25	
+sacaba	sacaba		꺼내곤 했다	x	25	
+historias	historias		이야기들	x	25	
+invitados	invitados		손님들	x	25	
+que no hablan	que no hablan|hablan		말하지 않는	x	25	
+terminamos	terminamos		(우리가) 끝냈다	x	25	
+apartó	apartó		치웠다	x	25	
+doblada	doblada		접힌	x	25	
+el Registro Civil	el Registro Civil|Registro Civil|Registro|Civil		호적 사무소 (출생 등록)	x	25	
+certificación de nacimiento	certificación de nacimiento|certificación|el certificado de nacimiento|el certificado|certificado		출생 증명서	n	25	
+mil novecientos	mil novecientos|mil|novecientos		천구백	x	25	
+los padres	los padres|padres		부모	x	25	
+letras latinas	letras latinas|latinas		로마자	x	25	
+escriben	escriben		쓴다 (그들이)	x	25	
+fino	fino		얇은	x	25	
+transparente	transparente		투명한	x	25	
+un recibo	un recibo|recibo|el recibo		영수증	n	25	
+XI	XI	온세	11 (로마 숫자, 11월)	f	25	
+Seiko	Seiko	세이코	세이코 (일본 시계 상표)	f	25	
+cliente	cliente|el cliente		손님, 고객	n	25	
+pagado	pagado		지불됨	x	25	
+se inclinó	se inclinó|inclinó		몸을 숙였다	x	25	
+página	página|páginas|la página		쪽, 페이지	x	25	
+escucha	escucha		들어 봐	x	25	
+llegada	llegada|la llegada		도착	x	25	
+había sido	había sido|sido		~였었다	x	25	
+esperan un hijo	esperan un hijo|esperan		아이를 기다린다 (임신 중)	x	25	
+me busque	me busque|busque		나를 찾기를	x	25	buscar → busque
+existía	existía		존재했다	x	25	
+necesitaban	necesitaban		필요했다	x	25	
+la gorra	la gorra|gorra		모자 (챙 달린)	x	25	
+por casualidad	por casualidad|casualidad		우연히	n	25	
+lejano	lejano		먼	x	25	
+ojalá te lo hubiera dicho	ojalá te lo hubiera dicho|hubiera		너에게 말했더라면 좋았을 텐데	n	25	hubiera + 과거분사 = 지나간 일에 대한 아쉬움
+no habrías sufrido	no habrías sufrido|habrías|sufrido		고생하지 않았을 텐데	x	25	
+mojados	mojados		젖은	x	25	
+tontas	tontas|tonta|tonto		바보 (같은)	x	25	
+dile	dile		그에게 말해 줘	x	25	
+corriendo	corriendo		뛰어서	x	25	
+una traducción	una traducción|traducción		번역	x	25	
+abril	abril		4월	x	25	
+corrió	corrió		달렸다	x	25	
+en plena noche	en plena noche|plena		한밤중에	x	25	
+corría	corría		달리고 있었다	x	25	
+descalza	descalza		맨발로	x	25	
+rezando	rezando		기도하며	x	25	
+se secó	se secó|secó		닦았다	x	25	
+se cierra	se cierra|cierra		닫는다	x	25	
+despertar	despertar		깨우다	x	25	
+si yo fuera tú	si yo fuera tú|fuera		내가 너라면	n	25	ser → fuera (접속법 과거)
+habría tenido	habría tenido|habría		가졌을 텐데	x	25	
+me habría callado	me habría callado|callado		입을 다물었을 텐데	x	25	
+reír	reír		웃다	x	25	
+el volumen	el volumen|volumen		소리 크기	x	25	
+que bajara	que bajara|bajara		낮추라고	x	25	bajar → bajara
+me lo hubieras preguntado	me lo hubieras preguntado|hubieras		네가 물어봤더라면	x	25	
+descubrí	descubrí		발견했다	x	25	
+dijeron	dijeron		(그들이) 말했다	x	25	
+dijera	dijera		(접속법 과거) decir	x	25	
+pudieron	pudieron		(그들이) 할 수 있었다	x	25	
+pudiera	pudiera		(접속법 과거) poder	x	25	
+llegan	llegan		도착한다	x	25	
+certificado	certificado		증명서	x	25	
+que venga	que venga		오기를 (venir 접속법)	x	25	
+venían	venían		오곤 했다, 들어 있었다	x	25	
+pregunto	pregunto		(내가) 묻는다	x	25	
+poco	poco		조금	x	25	
+aquellas	aquellas|aquellos		저 (여성 복수)	x	24	
+negras	negras|negros		검은	x	25	
+los platos	los platos|platos		접시들	x	25	
+tapas de cartón	tapas		(책) 표지; 타파스	x	25	
+se tapó	se tapó|tapó		가렸다	x	25	
+apagó	apagó|apagaba		껐다	x	26	
+el Arco de Triunfo	el Arco de Triunfo|Arco de Triunfo|arco de triunfo|un arco de triunfo		개선문	p	26	
+la Cascada	la Cascada|Cascada|cascada|en cascada		폭포	x	26	
+la Ciutadella	la Ciutadella|Ciutadella|Parque de la Ciutadella		시우타데야 (공원)	p	26	
+las cotorras	las cotorras|cotorras|cotorra		초록 앵무새 (몽크앵무)	x	26	
+Exposición Universal	Exposición Universal|una Exposición Universal|Exposición|Universal		만국 박람회	x	26	
+guardé	guardé		넣었다, 간직했다	x	26	
+hablamos	hablamos		(우리는) 이야기했다	x	26	
+recordé	recordé		기억났다	x	26	
+Sant Martí	Sant Martí	산 마르티	산트 마르티 (성 마르티노의 날, 11월 11일)	p	26	
+trabajó	trabajó		일했다	x	26	
+abuelos	abuelos|los abuelos		할아버지 할머니들	x	26	
+algunas	algunas|algunos		몇몇	x	26	
+alquilaban	alquilaban|alquilar		빌려주곤 했다	x	26	
+amarillos	amarillos|amarillas		노란	x	26	
+animales	animales|tiendas de animales		동물	x	26	
+antipático	antipático|antipática		불친절한, 무뚝뚝한	n	26	
+apagaba	apagaba		끄고 있었다	x	26	
+bajé	bajé		내려갔다	x	26	
+una barca	una barca|barca|barcas|la barca		작은 배, 보트	n	26	
+la basura	la basura|basura		쓰레기	x	26	
+me besó	me besó|besó		내게 입맞췄다	x	26	
+bicicletas	bicicletas		자전거	x	26	
+te brillan los ojos	te brillan los ojos|brillan		네 눈이 빛난다	x	26	
+si nos caemos	si nos caemos|caemos		우리가 떨어지면	x	26	
+cafés	cafés|dos cafés		커피 (두 잔)	x	26	
+me cambié de ropa	me cambié de ropa|cambié		옷을 갈아입었다	x	26	
+un carro	un carro|carro		수레, 전차	x	26	
+caía	caía		떨어지고 있었다	x	26	
+celebrar	celebrar		기념하다	x	26	
+chicos	chicos		젊은이들, 아이들	x	26	
+la ciencia	la ciencia|ciencia		과학	x	26	
+una cita	una cita|cita|es una cita		데이트, 약속	n	26	
+clientes	clientes		손님들	x	26	
+construyeron	construyeron		(그들이) 지었다	x	26	
+corta	corta		짧은	x	26	
+creer	creer		믿다	x	26	
+culpa tuya	culpa tuya|culpa|tuya		네 탓	x	26	
+una empresa	una empresa|empresa		회사	x	26	
+encendido	encendido		켠	x	26	
+lo entenderé	lo entenderé|entenderé		이해할게	x	26	
+entrar	entrar		들어가다	x	26	
+eras	eras		(너는) ~였다	x	26	
+se escaparon	se escaparon|escaparon		도망쳤다	x	26	
+como si esperara	como si esperara|esperara		마치 ~를 기다리는 것처럼	x	26	
+estatuas	estatuas		조각상들	x	26	
+estudiante	estudiante		학생	x	26	
+firmar	firmar|firmaste|firmó		서명하다	n	26	
+una fuente	una fuente|fuente		분수	x	26	
+gritaban	gritaban|gritó		소리쳤다	x	26	
+me gustas	me gustas|gustas|tú también me gustas		네가 좋아	n	26	
+hago	hago|qué hago		(내가) 한다	x	26	
+me harías muy feliz	me harías muy feliz|harías		나를 아주 행복하게 할 텐데	x	26	
+hicieron	hicieron		(그들이) 만들었다	x	26	
+la hierba	la hierba|hierba		풀밭	x	26	
+de mal humor	de mal humor|humor		기분이 나쁜	x	26	
+importante	importante|lo más importante		중요한	x	26	
+imposible	imposible		불가능한	x	26	
+intentaban	intentaban		~하려고 했다	x	26	
+el interruptor	el interruptor|interruptor		스위치	x	26	
+pompas de jabón	pompas de jabón|pompas|jabón		비눗방울	x	26	
+un jersey	un jersey|jersey		스웨터	x	26	
+el ladrillo	el ladrillo|ladrillo		벽돌	x	26	
+el lago	el lago|lago		호수	n	26	
+un mamut	un mamut|mamut		매머드	x	26	
+mezclado	mezclado		섞은	x	26	
+miles	miles		수천	x	26	
+sin mirarme	sin mirarme|mirarme		나를 보지 않고	x	26	
+monumental	monumental		거대한, 기념비적인	x	26	
+un mostrador	un mostrador|mostrador		계산대	x	26	
+se movían	se movían|movían		움직였다	x	26	
+nadar	nadar		수영하다	x	26	
+opinaba	opinaba		의견을 말했다	x	26	
+la oscuridad	la oscuridad|oscuridad		어둠	x	26	
+pagó	pagó		돈을 냈다	x	26	
+palmeras	palmeras		야자수	x	26	
+parece	parece|parecen|pareces|lo pareces		~처럼 보인다	x	26	
+pasear	pasear		산책하다	x	26	
+un pato	un pato|pato|patos|los patos		오리	x	26	
+perros	perros		개들	x	26	
+no te voy a pedir	no te voy a pedir|pedir		너에게 부탁하지 않을 거야	x	26	
+piedras	piedras		돌들	x	26	
+si lo ponemos en marcha	si lo ponemos en marcha|ponemos|en marcha		작동시키면	x	26	
+poner	poner		놓다, 열다	x	26	
+si te ponés	si te ponés|ponés		네가 입으면 (아르헨티나식)	x	26	
+¿me prometes?	¿me prometes?|prometes		약속해?	x	26	
+pudo	pudo		할 수 있었다	x	26	
+si te quedaras	si te quedaras|quedaras		네가 남는다면 (가정)	n	26	quedar → quedaras
+si te quedas	si te quedas|quedas		네가 남으면	n	26	
+que te quedes	que te quedes|quedes		네가 남기를	x	26	
+como si quisiera	como si quisiera|quisiera		마치 ~하고 싶은 것처럼	x	26	
+remaba	remaba|remando|remar		노를 저었다	x	26	
+un remo	un remo|remo|remos|los remos		노	x	26	
+el sabor	el sabor|sabor|con sabor a		맛	x	26	
+te salvo	te salvo|salvo		너를 구할게	x	26	
+el santo	el santo|santo		성인의 날 (이름날)	x	26	
+una sentencia	una sentencia|sentencia		판결	x	26	
+serio	serio		진지한	x	26	
+será	será		~일 것이다	x	26	
+soldados	soldados		군인들	x	26	
+quería que lo supieras	quería que lo supieras|supieras		네가 알기를 바랐다	x	26	
+tambores	tambores		북	x	26	
+si lo toco	si lo toco|toco		내가 그걸 만지면	x	26	
+torcida	torcida		비뚤어진	x	26	
+vender	vender|venderlo|vendo|si vendo		팔다	n	26	
+verdes	verdes		초록색의	x	26	
+¿ves?	¿ves?|ves|Ves		봤지?	x	26	
+vienen	vienen		온다	x	26	
+la vida	la vida|vida|toda la vida|tu vida		삶, 인생	x	26	
+antes de que vinieras	antes de que vinieras|vinieras|si no hubieras venido		네가 오기 전에	x	26	venir → vinieras
+viven	viven		산다	x	26	
+asustó	asustó		놀라게 했다	x	26	
+la orilla	la orilla|orilla		물가, 기슭	x	26	
+calentitas	calentitas|Calentitas|calentitos		따끈따끈해요!	x	25	
+Canarias	Canarias		카나리아 제도	p	25	
+Estados Unidos	Estados Unidos|Estados|Unidos		미국	p	25	
+sirve	sirve|Sirve|sirve para		~에 쓰인다	x	25	
+abrirlo	abrirlo		그것을 열다	x	25	
+no me acordaba	no me acordaba|acordaba		기억나지 않았다	x	25	
+los campaneros	los campaneros|campaneros		종지기들	x	25	
+contigo	contigo		너와 함께	x	25	
+decían	decían		말하고 있었다	x	25	
+hubieron	hubieron		(haber의 과거형, 그들)	x	25	
+las islas	las islas|islas		섬들	x	25	
+mandé	mandé		보냈다	x	25	
+el participio	el participio|participio		과거분사	x	25	
+suya	suya|suyo		그의 것, 그녀의 것	x	25	
+vuestra	vuestra|vuestro		너희의 것	x	25	
+Ariadna	Ariadna	아리아드나	아리아드네	p	27	
+Teseo	Teseo	테세오	테세우스	p	27	
+Eros	Eros	에로스	에로스 (사랑의 신)	p	27	
+el Laberinto de Horta	el Laberinto de Horta|Laberinto de Horta|Horta|Laberinto		오르타 미로 공원	p	27	
+el laberinto	el laberinto|laberinto		미로	n	27	
+cerraría	cerraría|Cerraría		닫을 것이다 (조건법)	x	27	
+¿entendés?	¿entendés?|Entendés|entendés		알겠어? (아르헨티나식)	x	27	
+estudiaba	estudiaba|Estudiaba		공부하고 있었다	x	27	
+haber	haber|Haber		(조동사) ~했다	x	27	
+haría	haría|Haría		할 것이다	x	27	
+iría	iría|Iría		갈 것이다	x	27	
+odiaba	odiaba|Odiaba		싫어했다	x	27	
+respiré	respiré|Respiré		숨을 쉬었다	x	27	
+tenemos	tenemos|Tenemos		(우리는) 가지고 있다	x	27	
+¿te acordás?	¿te acordás?|acordás		기억나? (아르헨티나식)	x	27	
+acá	acá|por acá		여기 (아르헨티나식)	x	27	
+alas	alas|con alas		날개	x	27	
+aplaudió	aplaudió		박수를 쳤다	x	27	
+apreté	apreté		눌렀다	x	27	
+un arco	un arco|arco		활	 아치	27	x
+me arrepentiré	me arrepentiré|arrepentiré		후회할 것이다	n	27	
+me arrepiento de	me arrepiento de|arrepiento|me arrepiento		~를 후회한다	n	27	
+bajas	bajas|bajos		낮은	x	27	
+el botón	el botón|botón		버튼	x	27	
+callada	callada|callado		말없이	x	27	
+cambiar	cambiar		바꾸다	x	27	
+el ciprés	el ciprés|ciprés|cipreses		사이프러스 나무	x	27	
+clase	clase|no tengo clase		수업	x	27	
+colgó	colgó		(전화를) 끊었다	x	27	
+una columna	una columna|columna		기둥	x	27	
+cortadas	cortadas		잘린	x	27	
+desapareció	desapareció		사라졌다	x	27	
+descubrió	descubrió		알아냈다	x	27	
+desnudo	desnudo		벌거벗은	x	27	
+un dibujo	un dibujo|dibujo		그림, 무늬	x	27	
+diciendo	diciendo		말하면서	x	27	
+el diseño	el diseño|diseño		디자인	x	27	
+divertirse	divertirse		즐기다	x	27	
+la doctora	la doctora|doctora		의사 (여)	x	27	
+eh	eh		응? 알지?	x	27	
+elegir	elegir|elegía		고르다	x	27	
+si se enoja	si se enoja|enoja|enojado|enojar|me habría enojado		화내다 (중남미식)	x	27	
+la entrada	la entrada|entrada		입구	x	27	
+se equivocaba	se equivocaba|equivocaba		틀리곤 했다	x	27	
+esconderme	esconderme|escondió|a escondidas|escondidas		숨다	x	27	
+una escena	una escena|escena		장면	x	27	
+mi especialidad	mi especialidad|especialidad		특기	x	27	
+los estanques	los estanques|estanques		연못들	x	27	
+una excusa	una excusa|excusa		핑계	x	27	
+los exámenes	los exámenes|exámenes		시험들	x	27	
+la facultad	la facultad|facultad		대학 (학부)	x	27	
+familiar	familiar		가족의	x	27	
+giraba	giraba		돌았다	x	27	
+un golpe suave	un golpe suave|golpe		가볍게 툭 침	x	27	
+guardó	guardó		넣었다	x	27	
+hablado	hablado		이야기한	x	27	
+habían	habían		~했었다	x	27	
+el hilo	el hilo|hilo		실	n	27	
+hojas	hojas		잎	x	27	
+hubieran	hubieran		(haber, 접속법 과거 복수)	x	27	
+junto	junto|todo junto		함께, 한꺼번에	x	27	
+el kimchi	el kimchi|kimchi	킴치	김치	f	27	
+la medicina	la medicina|medicina		의학	x	27	
+las mentiras	las mentiras|mentiras		거짓말들	x	27	
+mojada	mojada		젖은	x	27	
+orgullosos	orgullosos		자랑스러워하는	x	27	
+se oían	se oían|oían		들렸다	x	27	
+pagaba	pagaba		냈다 (돈을)	x	27	
+me paré	me paré|paré		멈췄다	x	27	
+se le pasará	se le pasará|pasará		지나갈 것이다	x	27	
+perdernos	perdernos|perdete|me perdí|perdí|los perdidos|perdidos		길을 잃다	x	27	
+precisión	precisión		정밀함	x	27	
+tenía prisa	tenía prisa|prisa		서두르고 있었다	x	27	
+quedado	quedado		남은	x	27	
+re	re|re orgullosos	레	엄청 (아르헨티나식)	x	27	
+un rectángulo	un rectángulo|rectángulo		직사각형	x	27	
+del resto	del resto|resto		나머지	x	27	
+nos reíamos	nos reíamos|reíamos		(우리는) 웃곤 했다	x	27	
+reírse	reírse		웃다	x	27	
+rica	rica		부유한	x	27	
+un rincón	un rincón|rincón		구석	x	27	
+la salida	la salida|salida		출구	n	27	
+la sangre	la sangre|sangre		피	x	27	
+seguridad	seguridad|con mucha seguridad		자신감	x	27	
+sino	sino		~가 아니라	x	27	
+el súper	el súper|súper		슈퍼마켓	x	27	
+terrazas	terrazas		계단식 단	x	27	
+nos vemos	nos vemos|vemos		또 보자	x	27	
+verla	verla		그것을 보다	x	27	
+una videollamada	una videollamada|videollamada		영상 통화	x	27	
+viendo	viendo		보면서	x	27	
+vine	vine		(나는) 왔다	x	27	
+volvería	volvería		돌아올 것이다	x	27	
+si no vuelvo	si no vuelvo|vuelvo		돌아오지 않으면	x	27	
+un cajón	un cajón|cajón		서랍	x	26	
+donde	donde		~하는 곳	x	26	
+un examen	un examen|examen		시험	x	26	
+una tienda de móviles	una tienda de móviles|tienda de móviles|móviles		휴대폰 가게	x	26	
+primeros	primeros|primeras		처음의	x	26	
+-ra	-ra|ra	라	(접속법 과거 어미)	f	26	
+subirse	subirse		올라타다	x	26	
+trabajos	trabajos		일, 작업들	x	26	
+se van	se van|van		간다, 사라진다	x	26	
+los alfajores	los alfajores|Alfajores|alfajores|alfajor|un alfajor		알파호르 (아르헨티나 과자)	x	28	
+corté	corté|Corté		잘랐다	x	28	
+el fricandó	el fricandó|Fricandó|fricandó	프리칸도	프리칸도 (버섯 소고기 찜)	c	28	
+metí	metí|Metí		넣었다	x	28	
+negué con la cabeza	negué con la cabeza|Negué|negué		고개를 저었다	x	28	
+sentí	sentí|Sentí		느꼈다	x	28	
+la ternera	la ternera|Ternera|ternera		송아지 고기	x	28	
+típico	típico|Típico|típico de él		전형적인, 그다운	x	28	
+agarrado	agarrado		붙잡고	x	28	
+alegre	alegre		즐거운	x	28	
+amaneció	amaneció		날이 밝았다	x	28	
+apretados	apretados		빽빽하게 붙어 앉은	x	28	
+argentinos	argentinos		아르헨티나 사람들	x	28	
+ayudé	ayudé		도왔다	x	28	
+ir a buscar	ir a buscar|buscarlo|buscarme|buscarte		데리러 가다	n	28	
+las campanadas	las campanadas|campanadas		종소리 (시간을 알리는)	n	28	
+canté	canté|cantó		노래했다	x	28	
+el casco	el casco|casco		헬멧	x	28	
+la cebolla	la cebolla|cebolla|cebollas		양파	x	28	
+cocinar	cocinar		요리하다	x	28	
+contando	contando		세면서	x	28	
+cortaba	cortaba		자르곤 했다	x	28	
+un cuchillo	un cuchillo|cuchillo		칼	x	28	
+decidido	decidido		결정한	x	28	
+tengo que deciros	tengo que deciros|deciros		너희에게 말해야 해	x	28	
+a mi edad	a mi edad|edad		내 나이에	x	28	
+entré	entré		들어갔다	x	28	
+girarse	girarse|sin girarse		돌아보다	x	28	
+grave	grave|graves		낮은 (소리)	x	28	
+haciendo	haciendo		하면서	x	28	
+respira hondo	respira hondo|hondo|respira		깊이 숨 쉰다	x	28	
+es la ley	es la ley|ley		그게 법이야	x	28	
+limpiaba	limpiaba		닦고 있었다	x	28	
+limpias	limpias		깨끗한	x	28	
+la linterna	la linterna|linterna		손전등	x	28	
+llegaba	llegaba		도착하곤 했다	x	28	
+llenaron	llenaron		가득 채웠다	x	28	
+lloraba	lloraba|lloran		울었다	x	28	
+si llueve	si llueve|llueve		비가 오면	x	28	
+los martillos	los martillos|martillos		작은 망치들	x	28	
+me mata	me mata|mata		나를 죽일 거야	x	28	
+y media	y media|media		30분	x	28	
+la melodía	la melodía|melodía		선율	n	28	
+un mordisco	un mordisco|mordisco		한 입 (깨문)	x	28	
+la moto	la moto|moto		오토바이	x	28	
+se mueve	se mueve|mueve		움직인다	x	28	
+normales	normales		보통의	x	28	
+notas	notas		음 (음표)	x	28	
+oírla	oírla		그걸 듣다	x	28	
+un paraguas	un paraguas|paraguas		우산	n	28	
+peinaba	peinaba		머리를 빗겨 주곤 했다	x	28	
+perfecta	perfecta		완벽한	x	28	
+debajo de nuestros pies	debajo de nuestros pies|pies		우리 발밑에	x	28	
+plástico	plástico		플라스틱, 비닐	x	28	
+preferido	preferido		가장 좋아하는	x	28	
+según ella	según ella|según		그녀 말에 따르면	x	28	
+sencilla	sencilla		단순한	x	28	
+las setas	las setas|setas		버섯	x	28	
+silbaba	silbaba|silbando		휘파람을 불었다	n	28	
+el sonido	el sonido|sonido		소리	x	28	
+las sábanas	las sábanas|sábanas		침대 시트	x	28	
+temblaba	temblaba|temblaron		떨렸다	x	28	
+tensa	tensa		팽팽한	x	28	
+toca	toca		만진다	x	28	
+tomar	tomar		마시다, 먹다	x	28	
+torcido	torcido		비뚤어진	x	28	
+las varillas	las varillas|varillas		쇠막대	x	28	
+los verbos	los verbos|verbos		동사들	x	28	
+sin vergüenza	sin vergüenza|vergüenza		부끄러움 없이	x	28	
+hasta que vuelva	hasta que vuelva|vuelva		돌아올 때까지	n	28	volver → vuelva
+dejaría	dejaría|Dejaría|dejar mi piso		그만둘 것이다, 정리할 것이다	x	27	
+Mundet	Mundet	문데트	문데트 (지하철역)	p	27	
+Parc del Laberint d'Horta	Parc del Laberint d'Horta|Parc|Laberint	파르크 델 라베린트 도르타	오르타 미로 공원 (카탈루냐어)	c	27	
+seré	seré|Seré		~가 될 것이다	x	27	
+esperará	esperará|espere|que nadie me espere		기다릴 것이다	x	27	
+evitar	evitar		피하다	x	27	
+gratis	gratis		공짜	x	27	
+habérselo	habérselo|no habérselo dicho		그것을 그에게 ~한 것	x	27	
+llegué	llegué		도착했다	x	27	
+un marqués	un marqués|marqués		후작	x	27	
+la parada	la parada|parada		정류장, 역	x	27	
+pasaron	pasaron		지나갔다, 일어났다	x	27	
+una pena	una pena|pena		아픔, 유감	x	27	
+al pie de	al pie de|pie		~의 기슭에	x	27	
+un velódromo	un velódromo|velódromo		벨로드롬 (자전거 경기장)	x	27	
+el invierno	el invierno|invierno		겨울	x	27	
+¿factura esta maleta?	¿factura esta maleta?|Factura|factura		이 가방 부치시나요?	n	29	
+levanté	levanté|Levanté		들어 올렸다	x	29	
+El Prat	El Prat|Prat	엘 프랏	엘프라트 (공항)	p	29	
+pues	pues|Pues		그럼, 그러니까	x	29	
+ten cuidado	ten cuidado|Ten		조심해	x	29	
+traeme	traeme|Traeme		가져와 (아르헨티나식)	x	29	
+tío	tío|Tío|tía		(구어) 야, 친구, 녀석	n	29	원래 뜻은 '삼촌'
+la ventanilla	la ventanilla|Ventanilla|ventanilla		창가 자리	n	29	
+¿viaja usted sola?	¿viaja usted sola?|Viaja|viaja		혼자 여행하세요?	x	29	
+el abrigo	el abrigo|abrigo		외투	x	29	
+el acero	el acero|acero|de acero		강철	x	29	
+la aerolínea	la aerolínea|aerolínea		항공사	x	29	
+Ves amb compte	Ves amb compte|amb|compte	베스 암 콤테	조심해서 가 (카탈루냐어)	c	29	
+aparcó	aparcó		주차했다	x	29	
+apareció	apareció		나타났다	x	29	
+se apartaron	se apartaron|apartaron		물러섰다	x	29	
+apretadas	apretadas		끼어 앉은	x	29	
+aunque	aunque		~이지만	n	29	
+una autovía	una autovía|autovía		고속도로	x	29	
+una azafata	una azafata|azafata		승무원	x	29	
+azules	azules		파란	x	29	
+un bolígrafo	un bolígrafo|bolígrafo		볼펜	x	29	
+se calló	se calló|calló		입을 다물었다	x	29	
+no lo cambies	no lo cambies|cambies		바꾸지 마	x	29	
+los camareros	los camareros|camareros		종업원들	x	29	
+el carrito	el carrito|carrito		카트	x	29	
+la chica	la chica|chica		아가씨	x	29	
+un comentario	un comentario|comentario		그냥 한 말	x	29	
+la corona	la corona|corona		(시계) 용두	x	29	
+la correa	la correa|correa		시곗줄	x	29	
+un crimen	un crimen|crimen		범죄	x	29	
+para que cuentes los días	para que cuentes los días|cuentes		날을 세라고	x	29	contar → cuentes
+de cuero	de cuero|cuero		가죽	x	29	
+date prisa	date prisa|date		서둘러	x	29	
+despegó	despegó		이륙했다	x	29	
+dormidos	dormidos		잠든	x	29	
+¿quiere que le dé…?	¿quiere que le dé…?|dé		~를 드릴까요?	x	29	dar → dé
+las tarjetas de embarque	las tarjetas de embarque|tarjetas de embarque|tarjetas|embarque		탑승권	n	29	
+enseñaba	enseñaba		가르치고 있었다	x	29	
+con escala	con escala|escala		경유	x	29	
+fríos	fríos		차가운	x	29	
+por hacerme llorar	por hacerme llorar|hacerme		나를 울려서	x	29	
+lo más picante que haya	lo más picante que haya|haya		있는 것 중 가장 매운 것	x	29	
+los labios	los labios|labios		입술	x	29	
+llevado	llevado		데려간	x	29	
+llevar	llevar|llevo|la llevo conmigo		가지고 가다	x	29	
+no llores	no llores|llores		울지 마	x	29	
+la manga	la manga|manga		소매	x	29	
+una manta	una manta|manta		담요	x	29	
+te mato	te mato|mato		죽여 버릴 거야 (농담)	x	29	
+como si miraran	como si miraran|miraran		마치 보는 것처럼	x	29	
+moviendo	moviendo		흔들며	x	29	
+la muñeca	la muñeca|muñeca		손목	x	29	
+ofreció	ofreció		권했다	x	29	
+la palma	la palma|palma		손바닥	x	29	
+el control de pasaportes	el control de pasaportes|pasaportes		출국 심사	x	29	
+dos países	dos países|países		두 나라	x	29	
+que pierdes el avión	que pierdes el avión|pierdes		비행기 놓치겠다	x	29	
+polígonos	polígonos		공업 단지	x	29	
+ponerse rosa	ponerse rosa|ponerse|rosa		분홍빛이 되다	x	29	
+prestada	prestada		빌려준 것	x	29	
+un reloj de pulsera	un reloj de pulsera|reloj de pulsera|pulsera		손목시계	n	29	
+quince	quince		열다섯	x	29	
+sabrás	sabrás		알게 될 것이다	x	29	
+saltando	saltando		뛰면서	x	29	
+te la traigo	te la traigo|traigo|me la traes|traes		가져올게	x	29	
+vacías	vacías		텅 빈	x	29	
+si no volvés	si no volvés|volvés		안 돌아오면 (아르헨티나식)	x	29	
+el vuelo	el vuelo|vuelo|vuelos		비행편	n	29	
+ánimo	ánimo		힘내	x	29	
+venga	venga|Venga		자, 어서, 힘내 (구어)	n	28	원래는 venir의 접속법. 일상에서는 '자!' '어서!'
+un arpa	un arpa|arpa		하프	x	19	
+finas	finas|finos		가는, 얇은	x	19	
+Mare de Déu	Mare de Déu|Mare|Déu	마레 데 데우	세상에! (카탈루냐어, 성모님)	c	28	
+Fins que torni	Fins que torni|Fins|torni	핀스 케 토르니	돌아올 때까지 (카탈루냐어)	c	28	
+vell	vell	베이	늙은이, 오랜 친구 (카탈루냐어)	c	28	
+la oficina de Extranjería	la oficina de Extranjería|Extranjería		외국인 사무소 (체류 업무)	x	27	
+una actitud	una actitud|actitud		태도	x	27	
+me he apuntado	me he apuntado|apuntado		등록했다	x	27	
+me dieron	me dieron|dieron		(그들이) 나에게 줬다	x	27	
+una escuela de idiomas	una escuela de idiomas|escuela de idiomas|escuela|idiomas		어학원	n	27	
+a finales de	a finales de|finales		~ 말에	x	27	
+hablas	hablas|hablás		(너는) 말한다	x	27	
+noventa	noventa		아흔	x	27	
+te pasaste	te pasaste|pasaste|me he pasado		넘겼다	x	27	
+una prórroga	una prórroga|prórroga		체류 연장	x	27	
+un visado de estudiante	un visado de estudiante|visado|visado de estudiante		학생 비자	n	27	
+hablaban	hablaban|Hablaban		이야기했다	x	30	
+sigue todo recto	sigue todo recto|Sigue|sigue		쭉 가세요	x	30	
+un abanico	un abanico|abanico		부채	x	30	
+abiertos	abiertos		열린	x	30	
+cuando acabas de llegar	cuando acabas de llegar|acabas		막 도착했을 때	x	30	
+se acerca	se acerca|acerca|acercado|se ha acercado		다가온다	x	30	
+como si se acordara	como si se acordara|acordara		마치 기억하는 것처럼	x	30	
+argentinas	argentinas		아르헨티나의	x	30	
+la asamblea de vecinos	la asamblea de vecinos|asamblea|asamblea de vecinos		주민 회의	x	30	
+las baldosas	las baldosas|baldosas		바닥 타일	x	30	
+la batería	la batería|batería|sin batería		배터리	x	30	
+botellas	botellas		병들	x	30	
+patatas bravas	patatas bravas|patatas|bravas		파타타스 브라바스 (매운 소스 감자)	x	30	
+buena	buena|tienes buena cara		좋은	x	30	
+canciones	canciones		노래들	x	30	
+un capitán	un capitán|capitán		선장	x	30	
+por cariño	por cariño|cariño		정 때문에, 애정	x	30	
+el cartón	el cartón|cartón|de cartón		골판지	x	30	
+catorce	catorce		열넷	x	30	
+colgados	colgados		매달린	x	30	
+controlar	controlar		확인하다, 관리하다	x	30	
+por costumbre	por costumbre|costumbre		습관처럼	x	30	
+las cuentas	las cuentas|cuentas		장부, 계산	x	30	
+descubierto	descubierto		발견한	x	30	
+los dientes	los dientes|dientes		이	x	30	
+dirigía	dirigía		지휘했다	x	30	
+una discusión	una discusión|discusión		토론, 말다툼	x	30	
+dormido	dormido		잔	x	30	
+un dragón	un dragón|dragón		용	x	30	
+dudó	dudó		망설였다	x	30	
+entendido	entendido		이해한	x	30	
+un estudio de diseño	un estudio de diseño|estudio		디자인 사무소	x	30	
+fatal	fatal|le salió fatal		엉망으로	x	30	
+filla	filla	필랴	딸 (카탈루냐어)	c	30	
+se frotó	se frotó|frotó		비볐다	x	30	
+había ganado	había ganado|ganado		이겼다	x	30	
+una lavadora	una lavadora|lavadora		세탁기	x	30	
+la lengua	la lengua|lengua		혀	 언어	30	n
+una lista	una lista|lista		목록	x	30	
+las llamadas	las llamadas|llamadas		전화	x	30	
+la puerta de llegadas	la puerta de llegadas|llegadas		도착 출구	x	30	
+llevando	llevando		지니고	x	30	
+por las mañanas	por las mañanas|mañanas		아침마다	x	30	
+metros	metros		미터	x	30	
+se miraron	se miraron|miraron		서로 바라보았다	x	30	
+mirándome	mirándome		나를 보면서	x	30	
+un misterio	un misterio|misterio		수수께끼	x	30	
+un motor	un motor|motor		모터	x	30	
+tres mujeres	tres mujeres|mujeres		여자들	x	30	
+un máster	un máster|máster		석사 과정	x	30	
+orgullosa	orgullosa|orgulloso		자랑스러운	x	30	
+oír	oír|para oír		듣다	x	30	
+sin parar	sin parar|parar		쉬지 않고	x	30	
+los pedidos	los pedidos|pedidos		주문	x	30	
+el pegamento	el pegamento|pegamento		풀, 접착제	x	30	
+perder	perder|No te puedes perder|perderse		길을 잃다	x	30	
+las piernas	las piernas|piernas		다리	x	30	
+pintaba	pintaba|pintando		칠했다	x	30	
+la pintura	la pintura|pintura		물감, 페인트	x	30	
+practicado	practicado|practicar		연습한	x	30	
+precioso	precioso		아름다운	n	30	
+preparé	preparé		준비했다	x	30	
+lo propuse yo	lo propuse yo|propuse		내가 제안했다	x	30	
+en punto	en punto|punto|a las nueve en punto		정각	n	30	
+recién	recién|recién terminado		막 ~한	x	30	
+secándose	secándose		닦으면서	x	30	
+servían	servían		쓰였다, 따랐다	x	30	
+un sombrero	un sombrero|sombrero		모자	x	30	
+subida	subida		올라가 있는	x	30	
+el sudor	el sudor|sudor		땀	x	30	
+por las tardes	por las tardes|tardes		오후마다	x	30	
+el tema	el tema|tema		주제	x	30	
+traduje	traduje		통역했다, 번역했다	x	30	
+un título	un título|título		학위	x	30	
+vasos	vasos		컵들	x	30	
+los vecinos	los vecinos|vecinos		이웃들	x	30	
+la víspera	la víspera|víspera		전날	x	30	
+no aguantaba	no aguantaba|aguantaba		버티지 못했다	x	29	
+cualquiera	cualquiera		아무나	x	29	
+se la dan	se la dan|dan		(그들이) 준다	x	29	
+directo	directo		직항	x	29	
+doblado	doblado		접힌	x	29	
+impreso	impreso		인쇄된	x	29	
+rígida	rígida		뻣뻣한	x	29	
+un viaje	un viaje|viaje|otro viaje		여행	x	29	
+Annyeonghaseyo	Annyeonghaseyo	안녕하세요	안녕하세요 (한국어)	f	30	
+anoche	anoche|Anoche		어젯밤	n	30	
+defendida	defendida		지켜 낸, 옹호한	x	30	
+se detuvo	se detuvo|detuvo		멈춰 섰다	x	30	
+ganó	ganó		이겼다	x	30	
+hubo	hubo		있었다 (haber)	x	30	
+tu mamá	tu mamá|mamá		엄마	x	30	
+la meva nena	la meva nena|meva	라 메바 네나	내 아가 (카탈루냐어)	c	30	
+la penumbra	la penumbra|penumbra		어스름	x	30	
+mi propuesta	mi propuesta|propuesta		제안	x	30	
+las señoras	las señoras|señoras		아주머니들	x	30	
+del vecino	del vecino|vecino		이웃의	x	30	
+una zeta	una zeta|zeta		z 글자 (θ 소리)	x	30	
+los últimos	los últimos|últimos		마지막	x	30	

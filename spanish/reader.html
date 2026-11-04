@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>La llave de Gràcia — 그라시아의 열쇠</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Gowun+Batang:wght@400;700&display=swap">
+<!-- 이 파일은 spanish/build.py 가 만든다. 직접 고치지 말고 spanish/src 를 고칠 것. -->
+<style>
+:root { --bg:#faf8f3; --fg:#1d1d1b; --dim:#77726a; --line:#e4dfd4; --card:#fff;
+  --mark:#9a4f0b; --markbg:#f6e6c4; --size:18px; }
+html[data-t="dark"] { --bg:#14171a; --fg:#e6e3dd; --dim:#9aa0a6; --line:#2a2f34;
+  --card:#1b1f23; --mark:#f0b54a; --markbg:#3a2f12; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--fg);
+  font-family:"Gowun Batang","Noto Serif KR","Apple SD Gothic Neo",serif;
+  -webkit-text-size-adjust:100%; word-break:keep-all; overflow-wrap:break-word; }
+.ui { font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Noto Sans KR",sans-serif; }
+.bar { position:sticky; top:0; z-index:50; background:var(--card); border-bottom:1px solid var(--line);
+  padding:8px 12px; padding-top:calc(8px + env(safe-area-inset-top));
+  display:flex; gap:6px; align-items:center; flex-wrap:wrap; }
+.bar .bt { font-weight:800; font-size:13px; margin-right:auto; letter-spacing:-.02em; }
+.bar .bt a { color:inherit; text-decoration:none; }
+.bar button { font:inherit; font-size:12.5px; padding:5px 9px; border:1px solid var(--line);
+  border-radius:7px; background:var(--card); color:var(--fg); cursor:pointer; }
+.bar button.on { background:var(--markbg); border-color:var(--mark); color:var(--mark); font-weight:700; }
+#prog { position:absolute; left:0; bottom:-1px; height:2px; background:var(--mark); width:0; }
+main { font-size:var(--size); max-width:min(34em, 94vw); margin:0 auto; padding:26px clamp(16px,4vw,32px) 120px; }
+.cover { text-align:center; padding:18px 0 22px; border-bottom:1px solid var(--line); }
+.cover h1 { font-family:"EB Garamond",serif; font-style:italic; font-weight:400; font-size:2em; margin:0; line-height:1.1; }
+.cover .ko { margin-top:8px; letter-spacing:.18em; font-size:.8em; }
+.cover .hint { margin:16px auto 0; max-width:30em; font-size:12.5px; color:var(--dim); line-height:1.7; text-align:left;
+  background:var(--card); border:1px solid var(--line); border-radius:10px; padding:10px 14px; }
+.ch { padding-top:2em; }
+.ch h2 { text-align:center; font-weight:400; margin:0 0 1.6em; }
+.cn { display:block; font:600 11px/1 -apple-system,BlinkMacSystemFont,sans-serif; letter-spacing:.3em;
+  text-transform:uppercase; color:var(--dim); margin-bottom:.8em; }
+.ct { display:block; font-family:"EB Garamond",serif; font-style:italic; font-size:2.2em; line-height:1.1; }
+.cp { display:block; margin-top:.4em; font:12px -apple-system,BlinkMacSystemFont,"Noto Sans KR",sans-serif; color:var(--dim); }
+.cp b { color:var(--fg); }
+.ch p { margin:0; line-height:1.85; text-indent:1em; }
+.ch p.say { text-indent:0; margin:.5em 0; padding-left:1.7em; position:relative; }
+.ch p.say .sp { display:block; line-height:1.55; }
+.ch p.say .sp .w, .ch p.say .sp .es { font-size:1.18em; }
+.ch p.say .lp { display:block; font:.78em/1.5 -apple-system,BlinkMacSystemFont,"Noto Sans KR",sans-serif; color:var(--dim); }
+.ch p.say .lp b { color:var(--fg); }
+html[data-pr="0"] .ch .lp { display:none; }
+.ch p.say .gl { display:block; font-size:.8em; color:var(--dim); line-height:1.5; }
+html[data-g="0"] .gl { display:none !important; }
+.play { position:absolute; left:0; top:.3em; width:1.25em; height:1.25em; border-radius:50%;
+  border:1px solid var(--line); background:var(--card); color:var(--dim); cursor:pointer; padding:0;
+  font-size:.7em; line-height:1; display:grid; place-items:center; }
+.play::before { content:"▶"; font-size:.75em; margin-left:.12em; }
+.ch p.say.speaking .play { background:var(--mark); border-color:var(--mark); color:var(--card); }
+.ch p.say.speaking .sp { color:var(--mark); }
+.ch p.dlg { text-indent:0; margin:.4em 0; }
+.ch p.br { text-indent:0; text-align:center; color:var(--dim); margin:1.2em 0; letter-spacing:.2em; }
+.ch p.br + p { text-indent:0; }
+.ch p.end { text-indent:0; text-align:center; color:var(--dim); margin:2em 0; }
+.ch p.end svg { width:56px; height:auto; }
+.w, .es { font-family:"EB Garamond",Georgia,serif; font-size:1.1em; font-weight:400; }
+.w { cursor:pointer; -webkit-tap-highlight-color:transparent; border-bottom:1px dotted transparent; }
+.w.new { font-weight:600; border-bottom-color:#c9a227; }
+.w.on { background:var(--markbg); border-radius:2px; }
+.pr { font:.6em -apple-system,BlinkMacSystemFont,"Noto Sans KR",sans-serif; color:var(--dim);
+  margin-left:.25em; vertical-align:.12em; white-space:nowrap; }
+.pr b { color:var(--fg); }
+html[data-pr="0"] .ch .pr { display:none; }
+.letter { margin:1.2em 0 1.2em 1.5em; }
+.letter p { text-indent:0 !important; font-family:"EB Garamond",serif; font-style:italic; font-size:1.35em; }
+.letter .w { font-size:1em; }
+.address { margin:1.2em auto; width:fit-content; min-width:60%; padding:.7em 1.1em; border:1px solid var(--line); background:var(--card); }
+.address p { text-indent:0 !important; font-family:"EB Garamond",serif; line-height:1.5 !important; }
+.address .w, .address .es { font-size:1em; }
+.words { margin-top:2em; padding:16px; background:var(--card); border:1px solid var(--line); border-radius:12px; }
+.words h3 { display:flex; justify-content:space-between; align-items:baseline; margin:0 0 10px;
+  font:700 14px -apple-system,BlinkMacSystemFont,"Noto Sans KR",sans-serif; }
+.words h3 small { font-weight:400; color:var(--dim); }
+.words ol { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(auto-fill,minmax(13em,1fr)); gap:4px 16px; }
+.words li { font-size:15px; line-height:1.35; padding:5px 0; border-bottom:1px solid var(--line); cursor:pointer; }
+.words li > b { font-family:"EB Garamond",serif; font-weight:600; font-size:1.15em; }
+.words li .pr { font-size:.68em; }
+.words li .m { display:block; font:12.5px -apple-system,BlinkMacSystemFont,"Noto Sans KR",sans-serif; color:var(--dim); }
+#pop { position:fixed; z-index:99; max-width:min(22em,90vw); display:none; background:#111827; color:#f9fafb;
+  border-radius:10px; padding:.75em 1em .7em; font-size:15px; line-height:1.5; box-shadow:0 10px 30px rgba(0,0,0,.35); }
+#pop .hw { font-family:"EB Garamond",serif; font-size:21px; color:#fde68a; margin-right:.3em; }
+#pop .pp { color:#9ca3af; font-size:13px; }
+#pop .pp b { color:#f9fafb; }
+#pop .df { display:block; margin-top:3px; }
+#pop .nt { display:block; margin-top:4px; color:#9ca3af; font-size:13px; }
+#pop .tag { display:inline-block; font-size:11px; color:#111827; background:#9ca3af; border-radius:3px; padding:0 5px; margin-left:4px; vertical-align:2px; }
+#pop button { margin-top:8px; font:inherit; font-size:12.5px; background:#374151; color:#f9fafb; border:0; border-radius:6px; padding:4px 10px; cursor:pointer; }
+.dl { display:block; width:fit-content; margin:0 auto 1.2em; font-size:12.5px; color:var(--mark);
+  text-decoration:none; border:1px solid var(--line); border-radius:999px; padding:5px 12px; background:var(--card); }
+.listen { position:fixed; right:14px; bottom:calc(14px + env(safe-area-inset-bottom)); z-index:40;
+  font:600 13px -apple-system,BlinkMacSystemFont,"Noto Sans KR",sans-serif; padding:10px 14px; border-radius:999px;
+  border:1px solid var(--line); background:var(--card); color:var(--fg); box-shadow:0 4px 16px rgba(0,0,0,.12); cursor:pointer; }
+.listen.on { background:var(--mark); color:var(--card); border-color:var(--mark); }
+</style></head>
+<body>
+<div class="bar ui">
+  <span class="bt"><a href="index.html" aria-label="목록으로">←</a> La llave de Gràcia</span>
+  <button id="pr" class="on" title="처음 나온 단어의 한글 발음">발음</button>
+  <button id="gl" class="on" title="대사 밑 우리말 뜻">해석</button>
+  <button id="minus" aria-label="글자 작게">A−</button>
+  <button id="plus" aria-label="글자 크게">A+</button>
+  <button id="sp" title="읽어 주는 속도">1×</button>
+  <button id="th" aria-label="밤 화면">밤</button>
+  <div id="prog"></div>
+</div>
+<main>
+  <div class="cover">
+    <h1>La llave de Gràcia</h1>
+    <div class="ko">그라시아의 열쇠</div>
+    <div class="hint ui">
+      스페인어 단어를 <b>누르면</b> 뜻과 발음이 나옵니다.
+      대사 앞의 <b>▶</b>를 누르면 그 문장을, 오른쪽 아래 <b>듣기</b>를 누르면 이 장의 스페인어를 처음부터 차례로 읽어 줍니다.
+      대사는 등장인물마다 다른 목소리로 녹음한 파일을 틀고, 아직 녹음이 없는 문장과 단어는 기기의 스페인어 음성으로 읽습니다.
+    </div>
+  </div>
+<!--BOOK-->
+</main>
+<div id="pop" class="ui" role="dialog"></div>
+<button class="listen" id="listen">▶ 듣기</button>
+<script>
+(function () {
+  var V = /*VOCAB*/{}, TOC = /*TOC*/[];
+  var root = document.documentElement, KEY = 'llave:';
+  function get(k, d) { try { var v = localStorage.getItem(KEY + k); return v === null ? d : v; } catch (e) { return d; } }
+  function put(k, v) { try { localStorage.setItem(KEY + k, v); } catch (e) {} }
+
+  // ── 화면 설정 ──
+  var size = +get('size', 18);
+  function setSize(n) { size = Math.max(14, Math.min(30, n)); root.style.setProperty('--size', size + 'px'); put('size', size); }
+  setSize(size);
+  document.getElementById('plus').onclick = function () { setSize(size + 2); };
+  document.getElementById('minus').onclick = function () { setSize(size - 2); };
+  function toggle(id, attr) {
+    var b = document.getElementById(id);
+    function apply(v) { root.dataset[attr] = v; b.classList.toggle('on', v === '1'); put(attr, v); }
+    apply(get(attr, '1'));
+    b.onclick = function () { apply(root.dataset[attr] === '1' ? '0' : '1'); };
+  }
+  toggle('pr', 'pr'); toggle('gl', 'g');
+  var th = get('t', matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  function setT(t) { th = t; if (t === 'dark') root.dataset.t = 'dark'; else delete root.dataset.t; put('t', t); }
+  setT(th);
+  document.getElementById('th').onclick = function () { setT(th === 'dark' ? 'light' : 'dark'); };
+
+  // ── 읽기 위치 ──
+  var prog = document.getElementById('prog'), saveT;
+  addEventListener('scroll', function () {
+    var h = document.documentElement.scrollHeight - innerHeight;
+    prog.style.width = (h > 0 ? scrollY / h * 100 : 0) + '%';
+    clearTimeout(saveT); saveT = setTimeout(function () { put('y', scrollY); }, 300);
+  }, { passive: true });
+  if (location.hash) {
+    var t = document.querySelector(location.hash);
+    if (t) setTimeout(function () { t.scrollIntoView(); }, 50);
+  } else {
+    var y = +get('y', 0); if (y) setTimeout(function () { scrollTo(0, y); }, 50);
+  }
+
+  // ── 소리: 녹음 파일(audio/es/*.mp3)이 있으면 그것을, 없으면 기기의 es-ES 음성 ──
+  var TTS = !!(window.speechSynthesis && window.SpeechSynthesisUtterance), queue = [], playing = null;
+  var listenBtn = document.getElementById('listen'), player = new Audio();
+  if (!TTS && !document.querySelector('p.say[data-a]')) listenBtn.style.display = 'none';
+  var SPEEDS = [1, 0.85, 0.7], spd = +get('spd', 1), spBtn = document.getElementById('sp');
+  function setSpd(v) { spd = v; spBtn.textContent = (v === 1 ? '1' : v) + '×'; put('spd', v); player.playbackRate = v; }
+  setSpd(SPEEDS.indexOf(spd) < 0 ? 1 : spd);
+  spBtn.onclick = function () { setSpd(SPEEDS[(SPEEDS.indexOf(spd) + 1) % SPEEDS.length]); };
+  function voice() {
+    var vs = speechSynthesis.getVoices(), best = null;
+    vs.forEach(function (v) {
+      if (!/^es/i.test(v.lang)) return;
+      var s = (/es[-_]ES/i.test(v.lang) ? 4 : 1) + (/google|premium|enhanced|mónica|monica|jorge/i.test(v.name) ? 2 : 0);
+      if (!best || s > best.s) best = { v: v, s: s };
+    });
+    return best && best.v;
+  }
+  if (TTS) speechSynthesis.onvoiceschanged = function () {};
+  function stop() {
+    queue = []; if (TTS) speechSynthesis.cancel();
+    player.onended = player.onerror = null; player.pause();
+    if (playing) playing.classList.remove('speaking'); playing = null;
+    listenBtn.classList.remove('on'); listenBtn.textContent = '▶ 듣기';
+  }
+  function say(text, el, done) {
+    if (el && el.dataset.a) {
+      el.classList.add('speaking'); playing = el;
+      player.onended = player.onerror = function () { el.classList.remove('speaking'); if (done) done(); };
+      player.src = 'audio/es/' + el.dataset.a + '.mp3';
+      player.playbackRate = spd; player.defaultPlaybackRate = spd;
+      player.play().catch(function () { el.classList.remove('speaking'); });
+      return;
+    }
+    if (!TTS) { if (done) done(); return; }
+    var u = new SpeechSynthesisUtterance(text), v = voice();
+    u.lang = 'es-ES'; if (v) u.voice = v; u.rate = 0.9 * spd;
+    if (el) { el.classList.add('speaking'); playing = el; }
+    u.onend = u.onerror = function () { if (el) el.classList.remove('speaking'); if (done) done(); };
+    speechSynthesis.speak(u);
+  }
+  function next() {
+    var el = queue.shift();
+    if (!el) { stop(); return; }
+    el.scrollIntoView({ block: 'center', behavior: 'smooth' });
+    say(el.dataset.say, el, function () { setTimeout(next, 450); });
+  }
+  listenBtn.onclick = function () {
+    if (listenBtn.classList.contains('on')) { stop(); return; }
+    stop();
+    // 화면 가운데쯤의 대사부터 그 장 끝까지
+    var all = [].slice.call(document.querySelectorAll('p.say')), mid = innerHeight / 3;
+    var i = all.findIndex(function (p) { return p.getBoundingClientRect().top > mid - 40; });
+    queue = all.slice(i < 0 ? 0 : i);
+    listenBtn.classList.add('on'); listenBtn.textContent = '■ 멈춤';
+    next();
+  };
+  document.querySelectorAll('p.say').forEach(function (p) {
+    var b = document.createElement('button'); b.className = 'play'; b.setAttribute('aria-label', '이 문장 듣기');
+    b.onclick = function (e) { e.stopPropagation(); stop(); say(p.dataset.say, p); };
+    p.insertBefore(b, p.firstChild);
+  });
+
+  // ── 단어 뜻 ──
+  var pop = document.getElementById('pop'), cur = null;
+  var TAG = { c: '카탈루냐어', p: '이름', x: '' };
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function show(el, key, text) {
+    var e = V[key]; if (!e) return;
+    if (cur) cur.classList.remove('on'); cur = el; el.classList.add('on');
+    var tag = TAG[e.t] ? '<span class="tag">' + TAG[e.t] + '</span>' : (e.t === 'n' ? '<span class="tag">' + e.c + '장</span>' : '');
+    pop.innerHTML = '<span class="hw">' + esc(key) + '</span><span class="pp">[' + e.p + ']</span>' + tag +
+      '<span class="df">' + esc(e.d) + '</span>' + (e.n ? '<span class="nt">' + esc(e.n) + '</span>' : '') +
+      (TTS && e.t !== 'p' ? '<button type="button">▶ 듣기</button>' : '');
+    var b = pop.querySelector('button');
+    if (b) b.onclick = function (ev) { ev.stopPropagation(); stop(); say(text || key); };
+    pop.style.display = 'block';
+    var r = el.getBoundingClientRect(), pw = pop.offsetWidth, ph = pop.offsetHeight;
+    var x = Math.min(Math.max(8, r.left + r.width / 2 - pw / 2), innerWidth - pw - 8);
+    var y = r.bottom + 8; if (y + ph > innerHeight - 8) y = r.top - ph - 8;
+    pop.style.left = x + 'px'; pop.style.top = y + 'px';
+  }
+  function hide() { pop.style.display = 'none'; if (cur) cur.classList.remove('on'); cur = null; }
+  document.addEventListener('click', function (e) {
+    if (pop.contains(e.target)) return;
+    var w = e.target.closest('.w');
+    if (w) { show(w, w.dataset.k, w.textContent); return; }
+    var li = e.target.closest('.words li');
+    if (li) { var b = li.querySelector('b'); show(b, b.textContent, b.textContent); return; }
+    hide();
+  });
+  addEventListener('scroll', hide, { passive: true });
+  addEventListener('keydown', function (e) { if (e.key === 'Escape') { hide(); stop(); } });
+})();
+</script>
+</body></html>

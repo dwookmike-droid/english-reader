@@ -1,0 +1,24 @@
+# 등장인물 → Gemini TTS 목소리. 열: 원고의 @이름 → 대화 지시문에 쓰는 이름(영문) → 목소리 → 말투
+# 목소리 이름은 Gemini 기본 목소리(prebuilt voice) 중에서 고른다. 바꾸면 그 사람의 대사만 새로 만든다.
+yunha	Yuna	Achernar	a Korean woman in her late thirties, speaking carefully and a little hesitantly, but with correct Castilian pronunciation
+montse	Montse	Gacrux	a lively Catalan grandmother in her seventies, warm, quick, a bit theatrical; her Catalan words and phrases are pronounced as native Catalan, her Spanish as Castilian from Barcelona
+taxista	Taxista	Algenib	a cheerful Barcelona taxi driver in his sixties, gravelly voice, relaxed
+azafata	Azafata	Aoede	a friendly flight attendant, polite and bright
+policia	Policia	Charon	a passport officer, neutral and businesslike
+hombre	Hombre	Puck	a flustered middle-aged man apologizing
+vale	Vale	Laomedeia	a bubbly young woman in her twenties from Buenos Aires who speaks with a Rioplatense Argentine accent (ll and y sound like "sh"), fast and cheerful
+marc	Marc	Orus	a reserved Catalan locksmith in his late thirties, low and dry voice, speaks slowly and briefly, deadpan; his Catalan is native
+frutera	Frutera	Kore	a warm market fruit seller in her fifties from Barcelona, quick and friendly
+jaume	Jaume	Iapetus	a cheerful Catalan cheese seller in his sixties at the market
+senyora	Senyora	Vindemiatrix	a kind elderly lady at the market, speaking slowly to help a foreigner
+mujer	Mujer	Despina	a young mother at the market, casual
+archivera	Archivera	Erinome	a calm, precise archivist in her fifties in Barcelona
+vecinos	Vecinos	Puck	a crowd of cheerful neighbours counting down together in Catalan
+sofia	Sofia	Leda	a cheerful young woman from Mexico City, Mexican Spanish accent
+luca	Luca	Achird	a friendly young Italian man speaking slow Spanish with an Italian accent
+pau	Pau	Zubenelgenubi	a relaxed young man born in Barcelona, casual Castilian with a light Catalan accent
+carnicero	Carnicero	Algieba	a busy butcher at the Boqueria market, friendly
+policia_mossos	PoliciaMossos	Despina	a young female police officer speaking slowly and kindly
+bibliotecario	Bibliotecario	Sadaltager	a kind, knowledgeable silver-haired librarian at the Maritime Museum
+joan	Joan	Gacrux	a very old, warm Catalan clockmaker in his eighties, talkative, mixes Catalan and Spanish
+narrador	Narrador	Sulafat	a warm, unhurried audiobook narrator
