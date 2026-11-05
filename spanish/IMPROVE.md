@@ -37,6 +37,15 @@
   - 13장 이후 한국어가 섞인 줄 가운데 문법 설명은 이 줄 하나뿐이었다. 나머지는 감정의 핵심, 엄마와의 메시지, 장 첫머리여서 설계대로 둔다.
   - 스페인어로 쓴 문법 설명 문단이 다른 장에도 있다: 19장(마르크가 미래형을 설명하는 대사), 23장 13행(조건형), 25장 174행(접속법 과거), 26장 133행(si절), 27장 133행(여러 시제). 같은 방식으로 쪽지로 옮길지는 정하지 않았다. 19장은 대사라 장면 안에 두어도 자연스럽다.
   - 인쇄본 324쪽 그대로. 쪽지는 13장 마지막 쪽(149쪽)에 홀로 놓인다(상자를 쪽 사이에서 나누지 않게 했다). `check_print.py` 모두 통과.
+- **6단계(2026-11-05)**: 25–30장을 읽고 고쳤다.
+  - 28장 수첩: 장면 대사 «Ella no volvió. Pero has vuelto tú»를 빼고 내일 할 일(«Mañana llamo yo a mi madre. Todavía no le he contado lo de la canción.»)을 넣었다.
+    - 수첩의 «Son las tres menos cuarto»가 장면 시각(3시)과 어긋나 있었다. 장면을 «A las tres menos cuarto, bajamos al taller»로, 수첩을 «A las tres menos cuarto, al taller»로 맞췄다.
+  - 30장: «Y se lo dije igual que me lo dijo Montse…» 문단을 뺐다. 수첩에서 «¿Usted es de aquí?» — «Sí. Soy de aquí. Bienvenida»를 빼고, 요약 줄 «Hace un año tenía cinco palabras. Hoy estoy en casa.»를 1장 비행기 장면(«gracias»를 연습하던 일)과 이어지는 한 줄로 바꿨다. bienvenida 반복 횟수를 지키려고 «Le he contestado en español: «Bienvenida».»는 남겼다.
+  - 27장: 미로에서 결정한 뒤 대가를 한 문단으로 적었다(엄마가 부산에 혼자 남는다. «Eso no se podía arreglar. Ni con un reloj, ni con una llave.»). 새 사건은 없다.
+  - 25장은 고치지 않았다. 윤하가 봉투를 일주일 동안 혼자 열지 않고 모두와 함께 열기로 하고, 몬세가 마르크에게 장부를 가져오게 한다. 서류가 답을 주지만 그 자리를 만든 것은 인물의 선택이어서 개선안 4절 3번의 걱정은 맞지 않았다.
+  - 새로 쓴 낱말(arreglar, llamo, practicaba, quedaría)은 x로 단어표에 더했다. 3번 미만 40개 그대로, 빌드 경고 없음.
+  - 나머지 장 수첩의 장면 대사 반복은 검수 때 같은 기준으로 본다.
+  - 인쇄본 324쪽 그대로. `check_print.py` 모두 통과.
 
 원고 수정은 디자인 브랜치(`claude/book-design`, 지시서상 원고 무변경)와 따로, main에서 새 브랜치를 만들어 한다. 원고를 고치면 인쇄 PDF를 다시 빌드해야 한다(쪽수와 책등이 바뀔 수 있다).
 
