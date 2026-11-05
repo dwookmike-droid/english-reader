@@ -25,6 +25,7 @@ python3 build.py --web-only 2>&1 | grep -E '!|Error'   # 단어표 겹침·본�
 python3 build.py --mono          # 1도(먹) 견본: print/la-llave-de-gracia_mono.pdf
 python3 build.py --pad 16        # 속지 끝에 빈 쪽을 더해 16의 배수로. 책등도 따라 바뀐다
 python3 check_print.py           # 완성 기준 점검. "모두 통과"가 나와야 한다
+python3 epub.py                  # 전자책: print/la-llave-de-gracia.epub (build.py 뒤에. 표지는 cover.pdf 앞면을 잘라 쓴다)
 ```
 - 글꼴(Gowun Batang, EB Garamond, Noto Sans KR)은 빌드가 `npm pack @fontsource/...@5.1.0`으로 받아 `spanish/.fonts`에 푼다.
 - `print/`에 생기는 것:
@@ -35,6 +36,7 @@ python3 check_print.py           # 완성 기준 점검. "모두 통과"가 나�
 | `interior-print.pdf` | 납품용 속지(RGB). 쪽마다 재단선이 있고 TrimBox 128×188, BleedBox 134×194. 먹은 #000 |
 | `cover.pdf` | 표지 펼침(뒤·책등·앞). 재단 여백 3mm, 재단선과 책등 접지선(점선) |
 | `interior-print-cmyk.pdf`, `cover-cmyk.pdf` | CMYK 변환본(아래 참고) |
+| `la-llave-de-gracia.epub` | 전자책(EPUB 3, `epub.py`). 표지 이미지, 차례, 장 끝 단어 목록, 문법 쪽지가 들어 있다. QR 대신 장 첫머리에 웹 리더 듣기 링크. 글꼴은 EB Garamond만 넣고 한글은 기기 글꼴. 판권면은 ○○○가 채워지면 넣는다 |
 | `book.html`, `cover.html` | 중간 파일. 커밋하지 않는다(`.gitignore`) |
 
 ## 만드는 순서 (`build.py` `main()`)
