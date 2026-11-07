@@ -95,6 +95,22 @@ section:first-child { break-before: auto; }
   orphans: 3; widows: 3;
 }
 .letter .w, .letter .es { font-style: italic; font-size: 1em; }
+/* 문법 쪽지: 장 끝 수첩 뒤. 편지(망+왼쪽 띠)와 구별되게 망 없이 가는 테두리, 고딕 본문. */
+.note {
+  margin: 1.1em 0 .6em; padding: 2.2mm 3.2mm 2mm;
+  border: .5pt solid var(--accent); border-radius: 1.2mm;
+  break-inside: avoid;
+}
+.note h4 {
+  margin: 0 0 1.2mm; font: 700 7pt "Noto Sans KR", sans-serif;
+  color: var(--accent); letter-spacing: .12em;
+}
+.note p {
+  text-indent: 0 !important; text-align: left;
+  font-family: "Noto Sans KR", sans-serif; font-size: .86em; line-height: 1.6; margin: 0 0 .5mm;
+}
+.note h4 + p { font-weight: 700; }
+.note .w, .note .es { font-family: "EB Garamond", serif; font-size: 1.12em; }
 /* 간판·주소: 그라시아 거리 명판처럼 가는 이중 테두리. 초록은 쓰지 않는다. */
 .address {
   margin: 1em auto; width: fit-content; min-width: 62%; max-width: 100%;

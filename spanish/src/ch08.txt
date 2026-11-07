@@ -4,7 +4,7 @@
 
 @vale —Esta noche voy a hacer un asado para Montse. ¡Un asado argentino! :: 오늘 밤에 몬세한테 아사도를 해 줄 거야. 아르헨티나식 고기구이!
 
-{voy a|*보*이 아} hacer. 나는 할 것이다. 앱이 알려 주었다. ir a 다음에 동사를 붙이면 앞으로 할 일이 된다. voy a comer, 먹을 거야. voy a dormir, 잘 거야. 지금까지 배운 말 중에 가장 쓸모 있는 공식이었다.
+voy a hacer. 나는 할 것이다. 앱이 알려 주었다. ir a 다음에 동사를 붙이면 앞으로 할 일이 된다. voy a comer, 먹을 거야. voy a dormir, 잘 거야. 지금까지 배운 말 중에 가장 쓸모 있는 공식이었다.
 
 @yunha —¿Y dónde vas a comprar la carne? :: 고기는 어디서 살 거야?
 
@@ -119,9 +119,10 @@ sótano. 지하실. cajas. 상자들. voy a abrirlas. 그것들을 열 것이다
 @letter
 Miércoles. Hoy me han robado el bolso en la Rambla.
 No tengo móvil. No tengo cartera.
+Un hombre me ha robado el bolso. Me ha dicho «perdón». ¡Ojo con el bolso!
 Pero tengo la llave.
 He hablado con la policía en español. ¡Solo en español!
-Esta noche Vale va a hacer un asado.
+Esta noche Vale ha hecho un asado. Ha comprado un kilo y medio de carne.
 Mañana voy a tener un móvil viejo.
-Y Marc va a abrir las cajas del sótano.
+Y Marc va a abrir las cajas del sótano de la cerrajería.
 @end

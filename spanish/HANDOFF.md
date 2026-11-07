@@ -3,10 +3,12 @@
 원고 30장은 클라우드 세션에서 끝냈다(PR #4, main에 병합). 책 디자인은 B안 「그라시아의 타일」로 정했고, 브랜치 `claude/book-design`(PR #5, draft)에서 1·2단계를 마쳤다. 기준 문서는 [`design/BRIEF-B.md`](design/BRIEF-B.md)이고, 시안은 [`design/direction-B.png`](design/direction-B.png)에 있다.
 
 ## 지금 상태 (2026-11-04)
-- 원고 `src/ch01–30.txt`, 단어표 `src/vocab.tsv`(약 2,800개), `src/voices.tsv`는 main과 같다. 디자인 작업 중 한 글자도 고치지 않았다.
-  - `src/front.html`(앞붙이 틀)은 지시서 4.2에 따라 고쳤다. 그래서 `git diff main -- spanish/src`에는 이 파일 하나만 나온다.
-- 인쇄본: 사륙판 128×188mm, **316쪽**(기준 305, +3.6%). 장 표제지 30개는 모두 홀수 쪽에 있다.
-- 책등: 316쪽 ÷ 2 × 0.1mm = **15.8mm**. `--pad 16`으로 빌드하면 320쪽, 16.0mm가 된다.
+- 원고 `src/ch01–30.txt`, `src/voices.tsv`는 main과 같다. 디자인 작업 중 한 글자도 고치지 않았다.
+  - `src/front.html`(앞붙이 틀)은 지시서 4.2에 따라 고쳤다.
+  - 단어표 `src/vocab.tsv`는 원고 개선 1단계에서 형태 겹침 38개를 정리했다(브랜치 `claude/content-fixes`, [`IMPROVE.md`](IMPROVE.md)).
+- 원고 개선안: [`IMPROVE.md`](IMPROVE.md). 1–6단계를 마쳤다. 3·4단계에서 원고(주로 장 끝 수첩)를 고쳤고, 5단계에서 문법 쪽지(`@note`)를 만들어 13장 설명을 옮겼고, 6단계에서 27·28·30장을 다듬었다. 23·25·26·27장의 문법 설명 문단을 쪽지로 옮길지는 정하지 않았다.
+- 인쇄본: 사륙판 128×188mm, **345쪽**(2026-11-08, 13–30장 다시 쓰기와 2차 다듬기 뒤). 13–30장 서술을 한국어로 다시 쓰고 대사 뜻·발음을 30장까지 붙여서 늘었다([`REWRITE.md`](REWRITE.md)). 장 표제지 30개는 모두 홀수 쪽에 있다.
+- 책등: 345쪽 ÷ 2 × 0.1mm = **17.2mm**.
 - 설정 문서:
   - `CHARACTERS.md`: 인물·세계관
   - `PLAN.md`: 30장 지도
@@ -19,10 +21,11 @@ cd spanish
 pip install segno pypdf          # 없으면 설치. Homebrew 파이썬이면 --user --break-system-packages
 npm i playwright                 # 처음 한 번. Chromium이 이미 있으면 install 은 하지 않는다
 python3 build.py                 # 아래 결과물 전부 (약 40초)
-python3 build.py --web-only 2>&1 | grep -E '!|Error'   # 출력이 비어 있어야 정상
+python3 build.py --web-only 2>&1 | grep -E '!|Error'   # 단어표 겹침·본문에 없는 새 단어도 경고한다. 출력이 비어 있어야 정상
 python3 build.py --mono          # 1도(먹) 견본: print/la-llave-de-gracia_mono.pdf
 python3 build.py --pad 16        # 속지 끝에 빈 쪽을 더해 16의 배수로. 책등도 따라 바뀐다
 python3 check_print.py           # 완성 기준 점검. "모두 통과"가 나와야 한다
+python3 epub.py                  # 전자책: print/la-llave-de-gracia.epub (build.py 뒤에. 표지는 cover.pdf 앞면을 잘라 쓴다)
 ```
 - 글꼴(Gowun Batang, EB Garamond, Noto Sans KR)은 빌드가 `npm pack @fontsource/...@5.1.0`으로 받아 `spanish/.fonts`에 푼다.
 - `print/`에 생기는 것:
@@ -33,6 +36,7 @@ python3 check_print.py           # 완성 기준 점검. "모두 통과"가 나�
 | `interior-print.pdf` | 납품용 속지(RGB). 쪽마다 재단선이 있고 TrimBox 128×188, BleedBox 134×194. 먹은 #000 |
 | `cover.pdf` | 표지 펼침(뒤·책등·앞). 재단 여백 3mm, 재단선과 책등 접지선(점선) |
 | `interior-print-cmyk.pdf`, `cover-cmyk.pdf` | CMYK 변환본(아래 참고) |
+| `la-llave-de-gracia.epub` | 전자책(EPUB 3, `epub.py`). 표지 이미지, 차례, 장 끝 단어 목록, 문법 쪽지가 들어 있다. QR 대신 장 첫머리에 웹 리더 듣기 링크. 글꼴은 EB Garamond만 넣고 한글은 기기 글꼴. 판권면은 ○○○가 채워지면 넣는다 |
 | `book.html`, `cover.html` | 중간 파일. 커밋하지 않는다(`.gitignore`) |
 
 ## 만드는 순서 (`build.py` `main()`)
@@ -55,6 +59,7 @@ python3 check_print.py           # 완성 기준 점검. "모두 통과"가 나�
   - 장면 바뀜: 꽃 한 송이.
   - 편지: 테라코타 10% 망과 왼쪽 띠.
   - 간판: 이중 테두리.
+  - 문법 쪽지(`@note`): 장 끝 수첩 뒤, 가는 테두리 상자. 안의 스페인어에는 발음을 붙이지 않는다.
   - 본문의 숫자는 EB Garamond로 찍힌다.
 - **앞붙이**: 반표제지 → 빈 쪽 → 속표지 → 판권면 → 읽는 법 → 발음 펼침면(6–7쪽) → 사람들 → 차례(9쪽, 한 쪽) → 빈 쪽 → 1장(11쪽).
 - **판권면**: 정해지지 않은 것은 모두 `○○○`이다(글쓴이, 펴낸이, 펴낸곳, 날짜, ISBN, 값). 속표지 아래의 `○○○`는 펴낸곳 자리다.
@@ -82,7 +87,7 @@ python3 check_print.py           # 완성 기준 점검. "모두 통과"가 나�
 ## 남은 일
 - 판권면의 `○○○` 채우기: 글쓴이, 펴낸곳, 날짜, ISBN, 값. 바코드는 ISBN이 정해지면 상자 자리에 넣는다.
 - 인쇄소 확인 사항(위)을 반영하기.
-- 화면용·납품용 PDF는 저장소에 다시 넣지 않는다. 앞서 커밋된 `print/*.pdf`는 318쪽·옛 시계 판이라 지금 빌드(316쪽, 3시 10분)와 다르다. 최신 파일은 빌드 결과와 검토용 이미지로 둔다.
+- 빌드한 PDF 여섯 개(`print/*.pdf`)는 모두 저장소에 넣는다(Mike 결정, 2026-11-05). 다시 빌드하면 함께 커밋한다.
 - 남은 선택 사항
   - 편지가 쪽을 넘으면 앞쪽 상자 아래에 망이 두어 줄 비어 남을 수 있다. Chrome이 쪽을 나누는 방식이다. 모양은 무너지지 않는다.
   - 표지 펼침의 앞면 타일 무늬와 뒷면 타일 무늬는 책등을 사이에 두고 이어지지 않는다(따로 깔았다).
