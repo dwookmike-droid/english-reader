@@ -35,17 +35,25 @@ MARGIN_OUTER_MM = 12
 # 종이 한 장 두께. 미색 모조 80g 근처. 책등(mm) = 쪽수 ÷ 2 × 이 값.
 PAPER_CALIPER_MM = 0.1
 
-# 읽기 도움은 한꺼번에 빼지 않고 둘로 나눠 뺀다(IMPROVE.md 2절).
-# 대사 밑 우리말 뜻은 이 장까지만 싣는다.
-GLOSS_UNTIL = 15
-# 처음 나온 말의 한글 발음은 이 장까지 본문에 싣는다. 그 뒤로는 장 끝 단어 목록과 웹 리더에만 남는다.
-PRON_UNTIL = 18
+# 1권은 대사 밑 우리말 뜻과 처음 나온 말의 한글 발음을 끝까지 싣는다(REWRITE.md, 2026-11-08).
+# 2권 이후에 도움을 줄일 때 이 두 값을 낮춘다.
+GLOSS_UNTIL = 30
+PRON_UNTIL = 30
 # 이 장까지는 스페인어 대사 한 줄 전체의 한글 발음을 대사 밑에 붙인다.
 LINE_PRON_UNTIL = 6
 
 LATIN = r"A-Za-zÀ-ÖØ-öø-ÿ"
 WORD = re.compile(rf"[{LATIN}](?:[{LATIN}\-]*[{LATIN}])?")
-SKIP = {'h', 'th', 'k', 'app', 'a', 'o', 's', 'll', 'sh', 'kg', 'g', 'd', 'r', 'ero', 'c', 'emos', 'á', 'án', 'ás', 'é', 'éis', 'ía'}   # 본문 설명에 쓰인 글자 이름          # 본문 설명에 쓰인 글자 이름 등
+
+
+def fold(s):
+    """대소문자·강세를 무시하고 단어만 남겨 비교한다(Me acuerdo = me acuerdo)."""
+    import unicodedata
+    s = ''.join(c for c in unicodedata.normalize('NFD', s.lower()) if unicodedata.category(c) != 'Mn')
+    return ' '.join(WORD.findall(s))
+
+
+SKIP = {'h', 'th', 'k', 'app', 'a', 'o', 's', 'll', 'sh', 'kg', 'g', 'd', 'r', 'ero', 'c', 'emos', 'á', 'án', 'ás', 'é', 'éis', 'ía', 'ron', 'ra'}   # 본문 설명에 쓰인 글자 이름          # 본문 설명에 쓰인 글자 이름 등
 
 
 # ── 단어표 ────────────────────────────────────────────────────────────
@@ -95,7 +103,23 @@ class Inline:
         cls = 'w new' if first else 'w'
         s = f'<b class="{cls}" data-k="{html.escape(key)}">{html.escape(text)}</b>'
         e = self.entries.get(key, {})
-        p = e.get('p') or pron      # 단어표 발음(비우면 철자에서 자동 생성)을 우선한다
+        if pron:                    # 원고에 {단어|발음}으로 적은 발음은 그 자리 형태의 발음이다
+            p = pron
+        elif fold(text) == fold(re.sub(r'\s\d+$', '', key)):
+            p = e.get('p')          # 표제어 그대로 나오면 단어표 발음(비우면 철자에서 자동 생성)
+        elif e.get('t') in ('c', 'p', 'f'):
+            # 카탈루냐어·이름은 철자로 만들 수 없으니, 구절의 일부만 나왔으면 단어표 발음에서 그 몫만 떼어 쓴다
+            # (Quina ← quina calor noia). 맞춰 뗄 수 없으면 여기서는 발음을 붙이지 않는다.
+            kt, tt, pw = fold(key).split(), fold(text).split(), (e.get('p') or '').split()
+            at = [i for i in range(len(kt) - len(tt) + 1) if kt[i:i + len(tt)] == tt]
+            p = ' '.join(pw[at[0]:at[0] + len(tt)]) if at and len(pw) == len(kt) else None
+            if not p:
+                return s
+        else:
+            # 구절 항목의 일부(me acuerdo ← me acuerdo del nombre)나 활용형(subiste ← subí)이면
+            # 표제어 발음이 아니라 본문에 나온 형태의 발음을 붙인다(REVISION.md 5번)
+            from hangul import to_hangul
+            p = ' '.join(to_hangul(t.group()) for t in WORD.finditer(text))
         if (p and key not in self.shown and e.get('t') != 'p'
                 and self.ch <= PRON_UNTIL and not self.quiet):
             s += f'<span class="pr">[{pron_html(p)}]</span>'

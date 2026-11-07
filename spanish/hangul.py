@@ -201,7 +201,8 @@ def to_hangul(word):
         parts.append([chars, th, k == st])
     # l 앞의 모음으로 끝난 음절에 ㄹ 받침 (hola → 올라)
     for k in range(1, len(parts)):
-        if sy[k][0][:1] == ['l'] and not sy[k - 1][2]:
+        # s·z 받침 뒤의 l도 '슬라'로 (isla → 이슬라, hazlo → 아슬로)
+        if sy[k][0][:1] == ['l'] and (not sy[k - 1][2] or sy[k - 1][2][-1] in ('s', 'T')):
             got = add_final(parts[k - 1][0][-1], 'ㄹ')
             if got:
                 parts[k - 1][0][-1] = got
@@ -213,9 +214,16 @@ def to_hangul(word):
             if code >= 0 and code % 28 == JONG.index('ㄴ'):
                 parts[k][0][-1] = chr(ord(last) - JONG.index('ㄴ') + JONG.index('ㅇ'))
     out = []
-    for chars, th, stressed in parts:
-        s = ''.join(f'_{ch}_' if i in th else ch for i, ch in enumerate(chars))
-        out.append(f'*{s}*' if stressed and len(sy) > 1 else s)
+    for k, (chars, th, stressed) in enumerate(parts):
+        marked = [f'_{ch}_' if i in th else ch for i, ch in enumerate(chars)]
+        if not (stressed and len(sy) > 1):
+            out.append(''.join(marked))
+            continue
+        # 따로 적는 끝소리(르·스·드 등, 모음 'ㅡ' 글자)는 굵게 밖에 둔다: *카*르타스, *푸에*르타
+        core = len(chars)
+        while sy[k][2] and core > 1 and (ord(chars[core - 1]) - 0xAC00) // 28 % 21 == JUNG.index('ㅡ'):
+            core -= 1
+        out.append('*' + ''.join(marked[:core]) + '*' + ''.join(marked[core:]))
     return ''.join(out)
 
 

@@ -79,7 +79,7 @@ cansada	cansada	칸*사*다	피곤한 (여자)	n	2	남자는 cansado
 vamos	vamos	*바*모스	가자, 갑시다	n	2
 mira	mira	*미*라	봐, 이것 봐	n	2
 plaza	plaza	*플라*_사_	광장	n	2	la plaza
-reloj	reloj|relojes	레*로*흐	시계	n	2	여러 개는 relojes. 카탈루냐어로는 rellotge
+reloj	reloj|relojes	렐*로*흐	시계	n	2	여러 개는 relojes. 카탈루냐어로는 rellotge
 señor	señor	세*뇨*르	아저씨, 선생님, (남자) 분	n	2	여자는 señora
 antes	antes	*안*테스	예전에, 전에	n	2
 ahora	ahora	아*오*라	지금	n	2	h는 소리가 없다
@@ -149,11 +149,11 @@ dos	dos	*도*스	둘, 2	n	3
 cuatro	cuatro	*쿠아*트로	넷, 4	n	3
 nada más	nada más	*나*다 *마*스	더는 없어요, 그게 다예요	n	3
 cuánto es	cuánto es	*쿠안*토 *에*스	얼마예요?	n	3	시장과 가게에서 가장 중요한 문장
-cincuenta	cincuenta	_신_*쿠엔*타	쉰, 50	n	3	4,50 € = cuatro con cincuenta
+cincuenta	cincuenta	_싱_*쿠엔*타	쉰, 50	n	3	4,50 € = cuatro con cincuenta
 quién es el último	quién es el último	*키엔* 에스 엘 *울*티모	누가 마지막이에요? (줄 설 때)	n	3	스페인 시장에서는 줄 대신 이렇게 묻는다
 queso	queso	*케*소	치즈	n	3	카탈루냐어로는 formatge
-doscientos	doscientos	도스_*시엔*_토스	이백, 200	n	3	dos + cientos
-cien	cien	_*시엔*_	백, 100	n	3
+doscientos	doscientos	도스*_시_엔*토스	이백, 200	n	3	dos + cientos
+cien	cien	*_시_엔*	백, 100	n	3
 gramos	gramos	*그라*모스	그램	n	3
 cinco	cinco	*_싱_*코	다섯, 5	n	3
 tía	tía	*티*아	고모, 이모, 숙모	n	3	tía abuela = 고모할머니. 남자는 tío
@@ -200,7 +200,7 @@ casa	casa	*카*사	집	n	4	en casa = 집에
 hay	hay	아이	~이 있다	n	4	Hay mucha gente = 사람이 많다. h는 소리가 없다
 gente	gente	*헨*테	사람들	n	4	la gente. 하나지만 여러 사람을 뜻한다
 me ayuda	me ayuda	메 아*유*다	저 좀 도와주실래요?	n	4	길을 잃었을 때 가장 먼저 쓰는 말
-cerca	cerca	*_세_르*카	가까이, 가깝다	n	4	반대는 lejos
+cerca	cerca	*_세_*르카	가까이, 가깝다	n	4	반대는 lejos
 lejos	lejos	*레*호스	멀리, 멀다	n	4	반대는 cerca
 todo recto	todo recto	*토*도 *렉*토	쭉, 똑바로	n	4	길 안내에서 가장 많이 듣는 말
 derecha	derecha	데*레*차	오른쪽	n	4	a la derecha = 오른쪽으로
@@ -232,7 +232,7 @@ propera estació	propera estació	프러*페*라 어스타시*오*	다음 역 (�
 Fontana	fontana	폰*타*나	폰타나 — 그라시아의 지하철역	p	4
 Diagonal	diagonal	디아고*날*	디아고날 — 바르셀로나를 비스듬히 가로지르는 큰길과 그 역	p	4
 Catalunya	catalunya	카탈*루*냐	카탈루냐	p	4
-Passeig de Gràcia	passeig de gràcia	파*세*치 데 *그라*시아	파세이그 데 그라시아 — 그라시아로 올라가는 큰길	p	4
+Passeig de Gràcia	passeig de gràcia	파*세*치 데 *그라*시아	파세치 데 그라시아 — 그라시아로 올라가는 큰길	p	4
 Casa Batlló	casa batlló	*카*사 바*요*	카사 바트요 — 가우디가 고친 집	p	4
 La Pedrera	la pedrera	라 페*드레*라	라 페드레라 — 가우디의 카사 밀라. ‘돌산’이라는 별명	p	4
 Gaudí	gaudí	가우*디*	가우디 — 바르셀로나의 건축가	p	4
@@ -2642,7 +2642,7 @@ date prisa	date prisa|date		서둘러	x	29
 despegó	despegó		이륙했다	x	29	
 dormidos	dormidos		잠든	x	29	
 ¿quiere que le dé…?	¿quiere que le dé…?|dé		~를 드릴까요?	x	29	dar → dé
-las tarjetas de embarque	las tarjetas de embarque|tarjetas de embarque|tarjetas|embarque		탑승권	n	29	
+las tarjetas de embarque	la tarjeta de embarque|las tarjetas de embarque|tarjetas de embarque|tarjetas|embarque		탑승권	n	29	
 enseñaba	enseñaba		가르치고 있었다	x	29	
 con escala	con escala|escala		경유	x	29	
 fríos	fríos		차가운	x	29	
@@ -2795,3 +2795,8 @@ arreglar	arreglar		고치다	x	27
 llamo	llamo		(내가) 전화한다	x	28	llamar의 현재
 practicaba	practicaba		연습하곤 했다	x	30	practicar
 quedaría	quedaría		남을 것이다	x	27	quedar의 조건형
+moniato	moniato	무니*아*투	고구마 (카탈루냐어)	c	25	boniato의 카탈루냐어
+Gran Canaria	gran canaria	*그란* 카*나*리아	그란카나리아 — 라스팔마스가 있는 섬	p	10
+
+cantamos	cantamos		(우리는) 노래했다	x	30	
+exacto	exacto		정확한	x	20	

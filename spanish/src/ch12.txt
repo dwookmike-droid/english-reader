@@ -57,7 +57,7 @@ familias. 가족들. 그 단어를 오래 보았다. 할머니는 남편의 배�
 
 @letter
 14 de noviembre de 1978.
-El domingo {salió|살*리*오} de nuestro puerto el pesquero coreano «Dong-Hae 7», con destino a Las Palmas.
+El domingo {salió|살*리오*} de nuestro puerto el pesquero coreano «Dong-Hae 7», con destino a Las Palmas.
 @end
 
 @marc —Salió. Salir: salió. El domingo doce. :: 떠났다. salir가 salió가 돼요. 12일 일요일에.

@@ -119,10 +119,10 @@ sótano. 지하실. cajas. 상자들. voy a abrirlas. 그것들을 열 것이다
 @letter
 Miércoles. Hoy me han robado el bolso en la Rambla.
 No tengo móvil. No tengo cartera.
-El ladrón era un hombre. Me dijo «perdón» y sonrió. ¡Ojo con el bolso!
+Un hombre me ha robado el bolso. Me ha dicho «perdón». ¡Ojo con el bolso!
 Pero tengo la llave.
 He hablado con la policía en español. ¡Solo en español!
-Esta noche Vale va a hacer un asado. Ha comprado un kilo y medio de carne.
+Esta noche Vale ha hecho un asado. Ha comprado un kilo y medio de carne.
 Mañana voy a tener un móvil viejo.
 Y Marc va a abrir las cajas del sótano de la cerrajería.
 @end

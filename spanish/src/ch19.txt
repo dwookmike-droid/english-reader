@@ -1,122 +1,134 @@
 # 19 | Funcionará | 푼시오나라
 
-El domingo a las diez, Marc abrió la puerta del sótano. Yo no conocía el sótano. La escalera tenía trece escalones. Los conté uno por uno. La escalera era de piedra, estrecha y fría. Abajo olía a polvo, a aceite y a madera vieja. Marc encendió una bombilla que colgaba del techo. La luz era amarilla y débil.
+일요일 열 시, 마르크가 지하실 문을 열었다. El domingo a las diez, Marc abrió la puerta del sótano. 나는 지하실에 내려가 본 적이 없었다. 계단은 열세 칸이었다. La escalera tenía trece escalones. Los conté uno por uno. 하나씩 세면서 내려갔다. 좁고 차가운 돌계단이었다. La escalera era de piedra, estrecha y fría. 아래에서는 먼지와 기름과 오래된 나무 냄새가 났다. 마르크가 천장에 매달린 전구를 켰다. La luz era amarilla y débil. 노랗고 흐린 불빛이었다.
 
-El sótano era más grande de lo que yo pensaba. Había estanterías llenas de cajas, herramientas oxidadas, una bicicleta sin ruedas, sillas rotas. Al fondo, contra la pared, estaba la cosa alta. Tapada con una sábana. La sábana ya no era blanca. Era gris de polvo.
+지하실은 생각보다 넓었다. 상자로 가득한 선반, 녹슨 공구들, 바퀴 없는 자전거, 부서진 의자들. Había {herramientas oxidadas|에라*미엔*타스 옥시*다*다스}. 녹슨 공구들. 그리고 안쪽 벽에 기대어, 그 키 큰 물건이 서 있었다. 천으로 덮인 채. 천은 더는 하얗지 않았다. 먼지 때문에 회색이었다. La sábana ya no era blanca. Era gris.
 
-Marc y yo nos miramos. Ninguno de los dos se movió.
+Marc y yo nos miramos. Ninguno de los dos se movió. 둘 다 움직이지 않았다.
 
-—Hazlo tú —dijo él—. Es tuyo.
+@marc —Hazlo tú. Es tuyo. :: 당신이 해요. 당신 거잖아요.
 
-Me acerqué. Cogí la sábana con las dos manos. Pensé en Martí, en 1979, tapando el reloj con esta misma sábana, solo, en su taller. Tiré despacio.
+hazlo. 해. es tuyo. 네 것이다. 열 번째 편지에 있던 말이었다. 나는 다가갔다. 두 손으로 천을 잡았다. 1979년에 혼자 공방에서 이 천으로 시계를 덮던 마르티를 생각했다. 그리고 천천히 당겼다.
 
-La sábana cayó al suelo. El polvo bailó en la luz amarilla.
+La sábana cayó al suelo. El polvo bailó en la luz amarilla. 노란 불빛 속에서 먼지가 춤을 추었다.
 
 ##
 
-Era un reloj de pie, más alto que yo. La caja era de madera oscura, casi negra, con flores talladas en los lados: flores pequeñas de cinco pétalos, como la flor de la llave. En la parte de arriba había una esfera blanca, con números romanos. Las agujas marcaban las tres y diez. Debajo de la esfera, detrás de un cristal, había un espacio vacío, largo y estrecho.
+괘종시계였다. Era un reloj de pie. 나보다 키가 컸다. 몸체는 거의 검은빛이 도는 짙은 나무였고, 양옆에 꽃이 새겨져 있었다. 꽃잎 다섯 장짜리 작은 꽃들. 열쇠에 새겨진 그 꽃이었다. Como la flor de la llave.
 
-Y en la esfera había unas palabras pintadas, en letras pequeñas y doradas.
+위쪽에는 로마 숫자가 적힌 {una esfera blanca|*우*나 에스*페*라 *블랑*카}가 있었다. 하얀 시계판. 시곗바늘은 세 시 십 분을 가리키고 있었다. {Las agujas|라스 아*구*하스} marcaban las tres y diez. las agujas. 바늘들. 시계판 아래, 유리 뒤에는 길고 좁은 빈 공간이 있었다.
+
+그리고 시계판에 작은 금빛 글씨가 쓰여 있었다.
 
 @address
 Para S. — M. — Barcelona, 1978
 @end
 
-No pude decir nada. Marc tampoco. Para S. — M. Pensé en otro papel: «Sr. Puig, señora e hija». Lo aparté de mi cabeza. Durante un minuto solo se oyó el zumbido débil de la bombilla.
+S에게. M. 바르셀로나, 1978. 나는 아무 말도 할 수 없었다. 마르크도 그랬다. 다른 종이 한 장이 떠올랐다. «Sr. Puig, señora e hija.» 나는 그 생각을 머리에서 밀어냈다. 일 분 동안 전구가 웅웅거리는 소리만 들렸다.
 
-—Tres y diez —dijo Marc al final—. Se paró a las tres y diez.
+@marc —Tres y diez. Se paró a las tres y diez. :: 세 시 십 분. 세 시 십 분에 멈췄네요.
 
-—¿De la tarde o de la noche?
+@yunha —¿De la tarde o de la noche? :: 낮이에요, 밤이에요?
 
-—No lo sabremos nunca.
+@marc —No lo sabremos nunca. :: 그건 영영 모를 거예요.
 
-Marc abrió la tapa de cristal de la esfera con mucho cuidado. En la esfera, cerca del número cuatro, había un agujero pequeño. El agujero para dar cuerda. Me miró.
+마르크가 아주 조심스럽게 시계판의 유리 뚜껑을 열었다. 시계판의 숫자 4 가까이에 작은 구멍이 하나 있었다. {Un agujero|운 아구*헤*로}. 태엽을 감는 구멍. 마르크가 나를 보았다.
 
-Saqué la llave del bolsillo. La llave de mi abuela. La puse en el agujero. Entró perfectamente. El agujero la esperaba.
+Saqué la llave del bolsillo. La llave de mi abuela. 그것을 구멍에 넣었다. 꼭 맞게 들어갔다. La llave entró perfectamente. 구멍이 열쇠를 기다리고 있었다.
 
-La giré. Una vez. Dos. Tres. Se oyó el mismo ruido que en el taller, aquel primer día: cric, cric, cric. El muelle se llenaba de fuerza. De repente se oyó otro ruido, rápido, trrrrr, y la aguja larga empezó a correr por la esfera, loca. Marc la paró con un dedo.
+La giré. Una vez. Dos. Tres. 그 첫날 공방에서 들었던 소리가 났다. 끽, 끽, 끽. 태엽이 힘을 채워 갔다. {El muelle|엘 *무에*예}. 태엽. 그때 갑자기 다른 소리가 났다. 빠르게, 드르르르. 긴 바늘이 미친 듯이 시계판 위를 달리기 시작했다. 마르크가 손가락으로 바늘을 멈췄다.
 
-—¿Qué pasa? ¿Por qué hace eso?
+@yunha —¿Qué pasa? ¿Por qué hace eso? :: 왜 그래요? 왜 저래요?
 
-Marc señaló el espacio vacío detrás del cristal. Al fondo, contra la madera, había unas varillas de metal finas, como las cuerdas de un arpa. Nadie preguntó qué eran.
+마르크가 유리 뒤의 빈 공간을 가리켰다. 안쪽 나무판에 기대어 가는 쇠막대 몇 개가 하프 줄처럼 서 있었다. 그게 뭔지는 아무도 묻지 않았다.
 
-—Falta el péndulo. Sin péndulo, el reloj se dispara. No anda bien. Tiene cuerda, pero no tiene corazón.
+@marc —{Falta|*팔*타} {el péndulo|엘 *펜*둘로}. Sin péndulo, el reloj se dispara. No anda bien. Tiene cuerda, pero no tiene {corazón|코라*_손_*}. :: 진자가 없어요. 진자가 없으면 시계가 폭주해요. 제대로 안 가요. 태엽은 있는데, 심장이 없어요.
 
-Tiene cuerda, pero no tiene corazón. Me quedé mirando el espacio vacío. Martí hizo el reloj, le dio la llave a mi abuela, y se quedó con el corazón.
+falta. 없다, 모자라다. el péndulo. 진자. corazón. 심장. 태엽은 있는데 심장이 없다. 나는 빈 공간을 오래 바라보았다. 마르티는 시계를 만들고, 할머니에게 열쇠를 주고, 심장은 자기가 가지고 있었다.
 
-—¿Dónde está el péndulo?
+@yunha —¿Dónde está el péndulo? :: 진자는 어디 있어요?
 
-—No lo sé. En las cajas no está. Las abrí todas en agosto. Me acordaría.
-
-##
-
-Oímos pasos en la escalera. Era Montse. Marc la llamó antes de bajar, pero ella dijo que no iba a venir. Y vino.
-
-Bajó despacio, apoyada en la pared. Cuando llegó abajo y vio el reloj, se paró. Se quedó muy quieta, con una mano en el pecho.
-
-—Ai, Martí… —dijo. En catalán, muy bajito.
-
-Se acercó al reloj y pasó los dedos por las flores de madera, una por una. Parecía contarlas. Después miró el espacio vacío.
-
-—El péndulo lo tiene Joan —dijo.
-
-—¿Quién es Joan?
-
-—Un amigo de Martí. También relojero. Vive en Sitges, al lado del mar. En 2008, cuando Martí ya estaba enfermo, le dio el péndulo. Le dijo: «Guárdalo tú. Si algún día viene alguien con la llave, dáselo». Yo estaba allí.
-
-Marc miró a su tía abuela. Por un momento no la reconoció.
-
-—Tú lo sabías todo. El reloj, el sótano, el péndulo. Siempre lo has sabido.
-
-—Sí —dijo Montse. No bajó los ojos—. Le prometí a mi hermano: «No voy a decir nada. El reloj va a esperar». Él decía: «Si alguien tiene que venir, vendrá».
-
-—Yuna vino con la llave el primer día —dijo Marc—. Hace siete semanas.
-
-—Lo sé. Pero Martí también decía: «Que lea las cartas primero. Que entienda. Después, el reloj». Yo solo he cumplido.
-
-—¿Y mi padre? ¿También lo sabía?
-
-Montse tardó en contestar.
-
-—Tu padre nunca quiso saber nada de esta historia. Por eso decía «armario».
-
-Vendrá. Martí lo dijo hace muchos años, en este mismo sótano quizás. Y yo estaba aquí.
-
-—Mañana llamaré a Joan —dijo Montse—. Tiene ochenta y tres años, pero la cabeza le funciona mejor que a mí. Si Joan puede, el sábado iréis a Sitges. Los dos.
-
-—¿Y tú?
-
-—Yo me quedaré aquí. Con el reloj.
-
-Antes de subir, le pregunté una cosa más. La pregunta que llevaba días sin hacer. Yo quería leer la última carta el día que el reloj volviera a andar, pero no podía esperar más.
-
-—Montse. La última carta. La del papel más blanco. ¿Puedo leerla ya?
-
-Montse ya estaba en la escalera. Se paró, de espaldas a mí. Tardó mucho en contestar.
-
-—Esa carta, todavía no, nena. Primero el péndulo.
-
-Y subió. Marc no la ayudó a subir.
+@marc —No lo sé. En las cajas no está. Las abrí todas en agosto. Me acordaría. :: 몰라요. 상자에는 없어요. 팔월에 다 열어 봤거든요. 있었으면 기억할 거예요.
 
 ##
 
-Marc y yo nos quedamos un rato más en el sótano, sentados en dos sillas viejas, delante del reloj. Marc me explicó cómo funcionaba un reloj de pie: el muelle, las ruedas, el péndulo que va de un lado al otro y da el tiempo, segundo a segundo.
+계단에서 발소리가 들렸다. 몬세였다. 마르크가 내려오기 전에 몬세에게 전화했지만, 몬세는 안 내려오겠다고 했었다. 그런데 왔다. Y vino.
 
-—Primero, el péndulo —dijo—. Después limpiaré la máquina, colgaré el péndulo y lo ajustaré. Y funcionará.
+Bajó despacio, apoyada en la pared. 몬세는 벽을 짚으며 천천히 내려왔다. 아래에 내려와 시계를 보자 걸음을 멈췄다. 한 손을 가슴에 얹고 꼼짝도 하지 않았다.
 
-Funcionará. Le pregunté por esa forma nueva. Él sonrió.
+@montse —Ai, Martí… :: 아이고, 마르티…
 
-—Es el futuro. Es fácil: el verbo entero y -é, -ás, -á, -emos, -éis, -án. Funcionar: funcionará. Ir: iré, irás, irá, iremos. Volver: volveré. Unos pocos son raros: venir, vendrá; decir, diré; hacer, haré.
+카탈루냐어로, 아주 작게. 몬세는 시계에 다가가 나무 꽃을 하나하나 손끝으로 쓸었다. 세는 것 같았다. 그러고는 빈 공간을 보았다.
 
-—¿Por qué «vendrá» y no «venirá»?
+@montse —El péndulo lo tiene Joan. :: 진자는 조안이 갖고 있어.
 
-—Porque sí. Como mi abuelo. «Si alguien tiene que venir, vendrá».
+@yunha —¿Quién es Joan? :: 조안이 누구예요?
+
+@montse —Un amigo de Martí. También relojero. Vive en Sitges, al lado del mar. En 2008, cuando Martí ya estaba enfermo, le dio el péndulo. Le dijo: «Guárdalo tú. Si algún día viene alguien con la llave, dáselo». Yo estaba allí. :: 마르티 친구야. 그 사람도 시계공이고. 바닷가 시체스에 살아. 2008년에 마르티가 이미 아팠을 때 진자를 맡겼어. 그러면서 그랬지. ‘네가 갖고 있어. 언젠가 누가 열쇠를 들고 오면 그 사람한테 줘.’ 나도 거기 있었어.
+
+마르크가 고모할머니를 보았다. 잠깐, 낯선 사람을 보는 얼굴이었다.
+
+@marc —Tú lo sabías todo. El reloj, el sótano, el péndulo. Siempre lo has sabido. :: 다 알고 있었네요. 시계도, 지하실도, 진자도. 처음부터 알고 있었어요.
+
+@montse —Sí. Le prometí a mi hermano: «No voy a decir nada. El reloj va a esperar». Él decía: «{Si alguien tiene que venir, vendrá|시 *알*기엔 *티에*네 케 베*니*르 벤*드라*}». :: 그래. 오빠한테 약속했어. ‘아무 말도 안 할게. 시계는 기다릴 거야.’ 오빠는 그랬지. ‘올 사람이면 올 거야.’
+
+몬세는 눈을 내리깔지 않았다. vendrá. 올 것이다. 미래였다.
+
+@marc —Yuna vino con la llave el primer día. Hace siete semanas. :: 윤하는 첫날 열쇠를 들고 왔어요. 칠 주 전에.
+
+@montse —Lo sé. Pero Martí también decía: «Que lea las cartas primero. Que entienda. Después, el reloj». Yo solo he cumplido. :: 알아. 그런데 마르티는 이런 말도 했어. ‘먼저 편지를 읽게 해. 이해하게 해. 시계는 그다음이야.’ 나는 약속을 지켰을 뿐이야.
+
+@marc —¿Y mi padre? ¿También lo sabía? :: 우리 아버지는요? 아버지도 알았어요?
+
+몬세는 한참 뒤에야 대답했다.
+
+@montse —Tu padre nunca quiso saber nada de esta historia. Por eso decía «armario». :: 네 아버지는 이 이야기를 하나도 알고 싶어 하지 않았어. 그래서 옷장이라고 한 거야.
+
+올 사람이면 올 거야. 마르티는 오래전에, 어쩌면 바로 이 지하실에서 그렇게 말했다. 그리고 내가 여기 있었다. Y yo estaba aquí.
+
+@montse —Mañana {llamaré|야마*레*} a Joan. Tiene ochenta y tres años, pero la cabeza le funciona mejor que a mí. Si Joan puede, el sábado {iréis|이*레이*스} a Sitges. Los dos. :: 내일 조안한테 전화할게. 여든셋인데, 머리는 나보다 잘 돌아가. 조안이 괜찮다면 토요일에 너희 둘이 시체스에 가.
+
+llamaré. 전화할 것이다. iréis. 너희는 갈 것이다. 또 미래였다.
+
+@yunha —¿Y tú? :: 몬세는요?
+
+@montse —Yo me quedaré aquí. Con el reloj. :: 나는 여기 있을게. 시계랑.
+
+몬세가 올라가기 전에 나는 하나를 더 물었다. 며칠째 묻지 못한 질문이었다. 마지막 편지는 시계가 다시 가는 날 읽고 싶었지만, 더는 기다릴 수가 없었다.
+
+@yunha —Montse. La última carta. La del papel más blanco. ¿Puedo leerla ya? :: 몬세. 마지막 편지요. 종이가 제일 하얀 거. 이제 읽어도 돼요?
+
+몬세는 벌써 계단에 있었다. 나에게 등을 돌린 채 멈춰 섰다. 대답하기까지 오래 걸렸다.
+
+@montse —Esa carta, todavía no, nena. Primero el péndulo. :: 그 편지는 아직 안 돼, 얘야. 진자가 먼저야.
+
+그리고 올라갔다. 마르크는 몬세가 계단을 오르는 걸 돕지 않았다.
+
+##
+
+마르크와 나는 시계 앞의 낡은 의자 두 개에 앉아 지하실에 조금 더 있었다. Nos quedamos un rato más, entre el polvo y las herramientas oxidadas. 마르크가 괘종시계가 어떻게 움직이는지 설명해 주었다. 태엽, 톱니바퀴, 그리고 이쪽저쪽으로 흔들리며 일 초씩 시간을 만드는 진자.
+
+@marc —Primero, el péndulo. Después limpiaré la máquina, colgaré el péndulo y lo ajustaré. Y {funcionará|푼_시_오나*라*}. :: 먼저 진자예요. 그다음에 기계를 닦고, 진자를 걸고, 맞출 거예요. 그러면 갈 거예요.
+
+funcionará. 작동할 것이다. 그 새로운 모양에 대해 물었다. 마르크가 웃었다.
+
+@marc —Es {el futuro|엘 푸*투*로}. Es {fácil|*파*_실_}: el verbo entero y -é, -ás, -á, -emos, -éis, -án. Funcionar: funcionará. Ir: iré, irás, irá, iremos. Volver: volveré. Unos pocos son raros: venir, vendrá; decir, diré; hacer, haré. :: 미래형이에요. 쉬워요. 동사 전체에 -é, -ás, -á, -emos, -éis, -án을 붙이면 돼요. funcionar는 funcionará. ir는 iré, irás, irá, iremos. volver는 volveré. 몇 개만 특이해요. venir는 vendrá, decir는 diré, hacer는 haré.
+
+el futuro. 미래. fácil. 쉽다. 동사를 통째로 두고 끝에 붙이기만 하면 된다. 정말로 쉬웠다. 몇 개만 빼고.
+
+@yunha —¿Por qué «vendrá» y no «venirá»? :: 왜 venirá가 아니고 vendrá예요?
+
+@marc —Porque sí. Como mi abuelo. «Si alguien tiene que venir, vendrá». :: 그냥 그래요. 우리 할아버지처럼요. ‘올 사람이면 올 거야.’
 
 Miré el reloj. Las agujas en las tres y diez. El espacio vacío. Las flores talladas.
 
-—Y vino —dije.
+@yunha —Y vino. :: 그리고 왔네요.
 
-—Y viniste —dijo Marc. Después miró el reloj y dijo, muy bajo—: Siete semanas.
+@marc —Y viniste. :: 그리고 당신이 왔죠.
+
+그러고는 시계를 보며 아주 작게 덧붙였다.
+
+@marc —Siete semanas. :: 칠 주.
 
 @letter
 Domingo, 27 de septiembre.

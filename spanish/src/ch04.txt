@@ -8,7 +8,7 @@
 
 @vale —Dale… es «vale», en Argentina. :: dale는… 아르헨티나의 vale야.
 
-vale가 vale 대신 dale라고 했다. 이 집에서는 오케이 한마디도 사람마다 달랐다. 부엌에서 몬세가 고개를 내밀었다.
+Vale가 vale 대신 dale라고 했다. 이 집에서는 오케이 한마디도 사람마다 달랐다. 부엌에서 몬세가 고개를 내밀었다.
 
 @montse —¿Turismo? Muy bien. Pero, Vale… despacio con Yuna. :: 관광? 좋지. 그런데 발레… 유나랑 다닐 땐 천천히.
 
@@ -28,7 +28,7 @@ Gràcia에서 가장 가까운 {metro|*메*트로}역은 Fontana였다. 땅속�
 
 벽에는 노선도가 있었다. 선마다 색이 달랐다. 초록색 선 위에 Fontana가 있었고, 그 아래로 역 이름이 이어졌다. Diagonal, Passeig de Gràcia, Catalunya…
 
-@vale —La {línea|*리*네아} tres. La verde. Fontana, Diagonal… y Passeig de Gràcia. Dos {estaciones|에스타_시_*오*네스}. :: 3호선. 초록색. 폰타나, 디아고날… 그리고 파세치 데 그라시아. 두 정거장.
+@vale —La {línea|*리*네아} tres. La verde. Fontana, Diagonal… y Passeig de Gràcia. Dos {estaciones|에스타*_시_오*네스}. :: 3호선. 초록색. 폰타나, 디아고날… 그리고 파세치 데 그라시아. 두 정거장.
 
 línea. 선, 노선. estación. 역. 여러 개는 estaciones. Vale는 손가락 두 개를 펴 보였다. dos. 그건 이제 안다.
 
@@ -88,7 +88,7 @@ me ayuda. 나를 도와주나요. 어젯밤 수첩에 적어 둔 문장이었다
 
 @yunha —El metro… ¿Dónde está?
 
-@hombre —¿El metro? Está {cerca|_세_르카}. {Todo recto|*토*도 *렉*토}, y {luego|*루에*고}, a la {derecha|데*레*차}. :: 지하철? 가까워요. 쭉 가다가, 그다음에 오른쪽.
+@hombre —¿El metro? Está {cerca|*_세_*르카}. {Todo recto|*토*도 *렉*토}, y {luego|*루에*고}, a la {derecha|데*레*차}. :: 지하철? 가까워요. 쭉 가다가, 그다음에 오른쪽.
 
 cerca. 가깝다. todo recto. 똑바로. luego. 그다음에. derecha. 오른쪽. 그는 손으로 앞을 가리켰다가 오른쪽으로 꺾어 보였다. 나는 손짓을 따라 했다.
 
@@ -136,7 +136,7 @@ Para la coreana.
 
 @montse —Es del Marc. Hoy, aquí. Por la tarde. :: 마르크가 준 거야. 오늘 여기 왔었어. 오후에.
 
-para. ~에게. 코리아나에게. 나는 봉투를 열었다. 안에는 쪽지 한 장이 들어 있었다. 짧은 글씨였다. 아주 반듯한 글씨.
+para. ~에게. 코레아나에게. 나는 봉투를 열었다. 안에는 쪽지 한 장이 들어 있었다. 짧은 글씨였다. 아주 반듯한 글씨.
 
 @letter
 Lunes. 10:00. Serralleria.

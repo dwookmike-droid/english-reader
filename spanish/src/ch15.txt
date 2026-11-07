@@ -1,98 +1,123 @@
 # 15 | Fuimos felices | 푸이모스 펠리세스
 
-Una semana más tarde, el domingo, Marc me llevó al Tibidabo. Era la montaña más alta de Barcelona, detrás de la ciudad. Desde muchas calles de Gràcia se veía, arriba, una iglesia con una estatua y, al lado, una noria pequeña.
+일주일 뒤 일요일, 마르크가 나를 티비다보에 데려갔다. 바르셀로나에서 가장 높은 산이었다. 도시 뒤쪽에 서 있어서, 그라시아의 골목 여기저기에서도 올려다보였다. 꼭대기에는 동상을 얹은 성당이 있고, 그 옆에 작은 관람차가 있었다. Desde muchas calles se veía, arriba, una iglesia y una noria.
 
-—Es un parque de atracciones —me explicó Marc en el autobús—. Muy viejo. Más viejo que mi abuelo.
+버스 안에서 마르크가 설명해 주었다.
 
-Yo sabía por qué íbamos. Unos días antes leí la quinta carta. Llamé a Marc y solo le dije: «Tibidabo». Él dijo: «El domingo».
+@marc —Es un parque de atracciones. Muy viejo. Más viejo que mi abuelo. :: 놀이공원이에요. 아주 오래된. 우리 할아버지보다 더 오래됐어요.
+
+우리가 왜 가는지 나는 알고 있었다. 며칠 전에 다섯 번째 편지를 읽었다. 그리고 마르크에게 전화해서 한마디만 했다. 티비다보. 마르크는 대답했다. El domingo. 일요일에요.
+
+편지는 이렇게 시작했다.
 
 @letter
 Barcelona, 14 de enero de 1979
-
 Querida Sun-rye:
+Hoy he subido solo al Tibidabo. Hacía frío y el parque estaba casi vacío, pero yo quería ver {el avión|엘 아*비온*}.
+@end
 
-Hoy he subido solo al Tibidabo. Hacía frío y el parque estaba casi vacío, pero yo quería ver el avión.
+일월의 티비다보. 춥고, 놀이공원은 거의 비어 있었다. 그래도 마르티는 혼자 올라갔다. el avión. 비행기를 보고 싶어서.
 
-¿Te acuerdas de aquel domingo de septiembre? Subimos en el funicular. La niña tenía miedo y te cogía de la mano. Arriba, quería subir al avión rojo. Yo le dije: «Es un avión que no se va. Da vueltas y vuelve». Ella no entendió, pero subió. Tú también subiste. Yo las miraba desde abajo. Las dos os reíais en el cielo, encima de toda Barcelona.
+@letter
+¿Te acuerdas de aquel domingo de septiembre? Subimos en {el funicular|엘 푸니쿨*라*르}. La niña tenía miedo y te cogía de la mano. Arriba, quería subir al avión rojo. Yo le dije: «Es un avión que no se va. Da vueltas y vuelve».
+@end
 
-Después un fotógrafo nos hizo una foto delante del avión. Tú, la niña y yo. Pagué la foto, pero el fotógrafo dijo: «Vuelvan a las seis». A las cinco bajamos juntos: tenías que estar en casa, tu marido volvía del dique. Yo nunca volví a buscar la foto. No tuve valor.
+el funicular. 산을 오르는 작은 기차. 아이는 무서워서 할머니 손을 꼭 잡았다. 그래도 위에 올라가서는 빨간 비행기를 타고 싶어 했다. 마르티가 아이에게 말했다. 떠나지 않는 비행기야. 빙빙 돌다가 돌아와.
 
-Aquel día fuimos felices. Solo un día. Pero fue verdad.
+@letter
+Ella no entendió, pero subió. Tú también {subiste|수*비*스테}. Yo las miraba desde abajo. Las dos os reíais en el cielo, {encima de|엔*_시_*마 데} toda Barcelona.
+@end
 
+subiste. 너도 탔다. 마르티는 아래에서 두 사람을 올려다보았다. encima de. ~위에서. 바르셀로나 전체 위, 하늘에서 두 사람이 웃었다.
+
+@letter
+Después {un fotógrafo|운 포*토*그라포} nos hizo una foto delante del avión. Tú, la niña y yo. Pagué la foto, pero el fotógrafo dijo: «Vuelvan a las seis». A las cinco bajamos juntos: tenías que estar en casa, tu marido volvía del dique. Yo nunca volví a buscar la foto. No tuve valor.
+@end
+
+사진사 한 사람이 비행기 앞에서 세 사람의 사진을 찍었다. 할머니, 아이, 마르티. 마르티는 돈을 냈지만 사진사는 여섯 시에 다시 오라고 했다. 다섯 시에 셋은 함께 내려왔다. 할머니는 집에 있어야 했다. 외할아버지가 도크에서 돌아올 시간이었다. 마르티는 그 사진을 찾으러 다시 가지 않았다. No tuve valor. 용기가 없었다고 썼다.
+
+@letter
+Aquel día {fuimos felices|*푸이*모스 펠*리*_세_스}. Solo un día. Pero fue verdad.
 M.
 @end
 
-Un fotógrafo. Una foto delante del avión. Una foto que nadie recogió. 마흔여덟 해 전 어느 사진사의 서랍 속에, 할머니와 엄마와 마르티가 함께 있었다.
+fuimos felices. 우리는 행복했다. 하루뿐이었다. 그래도 그건 진짜였다.
+
+사진사. 비행기 앞에서 찍은 사진 한 장. 아무도 찾아가지 않은 사진. Una foto que nadie {recogió|레코*히오*}. recogió. 찾아갔다. 아무도 찾아가지 않았다. 마흔여덟 해 전 어느 사진사의 서랍 속에, 할머니와 엄마와 마르티가 함께 있었다.
 
 ##
 
-El funicular era nuevo, casi todo de cristal, pero subía por las mismas vías que en 1978, entre pinos. La ciudad se hacía pequeña detrás de nosotros: primero las calles, después los barrios, al final toda Barcelona hasta el mar.
+푸니쿨라는 새것이었다. 거의 다 유리로 되어 있었다. 그래도 1978년과 같은 선로를 따라, 소나무 사이로 올라갔다. 뒤쪽으로 도시가 점점 작아졌다. 처음에는 거리, 다음에는 동네, 마지막에는 바다까지 바르셀로나 전체. Primero las calles, después los barrios, al final toda {la ciudad|라 _시_우*다*드}. la ciudad. 도시.
 
-—¿Tienes miedo? —preguntó Marc.
+@marc —¿Tienes miedo? :: 무서워요?
 
-—Un poco. Pero es igual —contesté.
+@yunha —Un poco. Pero es igual. :: 조금요. 그래도 상관없어요.
 
-Marc sonrió. Eran sus palabras del teleférico. Entonces «es igual» quería decir «es lo mismo». Ahora, para mí, también quería decir «no importa».
+마르크가 웃었다. 케이블카에서 마르크가 했던 말이었다. es igual. 그때 그 말은 ‘똑같다’였다. 지금 나에게는 ‘괜찮다’, ‘상관없다’이기도 했다. {Entonces|엔*톤*_세_스}, es igual quería decir «es lo mismo». Ahora quería decir «{no importa|노 임*포*르타}». entonces. 그때는. no importa. 상관없어.
 
-Arriba, el parque estaba lleno de familias. Había música de feria, olor a palomitas y gritos de niños. Las atracciones eran muy distintas entre sí: unas nuevas y rápidas, otras viejas y lentas. Marc caminó directamente hacia el borde de la montaña, sin mirar nada más.
+꼭대기의 놀이공원은 가족들로 가득했다. 축제 음악, 팝콘 냄새, 아이들의 소리. 놀이기구는 제각각이었다. 새롭고 빠른 것도 있고, 낡고 느린 것도 있었다. 마르크는 다른 건 쳐다보지도 않고 곧장 산의 가장자리로 걸어갔다. Marc caminó hacia {el borde|엘 *보*르데} de la montaña. el borde. 가장자리.
 
-Y allí estaba. Un avión rojo, colgado de un brazo de metal, en el aire. Daba vueltas despacio, muy alto, con la ciudad abajo.
+그리고 거기 있었다. Y {allí|아*이*} estaba. 빨간 비행기 한 대가 쇠로 된 팔에 매달려 허공에 떠 있었다. 도시를 아래에 두고, 아주 높은 곳에서 천천히 돌고 있었다.
 
-@marc —L'Avió. Es de 1928. Todavía funciona. :: 라비오. 1928년에 만들었어요. 아직도 돌아가요.
+@marc —{L'Avió|*라*비오}. Es de 1928. Todavía funciona. :: 라비오. 1928년에 만들었어요. 아직도 돌아가요.
 
-—Como el reloj de tu abuelo —dije yo.
+L'Avió. 카탈루냐어로 비행기. 1928년에 만든 비행기가 아직 돌아가고 있었다.
 
-—Como el reloj de mi abuelo.
+@yunha —Como el reloj de tu abuelo. :: 당신 할아버지 시계처럼요.
 
-Hicimos cola. Detrás de nosotros había una niña de tres o cuatro años con su madre. La niña quería subir y tenía miedo al mismo tiempo. Su madre le decía: «No pasa nada». Me quedé mirándolas. Marc también.
+@marc —Como el reloj de mi abuelo. :: 우리 할아버지 시계처럼요.
 
-##
-
-Subimos al avión. Era pequeño por dentro, con asientos pequeños. Cuando empezó a moverse, el avión salió por encima del vacío. Debajo de nosotros no había nada: solo aire, árboles y, muy abajo, la ciudad entera.
-
-—Marc… tengo miedo —dije. Esta vez era verdad.
-
-Marc no dijo nada. Puso la mano encima de la mía. No la cogió. Solo la dejó ahí, encima, como una llave en una mesa.
-
-Miré abajo. Barcelona era enorme y pequeña al mismo tiempo. Vi la Sagrada Família, con sus grúas. Vi el mar. Vi Montjuïc. Busqué Gràcia y no la encontré, pero sabía que estaba allí, con Montse en el bar, con su vermut de los domingos.
-
-Pensé: hace cuarenta y ocho años, mi abuela y mi madre estaban en este avión. Y Martí las miraba desde abajo. Ahora su nieto tenía la mano encima de la mía.
-
-El avión dio dos vueltas y volvió. Como dijo Martí: un avión que no se va.
-
-Cuando el avión paró, Marc no quitó la mano enseguida. Después sí. Los dos miramos a otro lado.
+우리는 줄을 섰다. {Hicimos cola|이*_시_*모스 *콜*라}. 우리 뒤에 서너 살쯤 된 여자아이가 엄마와 함께 서 있었다. 아이는 타고 싶으면서도 무서워했다. 엄마가 아이에게 말했다. No pasa nada. 괜찮아. 나는 두 사람을 바라보며 서 있었다. 마르크도 그랬다.
 
 ##
 
-Nos sentamos en un banco al borde de la montaña. Marc compró dos bocadillos y dos aguas. Comimos sin hablar. Después, Marc habló, mirando la ciudad.
+비행기에 올랐다. Subimos al avión. 안은 좁았고 좌석도 작았다. 비행기가 움직이기 시작하자 허공 위로 미끄러져 나갔다. 발아래에는 아무것도 없었다. 공기와 나무, 그리고 아주 아래쪽에 도시 전체.
 
-—Yo venía aquí con mi abuelo. Cuando era pequeño. Todos los años, en septiembre.
+@yunha —Marc… tengo miedo. :: 마르크… 무서워요.
 
-—¿En septiembre?
+{Esta vez|*에*스타 베_스_}, 이번에는 정말이었다.
 
-—Siempre en septiembre. Él subía al avión solo. Nunca conmigo. Yo lo miraba desde abajo. Después nos comprábamos un helado y volvíamos a casa. No hablaba mucho.
+마르크는 아무 말도 하지 않았다. 내 손 위에 자기 손을 얹었다. 잡지는 않았다. 그냥 거기에 얹어 두었다. 탁자 위에 놓인 열쇠처럼. {La dejó ahí|라 데*호* 아*이*}. dejó. 두었다. ahí. 거기에.
 
-—Como tú.
+아래를 내려다보았다. 바르셀로나는 거대하면서 동시에 작았다. 크레인을 단 사그라다 파밀리아가 보였다. 바다가 보였다. 몬주익이 보였다. 그라시아를 찾았지만 찾지 못했다. 그래도 그곳에 있다는 건 알았다. 바에서 일요일의 베르무트를 마시고 있을 몬세와 함께.
 
-—Como yo.
+생각했다. 마흔여덟 해 전, 할머니와 엄마가 이 비행기에 타고 있었다. 마르티는 아래에서 두 사람을 올려다보았다. 그리고 지금, 마르티의 손자가 내 손 위에 손을 얹고 있었다. Ahora {su nieto|수 *니에*토} tenía la mano encima de la mía. su nieto. 그의 손자.
 
-Se quedó callado un rato. Después dijo una cosa que yo no esperaba.
+비행기는 두 바퀴를 돌고 돌아왔다. 마르티가 말한 대로였다. 떠나지 않는 비행기.
 
-—Una vez le pregunté: «Avi, ¿por qué subes siempre solo?». Y él me dijo: «Porque aquí fui feliz un día. Y quiero recordarlo bien».
+비행기가 멈췄을 때 마르크는 바로 손을 떼지 않았다. 조금 뒤에야 뗐다. 우리는 둘 다 다른 쪽을 보았다.
 
-Avi. Abuelo en catalán. Marc casi nunca me hablaba en catalán. Hasta hoy.
+##
 
-Aquí fui feliz un día. Aquel día fuimos felices. Solo un día. Pero fue verdad.
+우리는 산 가장자리의 벤치에 앉았다. 마르크가 샌드위치 두 개와 물 두 병을 샀다. {Dos bocadillos|도스 보카*디*요스} y dos aguas. 우리는 말없이 먹었다. 다 먹고 나서 마르크가 도시를 바라보며 입을 열었다.
 
-No pude decir nada. Saqué la carta del bolsillo y se la di. Marc la leyó despacio, con el dedo debajo de las palabras, como yo. Cuando llegó al final, la dobló con mucho cuidado y me la devolvió.
+@marc —Yo venía aquí con mi abuelo. Cuando era pequeño. Todos los años, en septiembre. :: 어릴 때 할아버지랑 여기 왔어요. 해마다, 구월에.
 
-—La foto —dijo—. Nunca la recogió.
+@yunha —¿En septiembre? :: 구월에요?
 
-—Nunca.
+@marc —Siempre en septiembre. Él subía al avión solo. Nunca conmigo. Yo lo miraba desde abajo. Después nos comprábamos un helado y volvíamos a casa. No hablaba mucho. :: 늘 구월에요. 할아버지는 비행기를 혼자 탔어요. 나랑은 한 번도 안 탔고요. 나는 아래에서 봤어요. 그다음엔 아이스크림을 사 먹고 집에 갔어요. 말이 많지 않은 분이었어요.
 
-—¿Y si todavía existe?
+@yunha —Como tú. :: 당신처럼요.
 
-Lo miré. Él no sonreía. Pero sus ojos sí.
+@marc —Como yo. :: 나처럼요.
+
+마르크는 한동안 말이 없었다. 그러다 내가 생각지도 못한 말을 했다.
+
+@marc —Una vez le pregunté: «Avi, ¿por qué subes siempre solo?». Y él me dijo: «{Porque|*포*르케} aquí fui feliz un día. Y quiero recordarlo bien». :: 한번은 물어봤어요. ‘할아버지, 왜 늘 혼자 타요?’ 할아버지가 그러더라고요. ‘여기서 하루 행복했거든. 그걸 잘 기억하고 싶어서.’
+
+avi. 카탈루냐어로 할아버지. 마르크는 나에게 카탈루냐어를 거의 쓰지 않았다. 오늘까지는. porque. 왜냐하면.
+
+Aquí fui feliz un día. 여기서 하루 행복했다. Aquel día fuimos felices. Solo un día. Pero fue verdad. 마르티는 같은 말을 두 번 했다. 한 번은 할머니에게 편지로, 한 번은 손자에게.
+
+나는 아무 말도 할 수 없었다. 주머니에서 편지를 꺼내 마르크에게 건넸다. 마르크는 나처럼 단어 밑에 손가락을 대고 천천히 읽었다. 끝까지 읽고 나서, 아주 조심스럽게 편지를 접어 돌려주었다.
+
+@marc —La foto. Nunca la recogió. :: 사진. 끝내 안 찾아갔네요.
+
+@yunha —Nunca. :: 끝내요.
+
+@marc —¿Y si todavía existe? :: 그 사진이 아직 있다면요?
+
+나는 마르크를 보았다. 마르크는 웃고 있지 않았다. 그런데 눈은 웃고 있었다.
 
 @letter
 Domingo, 13 de septiembre.

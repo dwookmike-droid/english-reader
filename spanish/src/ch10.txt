@@ -52,7 +52,7 @@ espalda. 등. roja. 빨간. rojo가 espalda를 만나 roja가 되었다. 등은 
 
 @vale —¿No tenés protector? ¡Ay, Yuna! :: 선크림 없어? 아이고, 유나!
 
-@yunha —{Me duele|메 *두에*레}… la espalda. Y los hombros. :: 아파… 등이. 그리고 어깨도.
+@yunha —{Me duele|메 *두엘*레}… la espalda. Y los hombros. :: 아파… 등이. 그리고 어깨도.
 
 me duele. 나에게 아프다. gustar와 같은 모양이었다. 아픈 곳이 주어였다. me gusta el mar, me duele la espalda. 바다는 좋고, 등은 아팠다.
 
@@ -78,7 +78,7 @@ S. — Las Palmas de Gran Canaria. Calle de… (puerto)
 
 Las Palmas. 처음 듣는 지명이었다. 아니, 어딘가에서 들은 것 같았다. 마르크가 휴대폰으로 지도를 열었다. 아프리카 대륙 서쪽 바다에 떠 있는 섬들. Islas Canarias. 스페인이었다.
 
-@marc —Es una isla. Lejos. Más cerca de África que de Barcelona. :: 섬이에요. 멀어요. 바르셀로나보다 아프리카에 더 가까워요.
+@marc —Está en una isla. Gran Canaria. Lejos. Más cerca de África que de Barcelona. :: 섬에 있어요. 그란카나리아. 멀어요. 바르셀로나보다 아프리카에 더 가까워요.
 
 그 순간 생각이 났다. 어릴 때 할머니가 딱 한 번, 감기에 걸려 열이 펄펄 끓던 밤에 한 말. 젊을 때 ‘먼 데’에 있었다고. 바다 한가운데 섬이었는데, 거기 바다는 이렇게 탁하지 않았다고. 나는 그때 그 말을 꿈 이야기인 줄 알았다.
 
@@ -110,7 +110,7 @@ El pan con tomate es mejor aquí. (yo)
 Me duele la espalda. Me duelen los hombros.
 Vale tiene tres amigos: Luca, Sofía y Pau.
 Marc viene a la playa con el libro.
-La isla de mi abuela: Las Palmas. Más cerca de África que de Barcelona.
+La isla de mi abuela: Gran Canaria. La ciudad: Las Palmas. Más cerca de África que de Barcelona.
 ¿Por qué Barcelona?
 Mi pregunta es más grande que el mar.
 @end

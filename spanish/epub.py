@@ -70,6 +70,7 @@ aside.note h4 + p { font-weight: 700; }
 
 /* 장 첫머리 */
 .opener { text-align: center; margin: 2.5em 0 2em; }
+.opener h2, .opener p { text-align: center; text-indent: 0; }
 .opener .mark svg { width: 7em; height: 7em; }
 .opener .mark.clock svg { width: 9em; height: 9em; }
 .opener .num { margin-top: 1.2em; font-size: .78em; letter-spacing: .32em; color: #b5532f; }
@@ -99,6 +100,7 @@ aside.note h4 + p { font-weight: 700; }
 .title .t-sub { margin-top: .3em; font-family: sans-serif; font-size: .75em; color: #b5532f; letter-spacing: .14em; }
 .pg h3 { font: 700 1em sans-serif; margin: 1.6em 0 .8em; }
 .pg { text-align: left; }
+.pg.title, .pg.title div { text-align: center; }
 .guide li, .pron p, .cast dd { line-height: 1.65; }
 .guide li { margin-bottom: .6em; }
 .pron table { border-collapse: collapse; width: 100%; }
@@ -162,7 +164,7 @@ def chapter_xhtml(ch, entries):
     opener = f'''<section class="opener" id="c{n}">
   {mark}
   <p class="num">CAPÍTULO {n}</p>
-  <h2>{html.escape(ch["es"])}</h2>
+  <h2 style="text-align:center">{html.escape(ch["es"])}</h2>
   <p class="opr">[{B.pron_html(ch["pr"])}]</p>
   <p class="listen"><a href="{B.BASE_URL}#c{n}">이 장을 스페인어로 듣기</a></p>
 </section>'''
@@ -310,6 +312,11 @@ def main():
     with zipfile.ZipFile(OUT, 'w') as z:
         z.writestr(zipfile.ZipInfo('mimetype'), 'application/epub+zip', compress_type=zipfile.ZIP_STORED)
         z.writestr('META-INF/container.xml', container, compress_type=zipfile.ZIP_DEFLATED)
+        # 도서앱(Apple Books)이 책의 글꼴·정렬을 덮어쓰지 않게 한다
+        z.writestr('META-INF/com.apple.ibooks.display-options.xml',
+                   '<?xml version="1.0" encoding="UTF-8"?>\n<display_options><platform name="*">'
+                   '<option name="specified-fonts">true</option></platform></display_options>',
+                   compress_type=zipfile.ZIP_DEFLATED)
         z.writestr('OEBPS/content.opf', opf, compress_type=zipfile.ZIP_DEFLATED)
         for k, v in files.items():
             z.writestr(f'OEBPS/{k}', v, compress_type=zipfile.ZIP_DEFLATED)
