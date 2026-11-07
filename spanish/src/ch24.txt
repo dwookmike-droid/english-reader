@@ -10,13 +10,13 @@
 
 우리는 아주 일찍 에스파냐 광장에서 출발했다. 카탈루냐 철도의 R5 노선이었다. 기차에서 커피와 샌드위치 냄새가 났다. 몬세는 등산화를 신고 작은 배낭을 메고 있었다. 더 젊어 보였다. Parecía más joven.
 
-한 시간쯤 지나자 풍경이 바뀌었다. 건물이 사라지고 들판과 작은 마을들, 그리고 강이 나타났다. Aparecieron campos, pueblos pequeños y {un río|운 *리*오}. un río. 강 하나. 그리고 갑자기 우리 앞에 산이 나타났다. 보통 산이 아니었다. 회색과 분홍빛이 도는 거대한 바위 벽이었다. 손가락, 탑, 머리 같은 이상한 모양이 수백 개였다. 거인이 손으로 깎아 놓은 것 같았다.
+한 시간쯤 지나자 풍경이 바뀌었다. 건물이 사라지고 들판과 작은 마을들, 그리고 강이 나타났다. Aparecieron campos, pueblos pequeños y {un río|운 *리*오}. 그리고 갑자기 우리 앞에 산이 나타났다. 보통 산이 아니었다. 회색과 분홍빛이 도는 거대한 바위 벽이었다. 손가락, 탑, 머리 같은 이상한 모양이 수백 개였다. 거인이 손으로 깎아 놓은 것 같았다.
 
 @montse —Montserrat. «Monte serrado». Una montaña cortada como con una sierra. Mi madre me puso su nombre. Aquí la llaman «la montaña sagrada». :: 몬세라트. ‘톱으로 자른 산’이라는 뜻이야. 톱으로 썬 것 같은 산이지. 우리 엄마가 이 산 이름을 따서 내 이름을 지었어. 여기 사람들은 ‘성스러운 산’이라고 불러.
 
 Montse. Montserrat. 몬세의 이름이 이 산에서 왔다.
 
-모니스트롤에서 기차를 갈아탔다. 톱니바퀴 기차였다. 작은 기차가 바위 사이로 아주 천천히 산을 올랐다. 아래에서 강이 점점 작아졌다. El río se hacía cada vez más pequeño. 손이 차가웠다. 주머니에는 하얀 종이 봉투가 있었다.
+모니스트롤에서 기차를 갈아탔다. 톱니바퀴 기차였다. 작은 기차가 바위 사이로 아주 천천히 산을 올랐다. 아래에서 강이 점점 작아졌다. El río se hacía cada vez más pequeño. 손이 차가웠다. 주머니에는 하얀 종이봉투가 있었다.
 
 꼭대기에는 바위에 붙은 거대한 수도원이 있었다. 사람이 많았다. 버스, 기념품 가게. 몬세는 멈추지 않았다. 우리는 어둡고 금빛인 대성당의 옆문으로 들어가, 말없이 줄 선 사람들 틈에 끼어 좁은 계단을 올랐다. Hicimos cola en una escalera estrecha. 계단 끝, 유리 뒤에 작은 검은 성모상이 아기를 무릎에 앉히고 있었다. 성모의 손에 들린 구슬만 유리 밖으로 나와 있어서, 사람들이 지나가며 그 구슬을 만졌다.
 
@@ -38,13 +38,13 @@ Montse. Montserrat. 몬세의 이름이 이 산에서 왔다.
 
 @montse —M de Montse. Él me lo pidió. «Escríbele tú y firma con una M. Así sabrá que viene de esta casa». Y eso hice. El sobre lo escribió él, la última semana, con la mano temblando. Ya no podía escribir una carta. Un sobre, sí. :: 몬세의 M이야. 오빠가 부탁했어. ‘네가 써 주고 M이라고 서명해. 그래야 이 집에서 온 줄 알 거야.’ 그래서 그렇게 했지. 봉투는 오빠가 썼어. 마지막 주에, 떨리는 손으로. 편지는 더 쓸 수 없었지만, 봉투는 쓸 수 있었어.
 
-M de Montse. 몬세의 M. {La firma|라 *피*르마}. 서명. 마르티도 몬세도 M으로 시작했다.
+{La firma|라 *피*르마}. 서명. 마르티도 몬세도 M으로 시작했다.
 
 몬세가 봉투를 열고 편지를 꺼냈다. 한 장뿐이었다. 마르티와 다른, 둥근 글씨였다. 몬세가 나에게 편지를 건넸다.
 
 @montse —Quiero que la leas tú. En voz alta. Ya puedes. :: 네가 읽었으면 해. 소리 내어. 이제 할 수 있잖아.
 
-ya puedes. 이제 할 수 있다. 그랬다. 석 달 가까이 전에 나는 gracias도 제대로 말하지 못했다. 이제는 편지를 읽을 수 있었다. 나는 산 앞에서, 천천히, 소리 내어 읽었다. La leí despacio, en voz alta, delante de la montaña.
+그랬다. 석 달 가까이 전에 나는 gracias도 제대로 말하지 못했다. 이제는 편지를 읽을 수 있었다. 나는 산 앞에서, 천천히, 소리 내어 읽었다. La leí despacio, en voz alta, delante de la montaña.
 
 @letter
 Barcelona, 5 de marzo de 2009
@@ -79,7 +79,7 @@ M.
 
 @montse —La escribí en la cocina, de noche. Tardé tres días. Y cuando llegaste tú, con su caja y mis palabras dentro, no supe qué hacer. Quería que conocieras primero a mi hermano. Sus diez cartas. Después, la mía. Espero que me perdones, nena. :: 밤에 부엌에서 썼어. 사흘 걸렸지. 그런데 네가 그 상자를, 안에 내 말까지 든 상자를 들고 왔을 때, 어떻게 해야 할지 몰랐어. 우리 오빠를 먼저 알았으면 했어. 오빠의 편지 열 통을. 내 편지는 그다음에. 용서해 주면 좋겠다, 얘야.
 
-한꺼번에 많은 것이 이해되었다. 종이가 왜 더 하얬는지. 봉투를 보았다. 소인에 2009라고 찍혀 있었다. 석 달 동안 손에 들고 있었는데 한 번도 보지 않았다. 내가 편지가 열한 통이라고 했을 때 몬세의 얼굴이 왜 하얘졌는지. 지하실에서 왜 ‘아직은 안 돼, 얘야’라고 했는지. 그리고 2009년에 할머니가 왜 부엌에서 노래를 더 자주 불렀는지. 나는 스무 살이었고, 알아채지 못했다.
+한꺼번에 많은 것이 이해되었다. 종이가 왜 더 하얬는지. 봉투를 보았다. 소인에 2009라고 찍혀 있었다. 석 달 가까이 손에 들고 있었는데 한 번도 보지 않았다. 내가 편지가 열한 통이라고 했을 때 몬세의 얼굴이 왜 하얘졌는지. 지하실에서 왜 ‘아직은 안 돼, 얘야’라고 했는지. 그리고 2009년에 할머니가 왜 부엌에서 노래를 더 자주 불렀는지. 나는 스무 살이었고, 알아채지 못했다.
 
 @montse —Ella contestó. Una vez. Una postal. Tres palabras: «Gracias, Montse. Kwaenchanayo». La última, en coreano, escrita con nuestras letras. La tengo en mi mesita de noche. :: 그 사람이 답장을 했어. 한 번. 엽서 한 장. 세 단어였어. ‘고마워요, 몬세. 괜찮아요.’ 마지막 말은 한국어를 우리 글자로 적었더라. 내 침대 옆 탁자에 있어.
 

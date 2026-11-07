@@ -42,7 +42,7 @@ En el mostrador, la chica de la aerolínea me pidió el pasaporte. Yo se lo di s
 
 @yunha —Sí, esta. La pequeña la llevo conmigo. :: 네, 이거요. 작은 건 들고 탈게요.
 
-¿factura esta maleta? 이 가방을 부치시나요? 지난여름이었다면 한 단어도 못 알아들었을 질문이었다.
+¿factura esta maleta? 지난여름이었다면 한 단어도 못 알아들었을 질문이었다.
 
 @azafata —Vale. Barcelona–Seúl, directo. Tiene usted también {el vuelo|엘 *부엘*로} de vuelta, el ocho de enero. ¿Quiere que le dé ya un asiento para la vuelta? :: 네. 바르셀로나–서울 직항이네요. 일월 팔일 돌아오는 항공편도 있으시고요. 돌아오는 좌석도 지금 정해 드릴까요?
 
@@ -54,7 +54,7 @@ el vuelo. 항공편. 직원이 화면을 보며 말했다.
 
 @yunha —Eso es. :: 바로 그거예요.
 
-직원이 웃으며 {la tarjeta de embarque|라 타르*헤*타 데 엠*바*르케}를 건네주었다. 탑승권. 돌아오는 탑승권은 서울에서 받지만, 자리는 벌써 창가로 정해 두었다고 했다. Guardé las tarjetas de embarque en el pasaporte. 나는 탑승권을 여권에 끼우고, 그 뒤에 잘 접은 돌아오는 표를 넣었다.
+직원이 웃으며 {la tarjeta de embarque|라 타르*헤*타 데 엠*바*르케}를 건네주었다. 탑승권. 돌아오는 탑승권은 서울에서 받지만, 자리는 벌써 창가로 정해 두었다고 했다. Guardé la tarjeta de embarque en el pasaporte. 나는 탑승권을 여권에 끼우고, 그 뒤에 잘 접은 돌아오는 표를 넣었다.
 
 몬세는 꾹 다문 입으로 모든 걸 지켜보고 있었다. 승합차에서부터 거의 아무 말도 하지 않았다. 보안 검색대 앞에서 몬세가 핸드백을 열고 꽃무늬 종이로 싼 작은 꾸러미를 꺼냈다.
 

@@ -26,7 +26,7 @@
 
 @vale —A perdernos. :: 길 잃으러.
 
-우리는 초록색 노선을 타고 거의 끝까지, 산자락의 문데트 역까지 갔다. Fuimos en la línea verde, casi hasta el final. 자전거 경기장 옆을 지나 철문 앞에 도착했다. 문 뒤에 오래된 정원이 있었다.
+우리는 초록색 노선을 타고 거의 끝까지, 산자락의 문데트 역까지 갔다. Fuimos en la línea verde, casi hasta el final. 문데트에서 andén을 나와 자전거 경기장 옆을 지나 철문 앞에 도착했다. 문 뒤에 오래된 정원이 있었다.
 
 @address
 Parc del Laberint d'Horta
@@ -36,11 +36,9 @@ Parc del Laberint d'Horta
 
 @vale —El Laberinto de Horta. El jardín más viejo de Barcelona. Lo hizo un marqués, hace más de doscientos años, para pasear y divertirse. Y en el centro hay un {laberinto|라베*린*토} de verdad. Con paredes de árboles. :: 오르타 미로야. 바르셀로나에서 제일 오래된 정원이고. 이백 년도 더 전에 어떤 후작이 산책하고 놀려고 만들었대. 그리고 한가운데에 진짜 미로가 있어. 나무로 된 벽이.
 
-laberinto. 미로. 우리는 오래된 궁전 앞을 지나, 돌계단과 조각상과 연못이 있는 계단식 정원을 올라갔다. 위에서 아래의 미로가 내려다보였다. 높은 초록 벽들이 아주 정확하게 다듬어져 완벽한 무늬를 그리고 있었다. 사이프러스라고 발레가 알려 주었다. 입구의 돌에는 옛 장면이 새겨져 있었다. 한 여자가 남자에게 실을 건네는 장면.
+우리는 오래된 궁전 앞을 지나, 돌계단과 조각상과 연못이 있는 계단식 정원을 올라갔다. 위에서 아래의 미로가 내려다보였다. 높은 초록 벽들이 아주 정확하게 다듬어져 완벽한 무늬를 그리고 있었다. 사이프러스라고 발레가 알려 주었다. 입구의 돌에는 옛 장면이 새겨져 있었다. 한 여자가 남자에게 실을 건네는 장면.
 
 @vale —Ariadna y Teseo. Ella le dio un {hilo|*일*로} para salir del laberinto. Si Teseo no hubiera tenido el hilo, se habría quedado allí para siempre. :: 아리아드네와 테세우스야. 아리아드네가 미로를 빠져나오라고 실을 줬어. 테세우스한테 실이 없었으면 영영 거기 갇혔을 거야.
-
-el hilo. 실.
 
 @yunha —¿Y nosotras? ¿Tenemos hilo? :: 그럼 우리는? 우리한테 실 있어?
 
@@ -68,7 +66,7 @@ el hilo. 실.
 
 @vale —Mi vieja lo descubrió. Por una amiga suya, en el súper. Lloró una semana. Después me dijo: «Ojalá me lo hubieras dicho antes. Me habría enojado igual, pero solo un día». ¿Entendés? Lo peor no fue dejar medicina. Lo peor fueron los dos años de mentiras. {Me arrepiento de|메 아레*피엔*토 데} eso. Me arrepiento de no habérselo dicho el primer día. Del resto, no. :: 엄마가 알아냈어. 엄마 친구한테 들었대, 마트에서. 일주일을 우셨어. 그다음에 그러셨어. ‘더 일찍 말해 줬으면 좋았을걸. 그래도 화는 났겠지만, 하루만 났을 거야.’ 알겠어? 제일 나빴던 건 의대를 그만둔 게 아니야. 이 년 동안의 거짓말이었지. 나는 그걸 후회해. 첫날 말하지 않은 걸 후회해. 나머지는 안 해.
 
-발레는 웃었지만 눈이 반짝였다. me arrepiento de. 나는 ~를 후회한다. 나는 마르크에게 두려워하며 거짓말하던 내 세 주를 생각했다.
+발레는 웃었지만 눈이 반짝였다. 나는 마르크에게 두려워하며 거짓말하던 내 세 주를 생각했다.
 
 @vale —Por eso estoy acá. Por eso vine a Barcelona. Para hacer lo que yo quiero, sin esconderme de nadie. :: 그래서 내가 여기 있는 거야. 그래서 바르셀로나에 온 거고. 누구한테도 숨지 않고 내가 원하는 걸 하려고.
 
@@ -76,7 +74,7 @@ el hilo. 실.
 
 @vale —Ahora, perdete. En serio. Yo me voy por la izquierda. Nos vemos en el centro. O en {la salida|라 살*리*다}. O en Buenos Aires. :: 이제 길 잃어 봐. 진짜로. 나는 왼쪽으로 갈게. 한가운데서 보자. 아니면 출구에서. 아니면 부에노스아이레스에서.
 
-la salida. 출구. 그리고 발레는 초록 벽 뒤로 사라졌다.
+그리고 발레는 초록 벽 뒤로 사라졌다.
 
 ##
 
@@ -84,7 +82,7 @@ la salida. 출구. 그리고 발레는 초록 벽 뒤로 사라졌다.
 
 Probé un camino. Terminaba en una pared. Probé otro. Volví al mismo banco de piedra. 세 번째 길도 벽이었다. Empecé a caminar más rápido. 다른 사람들의 목소리가 점점 멀어졌다. 머리 위의 하늘은 회색 네모였다. El cielo era un rectángulo gris.
 
-생각했다. 길을 잃었다. Estoy perdida. 아무것도 모르던 그 일요일, 발레와 파세치 데 그라시아에서 배운 말이었다. 그리고 몬세의 말이 떠올랐다. Perdida, pero en casa. 길을 잃어도, 집에 있는 거야.
+생각했다. 길을 잃었다. Estoy perdida. 아무것도 모르던 그 일요일, 파세치 데 그라시아에서 발레를 놓치고 혼자 돌아와 처음 쓴 말이었다. 그리고 몬세의 말이 떠올랐다. Perdida, pero en casa. 길을 잃어도, 집에 있는 거야.
 
 나는 멈췄다. 숨을 쉬었다. Me paré. Respiré.
 
@@ -116,7 +114,7 @@ Y de repente, el camino se abrió. 그리고 갑자기 길이 열렸다. 둥근 
 
 ##
 
-그날 밤 나는 발레의 컴퓨터로 비행기표를 샀다. Esa noche compré un billete. 바르셀로나–서울, 십일월 이십일 금요일. 서울–바르셀로나, 일월 팔일 금요일. 왕복. Ida y vuelta.
+그날 밤 나는 발레의 컴퓨터로 비행기표를 샀다. Esa noche compré un billete. Era caro. 바르셀로나–서울, 십일월 이십일 금요일. 서울–바르셀로나, 일월 팔일 금요일. 왕복. Ida y vuelta.
 
 버튼을 누를 때 손이 떨렸다. Vale aplaudió desde la cama.
 
@@ -124,7 +122,7 @@ Y de repente, el camino se abrió. 그리고 갑자기 길이 열렸다. 둥근 
 
 @yunha —No me he pasado. En octubre, Montse me llevó a la oficina de Extranjería. Me dieron una prórroga, hasta finales de noviembre, por los papeles de mi abuela. Y en Seúl voy a pedir {un visado de estudiante|운 비*사*도 데 에스투*디안*테}. Ya me he apuntado a {una escuela de idiomas|*우*나 에스*쿠엘*라 데 이*디오*마스}, aquí en Gràcia, para enero. Un año. :: 안 넘었어. 시월에 몬세가 외국인청에 데려갔거든. 할머니 서류 때문에 십일월 말까지 연장해 줬어. 그리고 서울에서 학생 비자를 신청할 거야. 그라시아에 있는 어학원에 일월부터 등록해 뒀어. 일 년.
 
-나는 수첩에 끼워 둔 접힌 종이를 꺼내 보여 주었다. un visado de estudiante. 학생 비자. una escuela de idiomas. 어학원.
+나는 수첩에 끼워 둔 접힌 종이를 꺼내 보여 주었다.
 
 @vale —¡Una escuela! ¿Vos? Si ya hablás mejor que yo. :: 어학원! 네가? 이미 나보다 잘하는데.
 
@@ -138,7 +136,7 @@ Y de repente, el camino se abrió. 그리고 갑자기 길이 열렸다. 둥근 
 
 @yunha —No se va a enojar. Y si se enoja, se le pasará. :: 화 안 낼 거야. 화내도 금방 풀릴 거고.
 
-잠들기 전에 수첩을 펼쳤다. 그날 새로 배운 문장들을 모두 적고 오래 바라보았다. me arrepiento de eso는 현재, 오늘의 후회. me arrepentiré는 미래, 아직 피할 수 있는 후회. me arrepiento de no habérselo dicho, me habría gustado verla antes, si Teseo no hubiera tenido el hilo, ojalá me lo hubieras dicho는 이미 지나가 바꿀 수 없는 일. 그런 문장에는 모두 haber가 들어 있었다. 이미 닫힌 문처럼. 그런데 그날의 마지막 문장은 그렇지 않았다. 마지막 문장은 이것이었다. volveré. 돌아올 것이다.
+잠들기 전에 수첩을 펼쳤다. 그날 새로 배운 문장들을 모두 적고 오래 바라보았다. me arrepentiré는 아직 피할 수 있는 후회였고, 이미 지나가 바꿀 수 없는 일을 말하는 문장에는 모두 haber가 들어 있었다. 이미 닫힌 문처럼. 그런데 그날의 마지막 문장은 그렇지 않았다. volveré. 돌아올 것이다.
 
 @letter
 Martes, 10 de noviembre.

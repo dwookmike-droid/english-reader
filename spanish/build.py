@@ -53,6 +53,11 @@ def fold(s):
     return ' '.join(WORD.findall(s))
 
 
+# 관사·전치사 같은 기능어. 구 안에 이것만 새로 나왔으면 괄호를 다시 달지 않는다.
+FUNCTION_WORDS = {'el', 'la', 'los', 'las', 'un', 'una', 'unos', 'unas', 'de', 'del', 'al', 'a', 'en',
+                  'y', 'o', 'con', 'por', 'para', 'lo', 'le', 'les', 'me', 'te', 'se', 'nos', 'que',
+                  'mi', 'mis', 'tu', 'tus', 'su', 'sus', 'es', 'no'}
+
 SKIP = {'h', 'th', 'k', 'app', 'a', 'o', 's', 'll', 'sh', 'kg', 'g', 'd', 'r', 'ero', 'c', 'emos', 'á', 'án', 'ás', 'é', 'éis', 'ía', 'ron', 'ra'}   # 본문 설명에 쓰인 글자 이름          # 본문 설명에 쓰인 글자 이름 등
 
 
@@ -64,16 +69,29 @@ def load_vocab():
             continue
         c = line.split('\t') + [''] * 7
         key, fs, pron, ko, kind, ch, note = c[:7]
-        if not pron and kind not in ('c', 'p', 'f'):
-            from hangul import to_hangul           # 스페인어는 발음을 비워 두면 철자에서 만든다
-            pron = ' '.join(to_hangul(w) for w in key.split())
-        entries[key] = dict(k=key, p=pron, d=ko, t=kind, c=int(ch or 0), n=note)
+        auto = not pron and kind not in ('c', 'p', 'f')
+        entries[key] = dict(k=key, p=pron, d=ko, t=kind, c=int(ch or 0), n=note, auto=auto)
         for f in fs.split('|'):
             t = tuple(f.lower().split())
             if t in forms and forms[t] != key:      # 겹치면 뒤 항목이 가져가 앞 항목 횟수가 줄어든다
                 print(f'  ! 단어표 형태 겹침: {f} ({forms[t]} / {key})', file=sys.stderr)
             forms[t] = key
+    for e in entries.values():                      # 스페인어는 발음을 비워 두면 철자에서 만든다
+        if e.pop('auto'):
+            e['p'] = auto_pron(e['k'].split(), forms, entries)
     return entries, forms
+
+
+def auto_pron(words, forms, entries):
+    """철자로 발음을 만든다. 구 안의 이름·카탈루냐어 낱말은 단어표 발음을 쓴다(montse sabe todo → 몬세…)."""
+    from hangul import to_hangul
+    out = []
+    for w in words:
+        k = forms.get((w.lower(),))
+        e = entries.get(k, {})
+        out.append(e['p'] if e.get('t') in ('c', 'p', 'f') and e.get('p') and len(e['p'].split()) == 1
+                   else to_hangul(w))
+    return ' '.join(out)
 
 
 def pron_html(p):
@@ -89,6 +107,7 @@ class Inline:
         self.forms, self.entries = forms, entries
         self.unknown, self.seen, self.uses = set(), set(), {}
         self.shown = set()      # 발음을 이미 보여 준 말
+        self.shown_tok = set()  # 발음 괄호(또는 대사 한 줄 발음) 안에 이미 나온 낱말
         self.ch = 1
         self.quiet = False      # True면 발음을 붙이지 않고 본 것으로만 친다(대사 전체 발음을 따로 달 때)
         self.note = False       # True면 문법 쪽지 안: 단어를 감싸기만 하고 발음·처음 표시·횟수에 넣지 않는다
@@ -118,11 +137,18 @@ class Inline:
         else:
             # 구절 항목의 일부(me acuerdo ← me acuerdo del nombre)나 활용형(subiste ← subí)이면
             # 표제어 발음이 아니라 본문에 나온 형태의 발음을 붙인다(REVISION.md 5번)
-            from hangul import to_hangul
-            p = ' '.join(to_hangul(t.group()) for t in WORD.finditer(text))
+            p = auto_pron([t.group() for t in WORD.finditer(text)], self.forms, self.entries)
+        toks = [t.group().lower() for t in WORD.finditer(text)]
+        content = [t for t in toks if t not in FUNCTION_WORDS] or toks
         if (p and key not in self.shown and e.get('t') != 'p'
-                and self.ch <= PRON_UNTIL and not self.quiet):
+                and self.ch <= PRON_UNTIL and not self.quiet
+                and not all(t in self.shown_tok for t in content)):
+            # 구 항목이라도 든 낱말을 모두 앞에서 발음과 함께 보았으면 괄호를 다시 달지 않는다
+            # (괄호 = 처음 나온 말. trabajo ← tengo trabajo, el puerto ← puerto)
             s += f'<span class="pr">[{pron_html(p)}]</span>'
+            self.shown_tok.update(toks)
+        elif self.quiet and self.ch <= PRON_UNTIL:
+            self.shown_tok.update(toks)             # 대사 한 줄 발음으로 이미 본 낱말
         self.shown.add(key)
         return s
 
@@ -680,9 +706,9 @@ BACK_BLURB = ('외할머니가 돌아가신 지 사십구 일째 되던 날, 윤
               '스페인어는 한마디도 모르는 채, 윤하는 봉투에 적힌 주소 하나를 들고 바르셀로나 그라시아로 간다.')
 BACK_HOWTO = (
     '처음 나오는 스페인어 단어에는 한글 발음이 붙습니다.',
-    '15장까지는 스페인어 대사 밑에 우리말 뜻이 붙습니다.',
+    '스페인어 대사 밑에는 마지막 장까지 우리말 뜻이 붙습니다.',
     '장마다 첫 쪽의 QR코드로 스페인어 음성을 듣습니다.',
-    '한국어로 시작한 이야기가 마지막 장에서는 모두 스페인어가 됩니다.',
+    '장이 넘어갈수록 한국어 서술 속 스페인어가 조금씩 늘어납니다.',
 )
 
 MARKS_CSS = """

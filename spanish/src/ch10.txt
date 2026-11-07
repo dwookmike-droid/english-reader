@@ -22,7 +22,7 @@ Vale의 친구들은 세 명이었다. 이탈리아에서 온 Luca, 멕시코에
 
 @luca —Il sole… el sol de Barcelona es más fuerte que el sol de Milano. :: 해… 바르셀로나 햇볕은 밀라노 햇볕보다 더 세.
 
-{más fuerte que|*마*스 *푸에*르테 케}. ~보다 더 세다. Luca는 이탈리아어 억양이 섞인 스페인어로 천천히 말했다. 나보다 겨우 조금 잘하는 것 같아서 마음이 놓였다.
+más fuerte que. ~보다 더 세다. Luca는 이탈리아어 억양이 섞인 스페인어로 천천히 말했다. 나보다 겨우 조금 잘하는 것 같아서 마음이 놓였다.
 
 @pau —Bueno, pero es {menos fuerte que|*메*노스 *푸에*르테 케} el de México. ¿Verdad, Sofía? :: 그래, 그래도 멕시코보다는 덜 세. 그렇지, 소피아?
 

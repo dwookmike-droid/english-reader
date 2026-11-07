@@ -10,7 +10,7 @@
 
 @marc —Está en {el cementerio|엘 _세_멘*테*리오}. En el Poblenou. Nunca te lo he pedido. Te lo pido ahora. :: 묘지에 계세요. 포블레노우에. 한 번도 부탁한 적 없죠. 지금 부탁해요.
 
-el cementerio. 묘지. quiero que conozcas. 네가 알게 되기를 바란다. 마르크는 quiero {conocer|코노*_세_*르}라고 하지 않았다. quiero que conozcas라고 했다. 문법책에서 본 적이 있었다. 다른 사람이 무언가를 하기를 바랄 때, 뒤의 동사가 바뀐다. 다른 옷을 입는다. conocer는 conozcas. hablar는 {hables|*아*블레스}. comer는 comas. quiero que, {espero que|에스*페*로 케}, {ojalá|오할*라*} 뒤에서 동사는 더 이상 있는 일을 말하지 않는다. 바라는 일을 말한다. 아니면 두려운 일을.
+마르크는 quiero {conocer|코노*_세_*르}라고 하지 않았다. quiero que conozcas라고 했다. 남이 무언가를 하기를 바랄 때 뒤의 동사는 다른 옷을 입고, 있는 일 대신 바라는 일을, 아니면 두려운 일을 말한다. conocer는 conozcas.
 
 싫다고 할 수가 없었다. No pude decir que no.
 
@@ -55,7 +55,7 @@ MARTÍ PUIG I FERRER
 
 조안의 말이 머릿속으로 돌아왔다. 칠십사 년에. 라스팔마스. 내 아이. 딸처럼. En el setenta y cuatro. Las Palmas. Mi niña. Como a una hija.
 
-{Ojalá no sea verdad|오할*라* 노 *세*아 베르*다*드}. 그게 사실이 아니기를. 날짜가 맞지 않기를. 나는 그 말을 처음으로 이해했다. 스페인어가 몇백 년 동안 간직해 온 말. 오래전 아랍어로는 ‘신이 원하신다면’이라는 뜻이었다고 한다. Ojalá.
+{Ojalá no sea verdad|오할*라* 노 *세*아 베르*다*드}. 그게 사실이 아니기를. 날짜가 맞지 않기를. 나는 그 말을 처음으로 이해했다. 스페인어가 몇백 년 동안 간직해 온 말. 오래전 아랍어로는 ‘신이 원하신다면’이라는 뜻이었다고 한다. {Ojalá|오할*라*}.
 
 @yunha —¿Tu abuelo tuvo otros hijos? :: 할아버지한테 다른 자식이 있었어요?
 
@@ -73,7 +73,7 @@ MARTÍ PUIG I FERRER
 
 @marc —Espero que esté contento. Contento de que estés aquí. De que tengas su reloj. Espero que lo sepa, de alguna manera. Ojalá nos mire desde algún sitio. :: 할아버지가 기뻐하시면 좋겠어요. 당신이 여기 온 걸. 당신이 할아버지 시계를 갖게 된 걸. 어떻게든 아셨으면 좋겠어요. 어딘가에서 우리를 보고 계시면 좋겠어요.
 
-espero que esté. 그가 ~이기를 바란다. espero que lo sepa. 그가 알기를 바란다. 또 바람의 옷을 입은 동사였다. 마르크는 할아버지에게 좋은 것들을 바랐다. 그리고 나는 생각했다. ojalá su abuelo no sea también el mío. 그의 할아버지가 내 할아버지이기도 하지 않기를.
+또 바람의 옷을 입은 동사였다. 마르크는 할아버지에게 좋은 것들을 바랐다. 그리고 나는 생각했다. ojalá su abuelo no sea también el mío. 그의 할아버지가 내 할아버지이기도 하지 않기를.
 
 마르크가 벙커에서처럼 내 손 쪽으로 손을 뻗었다. 나는 한 걸음 물러섰다. 생각할 틈도 없이. Di un paso atrás. 내 손은 주머니 속에서 열쇠를 쥐고 있었다.
 
@@ -97,11 +97,11 @@ espero que esté. 그가 ~이기를 바란다. espero que lo sepa. 그가 알기
 
 @marc —Yuna, no sé qué te pasa. Pero {tengo miedo de que|*텡*고 *미에*도 데 케} no me lo digas nunca. :: 유나, 무슨 일인지 모르겠어요. 그런데 당신이 끝내 말해 주지 않을까 봐 무서워요.
 
-tengo miedo de que. ~할까 봐 무섭다. 또다시 그 모양이었다. 마르크도 무서워하고 있었다. 나를, 아니면 나 때문에. 어느 쪽인지는 몰랐다.
+tengo miedo de que. 또다시 그 모양이었다. 마르크도 무서워하고 있었다. 나를, 아니면 나 때문에. 어느 쪽인지는 몰랐다.
 
 @yunha —Te lo diré. {Pronto|*프론*토}. Te lo prometo. :: 말할게요. 곧. 약속해요.
 
-pronto. 곧. 거짓말은 아니었다. {No era mentira|노 *에*라 멘*티*라}. 그렇다고 사실도 아니었다.
+거짓말은 아니었다. {No era mentira|노 *에*라 멘*티*라}. 그렇다고 사실도 아니었다.
 
 그날 밤 나는 발레의 컴퓨터로 엄마에게 편지를 썼다. 아주 간단한 부탁 하나. 엄마의 출생증명서 사진. Una foto de {su partida de nacimiento|수 파르*티*다 데 나_시_*미엔*토}. 여기서 서류 처리에 필요하다고 했다. 엄마에게 한 첫 거짓말이었다. 마르크에게는 이제 몇 번째인지 셀 수도 없었다.
 

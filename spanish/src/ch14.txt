@@ -1,6 +1,6 @@
 # 14 | Tenía fiebre | 테니아 피에브레
 
-토요일 아침, 나는 드디어 엄마에게 전화를 걸었다. Por fin {llamé|야*메*} a mi madre. llamé. 전화했다. 한국은 오후 네 시였다. 엄마는 부산의 시장에 있었다. 수화기 너머로 시장 소리가 왁자지껄하게 들렸다.
+토요일 아침, 나는 드디어 엄마에게 전화를 걸었다. Por fin {llamé|야*메*} a mi madre. 한국은 오후 네 시였다. 엄마는 부산의 시장에 있었다. 수화기 너머로 시장 소리가 왁자지껄하게 들렸다.
 
 나는 한국어로, 아주 빨리, 전부 말했다. 상자, 열쇠, 편지, 몬세, 그리고 배. 엄마는 오랫동안 아무 말도 하지 않았다. 시장 소리만 들렸다.
 
@@ -12,7 +12,7 @@
 
 “근데 할머니가 한 번 그러셨어. 나 어릴 때 외국에서 열이 펄펄 끓어서 죽을 뻔했다고. 어떤 아저씨가 밤새 병원에 같이 있어 줬다고. 그 얘기 하실 때만 할머니가 우셨어. 딱 한 번.”
 
-전화를 끊고 나는 한참 침대에 그대로 있었다. {Me quedé|메 케*데*} en la cama. me quedé. 그대로 있었다. 밤새 병원에 같이 있어 준 남자. Un hombre {estuvo|에스*투*보} {toda la noche|*토*다 라 *노*체} en el {hospital|오스피*탈*}. estuvo. 있었다. toda la noche. 밤새. 나는 이름 하나를 떠올렸다. 딱 하나.
+전화를 끊고 나는 한참 침대에 그대로 있었다. {Me quedé|메 케*데*} en la cama. 밤새 병원에 같이 있어 준 남자. Un hombre {estuvo|에스*투*보} {toda la noche|*토*다 라 *노*체} en el {hospital|오스피*탈*}. 나는 이름 하나를 떠올렸다. 딱 하나.
 
 ##
 
@@ -38,13 +38,13 @@ hacía calor. 더웠다. 새벽 두 시였다. 몬세가 마르티의 문을 두
 Yo tenía la furgoneta del taller. Era vieja y hacía mucho ruido, pero funcionaba. Tú subiste con la niña en brazos. Montse vino también. Yo conducía y tú {cantabas|칸*타*바스} {una canción|*우*나 칸*_시_온*} coreana en voz baja, para la niña. No entendía las palabras, pero entendía la canción.
 @end
 
-공방의 낡은 승합차. 시끄러웠지만 굴러갔다. 할머니가 아이를 안고 탔고, 몬세도 탔다. 마르티는 운전을 했고, 할머니는 노래를 불렀다. cantabas. 너는 노래하고 있었다. una canción coreana. 한국 노래 하나. 아이를 위해, 작은 소리로. 마르티는 가사는 몰랐지만 노래는 알아들었다고 썼다. No entendía las palabras, pero entendía la canción.
+공방의 낡은 승합차. 시끄러웠지만 굴러갔다. 할머니가 아이를 안고 탔고, 몬세도 탔다. 마르티는 운전을 했고, 할머니는 노래를 불렀다. cantabas. una canción coreana. 한국 노래 하나. 아이를 위해, 작은 소리로. 마르티는 가사는 몰랐지만 노래는 알아들었다고 썼다. No entendía las palabras, pero entendía la canción.
 
 @letter
 En el hospital había un patio con árboles y unos edificios muy bonitos, como palacios. {Los médicos|로스 *메*디코스} se llevaron a la niña. Esperamos en un banco del patio toda la noche. Tú no hablabas. Yo tampoco.
 @end
 
-los médicos. 의사들. 의사들이 아이를 데려갔다. 할머니와 마르티는 병원 마당의 벤치에서 밤새 기다렸다. 둘 다 말이 없었다.
+los médicos. 의사들이 아이를 데려갔다. 할머니와 마르티는 병원 마당의 벤치에서 밤새 기다렸다. 둘 다 말이 없었다.
 
 @letter
 A las seis de la mañana salió una enfermera y dijo: «Ya está. Ya no tiene fiebre». Tú {lloraste|요*라*스테}. Fue la única vez que te vi llorar.
@@ -60,7 +60,7 @@ M.
 
 병원을 나설 때 탑들 뒤로 해가 뜨고 있었다. detrás de. ~뒤로. 할머니는 스페인어로 고맙다고 했고, 마르티는 한국어로 괜찮다고 했다. 그리고 둘이 웃었다. 아주 지쳐서.
 
-마지막 줄을 여러 번 읽었다. ¿Todavía canta tu canción? 아이는 아직도 네 노래를 부르니? 엄마는 노래를 부르지 않았다. 나는 엄마가 노래하는 걸 한 번도 들은 적이 없었다. 그런데 할머니는 불렀다. Mi abuela cantaba cuando cocinaba. 할머니는 요리할 때 노래를 불렀다. 늘 같은 노래였다.
+마지막 줄을 여러 번 읽었다. ¿Todavía canta tu canción? 아이는 아직도 네 노래를 부르니? 엄마는 노래를 부르지 않았다. 나는 엄마가 노래하는 걸 한 번도 들은 적이 없었다. Mi abuela cantaba cuando cocinaba. 그런데 할머니는 요리할 때 노래를 불렀다. 늘 같은 노래였다.
 
 할머니가 부엌에서 늘 흥얼거리던 노래. 가사 없이 가락만 있는 노래였다. 나는 그게 무슨 노래인지 한 번도 묻지 않았다.
 
@@ -74,13 +74,13 @@ M.
 
 @montse —Ya no es un hospital. Ahora es un museo. El hospital {nuevo|*누에*보} está detrás. Pero en 1978… aquí estaban los enfermos. :: 지금은 병원이 아니야. 박물관이지. 새 병원은 뒤에 있어. 그런데 1978년엔… 여기에 환자들이 있었어.
 
-nuevo. 새로운. 새 병원은 뒤에 있고, 옛 병원은 박물관이 되었다. 몬세가 표를 두 장 샀다. 안으로 들어가니 건물들 사이로 길이 난 정원이 있었다. 건물마다 탑이 있고, 색이 있고, 창이 있었다. 나무들이 그늘을 드리웠다. 아름다웠고, 동시에 슬펐다. Era bonito y {triste|*트리*스테}. triste. 슬픈.
+몬세가 표를 두 장 샀다. 안으로 들어가니 건물들 사이로 길이 난 정원이 있었다. 건물마다 탑이 있고, 색이 있고, 창이 있었다. 나무들이 그늘을 드리웠다. 아름다웠고, 동시에 슬펐다. Era bonito y {triste|*트리*스테}.
 
 몬세는 정원을 천천히 걸었다. 무언가를 찾고 있었다. 그러다 나무 아래 돌 벤치 앞에서 멈췄다.
 
 @montse —Aquí. {Esperábamos|에스페*라*바모스} aquí. :: 여기. 우리 여기서 기다렸어.
 
-esperábamos. 우리는 기다리고 있었다. 마르티는 편지에 esperamos라고 썼다. 우리는 기다렸다. 하룻밤, 처음부터 끝까지. 그런데 몬세는 esperábamos라고 했다. 몬세는 지금 그 밤 안에 다시 들어가 있었다. 배경의 과거. 끝나지 않은 과거.
+마르티는 편지에 esperamos라고 썼다. 우리는 기다렸다. 하룻밤, 처음부터 끝까지. 그런데 몬세는 esperábamos라고 했다. 몬세는 지금 그 밤 안에 다시 들어가 있었다. 배경의 과거. 끝나지 않은 과거.
 
 우리는 벤치에 앉았다. 몬세가 눈을 감았다.
 
@@ -92,7 +92,7 @@ esperábamos. 우리는 기다리고 있었다. 마르티는 편지에 esperamos
 
 @montse —Pensaba: «{Pobre|*포*브레} Martí». :: 이렇게 생각했어. ‘불쌍한 마르티.’
 
-pobre. 불쌍한. 몬세는 더 말하지 않았다. 그래도 나는 알아들었다. 몬세는 처음부터 다 알고 있었다. 그 밤부터, 아니면 그보다 전부터.
+몬세는 더 말하지 않았다. 그래도 나는 알아들었다. 몬세는 처음부터 다 알고 있었다. 그 밤부터, 아니면 그보다 전부터.
 
 할머니의 노래가 떠올랐다. 나는 그 노래를 아주 작게, 가사 없이 흥얼거렸다. 왜 그랬는지는 모르겠다. Empecé a cantarla. 몬세가 아주 빠르게 내 쪽으로 고개를 돌렸다. 눈이 반짝이고 있었다.
 

@@ -28,7 +28,7 @@ Marc sonrió. 그러고는 나를 보지 않고, 작업대의 등을 끄면서 �
 
 @marc —Para pasear. Para hablar. Es {una cita|*우*나 *_시_*타}, Yuna. :: 산책하러. 이야기하러. 데이트예요, 유나.
 
-그리고 불을 껐다. una cita. 데이트. 어둠 속이라 마르크는 내 얼굴을 볼 수 없었다. 다행이었다. Mejor.
+그리고 불을 껐다. 어둠 속이라 마르크는 내 얼굴을 볼 수 없었다. 다행이었다. Mejor.
 
 ##
 
@@ -72,7 +72,7 @@ Caminamos por el paseo hasta el parque. 일요일이라 바르셀로나 사람�
 
 ##
 
-공원 호수에서 노 젓는 배를 빌려주고 있었다. 아이들과 할아버지들이 짧게 줄을 서 있었다. 마르크가 돈을 내고, 우리는 초록색 배에 올랐다. Subimos a {una barca|*우*나 *바*르카} verde. una barca. 작은 배. Él remaba. 나는 마르크 맞은편에 무릎 위로 손을 모으고 앉아, 어디를 봐야 할지 몰랐다.
+공원 호수에서 노 젓는 배를 빌려주고 있었다. 아이들과 할아버지들이 짧게 줄을 서 있었다. 마르크가 돈을 내고, 우리는 초록색 배에 올랐다. Subimos a {una barca|*우*나 *바*르카} verde. Él remaba. 나는 마르크 맞은편에 무릎 위로 손을 모으고 앉아, 어디를 봐야 할지 몰랐다.
 
 {El lago|엘 *라*고} 한가운데에서 마르크가 노를 멈췄다. 호수. 배는 오리들 사이, 노랗게 물든 나무 아래 가만히 떠 있었다. La barca se quedó quieta.
 
@@ -82,7 +82,7 @@ Caminamos por el paseo hasta el parque. 일요일이라 바르셀로나 사람�
 
 @marc —La primera. Este verano, antes de que vinieras, iba a {vender|벤*데*르} el taller. Mi padre quería venderlo. Yo dije que sí. Una empresa quería poner una tienda de móviles. Tenía los papeles en un cajón. Iba a {firmar|피르*마*르} en septiembre. Nadie lo sabía. Ni Montse. :: 첫째. 올여름, 당신이 오기 전에 공방을 팔려고 했어요. 아버지가 팔고 싶어 했고, 나도 그러자고 했어요. 어떤 회사가 휴대폰 가게를 내려고 했어요. 서류는 서랍에 있었고요. 구월에 서명할 생각이었어요. 아무도 몰랐어요. 몬세도요.
 
-vender. 팔다. firmar. 서명하다. 마르크는 물을 보며 말했다.
+마르크는 물을 보며 말했다.
 
 @yunha —¿Y no firmaste? :: 그런데 서명 안 했어요?
 
@@ -94,7 +94,7 @@ vender. 팔다. firmar. 서명하다. 마르크는 물을 보며 말했다.
 
 @marc —No. Era antipático porque soy antipático. Pero un poco, también por eso. :: 아니요. 퉁명스러운 건 내가 원래 퉁명스러워서예요. 그래도 조금은 그것 때문이기도 했어요.
 
-antipático. 퉁명스러운. 마르크가 거의 웃을 뻔했다.
+마르크가 거의 웃을 뻔했다.
 
 @yunha —¿Y la segunda cosa? :: 두 번째는요?
 
@@ -102,7 +102,7 @@ antipático. 퉁명스러운. 마르크가 거의 웃을 뻔했다.
 
 @marc —Si te vas a Corea, lo entenderé. Tienes a tu madre. Tienes tu vida. Si te vas, no te voy a pedir que te quedes. Pero {si te quedas|시 테 *케*다스}… si te quedas, me harías muy feliz. {Me gustas|메 *구*스타스}, Yuna. Desde el mercado. Desde «doscientos». Eso es todo. :: 한국으로 간다면 이해할게요. 어머니가 계시고, 당신 삶이 있으니까. 간다고 해도 남아 달라고 하지 않을 거예요. 그런데 남는다면… 남는다면 나는 아주 행복할 거예요. 당신이 좋아요, 유나. 시장에서부터. ‘이백’이라고 했던 그때부터. 그게 다예요.
 
-si te quedas. 네가 남는다면. me gustas. 네가 좋다. 마르크는 판결을 기다리는 사람처럼 진지하게 나를 보았다.
+마르크는 판결을 기다리는 사람처럼 진지하게 나를 보았다.
 
 한꺼번에 많은 것이 떠올랐다. 돌아가는 표 없는 편도 비행기표. 부산의 엄마. 석 달째 비어 있는 서울의 내 집. 1978년 십일월에 떠나 다시 돌아오지 않은 할머니. 평생을 기다린 마르티.
 
@@ -136,7 +136,7 @@ Comimos dos bocadillos en un banco. 오후에는 버스만 한 돌 매머드 옆
 
 Por la noche, en mi habitación, abrí el cuaderno. 페이지 한가운데에 si라고 썼다. 아주 작은 말. 글자 두 개.
 
-Si te quedas, me harás feliz. {Si te quedaras|시 테 케*다*라스}, me harías feliz. 두 문장은 아주 비슷하지만 같지 않다. 첫 문장에서는 모든 게 가능하다. si 뒤에 현재, 그다음 미래. 두 번째 문장에서는 문이 더 닫혀 있거나 더 멀리 있다. si 뒤에 -ra로 끝나는 새 모양, 그다음 조건형. si yo fuera tú와 같은 모양. 마르크는 호수에서 둘을 섞어 썼다. si te quedas, me harías feliz. 교과서대로라면 me harás다. 시험이었다면 틀린 답이다. En un examen, sería un error. 그런데 호수에서는 틀린 게 아니었다. En el lago, no era un error. 두려움이었다. 가능하다고 믿고 싶으면서도 믿고 싶지 않은 마음.
+Si te quedas, me harás feliz. {Si te quedaras|시 테 케*다*라스}, me harías feliz. 첫 문장에서는 모든 게 가능하다. 두 번째처럼 si 뒤에 -ra로 끝나는 모양이 오면, 문이 더 닫혀 있거나 더 멀리 있다. 마르크는 호수에서 두 모양을 섞어 썼다. si te quedas, me harías feliz. 교과서대로라면 me harás다. 시험이었다면 틀린 답이다. En un examen, sería un error. 그런데 호수에서는 틀린 게 아니었다. En el lago, no era un error. 두려움이었다. 가능하다고 믿고 싶으면서도 믿고 싶지 않은 마음.
 
 그리고 세 번째, 가장 슬픈 모양이 있었다. si 뒤에 hubiera와 과거분사. Si no hubieras venido, ahora habría una tienda de móviles. 일어나지 않은 일. 이제는 일어날 수 없는 일.
 

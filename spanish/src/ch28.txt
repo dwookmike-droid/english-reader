@@ -50,7 +50,7 @@
 
 @joan —El barco de tu abuela salió del puerto un domingo de noviembre. A las tres y diez de la tarde. Martí estaba en el muelle. Yo estaba con él. No dijo adiós con la mano. No dijo nada. Cuando el barco desapareció, volvimos al taller. Él abrió el reloj, movió las agujas hasta las tres y diez, la hora del barco, y paró el péndulo con un dedo. Y dijo: «Fins que torni». {Hasta que vuelva|*아*스타 케 *부엘*바}. Y así se quedó. :: 네 할머니가 탄 배는 십일월 어느 일요일에 항구를 떠났어. 오후 세 시 십 분에. 마르티는 부두에 있었고, 나도 같이 있었지. 손을 흔들지도 않았어. 아무 말도 안 했어. 배가 사라지자 우리는 공방으로 돌아왔어. 마르티가 시계를 열고, 바늘을 세 시 십 분에, 배가 떠난 시각에 맞추고, 손가락으로 진자를 멈췄어. 그리고 말했지. ‘돌아올 때까지.’ 그렇게 멈춰 있었던 거야.
 
-hasta que vuelva. 돌아올 때까지. 십일월 십이일이었다. 내일이었다. 아무도 말하지 않았다. 위쪽 거리로 오토바이 한 대가 지나갔다.
+십일월 십이일이었다. 내일이었다. 아무도 말하지 않았다. 위쪽 거리로 오토바이 한 대가 지나갔다.
 
 @yunha —Pero ella no volvió. :: 그런데 할머니는 돌아오지 않았잖아요.
 
@@ -70,11 +70,11 @@ hasta que vuelva. 돌아올 때까지. 십일월 십이일이었다. 내일이�
 
 @joan —Yo sí lo sé. Le ayudé con los martillos. Tardamos tres meses. Martí no sabía música. Solo sabía una canción, y no sabía cómo se llamaba. La había oído una noche de julio, en un banco de hospital. La {silbaba|실*바*바} en el taller todo el día. Yo le decía: «Martí, esa canción me va a volver loco». Y él la seguía silbando. :: 나는 알지. 망치 만드는 걸 도왔으니까. 석 달 걸렸어. 마르티는 음악을 몰랐어. 노래를 딱 하나 알았는데, 제목도 몰랐지. 칠월 어느 밤 병원 벤치에서 들은 노래였어. 공방에서 하루 종일 휘파람으로 불었어. 내가 그랬지. ‘마르티, 그 노래 때문에 미치겠어.’ 그래도 계속 불더라.
 
-silbaba. 휘파람을 불었다. 칠월의 밤, 병원 벤치. 손이 떨렸다. 몬세가 내 등에 손을 얹었다.
+칠월의 밤, 병원 벤치. 손이 떨렸다. 몬세가 내 등에 손을 얹었다.
 
 @montse —{Venga|*벵*가}, nena. Dale cuerda. :: 자, 얘야. 태엽을 감아.
 
-venga. 자, 어서. 마르크가 바늘을 천천히 세 시 일 분 전으로 옮겼다. 음악 태엽이 감기지 않아서 시계는 아무 소리도 내지 않았다.
+마르크가 바늘을 천천히 세 시 일 분 전으로 옮겼다. 음악 태엽이 감기지 않아서 시계는 아무 소리도 내지 않았다.
 
 Metí la llave en el primer agujero. 첫 번째 구멍에 열쇠를 넣었다. 언제나처럼 꼭 맞게 들어갔다. 돌렸다. 한 바퀴. 두 바퀴. 세 바퀴. 일곱. 여덟. Después, en el segundo agujero. 같은 열쇠로. 여덟 바퀴 더. Sentí la cuerda llena. 태엽이 꽉 차는 게 느껴졌다. 노래하기 전에 깊이 숨을 들이쉬는 가슴처럼.
 
@@ -92,7 +92,7 @@ Tic. Tac. Tic. Tac.
 
 일곱, 여덟, 열 개의 맑은 쇳소리가 지하실을 채웠다. 느리고, 단순하고, 조금 슬프고, 조금 기쁜 {la melodía|라 멜로*디*아}. 선율. 나는 그 노래를 알았다. 말을 배우기도 전부터 알았다. 할머니의 가사 없는 노래였다. 부엌의 노래. 양파를 썰면서, 김치를 담그면서, 내 머리를 빗겨 주면서, 날마다 오후에 부르던 노래.
 
-할머니의 노래였다. 할머니가 부엌에서 흥얼거리던, 내가 한 번도 이름을 묻지 않은 그 노래. 사십팔 년 전 한 남자가 병원 벤치에서 듣고, 외워서, 작은 망치와 쇠막대로 한 음 한 음 옮겨 놓은 노래.
+내가 한 번도 이름을 묻지 않은 그 노래였다. 사십팔 년 전 한 남자가 병원 벤치에서 듣고, 외워서, 작은 망치와 쇠막대로 한 음 한 음 옮겨 놓은 노래.
 
 몬세가 그 노래를 부르기 시작했다. 아주 작게, 가사 없이, 할머니처럼. 나도 따라 불렀다. 목소리가 떨렸지만 멈추지 않았다. 그다음 시계가 낮고 느리게 세 번 종을 쳤다. {Las campanadas|라스 캄파*나*다스}. 종소리. 세 시였다.
 
@@ -130,7 +130,7 @@ Tic. Tac. Tic. Tac.
 
 @marc —Vale. Iré a buscarte. Con la Vespa. La maleta, que venga en taxi. :: 좋아요. 데리러 갈게요. 베스파로. 가방은 택시로 오라고 해요.
 
-마르크가 일어나 알파호르를 하나 집어 한 입 베어 물었다. iré a buscarte. 너를 데리러 가겠다.
+마르크가 일어나 알파호르를 하나 집어 한 입 베어 물었다.
 
 @yunha —¿Y el veinte? :: 이십일에는요?
 
@@ -144,7 +144,7 @@ Increíble. 내 스페인어가 전부 거기 있었다. Todo mi español estaba
 
 @letter
 Miércoles, 11 de noviembre. Sant Martí. Hace frío.
-Fricandó de Montse. Alfajores de Vale. Joan ha venido de Sitges en tren, con un paraguas. No llovía. Marc lo ha esperado en el andén, con la Vespa.
+Fricandó de Montse. Alfajores de Vale. Joan ha venido de Sitges en tren, con un paraguas. No llovía. Marc lo ha esperado en la estación, con la Vespa.
 El reloj estaba parado a las tres y diez: la hora del barco. «Hasta que vuelva».
 A las tres menos cuarto, al taller. He dado cuerda con la llave de mi abuela. El péndulo de Joan se mueve.
 El reloj tiene música. La melodía es la canción de mi abuela. Martí la silbaba en el taller. La aprendió en un banco de hospital.

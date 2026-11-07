@@ -2,7 +2,7 @@
 
 열 번째 편지는 해 질 녘에 읽고 싶었다.
 
-그 주에 바르셀로나는 라 메르세를 맞았다. 도시의 가장 큰 축제였다. 공연이 있고, 불꽃놀이가 있고, 거리마다 사람이 넘쳤다. 나는 거의 나가지 않았다. 대신 그 주에 여섯 번째, 일곱 번째, 여덟 번째, 아홉 번째 편지를 읽었다. 짧은 편지들이었다. 마르티는 날씨 이야기, 공방 이야기, 아들 조르디 이야기, 고치고 있는 시계 이야기를 했다. 아이의 안부를 물었다. 사랑 이야기는 한 번도 하지 않았다. 그런데 편지 끝에는 늘 작은 문장이 하나씩, 매번 다르게 붙어 있었다.
+그 주에 바르셀로나는 라 메르세를 맞았다. 도시의 가장 큰 축제였다. 공연이 있고, 불꽃놀이가 있고, 거리마다 사람이 넘쳤다. 나는 거의 나가지 않았다. 대신 그 주에 여섯 번째, 일곱 번째, 여덟 번째, 아홉 번째 편지를 읽었다. 짧은 편지들이었다. 마르티는 날씨 이야기, 공방 이야기, 아들 조르디 이야기, 고치고 있는 시계 이야기를 했다. 아이의 안부를 물었다. 사랑 이야기는 한 번도 하지 않았다. quédate라는 말도. 그런데 편지 끝에는 늘 작은 문장이 하나씩, 매번 다르게 붙어 있었다.
 
 «Hoy he pensado en ti.» 오늘 네 생각을 했다.
 «El patio está muy vacío.» 마당이 아주 비어 있다.
@@ -12,15 +12,13 @@
 
 @marc —Los búnkeres. {Al atardecer|알 아타르데*_세_*르}. :: 벙커요. 해 질 녘에.
 
-al atardecer. 해 질 녘에.
-
 ##
 
 우리는 그라시아에서 걸어 올라갔다. 길은 오르고 또 올랐다. 정원이 딸린 작은 집들 사이로 점점 가팔라졌다. 끝에 이르자 길은 흙길이 되었다. 꼭대기에는 시멘트 잔해가 남아 있었다. 둥근 단, 낡은 벽, 계단.
 
 @marc —Durante {la guerra|라 *게*라}, aquí había cañones. Para defender la ciudad de los aviones. Ahora la gente viene a ver la puesta de sol. :: 전쟁 때 여기 대포가 있었어요. 비행기로부터 도시를 지키려고. 지금은 사람들이 해 지는 걸 보러 와요.
 
-la guerra. 전쟁. 대포가 있던 자리에 지금은 사람들이 앉아 있었다. 맥주를 든 젊은이들, 연인들, 카메라를 든 관광객들, 기타 하나. 모두 시멘트 위에 앉아 서쪽을 보고 있었다. 거기서는 바르셀로나가 사방으로 다 보였다. 바다, 몬주익, 사그라다 파밀리아, 관람차가 있는 티비다보. 그리고 저 아래 어딘가에 그라시아. Desde allí se veía toda Barcelona.
+대포가 있던 자리에 지금은 사람들이 앉아 있었다. 맥주를 든 젊은이들, 연인들, 카메라를 든 관광객들, 기타 하나. 모두 시멘트 위에 앉아 서쪽을 보고 있었다. 거기서는 바르셀로나가 사방으로 다 보였다. 바다, 몬주익, 사그라다 파밀리아, 관람차가 있는 티비다보. 그리고 저 아래 어딘가에 그라시아. Desde allí se veía toda Barcelona.
 
 우리는 사람들에게서 조금 떨어져, 둥근 단의 가장자리에 앉았다. Me senté en el borde de una plataforma. Marc sacó dos bocadillos de la mochila. 해가 산 너머로 내려가기 시작했다. 도시가 주황빛으로 물들었다. La ciudad se ponía naranja.
 
@@ -32,7 +30,7 @@ Querida Sun-rye:
 He recibido tu carta. Ya sé que vais a volver a Corea en julio. Tu marido, tú y la niña. Es lo correcto. Lo sé.
 @end
 
-할머니의 편지를 받았다고 했다. 칠월에 한국으로 돌아간다는 것도 안다고. 남편, 할머니, 그리고 아이. Es lo correcto. 그게 옳다고. 안다고.
+할머니의 편지를 받았다고 했다. 칠월에 한국으로 돌아간다는 것도 안다고. 남편, 할머니, 그리고 아이. 그게 옳다고. 안다고.
 
 @letter
 Esta va a ser mi última carta. Es mejor así, para ti y para la niña. No me escribas más. Yo no voy a escribir más.
@@ -45,7 +43,7 @@ Pero antes quiero decirte una cosa, solo una vez, y con palabras claras, porque 
 {Te he querido|테 에 케*리*도} {desde el primer día|*데*스데 엘 프리*메*르 *디*아}. Desde el día en que llegaste al patio de Montse con la niña dormida en los brazos y una maleta azul. Te he querido en Santa María del Mar, en la Sagrada Familia, en el hospital, delante del avión del Tibidabo. {Te quiero|테 *키에*로} ahora. No sé cómo se deja de querer a alguien. Nadie me lo ha enseñado.
 @end
 
-te he querido. 너를 사랑해 왔다. desde el primer día. 첫날부터. 아이를 품에 재운 채 파란 여행 가방을 들고 몬세의 마당에 들어선 그날부터. 산타 마리아 델 마르에서, 사그라다 파밀리아에서, 병원에서, 티비다보의 비행기 앞에서. te quiero. 지금도 사랑한다. 누군가를 어떻게 그만 사랑하는지 모르겠다고 했다. 아무도 가르쳐 주지 않았다고.
+첫날부터 사랑해 왔다고 했다. 아이를 품에 재운 채 파란 여행 가방을 들고 몬세의 마당에 들어선 그날부터. 산타 마리아 델 마르에서, 사그라다 파밀리아에서, 병원에서, 티비다보의 비행기 앞에서. 지금도 사랑한다고. 누군가를 어떻게 그만 사랑하는지 모르겠다고 했다. 아무도 가르쳐 주지 않았다고.
 
 @letter
 El reloj está terminado. Lo he tapado con {una sábana blanca|*우*나 *사*바나 *블랑*카} y {está parado|에스*타* 파*라*도}. {Es tuyo|에스 *투*요}. Tú tienes la llave. Si un día vuelves a Barcelona, {dale cuerda|*달*레 *쿠에*르다}. Si no vuelves nunca, no pasa nada. Va a esperar. Los relojes saben esperar. Yo he aprendido de ellos.
@@ -53,7 +51,7 @@ Kwaenchanayo.
 M.
 @end
 
-시계는 다 만들었다. 하얀 천으로 덮어 두었고, 멈춰 있다. una sábana blanca. 하얀 천. está parado. 멈춰 있다. es tuyo. 그건 네 것이다. 열쇠는 네가 가지고 있다. 언젠가 바르셀로나에 돌아오면 태엽을 감아 달라고 했다. dale cuerda. 돌아오지 않아도 괜찮다고. 시계는 기다릴 거라고. 시계는 기다릴 줄 안다고. 자기는 시계에게서 그걸 배웠다고.
+시계는 다 만들었다고 했다. 하얀 천으로 덮어 두었고, 멈춰 있다고. 그건 네 것이고, 열쇠는 네가 가지고 있다고. 언젠가 바르셀로나에 돌아오면 태엽을 감아 달라고 했다. 돌아오지 않아도 괜찮다고. 시계는 기다릴 거라고. 시계는 기다릴 줄 안다고. 자기는 시계에게서 그걸 배웠다고.
 
 그리고 마지막 한 줄. Kwaenchanayo.
 
@@ -67,9 +65,9 @@ M.
 
 ##
 
-해가 산 너머로 사라졌다. 도시가 불을 하나씩 켜기 시작했다. 태엽을 감은 시계가 움직이기 시작하듯이. 젊은이들이 지는 해를 향해 박수를 쳤다. 누군가 기타로 노래 한 곡을 연주했다. Los búnkeres al atardecer.
+해가 산 너머로 사라졌다. 도시가 불을 하나씩 켜기 시작했다. 태엽을 감은 시계가 움직이기 시작하듯이. la guerra 때 대포를 두던 자리에서, 젊은이들이 지는 해를 향해 박수를 쳤다. 누군가 기타로 노래 한 곡을 연주했다. Los búnkeres al atardecer.
 
-말을 할 수 있게 되자, 나는 편지를 마르크에게 건넸다. 마르크는 천천히 읽었다. 끝까지 읽고는 아주 가만히 있었다.
+말을 할 수 있게 되자, 나는 편지를 마르크에게 건넸다. 마르크는 천천히 읽었다. te quiero가 있는 줄에서 한 번 멈췄다. 끝까지 읽고는 아주 가만히 있었다.
 
 @marc —«Lo he tapado con una sábana blanca». :: ‘하얀 천으로 덮어 두었다.’
 
