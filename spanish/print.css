@@ -120,6 +120,9 @@ section:first-child { break-before: auto; }
 .letter.diary .w, .letter.diary .es { font-style: normal; }
 /* 수첩 항목은 한두 줄이라 끝 항목 하나만 붙여서는 두 줄만 넘어간다. 끝 두 항목을 앞과 붙인다. */
 .letter.diary p:nth-last-child(2):not(:first-child) { break-before: avoid; }
+/* 수첩 바로 앞 문단은 쪽에서 나누지 않는다. 상자 붙임 규칙 때문에 크롬이 문단 끝 줄 하나만
+   다음 쪽으로 넘기는 일이 있었다(22장 "거짓 / 말 없이."). */
+.chapter p:has(+ .letter.diary) { break-inside: avoid; }
 /* 문법 쪽지: 장 끝 수첩 뒤. 편지(망+왼쪽 띠)와 구별되게 망 없이 가는 테두리, 고딕 본문. */
 .note {
   margin: 1.1em 0 .6em; padding: 2.2mm 3.2mm 2mm;
