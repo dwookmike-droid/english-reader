@@ -8,6 +8,8 @@
   --accent: #b5532f;
   /* 테라코타를 흰 종이에 약 10% 올린 망. 편지지. 8–12% 안. */
   --soft: #f8eeea;
+  /* 테라코타 약 35%. 수첩 괘선. */
+  --rule: #e5c3b6;
   --mute: #6d685f;
   --body: 156mm;
 }
@@ -41,7 +43,8 @@ section:first-child { break-before: auto; }
   font-family: "EB Garamond", "Gowun Batang", "Noto Sans KR", serif;
 }
 .w, .es { font-weight: 400; font-size: 1.13em; letter-spacing: .005em; }
-.w.new { font-weight: 600; }
+/* 새 단어(장 끝 목록에 실린 말)는 색으로 표시한다. 굵은 글자는 발음 괄호 속 강세 하나만 뜻한다. */
+.w.new { font-weight: 500; color: var(--accent); }
 .pr {
   font-family: "Noto Sans KR", sans-serif; font-size: .72em; color: #6a655c;
   margin-left: .25em; letter-spacing: -.01em; white-space: nowrap; vertical-align: .12em;
@@ -94,7 +97,45 @@ section:first-child { break-before: auto; }
   line-height: 1.55; margin: 0 0 .12em;
   orphans: 3; widows: 3;
 }
+/* 상자가 쪽에서 나뉠 때 첫 줄만, 끝 줄만 홀로 남지 않게: 첫 문단은 다음과, 끝 문단은 앞과 붙인다. */
+/* 문단이 하나뿐인 상자에 걸면 상자 바깥(앞뒤 문단)까지 붙어 버리므로 둘 이상일 때만. */
+.letter p:first-child:not(:last-child) { break-after: avoid; }
+.letter p:last-child:not(:first-child) { break-before: avoid; }
 .letter .w, .letter .es { font-style: italic; font-size: 1em; }
+/* 윤하의 수첩: 바탕 망 없이 흰 종이에 왼쪽 이중선(공책 여백선)과 괘선. 글자는 바로 선 글꼴. */
+.letter.diary {
+  background: none;
+  border-left: 2.2pt double var(--accent);
+  padding: 1.6mm 1mm 1.2mm 3.6mm;
+}
+.letter.diary::before {
+  content: "수첩"; display: block; margin: 0 0 .6mm;
+  font: 700 6.6pt "Noto Sans KR", sans-serif; color: var(--accent); letter-spacing: .14em;
+  break-after: avoid;
+}
+.letter.diary p {
+  font-style: normal; font-size: 1.12em; line-height: 1.5;
+  margin: 0; padding: .35mm 0 .45mm; border-bottom: .4pt solid var(--rule);
+}
+.letter.diary .w, .letter.diary .es { font-style: normal; }
+/* 수첩 항목은 한두 줄이라 끝 항목 하나만 붙여서는 두 줄만 넘어간다. 끝 두 항목을 앞과 붙인다. */
+.letter.diary p:nth-last-child(2):not(:first-child) { break-before: avoid; }
+/* 문법 쪽지: 장 끝 수첩 뒤. 편지(망+왼쪽 띠)와 구별되게 망 없이 가는 테두리, 고딕 본문. */
+.note {
+  margin: 1.1em 0 .6em; padding: 2.2mm 3.2mm 2mm;
+  border: .5pt solid var(--accent); border-radius: 1.2mm;
+  break-inside: avoid;
+}
+.note h4 {
+  margin: 0 0 1.2mm; font: 700 7pt "Noto Sans KR", sans-serif;
+  color: var(--accent); letter-spacing: .12em;
+}
+.note p {
+  text-indent: 0 !important; text-align: left;
+  font-family: "Noto Sans KR", sans-serif; font-size: .86em; line-height: 1.6; margin: 0 0 .5mm;
+}
+.note h4 + p { font-weight: 700; }
+.note .w, .note .es { font-family: "EB Garamond", serif; font-size: 1.12em; }
 /* 간판·주소: 그라시아 거리 명판처럼 가는 이중 테두리. 초록은 쓰지 않는다. */
 .address {
   margin: 1em auto; width: fit-content; min-width: 62%; max-width: 100%;
@@ -157,8 +198,11 @@ section:first-child { break-before: auto; }
   column-count: 2; column-gap: 3.6mm; column-fill: balance;
 }
 .words li { break-inside: avoid; margin: 0 0 .55mm; line-height: 1.18; text-align: left; }
-.words li > b { font-weight: 600; font-size: 9pt; }
+.words li > b { font-weight: 600; font-size: 9pt; color: var(--accent); }
 .words li .pr { font-size: 5.6pt; margin-left: .22em; }
+.words.last { height: var(--body); display: flex; flex-direction: column; }
+.words.last .fin { margin: auto 0; text-align: center; color: var(--accent); }
+.words.last .fin svg { width: 34mm; height: auto; }
 .words li .m { display: block; font-size: 6.5pt; color: #4f4b45; line-height: 1.18; }
 
 /* ── 앞붙이 ───────────────────────────────────────────── */
@@ -206,6 +250,7 @@ section:first-child { break-before: auto; }
 .guide ol { margin: 0; padding-left: 1.3em; }
 .guide li { margin-bottom: 2.4mm; font-size: 9.2pt; line-height: 1.6; }
 .guide li b { font-weight: 700; }
+.guide .newword { font-style: normal; font-weight: 700; color: var(--accent); }
 .pron p { margin: 0 0 3mm; font-size: 9.2pt; line-height: 1.6; }
 .pron p.lead { color: #4f4b45; }
 .pron i { font-size: 1.12em; }

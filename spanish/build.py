@@ -11,6 +11,7 @@
   —¿Turismo? :: 관광이에요?  스페인어 대사 :: 작은 글씨로 붙는 우리말 뜻
   ##                        장면 바뀜
   @letter … @end            편지 / @address … @end 봉투의 주소
+  @note … @end              문법 쪽지(장 끝, 수첩 뒤). 장면 안의 문법 설명을 여기로 옮긴다
 
 본문의 다른 라틴 문자 단어는 단어표와 맞춰 자동으로 감싼다. 단어표에 없는
 스페인어 단어가 나오면 경고를 낸다 — 쓰고 나서 반드시 단어표를 채울 것.
@@ -33,16 +34,33 @@ MARGIN_INNER_MM = 16
 MARGIN_OUTER_MM = 12
 # 종이 한 장 두께. 미색 모조 80g 근처. 책등(mm) = 쪽수 ÷ 2 × 이 값.
 PAPER_CALIPER_MM = 0.1
+# 양끝 맞춤에서 낱말 사이가 이만큼(em) 넘게 벌어진 줄은 왼쪽 정렬로 둔다(render.js)
+LOOSE_EM = 0.5
 
-# 읽기 도움(처음 나온 단어의 한글 발음, 대사 밑 우리말 뜻)은 이 장까지만 본문에 싣는다.
-# 그 뒤로는 장 끝 단어 목록과 웹 리더에만 발음이 남는다.
-AIDS_UNTIL = 15
+# 1권은 대사 밑 우리말 뜻과 처음 나온 말의 한글 발음을 끝까지 싣는다(REWRITE.md, 2026-11-08).
+# 2권 이후에 도움을 줄일 때 이 두 값을 낮춘다.
+GLOSS_UNTIL = 30
+PRON_UNTIL = 30
 # 이 장까지는 스페인어 대사 한 줄 전체의 한글 발음을 대사 밑에 붙인다.
 LINE_PRON_UNTIL = 6
 
 LATIN = r"A-Za-zÀ-ÖØ-öø-ÿ"
 WORD = re.compile(rf"[{LATIN}](?:[{LATIN}\-]*[{LATIN}])?")
-SKIP = {'h', 'th', 'k', 'app', 'a', 'o', 's', 'll', 'sh', 'kg', 'g', 'd', 'r', 'ero', 'c', 'emos', 'á', 'án', 'ás', 'é', 'éis', 'ía'}   # 본문 설명에 쓰인 글자 이름          # 본문 설명에 쓰인 글자 이름 등
+
+
+def fold(s):
+    """대소문자·강세를 무시하고 단어만 남겨 비교한다(Me acuerdo = me acuerdo)."""
+    import unicodedata
+    s = ''.join(c for c in unicodedata.normalize('NFD', s.lower()) if unicodedata.category(c) != 'Mn')
+    return ' '.join(WORD.findall(s))
+
+
+# 관사·전치사 같은 기능어. 구 안에 이것만 새로 나왔으면 괄호를 다시 달지 않는다.
+FUNCTION_WORDS = {'el', 'la', 'los', 'las', 'un', 'una', 'unos', 'unas', 'de', 'del', 'al', 'a', 'en',
+                  'y', 'o', 'con', 'por', 'para', 'lo', 'le', 'les', 'me', 'te', 'se', 'nos', 'que',
+                  'mi', 'mis', 'tu', 'tus', 'su', 'sus', 'es', 'no'}
+
+SKIP = {'h', 'th', 'k', 'app', 'a', 'o', 's', 'll', 'sh', 'kg', 'g', 'd', 'r', 'ero', 'c', 'emos', 'á', 'án', 'ás', 'é', 'éis', 'ía', 'ron', 'ra'}   # 본문 설명에 쓰인 글자 이름          # 본문 설명에 쓰인 글자 이름 등
 
 
 # ── 단어표 ────────────────────────────────────────────────────────────
@@ -53,13 +71,29 @@ def load_vocab():
             continue
         c = line.split('\t') + [''] * 7
         key, fs, pron, ko, kind, ch, note = c[:7]
-        if not pron and kind not in ('c', 'p', 'f'):
-            from hangul import to_hangul           # 스페인어는 발음을 비워 두면 철자에서 만든다
-            pron = ' '.join(to_hangul(w) for w in key.split())
-        entries[key] = dict(k=key, p=pron, d=ko, t=kind, c=int(ch or 0), n=note)
+        auto = not pron and kind not in ('c', 'p', 'f')
+        entries[key] = dict(k=key, p=pron, d=ko, t=kind, c=int(ch or 0), n=note, auto=auto)
         for f in fs.split('|'):
-            forms[tuple(f.lower().split())] = key
+            t = tuple(f.lower().split())
+            if t in forms and forms[t] != key:      # 겹치면 뒤 항목이 가져가 앞 항목 횟수가 줄어든다
+                print(f'  ! 단어표 형태 겹침: {f} ({forms[t]} / {key})', file=sys.stderr)
+            forms[t] = key
+    for e in entries.values():                      # 스페인어는 발음을 비워 두면 철자에서 만든다
+        if e.pop('auto'):
+            e['p'] = auto_pron(e['k'].split(), forms, entries)
     return entries, forms
+
+
+def auto_pron(words, forms, entries):
+    """철자로 발음을 만든다. 구 안의 이름·카탈루냐어 낱말은 단어표 발음을 쓴다(montse sabe todo → 몬세…)."""
+    from hangul import to_hangul
+    out = []
+    for w in words:
+        k = forms.get((w.lower(),))
+        e = entries.get(k, {})
+        out.append(e['p'] if e.get('t') in ('c', 'p', 'f') and e.get('p') and len(e['p'].split()) == 1
+                   else to_hangul(w))
+    return ' '.join(out)
 
 
 def pron_html(p):
@@ -75,22 +109,78 @@ class Inline:
         self.forms, self.entries = forms, entries
         self.unknown, self.seen, self.uses = set(), set(), {}
         self.shown = set()      # 발음을 이미 보여 준 말
+        self.shown_tok = set()  # 발음 괄호(또는 대사 한 줄 발음) 안에 이미 나온 낱말
+        self.marked = set()     # 새 단어 색을 이미 붙인 말
         self.ch = 1
         self.quiet = False      # True면 발음을 붙이지 않고 본 것으로만 친다(대사 전체 발음을 따로 달 때)
+        self.note = False       # True면 문법 쪽지 안: 단어를 감싸기만 하고 발음·처음 표시·횟수에 넣지 않는다
 
     def word(self, text, key, first=False, pron=None):
-        """단어를 감싼다. 15장까지는 단어표의 어떤 말이든(스페인어·카탈루냐어·아직 안 가르친 말)
+        """단어를 감싼다. PRON_UNTIL 장까지는 단어표의 어떤 말이든(스페인어·카탈루냐어·아직 안 가르친 말)
         책에서 처음 나오는 자리에 한 번 발음을 붙인다. 사람 이름에는 붙이지 않는다."""
+        if self.note:
+            return f'<b class="w" data-k="{html.escape(key)}">{html.escape(text)}</b>'
         self.uses[key] = self.uses.get(key, 0) + 1
-        cls = 'w new' if first else 'w'
-        s = f'<b class="{cls}" data-k="{html.escape(key)}">{html.escape(text)}</b>'
+        inner = self.count_inner(text, key)
         e = self.entries.get(key, {})
-        p = e.get('p') or pron      # 단어표 발음(비우면 철자에서 자동 생성)을 우선한다
+        # 새 단어 색: 그 장 끝 목록에 실린 말(n)이 그 장에서 처음 나오는 자리 한 곳.
+        # 원고의 {낱말|발음} 표시와는 따로 센다(표시는 발음 자리, 색은 목록과 맞춘다).
+        # 그 장의 새 단어가 구 안에만 나오면 그 구에 색을 붙인다(la misma flor ← flor).
+        due = [k for k in [key] + inner if self.entries.get(k, {}).get('t') == 'n'
+               and self.entries[k]['c'] == self.ch and k not in self.marked]
+        new = bool(due) and (due[0] == key or e.get('t') != 'n' or key in self.marked)
+        self.marked.update(due if new else [])
+        cls = 'w new' if new else 'w'
+        s = f'<b class="{cls}" data-k="{html.escape(key)}">{html.escape(text)}</b>'
+        if pron:                    # 원고에 {단어|발음}으로 적은 발음은 그 자리 형태의 발음이다
+            p = pron
+        elif fold(text) == fold(re.sub(r'\s\d+$', '', key)):
+            p = e.get('p')          # 표제어 그대로 나오면 단어표 발음(비우면 철자에서 자동 생성)
+        elif e.get('t') in ('c', 'p', 'f'):
+            # 카탈루냐어·이름은 철자로 만들 수 없으니, 구절의 일부만 나왔으면 단어표 발음에서 그 몫만 떼어 쓴다
+            # (Quina ← quina calor noia). 맞춰 뗄 수 없으면 여기서는 발음을 붙이지 않는다.
+            kt, tt, pw = fold(key).split(), fold(text).split(), (e.get('p') or '').split()
+            at = [i for i in range(len(kt) - len(tt) + 1) if kt[i:i + len(tt)] == tt]
+            p = ' '.join(pw[at[0]:at[0] + len(tt)]) if at and len(pw) == len(kt) else None
+            if not p:
+                return s
+        else:
+            # 구절 항목의 일부(me acuerdo ← me acuerdo del nombre)나 활용형(subiste ← subí)이면
+            # 표제어 발음이 아니라 본문에 나온 형태의 발음을 붙인다(REVISION.md 5번)
+            p = auto_pron([t.group() for t in WORD.finditer(text)], self.forms, self.entries)
+        toks = [t.group().lower() for t in WORD.finditer(text)]
+        content = [t for t in toks if t not in FUNCTION_WORDS] or toks
         if (p and key not in self.shown and e.get('t') != 'p'
-                and self.ch <= AIDS_UNTIL and not self.quiet):
+                and self.ch <= PRON_UNTIL and not self.quiet
+                and not all(t in self.shown_tok for t in content)):
+            # 구 항목이라도 든 낱말을 모두 앞에서 발음과 함께 보았으면 괄호를 다시 달지 않는다
+            # (괄호 = 처음 나온 말. trabajo ← tengo trabajo, el puerto ← puerto)
             s += f'<span class="pr">[{pron_html(p)}]</span>'
+            self.shown_tok.update(toks)
+        elif self.quiet and self.ch <= PRON_UNTIL:
+            self.shown_tok.update(toks)             # 대사 한 줄 발음으로 이미 본 낱말
         self.shown.add(key)
         return s
+
+    def count_inner(self, text, key):
+        """구(句) 항목 안에 든 가르친 단어(n)도 한 번 본 것으로 센다(un kilo y medio → kilo).
+        표시는 바꾸지 않고 반복 횟수(uses)에만 더한다."""
+        toks = [t.group().lower() for t in WORD.finditer(text)]
+        found = []
+        if len(toks) < 2:
+            return found
+        i = 0
+        while i < len(toks):
+            for n in range(len(toks) - i, 0, -1):
+                k = self.forms.get(tuple(toks[i:i + n]))
+                if k and k != key and self.entries[k]['t'] == 'n':
+                    self.uses[k] = self.uses.get(k, 0) + 1
+                    found.append(k)
+                    i += n
+                    break
+            else:
+                i += 1
+        return found
 
     def latin_run(self, run):
         """라틴 문자 덩어리 → 단어표 구(句)를 긴 것부터 맞춰 감싼다."""
@@ -184,7 +274,7 @@ def parse_chapter(path, inline):
     head = lines[0].lstrip('# ').split('|')
     ch = dict(n=int(head[0]), es=head[1].strip(), pr=head[2].strip(), blocks=[])
     inline.ch = ch['n']
-    aids = ch['n'] <= AIDS_UNTIL
+    aids = ch['n'] <= GLOSS_UNTIL
     buf, mode, raw = [], None, []
 
     def flush():
@@ -217,12 +307,14 @@ def parse_chapter(path, inline):
         s = line.strip()
         if mode:
             if s == '@end':
+                inline.note = mode == 'note'
                 ch['blocks'].append(dict(t=mode, lines=[inline(x) for x in raw]))
+                inline.note = False
                 mode, raw = None, []
             else:
                 raw.append(s)
             continue
-        if s in ('@letter', '@address'):
+        if s in ('@letter', '@address', '@note'):
             flush(); mode = s[1:]; continue
         if s == '##':
             flush(); ch['blocks'].append(dict(t='br')); continue
@@ -278,11 +370,28 @@ def block_html(b):
     if b['t'] == 'br':
         return f'<p class="br">{flower_svg()}</p>'
     if b['t'] == 'letter':
-        return '<div class="letter">' + ''.join(f'<p>{x}</p>' for x in b['lines']) + '</div>'
+        cls = ' diary' if b.get('diary') else ''
+        return f'<div class="letter{cls}">' + ''.join(f'<p>{x}</p>' for x in b['lines']) + '</div>'
     if b['t'] == 'address':
         inner = ''.join(f'<p>{x}</p>' for x in b['lines'])
         return f'<div class="address"><div class="address-in">{inner}</div></div>'
+    if b['t'] == 'note':
+        inner = ''.join(f'<p>{x}</p>' for x in b['lines'])
+        return f'<aside class="note"><h4>문법 쪽지</h4>{inner}</aside>'
     raise ValueError(b)
+
+
+def mark_diary(ch):
+    """윤하의 수첩을 편지·쪽지·신문과 구별한다. 원고에서는 모두 @letter 다.
+    장의 마지막 @letter 뒤에 문법 쪽지만 있거나, 바로 다음 문단이 '수첩에' 적었다고 말하면 수첩이다(5장)."""
+    bl = ch['blocks']
+    idx = [i for i, b in enumerate(bl) if b['t'] == 'letter']
+    if not idx:
+        return
+    k = idx[-1]
+    after = bl[k + 1:]
+    if all(b['t'] == 'note' for b in after) or (after and after[0]['t'] == 'p' and '수첩에' in after[0]['h']):
+        bl[k]['diary'] = True
 
 
 # ── 문양 (인라인 SVG. 꽃 하나가 타일·장면 바뀜·열쇠가 된다) ──────────────
@@ -556,6 +665,7 @@ def page_rules(chapters, accent, mute):
 FONT_FILES = (
     'fontsource-gowun-batang-5.1.0/400.css', 'fontsource-gowun-batang-5.1.0/700.css',
     'fontsource-eb-garamond-5.1.0/400.css', 'fontsource-eb-garamond-5.1.0/400-italic.css',
+    'fontsource-eb-garamond-5.1.0/500.css',
     'fontsource-eb-garamond-5.1.0/600.css', 'fontsource-eb-garamond-5.1.0/600-italic.css',
     'fontsource-eb-garamond-5.1.0/500-italic.css',
     'fontsource-noto-sans-kr-5.1.0/400.css', 'fontsource-noto-sans-kr-5.1.0/700.css',
@@ -598,18 +708,26 @@ def print_html(chapters, entries, fontdir, mono=False, pages=None):
             'body { font-family: "Num", "Gowun Batang", "EB Garamond", "Noto Sans KR", serif; }\n')
     if mono:
         # 강조색 하나(--accent)를 먹 60% 근처로. 망점도 같이 옅어진다.
-        css += '\n:root { --accent: #666666; --soft: #f0f0f0; --mute: #555555; }\n'
+        css += '\n:root { --accent: #666666; --soft: #f0f0f0; --rule: #c4c4c4; --mute: #555555; }\n'
     fonts = font_links(fontdir)
     body = [front_matter(chapters, pages or {})]
     for ch in chapters:
+        mark_diary(ch)
         body.append(f'''{opener_html(ch)}
 <section class="chapter" style="page: c{ch["n"]}">
 {''.join(block_html(b) for b in ch["blocks"])}
 </section>
 {wordlist_html(ch, entries)}''')
+    # 책은 30장 단어 목록 쪽에서 끝난다. 낱말이 적어 빈 쪽 아래에 열쇠를 놓아 마지막 쪽으로 맺는다.
+    body[-1] = re.sub(r'<section class="words">(.*)</section>$',
+                      rf'<section class="words last">\1<div class="fin" aria-hidden="true">{KEY_SVG}</div></section>',
+                      body[-1].rstrip(), flags=re.S)
+    # 발음 괄호 안의 띄어쓰기는 양끝 맞춤에 늘어나지 않게 고정 폭 공백(U+2005, 1/4em)으로 찍는다.
+    body = [re.sub(r'<span class="pr">\[.*?\]</span>', lambda m: m.group().replace(' ', '\u2005')
+                   .replace('<span\u2005class', '<span class'), x) for x in body]
     return f'''<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8">
 <title>{TITLE_ES} — 인쇄용</title>{fonts}<style>{css}</style></head>
-<body>{''.join(body)}</body></html>'''
+<body data-measure="{TRIM_W - MARGIN_INNER_MM - MARGIN_OUTER_MM}mm" data-loose="{LOOSE_EM}">{''.join(body)}</body></html>'''
 
 
 # ── 표지 펼침과 납품용 PDF ───────────────────────────────────────────
@@ -624,9 +742,9 @@ BACK_BLURB = ('외할머니가 돌아가신 지 사십구 일째 되던 날, 윤
               '스페인어는 한마디도 모르는 채, 윤하는 봉투에 적힌 주소 하나를 들고 바르셀로나 그라시아로 간다.')
 BACK_HOWTO = (
     '처음 나오는 스페인어 단어에는 한글 발음이 붙습니다.',
-    '15장까지는 스페인어 대사 밑에 우리말 뜻이 붙습니다.',
+    '스페인어 대사 밑에는 마지막 장까지 우리말 뜻이 붙습니다.',
     '장마다 첫 쪽의 QR코드로 스페인어 음성을 듣습니다.',
-    '한국어로 시작한 이야기가 마지막 장에서는 모두 스페인어가 됩니다.',
+    '장이 넘어갈수록 한국어 서술 속 스페인어가 조금씩 늘어납니다.',
 )
 
 MARKS_CSS = """
@@ -807,6 +925,7 @@ CMYK_PALETTE = {
     '#2f5b4a': (.75, .30, .60, .45),  # 짙은 초록 (표지)
     '#fbf3e6': (0, .03, .08, 0),      # 크림 (표지 명판)
     '#f8eeea': (0, .07, .085, .015),  # 편지 바탕 = 테라코타 약 10%
+    '#e5c3b6': (0, .245, .30, .05),   # 수첩 괘선 = 테라코타 약 35%
     '#000000': (0, 0, 0, 1),          # 먹 K100
     '#1d1d1b': (0, 0, 0, 1),          # 먹 화면값 (표지의 글자)
     '#010101': (1, 1, 1, 1),          # 재단선·접지선 = 맞춤색(네 판 모두)
@@ -893,6 +1012,8 @@ def main():
             k = e['k']; c = inline.uses.get(k, 0)
             flag = '' if c >= 3 else '  ← 적음'
             print(f'  {k:16s}{c:3d}{flag}')
+            if not c:
+                print(f'  ! 본문에 없는 새 단어: {k} ({e["c"]}장 목록)', file=sys.stderr)
 
     (SITE / 'es.html').write_text(web_html(chapters, entries), encoding='utf-8')
     print('→ es.html')

@@ -10,7 +10,7 @@
 
 qué hora es. 몇 시예요. 어젯밤 수첩에 적어 둔 문장이었다. 몬세가 벽시계를 가리켰다.
 
-@montse —{Son las|손 라스} {ocho|*오*초}. :: 여덟 시야.
+@montse —{Son las|*손* 라스} {ocho|*오*초}. :: 여덟 시야.
 
 @montse —Y Marc… ¿a qué hora? :: 그리고 마르크는… 몇 시에?
 

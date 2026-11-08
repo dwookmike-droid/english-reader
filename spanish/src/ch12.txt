@@ -37,7 +37,7 @@ periódico. 신문. 화면에는 오래된 신문의 쪽들이 사진으로 떠 
 Ayer {llegó|예*고*} a nuestro puerto el pesquero coreano «Dong-Hae 7», procedente de Las Palmas, para reparaciones en dique seco. A bordo viajan, además de la tripulación, varias familias.
 @end
 
-몇 단어만 알아볼 수 있었다. 1978. puerto. coreano. Las Palmas. familias. 그리고 맨 앞의 llegó. 처음 보는 모양이었다. 신문은 전날 일을 싣는다고 사서가 말했다. 4일 자 신문의 ayer, 어제. 배는 3월 3일에 들어왔다.
+몇 단어만 알아볼 수 있었다. 1978. puerto. coreano. Las Palmas. familias. 그리고 Ayer 다음의 llegó. 처음 보는 모양이었다. 신문은 전날 일을 싣는다고 사서가 말했다. 4일 자 신문의 ayer, 어제. 배는 3월 3일에 들어왔다.
 
 @yunha —¿Llegó? ¿Qué es «llegó»? :: llegó? llegó가 뭐예요?
 
@@ -57,7 +57,7 @@ familias. 가족들. 그 단어를 오래 보았다. 할머니는 남편의 배�
 
 @letter
 14 de noviembre de 1978.
-El domingo {salió|살*리*오} de nuestro puerto el pesquero coreano «Dong-Hae 7», con destino a Las Palmas.
+El domingo {salió|살*리오*} de nuestro puerto el pesquero coreano «Dong-Hae 7», con destino a Las Palmas.
 @end
 
 @marc —Salió. Salir: salió. El domingo doce. :: 떠났다. salir가 salió가 돼요. 12일 일요일에.
@@ -100,7 +100,7 @@ tenía. jugaba. 또 처음 보는 모양이었다. 하지만 이번에는 사전
 
 @letter
 Martes, 1 de septiembre.
-Hoy he aprendido el pasado.
+Hoy he aprendido el pasado. Más o menos.
 El barco llegó a Barcelona el 3 de marzo de 1978.
 El barco salió el 12 de noviembre de 1978.
 El museo es un edificio de piedra. Hay un barco rojo y dorado.
@@ -109,5 +109,6 @@ Martí hizo el reloj en octubre. Antes de la despedida.
 Hacer: hizo. Vivir: vivió. Llegar: llegó. Salir: salió.
 Montse dice: «Tu madre tenía tres años. Jugaba en el patio.»
 Mi madre no sabe nada. Yo tampoco sé nada.
+Necesito buscar más papeles del barco.
 Mañana voy a llamar a mi madre. O pasado mañana.
 @end
