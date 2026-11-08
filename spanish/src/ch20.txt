@@ -20,9 +20,9 @@ de ida y vuelta, el próximo, y cuarto. 매표소 직원의 말을 나는 다 �
 
 ##
 
-{El tren|엘 트렌}은 도시를 빠져나와 몇 분 만에 바다에 닿았다. 기차. 선로는 산과 바다 사이, {la costa|라 *코*스타}를 따라 이어졌다. 해안. Las vías iban por la costa, entre la montaña y el agua. 기차는 가끔 어두운 터널로 들어갔다가, 갑자기 다시 빛 속으로 나왔다. 하얀 바위 옆으로, 파랗고 아주 파란 바다 옆으로. 나는 아이처럼 창에 얼굴을 붙였다.
+{El tren|엘 *트렌*}은 도시를 빠져나와 몇 분 만에 바다에 닿았다. 기차. 선로는 산과 바다 사이, {la costa|라 *코*스타}를 따라 이어졌다. 해안. Las vías iban por la costa, entre la montaña y el agua. 기차는 가끔 어두운 터널로 들어갔다가, 갑자기 다시 빛 속으로 나왔다. 하얀 바위 옆으로, 파랗고 아주 파란 바다 옆으로. 나는 아이처럼 창에 얼굴을 붙였다.
 
-@marc —¿{Qué harás|케 아*라*스} con el péndulo? :: 진자를 받으면 어떻게 할 거예요?
+@marc —¿{Qué harás|*케* 아*라*스} con el péndulo? :: 진자를 받으면 어떻게 할 거예요?
 
 @yunha —¿Yo? Lo llevaré a casa en mis brazos. Como un bebé. :: 나요? 품에 안고 집에 갈 거예요. 아기처럼.
 
@@ -40,7 +40,7 @@ de ida y vuelta, el próximo, y cuarto. 매표소 직원의 말을 나는 다 �
 
 조안은 아주 작고 아주 나이 든 사람이었다. 머리는 솜처럼 하얬고, 커다란 안경을 쓰고 있었다. Llevaba {unas gafas enormes|*우*나스 *가*파스 에*노*르메스}. 더운 날씨인데도 털조끼를 입고 있었다. 조안은 마르크를 껴안고 카탈루냐어로 아주 빠르게 말했다. 그러고는 나를 오래 바라보았다.
 
-@joan —{Tú eres la nieta|투 *에*레스 라 *니에*타}. :: 네가 손녀로구나.
+@joan —{Tú eres la nieta|*투* *에*레스 라 *니에*타}. :: 네가 손녀로구나.
 
 물음이 아니었다. 스페인어였다.
 
@@ -108,11 +108,11 @@ de ida y vuelta, el próximo, y cuarto. 매표소 직원의 말을 나는 다 �
 
 나는 듣고 있지 않았다. 천 밑에서 손가락으로 세고 있었다. 마르크는 보지 못했다. 1975년 이월. 거꾸로 세었다. 일월, 십이월, 십일월… 아홉 달. 1974년 오월.
 
-마르티가 몇 월에 라스팔마스에 갔는지 나는 몰랐다. 조안은 말하지 않았다. 나도 묻지 않았다. No sabía {el mes|엘 메스} exacto. 답이 무서웠다. Tenía miedo de la respuesta.
+마르티가 몇 월에 라스팔마스에 갔는지 나는 몰랐다. 조안은 말하지 않았다. 나도 묻지 않았다. No sabía {el mes|엘 *메*스} exacto. 답이 무서웠다. Tenía miedo de la respuesta.
 
 마침내 마르크가 물었다.
 
-@marc —Yuna. ¿{Qué te pasa|케 테 *파*사}? :: 유나. 무슨 일 있어요?
+@marc —Yuna. ¿{Qué te pasa|*케* 테 *파*사}? :: 유나. 무슨 일 있어요?
 
 @yunha —Nada. Estoy cansada. :: 아무것도 아니에요. 피곤해서요.
 

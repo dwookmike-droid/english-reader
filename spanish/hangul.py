@@ -186,6 +186,13 @@ def render(onset, nucleus, coda):
     return chars, th
 
 
+# 강세 없이 다음 말에 붙어 읽히는 한 음절 말(관사, 전치사, 접속사, 대명사, 소유사 등)
+ATONIC = {'el', 'la', 'los', 'las', 'lo', 'le', 'les', 'me', 'te', 'se', 'nos', 'os', 'un',
+          'de', 'del', 'a', 'al', 'en', 'con', 'por', 'sin', 'y', 'e', 'o', 'u', 'ni', 'que',
+          'si', 'mi', 'mis', 'tu', 'tus', 'su', 'sus', 'cual', 'quien', 'cuan', 'tan', 'pues',
+          'he', 'has', 'ha', 'han'}   # haber 조동사(he desayunado)
+
+
 def to_hangul(word):
     """단어 하나 → 책의 발음 표기 문자열."""
     ph = phonemes(word)
@@ -214,9 +221,12 @@ def to_hangul(word):
             if code >= 0 and code % 28 == JONG.index('ㄴ'):
                 parts[k][0][-1] = chr(ord(last) - JONG.index('ㄴ') + JONG.index('ㅇ'))
     out = []
+    # 한 음절 낱말도 강세를 굵게 적는다(sol → *솔*, más → *마*스. sí *시*, no *노*와 같게).
+    # 관사·전치사·대명사처럼 원래 강세 없이 붙어 읽히는 말은 굵게 하지 않는다.
+    weak = len(sy) == 1 and word.lower() in ATONIC
     for k, (chars, th, stressed) in enumerate(parts):
         marked = [f'_{ch}_' if i in th else ch for i, ch in enumerate(chars)]
-        if not (stressed and len(sy) > 1):
+        if not stressed or weak:
             out.append(''.join(marked))
             continue
         # 따로 적는 끝소리(르·스·드 등, 모음 'ㅡ' 글자)는 굵게 밖에 둔다: *카*르타스, *푸에*르타

@@ -46,7 +46,7 @@ Pero antes quiero decirte una cosa, solo una vez, y con palabras claras, porque 
 첫날부터 사랑해 왔다고 했다. 아이를 품에 재운 채 파란 여행 가방을 들고 몬세의 마당에 들어선 그날부터. 산타 마리아 델 마르에서, 사그라다 파밀리아에서, 병원에서, 티비다보의 비행기 앞에서. 지금도 사랑한다고. 누군가를 어떻게 그만 사랑하는지 모르겠다고 했다. 아무도 가르쳐 주지 않았다고.
 
 @letter
-El reloj está terminado. Lo he tapado con {una sábana blanca|*우*나 *사*바나 *블랑*카} y {está parado|에스*타* 파*라*도}. {Es tuyo|에스 *투*요}. Tú tienes la llave. Si un día vuelves a Barcelona, {dale cuerda|*달*레 *쿠에*르다}. Si no vuelves nunca, no pasa nada. Va a esperar. Los relojes saben esperar. Yo he aprendido de ellos.
+El reloj está terminado. Lo he tapado con {una sábana blanca|*우*나 *사*바나 *블랑*카} y {está parado|에스*타* 파*라*도}. {Es tuyo|*에*스 *투*요}. Tú tienes la llave. Si un día vuelves a Barcelona, {dale cuerda|*달*레 *쿠에*르다}. Si no vuelves nunca, no pasa nada. Va a esperar. Los relojes saben esperar. Yo he aprendido de ellos.
 Kwaenchanayo.
 M.
 @end

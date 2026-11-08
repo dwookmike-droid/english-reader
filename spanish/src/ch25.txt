@@ -85,7 +85,7 @@ Cliente: marinero, barco «Dong-Hae 7».
 Pagado. M. Puig
 @end
 
-항구 시계방. 1974년 11월 20일. 세이코 시계 수리, 유리 교체. 손님: 동해 7호의 선원. {Cliente|*클리엔*테}. 손님. 그리고 서명. M. Puig.
+항구 시계방. 1974년 11월 20일. 세이코 시계 수리, 유리 교체. 손님: 동해 7호의 선원. {Cliente|*클리엔*테}. 그리고 서명. M. Puig.
 
 Marc se inclinó hacia el papel. Lo miró mucho tiempo.
 
@@ -136,7 +136,7 @@ Nadie dijo nada. Vale se tapó la boca con las dos manos.
 @letter
 윤하야.
 서류는 이모가 찾아 줬어. 영수증은 외할아버지 상자에 있더라. 이모 말로는 외할아버지가 그 시계를 돌아가실 때까지 차셨대.
-전에 말한 그 병원 얘기 있잖아. 이모가 외할머니한테 들은 얘기래. 그날 밤 시계방 아저씨가 차로 엄마를 병원에 데려가서, 밤새 곁에 있어 줬대. 그 아저씨 아니었으면 큰일 날 뻔했다고.
+전에 말한 그 병원 얘기 있잖아. 자세한 건 이모가 외할머니한테 들었대. 그날 밤 시계방 아저씨가 차로 엄마를 병원에 데려가서, 밤새 곁에 있어 줬대. 그 아저씨 아니었으면 큰일 날 뻔했다고.
 그 사진 속 아저씨가 그분이구나.
 고맙다고 전해 줘. 엄마는 그분 얼굴을 기억 못 하지만, 고맙다고.
 그리고 바보야, 무서우면 엄마한테 먼저 물어봐.
@@ -166,7 +166,7 @@ Nadie dijo nada. Vale se tapó la boca con las dos manos.
 
 마르크가 잠깐 불빛을 보았다.
 
-@marc —{Si yo fuera tú|시 요 *푸에*라 투}, también habría tenido miedo. Quizás más. Pero no me habría callado tanto tiempo. :: 내가 당신이었어도 무서웠을 거예요. 어쩌면 더. 그래도 그렇게 오래 입을 다물지는 않았을 거예요.
+@marc —{Si yo fuera tú|시 *요* *푸에*라 *투*}, también habría tenido miedo. Quizás más. Pero no me habría callado tanto tiempo. :: 내가 당신이었어도 무서웠을 거예요. 어쩌면 더. 그래도 그렇게 오래 입을 다물지는 않았을 거예요.
 
 @yunha —Ya lo sé. :: 알아요.
 
@@ -186,9 +186,9 @@ Como si llevara algo vivo. 그날 밤 나는 너무 늦게 찾아온 바람과 �
 
 @letter
 Sábado, 31 de octubre. La Castanyada.
-Una docena de castañas, boniatos y doscientos gramos de panellets. Vale se ha comido uno de cada cinco.
+Una docena de castañas y dos boniatos. Vale se ha comido uno de cada cinco.
 He vuelto de la plaza con las castañas contra el pecho, como si llevara algo vivo.
-El sobre de mi madre: el certificado de nacimiento. El recibo de Martí, Las Palmas, 1974. Mi abuelo fue su cliente.
+He abierto el sobre de mi madre: el certificado de nacimiento. El recibo de Martí, Las Palmas, 1974. Mi abuelo fue su cliente.
 La libreta de Martí: «12 de septiembre de 1974. Llegada a Las Palmas».
 Mi madre nació en febrero de 1975. No era posible. Nunca fue posible.
 Qué suerte: no somos primos. Mi madre no es su hija. Ya no hay ningún secreto.

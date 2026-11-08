@@ -110,6 +110,7 @@ class Inline:
         self.unknown, self.seen, self.uses = set(), set(), {}
         self.shown = set()      # 발음을 이미 보여 준 말
         self.shown_tok = set()  # 발음 괄호(또는 대사 한 줄 발음) 안에 이미 나온 낱말
+        self.marked = set()     # 새 단어 색을 이미 붙인 말
         self.ch = 1
         self.quiet = False      # True면 발음을 붙이지 않고 본 것으로만 친다(대사 전체 발음을 따로 달 때)
         self.note = False       # True면 문법 쪽지 안: 단어를 감싸기만 하고 발음·처음 표시·횟수에 넣지 않는다
@@ -120,10 +121,17 @@ class Inline:
         if self.note:
             return f'<b class="w" data-k="{html.escape(key)}">{html.escape(text)}</b>'
         self.uses[key] = self.uses.get(key, 0) + 1
-        self.count_inner(text, key)
-        cls = 'w new' if first else 'w'
-        s = f'<b class="{cls}" data-k="{html.escape(key)}">{html.escape(text)}</b>'
+        inner = self.count_inner(text, key)
         e = self.entries.get(key, {})
+        # 새 단어 색: 그 장 끝 목록에 실린 말(n)이 그 장에서 처음 나오는 자리 한 곳.
+        # 원고의 {낱말|발음} 표시와는 따로 센다(표시는 발음 자리, 색은 목록과 맞춘다).
+        # 그 장의 새 단어가 구 안에만 나오면 그 구에 색을 붙인다(la misma flor ← flor).
+        due = [k for k in [key] + inner if self.entries.get(k, {}).get('t') == 'n'
+               and self.entries[k]['c'] == self.ch and k not in self.marked]
+        new = bool(due) and (due[0] == key or e.get('t') != 'n' or key in self.marked)
+        self.marked.update(due if new else [])
+        cls = 'w new' if new else 'w'
+        s = f'<b class="{cls}" data-k="{html.escape(key)}">{html.escape(text)}</b>'
         if pron:                    # 원고에 {단어|발음}으로 적은 발음은 그 자리 형태의 발음이다
             p = pron
         elif fold(text) == fold(re.sub(r'\s\d+$', '', key)):
@@ -158,18 +166,21 @@ class Inline:
         """구(句) 항목 안에 든 가르친 단어(n)도 한 번 본 것으로 센다(un kilo y medio → kilo).
         표시는 바꾸지 않고 반복 횟수(uses)에만 더한다."""
         toks = [t.group().lower() for t in WORD.finditer(text)]
+        found = []
         if len(toks) < 2:
-            return
+            return found
         i = 0
         while i < len(toks):
             for n in range(len(toks) - i, 0, -1):
                 k = self.forms.get(tuple(toks[i:i + n]))
                 if k and k != key and self.entries[k]['t'] == 'n':
                     self.uses[k] = self.uses.get(k, 0) + 1
+                    found.append(k)
                     i += n
                     break
             else:
                 i += 1
+        return found
 
     def latin_run(self, run):
         """라틴 문자 덩어리 → 단어표 구(句)를 긴 것부터 맞춰 감싼다."""

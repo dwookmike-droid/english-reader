@@ -58,7 +58,7 @@ relojero. reloj에 -ero가 붙은 말. 시계 만드는 사람. 카탈루냐어 
 
 마르크가 내 손가락 끝을 보았다. 그리고 천천히 고개를 끄덕였다.
 
-@marc —{Hemos encontrado|에모스 엥콘트*라*도} la calle. :: 우리가 거리를 찾았네요.
+@marc —{Hemos encontrado|*에*모스 엥콘*트라*도} la calle. :: 우리가 거리를 찾았네요.
 
 hemos encontrado. 우리가 찾았다. 오늘 일이고, 우리가 했으니까 hemos. 나는 수첩에 적었다. He encontrado la calle. 내가 거리를 찾았다. 그리고 그 아래에 한 줄을 더 적었다. Hemos encontrado la calle. 우리가.
 

@@ -19,8 +19,8 @@ maleta	maleta	말*레*타	여행 가방, 캐리어	n	1
 taxi	taxi	*탁*시	택시	n	1
 adónde	adónde	아*돈*데	어디로?	n	1
 vale	vale	*발*레	오케이, 알았어, 좋아	n	1	스페인 사람들이 하루에 수백 번 하는 말
-no entiendo	no entiendo	노 엔*티엔*도	못 알아듣겠어요, 이해가 안 돼요	n	1
-no pasa nada	no pasa nada	노 *파*사 *나*다	괜찮아요, 별일 아니에요	n	1
+no entiendo	no entiendo	*노* 엔*티엔*도	못 알아듣겠어요, 이해가 안 돼요	n	1
+no pasa nada	no pasa nada	*노* *파*사 *나*다	괜찮아요, 별일 아니에요	n	1
 soy	soy	*소*이	나는 ~이다	n	1	ser(이다) 동사의 ‘나’ 형태
 coreana	coreana	코레*아*나	한국 여자, 한국의	n	1	남자는 coreano
 muy bien	muy bien	*무*이 *비엔*	아주 좋아요, 잘했어요	n	1
@@ -30,7 +30,7 @@ buenos días	buenos días	*부에*노스 *디*아스	좋은 아침이에요, 안
 y tú	y tú	이 *투*	너는? 당신은?	n	1
 bienvenida	bienvenida	비엔베*니*다	환영해요, 어서 와요 (여자에게)	n	1	남자에게는 bienvenido
 llave	llave|llaves	*야*베	열쇠	n	1
-tres	tres	*트*레스	셋, 3	n	1
+tres	tres	*트레*스	셋, 3	n	1
 señora	señora	세*뇨*라	(나이 든 여자에게) 부인, 아주머니, 할머니	n	1	남자에게는 señor
 dónde está	dónde está	*돈*데 에스*타*	어디에 있어요?	n	1
 abuela	abuela	아*부엘*라	할머니	n	1	할아버지는 abuelo
@@ -44,7 +44,7 @@ catalán	catalán	카탈*란*	카탈루냐어	x	1
 español	español	에스파*뇰*	스페인어	x	1
 las dos	las dos	라스 *도*스	둘 다	x	1
 aquí	aquí	아*키*	여기	x	1
-la	la	*라*	그 (여자 이름 앞에 붙는 말)	n	2	남자 이름 앞에는 el. llave, calle, leche는 la
+la	la	*라*	그 (여성 낱말 앞에 붙는 말)	n	2	남성 낱말 앞에는 el. llave, calle, leche는 la
 tu	tu	*투*	너의, 당신의	x	1	강세 없는 tu는 ‘너의’, 강세 있는 tú는 ‘너’
 habitación	habitación	아비타_시_*온*	방	x	1
 esta	esta	*에*스타	이 (여성 명사 앞)	x	1
@@ -63,12 +63,12 @@ coreano	coreano	코레*아*노	한국 남자, 한국의	x	1
 del	del	*델*	~의 (de + el)	x	1
 ah	ah	*아*	아!	x	1
 qué tal	qué tal	*케* *탈*	잘 지내요? 어때요? (가벼운 안부)	n	2
-qué es esto	qué es esto	*케* 에스 *에*스토	이게 뭐예요?	n	2	모르는 물건을 가리키며 쓰는 마법의 문장
+qué es esto	qué es esto	*케* *에*스 *에*스토	이게 뭐예요?	n	2	모르는 물건을 가리키며 쓰는 마법의 문장
 pan	pan	*판*	빵	n	2	el pan
 con	con	*콘*	~와 함께, ~을 넣은	n	2	café con leche = 우유 넣은 커피
 tomate	tomate|tomates	토*마*테	토마토	n	2	pan con tomate = 토마토 바른 빵. 카탈루냐의 아침
 leche	leche	*레*체	우유	n	2	la leche
-el	el	*엘*	그 (남자 이름 앞에 붙는 말)	n	2	el pan, el café, el reloj
+el	el	*엘*	그 (남성 낱말 앞에 붙는 말)	n	2	el pan, el café, el reloj
 me llamo	me llamo	메 *야*모	내 이름은 ~이다	n	2
 soy de	soy de	*소*이 데	나는 ~에서 왔다, ~ 출신이다	n	2
 Corea	corea	코*레*아	한국	n	2
@@ -105,7 +105,7 @@ a la	a la	아 라	~로, ~에	x	2
 qué	qué	*케*	무슨, 뭐	x	2
 cashe	cashe	*카*셰	calle의 아르헨티나식 발음	f	2
 es lo mismo	es lo mismo	*에*스 로 *미*스모	똑같아	x	2
-rellotge	rellotge	러*요*제	시계 (카탈루냐어)	c	2	스페인어로는 reloj
+rellotge	rellotge	레*요*제	시계 (카탈루냐어)	c	2	스페인어로는 reloj
 los	los	로스	그 (남자 이름 여러 개 앞)	x	2
 serralleria	serralleria	세라예*리*아	열쇠 가게 (카탈루냐어)	c	2	스페인어로는 cerrajería
 tancat	tancat	탕*캇*	닫힌 (카탈루냐어)	c	2	스페인어로는 cerrado
@@ -121,8 +121,8 @@ i tu	i tu	이 *투*	너는? (카탈루냐어)	c	1	스페인어로는 ¿y tú?
 benvinguda	benvinguda	벰빙*구*다	어서 와요 (카탈루냐어, 여자에게)	c	1	스페인어로는 bienvenida
 clau	clau	*클라*우	열쇠 (카탈루냐어)	c	1	스페인어로는 llave
 aquest carrer ja no existeix	aquest carrer ja no existeix	아*켓* 카*레* *자* 노 엑시스*테시*	이 거리는 이제 없어요 (카탈루냐어)	c	1	스페인어로는 esta calle ya no existe
-demà	demà	더*마*	내일 (카탈루냐어)	c	1	스페인어로는 mañana
-com estàs	com estàs	*콤* 어스*타*스	잘 지내? (카탈루냐어)	c	2	스페인어로는 ¿cómo estás? / ¿qué tal?
+demà	demà	데*마*	내일 (카탈루냐어)	c	1	스페인어로는 mañana
+com estàs	com estàs	*콤* 에스*타*스	잘 지내? (카탈루냐어)	c	2	스페인어로는 ¿cómo estás? / ¿qué tal?
 pa amb tomàquet	pa amb tomàquet	*파* 암 투*마*켓	토마토 바른 빵 (카탈루냐어)	c	2	스페인어로는 pan con tomate
 amb llet	amb llet	암 *옛*	우유 넣어서 (카탈루냐어)	c	2	스페인어로는 con leche
 som-hi	som-hi	*솜*니	가자! (카탈루냐어)	c	2	스페인어로는 vamos
@@ -150,7 +150,7 @@ cuatro	cuatro	*쿠아*트로	넷, 4	n	3
 nada más	nada más	*나*다 *마*스	더는 없어요, 그게 다예요	n	3
 cuánto es	cuánto es	*쿠안*토 *에*스	얼마예요?	n	3	시장과 가게에서 가장 중요한 문장
 cincuenta	cincuenta	_싱_*쿠엔*타	쉰, 50	n	3	4,50 € = cuatro con cincuenta
-quién es el último	quién es el último	*키엔* 에스 엘 *울*티모	누가 마지막이에요? (줄 설 때)	n	3	스페인 시장에서는 줄 대신 이렇게 묻는다
+quién es el último	quién es el último	*키엔* *에*스 엘 *울*티모	누가 마지막이에요? (줄 설 때)	n	3	스페인 시장에서는 줄 대신 이렇게 묻는다
 queso	queso	*케*소	치즈	n	3	카탈루냐어로는 formatge
 doscientos	doscientos	도스*_시_엔*토스	이백, 200	n	3	dos + cientos
 cien	cien	*_시_엔*	백, 100	n	3
@@ -158,7 +158,7 @@ gramos	gramos	*그라*모스	그램	n	3
 cinco	cinco	*_싱_*코	다섯, 5	n	3
 tía	tía	*티*아	고모, 이모, 숙모	n	3	tía abuela = 고모할머니. 남자는 tío
 ya	ya	*야*	이미, 벌써; (대답으로) 알아	n	3
-no sé	no sé	노 *세*	몰라요	n	3
+no sé	no sé	*노* *세*	몰라요	n	3
 diez	diez	*디에*_스_	열, 10	n	3
 euros	euros|euro	*에우*로스	유로	x	3
 sola	sola	*솔*라	혼자 (여자)	x	3	남자는 solo
@@ -174,13 +174,13 @@ menos	menos	*메*노스	빼기, 더 적게	x	3
 al	al	*알*	~에, ~로 (a + el)	x	3
 este chico	este chico	*에*스테 *치*코	이 녀석, 이 아이	x	3
 tía abuela	tía abuela	*티*아 아*부엘*라	고모할머니	x	3
-mercat	mercat	머르*캇*	시장 (카탈루냐어)	c	3	스페인어로는 mercado
+mercat	mercat	메르*캇*	시장 (카탈루냐어)	c	3	스페인어로는 mercado
 així aprens	així aprens	아*시* 아프*렌*스	그래야 배우지 (카탈루냐어)	c	3
 adéu	adéu	아*데*우	잘 가요 (카탈루냐어)	c	3	스페인어로는 adiós
 digues	digues	*디*게스	말해요 (카탈루냐어)	c	3
 maca	maca	*마*카	예쁜 아가씨 (카탈루냐어)	c	3	스페인어 guapa와 비슷
 dos-cents grams	dos-cents grams	*도*스 *센*스 *그람*스	200그램 (카탈루냐어)	c	3	스페인어로는 doscientos gramos
-del de sempre	del de sempre	델 더 *셈*프러	늘 사던 거 (카탈루냐어)	c	3
+del de sempre	del de sempre	델 데 *셈*프레	늘 사던 거 (카탈루냐어)	c	3
 aquest nen	aquest nen	아*켓* *넨*	이 녀석 (카탈루냐어)	c	3
 Jaume	jaume	*자*우메	자우메 — 치즈 가게 주인	p	3
 Llibertat	llibertat	이베르*탓*	리베르타트 — ‘자유’. 그라시아의 시장과 광장 이름	p	3
@@ -197,14 +197,14 @@ línea	línea	*리*네아	선, 노선	n	4	la línea tres = 3호선
 estación	estación|estaciones	에스타*_시_온*	역	n	4	여러 개는 estaciones
 bonita	bonita|bonito	보*니*타	예쁜, 아름다운	n	4	남자 이름에는 bonito
 casa	casa	*카*사	집	n	4	en casa = 집에
-hay	hay	아이	~이 있다	n	4	Hay mucha gente = 사람이 많다. h는 소리가 없다
+hay	hay	*아이*	~이 있다	n	4	Hay mucha gente = 사람이 많다. h는 소리가 없다
 gente	gente	*헨*테	사람들	n	4	la gente. 하나지만 여러 사람을 뜻한다
 me ayuda	me ayuda	메 아*유*다	저 좀 도와주실래요?	n	4	길을 잃었을 때 가장 먼저 쓰는 말
 cerca	cerca	*_세_*르카	가까이, 가깝다	n	4	반대는 lejos
 lejos	lejos	*레*호스	멀리, 멀다	n	4	반대는 cerca
 todo recto	todo recto	*토*도 *렉*토	쭉, 똑바로	n	4	길 안내에서 가장 많이 듣는 말
 derecha	derecha	데*레*차	오른쪽	n	4	a la derecha = 오른쪽으로
-izquierda	izquierda	이_스_*키에르*다	왼쪽	n	4	a la izquierda = 왼쪽으로
+izquierda	izquierda	이_스_*키에*르다	왼쪽	n	4	a la izquierda = 왼쪽으로
 perdida	perdida|perdido	페르*디*다	길을 잃은 (여자)	n	4	남자는 perdido
 para	para	*파*라	~에게, ~을 위해	n	4	
 lunes	lunes	*루*네스	월요일	n	4	
@@ -224,12 +224,12 @@ dónde estabas	dónde estabas	*돈*데 에스*타*바스	어디 있었어?	x	4
 te busqué por todos lados	te busqué por todos lados	테 부스*케* 포르 *토*도스 *라*도스	온 데를 다 찾았어	x	4	
 pero	pero	*페*로	그런데, 하지만	x	4	
 en casa	en casa	엔 *카*사	집에	x	4	
-es del	es del	에스 델	~의 것이다	x	4	
+es del	es del	*에*스 델	~의 것이다	x	4	
 vino esta tarde	vino esta tarde	*비*노 *에스*타 *타르*데	오늘 오후에 왔다	x	4	
 trae	trae	*트라*에	가져와	x	4	Trae la llave = 열쇠를 가져와
 próxima estación	próxima estación	*프록*시마 에스타*_시_온*	다음 역	x	4	
-pròxima estació	pròxima estació	*프로*크시마 어스타시*오*	다음 역 (카탈루냐어)	c	4	스페인어로는 próxima estación. 바르셀로나 지하철 안내 방송
-estació	estació	어스타시*오*	역 (카탈루냐어)	c	4	스페인어로는 estación
+pròxima estació	pròxima estació	*프로*크시마 에스타시*오*	다음 역 (카탈루냐어)	c	4	스페인어로는 próxima estación. 바르셀로나 지하철 안내 방송
+estació	estació	에스타시*오*	역 (카탈루냐어)	c	4	스페인어로는 estación
 Fontana	fontana	폰*타*나	폰타나 — 그라시아의 지하철역	p	4
 Diagonal	diagonal	디아고*날*	디아고날 — 바르셀로나를 비스듬히 가로지르는 큰길과 그 역	p	4
 Catalunya	catalunya	카탈*루*냐	카탈루냐	p	4
@@ -290,7 +290,7 @@ más	más		더	x	5
 la torre	la torre	라 *토*레	탑	x	2
 por fin	por fin	포르 *핀*	드디어	x	4
 qué susto	qué susto	*케* *수*스토	깜짝 놀랐잖아!	x	4
-hoy aquí	hoy aquí	오이 아*키*	오늘 여기	x	4
+hoy aquí	hoy aquí	*오이* 아*키*	오늘 여기	x	4
 por la tarde	por la tarde	포르 라 *타*르데	오후에	x	4	tarde = 오후
 perdone	perdone	페르*도*네	실례합니다 (모르는 어른에게, 공손하게)	x	4	perdón보다 공손하다
 fiesta	fiesta		축제, 파티	n	6	la fiesta
@@ -324,7 +324,7 @@ a dormir	a dormir		자자, 잘 시간이야	x	6
 le gusta	le gusta		그(그녀)는 ~이 좋다	x	6
 sonríe	sonríe		웃는다, 미소 짓는다	x	6
 cinc	cinc	*싱*크	다섯 (카탈루냐어)	c	6
-quatre	quatre	*쿠아*트러	넷 (카탈루냐어)	c	6
+quatre	quatre	*쿠아*트레	넷 (카탈루냐어)	c	6
 u	u	*우*	하나 (카탈루냐어)	c	6
 esto	esto		이것 (가까이 있는 것)	x	2	멀리 있는 것은 eso
 fondo	fondo		바닥, 밑	x	6
@@ -365,7 +365,7 @@ taller	taller		공방, 작업장	n	7	el taller
 padre	padre		아버지	n	7	어머니는 madre
 y de su padre	y de su padre		그리고 그분의 아버지의	x	7
 qué hay ahora	qué hay ahora		지금은 뭐가 있어요?	x	7
-nada	nada		아무것도 (없다)	n	7	de nada, nada más에도 들어 있다
+nada	nada		아무것도 (없다)	n	12	de nada, nada más에도 들어 있다
 parte	parte		일부, 부분	x	7
 vive	vive		살아 있다, 산다	n	7	vivir = 살다. Ya no vive = 이제 살아 있지 않다
 ya no vive	ya no vive		이제 살아 있지 않다	x	7
@@ -380,7 +380,7 @@ he visto	he visto		(오늘) 봤다	x	7
 un buzón	un buzón|buzón		우체통	n	7
 mapa	mapa|un mapa		지도	n	7
 número	número		번호, 번지	x	7
-Plaça de Sant Jaume	plaça de sant jaume	*플라*사 더 *산* *자*우메	산 자우메 광장 — 시청과 카탈루냐 정부 청사가 마주 보는 광장	p	7
+Plaça de Sant Jaume	plaça de sant jaume	*플라*사 데 *산* *자*우메	산 자우메 광장 — 시청과 카탈루냐 정부 청사가 마주 보는 광장	p	7
 viernes	viernes		금요일	x	6
 nos ayudas	nos ayudas		우리 좀 도와줄래?	x	6
 voy a	voy a	*보*이 아	나는 ~할 것이다	n	8	ir a + 동사원형 = 앞으로 할 일. Voy a comer = 먹을 거야
@@ -435,7 +435,7 @@ lo siento mucho	lo siento mucho		정말 유감이에요	x	8
 usted	usted		당신 (높여 부르는 말)	n	8	tú보다 공손하다
 habla	habla		말한다	x	8	hablar = 말하다
 mañana voy a buscar	mañana voy a buscar		내일 찾아볼게	x	8
-buscar	buscar		찾다	n	8
+buscar	buscar		찾다	n	12
 uno viejo	uno viejo		오래된 것 하나	x	8	viejo = 오래된, 늙은
 viejo	viejo|viejas|vieja|viejos		오래된	n	8
 otra cosa	otra cosa		하나 더, 다른 것	x	8
@@ -702,7 +702,7 @@ para reparación en el dique	para reparación en el dique|reparación|dique		도
 tripulación y familias	tripulación y familias|tripulación|familias		선원과 가족들	n	12
 pasado	pasado		과거; 지나간	n	12	pasado mañana = 모레
 presente	presente		현재	x	12
-hace mucho tiempo	hace mucho tiempo|tiempo		오래전에	n	12
+hace mucho tiempo	hace mucho tiempo|tiempo		오래전에	n	20
 noviembre	noviembre		11월	x	12
 salió	salió		떠났다 (과거)	n	12	salir의 과거
 salir	salir		나가다, 떠나다	n	12
@@ -737,7 +737,7 @@ dijo	dijo|dije|dijiste|dijimos		말했다	n	13	decir의 과거
 llegaste	llegaste		네가 도착했다	x	13
 llegas	llegas		네가 도착한다	x	13
 vino	vino		왔다	n	13	venir의 과거. (같은 꼴로 ‘포도주’라는 뜻도 있다)
-se fue	se fue		가 버렸다, 떠났다	x	13
+se fue	se fue	세 *푸에*	가 버렸다, 떠났다	x	13
 no quería	no quería|quería		원하지 않았다	x	13	querer의 과거
 lo sabía	lo sabía		나는 그걸 알고 있었다	x	13
 el piso	el piso|piso		아파트, 집	x	13
@@ -1071,14 +1071,14 @@ por eso	por eso		그래서	n	16
 traje	traje		데려왔다; (명사) 정장	x	16	traer의 과거
 de repente	de repente|repente		갑자기	n	16
 me giré	me giré|giré		돌아보았다	x	16
-claro	claro		물론	n	9
+claro	claro		물론	n	4
 todo el mundo	todo el mundo|mundo		모든 사람	n	16	직역: 온 세상
 aplaudía	aplaudía		박수를 쳤다	x	16
 al salir	al salir		나오면서	x	16
 casi	casi		거의	x	16
 cenar	cenar		저녁을 먹다	n	16
 el barrio	el barrio|barrio		동네	n	16
-Poble Sec	poble sec	*포*블러 *섹*	포블레 섹 — 몬주익 아래 동네	p	16
+Poble Sec	poble sec	*포*블레 *섹*	포블레 섹 — 몬주익 아래 동네	p	16
 llena de	llena de|llena		~로 가득한	x	16
 la puerta abierta	la puerta abierta|abierta		열린 문	x	16
 la barra	la barra|barra		바 카운터	x	16
@@ -1182,7 +1182,7 @@ dos novios	dos novios|novios		연인 한 쌍	x	17	novio = 남자 친구, 신랑
 señora con perro	señora con perro|perro		개를 데리고 있는 부인	x	17	perro = 개
 Sr.	sr	세*뇨*르	씨, 님 (señor의 줄임)	x	17
 su hija	su hija|hija		그의 딸	n	17
-sept	sept		9월 (septiembre의 줄임)	x	17
+sept	sept	세프*티엠*브레	9월 (septiembre의 줄임)	x	17
 pagada	pagada|pagar		돈을 낸	x	17
 en blanco y negro	en blanco y negro		흑백으로	x	17
 gris	gris		회색	x	17
@@ -1441,7 +1441,7 @@ estudiar	estudiar		공부하다	x	21
 quiero que conozcas	quiero que conozcas|conozcas		네가 ~를 만나 봤으면 해	n	21	quiero que + 접속법: 남에게 바라는 것
 conocer	conocer		알다, 처음 만나다	n	21
 el cementerio	el cementerio|cementerio		묘지	n	21
-Poblenou	poblenou	포블러*노*우	포블레노우 — 바다 옆 옛 공장 동네	p	21
+Poblenou	poblenou	포블레*노*우	포블레노우 — 바다 옆 옛 공장 동네	p	21
 nunca te lo he pedido	nunca te lo he pedido|pedido		한 번도 부탁한 적 없다	x	21
 te lo pido ahora	te lo pido ahora|pido		지금 부탁해	x	21
 se pone otra ropa	se pone otra ropa|ropa		다른 옷을 입는다	x	21
@@ -1508,7 +1508,7 @@ necesitaré	necesitaré		필요할 것이다	x	20
 para enseñárselo	para enseñárselo|enseñárselo		그에게 보여 주려고	x	20
 nueve meses	nueve meses		아홉 달	x	20
 la azotea	la azotea|azotea		옥상	n	22	카탈루냐어로는 terrat
-terrat	terrat	터*랏*	옥상 (카탈루냐어)	c	22
+terrat	terrat	테*랏*	옥상 (카탈루냐어)	c	22
 cuerdas con ropa tendida	cuerdas con ropa tendida|cuerdas|tendida		빨래가 널린 줄	x	22
 una vista de tejados	una vista de tejados|vista|tejados		지붕들이 보이는 풍경	x	22
 la llaman	la llaman|llaman		그것을 ~라고 부른다	x	22
@@ -1648,7 +1648,7 @@ monte serrado	monte serrado|serrado		톱으로 자른 산	x	24
 una sierra	una sierra|sierra		톱; 산맥	x	24
 la montaña sagrada	la montaña sagrada|sagrada		성스러운 산	x	24
 una bola	una bola|bola		공, 구슬	x	24
-La Moreneta	la moreneta|moreneta	라 무러*네*타	모레네타 — 몬세라트의 검은 성모상 (카탈루냐어 ‘까무잡잡한 아가씨’)	c	24
+La Moreneta	la moreneta|moreneta	라 무레*네*타	모레네타 — 몬세라트의 검은 성모상 (카탈루냐어 ‘까무잡잡한 아가씨’)	c	24
 la visitaba cada año	la visitaba cada año|visitaba		해마다 찾아갔다	x	24
 he tocado	he tocado|tocado		만졌다	x	24
 fría y lisa	fría y lisa|frías|lisa		차갑고 매끄러운	x	24
@@ -1751,7 +1751,7 @@ que no hablan	que no hablan|hablan		말하지 않는	x	25
 certificación de nacimiento	certificación de nacimiento|certificación|el certificado de nacimiento|el certificado|certificado		출생 증명서	x	25	
 mil novecientos	mil novecientos|mil|novecientos		천구백	x	25	
 un recibo	un recibo|recibo|el recibo		영수증	x	25	
-XI	XI	온세	11 (로마 숫자, 11월)	f	25	
+XI	XI		11 (로마 숫자, 11월)	f	25	
 Seiko	Seiko	세이코	세이코 (일본 시계 상표)	f	25	
 cliente	cliente|el cliente		손님, 고객	n	25	
 pagado	pagado		지불됨	x	25	
@@ -1909,7 +1909,7 @@ se le pasará	se le pasará|pasará		지나갈 것이다	x	27
 perdernos	perdernos|perdete|me perdí|perdí|los perdidos|perdidos		길을 잃다	x	27	
 tenía prisa	tenía prisa|prisa		서두르고 있었다	x	27	
 quedado	quedado		남은	x	27	
-re	re|re orgullosos	레	엄청 (아르헨티나식)	x	27	
+re	re|re orgullosos	*레*	엄청 (아르헨티나식)	x	27	
 un rectángulo	un rectángulo|rectángulo		직사각형	x	27	
 del resto	del resto|resto		나머지	x	27	
 nos reíamos	nos reíamos|reíamos		(우리는) 웃곤 했다	x	27	
@@ -1978,7 +1978,7 @@ habérselo	habérselo|no habérselo dicho		그것을 그에게 ~한 것	x	27
 llegué	llegué		도착했다	x	27	
 un marqués	un marqués|marqués		후작	x	27	
 al pie de	al pie de|pie		~의 기슭에	x	27	
-¿factura esta maleta?	¿factura esta maleta?|Factura|factura		이 가방 부치시나요?	n	29	
+¿factura esta maleta?	¿factura esta maleta?|Factura|factura	팍*투*라 *에*스타 말*레*타	이 가방 부치시나요?	n	29	
 El Prat	El Prat|Prat	엘 프랏	엘프라트 (공항)	p	29	
 pues	pues|Pues		그럼, 그러니까	x	29	
 ten cuidado	ten cuidado|Ten		조심해	x	29	
@@ -2001,7 +2001,7 @@ para que cuentes los días	para que cuentes los días|cuentes		날을 세라고	
 despegó	despegó		이륙했다	x	29	
 dormidos	dormidos		잠든	x	29	
 ¿quiere que le dé…?	¿quiere que le dé…?|dé		~를 드릴까요?	x	29	dar → dé
-las tarjetas de embarque	la tarjeta de embarque|las tarjetas de embarque|tarjetas de embarque|tarjetas|embarque		탑승권	n	29	
+la tarjeta de embarque	la tarjeta de embarque|las tarjetas de embarque|tarjetas de embarque|tarjetas|embarque		탑승권	n	29	
 fríos	fríos		차가운	x	29	
 por hacerme llorar	por hacerme llorar|hacerme		나를 울려서	x	29	
 lo más picante que haya	lo más picante que haya|haya		있는 것 중 가장 매운 것	x	29	
@@ -2070,7 +2070,7 @@ no aguantaba	no aguantaba|aguantaba		버티지 못했다	x	29
 directo	directo		직항	x	29	
 un viaje	un viaje|viaje|otro viaje		여행	x	29	
 Annyeonghaseyo	Annyeonghaseyo	안녕하세요	안녕하세요 (한국어)	f	30	
-anoche	anoche|Anoche		어젯밤	n	30	
+anoche	anoche|Anoche		어젯밤	n	27	
 hubo	hubo		있었다 (haber)	x	30	
 tu mamá	tu mamá|mamá		엄마	x	30	
 la meva nena	la meva nena|meva	라 메바 네나	내 아가 (카탈루냐어)	c	30	
@@ -2082,3 +2082,5 @@ Gran Canaria	gran canaria	*그란* 카*나*리아	그란카나리아 — 라스�
 
 cantamos	cantamos		(우리는) 노래했다	x	30	
 exacto	exacto		정확한	x	20	
+
+Martí Puig i Ferrer	martí puig i ferrer		마르티 푸치 이 페레르 — 마르티의 온이름 (카탈루냐식, 아버지 성 i 어머니 성)	p	21
