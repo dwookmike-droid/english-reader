@@ -1,94 +1,148 @@
 # 13 | Te esperé | 테 에스페레
 
-이제부터는 내 이야기를 스페인어로 해 보려고 한다. 서툴러도.
+목요일 아침, 마르크가 큰 사전을 들고 몬세의 집에 왔다. Marc {vino|*비*노}. 사전은 벽돌처럼 두꺼웠다. 마르크는 그것을 {la mesa de la cocina|라 *메*사 데 라 코*_시_*나} 위에 내려놓았다. 부엌 식탁. 그 위에는 이미 편지 열한 통이 나란히 놓여 있었다.
 
-El jueves por la mañana, Marc vino al piso de Montse con un diccionario grande. Yo tenía las once cartas en la mesa de la cocina. Montse hizo café y se fue al mercado. No quería estar en la cocina con las cartas. Yo lo sabía.
+몬세는 커피를 끓여 놓고 장바구니를 들고 시장에 가 버렸다. Montse se fue. 편지가 놓인 부엌에 있고 싶지 않은 것이다. No quería {estar|에스*타*르} en la cocina con las cartas. 나는 그걸 알았다. 마르크도 알았을 것이다.
 
 @marc —Hoy leemos una carta entera. Una sola. Despacio. :: 오늘은 편지 한 통을 다 읽어요. 딱 한 통만. 천천히.
 
-@yunha —¿Cuál? :: 어느 거요?
+@yunha —¿{Cuál|*쿠알*}? :: 어느 거요?
 
 @marc —Tú decides. Es tu abuela. :: 당신이 정해요. 당신 할머니잖아요.
 
-Miré los sobres. Todos tenían la misma letra, inclinada a la derecha. El papel del último sobre era un poco más blanco, pero no pensé en eso. Elegí el tercero. Tenía una mancha de café en una esquina. Me gustó esa mancha. Pensé: mi abuela leyó esta carta con un café en la mano.
+나는 {los sobres|로스 *소*브레스}를 보았다. 봉투들. 모두 같은 글씨였다. 오른쪽으로 기울어진 파란 글씨. 맨 마지막 봉투만 종이가 조금 더 하얬다. 그때는 그게 무슨 뜻인지 생각하지 않았다.
 
-Abrí el sobre. Marc puso el diccionario entre los dos.
+나는 세 번째 봉투를 골랐다. 모서리에 커피 얼룩이 있었다. 그 얼룩이 마음에 들었다. {Alguien|*알*기엔}이 이 편지를 읽으면서 커피를 마셨다. 누군가. 아마 할머니가. Mi abuela {leyó|레*요*} esta carta con un café en la mano.
+
+봉투를 열었다. 마르크가 사전을 우리 둘 사이에 놓았다. Marc {puso|*푸*소} el diccionario entre los dos. puso. 또 과거형이었다.
 
 ##
 
-Tardamos dos horas. Marc no me traducía las frases. Me explicaba las palabras, una por una, y yo escribía. Cuando yo no entendía un verbo, él lo decía en presente y luego en pasado. Espero, esperé. Llegas, llegaste. Al final, la carta estaba en mi cuaderno, entera. Aquí está:
+두 시간이 걸렸다. 마르크는 문장을 통째로 번역해 주지 않았다. 단어를 하나씩 설명해 주었고, 나는 받아 적었다. 모르는 동사가 나오면 마르크는 그것을 현재형으로 한 번, 과거형으로 한 번 말했다. Espero, esperé. Llegas, llegaste. 기다린다, 기다렸다. 도착한다, 도착했다. 하나는 지금이고 하나는 끝난 일이었다.
+
+그런데 마르크는 가끔 다른 과거형도 썼다. {era|*에*라}, miraba. {fue|*푸에*}, miró가 아니었다. 왜 그런지 물었다.
+
+@marc —«Fue» es una vez. «Era» es el fondo. :: fue는 한 번이에요. era는 배경이고요.
+
+마르크는 더 말하지 않았다. 나는 그 말을 {mi cuaderno|미 쿠아*데*르노}에 적었다. 내 수첩. fue는 한 번. era는 배경.
+
+편지는 날짜로 시작했다.
 
 @letter
 Barcelona, 2 de diciembre de 1978
-
 Querida Sun-rye:
+¿{Te acuerdas|테 아*쿠에*르다스} del día de la Sagrada Familia?
+@end
 
-¿Te acuerdas del día de la Sagrada Familia? Era un domingo de mayo. Te esperé en la plaza, delante de la fachada. Esperé una hora. Había grúas, pero no había ruido: era domingo. Yo solo miraba la calle.
+te acuerdas. 기억나? 이틀 전 저녁에 몬세가 me acuerdo라고 했었다. 기억해. 같은 말이 이번에는 묻는 모양으로 와 있었다. 사그라다 파밀리아의 그날, 기억나?
 
-Llegaste tarde, con la niña en brazos. Dijiste: «Perdón, Martí. La niña no quería dormir». Yo te dije: «Kwaenchanayo». Es «no pasa nada» en coreano. Fueron mis primeras palabras en coreano. ¿Te acuerdas? Las aprendí en un libro, para ti. Tú te reíste mucho.
+@letter
+Era un domingo de mayo. Te {esperé|에스페*레*} en la plaza, {delante de|델*란*테 데} la fachada. Esperé una hora.
+@end
 
-Después caminamos alrededor de la iglesia. Tú miraste las torres y dijiste: «No está terminada». Yo te dije: «Barcelona tampoco. Yo tampoco».
+esperé. 나는 기다렸다. delante de. ~앞에서. 오월의 어느 일요일, 마르티는 성당 정면 앞 광장에서 할머니를 기다렸다. 한 시간 동안.
 
-Ahora tú estás en Las Palmas y yo estoy aquí, delante de la misma iglesia sin terminar. Hoy hace frío. No hay nadie en la plaza.
+@letter
+{Había|아*비*아} grúas, pero no había ruido: era domingo. Yo solo miraba la calle.
+@end
+
+había는 hay의 과거라고 마르크가 말했다. hay. 있다. había. 있었다. 크레인은 있었지만 소리는 없었다. 일요일이었으니까. 마르티는 거리만 바라보고 있었다. 누가 오는지 보려고. 한 사람이 오는지 보려고.
+
+@letter
+Llegaste tarde, con la niña en brazos. Dijiste: «Perdón, Martí. La niña no quería dormir».
+@end
+
+llegaste. 너는 도착했다. 늦게. 아이를 안고. 그 아이가 누구인지는 사전이 없어도 알았다. 세 살의 엄마. 엄마가 잠을 안 자서, 할머니는 늦었다. 나는 웃음이 났다가, 곧 웃을 수 없게 되었다.
+
+@letter
+Yo te dije: «Kwaenchanayo». Es «no pasa nada» en coreano. Fueron mis primeras palabras en coreano. ¿Te acuerdas? Las aprendí en un libro, para ti. Tú te reíste mucho.
+@end
+
+‘Kwaenchanayo.’ 마르크는 그 단어를 읽지 못했다. 나는 소리 내어 읽었다.
+
+괜찮아요.
+
+마르티가 할머니에게 처음 한 한국어는 그 말이었다. 책에서 배워서. 할머니를 위해서. 내가 첫날 택시 기사에게 배운 no pasa nada와 같은 말이었다. 사십팔 년 전에 같은 말이 반대 방향으로 건너갔다. 할머니는 그 말을 듣고 많이 웃었다고 했다.
+
+@letter
+Después caminamos alrededor de la {iglesia|이*글레*시아}. Tú miraste {las torres|라스 *토*레스} y dijiste: «No está terminada». Yo te dije: «Barcelona tampoco. Yo tampoco».
+@end
+
+la iglesia. 성당. las torres. 탑들. 둘은 성당 둘레를 걸었다. 할머니가 탑을 올려다보며 말했다. 완성되지 않았네요. 마르티가 대답했다. 바르셀로나도 아직이에요. 나도 아직이고요.
+
+@letter
+Ahora tú estás en Las Palmas y yo estoy aquí, delante de la misma iglesia sin terminar. Hoy {hace frío|*아*_세_ *프리*오}. {No hay nadie|*노* *아이* *나*디에} en la plaza.
 
 Escríbeme.
 
 M.
 @end
 
-Leí la carta tres veces. La primera vez, con el diccionario. La segunda vez, en voz baja. La tercera vez, no pude terminarla. 세 번째에는 끝까지 읽을 수가 없었다.
+hace frío. 춥다. no hay nadie. 아무도 없다. 할머니는 라스팔마스에 있었고, 마르티는 바르셀로나의 같은 광장에 서 있었다. 십이월이었다. 추웠고, 광장에는 아무도 없었다. 편지는 한 단어로 끝났다. escríbeme. 나에게 편지해 줘.
 
-@yunha —«Kwaenchanayo»… en coreano. Él aprendió palabras en coreano. Para ella. :: ‘괜찮아요’를… 한국어로. 그분이 한국어 말을 배웠어요. 할머니를 위해서.
+다 읽고 나서 나는 편지를 처음부터 다시 읽었다. 세 번 읽었다. 처음에는 사전을 보며. 두 번째는 작은 소리로. 세 번째에는 끝까지 읽을 수가 없었다. La tercera vez, no {pude|*푸*데} terminarla.
+
+@yunha —«Kwaenchanayo»… en coreano. Él aprendió palabras en coreano. Para {ella|*에*야}. :: ‘괜찮아요’를… 한국어로. 그분이 한국말을 배웠어요. 할머니를 위해서.
 
 @marc —Mi abuelo era así. Nunca hablaba mucho. Pero aprendía cosas. :: 우리 할아버지는 그랬어요. 말은 많이 안 했어요. 그래도 늘 뭔가를 배웠어요.
 
-Marc dijo «era» y «hablaba». No «fue», no «habló». Le pregunté por qué. Me explicó: «fue» cuenta una cosa que pasó y terminó. «Era» dice cómo era una persona, o cómo era un lugar, o qué pasaba alrededor: el fondo de la historia. El pasado de una vez y el pasado de fondo. El español tiene dos pasados, y los dos estaban en la carta. Y una sorpresa más: «fue» es el pasado de ser y también de ir. Se fue, fueron: la misma forma. fue는 ‘~였다’도 되고 ‘갔다’도 된다. 문맥이 알려 준다.
-
-괜찮아요. 마르티가 할머니에게 처음 한 한국어는 그 말이었다. 내가 첫날 택시 기사에게 배운 no pasa nada와 같은 말. 사십팔 년 전, 같은 말이 반대 방향으로 건너갔다.
+마르크는 era, hablaba라고 했다. 아까 수첩에 적은 말이 떠올랐다. fue는 한 번. era는 배경. 마르티가 기다린 것은 한 번이었다. esperé. 하지만 마르티가 어떤 사람이었는지는 배경이었다. era así.
 
 ##
 
-오후에 우리는 성당에 갔다. Por la tarde fuimos a la Sagrada Familia. Tomamos el metro. Marc no habló en el metro. Yo tampoco. Yo tenía la carta en el bolsillo, al lado de la llave.
+오후에 우리는 성당에 갔다. Por la tarde fuimos a la Sagrada Familia. 지하철을 탔다. 마르크는 지하철에서 말이 없었다. 나도 그랬다. 편지는 내 주머니에, 열쇠 옆에 있었다.
 
-Salimos a una plaza con un estanque y árboles. Al otro lado del agua estaba la iglesia. Era enorme. Era más grande que en las fotos, más grande que en mi cabeza. Las torres subían al cielo como dedos de piedra. En el agua del estanque, la iglesia estaba al revés.
+지하철역을 나오자 나무와 {el estanque|엘 에스*탕*케}가 있는 광장이 나왔다. 연못. 물 건너편에 성당이 서 있었다. La iglesia {estaba|에스*타*바} al otro lado del agua. estaba. 있었다.
 
-Había grúas. Todavía había grúas. Y ruido. Y mucha gente con cámaras.
+성당은 {enorme|에*노*르메}했다. 거대했다. {las fotos|라스 *포*토스}에서 본 것보다 컸고, 내 머릿속에 있던 것보다 컸다. 탑들이 돌로 된 손가락처럼 하늘로 뻗어 있었다. 연못 물에는 성당이 거꾸로 비쳐 있었다. En el agua del estanque, la iglesia estaba al revés.
+
+크레인이 있었다. 아직도 크레인이 있었다. Había grúas. 그리고 소리가 있었다. 카메라를 든 사람들이 아주 많았다.
 
 @yunha —«Había grúas». Igual que en 1978. :: ‘크레인이 있었다.’ 1978년이랑 똑같네요.
 
 @marc —Igual. Pero en 1978 había menos torres. Muchas menos. Mira. :: 똑같아요. 그래도 1978년엔 탑이 더 적었어요. 훨씬 적었죠. 봐요.
 
-Marc buscó en su móvil una foto antigua de la iglesia, de los años setenta. En la foto había solo unas pocas torres y nada en el centro. Era un esqueleto. Ahora el esqueleto tenía cuerpo, color, ventanas.
+마르크가 휴대폰으로 칠십 년대의 성당 사진을 찾아 보여 주었다. 사진 속에는 탑이 몇 개뿐이었고 가운데는 비어 있었다. 뼈대 같았다. 지금은 그 뼈대에 몸이 붙고, 색이 붙고, 창이 붙어 있었다.
 
-Me senté en un banco al lado del estanque. En 1978 quizás no había estanque, pero era la plaza de la carta. Miré la calle, como Martí. Pensé: aquí esperó una hora. Aquí llegó tarde mi abuela, con mi madre en brazos. Aquí ella se rio.
+나는 연못가 벤치에 앉았다. {Me senté|메 센*테*} en un banco, al lado del estanque. 1978년에는 연못이 없었을지도 모른다. 그래도 편지 속의 그 광장이었다. 나는 마르티처럼 거리를 바라보았다. Aquí esperó una hora. 여기서 마르티는 한 시간을 기다렸다. 여기로 할머니가, 엄마를 안고 늦게 왔다. 여기서 할머니가 웃었다.
 
-Marc se sentó a mi lado. Durante un rato no dijimos nada. Después habló, mirando las torres.
+마르크가 내 옆에 앉았다. Marc se sentó {al lado de|알 *라*도 데} mí. {Durante|두*란*테} un rato, 한동안, 우리는 아무 말도 하지 않았다. 그러다 마르크가 탑을 올려다보며 말했다.
 
 @marc —«Barcelona tampoco. Yo tampoco». ¿Sabes qué quiere decir? :: ‘바르셀로나도 아직이야. 나도 아직이야.’ 무슨 뜻인지 알아요?
 
 @yunha —Que él no estaba terminado. Como la iglesia. :: 그분도 다 완성되지 않았다는 거요. 성당처럼.
 
-@marc —Sí. Y que esperaba. :: 네. 그리고 기다리고 있었다는 거.
+@marc —Sí. Y que {esperaba|에스페*라*바}. :: 네. 그리고 기다리고 있었다는 거.
 
-Esperaba. Otra vez el pasado de siempre. No esperó una vez. Esperaba, siempre, mucho tiempo.
+esperaba. 이번에는 esperé가 아니었다. 한 번 기다린 것이 아니었다. 오래, 계속, 기다리고 있었다. {Otra vez|*오*트라 *베*_스_} el pasado de fondo. 또다시, 배경의 과거였다.
 
-외할아버지 생각이 났다. Yo pensé en mi abuelo coreano. El marido de mi abuela, un marinero del Dong-Hae 7. Murió cuando yo tenía siete años. Era un hombre grande y callado. Olía a mar y a tabaco. Lo quería mucho. Y ahora, en este banco, no sabía qué pensar. Mi abuela estaba casada. Martí lo sabía. Y escribía «Querida Sun-rye» en sus cartas.
+외할아버지 생각이 났다. 할머니의 남편. 동해 7호의 선원. 내가 일곱 살 때 세상을 떠났다. Mi abuelo {murió|무*리오*} {cuando|*쿠안*도} yo tenía siete años. cuando. ~할 때. 크고 말이 없는 사람이었다. 바다 냄새와 담배 냄새가 났다. 나는 할아버지를 아주 좋아했다.
 
-Marc vio mi cara.
+그런데 지금 이 벤치에서 나는 무슨 생각을 해야 할지 몰랐다. 할머니는 결혼한 사람이었다. 마르티도 그걸 알았다. 그런데도 편지마다 Querida Sun-rye라고 썼다.
+
+Marc {vio|*비오*} mi cara. vio. 보았다. 마르크가 내 얼굴을 보았다.
 
 @marc —No tienes que entenderlo todo hoy. Poco a poco. :: 오늘 다 이해할 필요는 없어요. 조금씩.
 
-Poco a poco. Las palabras de Montse en la boca de Marc. Sonreí un poco.
+몬세가 하던 말이 마르크의 입에서 나왔다. 나는 조금 웃었다. {Sonreí|손레*이*} un poco.
 
-내가 할머니를 원망해야 하는지, 마르티를 미워해야 하는지, 아니면 아무도 미워하지 않아도 되는지, 나는 몰랐다. 다만 이 성당이 그때도 지금도 다 지어지지 않은 채라는 사실이 이상하게 위로가 되었다.
+내가 할머니를 원망해야 하는지, 마르티를 미워해야 하는지, 아니면 아무도 미워하지 않아도 되는지, 나는 몰랐다. 다만 이 성당이 그때도 지금도 다 지어지지 않은 채라는 사실이 이상하게 위로가 되었다. No está terminada. Yo tampoco.
 
 @letter
 Jueves, 3 de septiembre.
 Hoy he leído la tercera carta. Entera.
-Martí esperó a mi abuela una hora delante de la Sagrada Família.
+Martí esperó a mi abuela una hora delante de la Sagrada Familia.
 Ella llegó tarde, con mi madre en brazos.
 Martí dijo «Kwaenchanayo», «no pasa nada» en coreano. Lo aprendió para ella.
 Esperé, esperaste, esperó. Era, hablaba, esperaba.
 El español tiene dos pasados: el de una vez y el de fondo.
 La iglesia no está terminada. Yo tampoco.
+@end
+
+@note
+스페인어의 두 가지 과거
+fue, habló, terminó — 한 번 일어나고 끝난 일. 날짜를 말할 수 있는 과거다(el pasado de una vez).
+era, hablaba, pasaba — 사람이나 장소가 어땠는지, 그때 계속되던 일. 이야기의 배경이다(el pasado de fondo).
+Mi abuelo era así. Nunca hablaba mucho. — 할아버지가 어떤 사람이었는지 말하니까 era, hablaba를 쓴다.
+fue는 ser(~이다)의 과거이면서 ir(가다)의 과거다. ‘~였다’도 되고 ‘갔다’도 된다. 어느 쪽인지는 문맥이 알려 준다. Se fue는 ‘떠났다’.
 @end

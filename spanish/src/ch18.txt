@@ -2,93 +2,114 @@
 
 열 번째 편지는 해 질 녘에 읽고 싶었다.
 
-Aquella semana Barcelona celebraba La Mercè, su gran fiesta. Había conciertos, fuegos artificiales y gente en todas las calles. Yo casi no salí. Durante la semana leí las cartas seis, siete, ocho y nueve. Eran cartas cortas. Martí hablaba del tiempo, del taller, de su hijo Jordi, de los relojes que arreglaba. Preguntaba por la niña. Nunca hablaba de amor. Pero en cada carta había una frase pequeña al final, siempre distinta: «Hoy he pensado en ti». «El patio está muy vacío». «Montse te manda un beso. Yo también».
+그 주에 바르셀로나는 라 메르세를 맞았다. 도시의 가장 큰 축제였다. 공연이 있고, 불꽃놀이가 있고, 거리마다 사람이 넘쳤다. 나는 거의 나가지 않았다. 대신 그 주에 여섯 번째, 일곱 번째, 여덟 번째, 아홉 번째 편지를 읽었다. 짧은 편지들이었다. 마르티는 날씨 이야기, 공방 이야기, 아들 조르디 이야기, 고치고 있는 시계 이야기를 했다. 아이의 안부를 물었다. 사랑 이야기는 한 번도 하지 않았다. quédate라는 말도. 그런데 편지 끝에는 늘 작은 문장이 하나씩, 매번 다르게 붙어 있었다.
 
-Quedaban dos sobres. El décimo y el último, el del papel más blanco. Le dije a Marc que quería leer el décimo en un sitio alto. Él dijo:
+«Hoy he pensado en ti.» 오늘 네 생각을 했다.
+«El patio está muy vacío.» 마당이 아주 비어 있다.
+«Montse te manda un beso. Yo también.» 몬세가 너에게 입맞춤을 보낸다. 나도.
 
-—Los búnkeres. Al atardecer.
+남은 봉투는 두 장이었다. 열 번째, 그리고 종이가 조금 더 하얀 마지막 봉투. 나는 마르크에게 열 번째 편지는 높은 곳에서 읽고 싶다고 말했다. 마르크가 대답했다.
+
+@marc —Los búnkeres. {Al atardecer|알 아타르데*_세_*르}. :: 벙커요. 해 질 녘에.
 
 ##
 
-Subimos andando desde Gràcia. La calle subía y subía, cada vez más empinada, entre casas pequeñas con jardines. Al final, la calle se convirtió en un camino de tierra. Arriba había unos restos de cemento: plataformas redondas, muros viejos, escaleras.
+우리는 그라시아에서 걸어 올라갔다. 길은 오르고 또 올랐다. 정원이 딸린 작은 집들 사이로 점점 가팔라졌다. 끝에 이르자 길은 흙길이 되었다. 꼭대기에는 시멘트 잔해가 남아 있었다. 둥근 단, 낡은 벽, 계단.
 
-—Durante la guerra, aquí había cañones —dijo Marc—. Para defender la ciudad de los aviones. Ahora la gente viene a ver la puesta de sol.
+@marc —Durante {la guerra|라 *게*라}, aquí había cañones. Para defender la ciudad de los aviones. Ahora la gente viene a ver la puesta de sol. :: 전쟁 때 여기 대포가 있었어요. 비행기로부터 도시를 지키려고. 지금은 사람들이 해 지는 걸 보러 와요.
 
-Había bastante gente: jóvenes con cervezas, parejas, turistas con cámaras, una guitarra. Todos sentados en el cemento, mirando hacia el oeste. Desde allí se veía toda Barcelona, en todas las direcciones: el mar, Montjuïc, la Sagrada Familia, el Tibidabo con su noria, y abajo, en algún sitio, Gràcia.
+대포가 있던 자리에 지금은 사람들이 앉아 있었다. 맥주를 든 젊은이들, 연인들, 카메라를 든 관광객들, 기타 하나. 모두 시멘트 위에 앉아 서쪽을 보고 있었다. 거기서는 바르셀로나가 사방으로 다 보였다. 바다, 몬주익, 사그라다 파밀리아, 관람차가 있는 티비다보. 그리고 저 아래 어딘가에 그라시아. Desde allí se veía toda Barcelona.
 
-Nos sentamos un poco lejos de los demás, en el borde de una plataforma. El sol empezaba a bajar detrás de las montañas. La ciudad se ponía naranja.
+우리는 사람들에게서 조금 떨어져, 둥근 단의 가장자리에 앉았다. Me senté en el borde de una plataforma. Marc sacó dos bocadillos de la mochila. 해가 산 너머로 내려가기 시작했다. 도시가 주황빛으로 물들었다. La ciudad se ponía naranja.
 
-Saqué el décimo sobre. Esta vez casi no necesité el diccionario.
+나는 열 번째 봉투를 꺼냈다. 이번에는 사전이 거의 필요 없었다. Esta vez casi no necesité el diccionario.
 
 @letter
 Barcelona, 3 de junio de 1979
-
 Querida Sun-rye:
-
 He recibido tu carta. Ya sé que vais a volver a Corea en julio. Tu marido, tú y la niña. Es lo correcto. Lo sé.
+@end
 
+할머니의 편지를 받았다고 했다. 칠월에 한국으로 돌아간다는 것도 안다고. 남편, 할머니, 그리고 아이. 그게 옳다고. 안다고.
+
+@letter
 Esta va a ser mi última carta. Es mejor así, para ti y para la niña. No me escribas más. Yo no voy a escribir más.
-
 Pero antes quiero decirte una cosa, solo una vez, y con palabras claras, porque nunca te la dije en voz alta.
+@end
 
-Te he querido desde el primer día. Desde el día en que llegaste al patio de Montse con la niña dormida en los brazos y una maleta azul. Te he querido en Santa María del Mar, en la Sagrada Familia, en el hospital, delante del avión del Tibidabo. Te quiero ahora. No sé cómo se deja de querer a alguien. Nadie me lo ha enseñado.
+이게 마지막 편지가 될 거라고 했다. 그게 할머니와 아이에게 낫다고. 더는 편지하지 말라고. 자기도 더 쓰지 않겠다고. 그런데 그 전에 한 가지를 말하고 싶다고 했다. 딱 한 번, 분명한 말로. 한 번도 소리 내어 말한 적이 없으니까.
 
-El reloj está terminado. Lo he tapado con una sábana blanca y está parado. Es tuyo. Tú tienes la llave. Si un día vuelves a Barcelona, dale cuerda. Si no vuelves nunca, no pasa nada. Va a esperar. Los relojes saben esperar. Yo he aprendido de ellos.
+@letter
+{Te he querido|테 에 케*리*도} {desde el primer día|*데*스데 엘 프리*메*르 *디*아}. Desde el día en que llegaste al patio de Montse con la niña dormida en los brazos y una maleta azul. Te he querido en Santa María del Mar, en la Sagrada Familia, en el hospital, delante del avión del Tibidabo. {Te quiero|테 *키에*로} ahora. No sé cómo se deja de querer a alguien. Nadie me lo ha enseñado.
+@end
 
+첫날부터 사랑해 왔다고 했다. 아이를 품에 재운 채 파란 여행 가방을 들고 몬세의 마당에 들어선 그날부터. 산타 마리아 델 마르에서, 사그라다 파밀리아에서, 병원에서, 티비다보의 비행기 앞에서. 지금도 사랑한다고. 누군가를 어떻게 그만 사랑하는지 모르겠다고 했다. 아무도 가르쳐 주지 않았다고.
+
+@letter
+El reloj está terminado. Lo he tapado con {una sábana blanca|*우*나 *사*바나 *블랑*카} y {está parado|에스*타* 파*라*도}. {Es tuyo|*에*스 *투*요}. Tú tienes la llave. Si un día vuelves a Barcelona, {dale cuerda|*달*레 *쿠에*르다}. Si no vuelves nunca, no pasa nada. Va a esperar. Los relojes saben esperar. Yo he aprendido de ellos.
 Kwaenchanayo.
-
 M.
 @end
 
-No pude leer la última línea en voz alta. Kwaenchanayo. «No pasa nada», en coreano. La primera palabra que Martí aprendió para ella fue también la última que le escribió.
+시계는 다 만들었다고 했다. 하얀 천으로 덮어 두었고, 멈춰 있다고. 그건 네 것이고, 열쇠는 네가 가지고 있다고. 언젠가 바르셀로나에 돌아오면 태엽을 감아 달라고 했다. 돌아오지 않아도 괜찮다고. 시계는 기다릴 거라고. 시계는 기다릴 줄 안다고. 자기는 시계에게서 그걸 배웠다고.
+
+그리고 마지막 한 줄. Kwaenchanayo.
+
+마지막 줄은 소리 내어 읽을 수가 없었다. 괜찮아요. 마르티가 할머니를 위해 처음 배운 한국어가, 할머니에게 마지막으로 쓴 말이기도 했다.
 
 처음도 괜찮아요, 끝도 괜찮아요. 하나도 괜찮지 않았을 사람이.
 
-Lloré. Yo no soy como Montse, que nunca llora delante de la gente. Lloré delante de Marc, delante de los turistas, delante de toda Barcelona. Lloré por mi abuela, que se fue. Por Martí, que esperó. Por mi madre, que tenía tres años y no se acuerda de nada. Y un poco por mí, que tengo treinta y ocho años y nadie me ha escrito nunca una carta así.
+나는 울었다. {Lloré|요*레*}. 나는 사람들 앞에서 절대 울지 않는 몬세와 달랐다. 마르크 앞에서, 관광객들 앞에서, 바르셀로나 전체 앞에서 울었다. 떠난 할머니 때문에 울었다. 기다린 마르티 때문에 울었다. 세 살이었고 아무것도 기억하지 못하는 엄마 때문에 울었다. 그리고 조금은, 서른여덟 살인데 아무에게서도 이런 편지를 받아 본 적 없는 나 때문에 울었다.
 
-Marc no dijo nada. Esta vez no puso su mano encima de la mía, como en el avión. Me la cogió de verdad, fuerte, y no la soltó.
+마르크는 아무 말도 하지 않았다. 이번에는 비행기에서처럼 내 손 위에 손을 얹지 않았다. 내 손을 정말로, 꽉 잡았다. 그리고 놓지 않았다. Me cogió la mano de verdad.
 
 ##
 
-El sol se fue detrás de las montañas. La ciudad empezó a encender sus luces, una por una, como un reloj que se pone en marcha. Los jóvenes aplaudieron la puesta de sol. Alguien tocó una canción en la guitarra.
+해가 산 너머로 사라졌다. 도시가 불을 하나씩 켜기 시작했다. 태엽을 감은 시계가 움직이기 시작하듯이. la guerra 때 대포를 두던 자리에서, 젊은이들이 지는 해를 향해 박수를 쳤다. 누군가 기타로 노래 한 곡을 연주했다. Los búnkeres al atardecer.
 
-Cuando pude hablar, le pasé la carta a Marc. La leyó despacio. Cuando llegó al final, se quedó muy quieto.
+말을 할 수 있게 되자, 나는 편지를 마르크에게 건넸다. 마르크는 천천히 읽었다. te quiero가 있는 줄에서 한 번 멈췄다. 끝까지 읽고는 아주 가만히 있었다.
 
-—«Lo he tapado con una sábana blanca» —repitió.
+@marc —«Lo he tapado con una sábana blanca». :: ‘하얀 천으로 덮어 두었다.’
 
-—¿Qué pasa?
+마르크가 그 문장을 다시 읽었다.
 
-Marc miraba la ciudad, pero no la veía. Tenía la frente arrugada, como cuando trabajaba en una cerradura difícil.
+@yunha —¿Qué pasa? :: 왜요?
 
-—En el sótano del taller —dijo despacio—, detrás de las cajas, hay una cosa alta. Tapada con una sábana. Siempre ha estado allí. Desde que era niño. Mi padre siempre decía: «Es un armario viejo. No lo toques». Yo nunca la toqué. —Se pasó la mano por la cara—. Un reloj de pie. Y yo buscando en las cajas.
+마르크는 도시를 보고 있었지만, 보고 있지 않았다. 어려운 자물쇠를 다룰 때처럼 이마를 찌푸리고 있었다.
 
-Lo miré. Él me miró.
+@marc —En el sótano del taller, detrás de las cajas, hay una cosa alta. Tapada con una sábana. Siempre ha estado allí. Desde que era niño. Mi padre siempre decía: «Es un armario viejo. No lo toques». Yo nunca la toqué. :: 공방 지하실에, 상자들 뒤에 키 큰 물건이 하나 있어요. 천으로 덮여 있어요. 늘 거기 있었어요. 내가 어릴 때부터. 아버지는 늘 그랬어요. ‘낡은 옷장이야. 건드리지 마.’ 한 번도 안 건드렸어요.
 
-—¿Alta? ¿Cómo de alta?
+마르크가 손으로 얼굴을 쓸었다.
 
-Marc levantó la mano por encima de su cabeza.
+@marc —Un reloj de pie. Y yo buscando en las cajas. :: 괘종시계. 그런데 나는 상자만 뒤지고 있었네요.
 
-—Como una persona.
+나는 마르크를 보았다. 마르크도 나를 보았다.
 
-Nos quedamos sin palabras. Abajo, la ciudad brillaba. En algún sitio, en un sótano de Gràcia, debajo de una sábana blanca, había un reloj parado desde 1979.
+@yunha —¿Alta? ¿Cómo de alta? :: 키가 커요? 얼마나요?
 
-—Mañana —dijo Marc—. Mañana bajamos al sótano. Con la llave.
+마르크가 손을 자기 머리 위로 들어 올렸다.
 
-Esa noche, al volver, le escribí a mi madre desde el ordenador de Vale. En coreano, despacio, sin borrar nada.
+@marc —Como una persona. :: 사람만 해요.
+
+우리는 말을 잃었다. 아래에서 도시가 반짝였다. 그라시아 어딘가의 지하실에서, 하얀 천 아래에서, 시계 하나가 사십팔 년째 멈춰 있었다. Un reloj parado desde 1978.
+
+@marc —Mañana. Mañana bajamos al sótano. Con la llave. :: 내일. 내일 지하실에 내려가요. 열쇠를 가지고.
+
+그날 밤 돌아와서, 나는 발레의 컴퓨터로 엄마에게 편지를 썼다. 한국어로, 천천히, 하나도 지우지 않고.
 
 «엄마. 사진 속 아저씨는 마르티라는 분이야. 할머니를 많이 좋아했던 사람. 할머니는 엄마를 위해서 한국으로 돌아갔대. 엄마가 아빠를 잃지 않게. 다 알게 되면 자세히 얘기해 줄게.»
 
-A la mañana siguiente, mi madre contestó con una sola palabra.
+다음 날 아침, 엄마의 답장은 한마디였다.
 
 «그랬구나.»
 
 @letter
 Sábado, 26 de septiembre.
-He leído la décima carta en los búnkeres del Carmel, al atardecer.
+He leído la décima carta en los búnkeres del Carmel, al atardecer. Los búnkeres son de la guerra. Arriba hace frío.
 Martí le escribió: «Te he querido desde el primer día».
 El reloj está terminado, tapado con una sábana blanca. «Si un día vuelves, dale cuerda.»
 La última palabra de Martí fue la primera: kwaenchanayo.
-He llorado delante de toda Barcelona. Marc me ha cogido la mano. De verdad.
+He llorado delante de toda Barcelona. Solo pude llorar. Marc me ha cogido la mano. De verdad.
 En el sótano del taller hay una cosa alta, tapada con una sábana. Como una persona.
 Mañana bajamos con la llave.
 Martí escribió: «Esta va a ser mi última carta». Pero queda otro sobre. El del papel más blanco. También con una M.

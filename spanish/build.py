@@ -11,11 +11,12 @@
   —¿Turismo? :: 관광이에요?  스페인어 대사 :: 작은 글씨로 붙는 우리말 뜻
   ##                        장면 바뀜
   @letter … @end            편지 / @address … @end 봉투의 주소
+  @note … @end              문법 쪽지(장 끝, 수첩 뒤). 장면 안의 문법 설명을 여기로 옮긴다
 
 본문의 다른 라틴 문자 단어는 단어표와 맞춰 자동으로 감싼다. 단어표에 없는
 스페인어 단어가 나오면 경고를 낸다 — 쓰고 나서 반드시 단어표를 채울 것.
 """
-import html, json, os, re, subprocess, sys
+import html, json, math, os, re, subprocess, sys, urllib.parse
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -25,15 +26,41 @@ SITE = ROOT.parent
 BASE_URL = 'https://dwookmike-droid.github.io/english-reader/es.html'
 TITLE_ES, TITLE_KO = 'La llave de Gràcia', '그라시아의 열쇠'
 
-# 읽기 도움(처음 나온 단어의 한글 발음, 대사 밑 우리말 뜻)은 이 장까지만 본문에 싣는다.
-# 그 뒤로는 장 끝 단어 목록과 웹 리더에만 발음이 남는다.
-AIDS_UNTIL = 15
+# 판면(mm). 여백은 이 숫자만 고친다. 아래 page_rules()가 모든 @page에 넣는다.
+# 손에 쥐는 책이라 안쪽(제본 쪽)을 바깥보다 넓게 둔다.
+MARGIN_TOP_MM = 15
+MARGIN_BOTTOM_MM = 16
+MARGIN_INNER_MM = 16
+MARGIN_OUTER_MM = 12
+# 종이 한 장 두께. 미색 모조 80g 근처. 책등(mm) = 쪽수 ÷ 2 × 이 값.
+PAPER_CALIPER_MM = 0.1
+# 양끝 맞춤에서 낱말 사이가 이만큼(em) 넘게 벌어진 줄은 왼쪽 정렬로 둔다(render.js)
+LOOSE_EM = 0.5
+
+# 1권은 대사 밑 우리말 뜻과 처음 나온 말의 한글 발음을 끝까지 싣는다(REWRITE.md, 2026-11-08).
+# 2권 이후에 도움을 줄일 때 이 두 값을 낮춘다.
+GLOSS_UNTIL = 30
+PRON_UNTIL = 30
 # 이 장까지는 스페인어 대사 한 줄 전체의 한글 발음을 대사 밑에 붙인다.
 LINE_PRON_UNTIL = 6
 
 LATIN = r"A-Za-zÀ-ÖØ-öø-ÿ"
 WORD = re.compile(rf"[{LATIN}](?:[{LATIN}\-]*[{LATIN}])?")
-SKIP = {'h', 'th', 'k', 'app', 'a', 'o', 's', 'll', 'sh', 'kg', 'g', 'd', 'r', 'ero', 'c', 'emos', 'á', 'án', 'ás', 'é', 'éis', 'ía'}   # 본문 설명에 쓰인 글자 이름          # 본문 설명에 쓰인 글자 이름 등
+
+
+def fold(s):
+    """대소문자·강세를 무시하고 단어만 남겨 비교한다(Me acuerdo = me acuerdo)."""
+    import unicodedata
+    s = ''.join(c for c in unicodedata.normalize('NFD', s.lower()) if unicodedata.category(c) != 'Mn')
+    return ' '.join(WORD.findall(s))
+
+
+# 관사·전치사 같은 기능어. 구 안에 이것만 새로 나왔으면 괄호를 다시 달지 않는다.
+FUNCTION_WORDS = {'el', 'la', 'los', 'las', 'un', 'una', 'unos', 'unas', 'de', 'del', 'al', 'a', 'en',
+                  'y', 'o', 'con', 'por', 'para', 'lo', 'le', 'les', 'me', 'te', 'se', 'nos', 'que',
+                  'mi', 'mis', 'tu', 'tus', 'su', 'sus', 'es', 'no'}
+
+SKIP = {'h', 'th', 'k', 'app', 'a', 'o', 's', 'll', 'sh', 'kg', 'g', 'd', 'r', 'ero', 'c', 'emos', 'á', 'án', 'ás', 'é', 'éis', 'ía', 'ron', 'ra'}   # 본문 설명에 쓰인 글자 이름          # 본문 설명에 쓰인 글자 이름 등
 
 
 # ── 단어표 ────────────────────────────────────────────────────────────
@@ -44,13 +71,29 @@ def load_vocab():
             continue
         c = line.split('\t') + [''] * 7
         key, fs, pron, ko, kind, ch, note = c[:7]
-        if not pron and kind not in ('c', 'p', 'f'):
-            from hangul import to_hangul           # 스페인어는 발음을 비워 두면 철자에서 만든다
-            pron = ' '.join(to_hangul(w) for w in key.split())
-        entries[key] = dict(k=key, p=pron, d=ko, t=kind, c=int(ch or 0), n=note)
+        auto = not pron and kind not in ('c', 'p', 'f')
+        entries[key] = dict(k=key, p=pron, d=ko, t=kind, c=int(ch or 0), n=note, auto=auto)
         for f in fs.split('|'):
-            forms[tuple(f.lower().split())] = key
+            t = tuple(f.lower().split())
+            if t in forms and forms[t] != key:      # 겹치면 뒤 항목이 가져가 앞 항목 횟수가 줄어든다
+                print(f'  ! 단어표 형태 겹침: {f} ({forms[t]} / {key})', file=sys.stderr)
+            forms[t] = key
+    for e in entries.values():                      # 스페인어는 발음을 비워 두면 철자에서 만든다
+        if e.pop('auto'):
+            e['p'] = auto_pron(e['k'].split(), forms, entries)
     return entries, forms
+
+
+def auto_pron(words, forms, entries):
+    """철자로 발음을 만든다. 구 안의 이름·카탈루냐어 낱말은 단어표 발음을 쓴다(montse sabe todo → 몬세…)."""
+    from hangul import to_hangul
+    out = []
+    for w in words:
+        k = forms.get((w.lower(),))
+        e = entries.get(k, {})
+        out.append(e['p'] if e.get('t') in ('c', 'p', 'f') and e.get('p') and len(e['p'].split()) == 1
+                   else to_hangul(w))
+    return ' '.join(out)
 
 
 def pron_html(p):
@@ -66,22 +109,78 @@ class Inline:
         self.forms, self.entries = forms, entries
         self.unknown, self.seen, self.uses = set(), set(), {}
         self.shown = set()      # 발음을 이미 보여 준 말
+        self.shown_tok = set()  # 발음 괄호(또는 대사 한 줄 발음) 안에 이미 나온 낱말
+        self.marked = set()     # 새 단어 색을 이미 붙인 말
         self.ch = 1
         self.quiet = False      # True면 발음을 붙이지 않고 본 것으로만 친다(대사 전체 발음을 따로 달 때)
+        self.note = False       # True면 문법 쪽지 안: 단어를 감싸기만 하고 발음·처음 표시·횟수에 넣지 않는다
 
     def word(self, text, key, first=False, pron=None):
-        """단어를 감싼다. 15장까지는 단어표의 어떤 말이든(스페인어·카탈루냐어·아직 안 가르친 말)
+        """단어를 감싼다. PRON_UNTIL 장까지는 단어표의 어떤 말이든(스페인어·카탈루냐어·아직 안 가르친 말)
         책에서 처음 나오는 자리에 한 번 발음을 붙인다. 사람 이름에는 붙이지 않는다."""
+        if self.note:
+            return f'<b class="w" data-k="{html.escape(key)}">{html.escape(text)}</b>'
         self.uses[key] = self.uses.get(key, 0) + 1
-        cls = 'w new' if first else 'w'
-        s = f'<b class="{cls}" data-k="{html.escape(key)}">{html.escape(text)}</b>'
+        inner = self.count_inner(text, key)
         e = self.entries.get(key, {})
-        p = e.get('p') or pron      # 단어표 발음(비우면 철자에서 자동 생성)을 우선한다
+        # 새 단어 색: 그 장 끝 목록에 실린 말(n)이 그 장에서 처음 나오는 자리 한 곳.
+        # 원고의 {낱말|발음} 표시와는 따로 센다(표시는 발음 자리, 색은 목록과 맞춘다).
+        # 그 장의 새 단어가 구 안에만 나오면 그 구에 색을 붙인다(la misma flor ← flor).
+        due = [k for k in [key] + inner if self.entries.get(k, {}).get('t') == 'n'
+               and self.entries[k]['c'] == self.ch and k not in self.marked]
+        new = bool(due) and (due[0] == key or e.get('t') != 'n' or key in self.marked)
+        self.marked.update(due if new else [])
+        cls = 'w new' if new else 'w'
+        s = f'<b class="{cls}" data-k="{html.escape(key)}">{html.escape(text)}</b>'
+        if pron:                    # 원고에 {단어|발음}으로 적은 발음은 그 자리 형태의 발음이다
+            p = pron
+        elif fold(text) == fold(re.sub(r'\s\d+$', '', key)):
+            p = e.get('p')          # 표제어 그대로 나오면 단어표 발음(비우면 철자에서 자동 생성)
+        elif e.get('t') in ('c', 'p', 'f'):
+            # 카탈루냐어·이름은 철자로 만들 수 없으니, 구절의 일부만 나왔으면 단어표 발음에서 그 몫만 떼어 쓴다
+            # (Quina ← quina calor noia). 맞춰 뗄 수 없으면 여기서는 발음을 붙이지 않는다.
+            kt, tt, pw = fold(key).split(), fold(text).split(), (e.get('p') or '').split()
+            at = [i for i in range(len(kt) - len(tt) + 1) if kt[i:i + len(tt)] == tt]
+            p = ' '.join(pw[at[0]:at[0] + len(tt)]) if at and len(pw) == len(kt) else None
+            if not p:
+                return s
+        else:
+            # 구절 항목의 일부(me acuerdo ← me acuerdo del nombre)나 활용형(subiste ← subí)이면
+            # 표제어 발음이 아니라 본문에 나온 형태의 발음을 붙인다(REVISION.md 5번)
+            p = auto_pron([t.group() for t in WORD.finditer(text)], self.forms, self.entries)
+        toks = [t.group().lower() for t in WORD.finditer(text)]
+        content = [t for t in toks if t not in FUNCTION_WORDS] or toks
         if (p and key not in self.shown and e.get('t') != 'p'
-                and self.ch <= AIDS_UNTIL and not self.quiet):
+                and self.ch <= PRON_UNTIL and not self.quiet
+                and not all(t in self.shown_tok for t in content)):
+            # 구 항목이라도 든 낱말을 모두 앞에서 발음과 함께 보았으면 괄호를 다시 달지 않는다
+            # (괄호 = 처음 나온 말. trabajo ← tengo trabajo, el puerto ← puerto)
             s += f'<span class="pr">[{pron_html(p)}]</span>'
+            self.shown_tok.update(toks)
+        elif self.quiet and self.ch <= PRON_UNTIL:
+            self.shown_tok.update(toks)             # 대사 한 줄 발음으로 이미 본 낱말
         self.shown.add(key)
         return s
+
+    def count_inner(self, text, key):
+        """구(句) 항목 안에 든 가르친 단어(n)도 한 번 본 것으로 센다(un kilo y medio → kilo).
+        표시는 바꾸지 않고 반복 횟수(uses)에만 더한다."""
+        toks = [t.group().lower() for t in WORD.finditer(text)]
+        found = []
+        if len(toks) < 2:
+            return found
+        i = 0
+        while i < len(toks):
+            for n in range(len(toks) - i, 0, -1):
+                k = self.forms.get(tuple(toks[i:i + n]))
+                if k and k != key and self.entries[k]['t'] == 'n':
+                    self.uses[k] = self.uses.get(k, 0) + 1
+                    found.append(k)
+                    i += n
+                    break
+            else:
+                i += 1
+        return found
 
     def latin_run(self, run):
         """라틴 문자 덩어리 → 단어표 구(句)를 긴 것부터 맞춰 감싼다."""
@@ -175,7 +274,7 @@ def parse_chapter(path, inline):
     head = lines[0].lstrip('# ').split('|')
     ch = dict(n=int(head[0]), es=head[1].strip(), pr=head[2].strip(), blocks=[])
     inline.ch = ch['n']
-    aids = ch['n'] <= AIDS_UNTIL
+    aids = ch['n'] <= GLOSS_UNTIL
     buf, mode, raw = [], None, []
 
     def flush():
@@ -208,12 +307,14 @@ def parse_chapter(path, inline):
         s = line.strip()
         if mode:
             if s == '@end':
+                inline.note = mode == 'note'
                 ch['blocks'].append(dict(t=mode, lines=[inline(x) for x in raw]))
+                inline.note = False
                 mode, raw = None, []
             else:
                 raw.append(s)
             continue
-        if s in ('@letter', '@address'):
+        if s in ('@letter', '@address', '@note'):
             flush(); mode = s[1:]; continue
         if s == '##':
             flush(); ch['blocks'].append(dict(t='br')); continue
@@ -267,15 +368,196 @@ def block_html(b):
         return (f'<p class="say" data-say="{html.escape(b["plain"])}"{aud}>'
                 f'<span class="sp">{b["es"]}</span>{gl}</p>')
     if b['t'] == 'br':
-        return '<p class="br">·&ensp;·&ensp;·</p>'
-    if b['t'] in ('letter', 'address'):
-        return f'<div class="{b["t"]}">' + ''.join(f'<p>{x}</p>' for x in b['lines']) + '</div>'
+        return f'<p class="br">{flower_svg()}</p>'
+    if b['t'] == 'letter':
+        cls = ' diary' if b.get('diary') else ''
+        return f'<div class="letter{cls}">' + ''.join(f'<p>{x}</p>' for x in b['lines']) + '</div>'
+    if b['t'] == 'address':
+        inner = ''.join(f'<p>{x}</p>' for x in b['lines'])
+        return f'<div class="address"><div class="address-in">{inner}</div></div>'
+    if b['t'] == 'note':
+        inner = ''.join(f'<p>{x}</p>' for x in b['lines'])
+        return f'<aside class="note"><h4>문법 쪽지</h4>{inner}</aside>'
     raise ValueError(b)
 
 
-KEY_SVG = ('<svg viewBox="0 0 120 40" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.6" '
-           'stroke-linecap="round"><circle cx="17" cy="20" r="11"/><circle cx="17" cy="20" r="4"/>'
-           '<path d="M28 20h80M90 20v9M98 20v6M106 20v10"/></g></svg>')
+def mark_diary(ch):
+    """윤하의 수첩을 편지·쪽지·신문과 구별한다. 원고에서는 모두 @letter 다.
+    장의 마지막 @letter 뒤에 문법 쪽지만 있거나, 바로 다음 문단이 '수첩에' 적었다고 말하면 수첩이다(5장)."""
+    bl = ch['blocks']
+    idx = [i for i, b in enumerate(bl) if b['t'] == 'letter']
+    if not idx:
+        return
+    k = idx[-1]
+    after = bl[k + 1:]
+    if all(b['t'] == 'note' for b in after) or (after and after[0]['t'] == 'p' and '수첩에' in after[0]['h']):
+        bl[k]['diary'] = True
+
+
+# ── 문양 (인라인 SVG. 꽃 하나가 타일·장면 바뀜·열쇠가 된다) ──────────────
+def _petals(r):
+    """꽃잎 다섯 장. 중심은 (0, 0), 한 잎은 위를 향한다."""
+    return ''.join(
+        f'<ellipse cx="0" cy="{-r * 0.55:.2f}" rx="{r * 0.32:.2f}" ry="{r * 0.52:.2f}" '
+        f'transform="rotate({i * 72})"/>'
+        for i in range(5))
+
+
+def flower_svg():
+    """장면 바뀜·단어 쪽에 쓰는 작은 꽃. 색은 currentColor."""
+    return ('<svg class="fl" viewBox="-12 -12 24 24" aria-hidden="true">'
+            f'<g fill="currentColor">{_petals(10)}</g><circle r="1.6" fill="#fff"/></svg>')
+
+
+def key_svg(color='currentColor', sw=2.2):
+    """손잡이가 꽃인 태엽 열쇠."""
+    pet = ''.join(
+        f'<ellipse cx="0" cy="-6.3" rx="3.5" ry="5.8" transform="rotate({i * 72})"/>'
+        for i in range(5))
+    return ('<svg viewBox="0 0 124 42" aria-hidden="true">'
+            f'<g fill="none" stroke="{color}" stroke-width="{sw}" stroke-linecap="round" stroke-linejoin="round">'
+            f'<g transform="translate(18 21)">{pet}<circle r="2.15"/></g>'
+            '<path d="M29 21 H112 M92 21 v8.5 M100 21 v5.5 M108 21 v9"/>'
+            '</g></svg>')
+
+
+KEY_SVG = key_svg()
+
+
+def part_of(n):
+    """1부 1–6, 2부 7–12, 3부 13–18, 4부 19–24, 5부 25–30."""
+    return (n - 1) // 6 + 1
+
+
+# 부마다 타일을 조금씩 바꾼다. 꽃 크기·귀퉁이·곡선이 달라 1도 인쇄에서도 구분된다.
+# ground 'frame' = 흰 속 + 테라코타 테 (3부, 색 반전).
+TILES = {
+    1: dict(ground='acc', flower='paper', dot='ink', corner='ink', curve='paper',
+            fr=0.58, cr=0.30, bow=0.38),
+    2: dict(ground='acc', flower='paper', dot='ink', corner='ink', curve='paper',
+            fr=0.66, cr=0.24, bow=0.50),
+    3: dict(ground='frame', flower='acc', dot='paper', corner='ink', curve='acc',
+            fr=0.60, cr=0.32, bow=0.34),
+    4: dict(ground='acc', flower='ink', dot='paper', corner='paper', curve='ink',
+            fr=0.56, cr=0.28, bow=0.46),
+    5: dict(ground='acc', flower='paper', dot='acc', corner='paper', curve='paper',
+            fr=0.60, cr=0.38, bow=0.36),
+}
+
+
+def _fill(token):
+    if token.startswith('#'):
+        return f'fill="{token}"'
+    return f'class="{token}"'
+
+
+def _stroke(token, sw):
+    if token.startswith('#'):
+        return f'fill="none" stroke="{token}" stroke-width="{sw}"'
+    return f'class="{token}-s" stroke-width="{sw}"'
+
+
+def tile_inner(spec, s=20):
+    """타일 한 장의 안쪽. 좌표계는 -s…s. 호출하는 SVG의 viewBox가 귀퉁이를 잘라 사분꽃이 된다."""
+    if spec['ground'] == 'frame':
+        bg = f'<rect x="{-s}" y="{-s}" width="{2*s}" height="{2*s}" {_fill(spec.get("frame", "acc"))}/>'
+        inset = s - 1.55
+        bg += f'<rect x="{-inset}" y="{-inset}" width="{2*inset}" height="{2*inset}" {_fill(spec.get("field", "paper"))}/>'
+    else:
+        bg = f'<rect x="{-s}" y="{-s}" width="{2*s}" height="{2*s}" {_fill(spec["ground"])}/>'
+    bow = spec['bow']
+    curves = ''.join(
+        f'<path d="M{-s} {-s} q{s} {s * bow:.2f} {2 * s} 0" {_stroke(spec["curve"], 0.55)} '
+        f'transform="rotate({k * 90})"/>'
+        for k in range(4))
+    corners = ''.join(
+        f'<g transform="rotate({k * 90}) translate({-s} {-s})">'
+        f'<g {_fill(spec["corner"])}>{_petals(s * spec["cr"])}</g></g>'
+        for k in range(4))
+    ring = ''
+    if spec.get('ring'):
+        ring = f'<circle r="{s * spec["fr"] * 1.25:.2f}" {_stroke(spec["ring"], 0.45)}/>'
+    center = (f'{ring}<g {_fill(spec["flower"])}>{_petals(s * spec["fr"])}</g>'
+              f'<circle r="{s * spec["fr"] * 0.16:.2f}" {_fill(spec["dot"])}/>')
+    return bg + curves + corners + center
+
+
+def tile_svg(part):
+    spec = TILES[part]
+    return (f'<svg class="orn" viewBox="-20 -20 40 40" aria-hidden="true">{tile_inner(spec)}</svg>')
+
+
+def _clock_tip(deg, length):
+    """12시 방향을 0°로, 시계 방향으로 deg. SVG는 y가 아래라 y = -cos."""
+    a = math.radians(deg)
+    return length * math.sin(a), -length * math.cos(a)
+
+
+def dial_svg():
+    """28장 표제지. 3시 10분에 멈춘 시계. 초침은 없다.
+
+    분침: 10분 = 12시에서 60° (눈금 2).
+    시침: 3시 + 10/60시간 = 12시에서 95° (3을 조금 지난 자리).
+    두 바늘의 시작점은 원점 (0, 0). 시침이 더 짧고 더 굵다.
+    """
+    R = 40
+    hour_deg = (3 + 10 / 60.0) * 30.0   # 95
+    minute_deg = 10 * 6.0               # 60
+    hour_len, minute_len = 18.0, 27.0
+    minute_sw = 0.7
+    # 시침은 중심선이 95°인 삼각형. 굵은 선으로 그리면 선 두께가 5°를 삼켜 3시 정각처럼 보인다.
+    hour_half_w = 1.45
+    hx, hy = _clock_tip(hour_deg, hour_len)
+    mx, my = _clock_tip(minute_deg, minute_len)
+    ah = math.radians(hour_deg)
+    # 시침 방향에 수직인 단위 벡터
+    px, py = math.cos(ah), math.sin(ah)
+    parts = [
+        f'<circle r="{R}" class="ink-s" stroke-width="0.9"/>',
+        f'<circle r="{R - 2.4}" class="ink-s" stroke-width="0.35"/>',
+    ]
+    for i in range(60):
+        a = math.radians(i * 6)
+        long = i % 5 == 0
+        outer = R - 2.4
+        inner = outer - (3.4 if long else 1.55)
+        x1, y1 = outer * math.sin(a), -outer * math.cos(a)
+        x2, y2 = inner * math.sin(a), -inner * math.cos(a)
+        parts.append(
+            f'<line x1="{x1:.2f}" y1="{y1:.2f}" x2="{x2:.2f}" y2="{y2:.2f}" '
+            f'class="ink-s" stroke-width="{0.7 if long else 0.32}"/>')
+    R2 = R - 11
+    for i, label in enumerate('XII I II III IV V VI VII VIII IX X XI'.split()):
+        a = math.radians(i * 30)
+        x, y = R2 * math.sin(a), -R2 * math.cos(a) + 2.05
+        parts.append(
+            f'<text x="{x:.2f}" y="{y:.2f}" text-anchor="middle" class="ink" '
+            f'font-family="EB Garamond" font-size="5.4">{label}</text>')
+    # 분침은 원점 (0, 0)에서 60°로. 둥근 선 끝은 중심을 반대쪽으로 밀므로 butt.
+    parts.append(
+        f'<line x1="0" y1="0" x2="{mx:.4f}" y2="{my:.4f}" class="acc-s" '
+        f'stroke-width="{minute_sw}" stroke-linecap="butt"/>')
+    # 시침 밑변의 중점은 원점. 꼭짓점은 95°.
+    parts.append(
+        f'<polygon class="acc" points="'
+        f'{px * hour_half_w:.4f},{py * hour_half_w:.4f} '
+        f'{-px * hour_half_w:.4f},{-py * hour_half_w:.4f} '
+        f'{hx:.4f},{hy:.4f}"/>')
+    parts.append('<circle cx="0" cy="0" r="2.15" class="acc"/>')
+    parts.append('<circle cx="0" cy="0" r="0.62" class="paper"/>')
+    return (f'<svg class="orn dial" viewBox="-46 -46 92 92" aria-hidden="true" '
+            f'data-hour-deg="{hour_deg:.4f}" data-minute-deg="{minute_deg:.4f}">'
+            f'{"".join(parts)}</svg>')
+
+
+def word_mark_svg():
+    """단어 쪽 위, 가는 선과 작은 꽃. currentColor라 웹 리더에서도 그대로 보인다."""
+    return ('<svg class="wfl" viewBox="0 0 160 22" aria-hidden="true">'
+            '<line x1="6" y1="11" x2="64" y2="11" stroke="currentColor" stroke-width="0.7"/>'
+            f'<g transform="translate(80 11)" fill="currentColor">{_petals(8)}</g>'
+            '<circle cx="80" cy="11" r="1.25" fill="#fff"/>'
+            '<line x1="96" y1="11" x2="154" y2="11" stroke="currentColor" stroke-width="0.7"/>'
+            '</svg>')
 
 
 def qr_svg(url):
@@ -284,12 +566,36 @@ def qr_svg(url):
     import io
     buf = io.BytesIO()
     q.save(buf, kind='svg', scale=1, border=0, xmldecl=False, svgns=True, dark='#1d1d1b', nl=False)
-    return buf.getvalue().decode()
+    # segno는 width/height만 쓴다. viewBox가 있어야 CSS 크기(17mm)대로 그림이 커진다.
+    n = q.symbol_size(scale=1, border=0)[0]
+    return buf.getvalue().decode().replace(f'width="{n}" height="{n}"', f'viewBox="0 0 {n} {n}"', 1)
 
 
 # ── 인쇄용 HTML ──────────────────────────────────────────────────────
-def front_matter():
-    return open(SRC / 'front.html', encoding='utf-8').read()
+TITLE_TILE = dict(ground='frame', flower='acc', dot='paper', corner='acc', curve='acc',
+                  fr=0.60, cr=0.32, bow=0.38)
+
+
+def toc_html(chapters, pages):
+    """차례. pages = {장 번호: 표제지 쪽}. 처음 찍을 때는 비어 있어 000으로 자리만 잡는다."""
+    rows = []
+    for part in range(1, 6):
+        items = ''.join(
+            f'<li><a href="#c{c["n"]}"><span class="n">{c["n"]}</span>'
+            f'<span class="t">{html.escape(c["es"])}</span>'
+            f'<span class="p">[{pron_html(c["pr"])}]</span>'
+            f'<span class="f">{pages.get(c["n"], "000")}</span></a></li>'
+            for c in chapters if part_of(c['n']) == part)
+        rows.append(f'<div class="part"><h4>{part}부</h4><ol>{items}</ol></div>')
+    return f'<section class="pg toc"><h3>차례</h3>{"".join(rows)}</section>'
+
+
+def front_matter(chapters, pages):
+    s = open(SRC / 'front.html', encoding='utf-8').read()
+    tile = f'<svg class="orn" viewBox="-20 -20 40 40" aria-hidden="true">{tile_inner(TITLE_TILE)}</svg>'
+    return (s.replace('<!--TITLE_MARK-->', tile)
+             .replace('<!--CLOCK-->', dial_svg())
+             .replace('<!--TOC-->', toc_html(chapters, pages)))
 
 
 def wordlist_html(ch, entries):
@@ -297,47 +603,371 @@ def wordlist_html(ch, entries):
     items = ''.join(
         f'<li><b>{html.escape(e["k"])}</b> <span class="pr">[{pron_html(e["p"])}]</span>'
         f'<span class="m">{html.escape(e["d"])}</span></li>' for e in rows)
-    return (f'<section class="words"><h3><span>{ch["n"]}장의 새 단어</span>'
+    return (f'<section class="words"><div class="wmark" aria-hidden="true">{word_mark_svg()}</div>'
+            f'<h3><span>{ch["n"]}장의 새 단어</span>'
             f'<small>{len(rows)}개</small></h3><ol>{items}</ol></section>')
 
 
-# 장마다 이름 붙은 쪽: 왼쪽 머리에 책 제목, 오른쪽 머리에 장 제목, 바깥 아래에 쪽번호
-HEAD = 'font: italic 7.8pt "EB Garamond"; color: #8a857c; vertical-align: bottom; padding-bottom: 4.5mm;'
-FOOT = 'font: 7.8pt "EB Garamond"; color: #6d685f; vertical-align: top; padding-top: 5.5mm;'
-PAGE_CSS = (
-    '@page c{n}:left {{ margin-left: 10mm; margin-right: 13mm;'
-    ' @top-left {{ content: "La llave de Gràcia"; ' + HEAD.replace('{', '{{').replace('}', '}}') + ' }}'
-    ' @bottom-left {{ content: counter(page); ' + FOOT + ' }} }}\n'
-    '@page c{n}:right {{ margin-left: 13mm; margin-right: 10mm;'
-    ' @top-right {{ content: "{run}"; ' + HEAD + ' }}'
-    ' @bottom-right {{ content: counter(page); ' + FOOT + ' }} }}\n')
+def css_quote(s):
+    return s.replace('\\', '\\\\').replace('"', '\\"')
 
 
-def print_html(chapters, entries, fontdir):
-    css = (ROOT / 'print.css').read_text(encoding='utf-8')
-    fonts = ''.join(f'<link rel="stylesheet" href="{(fontdir / f).as_uri()}">' for f in (
-        'fontsource-gowun-batang-5.1.0/400.css', 'fontsource-gowun-batang-5.1.0/700.css',
-        'fontsource-eb-garamond-5.1.0/400.css', 'fontsource-eb-garamond-5.1.0/400-italic.css',
-        'fontsource-eb-garamond-5.1.0/600.css', 'fontsource-eb-garamond-5.1.0/600-italic.css', 'fontsource-eb-garamond-5.1.0/500-italic.css',
-        'fontsource-noto-sans-kr-5.1.0/400.css', 'fontsource-noto-sans-kr-5.1.0/700.css'))
-    body = [front_matter()]
-    for ch in chapters:
-        url = f'{BASE_URL}#c{ch["n"]}'
-        body.append(f'''
-<section class="opener" data-n="{ch["n"]}">
-  <div class="num">Capítulo {ch["n"]}</div>
-  <h2>{html.escape(ch["es"])}</h2>
+def folio_flower_uri(color):
+    svg = ('<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="-12 -12 24 24">'
+           f'<g fill="{color}">{_petals(9)}</g><circle r="1.45" fill="#ffffff"/></svg>')
+    return 'data:image/svg+xml,' + urllib.parse.quote(svg, safe='')
+
+
+def title_class(es):
+    n = len(es)
+    if n >= 25:
+        return 'long'
+    if n >= 20:
+        return 'mid'
+    return ''
+
+
+def page_rules(chapters, accent, mute):
+    """여백의 단일 출처. 안쪽 > 바깥. 쪽 번호는 바깥 아래, 작은 꽃과 함께."""
+    top, bot = MARGIN_TOP_MM, MARGIN_BOTTOM_MM
+    inn, out = MARGIN_INNER_MM, MARGIN_OUTER_MM
+    # 표제지 높이를 본문 상자보다 1mm 낮춰, 반올림으로 다음 쪽으로 넘치지 않게 한다.
+    body = 188 - top - bot - 1
+    uri = folio_flower_uri(accent)
+    head = f'font: italic 7.8pt "EB Garamond"; color: {mute}; vertical-align: bottom; padding-bottom: 3mm;'
+    foot_r = (f'content: counter(page) url("{uri}"); '
+              f'font: 8pt "EB Garamond"; color: {accent}; vertical-align: top; padding-top: 3.8mm;')
+    foot_l = (f'content: url("{uri}") counter(page); '
+              f'font: 8pt "EB Garamond"; color: {accent}; vertical-align: top; padding-top: 3.8mm;')
+    book = css_quote(TITLE_ES)
+    css = (
+        f':root {{ --body: {body}mm; }}\n'
+        f'@page {{ margin-top: {top}mm; margin-bottom: {bot}mm; }}\n'
+        f'@page :left {{ margin-left: {out}mm; margin-right: {inn}mm; }}\n'
+        f'@page :right {{ margin-left: {inn}mm; margin-right: {out}mm; }}\n'
+        f'@page bare:left {{ margin-left: {out}mm; margin-right: {inn}mm; }}\n'
+        f'@page bare:right {{ margin-left: {inn}mm; margin-right: {out}mm; }}\n'
+        f'@page words:left {{ margin-left: {out}mm; margin-right: {inn}mm; @bottom-left {{ {foot_l} }} }}\n'
+        f'@page words:right {{ margin-left: {inn}mm; margin-right: {out}mm; @bottom-right {{ {foot_r} }} }}\n'
+    )
+    for c in chapters:
+        run = css_quote(f'{c["n"]} · {c["es"]}')
+        n = c['n']
+        css += (
+            f'@page c{n}:left {{ margin-left: {out}mm; margin-right: {inn}mm; '
+            f'@top-left {{ content: "{book}"; {head} }} @bottom-left {{ {foot_l} }} }}\n'
+            f'@page c{n}:right {{ margin-left: {inn}mm; margin-right: {out}mm; '
+            f'@top-right {{ content: "{run}"; {head} }} @bottom-right {{ {foot_r} }} }}\n'
+        )
+    return css
+
+
+FONT_FILES = (
+    'fontsource-gowun-batang-5.1.0/400.css', 'fontsource-gowun-batang-5.1.0/700.css',
+    'fontsource-eb-garamond-5.1.0/400.css', 'fontsource-eb-garamond-5.1.0/400-italic.css',
+    'fontsource-eb-garamond-5.1.0/500.css',
+    'fontsource-eb-garamond-5.1.0/600.css', 'fontsource-eb-garamond-5.1.0/600-italic.css',
+    'fontsource-eb-garamond-5.1.0/500-italic.css',
+    'fontsource-noto-sans-kr-5.1.0/400.css', 'fontsource-noto-sans-kr-5.1.0/700.css',
+)
+
+
+def font_links(fontdir):
+    return ''.join(f'<link rel="stylesheet" href="{(fontdir / f).as_uri()}">' for f in FONT_FILES)
+
+
+def opener_html(ch):
+    n = ch['n']
+    part = part_of(n)
+    if n == 28:
+        mark = f'<div class="mark clock">{dial_svg()}</div>'
+    else:
+        mark = f'<div class="mark">{tile_svg(part)}</div>'
+    cls = title_class(ch['es'])
+    hcls = f' class="{cls}"' if cls else ''
+    url = f'{BASE_URL}#c{n}'
+    return f'''
+<section class="opener" data-n="{n}" data-part="{part}" id="c{n}">
+  {mark}
+  <div class="num">CAPÍTULO {n}</div>
+  <h2{hcls}>{html.escape(ch["es"])}</h2>
   <div class="opr">[{pron_html(ch["pr"])}]</div>
   <div class="qr">{qr_svg(url)}<span>이 장을<br>스페인어로<br>듣기</span></div>
-</section>
+</section>'''
+
+
+def print_html(chapters, entries, fontdir, mono=False, pages=None):
+    accent = '#666666' if mono else '#b5532f'
+    mute = '#555555' if mono else '#6d685f'
+    css = (ROOT / 'print.css').read_text(encoding='utf-8')
+    css += page_rules(chapters, accent, mute)
+    # 본문에 섞인 숫자(연도, 날짜)도 EB Garamond로. 한글 글꼴보다 앞에 숫자만 맡는 글꼴을 둔다.
+    num = (fontdir / 'fontsource-eb-garamond-5.1.0/files/eb-garamond-latin-400-normal.woff2').as_uri()
+    css += (f'\n@font-face {{ font-family: "Num"; src: url("{num}") format("woff2"); '
+            'unicode-range: U+0030-0039; }\n'
+            'body { font-family: "Num", "Gowun Batang", "EB Garamond", "Noto Sans KR", serif; }\n')
+    if mono:
+        # 강조색 하나(--accent)를 먹 60% 근처로. 망점도 같이 옅어진다.
+        css += '\n:root { --accent: #666666; --soft: #f0f0f0; --rule: #c4c4c4; --mute: #555555; }\n'
+    fonts = font_links(fontdir)
+    body = [front_matter(chapters, pages or {})]
+    for ch in chapters:
+        mark_diary(ch)
+        body.append(f'''{opener_html(ch)}
 <section class="chapter" style="page: c{ch["n"]}">
 {''.join(block_html(b) for b in ch["blocks"])}
 </section>
 {wordlist_html(ch, entries)}''')
-    css += ''.join(PAGE_CSS.format(n=c['n'], run=f"{c['n']} · {c['es']}") for c in chapters)
+    # 책은 30장 단어 목록 쪽에서 끝난다. 낱말이 적어 빈 쪽 아래에 열쇠를 놓아 마지막 쪽으로 맺는다.
+    body[-1] = re.sub(r'<section class="words">(.*)</section>$',
+                      rf'<section class="words last">\1<div class="fin" aria-hidden="true">{KEY_SVG}</div></section>',
+                      body[-1].rstrip(), flags=re.S)
+    # 발음 괄호 안의 띄어쓰기는 양끝 맞춤에 늘어나지 않게 고정 폭 공백(U+2005, 1/4em)으로 찍는다.
+    body = [re.sub(r'<span class="pr">\[.*?\]</span>', lambda m: m.group().replace(' ', '\u2005')
+                   .replace('<span\u2005class', '<span class'), x) for x in body]
     return f'''<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8">
 <title>{TITLE_ES} — 인쇄용</title>{fonts}<style>{css}</style></head>
-<body>{''.join(body)}</body></html>'''
+<body data-measure="{TRIM_W - MARGIN_INNER_MM - MARGIN_OUTER_MM}mm" data-loose="{LOOSE_EM}">{''.join(body)}</body></html>'''
+
+
+# ── 표지 펼침과 납품용 PDF ───────────────────────────────────────────
+TRIM_W, TRIM_H = 128, 188
+BLEED_MM = 3
+SLUG_MM = 10      # 재단 여백 밖, 재단선을 그리는 자리
+PT = 72 / 25.4
+
+# 뒤표지 소개. 1장 원고와 STORY.md 1장 요약에 있는 사실만 썼다. 반전은 넣지 않는다.
+BACK_BLURB = ('외할머니가 돌아가신 지 사십구 일째 되던 날, 윤하는 열두 해 다닌 회사를 그만둔다. '
+              '할머니가 남긴 과자 상자 속에는 꽃이 새겨진 열쇠 하나와 바르셀로나에서 온 오래된 편지 열한 통이 들어 있었다. '
+              '스페인어는 한마디도 모르는 채, 윤하는 봉투에 적힌 주소 하나를 들고 바르셀로나 그라시아로 간다.')
+BACK_HOWTO = (
+    '처음 나오는 스페인어 단어에는 한글 발음이 붙습니다.',
+    '스페인어 대사 밑에는 마지막 장까지 우리말 뜻이 붙습니다.',
+    '장마다 첫 쪽의 QR코드로 스페인어 음성을 듣습니다.',
+    '장이 넘어갈수록 한국어 서술 속 스페인어가 조금씩 늘어납니다.',
+)
+
+MARKS_CSS = """
+.marks i { position: absolute; display: block; border: 0 solid #010101; margin-left: -.125pt; margin-top: -.125pt; }
+.marks i.fold { border-left-style: dashed; }
+"""
+
+
+def floor_svg(w, h, x0=-4, y0=-4):
+    """타일 바닥. (x0, y0)에서 32mm 간격으로 깔고 상자 밖은 잘린다. 초록은 표지에만."""
+    spec = dict(ground='#b5532f', flower='#fbf3e6', dot='#2f5b4a', corner='#2f5b4a',
+                curve='#fbf3e6', fr=0.60, cr=0.32, bow=0.40)
+    inner = tile_inner(spec)
+    tiles = [f'<svg x="{x}" y="{y}" width="32" height="32" viewBox="-20 -20 40 40">{inner}</svg>'
+             for x in range(x0, int(w) + 32, 32) for y in range(y0, int(h) + 32, 32)]
+    return (f'<svg class="floor" viewBox="0 0 {w:.3f} {h:.3f}" style="width:{w:.3f}mm;height:{h:.3f}mm">'
+            + ''.join(tiles) + '</svg>')
+
+
+def marks_html(trim, folds=()):
+    """재단선(네 귀퉁이)과 책등 접지선(점선). trim = (x, y, 너비, 높이), mm, 왼쪽 위 기준.
+    선은 재단 여백(3mm) 밖에서 시작해 바깥으로 뻗는다."""
+    x, y, tw, th = trim
+    gap, ln = BLEED_MM, SLUG_MM - 2
+    out = []
+    for cx, sx in ((x, -1), (x + tw, 1)):
+        for cy, sy in ((y, -1), (y + th, 1)):
+            hx = cx + gap if sx > 0 else cx - gap - ln
+            out.append(f'<i style="left:{hx:.3f}mm;top:{cy:.3f}mm;width:{ln}mm;border-top-width:.25pt"></i>')
+            vy = cy + gap if sy > 0 else cy - gap - ln
+            out.append(f'<i style="left:{cx:.3f}mm;top:{vy:.3f}mm;height:{ln}mm;border-left-width:.25pt"></i>')
+    for fx in folds:
+        for vy in (y - gap - ln, y + th + gap):
+            out.append(f'<i class="fold" style="left:{fx:.3f}mm;top:{vy:.3f}mm;height:{ln}mm;border-left-width:.25pt"></i>')
+    return ''.join(out)
+
+
+def interior_marks_html():
+    o = BLEED_MM + SLUG_MM
+    w, h = TRIM_W + 2 * o, TRIM_H + 2 * o
+    return f'''<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+@page {{ size: {w}mm {h}mm; margin: 0; }} html, body {{ margin: 0; }}
+.marks {{ position: relative; width: {w}mm; height: {h}mm; }}{MARKS_CSS}</style></head>
+<body><div class="marks">{marks_html((o, o, TRIM_W, TRIM_H))}</div></body></html>'''
+
+
+def cover_html(fontdir, spine):
+    """앞·책등·뒤 펼침 한 장. 바탕은 재단 여백 3mm까지 깔고, 그 밖에 재단선과 접지선."""
+    fonts = font_links(fontdir)
+    o = BLEED_MM + SLUG_MM                       # 재단선의 왼쪽 위
+    tw = 2 * TRIM_W + spine
+    W, H = tw + 2 * o, TRIM_H + 2 * o
+    top = SLUG_MM                                # 재단 여백의 위쪽
+    bh = TRIM_H + 2 * BLEED_MM
+    sx = o + TRIM_W                              # 책등 왼쪽 접지선
+    fx = sx + spine                              # 앞표지 왼쪽 접지선
+    safe = BLEED_MM + 5                          # 재단 여백 + 재단선 안쪽 5mm
+    howto = ''.join(f'<li>{html.escape(t)}</li>' for t in BACK_HOWTO)
+    fl = ('<svg viewBox="-12 -12 24 24" aria-hidden="true"><g fill="#fbf3e6">'
+          f'{_petals(10)}</g><circle r="1.6" fill="#2f5b4a"/></svg>')
+    css = f'''
+@page {{ size: {W:.3f}mm {H}mm; margin: 0; }}
+* {{ box-sizing: border-box; }}
+html, body {{ margin: 0; padding: 0; }}
+.sheet {{ position: relative; width: {W:.3f}mm; height: {H}mm; overflow: hidden; background: #fff; }}
+.abs {{ position: absolute; overflow: hidden; }}
+.floor {{ display: block; }}
+.orn .acc {{ fill: #b5532f; }} .orn .ink {{ fill: #1d1d1b; }} .orn .paper {{ fill: #fbf3e6; }}
+.orn .acc-s {{ stroke: #b5532f; fill: none; }} .orn .ink-s {{ stroke: #1d1d1b; fill: none; }}
+.plate {{
+  position: absolute; background: #fbf3e6; color: #1d1d1b; text-align: center;
+  border: .7pt solid #2f5b4a; outline: .7pt solid #fbf3e6; outline-offset: 1.5mm;
+  display: flex; flex-direction: column; justify-content: center;
+}}
+.plate .es {{ font-family: "EB Garamond", serif; font-style: italic; font-size: 28pt; line-height: 1.02; }}
+.plate .ko {{ margin-top: 5mm; font-family: "Gowun Batang", serif; font-size: 11pt; letter-spacing: .26em; padding-left: .26em; }}
+.plate .sub {{ margin-top: 2mm; font-family: "Noto Sans KR", sans-serif; font-size: 6.7pt; letter-spacing: .16em; padding-left: .16em; color: #b5532f; }}
+.plate .key {{ margin-top: 3.6mm; }}
+.plate .key svg {{ width: 22mm; height: auto; }}
+.back .plate {{ padding: 6mm 7mm; justify-content: flex-start; text-align: left; }}
+.back .clock {{ align-self: center; width: 17mm; height: 17mm; }}
+.back .clock svg {{ width: 100%; height: 100%; display: block; }}
+.back .bt {{ margin-top: 3mm; text-align: center; font-family: "EB Garamond", serif; font-style: italic; font-size: 13pt; }}
+.back .blurb {{ margin-top: 3.5mm; font-family: "Gowun Batang", serif; font-size: 8.6pt; line-height: 1.75; word-break: keep-all; text-align: justify; }}
+.back .rule {{ margin: 4mm auto 3.2mm; width: 26mm; border-top: .5pt solid #b5532f; }}
+.back ul {{ margin: 0; padding: 0; list-style: none; font-family: "Noto Sans KR", sans-serif; font-size: 6.9pt; line-height: 1.6; color: #3a3833; word-break: keep-all; }}
+.back li {{ padding-left: 3.2mm; position: relative; margin-bottom: .8mm; }}
+.back li::before {{ content: ""; position: absolute; left: .4mm; top: 1.75mm; width: 1.3mm; height: 1.3mm; border-radius: 50%; background: #b5532f; }}
+.isbn {{ position: absolute; width: 40mm; height: 25mm; background: #fff; border: .4pt solid #1d1d1b;
+  font: 6pt "Noto Sans KR", sans-serif; color: #1d1d1b; padding: 1.2mm 1.6mm; letter-spacing: .1em; }}
+.spine {{ background: #2f5b4a; color: #fbf3e6; display: flex; flex-direction: column; align-items: center; justify-content: space-between; }}
+.spine .fl {{ width: 4.6mm; height: 4.6mm; flex: none; }}
+.spine .fl svg {{ width: 100%; height: 100%; display: block; }}
+.spine .st {{ writing-mode: vertical-rl; white-space: nowrap; display: flex; align-items: center; gap: 3.5mm; }}
+.spine .st .es {{ font-family: "EB Garamond", serif; font-style: italic; font-size: 12pt; }}
+.spine .st .ko {{ font-family: "Gowun Batang", serif; font-size: 8.2pt; letter-spacing: .12em; }}
+.marks {{ position: absolute; inset: 0; }}{MARKS_CSS}
+'''
+    # 뒤표지: 재단 여백 포함 [SLUG, SLUG + 3 + 128]. 명판은 재단선 기준 15mm 안쪽.
+    back = f'''<div class="abs back" style="left:{SLUG_MM}mm;top:{top}mm;width:{TRIM_W + BLEED_MM}mm;height:{bh}mm">
+  {floor_svg(TRIM_W + BLEED_MM, bh, x0=BLEED_MM - 4, y0=BLEED_MM - 4)}
+  <div class="plate" style="left:{BLEED_MM + 15}mm;width:{TRIM_W - 30}mm;top:{BLEED_MM + 24}mm">
+    <div class="clock">{dial_svg()}</div>
+    <div class="bt">La llave de Gràcia</div>
+    <div class="blurb">{html.escape(BACK_BLURB)}</div>
+    <div class="rule"></div>
+    <ul>{howto}</ul>
+  </div>
+  <div class="isbn" style="right:{5 + 6}mm;bottom:{safe + 6}mm">ISBN</div>
+</div>'''
+    spine_div = f'''<div class="abs spine" style="left:{sx:.3f}mm;top:{top}mm;width:{spine:.3f}mm;height:{bh}mm;padding:{safe + 5}mm 0">
+  <div class="fl">{fl}</div>
+  <div class="st"><span class="es">La llave de Gràcia</span><span class="ko">그라시아의 열쇠</span></div>
+  <div class="fl">{fl}</div>
+</div>'''
+    front = f'''<div class="abs front" style="left:{fx:.3f}mm;top:{top}mm;width:{TRIM_W + BLEED_MM}mm;height:{bh}mm">
+  {floor_svg(TRIM_W + BLEED_MM, bh, x0=-4, y0=BLEED_MM - 4)}
+  <div class="plate" style="left:15mm;width:{TRIM_W - 30}mm;top:{BLEED_MM + 52}mm;height:82mm;padding-bottom:2mm">
+    <div class="es">La llave<br>de Gràcia</div>
+    <div class="ko">그라시아의 열쇠</div>
+    <div class="sub">스페인어로 읽는 소설</div>
+    <div class="key">{key_svg("#2f5b4a", 2.35)}</div>
+  </div>
+</div>'''
+    marks = f'<div class="marks">{marks_html((o, o, tw, TRIM_H), folds=(sx, fx))}</div>'
+    return f'''<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8">
+<title>{TITLE_ES} — 표지</title>{fonts}<style>{css}</style></head>
+<body><div class="sheet">{back}{spine_div}{front}{marks}</div></body></html>'''
+
+
+def set_boxes(page, x, y, w, h):
+    """TrimBox·BleedBox. (x, y) = 재단선 왼쪽 아래, mm (PDF 좌표는 아래에서 위로)."""
+    from pypdf.generic import RectangleObject
+    page.trimbox = RectangleObject([x * PT, y * PT, (x + w) * PT, (y + h) * PT])
+    page.bleedbox = RectangleObject([(x - BLEED_MM) * PT, (y - BLEED_MM) * PT,
+                                     (x + w + BLEED_MM) * PT, (y + h + BLEED_MM) * PT])
+
+
+def interior_for_press(src, marks_pdf, out, pad=0):
+    """완성 크기 PDF의 각 쪽을 재단선 판 가운데 놓고 TrimBox·BleedBox를 넣는다. pad = 쪽수 단위."""
+    from pypdf import PdfReader, PdfWriter, Transformation
+    from pypdf.generic import RectangleObject, NameObject, ArrayObject, FloatObject
+    o = BLEED_MM + SLUG_MM
+    W, H = (TRIM_W + 2 * o) * PT, (TRIM_H + 2 * o) * PT
+    marks = PdfReader(marks_pdf).pages[0]
+    w = PdfWriter(clone_from=PdfReader(src))
+    if pad:
+        while len(w.pages) % pad:
+            w.add_blank_page(width=TRIM_W * PT, height=TRIM_H * PT)
+    for pg in w.pages:
+        pg.add_transformation(Transformation().translate(o * PT, o * PT))
+        for a in pg.get('/Annots') or []:
+            a = a.get_object()
+            if '/Rect' in a:
+                r = [float(v) + o * PT for v in a['/Rect']]
+                a[NameObject('/Rect')] = ArrayObject(FloatObject(v) for v in r)
+        pg.mediabox = RectangleObject([0, 0, W, H])
+        pg.cropbox = RectangleObject([0, 0, W, H])
+        pg.merge_page(marks, over=True)
+        set_boxes(pg, o, o, TRIM_W, TRIM_H)
+        pg.compress_content_streams()
+    w.compress_identical_objects()
+    w.write(out)
+    return len(w.pages)
+
+
+def cover_boxes(path, spine):
+    from pypdf import PdfReader, PdfWriter
+    w = PdfWriter(clone_from=PdfReader(path))
+    o = BLEED_MM + SLUG_MM
+    set_boxes(w.pages[0], o, o, 2 * TRIM_W + spine, TRIM_H)
+    w.write(path)
+
+
+# 지시서 3.3의 인쇄 참고값. 화면값(RGB)이 정확히 이 색이면 이 CMYK로 바꾼다. 인쇄소와 확인할 값.
+CMYK_PALETTE = {
+    '#b5532f': (0, .70, .85, .15),    # 테라코타
+    '#2f5b4a': (.75, .30, .60, .45),  # 짙은 초록 (표지)
+    '#fbf3e6': (0, .03, .08, 0),      # 크림 (표지 명판)
+    '#f8eeea': (0, .07, .085, .015),  # 편지 바탕 = 테라코타 약 10%
+    '#e5c3b6': (0, .245, .30, .05),   # 수첩 괘선 = 테라코타 약 35%
+    '#000000': (0, 0, 0, 1),          # 먹 K100
+    '#1d1d1b': (0, 0, 0, 1),          # 먹 화면값 (표지의 글자)
+    '#010101': (1, 1, 1, 1),          # 재단선·접지선 = 맞춤색(네 판 모두)
+}
+
+
+def rgb_to_cmyk(r, g, b):
+    key = '#%02x%02x%02x' % tuple(round(v * 255) for v in (r, g, b))
+    if key in CMYK_PALETTE:
+        return CMYK_PALETTE[key]
+    if max(r, g, b) - min(r, g, b) < .06:          # 무채색(회색)은 K 한 판
+        return (0, 0, 0, round(1 - (r + g + b) / 3, 4))
+    k = 1 - max(r, g, b)
+    return tuple(round((1 - v - k) / (1 - k), 4) for v in (r, g, b)) + (round(k, 4),)
+
+
+def to_cmyk(src, out):
+    """CMYK 변환본. Chromium PDF는 색을 rg/RG(RGB)로만 쓰므로 연산자를 k/K로 바꾼다.
+    Ghostscript의 ICC 변환은 먹을 4색 검정으로 만들어서 쓰지 않는다.
+    rg/RG 말고 다른 색(이미지, 다른 색공간)이 있으면 멈춘다."""
+    from pypdf import PdfReader, PdfWriter
+    from pypdf.generic import ContentStream, FloatObject, NameObject
+    w = PdfWriter(clone_from=PdfReader(src))
+    for pg in w.pages:
+        res = pg.get('/Resources', {})
+        if res.get('/XObject') or res.get('/ColorSpace') or res.get('/Shading'):
+            raise SystemExit(f'{src.name}: rg/RG가 아닌 색이 있어 CMYK로 바꾸지 못했습니다')
+        cs = ContentStream(pg.get_contents(), w)
+        ops = []
+        for operands, op in cs.operations:
+            if op in (b'rg', b'RG'):
+                c = rgb_to_cmyk(*(float(v) for v in operands))
+                operands, op = [FloatObject(v) for v in c], (b'k' if op == b'rg' else b'K')
+            elif op in (b'cs', b'CS', b'sc', b'SC', b'scn', b'SCN', b'g', b'G', b'BI', b'sh'):
+                raise SystemExit(f'{src.name}: 연산자 {op} 때문에 CMYK로 바꾸지 못했습니다')
+            ops.append((operands, op))
+        cs.operations = ops
+        pg.replace_contents(cs)
+        pg.compress_content_streams()
+    w.compress_identical_objects()
+    w.write(out)
+    return True
 
 
 # ── 웹 리더 ─────────────────────────────────────────────────────────
@@ -382,12 +1012,15 @@ def main():
             k = e['k']; c = inline.uses.get(k, 0)
             flag = '' if c >= 3 else '  ← 적음'
             print(f'  {k:16s}{c:3d}{flag}')
+            if not c:
+                print(f'  ! 본문에 없는 새 단어: {k} ({e["c"]}장 목록)', file=sys.stderr)
 
     (SITE / 'es.html').write_text(web_html(chapters, entries), encoding='utf-8')
     print('→ es.html')
     if '--web-only' in sys.argv:
         return
 
+    mono = '--mono' in sys.argv
     fontdir = Path(os.environ.get('FONTS', ROOT / '.fonts'))
     if not fontdir.exists():
         fontdir.mkdir(parents=True)
@@ -399,25 +1032,75 @@ def main():
             subprocess.run(['tar', 'xzf', t.name, '-C', d.name, '--strip-components=1'],
                            cwd=fontdir, check=True)
     OUT.mkdir(exist_ok=True)
-    pdf = OUT / 'la-llave-de-gracia_sample.pdf'
-    page = print_html(chapters, entries, fontdir)
-    # 장 표제지는 언제나 오른쪽(홀수) 쪽에 온다. 크롬은 break-before: right 를 지키지 않으므로
-    # 한 번 찍어 보고, 왼쪽에 떨어진 표제지 앞에 빈 쪽을 넣어 다시 찍는다.
-    for _ in range(4):
-        (OUT / 'book.html').write_text(page, encoding='utf-8')
-        subprocess.run(['node', str(ROOT / 'render.js'), str(OUT / 'book.html'), str(pdf)],
-                       check=True, stdout=subprocess.DEVNULL)
-        txt = subprocess.run(['pdftotext', '-layout', str(pdf), '-'], capture_output=True,
-                             text=True, check=True).stdout.split('\f')
-        even = [int(m.group(1)) for i, t in enumerate(txt, 1) if i % 2 == 0
-                for m in [re.search(r'CAPÍTULO (\d+)', t)] if m]
-        if not even:
-            break
-        n = even[0]
-        page = page.replace(f'<section class="opener" data-n="{n}">',
-                            f'<section class="pg blank"></section><section class="opener" data-n="{n}">', 1)
-    print(f'→ {pdf}')
+    pdf = OUT / ('la-llave-de-gracia_mono.pdf' if mono else 'la-llave-de-gracia_sample.pdf')
+    pad = 0
+    if '--pad' in sys.argv:
+        pad = int(sys.argv[sys.argv.index('--pad') + 1])
 
+    def render(html_text, out):
+        (OUT / 'book.html').write_text(html_text, encoding='utf-8')
+        subprocess.run(['node', str(ROOT / 'render.js'), str(OUT / 'book.html'), str(out)],
+                       check=True, stdout=subprocess.DEVNULL)
+        txt = subprocess.run(['pdftotext', '-layout', str(out), '-'], capture_output=True,
+                             text=True, check=True).stdout.split('\f')
+        return {int(m.group(1)): i for i, t in enumerate(txt, 1)
+                for m in [re.search(r'CAPÍTULO (\d+)', t)] if m}
+
+    page = print_html(chapters, entries, fontdir, mono=mono)
+    toc_re = re.compile(r'<section class="pg toc">.*?</section>', re.S)
+    # 장 표제지는 언제나 오른쪽(홀수) 쪽에 온다. 크롬은 break-before: right 를 지키지 않으므로
+    # 찍어 보고, 왼쪽에 떨어진 표제지 앞에 빈 쪽을 넣어 다시 찍는다.
+    # 빈 쪽 하나가 그 뒤 쪽수를 모두 밀므로, 앞쪽부터 하나씩 맞춘다.
+    # 다 맞으면 표제지 쪽수를 차례에 넣고 다시 찍는다. 차례 때문에 쪽이 밀리면 처음부터 다시 맞춘다.
+    toc = {}
+    for _ in range(60):
+        found = render(page, pdf)
+        even = sorted(n for n, i in found.items() if i % 2 == 0)
+        if even:
+            n = even[0]
+            needle = f'<section class="opener" data-n="{n}"'
+            if needle not in page:
+                raise SystemExit(f'표제지 마크업을 찾지 못했습니다: {n}장')
+            page = page.replace(needle, f'<section class="pg blank"></section>{needle}', 1)
+            print(f'  빈 쪽 ← {n}장 앞', file=sys.stderr)
+            continue
+        if found == toc:
+            break
+        toc = found
+        page = toc_re.sub(lambda m: toc_html(chapters, toc), page, count=1)
+    else:
+        raise SystemExit('표제지 쪽수 또는 차례가 맞춰지지 않았습니다')
+    if sorted(toc) != list(range(1, len(chapters) + 1)):
+        raise SystemExit(f'표제지를 다 찾지 못했습니다: {sorted(toc)}')
+    info = subprocess.run(['pdfinfo', str(pdf)], capture_output=True, text=True, check=True).stdout
+    pages = int(re.search(r'Pages:\s+(\d+)', info).group(1))
+    print(f'→ {pdf}  ({pages}쪽, 기준 305)')
+    if mono:
+        return
+
+    # 인쇄용 속지: 같은 판면, 먹만 K100(#000)으로. 재단선 판에 얹는다.
+    press_src = OUT / '_interior-trim.pdf'
+    render(page.replace('#1d1d1b', '#000000'), press_src)
+    (OUT / '_marks.html').write_text(interior_marks_html(), encoding='utf-8')
+    subprocess.run(['node', str(ROOT / 'render.js'), str(OUT / '_marks.html'), str(OUT / '_marks.pdf')],
+                   check=True, stdout=subprocess.DEVNULL)
+    interior = OUT / 'interior-print.pdf'
+    total = interior_for_press(press_src, OUT / '_marks.pdf', interior, pad=pad)
+    spine = total / 2 * PAPER_CALIPER_MM
+    print(f'→ {interior}  ({total}쪽{f", {pad}쪽 단위로 맞춤" if pad else ""})')
+
+    cover = OUT / 'cover.pdf'
+    (OUT / 'cover.html').write_text(cover_html(fontdir, spine), encoding='utf-8')
+    subprocess.run(['node', str(ROOT / 'render.js'), str(OUT / 'cover.html'), str(cover)],
+                   check=True, stdout=subprocess.DEVNULL)
+    cover_boxes(cover, spine)
+    print(f'→ {cover}  (책등 {spine:.1f}mm = {total}쪽 ÷ 2 × {PAPER_CALIPER_MM}mm)')
+
+    for f in (interior, cover):
+        if to_cmyk(f, f.with_name(f.stem + '-cmyk.pdf')):
+            print(f'→ {f.with_name(f.stem + "-cmyk.pdf")}')
+    for f in (press_src, OUT / '_marks.pdf', OUT / '_marks.html'):
+        f.unlink(missing_ok=True)
 
 if __name__ == '__main__':
     main()

@@ -30,7 +30,7 @@ qué tal. 처음 듣는 말이었지만 웃는 얼굴을 보니 안부를 묻는
 
 나는 앱에서 새로 찾아 둔 문장을 써 보았다. 무엇이든 가리키며 물으면 되는 마법의 문장이었다.
 
-@yunha —¿{Qué es esto|*케* 에스 *에*스토}? :: 이게 뭐예요?
+@yunha —¿{Qué es esto|*케* *에*스 *에*스토}? :: 이게 뭐예요?
 
 @montse —{Pan|*판*} {con|*콘*} {tomate|토*마*테}. :: 토마토 바른 빵.
 
@@ -72,7 +72,7 @@ con. 방금 배운 말이었다. 우유와 함께. leche는 우유일 것이다.
 
 @vale —¡Hola! {Me llamo|메 *야*모} Valentina. ¿Y vos? :: 안녕! 내 이름은 발렌티나. 너는?
 
-me llamo. 내 이름은. 그건 알아들었다. 그런데 vos는 처음 듣는 말이었다. 앱에서 배운 건 ¿y tú?였는데. 몬세가 혀를 찼다.
+me llamo. 내 이름은. 그건 알아들었다. 그런데 vos는 처음 듣는 말이었다. 어제 배운 건 ¿y tú?였는데. 몬세가 혀를 찼다.
 
 @montse —Tú. Aquí, tú. :: ‘너’는 tú. 여기서는 tú라고 해.
 
@@ -88,7 +88,7 @@ me llamo. 내 이름은. 그건 알아들었다. 그런데 vos는 처음 듣는 
 
 @vale —{Soy de|*소*이 데} Argentina. De Buenos Aires. ¿Y vos? :: 나는 아르헨티나에서 왔어. 부에노스아이레스. 너는?
 
-또 vos였다. 몬세가 이번에는 고쳐 주지 않고 한숨만 쉬었다. 여덟 달째 고쳐도 안 되는 모양이었다. soy de. 나는 ~에서 왔다. 그렇다면 대답은 간단했다.
+또 vos였다. 몬세가 이번에는 고쳐 주지 않고 한숨만 쉬었다. 아무리 고쳐도 안 되는 모양이었다. soy de. 나는 ~에서 왔다. 그렇다면 대답은 간단했다.
 
 @yunha —Soy de {Corea|코*레*아}. De Seúl.
 
@@ -134,7 +134,7 @@ Vale가 머그컵을 들고 끼어들었다.
 
 @vale —Cashe, calle… ¡Es lo mismo! :: 카셰든 카예든… 똑같잖아요!
 
-나중에 알았다. 부에노스아이레스 사람들은 ll와 y를 ‘시’도 ‘이’도 아닌 소리로 읽는다. calle는 ‘카셰’, llave는 ‘샤베’가 된다. 영어의 sh 소리다. 몬세는 Vale가 ll를 발음할 때마다 저렇게 고쳐 준다고 했다. 여덟 달째.
+나중에 알았다. 부에노스아이레스 사람들은 ll와 y를 ‘이’ 소리로 읽지 않는다. calle는 ‘카셰’, llave는 ‘샤베’가 된다. 영어의 sh 소리다. 몬세는 Vale가 ll를 발음할 때마다 저렇게 고쳐 준다고 했다. 여덟 달째.
 
 ##
 
@@ -150,15 +150,15 @@ Vale가 머그컵을 들고 끼어들었다.
 Plaça de la Vila de Gràcia
 @end
 
-@montse —{Mira|*미*라}. Plaça, en catalán. La {plaza|*플라*_사_}, en {castellano|카스테*야*노}. :: 봐. 카탈루냐어로 plaça. 카스티야어로 plaza. 광장이에요.
+@montse —{Mira|*미*라}. Plaça, en catalán. La {plaza|*플라*_사_}, en {castellano|카스테*야*노}. :: 봐. 카탈루냐어로 plaça. 카스티야어로 plaza. 광장이야.
 
 mira. 봐. plaza. 광장. Carrer와 calle처럼, 여기서는 광장도 이름이 두 개였다. 표지판에는 언제나 카탈루냐어가 적혀 있었다. 그리고 몬세는 스페인어를 español이라고 하지 않고 castellano라고 했다. 카탈루냐에서는 스페인어를 흔히 그렇게 부른다. 이 나라에는 스페인의 말이 하나만 있는 게 아니니까. plaza 한가운데에는 가느다란 탑이 서 있었다. 나는 탑을 가리켰다. 오늘 아침에 배운 마법의 문장이 있었다.
 
 @yunha —¿Qué es esto?
 
-몬세가 손가락을 들어 탑 꼭대기를 가리켰다. 커다란 시계가 달려 있었다. 그리고 내 말을 살짝 고쳐 주었다. 가까이 있는 것은 esto, 저 멀리 있는 것은 eso라고.
+몬세가 손가락을 들어 탑 꼭대기를 가리켰다. 커다란 시계가 달려 있었다. 그리고 내 말을 살짝 고쳐 주었다. 가까이 있는 것은 esto, 조금 떨어져 있는 것은 eso라고.
 
-@montse —¿Eso? La torre. Y el {reloj|레*로*흐}. En catalán, rellotge. :: 저거? 탑이야. 그리고 시계. 카탈루냐어로는 rellotge.
+@montse —¿Eso? La torre. Y el {reloj|렐*로*흐}. En catalán, rellotge. :: 저거? 탑이야. 그리고 시계. 카탈루냐어로는 rellotge.
 
 rellotge. 나는 숨을 멈췄다. 봉투의 주소가 떠올랐다. Carrer del Rellotger. rellotge와 Rellotger. 시계와 시계공. 몬세가 내 얼굴을 보고 천천히 고개를 끄덕였다.
 

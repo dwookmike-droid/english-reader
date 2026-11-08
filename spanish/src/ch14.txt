@@ -1,87 +1,115 @@
 # 14 | Tenía fiebre | 테니아 피에브레
 
-El sábado por la mañana, por fin, llamé a mi madre. En Corea eran las cuatro de la tarde. Ella estaba en el mercado de Busan, con mucho ruido alrededor.
+토요일 아침, 나는 드디어 엄마에게 전화를 걸었다. Por fin {llamé|야*메*} a mi madre. 한국은 오후 네 시였다. 엄마는 부산의 시장에 있었다. 수화기 너머로 시장 소리가 왁자지껄하게 들렸다.
 
-Le conté todo, en coreano, muy rápido: la caja, la llave, las cartas, Montse, el barco. Mi madre no dijo nada durante mucho tiempo. Solo se oía el mercado.
+나는 한국어로, 아주 빨리, 전부 말했다. 상자, 열쇠, 편지, 몬세, 그리고 배. 엄마는 오랫동안 아무 말도 하지 않았다. 시장 소리만 들렸다.
 
 “엄마, 엄마 혹시… 바르셀로나 기억나?”
 
 “기억이 날 리가 있니. 세 살이었는데.”
 
-Después de otro silencio, dijo una cosa que yo no sabía.
+또 한참 말이 없다가, 엄마가 내가 모르던 이야기를 했다.
 
-“근데 할머니가 한 번 그러셨어. 나 어릴 때 외국에서 열이 펄펄 끓어서 죽을 뻔했다고. 어떤 아저씨가 밤새 병원에 같이 있어 줬다고. 그 얘기 하실 때만 할머니가 우셨어. 딱 한 번.”
+“근데 할머니가 한 번 그러셨어. 나 어릴 때 외국에서 열이 펄펄 끓어서 죽을 뻔했다고. 어떤 아저씨가 밤새 병원에 같이 있어 줬다고. 그 얘기하실 때만 할머니가 우셨어. 딱 한 번.”
 
-Colgué el teléfono y me quedé en la cama un rato largo. Un hombre que estuvo toda la noche en el hospital. Yo pensé en un nombre. Solo uno.
+전화를 끊고 나는 한참 침대에 그대로 있었다. {Me quedé|메 케*데*} en la cama. 밤새 병원에 같이 있어 준 남자. Un hombre {estuvo|에스*투*보} {toda la noche|*토*다 라 *노*체} en el {hospital|오스피*탈*}. 나는 이름 하나를 떠올렸다. 딱 하나.
 
 ##
 
-Aquella tarde abrí la cuarta carta. Ya no necesitaba a Marc para todo. Con el diccionario, tardé una hora. Esta es:
+그날 오후 나는 네 번째 편지를 열었다. 이제 모든 걸 마르크에게 물을 필요는 없었다. 사전만 있으면 됐다. 한 시간이 걸렸다. 지난번의 절반이었다.
 
 @letter
 Barcelona, 20 de diciembre de 1978
-
 Querida Sun-rye:
-
 Ayer pasé por delante del hospital de Sant Pau y me acordé de aquella noche de julio.
+@end
 
-Hacía mucho calor. Eran las dos de la mañana. Montse llamó a mi puerta: la niña tenía mucha fiebre y no respiraba bien. Tú estabas muy pálida. Tu marido estaba en el barco, en el dique seco. No había teléfono. Jordi dormía; la vecina se quedó con él.
+산트 파우 병원. 마르티는 그 앞을 지나다가 칠월의 어느 밤을 떠올렸다. me acordé. 기억났다. 몬세의 me acuerdo, 편지의 te acuerdas, 그리고 이번에는 me acordé. 이 편지들은 온통 기억에 관한 것이었다.
 
-Yo tenía la furgoneta del taller. Era vieja y hacía mucho ruido, pero funcionaba. Tú subiste con la niña en brazos. Montse vino también. Yo conducía y tú cantabas una canción coreana en voz baja, para la niña. No entendía las palabras, pero entendía la canción.
+@letter
+{Hacía|아*_시_*아} mucho calor. Eran las dos de la mañana. Montse llamó a mi puerta: la niña tenía mucha {fiebre|*피에*브레} y no respiraba bien. Tú estabas muy pálida. Tu marido estaba en el barco, en el dique seco. No había teléfono. Jordi dormía; la vecina se quedó con él.
+@end
 
-En el hospital había un patio con árboles y unos edificios muy bonitos, como palacios. Los médicos se llevaron a la niña. Esperamos en un banco del patio toda la noche. Tú no hablabas. Yo tampoco. A las seis de la mañana salió una enfermera y dijo: «Ya está. Ya no tiene fiebre». Tú lloraste. Fue la única vez que te vi llorar.
+hacía calor. 더웠다. 새벽 두 시였다. 몬세가 마르티의 문을 두드렸다. llamó a mi puerta. 아이가 열이 펄펄 끓고 숨을 제대로 쉬지 못했다. fiebre. 열. 할머니는 얼굴이 하얗게 질려 있었다. 외할아버지는 수리 도크의 배에 있었다. 전화는 없었다. 마르티의 아들 조르디는 자고 있었고, 이웃이 봐 주었다.
 
-Cuando salimos del hospital, salía el sol detrás de las torres. Tú dijiste: «Gracias, Martí». En español. Yo te dije: «Kwaenchanayo». En coreano. Y los dos nos reímos, muy cansados.
+엄마였다. 열이 나서 죽을 뻔했던 아이는 엄마였다.
 
+@letter
+Yo tenía la furgoneta del taller. Era vieja y hacía mucho ruido, pero funcionaba. Tú subiste con la niña en brazos. Montse vino también. Yo conducía y tú {cantabas|칸*타*바스} {una canción|*우*나 칸*_시_온*} coreana en voz baja, para la niña. No entendía las palabras, pero entendía la canción.
+@end
+
+공방의 낡은 승합차. 시끄러웠지만 굴러갔다. 할머니가 아이를 안고 탔고, 몬세도 탔다. 마르티는 운전을 했고, 할머니는 노래를 불렀다. cantabas. una canción coreana. 한국 노래 하나. 아이를 위해, 작은 소리로. 마르티는 가사는 몰랐지만 노래는 알아들었다고 썼다. No entendía las palabras, pero entendía la canción.
+
+@letter
+En el hospital había un patio con árboles y unos edificios muy bonitos, como palacios. {Los médicos|로스 *메*디코스} se llevaron a la niña. Esperamos en un banco del patio toda la noche. Tú no hablabas. Yo tampoco.
+@end
+
+los médicos. 의사들이 아이를 데려갔다. 할머니와 마르티는 병원 마당의 벤치에서 밤새 기다렸다. 둘 다 말이 없었다.
+
+@letter
+A las seis de la mañana salió una enfermera y dijo: «Ya está. Ya no tiene fiebre». Tú {lloraste|요*라*스테}. Fue la única vez que te vi llorar.
+@end
+
+ya no tiene fiebre. 이제 열이 없어요. 아침 여섯 시였다. lloraste. 너는 울었다. 마르티가 본, 할머니가 운 단 한 번. 엄마가 들은 것도 단 한 번이었다. 할머니가 그 이야기를 하며 운 것. 같은 밤이 두 번의 울음으로 남아 있었다.
+
+@letter
+Cuando salimos del hospital, salía el sol {detrás de|데*트라*스 데} las torres. Tú dijiste: «Gracias, Martí». En español. Yo te dije: «Kwaenchanayo». En coreano. Y los dos nos reímos, muy cansados.
 ¿Cómo está la niña? ¿Todavía canta tu canción?
-
 M.
 @end
 
-Leí la última frase muchas veces. ¿Todavía canta tu canción? Mi madre no cantaba. Nunca la oí cantar. Pero mi abuela sí. Mi abuela cantaba cuando cocinaba. Siempre la misma canción.
+병원을 나설 때 탑들 뒤로 해가 뜨고 있었다. detrás de. ~뒤로. 할머니는 스페인어로 고맙다고 했고, 마르티는 한국어로 괜찮다고 했다. 그리고 둘이 웃었다. 아주 지쳐서.
+
+마지막 줄을 여러 번 읽었다. ¿Todavía canta tu canción? 아이는 아직도 네 노래를 부르니? 엄마는 노래를 부르지 않았다. 나는 엄마가 노래하는 걸 한 번도 들은 적이 없었다. Mi abuela cantaba cuando cocinaba. 그런데 할머니는 요리할 때 노래를 불렀다. 늘 같은 노래였다.
 
 할머니가 부엌에서 늘 흥얼거리던 노래. 가사 없이 가락만 있는 노래였다. 나는 그게 무슨 노래인지 한 번도 묻지 않았다.
 
 ##
 
-Le enseñé la carta a Montse en la cocina. Ella no la leyó. Solo miró la primera línea y la fecha. Después se quitó el delantal.
+부엌에서 몬세에게 편지를 보여 주었다. 몬세는 편지를 읽지 않았다. 첫 줄과 날짜만 보았다. 그리고 앞치마를 벗었다.
 
 @montse —Vamos a Sant Pau. Ahora. :: 산트 파우에 가자. 지금.
 
-Tomamos un autobús. Montse miraba por la ventana y no hablaba. Yo tampoco. Veinte minutos después, nos bajamos al principio de una avenida larga. Detrás de nosotras estaba la Sagrada Familia. Delante, al final de la avenida, había un edificio enorme, rojo, con torres, mosaicos y una cúpula. Parecía un palacio, como en la carta.
+우리는 버스를 탔다. Tomamos {un autobús|운 아우토*부*스}. 몬세는 창밖만 보고 말이 없었다. 나도 그랬다. 이십 분 뒤, 버스가 긴 대로가 시작되는 곳에 섰다. El autobús paró y bajamos. 우리 뒤에는 사그라다 파밀리아가 있었다. Detrás de nosotras estaba la Sagrada Familia. 앞쪽, 대로 끝에는 탑과 모자이크와 둥근 지붕을 단 거대한 붉은 건물이 있었다. 편지에 쓰인 대로 궁전 같았다. Como un palacio.
 
-@montse —Ya no es un hospital. Ahora es un museo. El hospital nuevo está detrás. Pero en 1978… aquí estaban los enfermos. :: 지금은 병원이 아니야. 박물관이지. 새 병원은 뒤에 있어. 그런데 1978년엔… 여기에 환자들이 있었어.
+@montse —Ya no es un hospital. Ahora es un museo. El hospital {nuevo|*누에*보} está detrás. Pero en 1978… aquí estaban los enfermos. :: 지금은 병원이 아니야. 박물관이지. 새 병원은 뒤에 있어. 그런데 1978년엔… 여기에 환자들이 있었어.
 
-Montse compró dos entradas. Entramos. Había un jardín con caminos entre los pabellones. Cada pabellón tenía su torre, sus colores, sus ventanas. Los árboles daban sombra. Era bonito y triste al mismo tiempo.
+몬세가 표를 두 장 샀다. 안으로 들어가니 건물들 사이로 길이 난 정원이 있었다. 건물마다 탑이 있고, 색이 있고, 창이 있었다. 나무들이 그늘을 드리웠다. 아름다웠고, 동시에 슬펐다. Era bonito y {triste|*트리*스테}.
 
-Montse caminó despacio por el jardín. Buscaba algo. Al final se paró delante de un banco de piedra, debajo de un árbol.
+몬세는 정원을 천천히 걸었다. 무언가를 찾고 있었다. 그러다 나무 아래 돌 벤치 앞에서 멈췄다.
 
-@montse —Aquí. Esperábamos aquí. :: 여기. 우리 여기서 기다렸어.
+@montse —Aquí. {Esperábamos|에스페*라*바모스} aquí. :: 여기. 우리 여기서 기다렸어.
 
-Esperábamos. Martí escribió «esperamos»: una noche, de principio a fin. Montse dijo «esperábamos»: ella estaba otra vez dentro de esa noche. Nos sentamos en el banco. Montse cerró los ojos.
+마르티는 편지에 esperamos라고 썼다. 우리는 기다렸다. 하룻밤, 처음부터 끝까지. 그런데 몬세는 esperábamos라고 했다. 몬세는 지금 그 밤 안에 다시 들어가 있었다. 배경의 과거. 끝나지 않은 과거.
+
+우리는 벤치에 앉았다. 몬세가 눈을 감았다.
 
 @montse —Hacía calor. Tu abuela cantaba. Mi hermano no decía nada, pero no se movía de su lado. Yo los miraba a los dos y pensaba… :: 더웠어. 너희 할머니는 노래를 불렀고. 우리 오빠는 아무 말도 안 했지만, 할머니 곁에서 꼼짝도 안 했어. 나는 두 사람을 보면서 생각했지…
 
-@yunha —¿Qué pensabas? :: 무슨 생각 했어요?
+@yunha —¿Qué {pensabas|펜*사*바스}? :: 무슨 생각 했어요?
 
-Montse abrió los ojos. Me miró. Durante un momento pensé que no iba a contestar.
+몬세가 눈을 떴다. 나를 보았다. 잠깐 동안, 몬세가 대답하지 않을 거라고 생각했다.
 
-@montse —Pensaba: «Pobre Martí». :: 이렇게 생각했어. ‘불쌍한 마르티.’
+@montse —Pensaba: «{Pobre|*포*브레} Martí». :: 이렇게 생각했어. ‘불쌍한 마르티.’
 
-No dijo nada más. Pero yo entendí. Montse lo sabía todo desde el principio. Desde aquella noche, o antes.
+몬세는 더 말하지 않았다. 그래도 나는 알아들었다. 몬세는 처음부터 다 알고 있었다. 그 밤부터, 아니면 그보다 전부터.
 
-Me acordé de la canción de mi abuela. Empecé a cantarla, muy bajo, sin palabras. No sabía por qué. Montse se giró hacia mí, muy rápido. Tenía los ojos brillantes.
+할머니의 노래가 떠올랐다. 나는 그 노래를 아주 작게, 가사 없이 흥얼거렸다. 왜 그랬는지는 모르겠다. Empecé a cantarla. 몬세가 아주 빠르게 내 쪽으로 고개를 돌렸다. 눈이 반짝이고 있었다.
 
 @montse —Esa. Esa es la canción. :: 그거야. 바로 그 노래야.
 
-Nos quedamos en el banco hasta la hora de cerrar. Montse no lloró. Ella nunca llora delante de la gente. Pero me dio la mano y no la soltó en todo el camino a casa.
+그 노래였다. 칠월의 밤, 승합차 안에서, 병원 마당에서 할머니가 부른 노래. 그 뒤로 오십 년 가까이 할머니가 부엌에서 부르던 노래.
+
+우리는 문 닫을 시간까지 벤치에 있었다. Nos quedamos en el banco. 몬세는 울지 않았다. 몬세는 사람들 앞에서 절대 울지 않는다. 그래도 내 손을 잡더니, 집에 가는 내내 놓지 않았다.
 
 @letter
 Sábado, 5 de septiembre.
 He llamado a mi madre. No se acuerda de nada. Pero la abuela le dijo una vez: «Un hombre estuvo toda la noche en el hospital».
 La cuarta carta: una noche de julio de 1978. La niña tenía fiebre. Hacía calor. Martí conducía. Mi abuela cantaba.
 Hemos ido a Sant Pau con Montse. Ahora es un museo. Es bonito y triste.
+Montse no leyó la carta. Solo miró la fecha.
 Montse ha dicho: «Esperábamos aquí».
+Los médicos ayudaron a la niña. Pobre abuela: una noche entera sin dormir.
 He cantado la canción de mi abuela. Montse la conoce.
 Hacía, tenía, cantaba, esperábamos: el pasado de fondo. El pasado que dura.
 @end

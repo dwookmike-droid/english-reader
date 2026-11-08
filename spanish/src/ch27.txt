@@ -1,144 +1,152 @@
 # 27 | El laberinto | 엘 라베린토
 
-El lunes por la noche me llamó mi madre. Una videollamada, la primera desde que llegué a Barcelona. En Busan era martes por la mañana. Mi madre llevaba su chaqueta de trabajo y tenía prisa, como siempre.
+월요일 밤, 엄마에게서 전화가 왔다. El lunes por la noche me llamó mi madre. 영상 통화였다. 바르셀로나에 온 뒤로 처음이었다. 부산은 화요일 아침이었다. 엄마는 출근할 때 입는 재킷을 입고, 늘 그렇듯 바빴다. Tenía prisa, como siempre.
 
 «사진 속 아저씨 얘기, 몬세 할머니한테 전했어?»
 
 «응. 할머니가 울었어.»
 
-Mi madre se quedó callada. Después miró a la cámara, muy de cerca, como hacía mi abuela.
+엄마는 말이 없었다. 그러다 할머니가 그랬던 것처럼 카메라에 얼굴을 바짝 대고 나를 보았다.
 
 «윤하야. 거기서 행복하면 엄마는 그걸로 됐어. 근데 얼굴은 한번 보자. 엄마 혼자 김장하기 싫다.»
 
-Me reí. Pero cuando colgó, me quedé mucho tiempo mirando la pantalla negra.
+나는 웃었다. Me reí. 그런데 전화를 끊고 나서, 까맣게 꺼진 화면을 오래 바라보았다.
 
-Mi madre, en Busan. Y Marc, en una barca, en el lago, diciendo: si te quedas.
+부산의 엄마. 그리고 호수의 배 위에서 ‘남는다면’이라고 말하던 마르크. Mi madre, en Busan. Y Marc, en una barca, diciendo: si te quedas.
 
-No sabía qué hacer. Y cuando no sé qué hacer, no hago nada. Es mi especialidad.
+어떻게 해야 할지 몰랐다. 그리고 나는 어떻게 해야 할지 모를 때 아무것도 하지 않는다. 그게 내 특기다. Es mi especialidad.
 
 ##
 
-El martes, Vale entró en mi habitación a las nueve de la mañana, con dos billetes de metro en la mano.
+화요일 아침 아홉 시, 발레가 지하철 표 두 장을 들고 내 방에 들어왔다.
 
-—Hoy no tengo clase y vos no tenés excusa. Nos vamos.
+@vale —Hoy no tengo clase y vos no tenés excusa. Nos vamos. :: 오늘은 나 수업 없고, 너는 핑계 없어. 가자.
 
-—¿Adónde?
+@yunha —¿Adónde? :: 어디로?
 
-—A perdernos.
+@vale —A perdernos. :: 길 잃으러.
 
-Fuimos en la línea verde, casi hasta el final, hasta la parada de Mundet, al pie de la montaña. Pasamos al lado de un velódromo y llegamos a una puerta de hierro. Detrás, había un jardín antiguo.
+우리는 초록색 노선을 타고 거의 끝까지, 산자락의 문데트 역까지 갔다. Fuimos en la línea verde, casi hasta el final. 문데트에서 andén을 나와 자전거 경기장 옆을 지나 철문 앞에 도착했다. 문 뒤에 오래된 정원이 있었다.
 
 @address
 Parc del Laberint d'Horta
 @end
 
-Vale pagó las entradas. Los martes no es gratis.
+오르타 미로 공원. 발레가 입장료를 냈다. 화요일은 무료가 아니었다.
 
-—El Laberinto de Horta —dijo Vale—. El jardín más viejo de Barcelona. Lo hizo un marqués, hace más de doscientos años, para pasear y divertirse. Y en el centro hay un laberinto de verdad. Con paredes de árboles.
+@vale —El Laberinto de Horta. El jardín más viejo de Barcelona. Lo hizo un marqués, hace más de doscientos años, para pasear y divertirse. Y en el centro hay un {laberinto|라베*린*토} de verdad. Con paredes de árboles. :: 오르타 미로야. 바르셀로나에서 제일 오래된 정원이고. 이백 년도 더 전에 어떤 후작이 산책하고 놀려고 만들었대. 그리고 한가운데에 진짜 미로가 있어. 나무로 된 벽이.
 
-Pasamos delante de un palacio viejo y subimos por unas terrazas con escaleras de piedra, estatuas y estanques. Desde arriba se veía el laberinto, abajo: un dibujo perfecto de paredes verdes, altas, cortadas con mucha precisión. Cipreses, me dijo Vale. En la entrada había una piedra con una escena antigua: una mujer que le daba un hilo a un hombre.
+우리는 오래된 궁전 앞을 지나, 돌계단과 조각상과 연못이 있는 계단식 정원을 올라갔다. 위에서 아래의 미로가 내려다보였다. 높은 초록 벽들이 아주 정확하게 다듬어져 완벽한 무늬를 그리고 있었다. 사이프러스라고 발레가 알려 주었다. 입구의 돌에는 옛 장면이 새겨져 있었다. 한 여자가 남자에게 실을 건네는 장면.
 
-—Ariadna y Teseo —dijo Vale—. Ella le dio un hilo para salir del laberinto. Si Teseo no hubiera tenido el hilo, se habría quedado allí para siempre.
+@vale —Ariadna y Teseo. Ella le dio un {hilo|*일*로} para salir del laberinto. Si Teseo no hubiera tenido el hilo, se habría quedado allí para siempre. :: 아리아드네와 테세우스야. 아리아드네가 미로를 빠져나오라고 실을 줬어. 테세우스한테 실이 없었으면 영영 거기 갇혔을 거야.
 
-—¿Y nosotras? ¿Tenemos hilo?
+@yunha —¿Y nosotras? ¿Tenemos hilo? :: 그럼 우리는? 우리한테 실 있어?
 
-—No. Tenemos teléfono. —Vale me lo quitó de la mano y lo guardó en su bolso—. Pero hoy, no.
+@vale —No. Tenemos teléfono. Pero hoy, no. :: 아니. 전화가 있지. 그런데 오늘은 안 돼.
 
-##
-
-Dentro del laberinto, el mundo desapareció. Solo había paredes verdes, más altas que nosotras, y un camino de tierra que giraba a la derecha, a la izquierda, a la derecha otra vez. Olía a ciprés y a tierra mojada. Se oían voces de otras personas, cerca, pero no se veía a nadie.
-
-Al principio nos reíamos. Vale elegía los caminos con mucha seguridad y siempre se equivocaba.
-
-—Por acá. No, por allá. No, por acá.
-
-En un rincón con un banco de piedra, Vale se sentó de repente.
-
-—¿Te acordás de la azotea? ¿Cuando te dije que le escondí algo a mi familia dos años, en la misma ciudad?
-
-—Sí.
-
-—Estudiaba medicina en Buenos Aires. Mis viejos estaban re orgullosos. «Nuestra hija, la doctora». Y yo, en el segundo año, lo dejé. No podía más. Odiaba la sangre, odiaba los exámenes, odiaba todo. Me puse a estudiar diseño, a escondidas. Durante dos años les dije que iba a la facultad de medicina. Les mentía cada domingo, en la comida familiar. Con la carne del asado en la boca.
-
-—¿Y qué pasó?
-
-—Mi vieja lo descubrió. Por una amiga suya, en el súper. —Vale se rio, pero tenía los ojos brillantes—. Lloró una semana. Después me dijo: «Ojalá me lo hubieras dicho antes. Me habría enojado igual, pero solo un día». ¿Entendés? Lo peor no fue dejar medicina. Lo peor fueron los dos años de mentiras. Me arrepiento de eso. Me arrepiento de no habérselo dicho el primer día. Del resto, no.
-
-Me arrepiento de eso. Me arrepiento de los dos años. Pensé en mis tres semanas de miedo y de mentiras a Marc.
-
-—Por eso estoy acá —dijo Vale—. Por eso vine a Barcelona. Para hacer lo que yo quiero, sin esconderme de nadie.
-
-Se levantó y me dio un golpe suave en el hombro.
-
-—Ahora, perdete. En serio. Yo me voy por la izquierda. Nos vemos en el centro. O en la salida. O en Buenos Aires.
-
-Y desapareció detrás de una pared verde.
+발레가 내 손에서 휴대폰을 빼앗아 자기 가방에 넣었다.
 
 ##
 
-Me quedé sola.
+미로 안에 들어가자 세상이 사라졌다. Dentro del laberinto, el mundo desapareció. 우리 키보다 높은 초록 벽과, 오른쪽으로, 왼쪽으로, 다시 오른쪽으로 꺾이는 흙길뿐이었다. 사이프러스와 젖은 흙 냄새가 났다. 가까이에서 다른 사람들 목소리가 들렸지만, 아무도 보이지 않았다.
 
-Probé un camino. Terminaba en una pared. Probé otro. Volví al mismo banco de piedra. Probé un tercero, y otra pared. Empecé a caminar más rápido. Las voces de los otros se oían cada vez más lejos. El cielo era un rectángulo gris, encima de mí.
+처음에는 웃었다. Al principio nos reíamos. 발레는 아주 자신 있게 길을 골랐고, 매번 틀렸다.
 
-Pensé: estoy perdida. Perdida. La palabra de aquel domingo con Vale, en el Passeig de Gràcia, cuando no sabía nada. Me acordé de Montse: «Perdida, pero en casa».
+@vale —Por acá. No, por allá. No, por acá. :: 이쪽. 아니, 저쪽. 아니, 이쪽.
 
-Me paré. Respiré.
+돌 벤치가 있는 구석에서 발레가 갑자기 앉았다.
 
-Y pensé en todo, por fin. No una cosa detrás de otra, como hacía siempre, sino todo junto, como el laberinto.
+@vale —¿Te acordás de la azotea? ¿Cuando te dije que le escondí algo a mi familia dos años, en la misma ciudad? :: 옥상 기억나? 내가 가족한테 이 년 동안 뭘 숨겼다고 했던 거. 같은 도시에 살면서.
 
-Si me quedo aquí y no vuelvo a ver a mi madre, me arrepentiré. Lo sé. Ella me esperará, como Martí esperó a mi abuela. No quiero que nadie me espere toda la vida.
+@yunha —Sí. :: 응.
 
-Pero si me voy y no vuelvo, también me arrepentiré. Seré como mi abuela: se fue de esta ciudad y no volvió nunca. Ojalá ella hubiera vuelto una vez. Una sola. Ojalá hubieran hablado. Y Marc… No quiero ser ella.
+@vale —Estudiaba medicina en Buenos Aires. Mis viejos estaban re orgullosos. «Nuestra hija, la doctora». Y yo, en el segundo año, lo dejé. No podía más. Odiaba la sangre, odiaba los exámenes, odiaba todo. Me puse a estudiar diseño, a escondidas. Durante dos años les dije que iba a la facultad de medicina. Les mentía cada domingo, en la comida familiar. Con la carne del asado en la boca. :: 부에노스아이레스에서 의대에 다녔어. 우리 부모님은 엄청 자랑스러워했지. ‘우리 딸, 의사 선생님.’ 그런데 나는 이 학년 때 그만뒀어. 더는 못 하겠더라. 피도 싫고, 시험도 싫고, 전부 싫었어. 몰래 디자인 공부를 시작했어. 이 년 동안 부모님한테는 의대에 다닌다고 했고. 일요일마다 가족 점심에서 거짓말을 했어. 입에 고기를 문 채로.
 
-No tenía que elegir entre las dos cosas. Eso era lo que no veía. Había otra salida. Me habría gustado verla antes. Pero la estaba viendo ahora.
+@yunha —¿Y qué pasó? :: 그래서 어떻게 됐어?
 
-Iría a ver a mi madre. Haría kimchi con ella, como cada invierno con mi abuela. Dejaría mi piso de Seúl. Y volvería. Con un billete de ida y vuelta. Esta vez, con vuelta.
+@vale —Mi vieja lo descubrió. Por una amiga suya, en el súper. Lloró una semana. Después me dijo: «Ojalá me lo hubieras dicho antes. Me habría enojado igual, pero solo un día». ¿Entendés? Lo peor no fue dejar medicina. Lo peor fueron los dos años de mentiras. {Me arrepiento de|메 아레*피엔*토 데} eso. Me arrepiento de no habérselo dicho el primer día. Del resto, no. :: 엄마가 알아냈어. 엄마 친구한테 들었대, 마트에서. 일주일을 우셨어. 그다음에 그러셨어. ‘더 일찍 말해 줬으면 좋았을걸. 그래도 화는 났겠지만, 하루만 났을 거야.’ 알겠어? 제일 나빴던 건 의대를 그만둔 게 아니야. 이 년 동안의 거짓말이었지. 나는 그걸 후회해. 첫날 말하지 않은 걸 후회해. 나머지는 안 해.
 
-No lo pensé más. Empecé a caminar. Derecha. Izquierda. Una pared. Atrás. Izquierda otra vez. No tenía hilo. Pero tenía algo mejor: ya sabía adónde quería ir.
+발레는 웃었지만 눈이 반짝였다. 나는 마르크에게 두려워하며 거짓말하던 내 세 주를 생각했다.
 
-Y de repente, el camino se abrió. Un claro redondo. En el centro, encima de una columna, había una estatua de un chico con alas: un niño desnudo, con un arco en la mano, que parecía reírse de todos los perdidos.
+@vale —Por eso estoy acá. Por eso vine a Barcelona. Para hacer lo que yo quiero, sin esconderme de nadie. :: 그래서 내가 여기 있는 거야. 그래서 바르셀로나에 온 거고. 누구한테도 숨지 않고 내가 원하는 걸 하려고.
 
-—Eros —dijo una voz detrás de mí—. El amor. Está en el centro del laberinto. Qué casualidad, ¿no?
+발레가 일어나 내 어깨를 가볍게 쳤다.
 
-Era Vale. Tenía hojas de ciprés en el pelo.
+@vale —Ahora, perdete. En serio. Yo me voy por la izquierda. Nos vemos en el centro. O en {la salida|라 살*리*다}. O en Buenos Aires. :: 이제 길 잃어 봐. 진짜로. 나는 왼쪽으로 갈게. 한가운데서 보자. 아니면 출구에서. 아니면 부에노스아이레스에서.
 
-—Me perdí de verdad —dijo—. Pero de verdad, eh. Tres veces en el mismo banco. ¿Y vos?
-
-—Yo también. —Le di un abrazo muy fuerte—. Y ya sé lo que voy a hacer.
+그리고 발레는 초록 벽 뒤로 사라졌다.
 
 ##
 
-Esa noche, en el ordenador de Vale, compré un billete. Barcelona–Seúl, viernes 20 de noviembre. Seúl–Barcelona, viernes 8 de enero. Ida y vuelta.
+나는 혼자 남았다. Me quedé sola.
 
-Cuando apreté el botón, me temblaban las manos. Vale aplaudió desde la cama.
+Probé un camino. Terminaba en una pared. Probé otro. Volví al mismo banco de piedra. 세 번째 길도 벽이었다. Empecé a caminar más rápido. 다른 사람들의 목소리가 점점 멀어졌다. 머리 위의 하늘은 회색 네모였다. El cielo era un rectángulo gris.
 
-—¿Y los papeles? —preguntó después—. Vos llegaste en agosto. Ya te pasaste de los noventa días, ¿no?
+생각했다. 길을 잃었다. Estoy perdida. 아무것도 모르던 그 일요일, 파세치 데 그라시아에서 발레를 놓치고 혼자 돌아와 처음 쓴 말이었다. 그리고 몬세의 말이 떠올랐다. Perdida, pero en casa. 길을 잃어도, 집에 있는 거야.
 
-—No me he pasado. En octubre, Montse me llevó a la oficina de Extranjería. Me dieron una prórroga, hasta finales de noviembre, por los papeles de mi abuela. —Saqué una hoja doblada del cuaderno y se la enseñé—. Y en Seúl voy a pedir un visado de estudiante. Ya me he apuntado a una escuela de idiomas, aquí en Gràcia, para enero. Un año.
+나는 멈췄다. 숨을 쉬었다. Me paré. Respiré.
 
-—¡Una escuela! ¿Vos? Si ya hablás mejor que yo.
+그리고 마침내 모든 것을 생각했다. 늘 하던 것처럼 하나씩 차례로가 아니라, 미로처럼 한꺼번에.
 
-—Tú hablas argentino.
+여기 남아서 엄마를 다시 보지 않는다면 나는 후회할 것이다. {Me arrepentiré|메 아레펜티*레*}. 안다. 엄마는 기다릴 것이다. 마르티가 할머니를 기다렸던 것처럼. 나는 누구도 평생 나를 기다리게 하고 싶지 않다.
 
-—Eso no es un idioma, es una actitud.
+그런데 떠나서 돌아오지 않는다면, 그때도 후회할 것이다. 할머니처럼 될 것이다. 이 도시를 떠나 다시는 돌아오지 않은 할머니. Ojalá ella hubiera vuelto una vez. 한 번만이라도 돌아왔더라면. 두 사람이 이야기라도 나눴더라면. 그리고 마르크… 나는 할머니처럼 되고 싶지 않다. No quiero ser ella.
 
-—¿Se lo vas a decir a Marc?
+둘 중 하나를 고를 필요가 없었다. 그게 내가 보지 못한 것이었다. 다른 출구가 있었다. Había otra salida. 더 일찍 보았으면 좋았을 것이다. 그래도 지금 보이고 있었다.
 
-—El miércoles. En el santo de su abuelo. A todos a la vez.
+엄마를 보러 갈 것이다. 할머니와 해마다 그랬던 것처럼 엄마와 김장을 할 것이다. 서울의 집을 정리할 것이다. 그리고 돌아올 것이다. Iría a ver a mi madre. Y volvería. 왕복 표를 끊어서. 이번에는 돌아오는 표와 함께. Esta vez, con vuelta.
 
-—¿Y si se enoja?
+하지만 엄마는 멀리 부산에 혼자 남을 것이다. Pero mi madre se quedaría sola en Busan, muy lejos. 그건 고칠 수 없는 일이었다. 시계로도, 열쇠로도. 나는 그걸 안고 사는 법을 배워야 할 것이다. 엄마도.
 
-—No se va a enojar. —Lo pensé un momento—. Y si se enoja, se le pasará.
+No lo pensé más. Empecé a caminar. 오른쪽. 왼쪽. 벽. 뒤로. 다시 왼쪽. 실은 없었다. No tenía hilo. 그래도 더 좋은 게 있었다. 내가 어디로 가고 싶은지 이제 알았다.
 
-Antes de dormir abrí el cuaderno. Escribí todas las frases nuevas del día y las miré mucho tiempo. Me arrepiento de eso: el presente, una pena de hoy. Me arrepentiré: el futuro, una pena que todavía puedo evitar. Me arrepiento de no habérselo dicho. Me habría gustado verla antes. Si Teseo no hubiera tenido el hilo, se habría quedado allí. Ojalá me lo hubieras dicho. Cosas que ya pasaron y no se pueden cambiar. «Haber» en casi todas, como una puerta que ya se cerró. Pero la última frase del día no era así. La última frase era: volveré.
+Y de repente, el camino se abrió. 그리고 갑자기 길이 열렸다. 둥근 빈터. 한가운데 기둥 위에 날개 달린 소년의 조각상이 있었다. 손에 활을 든 벌거벗은 아이가, 길 잃은 모든 사람을 보고 웃는 것 같았다.
+
+@vale —Eros. El amor. Está en el centro del laberinto. Qué casualidad, ¿no? :: 에로스. 사랑이야. 미로 한가운데에 있네. 우연이지, 그치?
+
+등 뒤에서 들린 목소리는 발레였다. 머리카락에 사이프러스 잎이 붙어 있었다.
+
+@vale —Me perdí de verdad. Pero de verdad, eh. Tres veces en el mismo banco. ¿Y vos? :: 진짜로 길 잃었어. 진짜로. 같은 벤치에 세 번이나 갔어. 너는?
+
+@yunha —Yo también. Y ya sé lo que voy a hacer. :: 나도. 그리고 이제 뭘 할지 알아.
+
+나는 발레를 아주 꽉 껴안았다.
+
+##
+
+그날 밤 나는 발레의 컴퓨터로 비행기표를 샀다. Esa noche compré un billete. Era caro. 바르셀로나–서울, 십일월 이십일 금요일. 서울–바르셀로나, 일월 팔일 금요일. 왕복. Ida y vuelta.
+
+버튼을 누를 때 손이 떨렸다. Vale aplaudió desde la cama.
+
+@vale —¿Y los papeles? Vos llegaste en agosto. Ya te pasaste de los noventa días, ¿no? :: 서류는? 너 팔월에 왔잖아. 구십 일 벌써 넘지 않았어?
+
+@yunha —No me he pasado. En octubre, Montse me llevó a la oficina de Extranjería. Me dieron una prórroga, hasta finales de noviembre, por los papeles de mi abuela. Y en Seúl voy a pedir {un visado de estudiante|운 비*사*도 데 에스투*디안*테}. Ya me he apuntado a {una escuela de idiomas|*우*나 에스*쿠엘*라 데 이*디오*마스}, aquí en Gràcia, para enero. Un año. :: 안 넘었어. 시월에 몬세가 외국인청에 데려갔거든. 할머니 서류 때문에 십일월 말까지 연장해 줬어. 그리고 서울에서 학생 비자를 신청할 거야. 그라시아에 있는 어학원에 일월부터 등록해 뒀어. 일 년.
+
+나는 수첩에 끼워 둔 접힌 종이를 꺼내 보여 주었다.
+
+@vale —¡Una escuela! ¿Vos? Si ya hablás mejor que yo. :: 어학원! 네가? 이미 나보다 잘하는데.
+
+@yunha —Tú hablas argentino. :: 너는 아르헨티나 말 하잖아.
+
+@vale —Eso no es un idioma, es una actitud. ¿Se lo vas a decir a Marc? :: 그건 언어가 아니라 태도야. 마르크한테 말할 거야?
+
+@yunha —El miércoles. En el santo de su abuelo. A todos a la vez. :: 수요일에. 할아버지 성인 날에. 다 있을 때 한꺼번에.
+
+@vale —¿Y si se enoja? :: 화내면?
+
+@yunha —No se va a enojar. Y si se enoja, se le pasará. :: 화 안 낼 거야. 화내도 금방 풀릴 거고.
+
+잠들기 전에 수첩을 펼쳤다. 그날 새로 배운 문장들을 모두 적고 오래 바라보았다. me arrepentiré는 아직 피할 수 있는 후회였고, 이미 지나가 바꿀 수 없는 일을 말하는 문장에는 모두 haber가 들어 있었다. 이미 닫힌 문처럼. 그런데 그날의 마지막 문장은 그렇지 않았다. volveré. 돌아올 것이다.
 
 @letter
 Martes, 10 de noviembre.
+Anoche me llamó mi madre. Quiere ver mi cara.
 Laberinto de Horta. Paredes de cipreses. Ariadna le dio un hilo a Teseo.
 Vale dejó medicina y lo escondió dos años. «Me arrepiento de eso. Del resto, no».
-Me he perdido sola. «Perdida, pero en casa».
+¿Cuál es el camino? No lo sé. Me he perdido sola. No importa. «Perdida, pero en casa».
 Si me quedo sin ver a mi madre, me arrepentiré. Si me voy y no vuelvo, también.
-En el centro: Eros. El amor. Qué casualidad.
-He comprado un billete. Ida y vuelta. 20 de noviembre – 8 de enero.
-Volveré.
+Había otra salida. En el centro: Eros. El amor. Qué casualidad.
+He comprado un billete de ida y vuelta. 20 de noviembre – 8 de enero.
+Visado de estudiante. Escuela de idiomas en Gràcia, un año.
+Volveré pronto.
 @end
