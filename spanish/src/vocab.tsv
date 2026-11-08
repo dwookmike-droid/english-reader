@@ -213,7 +213,7 @@ dónde	dónde	*돈*데	어디	x	4
 muchas gracias	muchas gracias	*무*차스 *그라*_시_아스	정말 고맙습니다	x	4	
 mirá	mirá	미*라*	봐 (아르헨티나식)	x	4	스페인에서는 mira
 querés	querés	케*레스*	너는 원하니 (아르헨티나식)	x	4	스페인에서는 quieres
-verde	verde	*베르*데	초록색	x	4	
+verde	verde		초록색	n	6	4장에서 Vale에게 처음 들었다
 te gusta	te gusta		(너는) ~이 좋아? 마음에 들어?	n	6	gustar는 좋아하는 대상이 주어다
 vamos a	vamos a	*바*모스 아	~에 가자	x	4	
 un lugar de piedras	un lugar de piedras	운 루*가르* 데 *피에*드라스	돌이 많은 곳	x	4	
@@ -2084,3 +2084,5 @@ cantamos	cantamos		(우리는) 노래했다	x	30
 exacto	exacto		정확한	x	20	
 
 Martí Puig i Ferrer	martí puig i ferrer		마르티 푸치 이 페레르 — 마르티의 온이름 (카탈루냐식, 아버지 성 i 어머니 성)	p	21
+mirado	mirado		본 (mirar의 과거분사)	x	14	ha mirado = 보았다
+podido	podido		할 수 있었던 (poder의 과거분사)	x	24	he podido = 할 수 있었다

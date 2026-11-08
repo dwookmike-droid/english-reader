@@ -110,7 +110,7 @@ llamaré, iréis. 또 미래였다.
 
 @marc —Primero, el péndulo. Después limpiaré la máquina, colgaré el péndulo y lo ajustaré. Y {funcionará|푼_시_오나*라*}. :: 먼저 진자예요. 그다음에 기계를 닦고, 진자를 걸고, 맞출 거예요. 그러면 갈 거예요.
 
-나는 그 새로운 모양에 대해 물었다. 마르크가 웃었다.
+나는 그 모양이 어떻게 만들어지는지 물었다. 마르크가 웃었다.
 
 @marc —Es {el futuro|엘 푸*투*로}. Es {fácil|*파*_실_}: el verbo entero y -é, -ás, -á, -emos, -éis, -án. Funcionar: funcionará. Ir: iré, irás, irá, iremos. Volver: volveré. Unos pocos son raros: venir, vendrá; decir, diré; hacer, haré. :: 미래형이에요. 쉬워요. 동사 전체에 -é, -ás, -á, -emos, -éis, -án을 붙이면 돼요. funcionar는 funcionará. ir는 iré, irás, irá, iremos. volver는 volveré. 몇 개만 특이해요. venir는 vendrá, decir는 diré, hacer는 haré.
 
