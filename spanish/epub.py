@@ -38,7 +38,7 @@ body { margin: 0 4%; line-height: 1.75; text-align: justify; word-break: keep-al
   font-family: "EB Garamond", serif;
 }
 .w, .es { font-size: 1.1em; }
-.w.new { font-weight: 600; }
+.w.new { color: #b5532f; }
 .pr { font-family: sans-serif; font-size: .7em; color: #6a655c; margin-left: .25em; white-space: nowrap; }
 .pr b, .lp b, .opr b { font-weight: 700; color: #1d1d1b; }
 u { text-underline-offset: .18em; }
@@ -60,6 +60,10 @@ svg.fl, svg.wfl, svg.orn { display: block; margin: 0 auto; }
 .letter { margin: 1em 0; padding: .6em .9em; background: #f8eeea; border-left: 3px solid #b5532f; }
 .letter p { text-indent: 0; text-align: left; font-style: italic; font-size: 1.12em; line-height: 1.55; margin: 0 0 .15em; }
 .letter .w, .letter .es { font-style: italic; font-size: 1em; }
+.letter.diary { background: none; border-left: 4px double #b5532f; }
+.letter.diary::before { content: "수첩"; display: block; font: 700 .7em sans-serif; color: #b5532f; letter-spacing: .14em; margin-bottom: .2em; }
+.letter.diary p { font-style: normal; margin: 0; padding: .1em 0; border-bottom: 1px solid #e5c3b6; }
+.letter.diary .w, .letter.diary .es { font-style: normal; }
 .address { margin: 1em auto; padding: 2px; border: 1.5px solid #b5532f; max-width: 90%; }
 .address-in { border: 1px solid #b5532f; padding: .45em .8em; text-align: center; }
 .address p { text-indent: 0; text-align: center; margin: 0; line-height: 1.4; }
@@ -103,6 +107,7 @@ aside.note h4 + p { font-weight: 700; }
 .pg.title, .pg.title div { text-align: center; }
 .guide li, .pron p, .cast dd { line-height: 1.65; }
 .guide li { margin-bottom: .6em; }
+.guide .newword { font-style: normal; font-weight: 700; color: #b5532f; }
 .pron table { border-collapse: collapse; width: 100%; }
 .pron td { padding: .3em 0; border-bottom: 1px solid #d6d1c6; vertical-align: baseline; text-align: left; }
 .pron td.l { width: 6em; font-weight: 600; }
@@ -159,6 +164,7 @@ def front_xhtml():
 
 def chapter_xhtml(ch, entries):
     n = ch['n']
+    B.mark_diary(ch)
     mark = (f'<div class="mark clock">{B.dial_svg()}</div>' if n == 28
             else f'<div class="mark">{B.tile_svg(B.part_of(n))}</div>')
     opener = f'''<section class="opener" id="c{n}">

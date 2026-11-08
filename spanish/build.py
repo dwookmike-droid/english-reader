@@ -34,6 +34,8 @@ MARGIN_INNER_MM = 16
 MARGIN_OUTER_MM = 12
 # 종이 한 장 두께. 미색 모조 80g 근처. 책등(mm) = 쪽수 ÷ 2 × 이 값.
 PAPER_CALIPER_MM = 0.1
+# 양끝 맞춤에서 낱말 사이가 이만큼(em) 넘게 벌어진 줄은 왼쪽 정렬로 둔다(render.js)
+LOOSE_EM = 0.5
 
 # 1권은 대사 밑 우리말 뜻과 처음 나온 말의 한글 발음을 끝까지 싣는다(REWRITE.md, 2026-11-08).
 # 2권 이후에 도움을 줄일 때 이 두 값을 낮춘다.
@@ -357,7 +359,8 @@ def block_html(b):
     if b['t'] == 'br':
         return f'<p class="br">{flower_svg()}</p>'
     if b['t'] == 'letter':
-        return '<div class="letter">' + ''.join(f'<p>{x}</p>' for x in b['lines']) + '</div>'
+        cls = ' diary' if b.get('diary') else ''
+        return f'<div class="letter{cls}">' + ''.join(f'<p>{x}</p>' for x in b['lines']) + '</div>'
     if b['t'] == 'address':
         inner = ''.join(f'<p>{x}</p>' for x in b['lines'])
         return f'<div class="address"><div class="address-in">{inner}</div></div>'
@@ -365,6 +368,19 @@ def block_html(b):
         inner = ''.join(f'<p>{x}</p>' for x in b['lines'])
         return f'<aside class="note"><h4>문법 쪽지</h4>{inner}</aside>'
     raise ValueError(b)
+
+
+def mark_diary(ch):
+    """윤하의 수첩을 편지·쪽지·신문과 구별한다. 원고에서는 모두 @letter 다.
+    장의 마지막 @letter 뒤에 문법 쪽지만 있거나, 바로 다음 문단이 '수첩에' 적었다고 말하면 수첩이다(5장)."""
+    bl = ch['blocks']
+    idx = [i for i, b in enumerate(bl) if b['t'] == 'letter']
+    if not idx:
+        return
+    k = idx[-1]
+    after = bl[k + 1:]
+    if all(b['t'] == 'note' for b in after) or (after and after[0]['t'] == 'p' and '수첩에' in after[0]['h']):
+        bl[k]['diary'] = True
 
 
 # ── 문양 (인라인 SVG. 꽃 하나가 타일·장면 바뀜·열쇠가 된다) ──────────────
@@ -638,6 +654,7 @@ def page_rules(chapters, accent, mute):
 FONT_FILES = (
     'fontsource-gowun-batang-5.1.0/400.css', 'fontsource-gowun-batang-5.1.0/700.css',
     'fontsource-eb-garamond-5.1.0/400.css', 'fontsource-eb-garamond-5.1.0/400-italic.css',
+    'fontsource-eb-garamond-5.1.0/500.css',
     'fontsource-eb-garamond-5.1.0/600.css', 'fontsource-eb-garamond-5.1.0/600-italic.css',
     'fontsource-eb-garamond-5.1.0/500-italic.css',
     'fontsource-noto-sans-kr-5.1.0/400.css', 'fontsource-noto-sans-kr-5.1.0/700.css',
@@ -680,18 +697,26 @@ def print_html(chapters, entries, fontdir, mono=False, pages=None):
             'body { font-family: "Num", "Gowun Batang", "EB Garamond", "Noto Sans KR", serif; }\n')
     if mono:
         # 강조색 하나(--accent)를 먹 60% 근처로. 망점도 같이 옅어진다.
-        css += '\n:root { --accent: #666666; --soft: #f0f0f0; --mute: #555555; }\n'
+        css += '\n:root { --accent: #666666; --soft: #f0f0f0; --rule: #c4c4c4; --mute: #555555; }\n'
     fonts = font_links(fontdir)
     body = [front_matter(chapters, pages or {})]
     for ch in chapters:
+        mark_diary(ch)
         body.append(f'''{opener_html(ch)}
 <section class="chapter" style="page: c{ch["n"]}">
 {''.join(block_html(b) for b in ch["blocks"])}
 </section>
 {wordlist_html(ch, entries)}''')
+    # 책은 30장 단어 목록 쪽에서 끝난다. 낱말이 적어 빈 쪽 아래에 열쇠를 놓아 마지막 쪽으로 맺는다.
+    body[-1] = re.sub(r'<section class="words">(.*)</section>$',
+                      rf'<section class="words last">\1<div class="fin" aria-hidden="true">{KEY_SVG}</div></section>',
+                      body[-1].rstrip(), flags=re.S)
+    # 발음 괄호 안의 띄어쓰기는 양끝 맞춤에 늘어나지 않게 고정 폭 공백(U+2005, 1/4em)으로 찍는다.
+    body = [re.sub(r'<span class="pr">\[.*?\]</span>', lambda m: m.group().replace(' ', '\u2005')
+                   .replace('<span\u2005class', '<span class'), x) for x in body]
     return f'''<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8">
 <title>{TITLE_ES} — 인쇄용</title>{fonts}<style>{css}</style></head>
-<body>{''.join(body)}</body></html>'''
+<body data-measure="{TRIM_W - MARGIN_INNER_MM - MARGIN_OUTER_MM}mm" data-loose="{LOOSE_EM}">{''.join(body)}</body></html>'''
 
 
 # ── 표지 펼침과 납품용 PDF ───────────────────────────────────────────
@@ -889,6 +914,7 @@ CMYK_PALETTE = {
     '#2f5b4a': (.75, .30, .60, .45),  # 짙은 초록 (표지)
     '#fbf3e6': (0, .03, .08, 0),      # 크림 (표지 명판)
     '#f8eeea': (0, .07, .085, .015),  # 편지 바탕 = 테라코타 약 10%
+    '#e5c3b6': (0, .245, .30, .05),   # 수첩 괘선 = 테라코타 약 35%
     '#000000': (0, 0, 0, 1),          # 먹 K100
     '#1d1d1b': (0, 0, 0, 1),          # 먹 화면값 (표지의 글자)
     '#010101': (1, 1, 1, 1),          # 재단선·접지선 = 맞춤색(네 판 모두)
