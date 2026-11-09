@@ -1,0 +1,975 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--ARTIFACT-START-->
+<title>청주발 항공권 살까 말까</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500;700;900&family=IBM+Plex+Sans+KR:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+:root{
+  --paper:#EFF2F3; --surface:#FFFFFF; --surface-2:#E4E9EB;
+  --ink:#0F1619; --ink-2:#4B5C62; --ink-3:#77878D;
+  --line:#D2DADD; --line-2:#BFC9CD;
+  --oka:#0B7A85; --oka-soft:#DFEFF0;
+  --twn:#B02A37; --twn-soft:#F8E3E4;
+  --g1:#5E6469; --g2:#7B8073; --g3:#8A8555; --g4:#54893E; --g5:#0E7A50;
+  --band:#C9D3D6; --band-2:#AEBBBF;
+  --shadow:0 1px 2px rgba(15,22,25,.06),0 8px 24px -14px rgba(15,22,25,.28);
+  --display:"Gothic A1","IBM Plex Sans KR",system-ui,sans-serif;
+  --body:"IBM Plex Sans KR","Gothic A1",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0D1315; --surface:#151E21; --surface-2:#1D282C;
+    --ink:#E9EFF0; --ink-2:#9FB0B5; --ink-3:#79898E;
+    --line:#263438; --line-2:#33454A;
+    --oka:#43BAC4; --oka-soft:#0E2E31;
+    --twn:#EC7079; --twn-soft:#331519;
+    --g1:#8A9195; --g2:#9AA08F; --g3:#B5AE72; --g4:#7CB85C; --g5:#37B87D;
+    --band:#2A3639; --band-2:#3D4E53;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -14px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0D1315; --surface:#151E21; --surface-2:#1D282C;
+  --ink:#E9EFF0; --ink-2:#9FB0B5; --ink-3:#79898E;
+  --line:#263438; --line-2:#33454A;
+  --oka:#43BAC4; --oka-soft:#0E2E31;
+  --twn:#EC7079; --twn-soft:#331519;
+  --g1:#8A9195; --g2:#9AA08F; --g3:#B5AE72; --g4:#7CB85C; --g5:#37B87D;
+  --band:#2A3639; --band-2:#3D4E53;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -14px rgba(0,0,0,.7);
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--body); font-size:16px; line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+.app{max-width:880px; margin:0 auto; padding:28px 20px 64px;
+  display:flex; flex-direction:column; gap:26px;
+  --accent:var(--oka); --accent-soft:var(--oka-soft);
+}
+.app[data-dest="twn"]{--accent:var(--twn); --accent-soft:var(--twn-soft)}
+
+.eyebrow{
+  font-family:var(--mono); font-size:11px; font-weight:600;
+  letter-spacing:.14em; text-transform:uppercase; color:var(--ink-3);
+  margin:0 0 10px;
+}
+h1{
+  font-family:var(--display); font-weight:900; font-size:clamp(30px,7vw,44px);
+  line-height:1.12; letter-spacing:-.02em; margin:0; text-wrap:balance;
+}
+.lede{margin:12px 0 0; color:var(--ink-2); font-size:15px; max-width:58ch}
+
+/* ---- controls ---- */
+.controls{display:flex; flex-direction:column; gap:14px}
+.ctl-row{display:flex; flex-wrap:wrap; gap:14px; align-items:flex-end}
+.field{display:flex; flex-direction:column; gap:7px; min-width:0}
+.ctl-row .field{flex:1 1 200px}
+.field-label{
+  font-family:var(--mono); font-size:11px; font-weight:600;
+  letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3);
+}
+.seg{display:flex; background:var(--surface-2); border-radius:9px; padding:3px; gap:3px}
+.seg button{
+  flex:1; appearance:none; border:0; background:transparent; cursor:pointer;
+  font-family:var(--body); font-size:14px; font-weight:600; color:var(--ink-2);
+  padding:9px 6px; border-radius:7px; transition:background .15s, color .15s;
+  display:flex; flex-direction:column; align-items:center; gap:1px; line-height:1.25;
+}
+.seg button em{font-family:var(--mono); font-style:normal; font-size:10px;
+  font-weight:600; letter-spacing:.09em; opacity:.7}
+.seg button:hover{color:var(--ink)}
+.seg button[aria-pressed="true"]{background:var(--surface); color:var(--accent); box-shadow:var(--shadow)}
+.seg button:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+
+.price-wrap{display:flex; align-items:center; background:var(--surface);
+  border:1px solid var(--line-2); border-radius:9px; overflow:hidden}
+.price-wrap:focus-within{border-color:var(--accent); box-shadow:0 0 0 3px var(--accent-soft)}
+.won{padding:0 4px 0 13px; color:var(--ink-3); font-family:var(--mono); font-size:15px}
+#price{
+  flex:1; min-width:0; appearance:none; border:0; background:transparent; color:var(--ink);
+  font-family:var(--mono); font-weight:600; font-size:18px; font-variant-numeric:tabular-nums;
+  padding:11px 13px 11px 4px; outline:none;
+}
+#price::-webkit-outer-spin-button,#price::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+
+/* ---- verdict card ---- */
+.verdict{
+  background:var(--surface); border:1px solid var(--line); border-radius:14px;
+  box-shadow:var(--shadow); overflow:hidden;
+}
+.verdict-rail{height:4px; background:var(--accent)}
+
+/* route bar: origin vs destination */
+.route-bar{
+  background:var(--accent-soft); border-bottom:1px solid var(--line);
+  padding:14px 22px; display:flex; align-items:center; justify-content:space-between;
+  gap:14px; flex-wrap:wrap;
+}
+.od{display:flex; align-items:center; gap:14px}
+.od-node{display:flex; flex-direction:column; gap:2px; min-width:0}
+.od-role{
+  font-family:var(--mono); font-size:9.5px; font-weight:600; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--ink-3);
+}
+.od-city{font-family:var(--display); font-weight:900; font-size:19px; line-height:1.05; color:var(--ink)}
+.od-code{font-family:var(--mono); font-size:11px; font-weight:600; letter-spacing:.12em; color:var(--ink-3)}
+.od-to .od-city,.od-to .od-code{color:var(--accent)}
+.od-to .od-role{color:var(--accent); opacity:.75}
+.od-arrow{color:var(--accent); flex:0 0 auto; align-self:center; margin-top:8px}
+.route-meta{
+  font-family:var(--mono); font-size:11.5px; font-weight:600; letter-spacing:.06em;
+  color:var(--ink-2); text-align:right; line-height:1.5;
+}
+
+.verdict-body{padding:20px 22px 22px; display:flex; flex-direction:column; gap:18px}
+
+/* headline verdict */
+.call{display:flex; align-items:center; gap:14px; flex-wrap:wrap}
+.score-num{
+  font-family:var(--display); font-weight:900; font-size:40px; line-height:1;
+  font-variant-numeric:tabular-nums; color:var(--grade); flex:0 0 auto;
+}
+.score-num small{font-family:var(--mono); font-size:14px; font-weight:500; color:var(--ink-3)}
+.call-text{display:flex; flex-direction:column; gap:5px; min-width:0; flex:1 1 200px}
+.grade-pill{
+  align-self:flex-start; font-family:var(--display); font-weight:700; font-size:14px;
+  color:#fff; background:var(--grade); padding:5px 12px; border-radius:99px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .grade-pill{color:#0D1315}}
+:root[data-theme="dark"] .grade-pill{color:#0D1315}
+.call-sub{margin:0; font-size:14px; color:var(--ink-2); font-variant-numeric:tabular-nums}
+.meter{display:flex; gap:4px; margin-top:7px}
+.meter i{width:24px; height:7px; border-radius:2px; background:var(--band); display:block}
+.meter i.on{background:var(--grade)}
+.meter i.half{background:linear-gradient(90deg,var(--grade) 50%,var(--band) 50%)}
+
+/* three-figure strip */
+.stats{display:grid; grid-template-columns:repeat(3,1fr); border:1px solid var(--line);
+  border-radius:10px; overflow:hidden}
+.stat{padding:11px 13px; display:flex; flex-direction:column; gap:3px;
+  border-left:1px solid var(--line)}
+.stat:first-child{border-left:0}
+.stat span{font-family:var(--mono); font-size:9.5px; font-weight:600; letter-spacing:.12em;
+  text-transform:uppercase; color:var(--ink-3)}
+.stat b{font-family:var(--mono); font-size:15px; font-weight:600;
+  font-variant-numeric:tabular-nums; color:var(--ink)}
+.stat.is-you b{color:var(--grade)}
+
+/* band chart */
+.band{display:flex; flex-direction:column; gap:8px}
+.band-title{font-family:var(--mono); font-size:10.5px; font-weight:600; letter-spacing:.11em;
+  text-transform:uppercase; color:var(--ink-3)}
+.track{position:relative; height:36px; margin-top:8px}
+.track-bar{position:absolute; left:0; right:0; top:14px; height:8px; border-radius:4px;
+  background:linear-gradient(90deg,var(--band-2),var(--band))}
+.avg-tick{position:absolute; top:7px; width:2px; height:22px; background:var(--ink-3); border-radius:1px}
+.avg-label{position:absolute; top:-5px; transform:translateX(-50%); font-family:var(--mono);
+  font-size:10.5px; color:var(--ink-3); white-space:nowrap}
+.you{position:absolute; top:3px; width:3px; height:30px; background:var(--grade);
+  border-radius:2px; transform:translateX(-1.5px); transition:left .28s cubic-bezier(.4,0,.2,1)}
+.you::after{content:""; position:absolute; left:50%; bottom:-5px; transform:translateX(-50%);
+  width:11px; height:11px; border-radius:50%; background:var(--grade);
+  border:2.5px solid var(--surface)}
+.band-scale{display:flex; justify-content:space-between; font-family:var(--mono);
+  font-size:11px; font-variant-numeric:tabular-nums; color:var(--ink-2)}
+
+/* flavor message + month note */
+.msg{margin:0; font-size:15px; line-height:1.6; color:var(--ink);
+  padding:12px 14px; background:var(--accent-soft); border-radius:10px}
+.note{margin:0; font-size:13.5px; color:var(--ink-2); padding-left:12px;
+  border-left:2px solid var(--accent)}
+
+/* ---- matrix ---- */
+h2{font-family:var(--display); font-weight:700; font-size:19px; letter-spacing:-.01em; margin:0 0 4px}
+.section{display:flex; flex-direction:column; gap:14px}
+.section-sub{margin:0; font-size:13.5px; color:var(--ink-2)}
+.matrix{display:grid; grid-template-columns:repeat(3,1fr); gap:10px}
+@media (max-width:560px){.matrix{grid-template-columns:1fr 1fr}}
+.cell{
+  appearance:none; text-align:left; cursor:pointer; font-family:var(--body);
+  background:var(--surface); border:1px solid var(--line); border-radius:11px;
+  padding:12px 13px 13px; display:flex; flex-direction:column; gap:6px;
+  transition:border-color .15s, transform .15s;
+}
+.cell:hover{border-color:var(--line-2); transform:translateY(-1px)}
+.cell:focus-visible{outline:2px solid var(--cellhue); outline-offset:2px}
+.cell[aria-current="true"]{border-color:var(--cellhue); box-shadow:0 0 0 1px var(--cellhue)}
+.cell-route{font-family:var(--mono); font-size:10px; font-weight:600; letter-spacing:.1em;
+  color:var(--cellhue)}
+.cell-when{font-family:var(--display); font-weight:700; font-size:13px; color:var(--ink-2)}
+.cell-low{font-family:var(--display); font-weight:900; font-size:21px; line-height:1;
+  font-variant-numeric:tabular-nums; color:var(--ink)}
+.cell-avg{font-family:var(--mono); font-size:11px; font-variant-numeric:tabular-nums; color:var(--ink-3)}
+.cell-tag{font-size:12px; color:var(--ink-2); margin-top:1px}
+
+/* ---- ranking ---- */
+.rank-list{display:flex; flex-direction:column; gap:8px}
+.rank{
+  appearance:none; text-align:left; cursor:pointer; font-family:var(--body); width:100%;
+  background:var(--surface); border:1px solid var(--line); border-radius:11px;
+  padding:13px 15px; display:grid; grid-template-columns:auto 1fr auto; gap:4px 15px;
+  align-items:center; transition:border-color .15s, transform .15s;
+}
+.rank:hover{border-color:var(--line-2); transform:translateY(-1px)}
+.rank:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+.rank-no{
+  grid-column:1; grid-row:1 / span 2;
+  font-family:var(--display); font-weight:900; font-size:26px;
+  line-height:1; color:var(--ink-3); font-variant-numeric:tabular-nums; min-width:26px;
+}
+.rank.is-top .rank-no{color:var(--accent)}
+.rank-when{grid-column:2; grid-row:1; display:flex; align-items:baseline; gap:8px;
+  flex-wrap:wrap; min-width:0}
+.rank-dates{font-family:var(--display); font-weight:700; font-size:15.5px; color:var(--ink);
+  font-variant-numeric:tabular-nums}
+.rank-len{font-family:var(--mono); font-size:11.5px; color:var(--ink-3)}
+.rank-right{grid-column:3; grid-row:1 / span 2; text-align:right; display:flex;
+  flex-direction:column; gap:4px; align-items:flex-end}
+.rank-price{font-family:var(--mono); font-size:14.5px; font-weight:600;
+  font-variant-numeric:tabular-nums; color:var(--accent)}
+.rank-score{display:flex; align-items:center; gap:6px}
+.rank-bar{width:52px; height:5px; border-radius:3px; background:var(--band); overflow:hidden}
+.rank-bar i{display:block; height:100%; background:var(--accent); border-radius:3px}
+.rank-score span{font-family:var(--mono); font-size:10.5px; color:var(--ink-3);
+  font-variant-numeric:tabular-nums}
+.rank-why{grid-column:2; grid-row:2; font-size:12.5px; color:var(--ink-2); line-height:1.5}
+.chips{display:flex; gap:5px; flex-wrap:wrap}
+.chip{font-family:var(--mono); font-size:10px; font-weight:600; letter-spacing:.06em;
+  padding:2px 7px; border-radius:99px; border:1px solid var(--line-2); color:var(--ink-2)}
+.chip.holiday{border-color:var(--accent); color:var(--accent)}
+.chip.free{border-color:var(--g5); color:var(--g5)}
+@media (max-width:560px){
+  .rank{grid-template-columns:auto 1fr; gap:3px 12px}
+  .rank-no{grid-row:1 / span 3}
+  .rank-right{grid-column:2; grid-row:2; flex-direction:row; align-items:center;
+    text-align:left; gap:10px; margin-top:1px}
+  .rank-why{grid-row:3; margin-top:3px}
+}
+
+/* ---- routes ---- */
+.routes{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+@media (max-width:560px){.routes{grid-template-columns:1fr}}
+.route{background:var(--surface); border:1px solid var(--line); border-radius:11px; padding:14px}
+.route h3{margin:0 0 9px; font-family:var(--mono); font-weight:600; font-size:12px;
+  letter-spacing:.1em; color:var(--rhue)}
+.route h3 b{font-family:var(--display); font-weight:700; font-size:15px; letter-spacing:0;
+  color:var(--ink)}
+.route dl{margin:0; display:grid; grid-template-columns:auto 1fr; gap:5px 12px; font-size:13px}
+.route dt{font-family:var(--mono); font-size:10.5px; letter-spacing:.06em; color:var(--ink-3);
+  text-transform:uppercase; padding-top:3px}
+.route dd{margin:0; color:var(--ink-2)}
+
+.sched{margin-top:11px; border-top:1px solid var(--line); padding-top:10px}
+.sched-head{font-family:var(--mono); font-size:10px; font-weight:600; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--ink-3); margin-bottom:6px}
+.sched table{width:100%; border-collapse:collapse; font-family:var(--mono); font-size:12px;
+  font-variant-numeric:tabular-nums}
+.sched th{text-align:left; font-weight:600; font-size:9.5px; letter-spacing:.08em;
+  color:var(--ink-3); padding:0 8px 4px 0; text-transform:uppercase}
+.sched td{padding:3px 8px 3px 0; color:var(--ink); border-top:1px solid var(--line)}
+.sched td.code{color:var(--rhue); font-weight:600}
+.sched td.dash{color:var(--ink-3)}
+.sched-note{margin:7px 0 0; font-size:11.5px; color:var(--ink-3); line-height:1.5}
+.sched-none{margin:0; font-size:12.5px; color:var(--ink-2); line-height:1.5}
+.sched-none a{color:var(--rhue)}
+.season-bar{display:flex; gap:8px; flex-wrap:wrap; align-items:baseline;
+  padding:11px 14px; background:var(--surface-2); border-radius:10px;
+  font-size:12.5px; color:var(--ink-2); line-height:1.55}
+.season-bar b{font-family:var(--mono); font-size:11px; letter-spacing:.06em; color:var(--ink)}
+
+footer{border-top:1px solid var(--line); padding-top:18px; display:flex;
+  flex-direction:column; gap:9px}
+footer p{margin:0; font-size:12.5px; color:var(--ink-3); line-height:1.6}
+footer a{color:var(--ink-2); text-decoration:underline; text-underline-offset:2px}
+footer a:hover{color:var(--ink)}
+.srcs{display:flex; flex-wrap:wrap; gap:4px 14px; font-family:var(--mono); font-size:11.5px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important; animation:none!important}}
+</style>
+</head>
+<body>
+<div class="app" id="app" data-dest="oka">
+
+  <header>
+    <p class="eyebrow">출발지 고정 · 청주국제공항 CJJ</p>
+    <h1>청주발 항공권 살까 말까</h1>
+    <p class="lede">보고 있는 왕복 값을 넣으면 그 노선·그 달 시세에서 어디쯤인지와 사도 좋을지를 추천도로 알려줍니다.</p>
+  </header>
+
+  <div class="controls">
+    <div class="ctl-row">
+      <div class="field">
+        <span class="field-label" id="lb-dest">어디로</span>
+        <div class="seg" role="group" aria-labelledby="lb-dest">
+          <button type="button" data-dest="oka" aria-pressed="true">오키나와 <em>CJJ → OKA</em></button>
+          <button type="button" data-dest="twn" aria-pressed="false">대만 <em>CJJ → TPE</em></button>
+        </div>
+      </div>
+      <div class="field">
+        <span class="field-label" id="lb-month">언제</span>
+        <div class="seg" role="group" aria-labelledby="lb-month">
+          <button type="button" data-month="10" aria-pressed="false">10월</button>
+          <button type="button" data-month="11" aria-pressed="true">11월</button>
+          <button type="button" data-month="12" aria-pressed="false">12월</button>
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <label class="field-label" for="price">지금 보고 있는 왕복 값</label>
+      <div class="price-wrap">
+        <span class="won" aria-hidden="true">₩</span>
+        <input id="price" type="number" inputmode="numeric" step="1000" min="0" value="245000">
+      </div>
+    </div>
+  </div>
+
+  <div class="verdict">
+    <div class="verdict-rail"></div>
+
+    <div class="route-bar">
+      <div class="od">
+        <div class="od-node">
+          <span class="od-role">출발</span>
+          <span class="od-city">청주</span>
+          <span class="od-code">CJJ</span>
+        </div>
+        <svg class="od-arrow" viewBox="0 0 60 14" width="60" height="14" aria-hidden="true">
+          <line x1="0" y1="7" x2="46" y2="7" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 3"></line>
+          <path d="M60 7 L47 1.5 L50 7 L47 12.5 Z" fill="currentColor"></path>
+        </svg>
+        <div class="od-node od-to">
+          <span class="od-role">도착</span>
+          <span class="od-city" id="odCity">나하</span>
+          <span class="od-code" id="odCode">OKA</span>
+        </div>
+      </div>
+      <div class="route-meta" id="routeMeta">11월 출발<br>왕복 1인</div>
+    </div>
+
+    <div class="verdict-body">
+      <div class="call">
+        <div class="score-num" id="score">4.0<small> / 5</small></div>
+        <div class="call-text">
+          <span class="grade-pill" id="grade">좋은 가격</span>
+          <p class="call-sub" id="callsub"></p>
+          <div class="meter" id="meter" aria-hidden="true"></div>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat is-you"><span>넣은 값</span><b id="stYou">–</b></div>
+        <div class="stat"><span>이 달 최저</span><b id="stLow">–</b></div>
+        <div class="stat"><span>이 달 평균</span><b id="stAvg">–</b></div>
+      </div>
+
+      <div class="band">
+        <span class="band-title" id="bandtitle">시세 밴드</span>
+        <div class="track">
+          <div class="track-bar"></div>
+          <div class="avg-tick" id="avgtick"></div>
+          <div class="avg-label" id="avglabel">평균</div>
+          <div class="you" id="you"></div>
+        </div>
+        <div class="band-scale">
+          <span id="low">–</span><span id="high">–</span>
+        </div>
+      </div>
+
+      <p class="msg" id="msg"></p>
+      <p class="note" id="note"></p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div>
+      <h2>여섯 조합 한눈에</h2>
+      <p class="section-sub">모두 청주(CJJ) 출발입니다. 칸을 누르면 위 계산기가 그 노선·그 달로 바뀝니다.</p>
+    </div>
+    <div class="matrix" id="matrix"></div>
+  </section>
+
+  <section class="section">
+    <div>
+      <h2>주말 낀 여행 기간 순위</h2>
+      <p class="section-sub" id="rankSub">값 · 연차 효율 · 계절을 함께 매긴 순위입니다. 목적지를 바꾸면 순위도 다시 매겨집니다. 카드를 누르면 그 달로 계산기가 이동합니다.</p>
+    </div>
+    <div class="rank-list" id="ranks"></div>
+  </section>
+
+  <section class="section">
+    <h2>청주에서 뜨는 편</h2>
+    <p class="season-bar" id="seasonBar"></p>
+    <div class="routes" id="routes"></div>
+  </section>
+
+  <footer>
+    <p><strong>시세 밴드는 참고용 기준선입니다.</strong> 항공권 비교 사이트에 공개된 청주 출발 노선 실제 가격대에 달별 성수기·비수기 폭을 얹어 잡은 값이라, 실시간 조회 결과와는 다를 수 있습니다. 결제 전 반드시 실제 값을 확인하세요. 모든 금액은 유류할증료·세금 포함 1인 왕복 기준입니다.</p>
+    <p class="srcs">
+      <a href="https://www.kayak.co.kr/%ED%95%AD%EA%B3%B5%EA%B6%8C/%EC%B2%AD%EC%A3%BC%EA%B5%AD%EC%A0%9C%EA%B3%B5%ED%95%AD-CJJ/%EC%98%A4%ED%82%A4%EB%82%98%EC%99%80-%EB%82%98%ED%95%98%EA%B3%B5%ED%95%AD-OKA" target="_blank" rel="noopener">KAYAK CJJ–OKA</a>
+      <a href="https://www.kayak.co.kr/%ED%95%AD%EA%B3%B5%EA%B6%8C/%EC%B2%AD%EC%A3%BC%EA%B5%AD%EC%A0%9C%EA%B3%B5%ED%95%AD-CJJ/%EB%8C%80%EB%A7%8C-TW0" target="_blank" rel="noopener">KAYAK CJJ–대만</a>
+      <a href="https://www.hotelscombined.co.kr/flight-routes/Cheongju-CJJ/Taipei-City-Taiwan-Taoyuan-Intl-TPE.ksp" target="_blank" rel="noopener">호텔스컴바인 CJJ–TPE</a>
+      <a href="https://www.airport.co.kr/cheongju/cms/frCon/index.do?MENU_ID=110&amp;CONTENTS_NO=1" target="_blank" rel="noopener">청주공항 운항스케줄</a>
+      <a href="https://www.jbnews.com/news/articleView.html?idxno=1500690" target="_blank" rel="noopener">청주공항 2026 하계 19개 노선</a>
+    </p>
+  </footer>
+</div>
+
+<script type="application/json" id="fare-data">
+{
+ "updated": "2026-09-09",
+ "basis": "왕복 1인 · 유류할증료·세금 포함 · 참고용 기준선",
+ "page": "https://claude.ai/code/artifact/2d25e59b-a014-47b8-821c-c4f2b93be66f",
+ "origin": {
+  "city": "청주",
+  "iata": "CJJ"
+ },
+ "scoring": {
+  "price": 45,
+  "leave": 30,
+  "season": 25,
+  "holidayMultiplier": 1.15,
+  "weekendMultiplier": 1.1
+ },
+ "destinations": {
+  "oka": {
+   "name": "오키나와",
+   "city": "나하",
+   "iata": "OKA",
+   "hue": "var(--oka)",
+   "airlines": "에어로케이 · 제주항공 · 이스타항공",
+   "duration": "2시간 안팎",
+   "tip": "화요일 출발편이 가장 싸게 잡힙니다.",
+   "months": {
+    "10": {
+     "low": 235000,
+     "avg": 318000,
+     "high": 430000,
+     "tag": "연휴 낀 성수",
+     "note": "태풍은 끝물이고 아직 물놀이가 되는 달. 개천절·한글날 연휴에 걸린 날짜만 값이 크게 튑니다."
+    },
+    "11": {
+     "low": 199000,
+     "avg": 268000,
+     "high": 360000,
+     "tag": "세 달 중 최저",
+     "note": "평균 24도, 비도 사람도 적은 오키나와 최적기인데 값은 세 달 중 가장 낮습니다."
+    },
+    "12": {
+     "low": 218000,
+     "avg": 295000,
+     "high": 420000,
+     "tag": "24일 전후 급등",
+     "note": "바다는 접고 관광 위주로 도는 달. 중순까지는 싸지만 크리스마스 전후로 갑자기 뜁니다."
+    }
+   },
+   "msgs": {
+    "5": "지금 잡으세요. 이 값이면 왕복 항공권 값에 츄라우미 수족관 입장료까지 얹힌 셈입니다.",
+    "4": "좋은 값입니다. 아낀 만큼이면 나하 국제거리 숙소를 하루 더 잡을 수 있습니다.",
+    "3": "무난한 값입니다. 날짜가 정해졌다면 결제하고, 여유가 있다면 화요일 출발로 한 번 더 검색해 보세요.",
+    "2": "조금 비쌉니다. 오키나와는 태풍이 끝나는 11월이 가장 싸게 내려가니 서두를 이유가 적습니다.",
+    "1": "지금은 아닙니다. 이 값이면 렌터카 사흘 값이 통째로 항공권에 얹힌 셈입니다."
+   },
+   "tz": "한국과 시차 없음",
+   "flights": [],
+   "flightsNote": "편명과 시각을 아직 확인하지 못했습니다. 공항 운항스케줄에서 확인하세요."
+  },
+  "twn": {
+   "name": "대만",
+   "city": "타이베이",
+   "iata": "TPE",
+   "hue": "var(--twn)",
+   "airlines": "에어로케이",
+   "duration": "2시간 15분 안팎",
+   "tip": "겨울 성수기에는 하루 3회까지 증편돼, 같은 날에도 편별 값 차이가 큽니다.",
+   "months": {
+    "10": {
+     "low": 249000,
+     "avg": 335000,
+     "high": 455000,
+     "tag": "쌍십절 혼잡",
+     "note": "쌍십절(10월 10일) 연휴에 현지 수요까지 몰려서 값과 인파가 함께 오르는 달입니다."
+    },
+    "11": {
+     "low": 223000,
+     "avg": 292000,
+     "high": 390000,
+     "tag": "세 달 중 최저",
+     "note": "습기가 빠져 야시장 돌기 가장 좋은 달이고, 세 달 가운데 값도 가장 낮습니다."
+    },
+    "12": {
+     "low": 258000,
+     "avg": 352000,
+     "high": 480000,
+     "tag": "세 달 중 최고",
+     "note": "따뜻한 연말 목적지로 수요가 몰려 세 달 중 값이 가장 높게 형성됩니다."
+    }
+   },
+   "msgs": {
+    "5": "바로 결제하세요. 아낀 값이면 스린 야시장에서 사흘 내내 먹고도 남습니다.",
+    "4": "괜찮은 값입니다. 지우펀 오가는 택시비 정도는 여기서 벌어 둔 셈입니다.",
+    "3": "평범한 값입니다. 대만은 편별 값 차이가 커서, 새벽 출발 ZE781편을 한 번 비교해 볼 만합니다.",
+    "2": "서두르지 마세요. 대만은 덥지도 춥지도 않은 11월에 값이 가장 낮게 내려갑니다.",
+    "1": "이 값엔 사지 마세요. 펑리수를 몇 상자 사도 차액이 안 메워집니다."
+   },
+   "tz": "한국보다 1시간 느림",
+   "flights": [
+    {
+     "code": "RF511",
+     "airline": "에어로케이",
+     "dep": "10:41",
+     "arr": "11:55"
+    },
+    {
+     "code": "RF5133",
+     "airline": "에어로케이",
+     "dep": "13:58",
+     "arr": null
+    }
+   ],
+   "flightsNote": "도착 시각은 현지 시각입니다. 증편편은 여기에 없습니다."
+  }
+ },
+ "grades": {
+  "5": {
+   "label": "지금 사세요",
+   "color": "var(--g5)"
+  },
+  "4": {
+   "label": "좋은 가격",
+   "color": "var(--g4)"
+  },
+  "3": {
+   "label": "무난",
+   "color": "var(--g3)"
+  },
+  "2": {
+   "label": "조금 더 대기",
+   "color": "var(--g2)"
+  },
+  "1": {
+   "label": "지금은 비쌈",
+   "color": "var(--g1)"
+  }
+ },
+ "windows": [
+  {
+   "month": "11",
+   "from": "11/14",
+   "fdow": "토",
+   "to": "11/16",
+   "tdow": "월",
+   "nights": 2,
+   "days": 3,
+   "leave": 1,
+   "holiday": null,
+   "why": "11월 최저 구간에 월요일 하루만 붙이면 되는 창. 값과 연차를 같이 아낍니다."
+  },
+  {
+   "month": "11",
+   "from": "11/13",
+   "fdow": "금",
+   "to": "11/16",
+   "tdow": "월",
+   "nights": 3,
+   "days": 4,
+   "leave": 2,
+   "holiday": null,
+   "why": "같은 최저 구간에서 하루를 더 버는 3박 4일. 렌터카나 근교까지 볼 여유가 생깁니다."
+  },
+  {
+   "month": "11",
+   "from": "11/20",
+   "fdow": "금",
+   "to": "11/23",
+   "tdow": "월",
+   "nights": 3,
+   "days": 4,
+   "leave": 2,
+   "holiday": null,
+   "why": "습기가 완전히 빠지는 11월 후반. 세 달 중 걷기에 가장 좋은 주말입니다."
+  },
+  {
+   "month": "12",
+   "from": "12/11",
+   "fdow": "금",
+   "to": "12/14",
+   "tdow": "월",
+   "nights": 3,
+   "days": 4,
+   "leave": 2,
+   "holiday": null,
+   "why": "연말 급등이 시작되기 직전, 12월에 남은 마지막 저점입니다."
+  },
+  {
+   "month": "10",
+   "from": "10/9",
+   "fdow": "금",
+   "to": "10/11",
+   "tdow": "일",
+   "nights": 2,
+   "days": 3,
+   "leave": 0,
+   "holiday": "한글날",
+   "why": "연차 한 장 없이 붙는 3일 연휴. 대신 성수기 값을 그대로 냅니다."
+  },
+  {
+   "month": "10",
+   "from": "10/3",
+   "fdow": "토",
+   "to": "10/5",
+   "tdow": "월",
+   "nights": 2,
+   "days": 3,
+   "leave": 0,
+   "holiday": "개천절 대체공휴일",
+   "why": "개천절이 토요일이라 월요일이 대체공휴일로 붙습니다."
+  },
+  {
+   "month": "12",
+   "from": "12/25",
+   "fdow": "금",
+   "to": "12/27",
+   "tdow": "일",
+   "nights": 2,
+   "days": 3,
+   "leave": 0,
+   "holiday": "성탄절",
+   "why": "연차는 안 들지만 세 달을 통틀어 값이 가장 비싼 구간입니다."
+  },
+  {
+   "month": "10",
+   "from": "10/3",
+   "fdow": "토",
+   "to": "10/11",
+   "tdow": "일",
+   "nights": 8,
+   "days": 9,
+   "leave": 3,
+   "holiday": "개천절+한글날",
+   "why": "6·7·8일 사흘만 쓰면 9일. 기간은 최고지만 값도 최고입니다."
+  }
+ ],
+ "season": {
+  "oka": {
+   "10": 18,
+   "11": 25,
+   "12": 15
+  },
+  "twn": {
+   "10": 16,
+   "11": 25,
+   "12": 21
+  }
+ },
+ "sources": [
+  {
+   "label": "청주공항 운항스케줄",
+   "url": "https://www.airport.co.kr/cheongju/cms/frCon/index.do?MENU_ID=110&CONTENTS_NO=1"
+  },
+  {
+   "label": "청주공항 2026 하계 19개 노선",
+   "url": "https://www.jbnews.com/news/articleView.html?idxno=1500690"
+  },
+  {
+   "label": "KAYAK CJJ–OKA",
+   "url": "https://www.kayak.co.kr/%ED%95%AD%EA%B3%B5%EA%B6%8C/%EC%B2%AD%EC%A3%BC%EA%B5%AD%EC%A0%9C%EA%B3%B5%ED%95%AD-CJJ/%EC%98%A4%ED%82%A4%EB%82%98%EC%99%80-%EB%82%98%ED%95%98%EA%B3%B5%ED%95%AD-OKA"
+  },
+  {
+   "label": "KAYAK CJJ–대만",
+   "url": "https://www.kayak.co.kr/%ED%95%AD%EA%B3%B5%EA%B6%8C/%EC%B2%AD%EC%A3%BC%EA%B5%AD%EC%A0%9C%EA%B3%B5%ED%95%AD-CJJ/%EB%8C%80%EB%A7%8C-TW0"
+  }
+ ],
+ "schedule": {
+  "summer": "2026 하계 3/29~10/24",
+  "winter": "10/25부터 동계 스케줄",
+  "note": "청주공항 국제선은 하계·동계로 시간표가 갈립니다. 10/24까지가 하계, 그 뒤 11·12월은 동계 시간표라 편명과 시각이 바뀔 수 있습니다.",
+  "url": "https://www.airport.co.kr/cheongju/cms/frCon/index.do?MENU_ID=110&CONTENTS_NO=1"
+ }
+}
+</script>
+
+<script>
+"use strict";
+
+/* 시세·여행창 데이터는 위 <script type="application/json" id="fare-data"> 한 곳에만 둡니다.
+   텔레그램 봇(bot/fare_bot.py)도 같은 블록을 읽으므로 값이 어긋날 일이 없습니다. */
+var FARE = JSON.parse(document.getElementById("fare-data").textContent);
+var ORIGIN = FARE.origin;
+var DATA = FARE.destinations;
+var WINDOWS = FARE.windows;
+var SEASON = FARE.season;
+var SCORING = FARE.scoring;
+
+var GRADES = FARE.grades;
+
+var MONTHS = ["10", "11", "12"];
+var state = { dest: "oka", month: "11" };
+
+var $ = function (id) { return document.getElementById(id); };
+var num = function (n) { return Math.round(n).toLocaleString("ko-KR"); };
+var won = function (n) { return num(n) + "원"; };
+
+function scoreFor(price, m) {
+  var t = (price - m.low) / (m.high - m.low);
+  if (t < 0) t = 0;
+  if (t > 1) t = 1;
+  return Math.round((5 - 4 * t) * 10) / 10;
+}
+function gradeFor(s) {
+  if (s >= 4.5) return 5;
+  if (s >= 3.5) return 4;
+  if (s >= 2.5) return 3;
+  if (s >= 1.5) return 2;
+  return 1;
+}
+
+function winPrice(w, destKey) {
+  var m = DATA[destKey].months[w.month];
+  var raw = w.holiday
+    ? m.avg * SCORING.holidayMultiplier
+    : m.low * SCORING.weekendMultiplier;
+  return Math.round(raw / 1000) * 1000;
+}
+
+function rankWindows(destKey) {
+  var rows = WINDOWS.map(function (w) {
+    return { w: w, price: winPrice(w, destKey), eff: w.days / (w.leave + 1) };
+  });
+  var prices = rows.map(function (r) { return r.price; });
+  var effs = rows.map(function (r) { return r.eff; });
+  var pMin = Math.min.apply(null, prices), pMax = Math.max.apply(null, prices);
+  var eMin = Math.min.apply(null, effs), eMax = Math.max.apply(null, effs);
+
+  rows.forEach(function (r) {
+    var pv = pMax === pMin ? SCORING.price
+      : SCORING.price * (pMax - r.price) / (pMax - pMin);
+    var ev = eMax === eMin ? SCORING.leave
+      : SCORING.leave * (r.eff - eMin) / (eMax - eMin);
+    r.score = Math.round(pv + ev + SEASON[destKey][r.w.month]);
+  });
+  rows.sort(function (a, b) { return b.score - a.score || a.price - b.price; });
+  return rows;
+}
+
+function renderRanking() {
+  var d = DATA[state.dest];
+  var rows = rankWindows(state.dest);
+  var top = rows[0].score;
+  var wrap = $("ranks");
+  wrap.innerHTML = "";
+
+  rows.forEach(function (r, i) {
+    var w = r.w;
+    var b = document.createElement("button");
+    b.type = "button";
+    b.className = "rank" + (i < 3 ? " is-top" : "");
+    b.dataset.month = w.month;
+
+    var chips = '<span class="chip">' + w.nights + "박" + w.days + "일</span>";
+    chips += w.leave === 0
+      ? '<span class="chip free">연차 0일</span>'
+      : '<span class="chip">연차 ' + w.leave + "일</span>";
+    if (w.holiday) chips += '<span class="chip holiday">' + w.holiday + "</span>";
+
+    b.innerHTML =
+      '<span class="rank-no">' + (i + 1) + "</span>" +
+      '<span class="rank-when">' +
+        '<span class="rank-dates">' + w.from + "(" + w.fdow + ") → " + w.to + "(" + w.tdow + ")</span>" +
+        '<span class="rank-len">' + w.month + "월</span>" +
+      "</span>" +
+      '<span class="rank-right">' +
+        '<span class="rank-price">' + won(r.price) + "</span>" +
+        '<span class="rank-score"><span class="rank-bar"><i style="width:' +
+          Math.round((r.score / top) * 100) + '%"></i></span><span>' + r.score + "</span></span>" +
+      "</span>" +
+      '<span class="rank-why"><span class="chips">' + chips + "</span>" + w.why + "</span>";
+
+    b.addEventListener("click", function () {
+      state.month = w.month;
+      syncSegments();
+      render();
+    });
+    wrap.appendChild(b);
+  });
+
+  $("rankSub").textContent =
+    ORIGIN.city + "(" + ORIGIN.iata + ") → " + d.city + "(" + d.iata +
+    ") 기준입니다. 값 " + SCORING.price + "점 · 연차 효율 " + SCORING.leave + "점 · 계절 " + SCORING.season + "점으로 매겼고, 목적지를 바꾸면 순위도 다시 매겨집니다.";
+}
+
+function buildMatrix() {
+  var wrap = $("matrix");
+  wrap.innerHTML = "";
+  ["oka", "twn"].forEach(function (d) {
+    MONTHS.forEach(function (mo) {
+      var m = DATA[d].months[mo];
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "cell";
+      b.style.setProperty("--cellhue", DATA[d].hue);
+      b.dataset.dest = d;
+      b.dataset.month = mo;
+      b.innerHTML =
+        '<span class="cell-route">' + ORIGIN.iata + " → " + DATA[d].iata + "</span>" +
+        '<span class="cell-when">' + DATA[d].name + " · " + mo + "월</span>" +
+        '<span class="cell-low">' + num(m.low) + "</span>" +
+        '<span class="cell-avg">평균 ' + num(m.avg) + "</span>" +
+        '<span class="cell-tag">' + m.tag + "</span>";
+      b.addEventListener("click", function () {
+        state.dest = d;
+        state.month = mo;
+        syncSegments();
+        render();
+      });
+      wrap.appendChild(b);
+    });
+  });
+}
+
+function buildRoutes() {
+  var wrap = $("routes");
+  wrap.innerHTML = "";
+  ["oka", "twn"].forEach(function (d) {
+    var r = DATA[d];
+    var el = document.createElement("div");
+    el.className = "route";
+    el.style.setProperty("--rhue", r.hue);
+    var sched;
+    if (r.flights && r.flights.length) {
+      sched =
+        '<div class="sched"><div class="sched-head">확인된 편</div>' +
+        "<table><tr><th>편명</th><th>출발 " + ORIGIN.iata +
+        "</th><th>도착 " + r.iata + "</th></tr>" +
+        r.flights.map(function (f) {
+          return '<tr><td class="code">' + f.code + "</td><td>" + f.dep + "</td>" +
+            (f.arr ? "<td>" + f.arr + "</td>" : '<td class="dash">—</td>') + "</tr>";
+        }).join("") +
+        '</table><p class="sched-note">' + r.flightsNote + "</p></div>";
+    } else {
+      sched = '<div class="sched"><div class="sched-head">시간표</div>' +
+        '<p class="sched-none">' + r.flightsNote +
+        ' <a href="' + FARE.schedule.url + '" target="_blank" rel="noopener">공항 시간표 열기</a></p></div>';
+    }
+
+    el.innerHTML =
+      "<h3>" + ORIGIN.iata + " → " + r.iata + " &nbsp;<b>" + ORIGIN.city + " → " + r.city + "</b></h3>" +
+      "<dl>" +
+      "<dt>항공사</dt><dd>" + r.airlines + "</dd>" +
+      "<dt>비행</dt><dd>" + r.duration + "</dd>" +
+      "<dt>시차</dt><dd>" + r.tz + "</dd>" +
+      "<dt>요령</dt><dd>" + r.tip + "</dd>" +
+      "</dl>" + sched;
+    wrap.appendChild(el);
+  });
+}
+
+function buildSeasonBar() {
+  var sc = FARE.schedule;
+  $("seasonBar").innerHTML =
+    "<b>" + sc.summer + "</b> · <b>" + sc.winter + "</b> " + sc.note +
+    ' <a href="' + sc.url + '" target="_blank" rel="noopener">공항 시간표</a>';
+}
+
+function syncSegments() {
+  document.querySelectorAll(".seg [data-dest]").forEach(function (b) {
+    b.setAttribute("aria-pressed", String(b.dataset.dest === state.dest));
+  });
+  document.querySelectorAll(".seg [data-month]").forEach(function (b) {
+    b.setAttribute("aria-pressed", String(b.dataset.month === state.month));
+  });
+}
+
+function render() {
+  var d = DATA[state.dest];
+  var m = d.months[state.month];
+  var price = parseInt($("price").value, 10);
+  if (isNaN(price) || price <= 0) price = m.avg;
+
+  var s = scoreFor(price, m);
+  var g = gradeFor(s);
+  var app = $("app");
+  app.dataset.dest = state.dest;
+  app.style.setProperty("--grade", GRADES[g].color);
+
+  $("odCity").textContent = d.city;
+  $("odCode").textContent = d.iata;
+  $("routeMeta").innerHTML = state.month + "월 출발<br>왕복 1인";
+
+  $("score").innerHTML = s.toFixed(1) + "<small> / 5</small>";
+  $("grade").textContent = GRADES[g].label;
+
+  var vsAvg = price - m.avg;
+  $("callsub").textContent =
+    vsAvg === 0 ? "이 달 평균가와 정확히 같습니다."
+      : vsAvg < 0 ? "이 달 평균보다 " + won(-vsAvg) + " 쌉니다."
+        : "이 달 평균보다 " + won(vsAvg) + " 비쌉니다.";
+
+  var meter = $("meter");
+  meter.innerHTML = "";
+  for (var i = 1; i <= 5; i++) {
+    var bar = document.createElement("i");
+    if (s >= i) bar.className = "on";
+    else if (s > i - 1) bar.className = "half";
+    meter.appendChild(bar);
+  }
+
+  $("stYou").textContent = won(price);
+  $("stLow").textContent = won(m.low);
+  $("stAvg").textContent = won(m.avg);
+
+  $("bandtitle").textContent =
+    ORIGIN.iata + " → " + d.iata + " · " + state.month + "월 시세 밴드";
+  $("low").textContent = "최저 " + num(m.low);
+  $("high").textContent = "고가 " + num(m.high);
+
+  var span = m.high - m.low;
+  var avgPct = ((m.avg - m.low) / span) * 100;
+  $("avgtick").style.left = avgPct + "%";
+  $("avglabel").style.left = avgPct + "%";
+  $("avglabel").textContent = "평균 " + num(m.avg);
+
+  var yPct = ((price - m.low) / span) * 100;
+  if (yPct < 0) yPct = 0;
+  if (yPct > 100) yPct = 100;
+  $("you").style.left = yPct + "%";
+  $("you").title = "넣은 값 " + won(price);
+
+  $("msg").textContent = d.msgs[g];
+  $("note").textContent = m.note;
+
+  renderRanking();
+
+  document.querySelectorAll(".cell").forEach(function (c) {
+    c.setAttribute("aria-current",
+      String(c.dataset.dest === state.dest && c.dataset.month === state.month));
+  });
+}
+
+document.querySelectorAll(".seg button").forEach(function (b) {
+  b.addEventListener("click", function () {
+    if (b.dataset.dest) state.dest = b.dataset.dest;
+    if (b.dataset.month) state.month = b.dataset.month;
+    syncSegments();
+    render();
+  });
+});
+$("price").addEventListener("input", render);
+
+buildMatrix();
+buildRoutes();
+buildSeasonBar();
+syncSegments();
+render();
+</script>
+<!--ARTIFACT-END-->
+</body>
+</html>
