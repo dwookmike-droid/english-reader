@@ -1,0 +1,17 @@
+# 인스타 릴스 후보 (1–3장 파일럿, 2026-11-10 안). Mike 확인 전.
+# 시각이 아니라 시간표 조각의 첫 글자로 구간을 정한다(윤하 음성을 다시 만들면 시각이 바뀌므로).
+# 열: id → 추천(●=1차 안, ○=예비) → 장 → 시작 조각(text 앞부분) → 끝 조각(text 앞부분, 이 조각까지 포함) → 지금 시간표 기준 길이(초) → 배우는 말 → 첫 화면 문구(훅)
+id	pick	ch	from	to	sec	learn	hook
+r01a	○	1	비행기 안에서 나는	그날 밤 나는 agua를	130	hola · sí · gracias · no	스페인어 첫날, 손바닥에 적은 다섯 단어
+r01b	○	1	Hola. Pasaporte	de nada. 천만에요.	46	pasaporte · por favor · de nada	입국 심사대에서 처음 들은 대답
+r01c	●	1	Hola. ¿Adónde?	나는 손가락을 접어	60	vale · ¿adónde?	바르셀로나에서 1분에 다섯 번 들은 말
+r01d	●	1	¡Buenos días!	Bienvenida, Yuna.	64	buenos días · bon dia · soy	윤하가 '유나'가 된 날
+r01e	○	1	Señora… Por favor.	앱을 열었다. mañana.	105	ya no existe · mañana	할머니 편지의 주소, 그 거리는 이제 없다
+r02a	●	2	¡Buenos días, nena!	Pan con tomate.	61	¿qué tal? · ¿qué es esto?	스페인 아침밥 이름 하나 배우기
+r02b	○	2	¡Muy bueno!	La leche. La llave.	43	café con leche · el / la	커피 한 잔으로 배우는 el과 la
+r02c	○	2	¡Hola! Me llamo Valentina.	¡Sí! Vale, como	71	me llamo · tú / vos	같은 스페인어, 다른 '너'
+r02d	●	2	A la calle de tu abuela.	나중에 알았다. 부에노스아이레스	35	calle · ll 발음	'카예'와 '카셰', 누가 맞을까
+r03a	●	3	¡Ah, melocotones!	cuánto es. 얼마예요.	31	¿cuánto es? · nada más	시장에서 가장 중요한 한 문장
+r03b	●	3	치즈 가게 앞에는	내 첫 번째 yo였다.	105	¿quién es el último?	스페인 시장에는 줄이 없다
+r03c	○	3	¿Dos kilos?	dos와 cien.	50	doscientos · cien	200을 스페인어로
+r03d	○	3	Marc… ¿Qué es esto?	no sé. 몰라요.	36	una llave · no sé	열쇠를 본 남자의 대답

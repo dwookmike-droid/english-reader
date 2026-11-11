@@ -1,0 +1,7 @@
+# 11-11부터 장 음성은 Voicebox로 만든다(AUDIOBOOK.md 0절). 아래 엔진 배정은 1–9장 Gemini판 기록용이다.
+# 오디오북에만 쓰는 목소리. 대사 인물은 src/voices.tsv(Gemini)를 그대로 쓴다.
+# 서술과 윤하 대사는 같은 목소리(Achernar). 4장부터도 1–3장과 같은 방식(11-10 Mike: "4장부터도 기존방식대로")
+# 열: 이름 → 엔진(gemini|eleven) → 목소리(Gemini 이름 또는 ElevenLabs voice_id) → 말투
+narr	gemini	Achernar	Yunha, a Korean woman in her late thirties, telling her own story in Korean. Natural and understated, like an audiobook narrator; keep emotion subtle
+marti	eleven	Fm7BveXW2pOo1gtPxYfM	Martí, a Catalan clockmaker in his forties in 1978, writing a love letter; warm, restrained, low voice
+mama	eleven	TBD	Yunha's mother, a Korean woman in her sixties from Busan, writing to her daughter; plain, a little gruff, loving

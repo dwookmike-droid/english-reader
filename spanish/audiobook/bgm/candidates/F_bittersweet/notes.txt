@@ -1,0 +1,6 @@
+# F_bittersweet 자동 점검 (파형 수치만, 청취 아님)
+# 열: 파일 길이s 피크dBFS 원래피크dBFS 전체RMSdB 끝1초RMSdB 끝0.1초RMSdB 판정
+F_bittersweet_1.wav 16.0 -1.0 -0.6 -18.5 -37.9 -57.5 이상 없음
+F_bittersweet_2.wav 16.0 -1.0 -0.38 -19.7 -47.6 -102.9 이상 없음
+F_bittersweet_3.wav 16.0 -1.0 -0.02 -19.0 -45.9 -54.1 이상 없음
+F_bittersweet_4.wav 16.0 -1.2 -1.17 -18.6 -53.5 -95.8 이상 없음

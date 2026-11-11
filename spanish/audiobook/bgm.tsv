@@ -1,0 +1,34 @@
+# 장 사이 간주 배치표. 열: 자리 → 곡(cue) → 근거(그 장 마지막 장면의 분위기 / 다음 장 첫 장면)
+# 자리: open = 1장 앞, after NN = NN장 끝(다음 장 앞), close = 30장 끝
+# 곡 파일: audiobook/bgm/<cue>.wav (작업지시서 BGM_작업지시서.md 참고). 같은 분위기가 이어지면 a·b를 번갈아 쓴다.
+open	theme_open	책 시작. 바르셀로나 도착, 낯섦과 설렘
+after 01	B_mystery_a	하숙집: 할머니 주소의 거리가 이제 없다 — 말 못 한 무언가 / 2장 부엌 아침
+after 02	B_mystery_b	닫힌 열쇠 가게 진열창에서 발견 / 3장 시장 심부름
+after 03	B_mystery_a	몬세의 웃음 반 한숨 반, 조용한 수수께끼 / 4장 일요일 관광
+after 04	B_mystery_b	마르크가 남긴 봉투, 조용한 긴장 / 5장 첫 만남 전 긴장
+after 05	C_tender_a	세 십자가 언덕, 1978년 할머니 이야기 / 6장 동네 축제 준비
+after 06	E_uneasy_a	새벽 부엌, 편지 열한 통에 몬세가 등을 돌림 / 7장 베스파
+after 07	C_tender_b	성당 계단, 마르티는 이미 없다, 할아버지 시계 / 8장 아사도 장보기
+after 08	B_mystery_a	경찰서 앞 해 질 녘, 할아버지 가게 상자 / 9장 이른 아침
+after 09	D_warm_a	산타 마리아 델 마르, 나란히 앉은 침묵 / 10장 같은 성당 계단
+after 10	A_light_a	해변, 라스팔마스 주소 발견과 발레의 농담 / 11장 몬주익
+after 11	D_warm_b	돌아갈 표가 없다는 말, "Bien." / 12장 콜럼버스 기둥
+after 12	C_tender_a	엄마가 이 집 마당에 살았다 / 13장 편지 번역
+after 13	D_warm_a	사그라다 파밀리아 연못, 조용한 위로 / 14장 부산 엄마 전화(무거움)
+after 14	C_tender_b	산트 파우 돌 벤치, 몬세의 기억 / 15장 티비다보 버스
+after 15	D_warm_b	"여기서 행복했으니까", 희망 쪽으로 / 16장 파랄렐 밤 외출
+after 16	B_mystery_b	택시, 사진사 아들 단서 / 17장 벼룩시장
+after 17	E_uneasy_b	사진 속 세 사람이 가족처럼 보였다 / 18장 편지 6–9
+after 18	B_mystery_a	흰 천 아래 시계를 깨달음 / 19장 지하실
+after 19	D_warm_a	멈춘 시계 곁, 미래 시제, 수줍음 / 20장 시체스 기차
+after 20	E_uneasy_a	돌아오는 기차, 처음 한 거짓말 / 21장 일주일 뒤 피함
+after 21	C_tender_a	보가텔 해변, 멀찍이 앉음 / 22장 옥상 밤
+after 22	D_warm_b	폭풍 뒤 발레의 마테 / 23장 부엌 고백
+after 23	C_tender_b	작은 발코니, 서로의 상처 / 24장 몬세라트 예고
+after 24	B_mystery_b	돌아오는 길, 한국에서 온 봉투 도착 / 25장 열지 못한 봉투
+after 25	D_warm_a	옥상 화해, 긴 긴장 뒤 / 26장 지하실 시계
+after 26	D_warm_b	키스 뒤, 행복하지만 불확실 / 27장 엄마 영상통화
+after 27	A_light_b	왕복표를 삼, 가볍고 희망적 / 28장 산트 마르티 날
+after 28	A_light_a	왕복표 발표, 안도와 행복 / 29장 새벽 공항
+after 29	F_bittersweet	비행기, 바르셀로나가 작아짐, 시계는 바르셀로나 시간 / 30장 1년 뒤 8월
+close	theme_close	책의 끝. 한 바퀴 돌아온 따뜻함

@@ -1,0 +1,32 @@
+# 편지(@letter) 블록의 작성자. 열: 장 → 블록 첫 줄 앞머리 → 작성자(cast.tsv의 이름)
+# 여기 없는 블록은 윤하가 읽는다(수첩·쪽지·간판·기사).
+1	Querida Sun-rye	marti
+9	El domingo, a las once	marti
+11	Desde Montjuïc	marti
+13	Barcelona, 2 de diciembre	marti
+13	Era un domingo de mayo	marti
+13	{Había|	marti
+13	Llegaste tarde	marti
+13	Yo te dije	marti
+13	Después caminamos	marti
+13	Ahora tú estás	marti
+14	Barcelona, 20 de diciembre	marti
+14	{Hacía|	marti
+14	Yo tenía la furgoneta	marti
+14	En el hospital	marti
+14	A las seis de la mañana	marti
+14	Cuando salimos del hospital	marti
+15	Barcelona, 14 de enero	marti
+15	¿Te acuerdas	marti
+15	Ella no entendió	marti
+15	Después {un fotógrafo	marti
+15	Aquel día	marti
+18	Barcelona, 3 de junio	marti
+18	Esta va a ser	marti
+18	{Te he querido	marti
+18	El reloj está terminado	marti
+24	Barcelona, 5 de marzo de 2009	montse
+24	Te escribo	montse
+24	Antes de morir	montse
+24	Martí guardaba	montse
+25	윤하야.	mama

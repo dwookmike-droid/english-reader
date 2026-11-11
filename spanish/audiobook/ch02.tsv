@@ -1,0 +1,60 @@
+# 2장 말투 지시. 열: 조각 앞머리 → 지시(영어, 짧게). 서술 지시는 장면이 끝날 때까지 이어진다.
+# 대사는 스페인어 앞머리로 찾는다. @scene 행은 장면 설명(장면 끝까지 모든 요청에 붙는다). 11-10부터 지시가 바뀌어도 요청을 나누지 않는다.
+눈을 뜨니 새벽 다섯 시였다	sleepy, quiet early morning
+부엌에서 커피 냄새가 났다	warm and curious
+그때 부엌 문이 벌컥 열렸다	lightly amused
+@scene 그때 부엌 문이 벌컥 열렸다	Early morning in Montse's kitchen. Valentina, a young Argentine lodger, comes in in her pajamas and introduces herself with the Argentine "vos". Montse, from Barcelona, corrects "vos" to Spain's "tú", half teasing; Valentina laughs it off. Yuna is new and only knows a little Spanish.
+¡Hola! Me llamo Valentina.	bright, surprised to see a new face
+Tú. Aquí, tú.	correcting Valentina like a teacher, dry, with a click of the tongue; stress "tú"
+¡En Argentina, vos!	laughing, a playful shrug; stress "vos"
+Me llamo Yunha.	careful and slow, a beginner
+¿Yuna? ¡Qué lindo!	delighted
+Soy de Argentina.	chatty and cheerful; she says "¿Y vos?" again without noticing
+Soy de Corea.	careful and simple
+¡Corea! ¡Me encanta!	excited
+Valentina… Vale.	tapping her chest, shortening her name
+¿Vale?	puzzled: to her "vale" is the word for "okay"
+¡Sí! Vale, como	laughing, pointing out the pun
+그라시아의 아침 calle는	curious, a little out of breath
+rellotge. 나는 숨을 멈췄다	hushed, holding her breath
+진열창 안에는 오래된 열쇠들이	quiet, slowly realizing
+# 11-10 추가: 나머지 장면(새벽, 아침 식탁, cashe, 광장, 열쇠공방)
+@scene 눈을 뜨니 새벽 다섯 시였다	Yuna wakes at five in the morning in Barcelona, jet-lagged, listening to unfamiliar street sounds. She remembers Montse's last word the night before, "mañana" (tomorrow), and takes out her grandmother's key. Quiet and expectant.
+@scene 부엌에서 커피 냄새가 났다	Breakfast in Montse's kitchen. Montse calls Yuna "nena" and asks "¿qué tal?"; Yuna surprises her by answering in Catalan, "Bon dia". Montse names the food word by word (pan con tomate, con, café con leche), then points at things like a teacher to show "el" for masculine and "la" for feminine words. Warm and light.
+¡Buenos días, nena!	warm, an affectionate morning greeting
+¡Bon dia!	trying the Catalan greeting she learned yesterday, a little proud
+¡Molt bé!	laughing, pleasantly surprised; Catalan
+Gracias, señora.	polite, a beginner
+Montse. Soy Montse.	friendly: no "señora", just her name
+Pan con tomate.	naming the dish slowly, pointing at the bread, then the tomato
+¡Muy bueno!	tasting, happy, a careful beginner
+¿Bueno? ¡Buenísimo!	playfully topping her word; stress "Buenísimo"
+¿Café?	lifting the pot, offering
+¿Con leche?	asking: with milk?
+Sí. Café con leche, por favor.	a whole sentence, careful and pleased
+El pan. El tomate.	pointing at each thing like a teacher; stress "el"
+La leche. La llave.	continuing the lesson; stress "la"
+¿Cómo estás?	friendly, leaning in
+Bien… Un poco cansada.	tired, careful, a beginner
+¡Normal! El jet lag.	sympathetic, casual
+@scene 몬세가 앞치마를 풀었다	Montse gets ready to take Yuna to the street on her grandmother's envelope. Vale, from Buenos Aires, says "calle" the Rioplatense way, "cashe"; Montse corrects her, separating the syllables "Ca-lle" with the Spanish "ll", as she has for eight months, and Vale says it is the same thing. Brisk, with friendly bickering.
+Vamos, Yuna.	brisk, purposeful
+¿Adónde?	asking where, a word she learned from the taxi driver
+A la calle de tu abuela.	gentle, meaningful
+¿La cashe? ¿Qué cashe?	cutting in, curious; Rioplatense "sh" sound in "cashe"
+¡Calle! ¡Ca-lle!	correcting her pronunciation, separating the syllables; stress the "ll"
+Cashe, calle… ¡Es lo mismo!	shrugging it off, unbothered
+@scene 그라시아의 아침 calle는	Montse walks Yuna through Gràcia to the Plaça de la Vila. She teaches the Catalan and Castilian names (plaça / plaza, rellotge / reloj) and corrects "esto" to "eso" for something farther away. Yuna realizes "Rellotger" means clockmaker, and Montse shows her the corner where the clockmaker's street used to be: now a phone shop. Curious at first, then quietly sad.
+Mira. Plaça, en catalán.	pointing at the sign, teaching both names; stress "Plaça" and "plaza"
+¿Eso? La torre.	gently correcting "esto" to "eso"; stress "Eso"
+Rellotger… el señor de los relojes.	slowly, explaining what the word means
+Antes, aquí, la calle	quiet, pointing at the corner
+Ahora… no.	softly, final
+¿Bien, Yuna?	gentle concern
+Sí… bien.	not fine, but saying so, quietly
+@scene 몬세가 다시 내 손을 잡아끌었다	Montse leads Yuna down a dark alley to an old locksmith's shop and explains its name in Catalan and Castilian (serralleria / cerrajería: a shop of "llaves", keys). It is closed for the August holidays. In the window Yuna finds a key identical to her grandmother's, and Montse, looking up at a closed window above the shop, quietly says a name: Marc. Disappointment turning to hushed discovery.
+Vamos.	pulling her along again, brisk
+Serralleria, en catalán.	reading the sign, teaching the two names
+Cerrajería… llaves.	linking the word to the keys; stress "llaves"
+Cerrado por vacaciones.	reading the notice, mildly disappointed, explaining
+Marc…	very quietly, a name said almost to herself

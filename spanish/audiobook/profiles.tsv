@@ -1,0 +1,31 @@
+# 오디오북 프롬프트에 넣는 인물 설명. 나이·출신·말 속도만 적고 연기 형용사(lively, theatrical, cheerful…)는 쓰지 않는다.
+# 2.5 Flash가 형용사를 과장해 연기했다(11-07, 11-09). 목소리 자체는 src/voices.tsv를 따른다.
+yunha	a Korean woman in her late thirties; her Spanish is careful and slow, a learner's
+montse	a woman in her seventies from Barcelona; warm, ordinary pace; her Catalan words are native
+taxista	a taxi driver in his sixties from Barcelona; relaxed, slightly husky
+azafata	a flight attendant; polite, clear
+policia	a passport officer; neutral, brief
+hombre	a middle-aged man; apologetic, a little hurried
+vale	a woman in her twenties from Buenos Aires; Rioplatense accent (ll and y sound like "sh"); quick
+marc	a Catalan locksmith in his late thirties; low, dry, few words, unhurried
+frutera	a market fruit seller in her fifties from Barcelona; friendly
+jaume	a cheese seller in his sixties at the market, Catalan; friendly
+senyora	an elderly woman from Barcelona; slow and kind, to help a foreigner
+mujer	a young mother at the market; casual
+archivera	an archivist in her fifties; calm, precise
+vecinos	a group of neighbours counting together in Catalan
+sofia	a young woman from Mexico City; Mexican accent
+luca	a young Italian man; slow Spanish with an Italian accent
+pau	a young man from Barcelona; casual, light Catalan accent
+carnicero	a butcher at the market; busy but friendly
+policia_mossos	a young police officer; slow and kind
+bibliotecario	a librarian in his sixties; kind, knowledgeable
+joan	a very old Catalan clockmaker in his eighties; slow, warm; mixes Catalan and Spanish
+quique	a man from Barcelona; casual
+vendedor	a street seller; brief
+taquillera	a ticket clerk; brief, polite
+castanyera	a woman selling roasted chestnuts; friendly
+todos	a group of people speaking together
+madre	a mother; ordinary
+chica	a young woman; ordinary
+megafonia	a recorded announcement over a public address system; neutral

@@ -1,0 +1,31 @@
+{
+  "kind": "generate",
+  "title": "A_light_a",
+  "original_idea": "",
+  "audio_type": "music",
+  "prompt": "Solo nylon-string Spanish classical guitar, intimate and close-miked, warm small room, gentle fingerpicking, no drums, no vocals, quiet audiobook interlude, Barcelona in autumn. Light and warm, a little playful, major key, gentle rumba-like strumming kept soft.",
+  "prompt_used": "TrackType: Music, VocalType: Instrumental, Solo nylon-string Spanish classical guitar, intimate and close-miked, warm small room, gentle fingerpicking, no drums, no vocals, quiet audiobook interlude, Barcelona in autumn. Light and warm, a little playful, major key, gentle rumba-like strumming kept soft. BPM: 96.",
+  "sound_fields": {
+    "source": "",
+    "action": "",
+    "material": "",
+    "space": ""
+  },
+  "bpm": 96,
+  "seconds": 16.0,
+  "negative_prompt": null,
+  "cfg": 1.0,
+  "steps": 8,
+  "variations": 4,
+  "seed": 1357646058,
+  "candidate": 4,
+  "file": "A_light_a_4.wav",
+  "sample_rate": 44100,
+  "bit_depth": 24,
+  "created": "2026-11-10T16:19:17",
+  "backend": "sa3-mlx",
+  "model": "medium + same-l",
+  "peak_dbfs": -1.0,
+  "raw_peak_dbfs": -0.72,
+  "ceiling_gain_db": -0.28
+}

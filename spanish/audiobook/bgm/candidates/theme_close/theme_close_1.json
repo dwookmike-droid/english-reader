@@ -1,0 +1,31 @@
+{
+  "kind": "generate",
+  "title": "theme_close",
+  "original_idea": "",
+  "audio_type": "music",
+  "prompt": "Solo nylon-string Spanish classical guitar, intimate and close-miked, warm small room, gentle fingerpicking, no drums, no vocals, quiet audiobook interlude, Barcelona in autumn. The same kind of simple memorable melody in D major, now calm and settled, a full circle; guitar with a soft cello line and light strings, slow fade at the end.",
+  "prompt_used": "TrackType: Music, VocalType: Instrumental, Solo nylon-string Spanish classical guitar, intimate and close-miked, warm small room, gentle fingerpicking, no drums, no vocals, quiet audiobook interlude, Barcelona in autumn. The same kind of simple memorable melody in D major, now calm and settled, a full circle; guitar with a soft cello line and light strings, slow fade at the end. BPM: 84.",
+  "sound_fields": {
+    "source": "",
+    "action": "",
+    "material": "",
+    "space": ""
+  },
+  "bpm": 84,
+  "seconds": 50.0,
+  "negative_prompt": null,
+  "cfg": 1.0,
+  "steps": 8,
+  "variations": 4,
+  "seed": 1126384388,
+  "candidate": 1,
+  "file": "theme_close_1.wav",
+  "sample_rate": 44100,
+  "bit_depth": 24,
+  "created": "2026-11-10T16:19:09",
+  "backend": "sa3-mlx",
+  "model": "medium + same-l",
+  "peak_dbfs": -1.0,
+  "raw_peak_dbfs": -0.64,
+  "ceiling_gain_db": -0.36
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "generate",
+  "title": "F_bittersweet",
+  "original_idea": "",
+  "audio_type": "music",
+  "prompt": "Solo nylon-string Spanish classical guitar, intimate and close-miked, warm small room, gentle fingerpicking, no drums, no vocals, quiet audiobook interlude, Barcelona in autumn. Bittersweet farewell at peace, leaving a city you love, guitar melody with light strings, starts minor and ends major.",
+  "prompt_used": "TrackType: Music, VocalType: Instrumental, Solo nylon-string Spanish classical guitar, intimate and close-miked, warm small room, gentle fingerpicking, no drums, no vocals, quiet audiobook interlude, Barcelona in autumn. Bittersweet farewell at peace, leaving a city you love, guitar melody with light strings, starts minor and ends major. BPM: 66.",
+  "sound_fields": {
+    "source": "",
+    "action": "",
+    "material": "",
+    "space": ""
+  },
+  "bpm": 66,
+  "seconds": 16.0,
+  "negative_prompt": null,
+  "cfg": 1.0,
+  "steps": 8,
+  "variations": 4,
+  "seed": 1158459159,
+  "candidate": 3,
+  "file": "F_bittersweet_3.wav",
+  "sample_rate": 44100,
+  "bit_depth": 24,
+  "created": "2026-11-10T16:20:24",
+  "backend": "sa3-mlx",
+  "model": "medium + same-l",
+  "peak_dbfs": -1.0,
+  "raw_peak_dbfs": -0.02,
+  "ceiling_gain_db": -0.98
+}

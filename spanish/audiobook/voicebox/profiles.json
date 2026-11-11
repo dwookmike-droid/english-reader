@@ -1,0 +1,338 @@
+{
+ "archivera": {
+  "profile_id": "db834b71-557e-4b03-9d8c-533914735120",
+  "name": "그라시아 · archivera",
+  "language": "es",
+  "samples": [
+   "archivera_01.wav"
+  ],
+  "sample_ids": [
+   "6308478e-01d8-4e12-9851-65883ef61d6f"
+  ]
+ },
+ "azafata": {
+  "profile_id": "fb5aeb8e-8874-4e45-9506-a4fdfc7a8f66",
+  "name": "그라시아 · azafata",
+  "language": "es",
+  "samples": [
+   "azafata_01.wav"
+  ],
+  "sample_ids": [
+   "0ac031a0-f1b4-4c6b-b799-964044d6f044"
+  ]
+ },
+ "carnicero": {
+  "profile_id": "0fc0cbe4-08f7-4427-8304-b2cc3bd6e42e",
+  "name": "그라시아 · carnicero",
+  "language": "es",
+  "samples": [
+   "carnicero_01.wav"
+  ],
+  "sample_ids": [
+   "879e0f78-b9c1-4e33-abfe-bf865a652046"
+  ]
+ },
+ "frutera": {
+  "profile_id": "f5384bec-1b1b-4682-80d3-15e9294c116c",
+  "name": "그라시아 · frutera",
+  "language": "es",
+  "samples": [
+   "frutera_01.wav"
+  ],
+  "sample_ids": [
+   "0431f73a-6534-4ae8-bd08-cac95db9cea0"
+  ]
+ },
+ "hombre": {
+  "profile_id": "06d87600-f096-4c7a-af3c-622399c242d8",
+  "name": "그라시아 · hombre",
+  "language": "es",
+  "samples": [
+   "hombre_01.wav"
+  ],
+  "sample_ids": [
+   "8c2ad859-e006-487b-a7c5-581db7745919"
+  ]
+ },
+ "jaume": {
+  "profile_id": "47b52732-203e-47d1-8c1a-d2992ea4caf1",
+  "name": "그라시아 · jaume",
+  "language": "es",
+  "samples": [
+   "jaume_01.wav"
+  ],
+  "sample_ids": [
+   "9ce97490-d496-4218-9fba-2e14568c0c85"
+  ]
+ },
+ "marc": {
+  "profile_id": "0eda7f7d-7d00-4e71-9dd7-be1d3305a911",
+  "name": "그라시아 · marc",
+  "language": "es",
+  "samples": [
+   "marc_01.wav",
+   "marc_02.wav",
+   "marc_03.wav"
+  ],
+  "sample_ids": [
+   "ed5748e8-d2ea-45ef-b47f-0d9c80ac66e5",
+   "3a5090cd-fb46-426b-8a92-27f4815723c0",
+   "743cb11d-aa88-4c12-bee7-3c4e9007715d"
+  ]
+ },
+ "montse": {
+  "profile_id": "aa4fc263-f513-423d-ac07-886c5527616f",
+  "name": "그라시아 · montse",
+  "language": "es",
+  "samples": [
+   "montse_01.wav",
+   "montse_02.wav",
+   "montse_03.wav"
+  ],
+  "sample_ids": [
+   "99677dc1-d02c-4800-8b57-3cb416c55ad0",
+   "bd34a891-a1d2-4042-b300-572035561403",
+   "755c7462-7493-44d1-a912-b2c3a24f5227"
+  ]
+ },
+ "mujer": {
+  "profile_id": "4ad1ce98-0268-431e-9caa-d194e66ebf03",
+  "name": "그라시아 · mujer",
+  "language": "es",
+  "samples": [
+   "mujer_01.wav"
+  ],
+  "sample_ids": [
+   "8535346e-0818-476d-823c-3045e1aca91b"
+  ]
+ },
+ "narr": {
+  "profile_id": "b1756f71-6f70-4467-9c50-63086d4786d4",
+  "name": "그라시아 · 서술(윤하)",
+  "language": "ko",
+  "samples": [
+   "narr_01.wav",
+   "narr_02.wav",
+   "narr_03.wav",
+   "narr_04.wav",
+   "narr_05.wav"
+  ],
+  "sample_ids": [
+   "8302bba2-fd17-4db9-823f-a825fa040122",
+   "4663be4a-7dc0-4ffb-9015-fd93b08232b5",
+   "6ea8dd19-eda9-4839-b218-29736bd6601f",
+   "cfadddb1-c518-4eb6-a1d0-ca2478b99234",
+   "057c8f2e-5d60-4143-ae4d-7899795cd73f"
+  ]
+ },
+ "policia": {
+  "profile_id": "03052599-f2b3-4ee1-b8e3-858b2c521a54",
+  "name": "그라시아 · policia",
+  "language": "es",
+  "samples": [
+   "policia_01.wav"
+  ],
+  "sample_ids": [
+   "92ebefa0-30cc-49c9-a6ac-12ad6dc7c0d8"
+  ]
+ },
+ "policia_mossos": {
+  "profile_id": "85362fd5-0c87-4334-bc25-bcd49f99a9ae",
+  "name": "그라시아 · policia_mossos",
+  "language": "es",
+  "samples": [
+   "policia_mossos_01.wav"
+  ],
+  "sample_ids": [
+   "e50bdfc2-9f53-4428-9171-653a84b8fdcb"
+  ]
+ },
+ "senyora": {
+  "profile_id": "636d9e11-9399-4458-93fa-a409693c2f9e",
+  "name": "그라시아 · senyora",
+  "language": "es",
+  "samples": [
+   "senyora_01.wav"
+  ],
+  "sample_ids": [
+   "607ca92e-b035-43d0-9b62-610280314f56"
+  ]
+ },
+ "taxista": {
+  "profile_id": "e6cffdc1-2195-421b-8591-aa997d302f2b",
+  "name": "그라시아 · taxista",
+  "language": "es",
+  "samples": [
+   "taxista_01.wav"
+  ],
+  "sample_ids": [
+   "d1d6c99b-0bc0-4a6c-a40f-214b57362fd4"
+  ]
+ },
+ "vale": {
+  "profile_id": "318606bc-368f-430f-90d8-173c568af69e",
+  "name": "그라시아 · vale",
+  "language": "es",
+  "samples": [
+   "vale_01.wav",
+   "vale_02.wav",
+   "vale_03.wav"
+  ],
+  "sample_ids": [
+   "d29cef7e-eae5-4d46-808e-2c24dfbd6302",
+   "50e8bc07-9cf7-412b-97b0-4507bff8bd8a",
+   "0a5823f9-73dd-4c48-8bdf-7a329e21ed4e"
+  ]
+ },
+ "yunha": {
+  "profile_id": "f032df7e-6c7a-480a-8938-dd2a926ae919",
+  "name": "그라시아 · 윤하",
+  "language": "es",
+  "samples": [
+   "yunha_01.wav",
+   "yunha_02.wav"
+  ],
+  "sample_ids": [
+   "7f6ead45-95b3-48e9-87d5-b3c26c11e608",
+   "1028883b-b9b0-442e-bbc8-99d7e19731d4"
+  ]
+ },
+ "bibliotecario": {
+  "profile_id": "f331b551-ef5a-4e53-b9fe-2e4447107578",
+  "name": "그라시아 · bibliotecario",
+  "language": "es",
+  "samples": [
+   "bibliotecario_01.wav"
+  ],
+  "sample_ids": [
+   "08e04e32-13ed-4859-a943-964dd8f08a11"
+  ]
+ },
+ "castanyera": {
+  "profile_id": "7fd75381-a7ee-4ec9-b9cc-bad42b82bd7e",
+  "name": "그라시아 · castanyera",
+  "language": "es",
+  "samples": [
+   "castanyera_01.wav"
+  ],
+  "sample_ids": [
+   "e800fd8c-93cb-4b22-a0ed-8d48dcb0e90b"
+  ]
+ },
+ "chica": {
+  "profile_id": "bcbbc6bb-e8bc-480b-93b9-da8ca59993fd",
+  "name": "그라시아 · chica",
+  "language": "es",
+  "samples": [
+   "chica_01.wav"
+  ],
+  "sample_ids": [
+   "01403256-8370-4f30-b526-ffa3e7928fad"
+  ]
+ },
+ "joan": {
+  "profile_id": "83bdabc3-dd9a-4437-826d-5f9bb24f4313",
+  "name": "그라시아 · joan",
+  "language": "es",
+  "samples": [
+   "joan_01.wav",
+   "joan_02.wav"
+  ],
+  "sample_ids": [
+   "b9226202-1b82-4156-94c0-a86586067aec",
+   "3ae16565-8849-4329-b532-7ccdb0b5d0c5"
+  ]
+ },
+ "luca": {
+  "profile_id": "c3d5a934-97fb-4666-833b-18a5e2701072",
+  "name": "그라시아 · luca",
+  "language": "es",
+  "samples": [
+   "luca_01.wav"
+  ],
+  "sample_ids": [
+   "0ced3982-ef09-4b85-b169-c0f1ebd0ff74"
+  ]
+ },
+ "madre": {
+  "profile_id": "7a0e6c8a-3c7e-4511-b21e-0d34db9737d6",
+  "name": "그라시아 · 엄마",
+  "language": "ko",
+  "samples": [
+   "madre_01.wav",
+   "madre_02.wav"
+  ],
+  "sample_ids": [
+   "886560f8-d073-4ac4-ab6a-79089508693f",
+   "68894456-2bee-4e0e-bb29-4bb046308c41"
+  ]
+ },
+ "marti": {
+  "profile_id": "d646c9de-c2db-4d02-9d1d-0a729e35043d",
+  "name": "그라시아 · marti",
+  "language": "es",
+  "samples": [
+   "marti_01.wav",
+   "marti_02.wav"
+  ],
+  "sample_ids": [
+   "b3edc4d9-2ed4-40f5-ad40-88b706154070",
+   "811cecab-1c27-470b-9359-41ade4fbf038"
+  ]
+ },
+ "pau": {
+  "profile_id": "a9ef8abc-66df-4716-9f72-642527f04a3d",
+  "name": "그라시아 · pau",
+  "language": "es",
+  "samples": [
+   "pau_01.wav"
+  ],
+  "sample_ids": [
+   "9d49c111-d57b-4988-a9d7-e1d24c2006df"
+  ]
+ },
+ "quique": {
+  "profile_id": "35873da3-77d8-41c1-a353-f0c0b04b9ec0",
+  "name": "그라시아 · quique",
+  "language": "es",
+  "samples": [
+   "quique_01.wav"
+  ],
+  "sample_ids": [
+   "955aa9bc-a7e1-4e0f-bca5-3969e09a77e9"
+  ]
+ },
+ "sofia": {
+  "profile_id": "c4277b0f-f494-491a-92f6-08940fab4045",
+  "name": "그라시아 · sofia",
+  "language": "es",
+  "samples": [
+   "sofia_01.wav"
+  ],
+  "sample_ids": [
+   "2349edae-a2a4-42bf-94f7-c643bc18754a"
+  ]
+ },
+ "taquillera": {
+  "profile_id": "eec828d4-5831-4f03-ac6d-1e95464b43c7",
+  "name": "그라시아 · taquillera",
+  "language": "es",
+  "samples": [
+   "taquillera_01.wav"
+  ],
+  "sample_ids": [
+   "4955295f-fd26-4997-b3bd-c8514126daca"
+  ]
+ },
+ "vendedor": {
+  "profile_id": "04fa6d11-727c-4100-9dcf-b1e1b86019dc",
+  "name": "그라시아 · vendedor",
+  "language": "es",
+  "samples": [
+   "vendedor_01.wav"
+  ],
+  "sample_ids": [
+   "eedd6a04-0e71-4b6e-b36e-6eaaa027047e"
+  ]
+ }
+}

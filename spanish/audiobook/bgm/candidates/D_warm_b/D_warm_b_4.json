@@ -1,0 +1,31 @@
+{
+  "kind": "generate",
+  "title": "D_warm_b",
+  "original_idea": "",
+  "audio_type": "music",
+  "prompt": "Solo nylon-string Spanish classical guitar, intimate and close-miked, warm small room, gentle fingerpicking, no drums, no vocals, quiet audiobook interlude, Barcelona in autumn. Warm and a little shy, quiet happiness that is not yet sure, major key with one minor chord, gentle.",
+  "prompt_used": "TrackType: Music, VocalType: Instrumental, Solo nylon-string Spanish classical guitar, intimate and close-miked, warm small room, gentle fingerpicking, no drums, no vocals, quiet audiobook interlude, Barcelona in autumn. Warm and a little shy, quiet happiness that is not yet sure, major key with one minor chord, gentle. BPM: 76.",
+  "sound_fields": {
+    "source": "",
+    "action": "",
+    "material": "",
+    "space": ""
+  },
+  "bpm": 76,
+  "seconds": 16.0,
+  "negative_prompt": null,
+  "cfg": 1.0,
+  "steps": 8,
+  "variations": 4,
+  "seed": 1528717838,
+  "candidate": 4,
+  "file": "D_warm_b_4.wav",
+  "sample_rate": 44100,
+  "bit_depth": 24,
+  "created": "2026-11-10T16:20:02",
+  "backend": "sa3-mlx",
+  "model": "medium + same-l",
+  "peak_dbfs": -3.78,
+  "raw_peak_dbfs": -3.78,
+  "ceiling_gain_db": 0.0
+}

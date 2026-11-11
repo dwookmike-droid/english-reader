@@ -1,0 +1,577 @@
+# Voicebox 샘플용 인물별 대본(11-11). 원고 대사 몇 줄 + 여러 발음을 고루 담은 말.
+# 형식: "=== 이름" 다음 줄부터 한 줄 = 한 번에 말하는 덩어리. "scene:"으로 시작하는 줄은 장면 설명(읽지 않음).
+# 스페인어 발음: r/rr, ñ, ll/y, j/g, z/ce/ci, ch, x, 이중모음, 끝 d, 숫자·값·날짜, 물음·느낌.
+# 카탈루냐어 인물(몬세·마르크·자우메·주안·카스타녜라·파우)은 카탈루냐어 낱말·문장도 넣는다.
+
+=== narr
+외할머니의 서랍 맨 아래 칸에서 낡은 열쇠 하나가 나왔다. 손바닥보다 작은, 녹이 슨 놋쇠 열쇠였다.
+왜 할머니는 이 열쇠를 평생 숨겼을까? 누구의 문을 여는 열쇠일까?
+비행기는 인천에서 열세 시간을 날아 바르셀로나에 내렸다. Barcelona. 입속으로 한 번 더 불러 보았다.
+공항 밖 공기는 짭짤하고 따뜻했다. 택시 창밖으로 야자나무와 노란 버스, 빨간 오토바이가 지나갔다.
+하숙집은 Gràcia의 좁은 골목 끝에 있었다. 초인종을 누르자 위층에서 누군가 ¡Ya voy! 하고 외쳤다.
+몬세 할머니는 나를 꼭 껴안았다. 라벤더 비누 냄새와 볶은 커피 냄새가 한꺼번에 났다.
+첫날 밤, 나는 창문을 열어 둔 채 잠들지 못했다. 멀리서 성당 종이 열두 번 울렸다. 똑, 똑, 수도꼭지에서 물방울이 떨어졌다.
+다음 날 아침 시장에서 처음으로 스페인어로 말했다. Un kilo de tomates, por favor. 목소리가 떨렸지만, 과일가게 아주머니는 웃으며 고개를 끄덕였다.
+칠월의 햇볕은 서울보다 훨씬 뜨거웠다. 그늘에 앉아 차가운 레몬 음료를 홀짝이며, 나는 지도에 동그라미를 그렸다. 첫째, 대성당. 둘째, 시장. 셋째, 바다.
+삼만 이천 원짜리 사전, 육십팔 쪽짜리 단어장, 그리고 열쇠 하나. 내가 가진 건 그게 전부였다.
+엄마에게 문자를 보냈다. 잘 도착했어, 걱정하지 마. 답장은 금방 왔다. 밥은 묵었나?
+La llave. 그 단어를 배운 건 그날이었다. 혀끝을 입천장에 붙였다 떼며, 야베, 하고 발음하는 법도.
+골목 끝 빵집에서는 아침마다 갓 구운 빵 냄새가 흘러나왔다. 바게트 하나에 일 유로 이십 센트. 나는 매일 같은 빵을 샀다.
+밤이 되면 광장은 사람들로 북적였다. 아이들은 공을 차고, 노인들은 벤치에 앉아 느릿느릿 이야기를 나눴다.
+나는 꽉 쥔 주먹을 천천히 폈다. 햇빛 아래서 열쇠가 반짝였다. 괜찮아, 하고 나는 작게 말했다. 천천히 하면 돼.
+
+=== yunha
+Hola. Me llamo Yuna. Soy de Corea, de Seúl.
+Perdón, hablo un poco de español. Despacio, por favor.
+¿Dónde está la calle Verdi? Busco una llave… no, perdón, busco una dirección.
+Esta llave era de mi abuela. Es muy vieja. ¿Usted sabe de dónde es?
+Quiero un café con leche y un cruasán, por favor. ¿Cuánto es? ¿Tres euros con cincuenta? Gracias.
+Ayer llovió mucho. Hoy hace sol y mucho calor. Mañana voy a la playa con Vale.
+Me gusta Barcelona. Me gustan las calles pequeñas, los balcones y las plazas.
+No entiendo. ¿Puede repetir, por favor? ¡Ah, sí! Ahora entiendo.
+Tengo treinta y ocho años. Trabajo en una oficina en Seúl. Bueno… trabajaba.
+El perro corre rápido por la arena. El tren sale a las diez y cuarto.
+Repito las palabras nuevas: zapatos, cerveza, jamón, gente, chocolate, taxi, niño, lluvia, ciudad.
+¿Es verdad? ¿De verdad? No lo puedo creer.
+Por la mañana camino por el barrio. Compro pan, fruta y el periódico. Después leo en la plaza, al sol.
+Mi abuela nunca habló de Barcelona. Nunca. Pero guardó esta llave cuarenta y ocho años.
+¿Puedo pagar con tarjeta? ¿No? Vale, en efectivo. Aquí tiene: veinte euros.
+Hoy he aprendido muchas palabras: cerradura, cajón, reloj, carta, recuerdo, puerto.
+Me duele un poco la cabeza. Creo que es el sol. Necesito agua y una siesta.
+Cuando era niña, mi abuela me cantaba una canción. No sé qué decía. Ahora creo que era en catalán.
+Gracias, Montse. Muchas gracias por todo. Buenas noches.
+
+=== montse
+Bon dia, nena! Passa, passa. Benvinguda a casa. Tú eres Yuna, ¿verdad? ¡Qué alegría!
+Mira, aquí está tu habitación. Es pequeña, pero tiene un balcón precioso. Por la mañana entra el sol.
+Ay, mare de Déu, ¡qué maleta tan grande! ¿Qué llevas aquí dentro, piedras?
+El desayuno es a las ocho. Pan con tomate, aceite, un poquito de sal. Y café, mucho café.
+En esta casa hablamos catalán y castellano. Bon dia, bona tarda, bona nit. Gràcies. Si us plau. D'acord. Adéu!
+El mercado de la Llibertat está aquí al lado. Los jueves hay pescado fresco, y la frutera te guarda las mejores cerezas.
+Mi marido, que en paz descanse, decía que Gràcia era un pueblo dentro de la ciudad. Y tenía razón.
+¿Una llave? Déjame ver… Uf, es muy antigua. Esto es de cerrajero, nena. Hay que preguntar al Marc.
+Escolta, Yuna: aquí la vida va despacio. No corras. Primero comes, después piensas.
+¡Vale! ¿Dónde se ha metido esa niña? ¡Baja ya, que se enfría la sopa!
+En agosto hacemos la fiesta mayor. Las calles se llenan de luces, de flores de papel, de música hasta las tres de la madrugada.
+Xocolata desfeta amb melindros. Això és el millor del món, t'ho dic jo.
+Ay, Yuna, ¿no has comido nada? ¡Siéntate ahora mismo! Hay croquetas, hay tortilla de patatas, hay ensalada.
+Los domingos por la mañana voy a misa, y después compro churros con chocolate. Es mi pecado, nena, mi único pecado.
+Mi hermana vive en Sitges, junto al mar. Nos llamamos cada día a las siete. Si no la llamo, se enfada.
+Esta casa tiene más de cien años. Las baldosas del suelo son las originales, mira qué dibujos, qué colores.
+Quan era jove, treballava en una fàbrica de teixits, al Poblenou. Cuando era joven, trabajaba en una fábrica de tejidos.
+¡Ui, el teléfono! ¿Diga? Sí, sí, soy yo. No, ahora no puedo, que tengo visita. Adéu, adéu, petons!
+Bueno, a dormir. Mañana será otro día. Bona nit, reina.
+
+=== marc
+Marc. Cerrajero. Pasa.
+A ver la llave. Hum. Latón. Hecha a mano. No es de ahora.
+Esto tiene cuarenta años. Quizá más. Mira los dientes: cinco, uno roto.
+No. No es de una puerta. Es pequeña para una puerta. Es de una caja, o de un cajón.
+Mi abuelo tenía este taller. Después mi padre. Ahora yo. Tres generaciones de llaves.
+Pots seure. Siéntate. ¿Café? Solo tengo café solo.
+No hablo mucho. Ya lo sabes.
+Las cerraduras son fáciles. Las personas, no.
+Mi madre era de Girona. Hablaba catalán en casa, castellano en la calle, y francés cuando se enfadaba.
+Las herramientas: la lima, el torno, las pinzas, el martillo pequeño. Cada una en su sitio.
+D'acord. Ho miraré. Lo miraré esta noche, con calma.
+¿Por qué lloras? No. No pasa nada. Toma, un pañuelo.
+El barrio ha cambiado. Antes aquí había un horno, una mercería, un zapatero. Ahora, turistas y tiendas de recuerdos.
+Recuerda: gira la llave a la izquierda, despacio. Si fuerzas, se rompe. Como todo.
+No me gusta el ruido. Me gusta el mar en invierno, cuando no hay nadie.
+Treinta y siete euros. No, déjalo. Invito yo.
+Mi taller está en la calle de la Cera, en el Raval. Una puerta verde. Pequeña. No tiene nombre.
+Una vez abrí una caja fuerte del siglo diecinueve. Tardé tres días. Dentro había cartas. Solo cartas.
+El hierro se oxida. El latón, no tanto. Por eso esta llave ha llegado hasta hoy.
+Los sábados voy a pescar al rompeolas. No pesco nada. Pero me gusta.
+Montse habla demasiado. Pero tiene buen corazón. Y cocina muy bien.
+Quieres saber de quién era. Yo también. Pero hay que tener paciencia.
+Mañana a las nueve. No llegues tarde. Bueno… llega cuando quieras. Adéu.
+
+=== vale
+¡Hola! ¿Vos sos Yuna? ¡Qué lindo conocerte! Yo soy Vale, de Buenos Aires.
+Che, ¿tenés hambre? Yo me muero de hambre. Vamos a la playa y después comemos algo, ¿dale?
+Mirá, la calle está llena de gente. Ayer llovió, pero hoy hay un sol bárbaro.
+Yo llegué a Barcelona hace dos años. Laburo en un bar en el Born, de noche, y de día estudio diseño.
+¡Ay, no! ¡Me olvidé la llave! Siempre me pasa, ¡siempre!
+¿Te gusta el mate? Es amargo al principio, pero después no podés vivir sin él. Tomá, probá.
+En Buenos Aires comemos asado los domingos, con toda la familia. Mi abuela hace unas empanadas riquísimas.
+Yo creo que vos tenés que ir. Andá, preguntá. ¿Qué podés perder?
+La playa de la Barceloneta es re linda a la mañana temprano, cuando no hay nadie.
+¿Te acordás del chico de la playa? ¡Ese! El italiano. Es re simpático.
+Pollo, lluvia, yo, ayer, calle, playa, llave, sello, caballo. ¿Ves? Así hablamos nosotros.
+Callate, callate, ¡que viene Montse!
+Ya sé, ya sé, soy un desastre. Pero un desastre feliz.
+No llores, boba. Vení, dame un abrazo. Todo va a estar bien, te lo juro.
+Mi vieja me llama todos los días. «¿Comiste? ¿Dormiste? ¿Te abrigaste?» ¡Tengo veintiséis años, ma!
+El sábado hay una fiesta en la terraza de una amiga. ¿Venís? Va a haber música, pizza y mucha gente linda.
+Ayer me caí de la bici en la calle Pujades. ¡Qué vergüenza! Todo el mundo me miraba.
+¿Sabés qué extraño de Argentina? El dulce de leche. Acá no lo encontrás en ningún lado.
+Che, Yuna, vos tenés que aprender a decir «re». Re lindo, re bueno, re cansada. ¡Probá!
+A veces, de noche, me siento en el balcón y miro las luces. Y pienso: qué lejos estoy de casa.
+Bueno, me voy. ¡Chau, chau! Nos vemos a la noche. ¡Besos!
+
+=== taxista
+Buenas tardes. ¿A dónde vamos? ¿A Gràcia? Muy bien, súbase, súbase.
+La maleta, al maletero. Ya la pongo yo, no se preocupe.
+¿Primera vez en Barcelona? ¡Pues bienvenida! Le va a encantar.
+Mire, a la derecha, el mar. Y allí arriba, Montjuïc. Por la noche se ve toda la ciudad iluminada.
+Llevo treinta y cinco años con el taxi. Treinta y cinco. He visto de todo, se lo digo yo.
+El tráfico, ¡uf! A estas horas hay mucho coche. Paciencia.
+¿De Corea? ¡Qué lejos! Mi hija estuvo en Seúl el año pasado. Dice que la comida pica muchísimo.
+Si tiene hambre, pruebe el pan con tomate y el jamón. Y una cerveza bien fría. Eso es Barcelona.
+Los domingos voy al campo del Barça con mi nieto. Tiene nueve años y ya sabe más de fútbol que yo.
+¡Ojo con el bolso en el metro! Hay mucho carterista. Siempre delante, así.
+Ya estamos. Calle Verdi, número veintitrés. Son treinta y dos euros con cuarenta.
+¿Tarjeta? Sí, claro, sin problema. Aquí tiene el recibo.
+Mi mujer es de Sevilla. Habla rapidísimo, y yo, después de cuarenta años, todavía no la entiendo del todo.
+¿Ve ese edificio? La Sagrada Família. Cuando yo era pequeño, solo había cuatro torres. Ahora, mírela.
+En verano la ciudad se llena de turistas. Cruceros, despedidas de soltero, grupos de estudiantes… ¡Una locura!
+A mí lo que me gusta es la radio. El fútbol, las noticias, y por la noche, boleros. Escuche, escuche.
+Cuidado con el agua del grifo, que aquí es muy dura. Mejor agua embotellada para beber.
+Si necesita taxi otro día, llame a este número. Pregunte por Paco. Todo el mundo me conoce.
+Que vaya bien, señorita. Y disfrute, ¿eh? La vida es corta.
+
+=== azafata
+Buenas noches, señoras y señores. Bienvenidos a bordo.
+Por favor, abróchense el cinturón de seguridad y pongan el respaldo en posición vertical.
+¿Agua? ¿Café? ¿Té? ¿Zumo de naranja?
+Tenemos pollo con arroz o pasta con verduras. ¿Qué prefiere usted?
+¿Viaja usted sola? Si necesita algo, pulse este botón, aquí arriba.
+Le traigo una manta enseguida. Hace un poco de frío, ¿verdad?
+Disculpe, el baño está ocupado. Puede usar el de atrás.
+Por favor, apaguen los dispositivos electrónicos o pónganlos en modo avión.
+Vamos a aterrizar en Barcelona en aproximadamente cuarenta minutos. La temperatura en tierra es de veintiséis grados.
+¿Es su primer viaje a España? ¡Qué emoción! Barcelona en julio es preciosa.
+Tenga, un caramelo para los oídos. Ayuda al bajar.
+Cuidado con la cabeza al abrir el compartimento. El equipaje puede haberse movido durante el vuelo.
+Señora, perdone, su bolso tiene que ir debajo del asiento de delante durante el despegue.
+Las salidas de emergencia están señalizadas con luces en el suelo. Dos delante, dos en el centro y dos detrás.
+En caso de despresurización, caerán unas mascarillas de oxígeno. Colóquese la suya antes de ayudar a otros.
+El chaleco salvavidas está debajo de su asiento. Tire de esta cinta roja para inflarlo.
+Estamos atravesando una zona de turbulencias. Por favor, vuelvan a sus asientos y abróchense el cinturón.
+¿Desea comprar algo de nuestra tienda a bordo? Perfumes, relojes, chocolates, gafas de sol.
+Lo siento, ya no nos queda pollo. ¿Le apetece la pasta? Está muy rica, se lo aseguro.
+Gracias por volar con nosotros. Les deseamos una feliz estancia. ¡Hasta pronto!
+
+=== policia
+Hola. Pasaporte, por favor.
+¿Turismo? ¿Cuánto tiempo va a estar en España?
+¿Tres meses? Bien. ¿Dónde se aloja? ¿Tiene la dirección? Escríbala aquí, por favor.
+Mire a la cámara. No se mueva. Gracias.
+Ponga el dedo índice aquí. El otro. Ahora los dos pulgares.
+¿Lleva más de diez mil euros en efectivo? ¿Alimentos? ¿Plantas?
+¿Billete de vuelta? Enséñemelo, por favor.
+Correcto. Todo en orden. Bienvenida a España.
+De nada. Siguiente, por favor.
+Señor, por favor, espere detrás de la línea amarilla.
+El control de equipaje está a la derecha. La salida, al fondo, siguiendo las flechas.
+Su visado caduca el treinta de septiembre. No se olvide.
+Lo siento, aquí no se pueden hacer fotos. Guarde el móvil, por favor.
+¿Cuál es el motivo de su viaje? ¿Trabajo, estudios, visita familiar?
+¿Viaja sola o acompañada? ¿Alguien la espera en el aeropuerto?
+Quítese las gafas, por favor. Y la gorra. Gracias.
+¿Ha estado antes en el espacio Schengen? ¿En qué países? ¿Cuándo?
+Necesito ver su reserva de hotel o una carta de invitación.
+Espere un momento aquí. Tengo que consultar con mi compañero.
+Ya está. Disculpe la espera. Puede pasar.
+Recoja sus maletas en la cinta número ocho. Buen viaje.
+¿Habla usted inglés o español? Bien, en español. Despacio.
+
+=== hombre
+¡Ay, perdón, perdón! ¡Lo siento mucho! No la he visto.
+¿Está bien? ¿Se ha hecho daño? Déjeme, déjeme que la ayude.
+Es que llego tarde, llevo toda la mañana corriendo de un lado a otro.
+Mi jefe me ha llamado tres veces. ¡Tres! Y el metro, parado en Diagonal veinte minutos.
+¡Su móvil! Ay, Dios mío, ¿se ha roto? No, no, mire, funciona. Menos mal.
+Perdone, de verdad. Hoy no es mi día. Esta mañana se me ha quemado la tostada, y después se me ha caído el café encima de la camisa.
+¿Necesita algo? ¿Busca alguna calle? Yo conozco bien el barrio.
+La Pedrera está ahí mismo, a dos manzanas. Siga recto y gire a la izquierda en el semáforo.
+Disculpe, señora, ¿sabe qué hora es? ¿Las diez y media? ¡Madre mía, voy fatal!
+¡Taxi! ¡Taxi! Nada, ni caso. Vaya mañana, vaya mañana.
+Ojalá llegue a tiempo a la reunión. Si no, me despiden, seguro.
+Ay, mire, se le ha caído esto. ¿Es suyo? Una llave… qué llave más bonita, más antigua.
+Yo trabajo en un banco, en el Paseo de Gracia. Números, números y más números todo el día.
+Mi mujer siempre me dice: «Jordi, sal antes de casa». Y yo nada, siempre tarde. Siempre.
+¿Le apetece un café? Le invito yo, por las molestias. Bueno, no, que no tengo tiempo. ¡Otro día!
+Esta ciudad es preciosa, pero a veces es una locura. Coches, motos, bicis, patinetes… ¡Todos con prisa!
+Tenga mi tarjeta. Si tiene cualquier problema con el móvil, llámeme y lo arreglamos, ¿de acuerdo?
+Bueno, me voy corriendo. Perdón otra vez. ¡Que tenga un buen día!
+
+=== frutera
+¡Buenos días, guapa! ¿Qué te pongo?
+Mira qué tomates, recién llegados del Maresme. Rojos, rojos, y huelen a tomate de verdad.
+Un kilo de tomates, muy bien. ¿Algo más? Tengo melocotones, cerezas, fresas, sandía…
+Las naranjas, para zumo, a un euro cincuenta el kilo. Dulces como la miel.
+¿Quieres probar? Toma, toma, una uva. ¿A que está buenísima?
+Ay, perdona, cariño, que no te he entendido. ¿Pimientos? ¿Rojos o verdes?
+Aquí, en el mercado, abrimos a las ocho y cerramos a las dos. Los sábados, hasta las tres.
+Son cuatro euros con setenta. ¿Tienes suelto? Perfecto, gracias.
+Mi madre tenía esta parada, y antes mi abuela. Llevamos aquí desde mil novecientos sesenta.
+¡Jaume! ¡Jaume, que te buscan! Ese es el del queso, el de enfrente.
+¿De dónde eres, guapa? ¿De Corea? ¡Qué bien hablas español!
+Los higos de este año han salido riquísimos, como caramelo.
+Para gazpacho, lleva tomates muy maduros, pepino, pimiento verde, ajo, aceite y un chorrito de vinagre.
+Mi marido viene a las cinco de la mañana a Mercabarna, a buscar el género. Yo llego a las siete y media.
+¡Rosa, cóbrale a la señora, que yo atiendo a la chica! Perdona, guapa, hoy estamos a tope.
+¿Ves estas cerezas? Del Jerte. Las mejores de España. Grandes, oscuras, dulces como el azúcar.
+Cuando llueve, viene menos gente. Pero los de siempre vienen igual, con su paraguas y su carrito.
+Las manzanas de Lleida, las peras de conferencia, los plátanos de Canarias. De todo, de todas partes.
+Toma, te regalo un limón. Para la ensalada. ¡Hasta mañana!
+
+=== jaume
+Bon dia! Bon dia, senyoreta! Vols tastar? ¿Quieres probar?
+Este es de Lleida, de cabra. Este, de oveja, de los Pirineos. Y este es mi favorito: un queso curado de doce meses.
+Tasta, tasta. Sin miedo. Està boníssim, eh?
+Mi padre vendía queso aquí en mil novecientos setenta. Yo era un niño y le ayudaba los sábados.
+Para el pan con tomate, el queso fresco. Para el vino, el curado. Es fácil.
+¿Cuánto quieres? ¿Doscientos gramos? Mira, un poquito más, doscientos treinta. ¿Va bien?
+Son seis euros con noventa. Gràcies, maca!
+Ai, la frutera, ¡siempre gritando mi nombre! Ja vinc, ja vinc!
+La gente joven ya no viene al mercado. Compran en el supermercado. Quina llàstima.
+El formatge de Menorca, el de Mahón, es un poco salado, pero va molt bé amb unes figues.
+El secreto del queso es la paciencia. Como en la vida: hay que esperar.
+Escolta, ¿tú eres la chica de casa de la Montse? Saluda-la de part meva.
+Este queso se llama Garrotxa. De cabra, de la comarca de la Garrotxa, en Girona. Suave, cremoso, con un poco de nuez.
+Cada mañana, a las seis, ya estoy aquí. Abro la persiana, limpio el mostrador, corto los quesos. Cuarenta años así.
+Los turistas me preguntan siempre: «¿Manchego?». ¡Sí, también tengo manchego! Pero prueba los nuestros primero.
+Mi mujer dice que huelo a queso hasta en la cama. ¡Y tiene razón! Ja, ja, ja.
+Para el invierno, una fondue con queso suizo y uno de aquí, el de Tupí. Con pan, y una copa de vino negro.
+A veces pienso en jubilarme. Pero después vengo, veo a la gente, hablo con todos, y digo: no, encara no.
+Fins demà! ¡Hasta mañana, y que aproveche!
+
+=== senyora
+Hola, hija. ¿Te has perdido? No pasa nada. Te ayudo yo.
+Mira. Esta es la calle mayor. Sigue recto, recto, hasta la plaza.
+En la plaza hay una iglesia muy bonita, con un reloj grande. Allí, gira a la derecha.
+Despacio, despacio. Yo también hablo despacio. Así nos entendemos.
+¿Eres de Japón? Ah, de Corea. Perdona, hija. Soy vieja y me confundo.
+Yo nací en este barrio, hace ochenta y un años. Antes no había coches. Había carros y caballos.
+Mi nieta estudia en Madrid. Me llama todos los domingos. Es muy lista.
+Toma, un caramelo de menta. Siempre llevo en el bolso.
+Las rosas del balcón las planté yo, en primavera. Rojas y amarillas.
+Ay, mis rodillas. Ya no subo las escaleras como antes.
+¿Tienes frío? Llévate la chaqueta, que por la noche refresca.
+Cuando yo era joven, este barrio era de obreros. Fábricas, chimeneas, mucho humo. Pero había mucha vida en la calle.
+Mi marido trabajaba en el puerto. Volvía a casa oliendo a mar y a cuerda. Yo le esperaba con la cena caliente.
+Tengo cuatro hijos, nueve nietos y dos bisnietos. Por Navidad no cabemos en casa. ¡Qué alegría!
+Los jueves voy al centro de mayores. Jugamos a las cartas, al dominó, y a veces bailamos un poquito.
+Ese bar de la esquina antes era una lechería. Yo compraba la leche allí, en una lechera de aluminio.
+Si te pierdes otra vez, pregunta a cualquiera. Aquí la gente es buena, aunque parezca que tiene prisa.
+Que Dios te bendiga, hija. Y que encuentres lo que buscas.
+
+=== mujer
+¿Quién es el último? ¿Tú? Vale, voy detrás de ti.
+¡Pablo, no toques eso! ¡Que te he dicho que no! Ay, este niño…
+Perdona, es que hoy está imposible. No ha dormido la siesta.
+¿Tú también vienes por el pescado? Hoy tienen unas sardinas buenísimas.
+Yo vengo todos los martes y los viernes. Los sábados hay demasiada gente.
+¡Pablo, ven aquí! Dame la mano. Ya. Muy bien, campeón.
+Oye, ¿eres turista? ¿Vives aquí? ¡Qué guay! ¿Y qué tal el español?
+Mi marido trabaja de noche, así que la compra la hago yo, con el peque a cuestas.
+Las fresas del puesto de la esquina son las mejores, pero hay que llegar pronto.
+Me quedan dos minutos de paciencia, te lo juro.
+Ah, mira, ya me toca. Medio kilo de gambas y un cuarto de mejillones, por favor.
+Mi madre dice que con dos niños es más fácil que con uno. ¡Mentira! Yo con uno ya no puedo más.
+¿Conoces la guardería de la calle Torrent? Dicen que es muy buena, pero hay una lista de espera enorme.
+Los fines de semana vamos al parque de la Ciutadella. Hay patos, barcas, un lago… A Pablo le encanta.
+Ayer me dormí a las dos de la mañana. El niño, con fiebre. Treinta y ocho y medio. Ahora ya está bien, mira.
+Oye, perdona, ¿me vigilas el carro un segundo? Voy a coger un número en la pescadería. Gracias, eres un sol.
+Cuando sea mayor, Pablo, vas a venir tú a hacer la compra. ¿Me oyes? ¡Tú solito!
+Bueno, me voy, que se me hace tarde y todavía tengo que pasar por la farmacia.
+Venga, chao, ¡que vaya bien! Pablo, di adiós. ¡Adiós!
+
+=== archivera
+Buenos días. Archivo Municipal. ¿En qué puedo ayudarla?
+¿Un registro de mil novecientos setenta y ocho? Sí, lo tenemos. Pero hay que pedirlo por escrito.
+Rellene este formulario: nombre, apellidos, número de pasaporte y motivo de la consulta.
+Los documentos no salen de la sala. Puede consultarlos aquí, con guantes. No se permite el bolígrafo; solo lápiz.
+Los expedientes están ordenados por año, por distrito y por apellido. Gràcia, setenta y ocho… aquí.
+Tardaremos unos tres días hábiles. Le enviaremos un correo electrónico cuando esté listo.
+Lo siento. Esa información está protegida. Necesita la autorización de un familiar directo.
+El horario es de nueve a dos, de lunes a viernes. Los jueves, también por la tarde, de cuatro a siete.
+Fotografías sin flash, sí. Fotocopias, no: el papel es muy frágil.
+Aquí tiene. Caja número ciento doce, carpeta C. Con cuidado, por favor.
+Firme aquí, y aquí. Y la fecha: once de noviembre.
+Los fondos del archivo ocupan cuatro kilómetros de estanterías. Los más antiguos son del siglo catorce.
+Antes de abrir la caja, lávese las manos y póngase estos guantes de algodón, por favor.
+Las fichas de empadronamiento de los años setenta están en microfilm. Le enseño a usar el lector.
+Mire: apellido, nombre, fecha de nacimiento, domicilio, profesión. Relojero. Calle de Verdi, número doce.
+Si quiere una copia certificada, tiene que pagar una tasa de tres euros con veinte en la ventanilla.
+Le recomiendo también el archivo de la parroquia. Allí guardan bautizos, bodas y defunciones.
+Perdone, son las dos menos cinco. Cerramos en cinco minutos. Puede volver mañana a las nueve.
+¿Ha encontrado lo que buscaba? Me alegro. A veces el pasado espera mucho tiempo.
+
+=== sofia
+¡Hola, Yuna! ¡Qué padre conocerte! ¿Te gusta la playa?
+Yo soy Sofía, de la Ciudad de México. Estoy aquí de intercambio, estudio arquitectura.
+¡Claro! En México el sol es más fuerte. Y la comida es más picante. ¡Mucho más!
+¿Ya probaste los chilaquiles? ¿No? ¡Ay, tienes que venir a México! Te llevo a Xochimilco, a Coyoacán, a comer tacos al pastor.
+Ahorita vengo, voy por unas aguas. ¿Quieres de jamaica o de horchata?
+¡Órale, qué bonito está el mar hoy! Se ve bien azul.
+¿Mande? Perdón, no te oí. Es que hay mucho ruido.
+¡Yuna! ¡Tu espalda! ¡Está roja! ¿No te pusiste bloqueador?
+Neta, está bien chido este lugar. Me encanta Barcelona.
+Mi abuelita hace un mole buenísimo, con chocolate, chile y como veinte ingredientes.
+El guacamole se hace con aguacate, jitomate, cebolla, cilantro y limón. Fácil, fácil.
+Mi papá tiene una papelería en Tlalpan desde hace treinta años.
+En mi casa somos seis: mi papá, mi mamá, mis dos hermanos, mi abuelita y yo. ¡Y el perro, Chispas!
+En el Día de Muertos ponemos un altar con fotos, flores de cempasúchil, pan de muerto y velas. Es precioso.
+Aquí todo el mundo cena tardísimo, a las diez de la noche. ¡En México a esa hora ya estamos en pijama!
+Pau, no te rías de mi acento. Tú dices «vosotros» y yo no me río de ti, ¿o sí? Bueno, un poquito.
+Lo que más extraño son las tortillas de maíz recién hechas, calientitas, con sal y un chorrito de limón.
+Cuando termine la carrera quiero construir casas bonitas y baratas para las familias que no tienen dinero.
+Bueno, ¿nos vemos mañana? ¡Va! ¡Cuídate mucho!
+
+=== luca
+Ciao! Ehm… hola. Me llamo Luca. Soy de Milano… de Milán.
+Il sole… el sol de Barcelona es más fuerte que el sol de Milano.
+Perdón, mi español no es perfecto. Hablo… piano, piano. Despacio.
+Allora… yo estudio ingeniería. Estoy aquí seis meses, con una beca Erasmus.
+En Italia comemos la pasta al dente. Aquí, bueno, aquí la pasta es un poco… blanda. Scusa.
+Mi nonna hace gnocchi los domingos. Con salsa de tomate y mucho parmigiano.
+¿Cómo se dice… spiaggia? ¡Ah, playa! Sí, sí, la playa.
+La paella es buena. Ma la pizza… la pizza de verdad es en Napoli.
+Me gusta mucho el fútbol. Soy del Milan. Pau es del Barça. Siempre discutimos.
+Mamma mia, ¡qué calor! Treinta y cuatro grados. Necesito un gelato. Un helado.
+Mi ciudad tiene una catedral enorme, el Duomo, toda de mármol blanco. Tienes que verla.
+Yuna, ¿tú hablas italiano? ¿Un poco? Grazie, prego, buongiorno… ¡Perfecto!
+In Italia diciamo… en Italia decimos «chi va piano, va sano e va lontano». Quien va despacio, llega lejos.
+Mi padre es médico y mi madre es profesora de piano. Yo, ingeniero. Bueno… casi ingeniero.
+El otro día pedí «burro» en un bar. ¡En italiano, burro es mantequilla! El camarero me miró muy raro.
+Me gusta Barcelona porque está el mar y la montaña juntos. Milano no tiene mar. Solo niebla, mucha niebla.
+Sofía siempre se ríe de mí. Pero yo también me río de ella. ¡Ella dice «ahorita» cada dos minutos!
+Allora, ¿vamos al cine esta noche? Hay una película italiana en versión original, con subtítulos.
+Bueno, chicos, me voy. Ci vediamo. Nos vemos mañana.
+
+=== pau
+¡Ey! ¿Qué pasa? Soy Pau. Encantado.
+Bueno, pero es menos fuerte que el de México. ¿Verdad, Sofía?
+¿Y Corea, Yuna? ¿Qué es mejor en Corea?
+Tío, esto mola mucho. En plan, la playa, el sol, una birra fresquita… ¿qué más quieres?
+Yo soy de aquí, del Poblenou. Mis padres hablan catalán en casa, yo también, pero con vosotros, castellano.
+¡Ostras! ¡Mira la hora! Llegamos tarde al concierto.
+Luca, macho, el Barça es el mejor equipo del mundo. Punto.
+El domingo hay calçotada en casa de mi tía. ¿Os venís? Calçots con salsa romesco. Brutal.
+Trabajo en una tienda de bicis en el Born. Arreglo ruedas, frenos, cadenas… lo que sea.
+La Sagrada Família todavía no está terminada. Mi abuelo decía que no la iba a ver acabada. Y tenía razón.
+Vale, vale, pago yo esta ronda. La próxima, tú.
+Mi abuela es de un pueblo del Empordà. En verano vamos todos allí. Hay olivos, viñas, el mar a diez minutos.
+Los castells son torres humanas. Mi primo es enxaneta, el niño que sube hasta arriba del todo. ¡Da un miedo!
+Si queréis comer bien y barato, id al bar de la esquina de mi calle. Menú del día, doce euros, con postre y café.
+Yuna, tienes que aprender catalán también. Mira: bon dia, gràcies, si us plau, d'acord. ¡Fàcil!
+Ahora estoy ahorrando para un viaje en bici por los Pirineos. Quince días, mil kilómetros. Una pasada.
+Luca, tío, el Milan está fatal este año. Asúmelo ya. No pasa nada, de verdad.
+Por Sant Joan hacemos hogueras en la playa, petardos toda la noche, y comemos coca con piñones.
+Venga, nos vemos en la plaza del Sol a las diez. Adéu!
+
+=== carnicero
+¡Buenos días! ¿Quién va? ¿Usted? Dígame.
+¿Vacío? Ah… aquí se llama «falda». A ver.
+Esta ternera es de los Pirineos, muy tierna. Para la plancha, perfecta.
+¿Cuánto le pongo? ¿Medio kilo? ¿Un poquito más? Venga.
+Pollo entero, muslos, pechugas, alitas… ¿Qué necesita?
+Las costillas de cerdo, para la brasa. Con un poco de sal gorda y romero, ¡de lujo!
+Butifarra blanca, butifarra negra. La negra lleva cebolla y sangre. Muy típica de aquí.
+¡Rápido, rápido, que hay cola! Perdone, señora, hoy vamos locos.
+¿Se lo corto en filetes finos? Sí, claro, ahora mismo.
+El jamón ibérico, de bellota, de Jabugo. Huela, huela. Eso es oro.
+Mi hijo me ayuda los sábados, pero hoy tiene un examen.
+Para un buen caldo, pídame hueso de rodilla, un trozo de gallina y un poco de tocino. Y paciencia: tres horas.
+Llevo treinta años en esta parada. Empecé con mi tío, limpiando el suelo y cortando pollos. Ahora el jefe soy yo.
+¿Cordero? Sí, pierna o paletilla. Para el horno, con patatas y ajo, ¡está de muerte!
+Las albóndigas las hacemos nosotros, aquí mismo. Ternera y cerdo, con perejil, ajo y un poco de pan mojado en leche.
+¿Ve esa señora? Viene cada día desde hace veinte años. Siempre lo mismo: cien gramos de jamón cocido.
+¡Manolo, saca más pollo de la cámara, que se acaba! Rápido, hombre, rápido.
+Gracias, guapa. Y si le gusta, vuelva. Aquí la esperamos.
+Son once euros con ochenta. ¿Algo más? ¿Seguro? Pues hasta la próxima.
+
+=== policia_mossos
+Vale. ¿Qué ha pasado? Tranquila, tranquila. Respire.
+Soy agente de los Mossos d'Esquadra. Cuénteme despacio.
+¿Le han robado? ¿El bolso? ¿Dónde? ¿A qué hora, más o menos?
+¿Qué llevaba dentro? ¿Documentación, dinero, tarjetas, el móvil?
+¿Puede describir a la persona? ¿Alto, bajo? ¿De qué color era la chaqueta?
+No se preocupe. Esto pasa mucho, por desgracia. Lo importante es que usted está bien.
+Vamos a hacer la denuncia en comisaría. Está aquí cerca, a cinco minutos.
+Llame a su banco ahora mismo y cancele las tarjetas. ¿Necesita un teléfono?
+Aquí tiene una copia de la denuncia. Con este papel puede pedir un pasaporte nuevo en su consulado.
+Si recuperamos algo, la llamaremos a este número. ¿Es correcto? Seis, cuatro, siete, dos, nueve.
+Tenga cuidado en las Ramblas y en el metro. Siempre la mochila delante.
+¿Tiene usted algún documento de identidad? ¿Una fotocopia del pasaporte, aunque sea?
+Mire estas fotos, por favor, con calma. ¿Reconoce a alguien? No hay prisa.
+La oficina de objetos perdidos está en la plaza Carles Pi i Sunyer. A veces la gente devuelve las carteras.
+Rellene aquí sus datos: nombre, apellidos, dirección en Barcelona y un teléfono de contacto.
+Si necesita un intérprete, podemos llamar a uno. Tenemos coreano por teléfono, las veinticuatro horas.
+Mi compañero la acompañará hasta su casa. Es tarde y está usted muy nerviosa.
+Tome, un vaso de agua. Siéntese aquí un momento. Así, muy bien.
+De nada. Para eso estamos. Que tenga buena tarde.
+
+=== bibliotecario
+Buenos días. Bienvenida a la biblioteca del Museo Marítimo. ¿Qué busca?
+¿Un barco de pesca coreano? ¿En mil novecientos setenta y ocho?
+Los documentos del puerto, aquí no. Pero los periódicos, sí. En los periódicos de mil novecientos setenta y ocho están todos los barcos del puerto.
+Este edificio son las Drassanes Reials, las atarazanas. Aquí se construían galeras en la Edad Media.
+Mire, aquí: llegadas y salidas, puerto de Barcelona, julio de mil novecientos setenta y ocho.
+Los barcos extranjeros llegaban con pescado congelado, sobre todo atún. Algunos se quedaban semanas.
+Tome asiento. Le traigo los tomos de junio a septiembre. Pesan bastante, así que con paciencia.
+¿Sabe? Mi padre era marinero. Navegó por el Mediterráneo, el Atlántico, hasta el océano Índico.
+Puede usar la lupa. La letra es muy pequeña.
+Brújula, ancla, timón, vela, faro, marea, ola, naufragio. El vocabulario del mar es precioso.
+La biblioteca cierra a las siete. Si no termina, le guardo los tomos para mañana.
+Esta es la sala de lectura. Silencio, por favor. Los ordenadores están al fondo, junto a la ventana.
+Tenemos mapas antiguos, cartas de navegación, diarios de a bordo y miles de fotografías de barcos.
+¿Ve este grabado? Es el puerto de Barcelona en mil ochocientos cincuenta. Todo velas, nada de motores.
+Los pescadores coreanos venían a veces a reparar las redes y a cargar víveres. Agua, aceite, pan, fruta.
+Si encuentra algo interesante, apunte la fecha, la página y el nombre del periódico. Así lo encontramos después.
+Yo trabajo aquí desde hace veintinueve años. Me jubilo el año que viene. Lo voy a echar mucho de menos.
+Para eso estamos. Suerte.
+
+=== joan
+Tú eres la nieta.
+Yuna. Tienes sus ojos. Los de la foto.
+Passa, passa, nena. Seu aquí. Siéntate, siéntate. Con cuidado, que esta silla es más vieja que yo.
+Martí tenía una foto de tu abuela en el taller. Pequeña, en blanco y negro, encima del banco de trabajo. Muchos años.
+Escolta. ¿Oyes? Tic, tac, tic, tac. Cada reloj de esta tienda tiene su voz. Este es más grave. Este, más alegre.
+Yo tengo ochenta y siete años. Arreglo relojes desde los catorce. Setenta y tres años, mira tú.
+Lo he guardado durante dieciocho años. Martí me dijo: «Si algún día viene alguien con la llave, se lo darás».
+Pensé: nadie va a venir. Pero has venido.
+El temps passa, nena. El tiempo pasa. Però les coses importants es queden.
+Ai, Senyor. Martí era un home bo. Un hombre bueno. Callado, pero bueno.
+Toma. Es tuyo. Ábrelo cuando estés sola.
+Vine a veure'm algun dia. Ven a verme algún día, ¿eh? Antes de que se pare este reloj viejo.
+Aquest rellotge el va fer el Martí. Este reloj lo hizo Martí. Mira las agujas: de plata, hechas a mano.
+Él venía cada mañana a las ocho. Abría la persiana, encendía la radio, y se ponía a trabajar sin decir nada.
+Cuando llegó la carta de tu abuela, ya era tarde. Muy tarde. Él la leyó cien veces, mil veces.
+Yo le decía: «Martí, ves a buscar-la, vés a Corea». Y él decía: «No, Joan. Ella tiene su vida».
+Tengo las manos viejas, pero todavía sé escuchar un reloj. Si late bien, si está enfermo, si está cansado.
+Ahora ya me puedo morir tranquilo. Ya está. Ya has venido.
+Gràcies, nena. Gràcies per venir.
+
+=== quique
+Mi padre guardaba todo. Todo. Las fotos que la gente no recogía, las guardaba en sobres, con el nombre y la fecha.
+Están ordenadas por años. Busquen el setenta y ocho.
+Foto Avenida, se llamaba la tienda. Abrió en mil novecientos cincuenta y cinco.
+Bodas, bautizos, comuniones, fotos de carnet. Por aquí pasó medio barrio.
+Yo aprendí a revelar con diez años, en el cuarto oscuro, con la luz roja. Olía a químicos, a vinagre.
+Ahora todo el mundo hace fotos con el teléfono. Miles de fotos. Y nadie las imprime.
+Tómense su tiempo. No hay prisa. Aquí el tiempo va más despacio.
+Mire esta: una pareja en el puerto, verano del setenta y ocho. Qué jóvenes.
+Está pagada. Desde mil novecientos setenta y ocho. Mi padre siempre lo decía: un día alguien vuelve.
+No, no, no me deben nada. Llévensela. Es suya.
+Los domingos vengo aquí desde hace veinte años. Algunos clientes ya son amigos.
+Antes, la gente venía a la tienda con los carretes de fotos, y volvía a la semana a buscarlas. Una semana de espera.
+Algunos no volvían nunca. Se mudaban, se olvidaban, se morían. Y las fotos se quedaban aquí, esperando.
+Mi padre escribía en cada sobre el nombre, el teléfono y el día. Con una letra muy bonita, muy redonda.
+Esta caja es de mil novecientos setenta y siete. Esta otra, del setenta y nueve. Y esta… del setenta y ocho.
+Yo tengo setenta y cuatro años. Mis hijos me dicen: «Papá, tira todo eso». Y yo les digo: no, todavía no.
+¿Ve esta chica? Tiene los ojos como usted. Mire, mire bien.
+Tengan cuidado con el sobre, que el papel es viejo.
+
+=== vendedor
+¿El hijo de Foto Avenida? El Quique. Al otro lado, al final. Vende fotos. Fotos de gente que no conoce nadie.
+Sellos, monedas, postales. Todo antiguo. Precios fijos, no regateo.
+Este sello es de mil novecientos treinta y seis. Raro. Cuarenta euros.
+Las postales, a un euro. Las de color, a dos.
+¿Busca algo concreto? Dígame el país y el año.
+Corea… a ver. Tengo uno de mil novecientos sesenta y ocho. Con una flor.
+No toque, por favor. Con las pinzas.
+Las monedas de peseta, en esa caja. Cinco pesetas, veinticinco, cien.
+Si compra tres, le hago descuento. Pero solo hoy.
+Abro a las nueve los domingos. A las dos, recojo.
+El mercado de Sant Antoni era otra cosa antes. Más gente, más ruido, más vida.
+Estos sellos son de las colonias. Guinea, Sahara, Ifni. Muy buscados por los coleccionistas alemanes.
+Las cartas antiguas las vendo por lotes. Diez euros el lote. Dentro puede haber de todo.
+No, esa moneda no está en venta. Era de mi padre. La tengo aquí para que me dé suerte.
+El Quique y yo nos conocemos desde niños. Su padre hacía las fotos de mi primera comunión.
+Llueve. Hoy no viene nadie. Bueno, usted sí ha venido.
+Si quiere algo de Corea, venga el domingo que viene. Me llega una colección entera de Asia.
+Los álbumes, a quince. Las lupas, a cinco. Las pinzas, a tres.
+Gracias. Ya está. Siguiente.
+
+=== taquillera
+Buenos días. ¿A dónde van?
+¿Para hoy? El próximo sale a las diez y cuarto, por la vía seis.
+¿Ida y vuelta? Son veintidós euros con sesenta por persona.
+Cuando quieran. El billete vale para todo el día.
+¿Tarjeta o efectivo? Acerque la tarjeta al lector, por favor.
+El tren para en Badalona, Mataró, Arenys y Calella. Bajen en la cuarta parada.
+Lo siento, ese tren va completo. El siguiente es a las once menos diez.
+Los menores de cuatro años no pagan. ¿Cuántos años tiene el niño?
+El andén seis está al fondo, a la izquierda, bajando las escaleras.
+Hay retrasos de unos quince minutos por obras. Disculpen las molestias.
+Para devolver el billete, tiene que venir antes de la salida del tren.
+¿Tienen la tarjeta de familia numerosa o de estudiante? Con descuento sale más barato.
+El tren de Girona tarda una hora y cuarto. El de alta velocidad, solo treinta y ocho minutos.
+Para Montserrat, cojan el tren en plaza de España y después el cremallera hasta el monasterio.
+No, aquí no vendemos billetes de autobús. Eso es en la estación del Norte, en Arc de Triomf.
+Si pierden el tren, pueden coger el siguiente con el mismo billete. Solo hoy, eso sí.
+¿Asiento de ventanilla o de pasillo? Muy bien, coche cuatro, asientos doce y trece.
+Perdone, ¿puede hablar más alto? Con el ruido de los trenes no la oigo bien.
+Aquí tienen sus billetes y el cambio. Buen viaje.
+
+=== castanyera
+¡Calentitas! ¡Castañas calentitas! ¡Moniatos al horno!
+Ven, guapa, ven. ¿Una docena? Tres euros. Mira qué buenas.
+Castanyes, castanyes! Les millors de Gràcia, eh!
+Cuidado, que queman. Pélalas así, con el dedo, desde la punta.
+Llevo cuarenta inviernos en esta esquina. Cuarenta. Con frío, con lluvia, con viento.
+¿Tienes frío, nena? Ponte aquí, junto al fuego. Calentita.
+Mi marido decía que yo vendía más por la boca que por las castañas. ¡Y tenía razón!
+Para la Castanyada, el uno de noviembre, comemos castañas, boniatos y panellets. Y moscatel.
+¡Uy, qué chico más guapo! ¿Es tu novio? ¿No? Pues lo parece.
+Las castañas de este año vienen de Galicia y del Montseny. Dulces, dulces.
+¡No me regatees, que te conozco! Bueno, va, te pongo una de más.
+Mi madre vendía castañas en esta misma plaza, y mi abuela antes. Tres generaciones de castanyeres.
+¡Mira qué colorcitas! Bien tostaditas por fuera y blanditas por dentro. Así tienen que ser.
+Los niños vienen corriendo después del colegio. «¡Senyora, una bolsita, una bolsita!» Y yo les doy una de regalo.
+El fuego se hace con carbón de encina. Huele a invierno, ¿verdad? A eso huele mi vida.
+Por la noche, cuando cierro, me como yo una docena. ¡Es mi cena! Y después, a la camita.
+¿De dónde eres, maca? ¿De Corea? ¡Ay, qué lejos! ¿Allí también comen castañas? ¿Sí? ¡Mira tú!
+Cuando llegue la primavera, guardo la carretilla, y me voy a ver a mis nietos a Tarragona.
+Vinga, bona nit! ¡Abrígate bien!
+
+=== madre
+scene: Yuna's mother, a Korean woman in her fifties from Busan, talks to Yuna on the phone in Busan dialect Korean, and tries a few Spanish words carefully.
+유나야, 니 밥은 묵었나? 거기는 지금 몇 시고?
+엄마는 괜찮다. 걱정하지 마라. 아버지도 잘 계신다.
+할매 서랍 정리하다가 사진이 나왔는데, 니 닮았더라. 눈이 똑같다.
+그라시아스. 맞나? 고맙다는 말이라 카더라. Gracias. Gracias. 아이고, 혀가 안 돌아간다.
+부산은 오늘 바람이 억수로 분다. 바다가 시퍼렇다.
+니 혼자 그 먼 데서 우째 지내노. 아프면 바로 연락해래이.
+엄마가 김치 좀 보내 주까? 안 된다고? 와 안 되는데?
+Hola. Buenos días. 이거 맞제? 니한테 배운 기다.
+자갈치 시장 아지매들이 니 안부 묻더라. 언제 오노 카고.
+너무 무리하지 말고, 쉬엄쉬엄 해라. 알았제?
+사랑한데이, 우리 딸. Gracias.
+니 아버지는 요새 낚시에 빠졌다. 새벽 네 시에 나가서 해 질 때 들어온다. 고기는 한 마리도 못 잡고.
+어제 니 방 청소하다가 니 어릴 때 일기장 봤다. 글씨가 삐뚤빼뚤해 갖고 웃음이 나더라.
+거기 사람들은 뭐 묵노? 빵만 묵고 사는 건 아니제? 밥 꼭 챙겨 묵어래이.
+할매가 니를 제일 이뻐했다 아이가. 니가 거기 간 거 알면 좋아했을 끼다.
+추석 때는 올 수 있나? 못 오면 영상 통화라도 하자. 그 뭐꼬, 화면 보면서 하는 거.
+돈은 있나? 모자라면 말해라. 엄마가 부쳐 줄게.
+엄마 이제 들어간다. 전화비 많이 나온다. 끊는다이.
+
+=== chica
+scene: A young Korean backpacker in her twenties, lost in Barcelona, speaks slow, careful beginner Spanish with a Korean accent.
+Perdón… Hola. ¿Dónde está… la plaza del Sol? Estoy… perdida.
+Gracias. Muchas gracias.
+¿Usted es… de aquí?
+Soy de Corea, de Daegu. Tengo… veinticuatro años.
+Es mi… primer viaje… a España. Estoy… muy contenta.
+Mi español… es un poco… malo. Perdón.
+¿Cuánto cuesta… el billete… de metro?
+Quiero… una botella de agua. Sin gas, por favor.
+¿Hay… un hostal… cerca de aquí? ¿Barato?
+Ayer… fui a la Sagrada Família. ¡Es muy… muy bonita!
+Mañana… voy a Madrid. En tren. A las… ocho.
+¿Puedo… hacer una foto? ¿Aquí?
+Ah… ¿usted también es coreana? ¡Qué sorpresa!
+Perdón… no entiendo. ¿Más despacio… por favor?
+¿La derecha… o la izquierda? Ah… a la izquierda. Vale.
+Mi amiga… está en el hotel. Yo… salí sola. Y ahora… no sé dónde estoy.
+Mi teléfono… no tiene batería. ¿Hay… un enchufe… por aquí?
+Hace mucho calor… Quiero un helado. De chocolate.
+Estudio español… en la universidad. Hace seis meses. Es difícil… pero me gusta mucho.
+Me gusta… la comida de aquí. La paella… las tapas… el jamón. ¡Muy rico!
+¿Usted… vive aquí… hace mucho tiempo? ¡Qué bonito!
+Bueno… adiós. ¡Buen viaje! No… ¡buen día!

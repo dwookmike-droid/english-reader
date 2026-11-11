@@ -1,0 +1,31 @@
+{
+  "kind": "generate",
+  "title": "B_mystery_a",
+  "original_idea": "",
+  "audio_type": "music",
+  "prompt": "Solo nylon-string Spanish classical guitar, intimate and close-miked, warm small room, gentle fingerpicking, no drums, no vocals, quiet audiobook interlude, Barcelona in autumn. Quiet and curious, something left unsaid, minor key, sparse notes with harmonics, a low soft pad underneath.",
+  "prompt_used": "TrackType: Music, VocalType: Instrumental, Solo nylon-string Spanish classical guitar, intimate and close-miked, warm small room, gentle fingerpicking, no drums, no vocals, quiet audiobook interlude, Barcelona in autumn. Quiet and curious, something left unsaid, minor key, sparse notes with harmonics, a low soft pad underneath. BPM: 70.",
+  "sound_fields": {
+    "source": "",
+    "action": "",
+    "material": "",
+    "space": ""
+  },
+  "bpm": 70,
+  "seconds": 16.0,
+  "negative_prompt": null,
+  "cfg": 1.0,
+  "steps": 8,
+  "variations": 4,
+  "seed": 1035683503,
+  "candidate": 4,
+  "file": "B_mystery_a_4.wav",
+  "sample_rate": 44100,
+  "bit_depth": 24,
+  "created": "2026-11-10T16:12:19",
+  "backend": "sa3-mlx",
+  "model": "medium + same-l",
+  "peak_dbfs": -1.9,
+  "raw_peak_dbfs": -1.9,
+  "ceiling_gain_db": 0.0
+}
