@@ -19,7 +19,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           if [ -z "$GEMINI_API_KEY" ]; then echo "GEMINI_API_KEY 시크릿이 없어 건너뜁니다."; exit 0; fi
-          python3 spanish/tts.py
+          python3 books/es-la-llave-de-gracia/tts.py
       - name: 커밋 (도중에 실패해도 만든 것까지는 저장)
         if: always()
         run: |

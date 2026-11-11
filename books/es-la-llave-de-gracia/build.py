@@ -2,7 +2,7 @@
 """그라시아의 열쇠 — 원고(src/*.txt)와 단어표(src/vocab.tsv)로 두 가지를 만든다.
 
   1. print/book.html → (render.js) → print/*.pdf   A6 문고판 인쇄용
-  2. ../es.html                                     웹 리더 (책의 QR이 가리키는 곳)
+  2. ../../es.html                                    웹 리더 (책의 QR이 가리키는 곳)
 
 원고 표기법
   # 1 | Hola | 올라          장 제목: 번호 | 스페인어 제목 | 한글 발음
@@ -22,7 +22,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 SRC = ROOT / 'src'
 OUT = ROOT / 'print'
-SITE = ROOT.parent
+SITE = ROOT.parents[1]          # 저장소 맨 위(es.html, audio/). 11-11 폴더 정리로 books/<책>/ 아래로 옮김
 BASE_URL = 'https://dwookmike-droid.github.io/english-reader/es.html'
 TITLE_ES, TITLE_KO = 'La llave de Gràcia', '그라시아의 열쇠'
 
