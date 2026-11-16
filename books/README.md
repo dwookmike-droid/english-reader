@@ -5,7 +5,7 @@
 
 | 폴더 | 책 | 언어 | 상태 | 주요 문서 |
 |---|---|---|---|---|
-| `es-la-llave-de-gracia/` | 그라시아의 열쇠 (La llave de Gracia) | 스페인어 | 책 PDF·EPUB 완료, 오디오북·영상 제작 중 | HANDOFF.md, AUDIOBOOK.md, audiobook/VIDEO.md |
+| `es-la-llave-de-gracia/` | 그라시아의 열쇠 (La llave de Gracia) | 스페인어 | 책 PDF·EPUB 완료, 오디오북 1–30장 완성(11-15), 매주 월요일 발행 중 | HANDOFF.md, AUDIOBOOK.md, audiobook/VIDEO.md, audiobook/PLAYBOOK_다음책.md |
 
 ## 규칙
 
@@ -14,6 +14,7 @@
 - 웹 리더 HTML은 저장소 맨 위 `<언어코드>.html`, 음성은 `audio/<언어코드>/`.
 - 여러 책이 함께 쓸 도구는 `books/_kit/`에 모은다(아직 없음. 두 번째 책을 시작할 때 그라시아에서 떼어 낸다).
 - 음원·영상·이미지·캐시는 커밋하지 않는다(각 책의 `.gitignore`).
+- 새 책의 오디오북은 시작 전에 `es-la-llave-de-gracia/audiobook/PLAYBOOK_다음책.md`를 먼저 읽는다(기준 녹음 → 대본 손질 → 시험 생성 → 검수 순서, 그라시아에서 배운 것).
 
 ## 옛 경로
 

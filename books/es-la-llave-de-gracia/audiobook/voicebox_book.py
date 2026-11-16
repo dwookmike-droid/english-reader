@@ -101,6 +101,16 @@ RUN = re.compile(rf"{LAT}(?:[ ,]+{LAT})*[.?!…:;]*")
 KO_GLUE = [('였', '이었'), ('라고', '이라고'), ('란', '이란'), ('라는', '이라는'), ('랑', '이랑'), ('라서', '이라서')]
 
 
+V5 = False   # --v5(11-16 3장 시험): 조사 붙은 낱말 한글 표기·윤하 스페인어 한국어 기준 녹음·쉼 줄임·꼬리 검사
+
+
+def hangul_es():
+    f = VB / 'hangul_es.tsv'
+    if not f.exists():
+        return {}
+    return dict(l.split('\t')[:2] for l in f.read_text().splitlines() if l.strip() and not l.startswith('#'))
+
+
 def glue_ko(t, after_es):
     """스페인어 낱말에 바로 붙은 한국어 서술격·인용 조사(vale였다, eso라고)는 엔진이 머리에 'ㅎ'·'ㅌ'를 붙여
     '허였다·토'처럼 읽었다(11-14 Mike '토 보스 허였다'). TTS 글만 '이었다·이라고'로 바꾼다. 자막·원고는 그대로."""
@@ -122,12 +132,18 @@ def pieces(text):
         if not re.search('[가-힣]', chunk):
             out.append(['es', chunk])
             continue
-        k = 0
+        k, han, HAN = 0, False, (hangul_es() if V5 else {})
         for r in RUN.finditer(chunk):
-            out.append(['ko', glue_ko(chunk[k:r.start()], k > 0 and k == r.start() - len(chunk[k:r.start()]) and k > 0)])
-            out.append(['es', r.group(0)])
+            out.append(['ko', glue_ko(chunk[k:r.start()], k > 0 and not han)])
+            w = r.group(0)
+            h = HAN.get(w.strip().rstrip('.,;:')) if re.match(r"[’”'\"]?[가-힣]", chunk[r.end():]) else None
+            if h:                                  # --v5: 'yave를' → '야베를'을 한국어 토막으로(조사는 원고 그대로)
+                out.append(['ko', h])
+            else:
+                out.append(['es', w])
+            han = bool(h)
             k = r.end()
-        out.append(['ko', glue_ko(chunk[k:], k > 0)])
+        out.append(['ko', glue_ko(chunk[k:], k > 0 and not han)])
     res = []
     for lang, t in out:                    # 글자 없는 토막(따옴표·쉼표)은 앞 토막에 붙인다
         if not re.search(r'\w', t):
@@ -147,7 +163,7 @@ def pieces(text):
             # 문장이 끝난 뒤 스페인어 낱말 앞에 남은 짧은 꼬리("고맙습니다. 앱은")는 Qwen이 빼먹는다(11-11).
             # 꼬리를 따로 떼어 짧은 글 방식(carrier)으로 만든다.
             m = re.match(r'(.*[.?!…’”])\s+([^.?!…]{3,15})$', t)   # 2자 이하 꼬리는 떼면 더 어색(11-14)
-            if m and re.search(r'\w', m.group(2)):
+            if m and re.search(r'\w', m.group(2)) and not V5:      # CosyVoice는 꼬리를 빼먹지 않는다. 떼면 억양이 끊긴다(11-16)
                 fixed += [(lang, m.group(1)), (lang, m.group(2))]
                 continue
         if re.search(r'\w', t):
@@ -170,6 +186,8 @@ def spoken(seg, ch, tight=False):
             x = re.sub(r'(\d{1,2}):(\d{2})', lambda m: es_num(int(m.group(1))) + ('' if m.group(2) == '00' else ' y ' + es_num(int(m.group(2)))), x)
             return re.sub(r'\d+', lambda m: es_num(int(m.group(0))), x)
         out = [(l, es_words(x) if l == 'es' else x) for l, x in out]
+    if V5 and seg['who'] == 'yunha':       # 한국어 기준 녹음은 'Yunha'를 '융가'로 읽는다. Yunja → '윤하'(11-16 후보 시험)
+        out = [(l, x.replace('Yunha', 'Yunja') if l == 'es' else x) for l, x in out]
     return out
 
 
@@ -616,7 +634,7 @@ def make(pid, voice, text, lang):
         m['tries'] = tries.index((mode, seed)) + 1
         if pcm and (best is None or m['score'] > best[1]['score']):
             best = (pcm, m)
-        if pcm and ok(m):
+        if pcm and ok(m) and not (V5 and pid.startswith('index|') and long_tail(pcm, lang)):
             m['pass'] = True
             return pcm, m
     if best is None:                               # 모두 실패해도 장을 멈추지 않는다. 0.5초 무음 + qa에 기록
@@ -625,6 +643,70 @@ def make(pid, voice, text, lang):
                                                   sec=0.5, score=0.0, expect=0, err='no audio', tries=len(tries), **{'pass': False})
     best[1]['pass'] = False
     return best
+
+
+def long_tail(pcm, lang):
+    """마지막 낱말 뒤 1초 넘게 소리가 남으면 True(voicebox_audit '뒤 꼬리', 2장 ¿Y vos? 2.1초)."""
+    ws = hear(pcm, lang, words=True)
+    return bool(ws) and len(pcm) / 2 / A.RATE - ws[-1]['end'] > 1.0
+
+
+def f0_of(pcm):
+    import numpy as np
+    a = np.frombuffer(pcm, np.int16).astype(np.float32) / 32768
+    fr, hop, out = int(A.RATE * 0.04), int(A.RATE * 0.01), []
+    for i in range(0, len(a) - fr, hop):
+        x = a[i:i + fr]
+        if np.sqrt((x ** 2).mean()) < 0.02:
+            continue
+        x = x - x.mean()
+        c = np.correlate(x, x, 'full')[fr - 1:]
+        lo, hi = A.RATE // 400, A.RATE // 75
+        k = lo + int(np.argmax(c[lo:hi]))
+        if c[k] > 0.45 * c[0]:
+            out.append(A.RATE / k)
+    return float(np.median(out)) if len(out) > 5 else None
+
+
+def near_pitch(pid, voice, text, lang, ref_f0, pcm, m):
+    """서술 속 스페인어가 앞 한국어보다 2반음 넘게 높거나 낮으면 다른 시드 중 가장 가까운 합격본으로(11-16)."""
+    import math
+    f = f0_of(pcm)
+    if not (ref_f0 and f) or abs(12 * math.log2(f / ref_f0)) <= 2:
+        return pcm, m
+    best = (abs(12 * math.log2(f / ref_f0)), pcm, m)
+    for seed in (41, 53, 67):
+        p2, m2 = attempt(pid, voice, text, lang, 'plain', seed)
+        f2 = f0_of(p2) if p2 else None
+        if p2 and f2 and ok(m2) and abs(12 * math.log2(f2 / ref_f0)) < best[0]:
+            m2['pass'] = True
+            best = (abs(12 * math.log2(f2 / ref_f0)), p2, m2)
+        if best[0] <= 2:
+            break
+    return best[1], best[2]
+
+
+def cap_pauses(pcm, most=0.6):
+    """토막 안 문장 사이 쉼이 most초를 넘으면 most초로(1·2장 0.8–1.1초, 11-16)."""
+    a = array('h', pcm)
+    fr = int(A.RATE * 0.02)
+    lv = [max(map(abs, a[i:i + fr]), default=0) for i in range(0, len(a), fr)]
+    th = max(lv, default=0) * 0.03
+    out, run = array('h'), []
+    for i, x in enumerate(lv):
+        blk = a[i * fr:(i + 1) * fr]
+        if x < th:
+            run.append(blk)
+            continue
+        if run:
+            keep = int(most / 0.02)
+            for b in (run if len(run) <= keep else run[:keep // 2] + run[-(keep - keep // 2):]):
+                out.extend(b)
+            run = []
+        out.extend(blk)
+    for b in run:
+        out.extend(b)
+    return out.tobytes()
 
 
 def fade(pcm, sec=0.012):
@@ -697,6 +779,11 @@ def spec(v, lang, s, eng_narr, eng_dlg, pid, ch=0):
     """토막 하나를 어느 엔진·목소리·말투로 만들지 → attempt()에 넘길 pid 문자열."""
     narr = s['who'] == 'narr' or v in ('narr', 'narr1')
     eng = eng_narr if narr else eng_dlg
+    if V5 and lang == 'es' and v == 'yunha':   # 윤하 스페인어: 서술(한국어) 기준 녹음 → 한국인 억양, 서술과 같은 높이(11-16)
+        if narr:
+            return 'index|narr||0.45'
+        e, a = emotion_of(s.get('note'))
+        return f"index|narr|{json.dumps(e) if e else ''}|{a}"
     if eng == 'voicebox':
         return pid[v]
     if eng == 'index' and lang != 'es':
@@ -787,6 +874,7 @@ def build(ch, only=None, plan=False, pace=False, narr='narr', tag='', eng_narr='
     cfg = PACE_COSY if cosy else PACE
     pause, join = (cfg['pause'], cfg['join']) if pace else (PAUSE, JOIN)
     pcm, tl, qa, scene, t0 = bytearray(), [], [], 1, time.time()
+    last_ko_f0 = None
     for i, s in enumerate(segs, 1):
         parts = []
         for j, (lang, text) in enumerate(spoken(s, ch, tight=cosy)):
@@ -796,13 +884,20 @@ def build(ch, only=None, plan=False, pace=False, narr='narr', tag='', eng_narr='
                     v = 'yunha'           # 같은 목소리(Seulki). narr 프로필은 한국어 샘플이라 스페인어를 못 읽는다(vale→Baila, 11-11)
                 elif v == 'narr':
                     v = narr
-                p, m = make(spec(v, lang, s, eng_narr, eng_dlg, pid, ch), v, text, lang)
+                sp_ = spec(v, lang, s, eng_narr, eng_dlg, pid, ch)
+                p, m = make(sp_, v, text, lang)
+                if V5 and p and s['who'] == 'narr' and lang == 'es':
+                    p, m = near_pitch(sp_, v, text, lang, last_ko_f0, p, m)
+                if V5 and p and lang == 'ko' and sp_.startswith('cosy|'):
+                    p = cap_pauses(p)
                 if v in VOICE_TONE and p and lang == 'es':
                     p = tone_shift(p, VOICE_TONE[v]['semitones'], VOICE_TONE[v]['tempo'])
                 if pace and lang == 'ko' and len(text) >= 20 and eng_narr == 'voicebox':
                     p = breathe(p, *PACE['breath'])   # CosyVoice는 문장 끝 쉼이 이미 길다. 더하면 '~다' 사이가 끊긴다(11-13 Mike)
                 if cosy and s['who'] == 'narr' and p:
                     p = speed(p, PACE_COSY['narr_speed'])
+                if V5 and p and s['who'] == 'narr' and lang == 'ko':
+                    last_ko_f0 = f0_of(p) or last_ko_f0
                 got.append(p)
                 qa.append(dict(seg=i, piece=j + 1, who=s['who'], **m))
             p = fade(A.level(got[0] if len(got) == 1 else mix(got)))
@@ -872,8 +967,11 @@ def main():
     ap.add_argument('--engine-narr', default='voicebox', choices=['voicebox', 'cosy'], help='서술 엔진')
     ap.add_argument('--engine-dlg', default='voicebox', choices=['voicebox', 'cosy', 'index'], help='대사 엔진')
     ap.add_argument('--glue', action='store_true', help='스페인어 낱말+조사는 붙이고 조사 뒤를 띄운다(11-14)')
+    ap.add_argument('--v5', action='store_true', help='11-16 시험: 낱말+조사 한글 표기, 윤하 스페인어 한국어 기준 녹음, 쉼 0.6초, 꼬리 검사')
     ap.add_argument('--segs', help="조각 번호만(1부터), 예: '50-58,63-71'")
     a = ap.parse_args()
+    global V5
+    V5 = a.v5
     for c in a.chs:
         build(c, a.only, a.plan, a.pace, a.narr, a.tag, a.engine_narr, a.engine_dlg, a.segs, a.glue)
 

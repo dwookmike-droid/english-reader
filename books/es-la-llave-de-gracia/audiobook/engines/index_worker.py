@@ -16,7 +16,7 @@ for line in sys.stdin:
     try:
         tmp = tempfile.mktemp(suffix='.wav')
         o = GenerateOptions(language=j.get('lang', 'es'), seed=int(j.get('seed', 7)), temperature=0.8,
-                            emotion=j.get('emotion') or None, emo_alpha=float(j.get('alpha', 0.6)),
+                            emotion=j.get('emotion') or None, emo_alpha=float(j.get('alpha', 0.6)), emotion_ref_audio=j.get('emo_ref') or None,
                             denoise_ref_audio=False, denoise_emotion_ref_audio=False, max_tokens=1500)
         sys.stdout = sys.stderr                     # 라이브러리 출력이 응답 줄을 흐리지 않게
         rt.generate(j['text'], j['ref'], tmp, profile='v25', options=o)

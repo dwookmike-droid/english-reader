@@ -93,6 +93,8 @@ def main():
     ap.add_argument('--pick', nargs='*', default=[], help='cue=번호')
     ap.add_argument('--vb', action='store_true',
                     help='새 음성(11-13): out_vb/chNN_v4a.m4a(Adobe 처리본, 없으면 _v4) → out/vb_final/. 옛 Gemini 최종본은 그대로 둔다')
+    ap.add_argument('--tag', default='_v4', help='out_vb/chNN<tag>.wav (시험본 _v5test 등, 11-16)')
+    ap.add_argument('--out', help='출력 폴더(기본 out/vb_final). 시험본은 따로 둔다')
     a = ap.parse_args()
     picks = {}
     for line in (AB / 'bgm' / 'picks.tsv').read_text().splitlines():
@@ -110,6 +112,8 @@ def main():
     global FINAL
     if a.vb:
         FINAL = AB / 'out' / 'vb_final'
+    if a.out:
+        FINAL = Path(a.out).resolve()
     FINAL.mkdir(parents=True, exist_ok=True)
     for ch in a.chapters:
         vb = [AB / 'out_vb' / f'ch{ch:02d}_v4{t}.m4a' for t in ('a', '')]
@@ -120,7 +124,7 @@ def main():
             src = AB / 'out' / f'ch{ch:02d}.m4a'
         if a.vb:
             # 11-14 전수조사: 무손실 원본(out_vb/chNN_v4.wav)에서 고정 EQ → 음량 고정 이득 → BGM → 리미터 → 인코딩 한 번.
-            src = AB / 'out_vb' / f'ch{ch:02d}_v4.wav'
+            src = AB / 'out_vb' / f'ch{ch:02d}{a.tag}.wav'
             if not src.exists():
                 print(f'  {ch}장: 새 음성 wav 없음, 건너뜀'); continue
         speech = load(src) if not a.vb else master_speech(src)
@@ -152,7 +156,7 @@ def main():
         wav.unlink()
         tlp = PILOT / f'ch{ch:02d}.timeline.json'
         if a.vb:
-            tlp = AB / 'out_vb' / f'ch{ch:02d}_v4.timeline.json'
+            tlp = AB / 'out_vb' / f'ch{ch:02d}{a.tag}.timeline.json'
         tl = json.loads((tlp if tlp.exists() else AB / 'out' / f'ch{ch:02d}.timeline.json').read_text())
         for x in tl:
             x['start'] = round(x['start'] + offset, 2); x['end'] = round(x['end'] + offset, 2)

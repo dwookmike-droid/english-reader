@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>Label</key><string>com.gracia.final</string>
+<key>ProgramArguments</key><array><string>/usr/bin/caffeinate</string><string>-ims</string><string>/bin/bash</string><string>/Users/dongwookkang/Developer/tts-lab/final_regen.sh</string></array>
+<key>RunAtLoad</key><true/>
+<key>StandardOutPath</key><string>/Users/dongwookkang/Developer/tts-lab/final_regen.log</string>
+<key>StandardErrorPath</key><string>/Users/dongwookkang/Developer/tts-lab/final_regen.log</string>
+</dict></plist>
