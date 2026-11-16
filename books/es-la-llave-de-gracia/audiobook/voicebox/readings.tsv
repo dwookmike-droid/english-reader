@@ -1,0 +1,96 @@
+# Voicebox 낭독용 읽기 고침(자막·원고는 그대로). 열: 장 → 원문 조각 → 읽을 글.
+# ⟦es:…⟧ 는 스페인어로, ⟦ko:…⟧ 는 한국어로 읽힌다. 표시 없는 라틴 문자는 스페인어, 한글은 한국어.
+# 숫자는 한국어 조각에서 한자어 수(일·이·삼)로 바뀐다. 다르게 읽을 숫자만 여기 적는다.
+1	h로 시작하는데	에이치로 시작하는데
+1	스페인어에서 h는	스페인어에서 에이치는
+1	그라-th-아스. 그라-th-아스.	⟦es:Gra, zi, as. Gra, zi, as.⟧
+1	hola의 h처럼, 내 이름의 h도	hola의 에이치처럼, 내 이름의 에이치도
+2	ll와 y를	에예와 이 그리에가를
+2	영어의 sh 소리다	영어의 에스에이치 소리다
+2	Vale가 ll를	Vale가 에예를
+2	끝에 s나 es가	끝에 에세나 es가
+3	1 kg tomates. 4 melocotones. 200 g queso.	일 킬로 tomates. 네 개 melocotones. 이백 그램 queso.
+3	200 g queso. 200을	이백 그램 queso. 이백을
+3	종이의 200 g 옆에	종이의 이백 그램 옆에
+3	1,020.	일 점 영이영.
+3	4,50 €.	사 쉼표 오십 유로.
+1	영어 th처럼	영어 티에이치처럼
+# 11-14 Mike 4차: Rellotger는 '레요제' → 후보 b Reyoyé(1장 주소·몬세 대사 모두 같은 소리). rellotger가 rellotge보다 먼저
+*	Rellotger	Reyoyé
+*	rellotger	reyoyé
+*	rellotge	reyóye
+5	Lunes. 10:00.	Lunes. Diez.
+24	R5 노선	알오 노선
+20	10:15라고	10:15이라고
+# 11-14 Mike: llave는 '야베'로(후보 yave). 2장 아르헨티나식 '샤베'(cashe 등) 대사는 원고 표기 그대로라 걸리지 않는다
+*	llave	yave
+*	Llave	Yave
+# 11-14 Mike: 스페인어 대사 속 Sun-rye는 Sulé(술레)로(2차 후보 E). 한국어 서술 순례는 그대로
+*	Sun-rye	Sulé
+# 11-14 허브 점검: 로마 숫자 XI를 Xi로 읽었다
+25	20-Xi-1974	veinte de noviembre de mil novecientos setenta y cuatro
+# 11-14 Mike 3차: "이 책의 목적은 스페인어를 배우는 거지 카탈란을 배우는 게 아니야".
+# 정정(같은 날): 카탈루냐어는 Rellotger 계열과 bon dia만 소리대로. 나머지(Gràcia·Montjuïc·Plaça 등)는 스페인어 엔진이 읽는 대로
+*	bon dia	bon día
+*	Bon dia	Bon día
+# 서명 M.(Martí)과 S.(Sun-rye)는 스페인어 글자 이름으로. 한국어 서술 속 M.(엠)은 건드리지 않게 문맥째 적는다
+*	Para S.	Para Ese.
+*	para S.	para Ese.
+*	— M.	— Eme.
+1	M. Carrer	Eme. Carrer
+5	Martí = M. =	Martí = Eme =
+9	S. 순례	Ese. 순례
+10	S. — Las Palmas	Ese. — Las Palmas
+13	Escríbeme. M.	Escríbeme. Eme.
+14	tu canción? M.	tu canción? Eme.
+15	fue verdad. M.	fue verdad. Eme.
+18	Kwaenchanayo. M.	Kwaenchanayo. Eme.
+18	con una M.	con una Eme.
+24	amiga. M.	amiga. Eme.
+24	con una M.	con una Eme.
+25	Pagado. M. Puig	Pagado. Eme. Puig
+# Yunha는 건드리지 않는다(Mike: 스페인어 화자가 h를 안 읽어 '유나'가 되는 것이 이야기의 묘미)
+# 윤하(한국인)가 말하거나 읽는 괜찮아요는 한국어로. 마르티·몬세가 말하는 Kwaenchanayo는 그대로
+13	‘Kwaenchanayo.’	‘⟦ko:괜찮아요⟧.’
+13	«Kwaenchanayo»… en coreano	⟦ko:괜찮아요⟧… en coreano
+13	Martí dijo «Kwaenchanayo»,	Martí dijo ⟦ko:괜찮아요⟧,
+18	마지막 한 줄. Kwaenchanayo.	마지막 한 줄. ⟦ko:괜찮아요⟧.
+24	una vez: «Gracias, Montse. Kwaenchanayo».	una vez: «Gracias, Montse. ⟦ko:괜찮아요⟧.
+30	«Gracias, Montse. Kwaenchanayo.»	«Gracias, Montse. ⟦ko:괜찮아요⟧.
+# 11-14 Mike 4차: 4장 mirá만 느낌표(후보 C, Mike "끝에 강세가 더 강해"). 22장 등 나머지 보세오는 원고 철자 그대로(D)
+4	mirá	¡Mirá!
+# 11-14 전수조사: 한국어가 섞인 조각 속 스페인어 연도(숫자가 한국어 토막으로 떨어져 한국어 목소리가 읽었다)
+29	viernes 20 de	viernes veinte de
+17	Bodas 1965-1970	Bodas, mil novecientos sesenta y cinco a mil novecientos setenta
+18	parado desde 1978	parado desde mil novecientos setenta y ocho
+20	febrero de 1975. 나는	febrero de mil novecientos setenta y cinco. 나는
+20	fue en 1978?	fue en mil novecientos setenta y ocho?
+21	años en 1974.	años en mil novecientos setenta y cuatro.
+25	mayo de 1974,	mayo de mil novecientos setenta y cuatro,
+28	Barcelona, 1978»	Barcelona, mil novecientos setenta y ocho»
+30	Barcelona, 1978»	Barcelona, mil novecientos setenta y ocho»
+12	Octubre 1978 —	Octubre mil novecientos setenta y ocho —
+21	1948-2009	1948 a 2009
+# 약어·대문자·기호(엔진이 글자대로 읽는다)
+*	C. del Relojero	Calle del Relojero
+*	Sr. Puig	Señor Puig
+17	Sept. 78	Septiembre, setenta y ocho
+17	PAGADA.	Pagada.
+29	SERRALLERIA PUIG	Serrallería Puig
+5	Martí = Eme = abuelo de Marc = hermano de Montse	Martí, Eme, abuelo de Marc, hermano de Montse
+8	ha + pasado	ha, pasado
+8	꼴(han)로	꼴, han으로
+23	-d로	⟦es:de⟧로
+26	-ra	ra
+7	-ero	ero
+# 스페인어 대사·서술 속 남은 단독 글자 M/S → 글자 이름(앞서 정한 Eme/Ese와 같게)
+6	Esta «M»	Esta «Eme»
+9	«S»	«Ese»
+9	S… ¿	Ese… ¿
+24	una M?	una Eme?
+24	M de Montse	Eme de Montse
+25	서명. M. Puig	서명. Eme. Puig
+# 윤하가 일기에 적은 괜찮아요도 한국어로(다른 곳과 같게)
+18	primera: kwaenchanayo.	primera: ⟦ko:괜찮아요⟧.
+# 11-14 Mike "토 보스 허였다": 짧은 한국어+스페인어 한 낱말+조사는 한국어 목소리로 한 번에
+2	또 vos였다	⟦ko:또 보스였다⟧

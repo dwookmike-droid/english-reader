@@ -5,7 +5,7 @@
 Montse me ha dicho que estabas aquí.	quiet, standing in the doorway
 Montse lo sabe todo.	flat, a little bitter
 No todo. El reloj funciona	calm and controlled; hurt shows at "No has venido"
-Lo siento. Estaba cansada.	a weak excuse, not looking at him
+Lo siento. Estaba cansada.	a weak excuse, tired and awkward, not looking at him
 No. Basta.	calm but firm; stress "Basta" and "Mírame"
 Yuna. Mírame, por favor.	softer, pleading
 Dime qué pasa.	hurt and sincere
@@ -15,7 +15,7 @@ Tu abuelo estuvo en Las Palmas	everything spilling out at once, frightened; unfi
 ¿Y no me lo dices?	hurt, disbelieving
 Tenía miedo.	small and honest
 ¡Yo también tengo miedo!	raising his voice for the first time
-Escúchame. Mi abuelo escribió:	urgent, defending his grandfather
+Escúchame. Mi abuelo escribió:	urgent, defensive of his grandfather
 No lo sé, Marc.	honest and tired
 Tienes razón. No lo conociste.	calm again, too calm; firm
 ¡No te trato como a un sospechoso!	protesting, upset
@@ -33,3 +33,5 @@ Eso es otra historia.	with a sad smile, then lightly at "¿Dale?"
 Dale.	borrowing Vale's Argentine word, a small smile
 Mírame. Dímelo. Escúchame.	thoughtful, noticing how the words work
 내일 몬세와 이야기하자.	quietly resolved
+# 11-13 빠진 지시 채움(IndexTTS 감정). 편지에도 감정 한 줄.
+Sí.	a quiet, reluctant admission
