@@ -31,8 +31,7 @@ for k in a.keys:
         print(f'{k}: 아직 처리 중({v["status"].get("uploadStatus")}/{proc}) — 건너뜀'); bad += 1; continue
     try:
         yt.videos().update(part='status', body={'id': vid, 'status': {
-            'privacyStatus': 'public', 'selfDeclaredMadeForKids': False,
-            'containsSyntheticMedia': True}}).execute()
+            'privacyStatus': 'public', 'embeddable': True, 'publicStatsViewable': True, 'containsSyntheticMedia': True, 'selfDeclaredMadeForKids': False}}).execute()
     except HttpError as e:
         print(f'{k}: 공개 전환 실패 {reason_of(e) or e}'); bad += 1; continue
     now = yt.videos().list(part='status', id=vid).execute()['items'][0]['status']['privacyStatus']

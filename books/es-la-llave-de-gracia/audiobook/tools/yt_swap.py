@@ -47,7 +47,7 @@ yt = build('youtube', 'v3', credentials=load_creds(), cache_discovery=False)
 if 'publish_at' not in it:
     subprocess.run([py, 'yt/yt_publish.py', 'out/done.json', key], cwd=V)
 if old_key in done:
-    yt.videos().update(part='status', body={'id': done[old_key]['id'], 'status': {'privacyStatus': 'private', 'selfDeclaredMadeForKids': False}}).execute()
+    yt.videos().update(part='status', body={'id': done[old_key]['id'], 'status': {'privacyStatus': 'private', 'embeddable': True, 'publicStatsViewable': True, 'containsSyntheticMedia': True, 'selfDeclaredMadeForKids': False}}).execute()
     done = json.loads(done_p.read_text())
     done[old_key]['privacy'] = 'private-old'; done[old_key]['replaced_by'] = key
     done_p.write_text(json.dumps(done, ensure_ascii=False, indent=1))

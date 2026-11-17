@@ -12,7 +12,14 @@ V = AB / 'video'
 sys.path.insert(0, str(V / 'yt'))
 
 def release(ch):
-    d = dt.date(2026, 11, 16) + dt.timedelta(weeks=ch - 2)
+    """1·2장은 11-14·11-16에 나감. 3장부터 주 2회 월·목 19:00 KST(11-17 Mike), 3장 = 11-23(월)."""
+    if ch <= 2:
+        d = dt.date(2026, 11, 16) + dt.timedelta(weeks=ch - 2)
+    else:
+        d, k = dt.date(2026, 11, 23), 3
+        while k < ch:
+            d += dt.timedelta(days=3 if d.weekday() == 0 else 4)
+            k += 1
     return dt.datetime(d.year, d.month, d.day, 10, 0, tzinfo=dt.timezone.utc)   # 19:00 KST
 
 def main(ch):
@@ -67,7 +74,7 @@ def main(ch):
                 if st.get('publishAt') and st['privacyStatus'] == 'private':    # 아직 안 나간 옛 예약 → 지움(두 번 공개 막기)
                     yt.videos().delete(id=v['id']).execute(); v['deleted'] = dt.date.today().isoformat(); print('옛 예약 삭제', k, v['url'])
                 else:
-                    yt.videos().update(part='status', body={'id': v['id'], 'status': {'privacyStatus': 'private', 'selfDeclaredMadeForKids': False}}).execute()
+                    yt.videos().update(part='status', body={'id': v['id'], 'status': {'privacyStatus': 'private', 'embeddable': True, 'publicStatsViewable': True, 'containsSyntheticMedia': True, 'selfDeclaredMadeForKids': False}}).execute()
                     v['privacy'] = 'private-old'; print('옛 영상 비공개', k, v['url'])
             except Exception as e:
                 print('옛 영상 처리 실패', k, e)
