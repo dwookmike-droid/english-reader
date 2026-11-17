@@ -101,6 +101,7 @@ RUN = re.compile(rf"{LAT}(?:[ ,]+{LAT})*[.?!…:;]*")
 KO_GLUE = [('였', '이었'), ('라고', '이라고'), ('란', '이란'), ('라는', '이라는'), ('랑', '이랑'), ('라서', '이라서')]
 
 
+HANGUL = False   # --hangul(11-17 Mike): v4 그대로에 조사 붙은 낱말 한글 표기만 켠다
 V5 = False   # --v5(11-16 3장 시험): 조사 붙은 낱말 한글 표기·윤하 스페인어 한국어 기준 녹음·쉼 줄임·꼬리 검사
 
 
@@ -132,7 +133,7 @@ def pieces(text):
         if not re.search('[가-힣]', chunk):
             out.append(['es', chunk])
             continue
-        k, han, HAN = 0, False, (hangul_es() if V5 else {})
+        k, han, HAN = 0, False, (hangul_es() if (V5 or HANGUL) else {})
         for r in RUN.finditer(chunk):
             out.append(['ko', glue_ko(chunk[k:r.start()], k > 0 and not han)])
             w = r.group(0)
@@ -968,10 +969,12 @@ def main():
     ap.add_argument('--engine-dlg', default='voicebox', choices=['voicebox', 'cosy', 'index'], help='대사 엔진')
     ap.add_argument('--glue', action='store_true', help='스페인어 낱말+조사는 붙이고 조사 뒤를 띄운다(11-14)')
     ap.add_argument('--v5', action='store_true', help='11-16 시험: 낱말+조사 한글 표기, 윤하 스페인어 한국어 기준 녹음, 쉼 0.6초, 꼬리 검사')
+    ap.add_argument('--hangul', action='store_true', help='11-17: 조사 붙은 스페인어 낱말만 한글 표기(hangul_es.tsv)로 한국어 토막에 넣는다')
     ap.add_argument('--segs', help="조각 번호만(1부터), 예: '50-58,63-71'")
     a = ap.parse_args()
-    global V5
+    global V5, HANGUL
     V5 = a.v5
+    HANGUL = a.hangul
     for c in a.chs:
         build(c, a.only, a.plan, a.pace, a.narr, a.tag, a.engine_narr, a.engine_dlg, a.segs, a.glue)
 
