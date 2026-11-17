@@ -497,7 +497,7 @@ class Chapter:
     def __init__(self, ch):
         self.ch = ch
         tl = AUDIO / f'ch{ch:02d}.timeline.json'
-        self.audio = AUDIO / f'ch{ch:02d}.m4a'
+        self.audio = AUDIO / f'ch{ch:02d}.flac' if (AUDIO / f'ch{ch:02d}.flac').exists() else AUDIO / f'ch{ch:02d}.m4a'   # 무손실 우선(11-14)
         if not tl.exists() or not self.audio.exists():
             raise SystemExit(f'{ch}장: 시간표나 소리가 없습니다 ({tl.name}, {self.audio.name})')
         self.items = json.loads(tl.read_text())
@@ -755,6 +755,7 @@ def main():
     ap.add_argument('--to', dest='t1', type=float)
     ap.add_argument('--workers', type=int, default=max(1, (os.cpu_count() or 4) - 3))
     ap.add_argument('--src', help='소리·시간표 폴더(기본 audiobook/out/pilot/final)')
+    ap.add_argument('--out', help='mp4를 쓸 폴더(기본 audiobook/video/out). 예: out/vb')
     ap.add_argument('--plan', action='store_true', help='글자 쪽 시간표만 출력')
     ap.add_argument('--check', action='store_true', help='ffmpeg 없이 확인용 프레임만')
     ap.add_argument('--encoder', choices=['auto', 'ffmpeg', 'avenc'], default='auto',
@@ -765,6 +766,8 @@ def main():
         set_src(a.src)
     print(f'입력: {AUDIO}')
     OUT.mkdir(parents=True, exist_ok=True)
+    dest = Path(a.out).resolve() if a.out else OUT
+    dest.mkdir(parents=True, exist_ok=True)
     for ch in a.chapters:
         c = Chapter(ch)
         if a.plan:
@@ -779,7 +782,7 @@ def main():
         else:
             t1 = min(a.t1 or c.duration, c.duration)
             part = '' if (a.t0 == 0 and t1 >= c.duration) else f'_{int(a.t0)}-{int(t1)}'
-            encode(c, a.fps, a.t0, t1, OUT / f'ch{ch:02d}{part}.mp4', a.workers, a.encoder)
+            encode(c, a.fps, a.t0, t1, dest / f'ch{ch:02d}{part}.mp4', a.workers, a.encoder)
             if c.placeholders:
                 print(f'  임시 그림 사용 장면: {c.placeholders}')
 

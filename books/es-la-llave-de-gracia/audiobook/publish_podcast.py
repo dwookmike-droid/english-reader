@@ -32,19 +32,23 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('chapters', nargs='+', type=int)
     ap.add_argument('--dry', action='store_true')
+    ap.add_argument('--vb', action='store_true',
+                    help='새 음성(11-14): out/vb_final/chNN.mp3, 영상 video/out/vb/chNN.mp4. 이미 올라간 옛 음성 파일을 바꾼다')
     a = ap.parse_args()
 
     git('fetch', '-q')
     if 'behind' in git('status', '-sb').splitlines()[0]:
         git('pull', '-q', '--ff-only')
 
+    final = AB / 'out' / 'vb_final' if a.vb else FINAL
+    vdir = AB / 'video' / 'out' / ('vb' if a.vb else '')
     done = []
     for ch in a.chapters:
-        mp3, txt = FINAL / f'ch{ch:02d}.mp3', DESC / f'ch{ch:02d}.txt'
+        mp3, txt = final / f'ch{ch:02d}.mp3', DESC / f'ch{ch:02d}.txt'
         if not mp3.exists() or not txt.exists():
             print(f'{ch}장: 건너뜀 (없음: {", ".join(p.name for p in (mp3, txt) if not p.exists())})')
             continue
-        mp4 = AB / 'video' / 'out' / f'ch{ch:02d}.mp4'
+        mp4 = vdir / f'ch{ch:02d}.mp4'
         if not mp4.exists() or mp4.stat().st_mtime < mp3.stat().st_mtime:
             print(f'{ch}장: 건너뜀 (유튜브 영상 렌더가 아직 안 됨: {mp4.name})')
             continue
@@ -62,7 +66,8 @@ def main():
         paths = [str(d.relative_to(REPO)) for _, d in pairs]
         git('add', '--', *paths)
         git('commit', '-q', '-m',
-            f'feat: add La llave de Gracia ch{ch:02d} audio & desc for podcast release\n\n'
+            (f'feat: replace La llave de Gracia ch{ch:02d} audio with new narration voice\n\n' if a.vb else
+             f'feat: add La llave de Gracia ch{ch:02d} audio & desc for podcast release\n\n') +
             'Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>', '--', *paths)
         done.append(ch)
 

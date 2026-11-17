@@ -334,5 +334,13 @@
   "sample_ids": [
    "eedd6a04-0e71-4b6e-b36e-6eaaa027047e"
   ]
+ },
+ "narr1": {
+  "profile_id": "922a6b5c-0561-4a84-b5cb-a0bfa7e0e007",
+  "name": "그라시아 · 서술(샘플1 시험)",
+  "language": "ko",
+  "samples": [
+   "narr_01.wav"
+  ]
  }
 }

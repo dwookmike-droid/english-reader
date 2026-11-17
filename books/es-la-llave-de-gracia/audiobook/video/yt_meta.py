@@ -26,6 +26,9 @@ PLAYLIST = f'{BOOK} · 스페인어 듣는 소설'
 TAGS = ['스페인어', '스페인어 공부', '스페인어 듣기', '오디오북', '소설', '바르셀로나',
         '그라시아의 열쇠', 'Spanish', 'learn Spanish', 'audiobook', 'Korean']
 MIN_CHAPTER = 10.0
+# 11-14 새 목소리(--vb): 영상 video/out/vb/, 소리·시간표 audiobook/out/vb_final/
+VB = False
+VOICE_CREDIT = '낭독: AI 합성 음성(CosyVoice 3, IndexTTS-2.5).'
 GAP = 0.0          # --book: 장 사이에 따로 넣는 간격(간주가 장 파일에 이미 들어 있으면 0)
 
 
@@ -97,14 +100,14 @@ def describe(ch):
         lines += [f'· {a} — {b}' for a, b in ph]
         lines.append('')
     lines += [
-        '낭독: AI 합성 음성(Google Gemini TTS, 편지 낭독 ElevenLabs). 그림: AI 생성(Grok).',
+        (VOICE_CREDIT if VB else '낭독: AI 합성 음성(Google Gemini TTS, 편지 낭독 ElevenLabs).') + ' 그림: AI 생성(Grok).',
         '음악: AI 생성(Stable Audio). Powered by Stability AI',
         f'#스페인어 #스페인어공부 #오디오북',
     ]
     desc = clean('\n'.join(lines))
     item = {
         'key': f'ch{ch:02d}',
-        'file': str((OUT / f'ch{ch:02d}.mp4').resolve()),
+        'file': str((OUT / ('vb' if VB else '') / f'ch{ch:02d}.mp4').resolve()),
         'title': clean(title)[:100],
         'description': desc,
         'tags': TAGS,
@@ -148,7 +151,12 @@ def main():
     ap.add_argument('--book', action='store_true', help='책 전체 영상 하나일 때의 장 타임스탬프')
     ap.add_argument('--out', default=str(OUT / 'meta.json'))
     ap.add_argument('--src', help='소리·시간표 폴더(기본 audiobook/out/pilot/final)')
+    ap.add_argument('--vb', action='store_true', help='새 목소리판(11-14): --src 기본 out/vb_final, 영상 out/vb/')
     a = ap.parse_args()
+    global VB
+    VB = a.vb
+    if a.vb and not a.src:
+        a.src = str(Path(__file__).resolve().parent.parent / 'out' / 'vb_final')
     if a.src:
         render.set_src(a.src)
     items, book, t = [], [], 0.0

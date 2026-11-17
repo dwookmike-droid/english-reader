@@ -18,7 +18,7 @@ Yo también estoy contento.	quiet and plain, looking out the window; a rare admi
 케이블카는 몬주익 언덕 중턱에	steady, a little out of breath
 발아래 항구가 다 보였다	hushed, wide view
 Ya no veo tu barco.	low, finishing the line of the letter, sober
-¿Por qué un barco?	a string of real questions, searching, a beginner
+¿Por qué un barco?	a string of real questions, curious, searching, a beginner
 No sé. Pero en el puerto	thinking aloud, then practical
 ¿Vamos a ir?	hopeful, a real question
 Vamos a ir. El martes.	plain and certain, echoing her words
@@ -30,3 +30,6 @@ No sé. No tengo billete	honest, a little unsettled
 No. Solo de ida.	simple and quiet
 Bien.	very quiet, almost to himself, a hidden relief
 언덕 아래로 해가 기울고 있었다	warm, content
+# 11-13 빠진 지시 채움(IndexTTS 감정). 편지에도 감정 한 줄.
+Desde Montjuïc veo el puerto. Ya no veo tu barco.	a letter read aloud: longing, quiet sadness
+Desde Montjuïc veo el puerto.	reading the letter's line aloud, slowly, moved

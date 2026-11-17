@@ -124,6 +124,10 @@ def main() -> int:
                         "tags": it.get("tags", []), "categoryId": "19", "defaultLanguage": "ko"},
             "status": {"privacyStatus": "private", "selfDeclaredMadeForKids": False},
         }
+        if it.get("publish_at"):                     # 예약 공개(11-14). 한 번도 공개된 적 없는 영상만 된다
+            body["status"]["publishAt"] = it["publish_at"]
+        if it.get("synthetic"):
+            body["status"]["containsSyntheticMedia"] = True
         media = MediaFileUpload(it["file"], chunksize=64 * 1024 * 1024, resumable=True,
                                 mimetype="video/mp4")
         req = yt.videos().insert(part="snippet,status", body=body, media_body=media,
